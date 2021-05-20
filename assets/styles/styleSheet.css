@@ -28,9 +28,21 @@ body p {
     font-size: 18px;
 }
 /*----------------------------------MEDIA QUERY HEADER -------------------------------DONE*/
-
+.navbar{
+    padding-top: 0;
+}
+.navbar-brand{
+    padding-bottom:0px;
+    padding-top: 0px;
+}
+.navbar-nav{
+    padding-bottom: 100em;
+    background-color:rgba(200, 200, 200, 0.5);
+}
 .nav-item{
+    color: white;
     text-align: right;
+    margin: 0;
 }
 .navbar-toggler{
     border-color:rgba(0, 0, 0, 0);
@@ -42,32 +54,35 @@ body p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .navbar-brand{
-        margin-left: 0em;
+        padding-left: 0em;
     }
 }  
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 990px) {
     .navbar-brand{
-        margin-left: 3em;
+        padding-left: 3em;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1050px) { 
     .navbar-brand{
-        margin-left: 5em;
+        padding-left: 5em;
     }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .navbar-brand{
-        margin-left: 7em;
+        padding-left: 5em;
     }
     .navbar-toggler{
-        margin-right: 7em;
+        padding-right: 5em;
+        padding-left: 253px;
+        border-radius: 0;
         border-color:rgba(0, 0, 0, 0) ;
+        background-color: rgba(200, 200, 200, 0.5);
     }
     .nav-item{
-        margin-right: 7em;
+        padding-right: 5em;
         font-size: 20px
     }
 }
