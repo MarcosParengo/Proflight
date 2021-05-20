@@ -1,0 +1,36 @@
+[ 
+    {
+        "name":"Actitud Proactiva",
+        "image": "assets/images/perfil/1.png"
+    },{
+        "name":"Perfil Comercial",
+        "image": "assets/images/perfil/2.png"
+    },{
+        "name":"Buena Presencia",
+        "image": "assets/images/perfil/3.png"
+    },{
+        "name":"Buenos Modales",
+        "image": "assets/images/perfil/4.png"
+    },{
+        "name":"Valores Éticos",
+        "image": "assets/images/perfil/5.png"
+    },{
+        "name":"Capacidad de Autogestión",
+        "image": "assets/images/perfil/6.png"
+    },{
+        "name":"Alto Compromiso",
+        "image": "assets/images/perfil/7.png"
+    },{
+        "name":"Orientación a Resultados",
+        "image": "assets/images/perfil/8.png"
+    },{
+        "name":"Perseverancia",
+        "image": "assets/images/perfil/9.png"
+    },{
+        "name":"Residencia en CABA",
+        "image": "assets/images/perfil/10.png"
+    },{
+        "name":"Edad de 25 a 55 años",
+        "image": "assets/images/perfil/11.png"
+    }
+]

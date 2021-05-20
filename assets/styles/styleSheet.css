@@ -1,0 +1,487 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Montserrat';
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+body h1{
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    padding:0.8em;
+}
+body A {
+    color: white;
+    text-decoration: none;
+}
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*----------------------------------MEDIA QUERY HEADER -------------------------------DONE*/
+
+.nav-item{
+    text-align: right;
+}
+.navbar-toggler{
+    border-color:rgba(0, 0, 0, 0);
+    border: none;
+}
+@media only screen and (min-width: 545px) {
+     
+}   
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar-brand{
+        margin-left: 0em;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 990px) {
+    .navbar-brand{
+        margin-left: 3em;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1050px) { 
+    .navbar-brand{
+        margin-left: 5em;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar-brand{
+        margin-left: 7em;
+    }
+    .navbar-toggler{
+        margin-right: 7em;
+        border-color:rgba(0, 0, 0, 0) ;
+    }
+    .nav-item{
+        margin-right: 7em;
+        font-size: 20px
+    }
+}
+
+.main{
+    background-color:#002e5d;
+    background-image: url(https://cdn4.buysellads.net/uu/1/81016/1609783196-authentic-260x200-variation-3.jpg);
+}
+
+/*----------------------------------MEDIA QUERY SLIDER--------------------------------DONE*/
+
+img.sliderimg{
+    width:100%
+}
+.slider-text{
+    text-align:center;
+    position:absolute;top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    width: auto;
+}
+span.bolder{
+    font-weight: bold;
+}
+@media only screen and (max-width: 545px) {
+    .slider-text{
+        font-size: 15px;
+        width: 70%;
+    }
+} 
+
+/* Smaller devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 545px) {
+    .slider-text{
+        padding: 1em;
+        font-size: 18px;
+        width: 65%;
+    }   
+}   
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .slider-text{
+        padding: 1em;
+        font-size: 20px;
+        width: 65%;
+    }   
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 830px) {
+    .slider-text{
+        padding: 1em;
+        font-size: 26px;
+        width: 65%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    .slider-text{
+        padding: 1em;
+        font-size: 25px;
+        width: auto;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .slider-text{
+        padding: 1em;
+        width: auto;
+    }
+}
+
+/*----------------------------------MEDIA QUERY PORQUE REMAX-----------------------DONE*/
+
+.porque {
+    background-color: #FFFFFF;
+    color:#dbdbdb;
+    text-align: center;
+}.porque h1{
+    margin-top: 1em;
+    font-size: 39px;
+    font-weight: bolder;
+    color: rgba(40, 58, 98, 1);
+}
+.porque h2{
+    text-align: left;
+    font-size: 19px;
+    font-weight: lighter;
+    color: white;
+    border-left: 3px solid #FFFFFF;
+    padding: 0.5em;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.porque img.imgPq{
+    width: 200px;
+    padding-left: 0.5em;
+}
+.porque img.globo{
+    margin: auto;
+    width:40px;
+    padding-top: 3em;
+    vertical-align: middle;
+}
+.porque img.bottom{
+    vertical-align: middle;
+    margin-top: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .porque img.bottom{
+        display: none;
+    }
+    .porque img.globo{
+        display: none;
+    }
+    .porque h1{
+        font-size: 30px;
+    }
+    .porque img.imgPq{
+    width: 150px;
+    }
+}      
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 767px) {
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 45%;
+    }
+    .porque h1{
+        font-size: 30px;
+    }
+    .porque img.imgPq{
+    width: 150px;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 840px) {
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right :3em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 45%;
+    }
+    .porque h1{
+        font-size: 30px;
+    }
+    .porque img.imgPq{
+    width: 150px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    .porque h2{
+        margin-top: 2em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 30%;
+    }
+    .porque h1{
+    font-size: 35px;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .porque h2{
+        text-align: left;
+        color: white;
+        border-left: 3px solid #FFFFFF;
+        margin-top: 2em;
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    .porque img.bottom{
+        vertical-align: middle;
+        margin-top: 10%;
+    }
+}
+
+/*----------------------------------MEDIA QUERY PROPUESTA-----------------------DONE*/
+
+.propuesta {
+    background-color: #FFFFFF;
+    vertical-align: middle;
+    margin-bottom: 3em;
+}.propuesta h1{
+    font-size: 39px;
+    font-weight: bolder;
+    color: rgba(40, 58, 98, 1);
+}.propuesta h2{
+    text-align: left;
+    font-size: 19px;
+    font-weight: lighter;
+    color: #FFFFFF;
+    vertical-align: middle;
+}
+.block{
+    background-color: rgba(193, 27, 43, 1);
+    border-radius: 15px 15px 15px;
+    padding:1em;
+    margin:1em
+}
+@media only screen and (max-width: 768px) {
+    .propuesta h2{
+        text-align: left;
+        font-size: 25px;
+    }  
+    .propuesta img{
+        padding:1.5em
+    }
+} 
+@media only screen and (min-width: 768px) {
+      
+}  
+@media only screen and (min-width: 830px) {
+    .propuesta h2{
+        text-align: left;
+        font-size: 17px;
+    }  
+}
+@media only screen and (min-width: 992px) { 
+    .propuesta h2{
+        text-align: left;
+        font-size: 17px;
+    } 
+} 
+/*----------------------------------MEDIA QUERY PERFIL-----------------------DONE*/
+
+.perfil {
+    background-color: #1e3054;
+    color:#dbdbdb;
+    text-align: center;
+    padding-bottom: 2em;
+}.perfil h1{
+    color:#FFFFFF;
+    
+}.perfil h2{
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight: lighter;
+    margin-top: 1em;
+    line-height:1em
+}.perfil img{
+    width:60%
+}
+article.perfil {
+    padding-left:10em;
+    display: inline-block;
+}
+@media only screen and (max-width: 575px) {
+   .perfil img{width: 30%;} 
+} 
+/*----------------------------------MEDIA QUERY AGENTES-----------------------TODO*/
+
+.teams {
+    background-color: #dbdbdb;
+    color:#1e3054;
+    text-align: center;
+    padding-bottom: 0em;
+}.teams img{
+    border-radius: 100%;
+    width: 100%;
+}.teams h1{
+    color:#1e3054;
+}.teams h2{
+    color:#1e3054;
+    font-size:14px;
+    font-weight: bold;
+}article.agent {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+@media only screen and (max-width: 575px) {
+    .teams img{
+        width: 60%;
+    } 
+} 
+/*----------------------------------MEDIA QUERY FORMULARIO-----------------------DONE*/
+
+.postulate{
+    padding-top: 2em;
+    background-color: #d51e30;
+    color:white;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.postulate h1 {
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    color :white;
+    padding-bottom: 0em;
+}
+.postulate h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color :white
+}
+.postulate label{
+    font-size: 13px;
+    font-weight: lighter;
+    color :white;
+    
+    padding-top: 3em;
+}
+.postulate input{
+    background-color: #d51e30;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    color: white;
+}
+.postulate input.large{
+    background-color: #d51e30;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 100%;
+}
+.postulate input:focus {
+    outline: none;
+    color: white;
+  }
+.postulate input[type=button], input[type=submit], input[type=reset] {
+    margin-top: 1em;
+    background-color: #d51e30;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.postulate ::placeholder{
+    color: brown;
+}
+/*----------------------------------MEDIA QUERY FOOTER-----------------------TODO*/
+
+footer {
+    background: #d51e30;
+}
+footer h1 {
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    color :white;
+    padding-bottom: 0em;
+}
+footer h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color :white
+}
+footer p {
+    color: white;
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 18px;
+}
+footer img{
+    margin-bottom: 1em;
+}
+footer span.bolder{
+    font-weight: bold;
+}
+footer span.legal{
+    font-size:10px;line-height:0em
+}
+footer span.last{
+    font-weight: bold;
+    font-size: 14px;
+}
+footer div.encontranos{
+    margin-top: 0em; margin-bottom: 0em; margin-left:10em;margin-right:10em
+}
+footer .footerP{
+    margin-right: 10em
+}
+@media only screen and (max-width: 765px) {
+    footer div.encontranos{
+        margin-left:0em;margin-right:0em
+    }
+    footer .footerP{
+        margin-right: 0em
+    }
+} 
+@media only screen and (min-width: 768px) {
+    footer .footerP{
+        margin-right: 0em
+    }
+}  
+@media only screen and (min-width: 830px) {
+    footer .footerP{
+        margin-right: 0em
+    }
+}
