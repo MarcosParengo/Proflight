@@ -9,6 +9,7 @@ $(document).ready(function () {
     var toggled=false;
     var mediaqueryList = window.matchMedia("(max-width: 992px)");
     var mediaqueryListAgent = window.matchMedia("(max-width: 1200px)");
+    var navbarSupportedContent= $("#navbarSupportedContent")
     var navBarBrandImage= $("#navBarBrandImage")
     var navBarToggler=$("#navBarToggler")
     var navBarTogglerIcon=$("#navBarTogglerIcon")
@@ -31,6 +32,8 @@ $(document).ready(function () {
         navBarBrandImage.hover(sourceSwap, sourceSwap);
     });
     navBarToggler.click(function () {
+        var algo=navbarSupportedContent.is(":visible")
+        console.log(algo)
         var newSource = navBarTogglerIcon.data('alt-src');
         navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
         navBarTogglerIcon.attr('src', newSource);
