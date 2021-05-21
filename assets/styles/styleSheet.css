@@ -28,15 +28,18 @@ body p {
     font-size: 18px;
 }
 /*----------------------------------MEDIA QUERY HEADER -------------------------------DONE*/
-.navbar{
-    padding-top: 0;
+.sidebar{
+    margin: 0px;
+    padding:0px;
 }
-.navbar-brand{
-    padding-bottom:0px;
+.navbar{
     padding-top: 0px;
 }
+.navbar-brand{
+    padding-top: 20px;
+}
 .navbar-nav{
-    padding-bottom: 100em;
+    height: 100vh;
     background-color:rgba(200, 200, 200, 0.5);
 }
 .nav-item{
@@ -45,8 +48,16 @@ body p {
     margin: 0;
 }
 .navbar-toggler{
-    border-color:rgba(0, 0, 0, 0);
+    align-items: flex-end;
+    text-align: end;
     border: none;
+    border-radius: 0;
+    border-color:rgba(0, 0, 0, 0) ;
+    background-color: rgba(200, 200, 200, 0.0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline:0;
+    width: 25%;
 }
 @media only screen and (min-width: 545px) {
      
@@ -74,16 +85,10 @@ body p {
     .navbar-brand{
         padding-left: 5em;
     }
-    .navbar-toggler{
-        padding-right: 5em;
-        padding-left: 253px;
-        border-radius: 0;
-        border-color:rgba(0, 0, 0, 0) ;
-        background-color: rgba(200, 200, 200, 0.5);
-    }
     .nav-item{
-        padding-right: 5em;
-        font-size: 20px
+        padding-right: 30%;
+        font-size: 20px;
+        text-align: right;
     }
 }
 

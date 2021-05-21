@@ -6,9 +6,12 @@ var aver;
 
 
 $(document).ready(function () {
+    var toggled=false;
     var mediaqueryList = window.matchMedia("(max-width: 992px)");
     var mediaqueryListAgent = window.matchMedia("(max-width: 1200px)");
-
+    var navBarBrandImage= $("#navBarBrandImage")
+    var navBarToggler=$("#navBarToggler")
+    var navBarTogglerIcon=$("#navBarTogglerIcon")
     containerAgent = $("#containerAgent")
     var team = "assets/data/agent.json"
     containerValores = $("#containerValores")
@@ -16,40 +19,29 @@ $(document).ready(function () {
     containerPropuesta = $("#containerPropuesta")
     var propuesta = "assets/data/propuesta.json"
     LoadJson(perfil, 2)
-    
-    if(mediaqueryList.matches) {//Primer carga segun el tamano (Propuesta)
-        LoadJson(propuesta, 3, 1)
-        console.log("menos de 992")
-    }else{
-        LoadJson(propuesta, 3, 0)
-        console.log("mas de 992") 
+
+    var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
     }
-    if(mediaqueryListAgent.matches) {//Primer carga segun el tamano (Agentes)
-        LoadJson(team, 1,1)
-        console.log("menos de 1200")
-    }else{
-        LoadJson(team, 1,0)
-        console.log("mas de 1200") 
+
+    $(function () {
+        navBarBrandImage.hover(sourceSwap, sourceSwap);
+    });
+    navBarToggler.click(function () {
+        var newSource = navBarTogglerIcon.data('alt-src');
+        navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
+        navBarTogglerIcon.attr('src', newSource);
+        if(toggled==false){
+            navBarToggler.css('background-color', 'rgba(200,200,200,0.5)');
+            toggled=true;
+        }else{
+            navBarToggler.css('background-color', 'rgba(0,0,0,0.0)');
+            toggled=false;
     }
-    
-    mediaqueryList.addListener( function(EventoMediaQueryList) {//cambio de la construccion segun los cambios del tamano(Propuesta)
-        if(mediaqueryList.matches) {
-            LoadJson(propuesta, 3,1)
-            console.log("se fue a menos de 992")
-        }else{
-            LoadJson(propuesta, 3,0)
-            console.log("se pasa de 992")
-        }
-    }); 
-    mediaqueryListAgent.addListener( function(EventoMediaQueryList) {
-        if(mediaqueryListAgent.matches) {
-            LoadJson(team, 1,1)
-            console.log("se fue a menos de 1200")
-        }else{
-            LoadJson(team, 1,0)
-            console.log("se pasa de 1200")
-        }
-    }); 
+    })
 })
 
 function LoadJson(url, which,MQ) {
