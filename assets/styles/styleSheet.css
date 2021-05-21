@@ -92,13 +92,16 @@ body p {
     background-color:#002e5d;
     background-image: url(https://cdn4.buysellads.net/uu/1/81016/1609783196-authentic-260x200-variation-3.jpg);
 }
-.bienvenido {
+.home {
     background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
     background-size: 100% ;
-}.bienvenido .texto{
-    padding-top: 15%;
+}.bienvenido div{
     padding-left: 15%;
-}.bienvenido h1{
+}
+.bienvenido .texto{
+    padding-top: 15%;
+    padding-left: 0%;
+}.bienvenido .bienvenidaTitulo{
     text-align: start;
     font-size: 60px;
     font-weight: lighter;
@@ -117,30 +120,21 @@ body p {
     padding-right: 25%;
     line-height : 40px;
 }
-@media only screen and (max-width: 768px) {
-    .propuesta h2{
-        text-align: left;
-        font-size: 25px;
-    }  
-    .propuesta img{
-        padding:1.5em
-    }
-} 
-@media only screen and (min-width: 768px) {
-      
-}  
-@media only screen and (min-width: 830px) {
-    .propuesta h2{
-        text-align: left;
-        font-size: 17px;
-    }  
+.bienvenido .cómopilotoTitulo{
+    text-align: start;
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 35%;
+    padding-bottom: 5%;
 }
-@media only screen and (min-width: 992px) { 
-    .propuesta h2{
-        text-align: left;
-        font-size: 17px;
-    } 
-} 
+.bienvenido .timeline{
+    color: white;
+    padding-left: 0%!important;
+    text-align: start;
+    letter-spacing: 40px;
+}
+
 footer {
     background: #d51e30;
 }
