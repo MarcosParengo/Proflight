@@ -359,22 +359,22 @@ body p {
     color: rgba(255, 255, 255, 1);
     padding-bottom: 5%;
 }.nav-tabs{
-    border: none;
+    border: none!important;
 }
 .nav-tabs .nav-link{
-    border: none;
+    border: none!important;
     border: 0px solid transparent;
 }.nav-link img{
-    opacity: 0.3;
+    opacity: 0.3!important;
 }.nav-link:hover img{
-    opacity: 0.7;
+    opacity: 0.7!important;
 }.nav-link.active{
     background-color: rgba(200, 200, 200, 0.0)!important;
-    border: none;
+    border: none!important;
 }.nav-link.active img{
-    opacity: 1;
+    opacity: 1!important;
 }.tab-pane{
-    color: white;
+    color: white!important;
 }
 footer {
     background: #d51e30;
