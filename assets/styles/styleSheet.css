@@ -94,10 +94,10 @@ body p {
 .home {
     background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
     background-size: 100% ;
-}.bienvenido div{
+}.bienvenido .parent{
     padding-left: 15%;
-}
-.bienvenido .texto{
+}.bienvenido .childleft{
+    padding-right: 15%;
     padding-top: 15%;
     padding-left: 0%;
 }.bienvenido .bienvenidaTitulo{
@@ -109,14 +109,13 @@ body p {
 }.bienvenido h2{
     color: rgb(27,76,96);
     padding-top: 10%;
-    padding-right: 25%;
     font-weight: bolder;
 
 }
 .bienvenido p.lead{
     text-align: left;
     color: white;
-    padding-right: 25%;
+    padding-right: 15%;
     line-height : 40px;
 }
 .bienvenido .cómopilotoTitulo{
@@ -131,20 +130,21 @@ body p {
   margin-top: 100px;
   margin-bottom: 100px;
   padding-left: 0;
-  width: 75%;
+  width: 85%;
   height: 20px;
   list-style: none;
   text-align: justify;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(70,0,220,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(48,58,62,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
 }
 
 .timeline:after {display: inline-block; content: ""; width: 100%;}
 
 .timeline li {
+  text-transform: uppercase;
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: rgba(30,0,150,1);
+  background: rgba(58,69,83,1);
   text-align: center;
   line-height: 1.2;
   position: relative;
@@ -153,6 +153,7 @@ body p {
 }
 
 .timeline li:before {
+  color:rgb(53,187,215);
   display: inline-block;
   content: attr(data-year);
   font-size: 26px;
@@ -172,6 +173,7 @@ body p {
 }
 
 .timeline li:after {
+  color: rgb(92,100,112);
   display: inline-block;
   content: attr(data-text);
   font-size: 16px;
@@ -201,6 +203,66 @@ body p {
       -ms-transform: translate(-50%, -100%);
        -o-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
+}.programas .parent{
+    padding-left: 15%;
+}.programas .childleft{
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-left: 0%;
+}.programas .programasTitulo{
+    padding-left: 0%;
+    text-align: start;
+    font-size: 35px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+}
+.programas .more{
+    padding-top: 20px;
+    font-size: 15px;
+}.programas .carousel{
+    padding-right: 25%;
+}.programas .carousel-inner{
+    height: 100%;
+}
+.programas .carousel-caption{
+    right: 0!important;
+    left:0!important;
+}
+.programas .carousel-caption h1{
+    font-size: 20px;
+    text-align: start;
+}
+.programas .carousel-caption p{
+    font-size: 15px;
+}
+.programas .tittle
+{
+    color: white;
+}
+.programas .number{
+    color: rgb(53,187,215);
+}
+.programas .sliderButton{
+    height: 35px;
+    width: 35px;
+    padding:6px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(75,84,97);
+}
+.programas .buttonContent{
+    padding:6px;
+    height: 20px;
+    width: 15px;
+}
+.programas .sliderButton:hover{
+    background-color: rgb(49,171,198);
+}
+.programas .btn-primary{
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(53,187,215)
 }
 footer {
     background: #d51e30;

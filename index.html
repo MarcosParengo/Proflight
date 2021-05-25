@@ -76,9 +76,9 @@
   </div>
   <section class="home">
     <section class="bienvenido">
-      <div class="container-fluid my-5 pt-0 mt-0">
+      <div class="parent container-fluid my-5 pt-0 mt-0">
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 ">
-          <div class="texto col-lg-9">
+          <div class="childleft col-lg-9">
             <h1 id="home" class="bienvenidaTitulo" >¡Bienvenidos a ProFlight!</h1>
             <p class="lead mb-0">Somos una institución orientada a la formación de pilotos privados y comerciales capacitados para aportar al desarrollo futuro de la aeronáutica a nivel mundial.</p>
             <p class="lead pt-0">Con pilares en la exigencia, integralidad y desarrollo tencnológico hemos transgredido la educación convencional para enfocarnos en una enseñanza de estandares superiores.</p>
@@ -89,16 +89,86 @@
             </p>
             
               <ul class="timeline">
-                <li data-year="1" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
-                <li data-year="2" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
-                <li data-year="3" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
-                <li data-year="4" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
-                <li data-year="5" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
+                <li data-year="1" data-text="piloto privado"></li>
+                <li data-year="2" data-text="habilitación de instrumentos"></li>
+                <li data-year="3" data-text="habilitación nocturno"></li>
+                <li data-year="4" data-text="habilitacion bimotor"></li>
+                <li data-year="5" data-text="piloto comercial"></li>
               </ul>
             
           </div>
           <div class="col-lg-3 p-0 " style="margin-left: -400px; ">
               <img src="assets\images\components\Pagina 2 04.png" alt="" width="1080">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="programas">
+      <div class="parent container-fluid my-5 pt-0 mt-0">
+        <div class="row p-0 pb-0 pe-lg-0 pt-lg-5 ">
+          <div class="childleft col-lg-9">
+            <h1 id="home" class="programasTitulo" >Programas</h1>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                    <div class="container p-0">
+                      <div class="carousel-caption text-start p-0">
+                        <h1><span class="number">01. </span><span class="tittle">Licencia de piloto privado</span></h1>
+                        <p>Esta es tu primera licencia, en donde tendrás que volar un mínimo de 40 horas, 10 de simulador y
+                           aprobar 13 materias, ofrecemos dos planes para realizar esta licencia 61 o 141.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                    <div class="container">
+                      <div class="carousel-caption text-start">
+                        <h1><span class="number">02. </span><span class="tittle">Licencia de piloto comercial</span></h1>
+                        <p>Los estudiantes desarrollarán las competencias suficientes para desempeñarse como primer oficial de
+                          las líneas aéreas de transporte comercial.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%"   xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                    <div class="container">
+                      <div class="carousel-caption text-start">
+                        <h1><span class="number">03 .</span><span class="tittle">Habilitación de vuelo multimotor</span></h1>
+                        <p>Los estudiantes pueden escoger realizarla en Argentina o en el país de origen de cada uno, aunque siempre recomendamos realizarlo en nuestro país para luego regresar con todas las certificaciones.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%"  xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                    <div class="container p-0">
+                      <div class="carousel-caption text-start">
+                        <h1><span class="number">04. </span><span class="tittle">Instructor de vuelo</span></h1>
+                        <p>Todo piloto acreedor de esta licencia será una persona con la capacidad y vocación para 
+                          contribuir al desarrollo y crecimiento profesional de alumnos</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="sliderButton" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="sliderButton" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+              <p class="more">Si quieres saber mas acerca de cada plan    <button class="btn btn-primary m-2" type="submit">Haz click aquí</button></p>
+            </div>
+          <div class="col-lg-3 p-0 " style="margin-left: -400px; ">
           </div>
         </div>
       </div>
