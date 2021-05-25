@@ -263,6 +263,65 @@ body p {
     font-size: 15px;
     border-radius: 20px;
     background-color: rgb(53,187,215)
+}.flota .parent{
+    padding-left: 0%;
+}.flota .childleft{
+    padding-right: 20%;
+    padding-top: 7%;
+    padding-left: 15%;
+}.flota .flotaTitulo{
+    text-align: start;
+    font-size: 35px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+}.flota .lead{
+    padding-right: 25%;
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+}.flota .carousel{
+    padding-right: 10%;
+    padding-left: 10%;
+}.flota .carousel-inner{
+    padding-bottom: 2%;
+}.flota .bd-placeholder-img:hover{
+    display:none;
+}.flota .bd-placeholder-img{
+    display:block;
+}
+.flota .left{
+    width: 30%;
+}.flota .center{
+    padding-left: 5%;
+    width: 39.5%;
+    padding-right: 5%;
+}.flota .right{
+    width: 30%;
+}
+.flota .sliderButton{
+    height: 35px;
+    width: 35px;
+    padding:6px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(75,84,97);
+    float: right;
+}
+.flota .buttonContent{
+    padding:6px;
+    height: 20px;
+    width: 15px;
+}
+.flota .sliderButton:hover{
+    background-color: rgb(49,171,198);
+}
+.flota .btn-primary{
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(53,187,215)
 }
 footer {
     background: #d51e30;
