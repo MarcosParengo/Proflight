@@ -349,6 +349,32 @@ body p {
     font-size: 15px;
     border-radius: 20px;
     background-color: rgb(53,187,215)
+}.tecnologia {
+    padding-top: 15%;
+}
+.tecnologia h1{
+    text-align: start;
+    font-size: 35px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+}.nav-tabs{
+    border: none;
+}
+.nav-tabs .nav-link{
+    border: none;
+    border: 0px solid transparent;
+}.nav-link img{
+    opacity: 0.3;
+}.nav-link:hover img{
+    opacity: 0.7;
+}.nav-link.active{
+    background-color: rgba(200, 200, 200, 0.0)!important;
+    border: none;
+}.nav-link.active img{
+    opacity: 1;
+}.tab-pane{
+    color: white;
 }
 footer {
     background: #d51e30;
