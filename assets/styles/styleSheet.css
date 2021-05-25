@@ -287,21 +287,48 @@ body p {
     padding-left: 10%;
 }.flota .carousel-inner{
     padding-bottom: 2%;
-}.flota .bd-placeholder-img:hover{
-    display:none;
-}.flota .bd-placeholder-img{
-    display:block;
 }
-.flota .left{
+.flota .item{
+    position: relative;
+}.flota .left{
     width: 30%;
+    float: left;
 }.flota .center{
-    padding-left: 5%;
-    width: 39.5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    width: 30%;
+    margin-right: 5%;
+    float: left;
 }.flota .right{
     width: 30%;
-}
-.flota .sliderButton{
+    float: left;
+}.item .photo{
+    width: 100%;
+}.flota .item .txtOverlapParent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255,0.6);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}.flota .txtOverlap {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    font-size: 35px;
+    color: rgb(92,100,112);
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}.flota .item:hover div{
+    opacity: 1;
+    visibility: visible;
+}.flota .sliderButton{
     height: 35px;
     width: 35px;
     padding:6px;
