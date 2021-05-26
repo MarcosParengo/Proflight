@@ -235,6 +235,7 @@ body p {
 }
 .programas .carousel-caption p{
     font-size: 15px;
+    line-height: 2rem;
 }
 .programas .tittle
 {
@@ -276,6 +277,7 @@ body p {
     color: rgba(255, 255, 255, 1);
     padding-bottom: 5%;
 }.flota .lead{
+    line-height: 2rem;
     padding-right: 25%;
     text-align: start;
     font-size: 15px;
@@ -375,8 +377,25 @@ body p {
     opacity: 1!important;
 }.tab-pane{
     color: white!important;
+}.tab-pane .titulo{
+    position: relative;
 }
-footer {
+.titulo .texto{
+    text-align: start;
+    font-size: 30px;
+}.titulo .number{
+    position: absolute;
+     bottom: 0;
+     right: 0;
+    font-size:15px;
+    color: rgb(53,187,215);
+}.tab-content .lead{
+    line-height: 2rem;
+    border-top: 1px solid;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+}footer {
     background: #d51e30;
 }
 footer h1 {
