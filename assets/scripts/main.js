@@ -62,7 +62,7 @@ function fillContainerTestimonios(obj) {
                 <div class="card-body">
                 <h5 class="card-title">${obj.nombre}</h5>
                 <p class="hidden testimonio card-text">${obj.testimonioAdelanto}</p>
-                    <p class="show nacionalidad card-text">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen.toLowerCase()}.png" alt="-"></p>
+                    <p class="show nacionalidad card-text">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
                 </div>
                 <div class="card-footer">
                 <a class="show" href="#">Ver testimonio</a>
