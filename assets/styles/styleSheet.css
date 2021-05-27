@@ -237,7 +237,7 @@ body p {
     font-size: 15px;
     line-height: 2rem;
 }
-.programas .tittle
+.programas .title
 {
     color: white;
 }
@@ -395,6 +395,59 @@ body p {
     font-size: 15px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 1);
+}.alumnos .title{
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-bottom: 7%;
+    text-align: start;
+    color: rgb(133,139,148);
+}.alumnos .enfasis{
+    color: white;
+}.alumnos .card{
+    background-color: rgb(35,47,63);
+}.alumnos .card .img-fluid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -25%;
+}.alumnos .card:hover .hidden{
+    opacity: 1;
+    height: auto;
+}.alumnos .card:hover .show{
+    display: none;
+}.alumnos .hidden{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+}.alumnos .show{
+    display: block;
+}.alumnos .show img{
+    width: 18%;
+    padding-left: 0.5em;
+}.alumnos .card .card-title{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}.alumnos .card-body .nacionalidad{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}.alumnos .card-body .testimonio{
+    font-size: 15px;
+    transition: opacity 2s ease-out;
+}.alumnos .card-footer{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-top:0px solid;
+    background-color:rgba(0,0,0,.0);
+    color:rgb(53,187,215);
+    text-align: center;
+}.alumnos .card-footer a{
+    color:rgb(53,187,215);
+    text-transform: uppercase;
 }footer {
     background: #d51e30;
 }
