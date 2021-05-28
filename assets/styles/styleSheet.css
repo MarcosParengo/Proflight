@@ -263,7 +263,8 @@ body p {
 .programas .btn-primary{
     font-size: 15px;
     border-radius: 20px;
-    background-color: rgb(53,187,215)
+    background-color: rgb(53,187,215);
+    border-color:rgb(46,144,169);
 }.flota .parent{
     padding-left: 0%;
 }.flota .childleft{
@@ -350,7 +351,8 @@ body p {
 .flota .btn-primary{
     font-size: 15px;
     border-radius: 20px;
-    background-color: rgb(53,187,215)
+    background-color: rgb(53,187,215);
+    border-color:rgb(46,144,169);
 }.tecnologia {
     padding-top: 15%;
 }
@@ -362,8 +364,7 @@ body p {
     padding-bottom: 5%;
 }.nav-tabs{
     border: none!important;
-}
-.nav-tabs .nav-link{
+}.nav-tabs .nav-link{
     border: none!important;
     border: 0px solid transparent;
 }.nav-link img{
@@ -379,8 +380,7 @@ body p {
     color: white!important;
 }.tab-pane .titulo{
     position: relative;
-}
-.titulo .texto{
+}.titulo .texto{
     text-align: start;
     font-size: 30px;
 }.titulo .number{
@@ -448,6 +448,61 @@ body p {
 }.alumnos .card-footer a{
     color:rgb(53,187,215);
     text-transform: uppercase;
+}.eventos .title{
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-bottom: 7%;
+    text-align: start;
+    color: rgb(255,255,255);
+}.eventos .card{
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(42,54,72,0.7));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid;
+}.eventos .card .img-fluid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}.eventos .card:hover .hidden{
+    display: block;
+}.eventos .card:hover .show{
+    display: none;
+}.eventos .hidden{
+    display: none;
+}.eventos .show{
+    display: block;
+}.eventos .show img{
+    width: 18%;
+    padding-left: 0.5em;
+}.eventos .card .card-title{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}.eventos .card-body .resumen{
+    padding-top: 2em;
+    font-size: 15px;
+    text-align: center;
+}.eventos .card-body .fecha{
+    padding-top: 0em;
+    text-transform: uppercase;
+    font-size: 15px;
+}.eventos .card-body .ampliado{
+    text-align: center;
+    font-size: 15px;
+    transition: opacity 2s ease-out;
+}.eventos .card-body .titulo{
+    text-transform: uppercase;
+    color:rgb(53,187,215);
+    font-size: 15px;
+    transition: opacity 2s ease-out;
+}.eventos .btn-primary{
+    margin-top: 25%!important;
+    margin-bottom: 15%!important;
+    border-radius: 20px;
+    background-color: rgb(46,144,169);
+    border-color:rgb(46,144,169);
 }footer {
     background: #d51e30;
 }
