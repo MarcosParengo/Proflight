@@ -9,6 +9,7 @@ body {
     font-size: 12px;
     margin: 0;
     font-family:  Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 body h1{
     font-size:30px;
@@ -23,27 +24,18 @@ body p {
     color: white;
     text-decoration: none;
     font-size: 18px;
-}
-.sidebar{
-    margin: 0px;
-    padding:0px;
-}
-.navbar{
+}.navbar{
     padding-top: 0px;
-}
-.navbar-brand{
+}.navbar-brand{
     padding-top: 20px;
-}
-.navbar-nav{
+}.navbar-nav{
     height: 100vh;
     background-color:rgba(200, 200, 200, 0.5);
-}
-.nav-item{
+}.nav-item{
     color: white;
     text-align: right;
     margin: 0;
-}
-.navbar-toggler{
+}.navbar-toggler{
     align-items: flex-end;
     text-align: end;
     border: none;
@@ -53,27 +45,78 @@ body p {
     padding-top: 20px;
     padding-bottom: 20px;
     outline:0;
-    width: 25%;
+} 
+
+/*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
+
+@media only screen and (max-width: 392px) {
+    .navBarContainer{
+        background-color:rgba(200, 200, 200, 0.5);
+    }.col-xxs{
+        width: 100%!important;
+    }.navbar-brand{
+        padding-left: 0.5em;
+        margin-right: 0;
+    }.nav-item{
+        padding-right: 5%;
+        font-size: 20px;
+        text-align: right;
+    }.navbar-nav{
+        background-color:rgba(200, 200, 200, 0.0)!important;
+    }.navbar-toggler{
+        width: auto;
+        background-color: rgba(0,0,0,.0)!important;
+    }
 }
-@media only screen and (min-width: 545px) {
-     
-}   
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 392px) {
     .navbar-brand{
-        padding-left: 0em;
+        padding-left: 0.5em;
+        margin-right: 0;
+    }.nav-item{
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }.navbar-toggler{
+        width: 50%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    .navbar-brand{
+        padding-left: 1em;
+    }.nav-item{
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }.navbar-toggler{
+        width: 33.33333%;
     }
 }  
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 990px) {
+/* Medium devices (landscape tablets, 800 and up) */
+@media only screen and (min-width: 768px) {
     .navbar-brand{
         padding-left: 3em;
+    }.nav-item{
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }.navbar-toggler{
+        width: 25%;
     }
 }
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 1050px) { 
     .navbar-brand{
         padding-left: 5em;
+    }
+    .nav-item{
+        padding-right: 30%;
+        font-size: 15px;
+        text-align: right;
+    }.navbar-toggler{
+        width: 25%;
+    }.navbar-toggler img{
+        margin-right:30%
     }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -85,16 +128,45 @@ body p {
         padding-right: 30%;
         font-size: 20px;
         text-align: right;
+    }.navbar-toggler{
+        width: 25%;
+    }.navbar-toggler img{
+        margin-right:30%
     }
 }
-.main{
-    background-color:#002e5d;
-    background-image: url(https://cdn4.buysellads.net/uu/1/81016/1609783196-authentic-260x200-variation-3.jpg);
+/*-------------------------------------------------- Media Query land -------------------------------------------------DONE*/
+.land{
+    padding-top: 25em;
+    padding-bottom: 25em;
+    background-image:url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/backgroundMain.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
+@media only screen and (max-width: 572px) {
+    .land{
+        background-size: auto;
+        background-size: auto 100%;
+        padding-bottom: 27em;
+    }
+    .land img{
+        width: 60%;
+    }
+}@media only screen and (min-width: 1324px) {
+    .land{
+        background-size: 100% 100%;
+    }
+}
+
+
+/*-------------------------------------------------- Media Query landingHome --------------------------------------------------DONE*/
 .home {
     background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
-    background-size: 100% ;
-}.bienvenido .parent{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*-------------------------------------------------- Media Query Bienvenido --------------------------------------------------TODO*/
+
+.bienvenido .parent{
     padding-left: 15%;
 }.bienvenido .childleft{
     padding-right: 15%;
@@ -111,22 +183,19 @@ body p {
     padding-top: 10%;
     font-weight: bolder;
 
-}
-.bienvenido p.lead{
+}.bienvenido p.lead{
     text-align: left;
     color: white;
     padding-right: 15%;
     line-height : 40px;
-}
-.bienvenido .cómopilotoTitulo{
+}.bienvenido .cómopilotoTitulo{
     text-align: start;
     font-size: 40px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 1);
     padding-top: 35%;
     padding-bottom: 5%;
-}
-.timeline {
+}.timeline {
   margin-top: 100px;
   margin-bottom: 100px;
   padding-left: 0;
@@ -135,11 +204,9 @@ body p {
   list-style: none;
   text-align: justify;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(48,58,62,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
-}
-
-.timeline:after {display: inline-block; content: ""; width: 100%;}
-
-.timeline li {
+}.timeline:after {
+    display: inline-block; content: ""; width: 100%;
+}.timeline li {
   text-transform: uppercase;
   display: inline-block;
   width: 20px;
@@ -150,9 +217,7 @@ body p {
   position: relative;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-}
-
-.timeline li:before {
+}.timeline li:before {
   color:rgb(53,187,215);
   display: inline-block;
   content: attr(data-year);
@@ -163,16 +228,11 @@ body p {
       -ms-transform: translateX(-50%);
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.timeline li:nth-child(odd):before {
+}.timeline li:nth-child(odd):before {
   top: -40px;
-}
-.timeline li:nth-child(even):before {
+}.timeline li:nth-child(even):before {
   bottom: -40px;
-}
-
-.timeline li:after {
+}.timeline li:after {
   color: rgb(92,100,112);
   display: inline-block;
   content: attr(data-text);
@@ -184,9 +244,7 @@ body p {
       -ms-transform: translateX(-50%);
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.timeline li:nth-child(odd):after {
+}.timeline li:nth-child(odd):after {
   bottom: 0;
   margin-bottom: -10px;
   -webkit-transform: translate(-50%, 100%);
@@ -194,8 +252,7 @@ body p {
       -ms-transform: translate(-50%, 100%);
        -o-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
-}
-.timeline li:nth-child(even):after {
+}.timeline li:nth-child(even):after {
   top: 0;
   margin-top: -10px;
   -webkit-transform: translate(-50%, -100%);
@@ -203,7 +260,118 @@ body p {
       -ms-transform: translate(-50%, -100%);
        -o-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
-}.programas{
+}
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .bienvenido .bienvenidaTitulo{
+        text-align: start;
+        font-size: 35px;
+    }.bienvenido p.lead{
+        font-size: 15px;
+        line-height : 2rem;
+    }.bienvenido h2{
+        font-size: 17px;
+    }.bienvenido .parent{
+        padding-left: 5%;
+    }.bienvenido .childleft{
+        padding-right: 5%;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .bienvenido .bienvenidaTitulo{
+        text-align: start;
+        font-size: 35px;
+    }.bienvenido p.lead{
+        font-size: 15px;
+        line-height : 2rem;
+    }.bienvenido h2{
+        font-size: 17px;
+    }.bienvenido .parent{
+        padding-left: 5%;
+    }.bienvenido .childleft{
+        padding-right: 5%;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .bienvenido .bienvenidaTitulo{
+        text-align: start;
+        font-size: 35px;
+    }.bienvenido p.lead{
+        font-size: 15px;
+        line-height : 2rem;
+    }.bienvenido h2{
+        font-size: 17px;
+    }.bienvenido .parent{
+        padding-left: 5%;
+    }.bienvenido .childleft{
+        padding-right: 5%;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bienvenido .bienvenidaTitulo{
+        text-align: start;
+        font-size: 40px;
+    }.bienvenido p.lead{
+        font-size: 17px;
+        line-height : 2rem;
+    }.bienvenido h2{
+        font-size: 25px;
+    }.bienvenido .parent{
+        padding-left: 5%;
+    }.bienvenido .childleft{
+        padding-right: 5%;
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    .bienvenido .bienvenidaTitulo{
+        text-align: start;
+        font-size: 40px;
+    }.bienvenido p.lead{
+        font-size: 17px;
+        line-height : 2rem;
+    }.bienvenido h2{
+        font-size: 30px;
+    }.bienvenido .parent{
+        padding-left: 5%;
+    }.bienvenido .childleft{
+        padding-right: 15%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .bienvenido .bienvenidaTitulo{
+        text-align: start;
+        font-size: 60px;
+    }.bienvenido p.lead{
+        font-size: 20px;
+    }.bienvenido h2{
+        font-size: 30px;
+    }.bienvenido .parent{
+        padding-left: 15%;
+    }.bienvenido .childleft{
+        padding-right: 15%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }
+}
+/*-------------------------------------------------- Media Query programas --------------------------------------------------TODO*/
+
+.programas{
     padding-bottom: 15%;
 }.programas .parent{
     padding-left: 15%;
@@ -218,56 +386,49 @@ body p {
     font-weight: lighter;
     color: rgba(255, 255, 255, 1);
     padding-bottom: 5%;
-}
-.programas .more{
+}.programas .more{
     padding-top: 20px;
     font-size: 15px;
 }.programas .carousel{
     padding-right: 25%;
 }.programas .carousel-inner{
     height: 100%;
-}
-.programas .carousel-caption{
+}.programas .carousel-caption{
     right: 0!important;
     left:0!important;
-}
-.programas .carousel-caption h1{
+}.programas .carousel-caption h1{
     font-size: 20px;
     text-align: start;
-}
-.programas .carousel-caption p{
+}.programas .carousel-caption p{
     font-size: 15px;
     line-height: 2rem;
-}
-.programas .title
-{
+}.programas .title{
     color: white;
-}
-.programas .number{
+}.programas .number{
     color: rgb(53,187,215);
-}
-.programas .sliderButton{
+}.programas .sliderButton{
     height: 35px;
     width: 35px;
     padding:6px;
     border: none;
     border-radius: 50%;
     background-color: rgb(75,84,97);
-}
-.programas .buttonContent{
+}.programas .buttonContent{
     padding:6px;
     height: 20px;
     width: 15px;
-}
-.programas .sliderButton:hover{
+}.programas .sliderButton:hover{
     background-color: rgb(49,171,198);
-}
-.programas .btn-primary{
+}.programas .btn-primary{
     font-size: 15px;
     border-radius: 20px;
     background-color: rgb(53,187,215);
     border-color:rgb(46,144,169);
-}.flota .parent{
+}
+
+/*-------------------------------------------------- Media Query flota  --------------------------------------------------TODO*/
+
+.flota .parent{
     padding-left: 0%;
 }.flota .childleft{
     padding-right: 20%;
@@ -292,8 +453,7 @@ body p {
     padding-left: 10%;
 }.flota .carousel-inner{
     padding-bottom: 2%;
-}
-.flota .item{
+}.flota .item{
     position: relative;
 }.flota .left{
     width: 30%;
@@ -341,25 +501,25 @@ body p {
     border-radius: 50%;
     background-color: rgb(75,84,97);
     float: right;
-}
-.flota .buttonContent{
+}.flota .buttonContent{
     padding:6px;
     height: 20px;
     width: 15px;
-}
-.flota .sliderButton:hover{
+}.flota .sliderButton:hover{
     background-color: rgb(49,171,198);
-}
-.flota .btn-primary{
+}.flota .btn-primary{
     font-size: 15px;
     border-radius: 20px;
     background-color: rgb(53,187,215);
     border-color:rgb(46,144,169);
-}.tecnologia {
+}
+
+/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------TODO*/
+
+.tecnologia {
     padding-top: 15%;
     padding-bottom: 10%;
-}
-.tecnologia h1{
+}.tecnologia h1{
     text-align: start;
     font-size: 35px;
     font-weight: lighter;
@@ -398,7 +558,11 @@ body p {
     font-size: 15px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 1);
-}.alumnos{
+}
+
+/*-------------------------------------------------- Media Query Alumnos --------------------------------------------------TODO*/
+
+.alumnos{
     padding-bottom: 10%;
 }.alumnos .title{
     padding-top: 7%;
@@ -453,7 +617,11 @@ body p {
 }.alumnos .card-footer a{
     color:rgb(53,187,215);
     text-transform: uppercase;
-}.eventos{
+}
+
+/*-------------------------------------------------- Media Query Eventos  --------------------------------------------------TODO*/
+
+.eventos{
     padding-bottom: 15%;
 }.eventos .title{
     padding-top: 7%;
@@ -510,7 +678,11 @@ body p {
     border-radius: 20px;
     background-color: rgb(46,144,169);
     border-color:rgb(46,144,169);
-}.masInformacion{
+}
+
+/*-------------------------------------------------- Media Query  Mas información--------------------------------------------------TODO*/
+
+.masInformacion{
     padding-bottom: 10%;
 }.masInformacion h2{
     text-align: start;
@@ -524,7 +696,11 @@ body p {
     color: black;
     background-color: rgb(53,187,215);
     border-color:rgb(46,144,169);
-}.footer h1 {
+}
+
+/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+
+.footer h1 {
     font-size:40px;
     font-weight: bold;
     text-align: end;
