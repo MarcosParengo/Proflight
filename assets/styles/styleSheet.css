@@ -141,20 +141,56 @@ body p {
     background-image:url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/backgroundMain.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
-}
-@media only screen and (max-width: 572px) {
+    height:100vh;
+}.land img{
+    display: block;
+    width: 30%;
+}@media only screen and (max-width: 480px) {
     .land{
         background-size: auto;
         background-size: auto 100%;
         padding-bottom: 27em;
     }
     .land img{
-        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:50%;
+    }
+}@media only screen and (min-width: 480px) {
+    .land{
+        background-size: auto;
+        background-size: auto 100%;
+        padding-bottom: 27em;
+    }
+    .land img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 572px) {
+    .land{
+        background-size: auto;
+        background-size: auto 100%;
+        padding-bottom: 27em;
+    }
+    .land img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 }@media only screen and (min-width: 1324px) {
     .land{
         background-size: 100% 100%;
-    }
+    }.land img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }1
 }
 
 
