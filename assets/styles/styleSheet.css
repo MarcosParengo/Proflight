@@ -302,7 +302,7 @@ body p {
 @media only screen and (max-width: 392px) {
     .bienvenido .bienvenidaTitulo{
         text-align: start;
-        font-size: 35px;
+        font-size: 25px;
     }.bienvenido p.lead{
         font-size: 15px;
         line-height : 2rem;
