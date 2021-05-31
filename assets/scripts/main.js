@@ -61,7 +61,7 @@ function LoadJson(url,selector) {
 function fillContainerTestimonios(obj) {
     obj.forEach(function (obj) {
         containerTestimonios.append(`
-        <div class="col-sm-3 p-4 mt-5">
+        <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-3 p-md-4 p-sm-0">
             <div class="card h-100">
                 <img src="assets/images/testimonio/profile/${obj.nombre}.png" class="img-fluid" alt="...">
                 <div class="card-body">

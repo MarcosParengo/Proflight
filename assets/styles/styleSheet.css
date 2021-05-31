@@ -991,7 +991,7 @@ body p {
     color: rgba(255, 255, 255, 1);
 }
 
-/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------DONE*/
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 @media only screen and (max-width: 392px) {
@@ -1083,7 +1083,6 @@ body p {
 }.alumnos .title{
     padding-top: 7%;
     padding-left: 15%;
-    padding-bottom: 7%;
     text-align: start;
     color: rgb(133,139,148);
 }.alumnos .enfasis{
@@ -1139,26 +1138,69 @@ body p {
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 @media only screen and (max-width: 392px) {
-    
+    .alumnoCard{
+        margin-top: 30%;
+    }.containerTestimonios{
+        margin: 5%;
+    }.alumnos .title{
+        padding-left: 10%;
+        font-size: 25px;
+    }
 }
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
-    
+    .alumnoCard{
+        margin-top: 30%;
+    }.containerTestimonios{
+        margin: 5%;
+    }.alumnos .title{
+        padding-left: 10%;
+        font-size: 25px;
+    }
 }
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    
+    .alumnoCard{
+        margin-top: 40%;
+    }.containerTestimonios{
+        margin: 5%;
+    }.alumnos .title{
+        padding-left: 15%;
+        font-size: 25px;
+    }
 }  
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .alumnoCard{
+        margin-top: 10%;
+    }.containerTestimonios{
+        margin: 5%;
+    }.alumnos .title{
+        padding-left: 15%;
+        font-size: 25px;
+    }
 }
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 1050px) { 
-    
+    .alumnoCard{
+        margin-top: 7%;
+    }.containerTestimonios{
+        margin: 5%;
+    }.alumnos .title{
+        padding-left: 15%;
+        font-size: 30px;
+    }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .alumnoCard{
+        margin-top: 10%;
+    }.containerTestimonios{
+        margin: 5%;
+    }.alumnos .title{
+        padding-left: 15%;
+        font-size: 30px;
+    }
 }
 
 /*-------------------------------------------------- Seccion Eventos  --------------------------------------------------*/
