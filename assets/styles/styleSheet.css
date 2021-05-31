@@ -25,7 +25,10 @@ body p {
     color: white;
     text-decoration: none;
     font-size: 18px;
-}.navbar{
+}
+/*--------------------------------------------------navBar--------------------------------------------------*/
+
+.navbar{
     padding-top: 0px;
 }.navbar-brand{
     padding-top: 20px;
@@ -135,7 +138,7 @@ body p {
         margin-right:30%
     }
 }
-/*-------------------------------------------------- Media Query land -------------------------------------------------DONE*/
+/*-------------------------------------------------- Seccion land -------------------------------------------------*/
 .land{
     padding-top: 25em;
     padding-bottom: 25em;
@@ -146,6 +149,7 @@ body p {
 }.land img{
     display: block;
     width: 30%;
+/*--------------------------------------------------Media Query land -------------------------------------------------DONE*/
 }@media only screen and (max-width: 480px) {
     .land{
         background-size: auto;
@@ -195,13 +199,50 @@ body p {
 }
 
 
-/*-------------------------------------------------- Media Query landingHome --------------------------------------------------DONE*/
+/*-------------------------------------------------- Seccionn y Media Query landingHome --------------------------------------------------DONE*/
 .home {
     background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: auto 100%;
 }
-/*-------------------------------------------------- Media Query Bienvenido --------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .home {
+        background-size: auto 100%;
+    } 
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .home {
+        background-size: auto 100%;
+    } 
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .home {
+        background-size: auto 100%;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .home {
+        background-size: auto 100%;
+    }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    .home {
+        background-size: 100% 100%;
+    } 
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .home {
+        background-size: 100% 100%;
+    } 
+}
+/*-------------------------------------------------- Seccion Bienvenido --------------------------------------------------*/
 
 .bienvenido .parent{
     padding-left: 15%;
@@ -273,7 +314,6 @@ body p {
   color: rgb(92,100,112);
   display: inline-block;
   content: attr(data-text);
-  font-size: 16px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -307,14 +347,23 @@ body p {
     }.bienvenido p.lead{
         font-size: 15px;
         line-height : 2rem;
+        padding-right: 0%;
     }.bienvenido h2{
         font-size: 17px;
     }.bienvenido .parent{
         padding-left: 5%;
     }.bienvenido .childleft{
-        padding-right: 5%;
+        padding-right:0;
         padding-top: 15%;
-        padding-left: 5%;
+        padding-left: 0;
+    }.bienvenido .cómopilotoTitulo{
+        font-size: 25px;
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }.timeline li:after{
+        font-size: 9px;
+    }.timeline li:before {
+        font-size: 16px;
     }
 }
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
@@ -325,14 +374,23 @@ body p {
     }.bienvenido p.lead{
         font-size: 15px;
         line-height : 2rem;
+        padding-right: 0%;
     }.bienvenido h2{
         font-size: 17px;
     }.bienvenido .parent{
         padding-left: 5%;
     }.bienvenido .childleft{
-        padding-right: 5%;
+        padding-right:0;
         padding-top: 15%;
-        padding-left: 5%;
+        padding-left:0;
+    }.bienvenido .cómopilotoTitulo{
+        font-size: 25px;
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }.timeline li:after{
+        font-size: 12px;
+    }.timeline li:before {
+        font-size: 16px;
     }
 }
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -343,14 +401,21 @@ body p {
     }.bienvenido p.lead{
         font-size: 15px;
         line-height : 2rem;
+        padding-right: 0%;
     }.bienvenido h2{
         font-size: 17px;
     }.bienvenido .parent{
         padding-left: 5%;
     }.bienvenido .childleft{
         padding-right: 5%;
-        padding-top: 15%;
-        padding-left: 5%;
+        padding-top: 0;
+        padding-left: 0;
+    }.bienvenido .cómopilotoTitulo{
+        font-size: 25px;
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }.timeline li:after{
+        font-size: 12px;
     }
 }  
 /* Medium devices (landscape tablets, 768px and up) */
@@ -361,6 +426,7 @@ body p {
     }.bienvenido p.lead{
         font-size: 17px;
         line-height : 2rem;
+        padding-right: 15%;
     }.bienvenido h2{
         font-size: 25px;
     }.bienvenido .parent{
@@ -369,6 +435,14 @@ body p {
         padding-right: 5%;
         padding-top: 15%;
         padding-left: 5%;
+    }.bienvenido .cómopilotoTitulo{
+        font-size: 30px;
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }.timeline li:after{
+        font-size: 16px;
+    }.timeline li:before {
+        font-size: 18px;
     }
 }
 /* Large devices (laptops/desktops, 1050px and up) */
@@ -379,6 +453,7 @@ body p {
     }.bienvenido p.lead{
         font-size: 17px;
         line-height : 2rem;
+        padding-right: 15%;
     }.bienvenido h2{
         font-size: 30px;
     }.bienvenido .parent{
@@ -387,6 +462,14 @@ body p {
         padding-right: 15%;
         padding-top: 15%;
         padding-left: 0%;
+    }.bienvenido .cómopilotoTitulo{
+        font-size: 30px;
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }.timeline li:after{
+        font-size: 16px;
+    }.timeline li:before {
+        font-size: 20px;
     }
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -396,6 +479,7 @@ body p {
         font-size: 60px;
     }.bienvenido p.lead{
         font-size: 20px;
+        padding-right: 15%;
     }.bienvenido h2{
         font-size: 30px;
     }.bienvenido .parent{
@@ -404,9 +488,17 @@ body p {
         padding-right: 15%;
         padding-top: 15%;
         padding-left: 0%;
+    }.bienvenido .cómopilotoTitulo{
+        font-size: 40px;
+        padding-top: 35%;
+        padding-bottom: 5%;
+    }.timeline li:after{
+        font-size: 16px;
+    }.timeline li:before {
+        font-size: 22px;
     }
 }
-/*-------------------------------------------------- Media Query programas --------------------------------------------------TODO*/
+/*-------------------------------------------------- Sección programas --------------------------------------------------*/
 
 .programas{
     padding-bottom: 15%;
@@ -433,6 +525,8 @@ body p {
 }.programas .carousel-caption{
     right: 0!important;
     left:0!important;
+    top: 0!important;
+    bottom: auto!important;
 }.programas .carousel-caption h1{
     font-size: 20px;
     text-align: start;
@@ -461,9 +555,157 @@ body p {
     border-radius: 20px;
     background-color: rgb(53,187,215);
     border-color:rgb(46,144,169);
+}.programas .bd-placeholder-img{
+    height: 200px;
 }
 
-/*-------------------------------------------------- Media Query flota  --------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query programas --------------------------------------------------DONE*/
+
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .programas .programasTitulo{
+        text-align: start;
+        font-size: 25px;
+    }.programas p.lead{
+        font-size: 15px;
+        line-height : 2rem;
+        padding-right: 0%;
+    }.programas .parent{
+        padding-left: 5%;
+    }.programas .childleft{
+        padding-right: 0%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }.programas .carousel{
+        padding-right: 5%;
+    }.programas .bd-placeholder-img{
+        height: 270px;
+    }.programas .more{
+        padding-top: 20px;
+        font-size: 12px;
+    }
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .programas .programasTitulo{
+        text-align: start;
+        font-size: 30px;
+    }.programas p.lead{
+        font-size: 15px;
+        line-height : 2rem;
+        padding-right: 0%;
+    }.programas .parent{
+        padding-left: 5%;
+    }.programas .childleft{
+        padding-right: 0%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }.programas .carousel{
+        padding-right: 5%;
+    }.programas .bd-placeholder-img{
+        height: 260px;
+    }.programas .more{
+        padding-top: 20px;
+        font-size: 12px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .programas .programasTitulo{
+        text-align: start;
+        font-size: 35px;
+    }.programas p.lead{
+        font-size: 15px;
+        line-height : 2rem;
+        padding-right: 0%;
+    }.programas .parent{
+        padding-left: 5%;
+    }.programas .childleft{
+        padding-right: 0%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }.programas .carousel{
+        padding-right: 5%;
+    }.programas .bd-placeholder-img{
+        height: 220px;
+    }.programas .more{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .programas .programasTitulo{
+        text-align: start;
+        font-size: 40px;
+    }.programas p.lead{
+        font-size: 17px;
+        line-height : 2rem;
+        padding-right: 15%;
+    }.programas .parent{
+        padding-left: 5%;
+    }.programas .childleft{
+        padding-right: 0%;
+        padding-top: 15%;
+        padding-left: 5%;
+    }.programas .carousel{
+        padding-right: 25%;
+    }.programas .bd-placeholder-img{
+        height: 200px;
+    }.programas .more{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    .programas .programasTitulo{
+        text-align: start;
+        font-size: 35px;
+    }.programas p.lead{
+        font-size: 17px;
+        line-height : 2rem;
+        padding-right: 15%;
+    }.programas .parent{
+        padding-left: 5%;
+    }.programas .childleft{
+        padding-right: 15%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }.programas .carousel{
+        padding-right: 25%;
+    }.programas .bd-placeholder-img{
+        height: 200px;
+    }.programas .more{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .programas .programasTitulo{
+        text-align: start;
+        font-size: 35px;
+    }.programas p.lead{
+        font-size: 20px;
+        padding-right: 15%;
+    }.programas .parent{
+        padding-left: 15%;
+    }.programas .childleft{
+        padding-right: 15%;
+        padding-top: 15%;
+        padding-left: 0%;
+    }.programas .carousel{
+        padding-right: 25%;
+    }.programas .bd-placeholder-img{
+        height: 200px;
+    }.programas .more{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}
+/*-------------------------------------------------- flota  Sección--------------------------------------------------*/
 
 .flota .parent{
     padding-left: 0%;
@@ -473,13 +715,13 @@ body p {
     padding-left: 15%;
 }.flota .flotaTitulo{
     text-align: start;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 1);
     padding-bottom: 5%;
 }.flota .lead{
     line-height: 2rem;
-    padding-right: 25%;
+    padding-right: 15%;
     text-align: start;
     font-size: 15px;
     font-weight: lighter;
@@ -549,9 +791,159 @@ body p {
     border-radius: 20px;
     background-color: rgb(53,187,215);
     border-color:rgb(46,144,169);
+}.flota .more{
+    padding-top: 20px;
+    font-size: 15px;
 }
 
-/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query flota  --------------------------------------------------DONE*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .flota .childleft{
+        padding-right: 10%;
+        padding-top: 7%;
+        padding-left: 10%;
+    }.flota .lead{
+        line-height: 2rem;
+        padding-right: 0;
+        text-align: start;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .flotaTitulo{
+        text-align: start;
+        font-size: 25px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .flota .childleft{
+        padding-right: 10%;
+        padding-top: 7%;
+        padding-left: 10%;
+    }.flota .lead{
+        line-height: 2rem;
+        padding-right: 0;
+        text-align: start;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .flotaTitulo{
+        text-align: start;
+        font-size: 25px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .flota .childleft{
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-left: 10%;
+    }.flota .lead{
+        line-height: 2rem;
+        padding-right: 5%;
+        text-align: start;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .flotaTitulo{
+        text-align: start;
+        font-size: 25px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .more{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .flota .childleft{
+        padding-right: 20%;
+        padding-top: 5%;
+        padding-left: 15%;
+    }.flota .lead{
+        line-height: 2rem;
+        padding-right: 10%;
+        text-align: start;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .flotaTitulo{
+        text-align: start;
+        font-size: 25px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .more{
+        padding-top: 20px;
+        font-size: 18px;
+    }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    .flota .childleft{
+        padding-right: 20%;
+        padding-top: 7%;
+        padding-left: 15%;
+    }.flota .lead{
+        line-height: 2rem;
+        padding-right: 10%;
+        text-align: start;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .flotaTitulo{
+        text-align: start;
+        font-size: 30px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .more{
+        padding-top: 20px;
+        font-size: 22px;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .flota .childleft{
+        padding-right: 20%;
+        padding-top: 7%;
+        padding-left: 15%;
+    }.flota .lead{
+        line-height: 2rem;
+        padding-right: 15%;
+        text-align: start;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .flotaTitulo{
+        text-align: start;
+        font-size: 30px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.flota .more{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+}
+
+/*-------------------------------------------------- Sección tecnologia  --------------------------------------------------*/
 
 .tecnologia {
     padding-top: 15%;
@@ -597,7 +989,34 @@ body p {
     color: rgba(255, 255, 255, 1);
 }
 
-/*-------------------------------------------------- Media Query Alumnos --------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}    
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+/*-------------------------------------------------- Seccion Alumnos --------------------------------------------------*/
 
 .alumnos{
     padding-bottom: 10%;
@@ -656,7 +1075,33 @@ body p {
     text-transform: uppercase;
 }
 
-/*-------------------------------------------------- Media Query Eventos  --------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query Alumnos --------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+/*-------------------------------------------------- Seccion Eventos  --------------------------------------------------*/
 
 .eventos{
     padding-bottom: 15%;
@@ -717,7 +1162,32 @@ body p {
     border-color:rgb(46,144,169);
 }
 
-/*-------------------------------------------------- Media Query  Mas información--------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query Eventos  --------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+/*-------------------------------------------------- Seccion  Mas información--------------------------------------------------*/
 
 .masInformacion{
     padding-bottom: 10%;
@@ -735,7 +1205,32 @@ body p {
     border-color:rgb(46,144,169);
 }
 
-/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query  Mas información--------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
 
 .footer h1 {
     font-size:40px;
@@ -771,4 +1266,29 @@ body p {
 }ul.social > li > a:hover {
     text-decoration: none;
     opacity: 0.5;
+}
+
+/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    
+}  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) { 
+    
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }
