@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    }
+    html {
+        scroll-behavior: smooth;
+      }
+    body {
+        font-size: 12px;
+        margin: 0;
+        font-family:  Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 100vw;
+    }
+    body h1{
+        font-size:30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    body A {
+        color: white;
+        text-decoration: none;
+    }
+    body p {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    /*--------------------------------------------------navBar--------------------------------------------------*/
+    
+    .navbar{
+        padding-top: 0px;
+    }.navbar-brand{
+        padding-top: 20px;
+    }.navbar-nav{
+        height: 100vh;
+        background-color:rgba(200, 200, 200, 0.5);
+    }.nav-item{
+        color: white;
+        text-align: right;
+        margin: 0;
+    }.navbar-toggler{
+        align-items: flex-end;
+        text-align: end;
+        border: none;
+        border-radius: 0;
+        border-color:rgba(0, 0, 0, 0) ;
+        background-color: rgba(200, 200, 200, 0.0);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        outline:0;
+    } 
+    
+    /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
+    
+    @media only screen and (max-width: 392px) {
+        .navBarContainer{
+            background-color:rgba(200, 200, 200, 0.5);
+        }.col-xxs{
+            width: 100%!important;
+        }.navbar-brand{
+            padding-left: 0.5em;
+            margin-right: 0;
+        }.nav-item{
+            padding-right: 5%;
+            font-size: 20px;
+            text-align: right;
+        }.navbar-nav{
+            background-color:rgba(200, 200, 200, 0.0)!important;
+        }.navbar-toggler{
+            width: auto;
+            background-color: rgba(0,0,0,.0)!important;
+        }
+    }
+    @media only screen and (min-width: 392px) {
+        .navbar-brand{
+            padding-left: 0.5em;
+            margin-right: 0;
+        }.nav-item{
+            padding-right: 5%;
+            font-size: 15px;
+            text-align: right;
+        }.navbar-toggler{
+            width: 50%;
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 576px) {
+        .navbar-brand{
+            padding-left: 1em;
+        }.nav-item{
+            padding-right: 5%;
+            font-size: 15px;
+            text-align: right;
+        }.navbar-toggler{
+            width: 33.33333%;
+        }
+    }  
+    /* Medium devices (landscape tablets, 800 and up) */
+    @media only screen and (min-width: 768px) {
+        .navbar-brand{
+            padding-left: 3em;
+        }.nav-item{
+            padding-right: 5%;
+            font-size: 15px;
+            text-align: right;
+        }.navbar-toggler{
+            width: 25%;
+        }
+    }
+    /* Large devices (laptops/desktops, 1050px and up) */
+    @media only screen and (min-width: 1050px) { 
+        .navbar-brand{
+            padding-left: 5em;
+        }
+        .nav-item{
+            padding-right: 30%;
+            font-size: 15px;
+            text-align: right;
+        }.navbar-toggler{
+            width: 25%;
+        }.navbar-toggler img{
+            margin-right:30%
+        }
+    } 
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .navbar-brand{
+            padding-left: 5em;
+        }
+        .nav-item{
+            padding-right: 30%;
+            font-size: 20px;
+            text-align: right;
+        }.navbar-toggler{
+            width: 25%;
+        }.navbar-toggler img{
+            margin-right:30%
+        }
+    }
+    /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+    .nosotros {
+        background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+    /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
+    
+    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+    @media only screen and (max-width: 392px) {
+        .nosotros {
+            background-size: auto 100%;
+        } 
+    }
+    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
+    @media only screen and (min-width: 392px) {
+        .nosotros {
+            background-size: auto 100%;
+        } 
+    }
+    /* Small devices (portrait tablets and large phones, 576px and up) */
+    @media only screen and (min-width: 576px) {
+        .nosotros {
+            background-size: auto 100%;
+        }
+    }  
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .nosotros {
+            background-size: 100% 100%;
+        }
+    }
+    /* Large devices (laptops/desktops, 1050px and up) */
+    @media only screen and (min-width: 1050px) { 
+        .nosotros {
+            background-size: 100% 100%;
+        } 
+    } 
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .nosotros {
+            background-size: 100% 100%;
+        } 
+    }
+    
+    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
+    
+    .footer h1 {
+        font-size:40px;
+        font-weight: bold;
+        text-align: end;
+        color :white;
+        padding-bottom: 1em;
+    }.footer h2 {
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: end;
+        color :white;
+        padding-top: 0;
+        padding-bottom: 1.5em;
+    }ul.social {
+        width: 100%;
+        text-align: start;
+        padding-bottom: 10%;
+    }ul.social > li {
+        display: inline-block;
+    }ul.social > li > a {
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        border:1px solid;
+        border-radius: 36px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        margin: 0 3px 3px 0;
+    }ul.social > li > a:hover {
+        text-decoration: none;
+        opacity: 0.5;
+    }
+    
+    /*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+    @media only screen and (max-width: 392px) {
+        
+    }
+    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
+    @media only screen and (min-width: 392px) {
+        
+    }
+    /* Small devices (portrait tablets and large phones, 576px and up) */
+    @media only screen and (min-width: 576px) {
+        
+    }  
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+    }
+    /* Large devices (laptops/desktops, 1050px and up) */
+    @media only screen and (min-width: 1050px) { 
+        
+    } 
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        
+    }

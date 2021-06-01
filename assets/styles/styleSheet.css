@@ -1134,7 +1134,7 @@ body p {
     text-transform: uppercase;
 }
 
-/*-------------------------------------------------- Media Query Alumnos --------------------------------------------------TODO*/
+/*-------------------------------------------------- Media Query Alumnos --------------------------------------------------DONE*/
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 @media only screen and (max-width: 392px) {
