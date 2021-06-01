@@ -140,7 +140,7 @@
     }
     /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
     .nosotros {
-        background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
+        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/men%C3%BA-categories/nosotros/assets/images/background/pf%20background%20misionvision.png);
         background-repeat: no-repeat;
         background-size: auto 100%;
     }
@@ -182,7 +182,80 @@
             background-size: 100% 100%;
         } 
     }
-    
+    /*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
+    .landing .containerLinks{
+        padding-top: 20%;
+    }
+    .landing h1 {
+        font-size:60px;
+        font-weight: bold;
+        text-align: start;
+        color :white;
+        padding-bottom: 0.5em;
+    }.landing h1:hover{
+        color:rgb(53,187,215);
+    }.landing h2 {
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: center;
+        color :white;
+        margin-bottom: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }.contadores{
+        position : absolute;
+        bottom   : 0
+    }.label{
+        color: rgba(255, 255, 255, 1);
+    }
+    .number{
+        color: rgba(255, 255, 255, 0.5);
+    }
+     /*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
+    .misionYVision h2{
+        color: white;
+        font-size: 20px;
+        line-height: 2.5rem;
+        font-weight:100;
+        padding-right: 10%;
+    }.misionYVision .containerTexto{
+        padding-top: 20%;
+    }.misionYVision img{
+        padding-top: 10%;
+    }.misionYVision .titulo{
+        font-size: 90px;
+        padding-top: 7%;
+        text-align: end;
+        padding-right: 10%;
+        font-weight:bolder;
+        color:rgba(0,0,0,0);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:rgba(26,73,93,0.3);
+    }.misionYVision .titulo:hover{
+        color: rgb(26,73,93);
+    }.misionYVision .coordenadas{
+        text-align: end;
+        padding-right: 10%;
+    }
+    /*-------------------------------------------------- Seccion Politica de calidad --------------------------------------------------TODO*/
+    .PoliticaDeCalidad h1{
+        padding-top: 10%;
+        padding-bottom: 7%;
+        padding-right: 10%;
+        font-size:60px;
+        font-weight: bold;
+        text-align: end;
+        color :white; 
+    }.containerText{
+        padding-top: 10%;
+    }.PoliticaDeCalidad .containerText h1{
+        padding-top: 0;
+        font-size: 35px;
+    }.PoliticaDeCalidad .containerText h2{
+        font-size: 20px;
+        color: white;
+        padding-right: 20%;
+    }
     /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
     
     .footer h1 {
