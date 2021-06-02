@@ -17,6 +17,12 @@
         font-weight: bold;
         text-align: center;
     }
+    body h2{
+        font-size: 20px;
+        color: white;
+        padding-right: 20%;
+        line-height: 2.5rem;
+    }
     body A {
         color: white;
         text-decoration: none;
@@ -211,7 +217,7 @@
     .number{
         color: rgba(255, 255, 255, 0.5);
     }
-     /*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
+     /*-------------------------------------------------- Seccion misionYVision --------------------------------------------------TODO*/
     .misionYVision h2{
         color: white;
         font-size: 20px;
@@ -237,7 +243,127 @@
         text-align: end;
         padding-right: 10%;
     }
+
     /*-------------------------------------------------- Seccion Politica de calidad --------------------------------------------------TODO*/
+    
+    .nuestraVision h1{
+        padding-top: 10%;
+        padding-bottom: 7%;
+        padding-right: 10%;
+        font-size:60px;
+        font-weight: bold;
+        text-align: end;
+        color :white; 
+    }.nuestraVision .containerSec{
+        padding-top: 30%;
+    }.nuestraVision .containerSec h1{
+        margin-left: -125px;
+        padding-top: 10%;
+        font-size: 90px;
+        text-align: start;
+    }.nuestraVision .containerSec h2{
+        font-size: 20px;
+        color: white;
+        padding-right: 20%;
+        line-height: 2.5rem;
+    }.nuestraVision .containerSec img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    /*-------------------------------------------------- Seccion Fundamentos institucionales ----------------------------------------------*/
+
+    .fundamentosInstitucionales{
+        height: 100vh;
+        padding-bottom: 15%;
+    }.fundamentosInstitucionales .childleft{
+        padding-top: 15%;
+        padding-left: 0%;
+    }.fundamentosInstitucionales .fundamentosTitulo{
+        padding-left: 0%;
+        text-align: start;
+        font-size: 45px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.fundamentosInstitucionales .fundamentosTitulo:hover  ~ .data{
+        display: block;
+    }.fundamentosInstitucionales .more{
+        padding-top: 20px;
+        font-size: 15px;
+    }.fundamentosInstitucionales .data{
+        display: none;
+    }
+    .fundamentosInstitucionales .carousel{
+        padding-right: 30%;
+    }.fundamentosInstitucionales .carousel-inner{
+        height: 100%;
+    }.fundamentosInstitucionales .carousel-caption{
+        right: 0!important;
+        left:0!important;
+        top: 0!important;
+        bottom: auto!important;
+    }.fundamentosInstitucionales .carousel-caption h1{
+        font-size: 20px;
+        text-align: start;
+    }.fundamentosInstitucionales .carousel-caption p{
+        font-size: 15px;
+        line-height: 2rem;
+    }.fundamentosInstitucionales .title{
+        color: white;
+    }.fundamentosInstitucionales .number{
+        color: rgb(53,187,215);
+    }.fundamentosInstitucionales .sliderButton{
+        height: 35px;
+        width: 35px;
+        padding:6px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgb(75,84,97);
+    }.fundamentosInstitucionales .buttonContent{
+        padding:6px;
+        height: 20px;
+        width: 15px;
+    }.fundamentosInstitucionales .sliderButton:hover{
+        background-color: rgb(49,171,198);
+    }.fundamentosInstitucionales .btn-primary{
+        font-size: 15px;
+        border-radius: 20px;
+        background-color: rgb(53,187,215);
+        border-color:rgb(46,144,169);
+    }.fundamentosInstitucionales .bd-placeholder-img{
+        height: 200px;
+    }.fundamentosInstitucionales .circle{
+        padding-top: 15%;
+    }.fundamentosInstitucionales .one{
+        display: none;
+    }.fundamentosInstitucionales .two{
+        display: none;
+    }.fundamentosInstitucionales .three{
+        display: none;
+    }.fundamentosInstitucionales .four{
+        display: none;
+    }.fundamentosInstitucionales .five{
+        display: none;
+    }
+    
+    .fundamentosInstitucionales .viewCarousel{
+        height: 35px;
+        width: 35px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgb(30,30,30);
+        vertical-align: middle;
+    }.fundamentosInstitucionales .more{
+        color: rgba(0,0,0,0);
+        padding-top: 20px;
+        font-size: 15px;
+    }.fundamentosInstitucionales .more:hover{
+        color: rgb(49,171,198);
+    }
+
+    /*-------------------------------------------------- Seccion Politica de calidad ------------------------------------------------------*/
     .PoliticaDeCalidad h1{
         padding-top: 10%;
         padding-bottom: 7%;
@@ -246,7 +372,7 @@
         font-weight: bold;
         text-align: end;
         color :white; 
-    }.containerText{
+    }.PoliticaDeCalidad .containerText{
         padding-top: 10%;
     }.PoliticaDeCalidad .containerText h1{
         padding-top: 0;
@@ -256,6 +382,7 @@
         color: white;
         padding-right: 20%;
     }
+    
     /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
     
     .footer h1 {

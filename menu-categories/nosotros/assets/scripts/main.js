@@ -6,6 +6,17 @@ $(document).ready(function () {
     var navBarBrandImage= $("#navBarBrandImage")
     var navBarToggler=$("#navBarToggler")
     var navBarTogglerIcon=$("#navBarTogglerIcon")
+    var viewCarousel=$("#viewCarousel")
+
+    var myCarousel=$('#myCarousel')
+    var aFundamentos=$("#aFundamentos")
+    var data=$('#data')
+    var original=$('#original')
+    var one=$('#one')
+    var two=$('#two')
+    var three=$('#three')
+    var four=$('#four')
+    var five=$('#five')
 
     var sourceSwap = function () {
         var $this = $(this);
@@ -29,4 +40,55 @@ $(document).ready(function () {
             toggled=false;
     }
     })
+    viewCarousel.click(function() {
+        aFundamentos.css('display','none');
+        data.css('display','block');
+        original.css('display','none');
+        one.css('display','block');
+    })
+    myCarousel.on('slide.bs.carousel', function (e) {
+        if(e.from==0 && e.direction=="right"){
+            aFundamentos.css('display','block');
+            data.css('display','none');
+            original.css('display','block');
+            one.css('display','none'); 
+            five.css('display','none'); 
+        }else{
+            console.log(e.to)
+            switch(e.to){
+                case 0:
+                    five.css('display','none');
+                    two.css('display','none');
+                    one.css('display','block');  
+                break
+                case 1:
+                    one.css('display','none');
+                    three.css('display','none');
+                    two.css('display','block'); 
+                break
+                case 2:
+                    two.css('display','none');
+                    four.css('display','none');
+                    three.css('display','block'); 
+                break
+                case 3:
+                    five.css('display','none');
+                    three.css('display','none');
+                    four.css('display','block'); 
+                break
+                case 4:
+                    one.css('display','none');
+                    four.css('display','none');
+                    five.css('display','block'); 
+                break
+            }
+        }
+    })  
+    myCarousel.on('slid.bs.carousel', function (e) {
+        if(e.from==0 && e.direction=="right"){
+            myCarousel.carousel(0)
+            one.css('display','none'); 
+        }
+        
+    })  
 })   
