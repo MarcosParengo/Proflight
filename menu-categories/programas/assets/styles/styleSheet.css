@@ -13,18 +13,26 @@
         width: 100vw;
     }
     body h1{
-        font-size:30px;
+        font-size:60px;
         font-weight: bold;
-        text-align: center;
+        text-align: end;
+        color: black;
+    }body h2{
+        font-size: 20px;
+        color: black;
+        padding-right: 20%;
+        line-height: 2.5rem;
     }
     body A {
         color: white;
         text-decoration: none;
     }
     body p {
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 18px;
+        text-align: end;
+        font-weight: bolder;
     }
     /*--------------------------------------------------navBar--------------------------------------------------*/
     
@@ -140,49 +148,28 @@
     }
     /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
     .home {
-        background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
-        background-repeat: no-repeat;
-        background-size: auto 100%;
+        background-color: white;
     }
-    /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
+    /*--------------------------------------------------Media Query pilotoPrivado --------------------------------------------------DONE*/ 
     
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
+    .coverPage .container-fluid{
+        height: 100vh;
+    }.coverPage .row{
+        position: relative;
+        top: 30%;
+    }.coverPage .left h1{
+        padding-left: 25rem;
     }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
+    .coverPage .right{
+        padding-right: 15rem;
     }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .home {
-            background-size: auto 100%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .home {
-            background-size: 100% 100%;
-        }
+    .coverPage .left p{
+        margin-bottom: .8rem;
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .home {
-            background-size: 100% 100%;
-        } 
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .home {
-            background-size: 100% 100%;
-        } 
+
+    .comercial .coverPage .left{
+        
     }
-    
     /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
     
     .footer h1 {
