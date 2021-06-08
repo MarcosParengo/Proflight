@@ -223,45 +223,8 @@
     .descripcion .button{
         padding: 1rem 1.2rem 1rem 1.2rem;background-color: gray;border-radius: 2rem;
     }
-    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
     
-    .footer h1 {
-        font-size:40px;
-        font-weight: bold;
-        text-align: end;
-        color :white;
-        padding-bottom: 1em;
-    }.footer h2 {
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: end;
-        color :white;
-        padding-top: 0;
-        padding-bottom: 1.5em;
-    }ul.social {
-        width: 100%;
-        text-align: start;
-        padding-bottom: 10%;
-    }ul.social > li {
-        display: inline-block;
-    }ul.social > li > a {
-        text-align: center;
-        display: inline-block;
-        font-size: 18px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        border:1px solid;
-        border-radius: 36px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        margin: 0 3px 3px 0;
-    }ul.social > li > a:hover {
-        text-decoration: none;
-        opacity: 0.5;
-    }
-    
-    /*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
     /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
     @media only screen and (max-width: 392px) {
         
@@ -283,5 +246,96 @@
     } 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        
+        body h1{
+            font-size:50px;
+            font-weight: bold;
+            text-align: end;
+            color: black;
+        }body h2{
+            font-size: 15px;
+            color: black;
+            padding-right: 20%;
+            line-height: 2rem;
+        }
+        body A {
+            color: white;
+            text-decoration: none;
+        }
+        body p {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: end;
+            font-weight: bolder;
+        } .coverPage .container-fluid{
+            height: 100vh;
+        }.coverPage .row{
+            position: relative;
+            top: 30%;
+        }.coverPage .left h1{
+            padding-left: 25rem;
+        }
+        .coverPage .right{
+            padding-right: 15rem;
+        }
+        .coverPage .left p{
+            margin-bottom: .8rem;
+        }
+        .comercial .coverPage{
+            background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/programas/assets/images/background/Background%2003-test.png);
+            background-repeat: no-repeat, repeat;
+            background-position: center left;
+        }.multiMotor .coverPage .left h1{
+            padding-left: 20rem;
+        }.instructor .coverPage{
+            background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/programas/assets/images/background/Background%2003-test.png);
+            background-repeat: no-repeat, repeat;
+            background-position: center left;
+        }
+    
+        .descripcion .container{
+            height: 100vh;
+        }.descripcion h1{
+            text-align: start;
+        }.descripcion .row{
+            position: relative;
+            top: 30%;
+        }.descripcion .texto{
+            font-weight: bolder;
+            text-align: start;
+            font-size: 30px;
+            padding-left: 0;
+        }.descripcion .number{
+            float: inline-end;
+            text-align: end;
+            font-size:15px;
+            color: rgb(53,187,215);
+        }.descripcion .lead{
+            text-align: start;
+            line-height: 2rem;
+            border-top: 1px solid;
+            font-size: 15px;
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 1);
+        }.descripcion .textContainer{
+            position: relative;
+            top: 0; 
+        }
+        .descripcion .one{
+            margin-top: 4rem;
+            display: flex;
+        }.descripcion .two{
+           display: none;
+           margin-top: 4rem;
+        }.descripcion .three{
+            display: none;
+            margin-top: 4rem;
+         }.descripcion .two .item1{
+            display: show;
+        }.descripcion .two .item2{
+            display: none;
+        }
+        .descripcion .button{
+            padding: 1rem 1.2rem 1rem 1.2rem;background-color: gray;border-radius: 2rem;
+        }
     }

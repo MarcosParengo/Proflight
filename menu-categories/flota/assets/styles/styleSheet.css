@@ -13,9 +13,15 @@
         width: 100vw;
     }
     body h1{
-        font-size:30px;
+        font-size:60px;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
+        color: white;
+    }body h2{
+        font-size: 15px;
+        color: white;
+        padding-right: 20%;
+        line-height: 2rem;
     }
     body A {
         color: white;
@@ -24,7 +30,9 @@
     body p {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 30px;
+        text-align: end;
+        font-weight: bolder;
     }
     /*--------------------------------------------------navBar--------------------------------------------------*/
     
@@ -140,9 +148,135 @@
     }
     /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
     .home {
-        background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
+       background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/menu-categories/flota/assets/images/background/pf%20background%20flota.png?raw=true);
         background-repeat: no-repeat;
         background-size: auto 100%;
+    }.landing .coverPage .container-fluid{
+        height: 100vh;
+        margin-bottom: 10%;
+        margin-bottom: 15%;
+    }.landing .coverPage .row{
+        position: relative;
+        top: 15%;
+        margin-bottom: 15%;
+
+    }.landing .coverPage .left{
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right{
+        padding-right: 15rem;
+    }
+    .landing .coverPage .left p{
+        margin-bottom: .8rem;
+    }
+    .landing .coverPage img{
+        width: 80%;
+        float: right;
+    }
+
+    .simuladores .coverPage .container-fluid{
+        height: 100vh;
+    }
+    .simuladores .titulo{
+        padding-left: 15rem
+    }
+    .simuladores .coverPage .row{
+        position: relative;
+        top: 20%;
+    }.simuladores .coverPage .left{
+        padding-left: 15rem;
+    }
+    
+    .simuladores .coverPage .right p{
+        margin-bottom: .8rem;
+        text-align: start;
+    }
+
+    .tabs{
+        height: 100vh;
+        margin-bottom: 30%;
+    }
+
+    .tabs {
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }.tabs h1{
+        text-align: start;
+        font-size: 35px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.tabs h2{
+        text-align: start;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight:bolder;
+        color: rgb(53, 187, 215);
+        padding-bottom: 5%;
+    }.tabs h3{
+        text-align: start;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+    }.tabs .specs{
+        text-align: start;
+        border-bottom: 1px solid;
+        border-color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+    .tabs .nonUper{
+        text-align: start;
+        text-transform: none;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+    .nav-tabs{
+        border: none!important;
+    }.nav-tabs .nav-link{
+        border: none!important;
+        border: 0px solid transparent;
+    }.nav-link img{
+        opacity: 0.3!important;
+    }.nav-link:hover img{
+        opacity: 0.7!important;
+    }.nav-link.active{
+        background-color: rgba(200, 200, 200, 0.0)!important;
+        border: none!important;
+    }.nav-link.active img{
+        opacity: 1!important;
+    }.tab-pane{
+        color: white!important;
+    }.tab-pane .titulo{
+        position: relative;
+    }.titulo .texto{
+        text-align: start;
+        font-size: 30px;
+        padding-left: 0;
+    }.titulo .number{
+        position: absolute;
+         bottom: 0;
+         right: 0;
+        font-size:15px;
+        color: rgb(53,187,215);
+    }.tab-content .lead{
+        line-height: 2rem;
+        border-top: 1px solid;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+    }
+    .tab-content img{
+        display: block;
     }
     /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
     
