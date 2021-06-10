@@ -4,6 +4,7 @@ font-family: 'Montserrat';
 }
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box
   }
 body {
     font-size: 12px;
@@ -11,6 +12,7 @@ body {
     font-family:  Arial, Helvetica, sans-serif;
     position: absolute;
     width: 100vw;
+    box-sizing: border-box
 }
 body h1{
     font-size:30px;
@@ -204,6 +206,7 @@ body p {
     background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
     background-repeat: no-repeat;
     background-size: auto 100%;
+    box-sizing: border-box
 }
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
 

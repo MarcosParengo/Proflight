@@ -561,7 +561,6 @@
 
     .fundamentosInstitucionales{
         margin-top: 15%;
-        height: 100vh;
         margin-bottom: 15%;
     }.fundamentosInstitucionales .childleft{
         padding-top: 0%;
@@ -664,6 +663,9 @@
             font-size: 30px;
         }.fundamentosInstitucionales h2{
             padding-right: 0;
+        }.fundamentosInstitucionales{
+            margin-top: 30%;
+            margin-bottom: 30%;
         }
     }
     /*ultra Small devices (portrait tablets and large phones, 392px and up) */
@@ -678,6 +680,9 @@
             font-size: 20px;
         }.fundamentosInstitucionales h2{
             padding-right: 0;
+        }.fundamentosInstitucionales{
+            margin-top: 35%;
+            margin-bottom: 55%;
         }
     }
     /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -692,6 +697,9 @@
             font-size: 25px;
         }.fundamentosInstitucionales h2{
             padding-right: 0;
+        }.fundamentosInstitucionales{
+            margin-top: 15%;
+            margin-bottom: 15%;
         }
     }  
     /* Medium devices (landscape tablets, 768px and up) */
@@ -704,6 +712,9 @@
             font-size: 35px;
         }.fundamentosInstitucionales h2{
             padding-right: 0;
+        }.fundamentosInstitucionales{
+            margin-top: 15%;
+            margin-bottom: 15%;
         }
     }
     /* Large devices (laptops/desktops, 1050px and up) */
@@ -717,6 +728,9 @@
             font-size: 35px;
         }.fundamentosInstitucionales h2{
             padding-right: 20%;
+        }.fundamentosInstitucionales{
+            margin-top: 15%;
+            margin-bottom: 15%;
         }
     } 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -730,6 +744,9 @@
             font-size: 40px;
         }.fundamentosInstitucionales h2{
             padding-right: 10%;
+        }.fundamentosInstitucionales{
+            margin-top: 15%;
+            margin-bottom: 15%;
         }
     }
     /* Extra large devices (large laptops and desktops, 1400px and up) */
@@ -744,17 +761,22 @@
             font-size: 45px;
         }.fundamentosInstitucionales h2{
             padding-right: 20%;
+        }.fundamentosInstitucionales{
+            margin-top: 15%;
+            margin-bottom: 15%;
         }
     }
     /*-------------------------------------------------- Seccion Politica de calidad ------------------------------------------------------*/
     .PoliticaDeCalidad h1{
-        padding-top: 10%;
+        padding-top: 5%;
         padding-bottom: 7%;
         padding-right: 10%;
         font-size:60px;
         font-weight: bold;
         text-align: end;
         color :white; 
+    }.cover{
+        height:100vh;
     }.PoliticaDeCalidad .containerText{
         padding-top: 10%;
     }.PoliticaDeCalidad .containerText h1{
@@ -764,6 +786,7 @@
         font-size: 20px;
         color: white;
         padding-right: 20%;
+        padding-top: 0;
     }.PoliticaDeCalidad .row img{
         display: block;
         width: 100%;
@@ -775,6 +798,21 @@
             padding-bottom: 0%;
             padding-right: 10%;
             font-size:40px;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+        }.PoliticaDeCalidad .containerText h1{
+            font-size: 20px;
+            padding-right: 0;
+            text-align: center;
+        }.PoliticaDeCalidad .containerText h2{
+            font-size: 14px;
+            line-height: 1.5rem;
+            padding-top: 3rem;
+            padding-right: 0%;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+            padding-right: 5%;
+            padding-left: 5%;
         }
     }
     /*ultra Small devices (portrait tablets and large phones, 392px and up) */
@@ -783,6 +821,21 @@
             padding-bottom: 0%;
             padding-right: 10%;
             font-size:40px;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+        }.PoliticaDeCalidad .containerText h1{
+            font-size: 25px;
+            padding-right: 0;
+            text-align: center;
+        }.PoliticaDeCalidad .containerText h2{
+            font-size: 16px;
+            line-height: 1.5rem;
+            padding-top: 3rem;
+            padding-right: 0%;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+            padding-right: 5%;
+            padding-left: 5%;
         }
     }
     /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -791,6 +844,21 @@
             padding-bottom: 0%;
             padding-right: 10%;
             font-size:40px;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+        }.PoliticaDeCalidad .containerText h1{
+            font-size: 35px;
+            padding-right: 0;
+            text-align: center;
+        }.PoliticaDeCalidad .containerText h2{
+            font-size: 16px;
+            line-height: 2rem;
+            padding-top: 0;
+            padding-right: 0%;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+            padding-right: 5%;
+            padding-left: 5%;
         }
     }  
     /* Medium devices (landscape tablets, 768px and up) */
@@ -799,6 +867,21 @@
             padding-bottom: 0%;
             padding-right: 10%;
             font-size:40px;
+        }.cover{
+            height:60vh;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+        }.PoliticaDeCalidad .containerText h1{
+            font-size: 35px;
+        }.PoliticaDeCalidad .containerText h2{
+            font-size: 16px;
+            line-height: 2rem;
+            padding-top: 0;
+            padding-right: 0%;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+            padding-right: 0;
+            padding-left: 0;
         }
     }
     /* Large devices (laptops/desktops, 1050px and up) */
@@ -807,18 +890,49 @@
             padding-bottom: 0%;
             padding-right: 10%;
             font-size:40px;
+        }.cover{
+            height:80vh;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+        }.PoliticaDeCalidad .containerText h1{
+            font-size: 35px;
+        }.PoliticaDeCalidad .containerText h2{
+            font-size: 16px;
+            line-height: 2rem;
+            padding-top: 0;
+            padding-right: 20%;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+            padding-right: 0;
+            padding-left: 0;
         }
     } 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         .PoliticaDeCalidad h1{
-            padding-bottom: 7%;
+            padding-bottom: 4%;
             padding-right: 10%;
             font-size:60px;
+        }.cover{
+            height:100vh;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+        }.PoliticaDeCalidad .containerText h1{
+            font-size: 35px;
+        }.PoliticaDeCalidad .containerText h2{
+            font-size: 20px;
+            padding-top: 0;
+            padding-right: 20%;
+        }.PoliticaDeCalidad .containerText{
+            padding-top: 10%;
+            padding-right: 0;
+            padding-left: 0;
         }
     }
     /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-    
+    .footer{
+        margin-top: 30%;
+    }
     .footer h1 {
         font-size:40px;
         font-weight: bold;
