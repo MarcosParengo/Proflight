@@ -4,25 +4,25 @@
     }
     html {
         scroll-behavior: smooth;
+        box-sizing: content-box;
       }
     body {
         font-size: 12px;
         margin: 0;
         font-family:  Arial, Helvetica, sans-serif;
-        position: absolute;
-        width: 100vw;
     }
     body h1{
-        font-size:30px;
-        font-weight: bold;
-        text-align: center;
+        font-size:50px;
+        font-weight: bolder;
+        text-align: start;
+        color: black;
     }
     body A {
-        color: white;
+        color: black;
         text-decoration: none;
     }
     body p {
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 18px;
     }
@@ -140,9 +140,11 @@
     }
     /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
     .home {
-        background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
+        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/extranjeros/assets/images/background/miguel-a-amutio-7C1tVElQwr4-unsplash%2002%402x.png);
         background-repeat: no-repeat;
         background-size: auto 100%;
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: content-box;
     }
     /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
     
@@ -161,7 +163,7 @@
     /* Small devices (portrait tablets and large phones, 576px and up) */
     @media only screen and (min-width: 576px) {
         .home {
-            background-size: auto 100%;
+            background-size: 100% 100%;
         }
     }  
     /* Medium devices (landscape tablets, 768px and up) */
@@ -182,46 +184,182 @@
             background-size: 100% 100%;
         } 
     }
-    
-    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-    
-    .footer h1 {
-        font-size:40px;
-        font-weight: bold;
-        text-align: end;
-        color :white;
-        padding-bottom: 1em;
-    }.footer h2 {
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: end;
-        color :white;
-        padding-top: 0;
-        padding-bottom: 1.5em;
-    }ul.social {
+    /*-------------------------------------------------- Seccion landing--------------------------------------------------TODO*/
+    .landingYambientes{
+        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/extranjeros/assets/images/background/Backgroundcircle.png);
+        background-repeat: no-repeat, repeat;
+        background-position: center left;
+    }
+    .landing{
+        height: 100vh;
+    }
+    .landing h1{
+        padding-top: 15rem;
+        padding: bottom 10rem;
+    }
+    .landing img{
+        box-sizing: border-box;
+        display: block;
         width: 100%;
+        padding-top: 5rem;
+    }
+    .ambientes{
+        height: 100vh;
+    }
+    .ambientes .titulo{
+        padding-top: 10rem;
+    }
+    .ambientes .texto{
+        padding-top: 5rem;
+        padding: bottom 10rem;
+    }
+    .ambientes .texto .left{
+        text-align: end;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .ambientes .texto .right{
         text-align: start;
-        padding-bottom: 10%;
-    }ul.social > li {
-        display: inline-block;
-    }ul.social > li > a {
-        text-align: center;
-        display: inline-block;
+        font-weight:lighter;
         font-size: 18px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        border:1px solid;
-        border-radius: 36px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        margin: 0 3px 3px 0;
-    }ul.social > li > a:hover {
-        text-decoration: none;
-        opacity: 0.5;
+        padding-right: 30%;
     }
     
-    /*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+    .arancelesLanding {
+        height: 100vh;
+    }
+    .arancelesLanding .left img{
+        padding-top: 5rem;
+        display: block;
+        width: 100%;
+        float: right;
+    }
+    .arancelesLanding .left .first{
+        margin-top: 2rem;
+        opacity: 0.4;
+        width: 80%;
+        float: left;
+    }
+    .arancelesLanding .texto{
+        padding-top: 7rem;
+        padding: bottom 10rem;
+    }
+    .arancelesLanding .texto .rightSub{
+        text-align: start;
+        font-weight:lighter;
+        font-size: 30px;
+        padding-right: 40%;
+    }
+    .arancelesLanding .texto .right{
+        text-align: start;
+        font-weight:lighter;
+        font-size: 18px;
+        padding-right: 40%;
+    }
+    .inversion{
+        height: 100vh;
+    }
+    .inversion .titulo{
+        padding-top: 7rem;
+    }
+    .inversion .label{
+        font-size: 60px;
+        font-weight: bolder;
+        writing-mode: tb-rl; 
+        color: grey;
+    }
+    .inversion .titulo-card{
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        border-bottom: 1px solid;
+        border-color: grey;
+        text-align: end;
+        color:rgb(53,187,215);
+        font-size: 18px;
+    }
+    .inversion .info{
+        color: grey;
+        font-size: 15px;
+        line-height: 2rem;
+    }
+
+    .recibimiento{
+        height: 100vh;
+    }
+    .recibimiento .card{
+        padding-top: 10rem;
+        border:0px solid
+    }
+    .recibimiento .titulo{
+        padding-top: 7rem;
+    }
+    .recibimiento .label{
+        font-size: 60px;
+        font-weight: bolder;
+        writing-mode: tb-rl; 
+        color: grey;
+    }
+    .recibimiento .titulo-card{
+        padding-bottom: 1rem;
+        font-weight: bolder;
+        border-bottom: 1px solid;
+        border-color: grey;
+        text-align: start;
+        color:black;
+        font-size: 35px;
+    }
+    .recibimiento .numero{
+        color:rgb(53,187,215);
+        font-size: 18px;
+        float: right;
+        text-align: end;
+        font-weight: lighter;
+    }
+    .recibimiento .info{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-transform: uppercase;
+        color: grey;
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    .recibimiento .text{
+        color: grey;
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    .alojamientos {
+        height: 100vh;
+    }
+    .alojamientos .left img{
+        padding-top: 5rem;
+        display: block;
+        width: 100%;
+        float: right;
+        margin-left:-100px ;
+    }
+    .alojamientos .left .first{
+        margin-top: 2rem;
+        opacity: 0.4;
+        width: 80%;
+        float: left;
+    }
+    .alojamientos .texto{
+        padding-top: 5rem;
+    }
+    .alojamientos .texto h1{
+        font-size: 65px;
+        padding-bottom:3rem;
+    }
+    .alojamientos .texto .right{
+        text-align: start;
+        font-weight:lighter;
+        font-size: 18px;
+        padding-right: 40%;
+        line-height: 2.5rem;
+    }
+    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
     /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
     @media only screen and (max-width: 392px) {
         
@@ -237,8 +375,8 @@
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) { 
         
     } 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
