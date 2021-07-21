@@ -595,9 +595,7 @@
             width:auto;
             margin:auto
         }.nav-link{
-            height:auto;
-            width:20%;
-        }
+            height:auto;        }
         .tabs{
             margin-top: 30%;
             height: auto;
@@ -612,7 +610,6 @@
             margin:auto
         }.nav-link{
             height:auto;
-            width:20%;
         }
         .tabs{
             margin-top: 30%;
@@ -628,7 +625,6 @@
             margin:auto
         }.nav-link{
             height:auto;
-            width:12%;
         }
         .tabs{
             height: 100vh;
@@ -643,7 +639,6 @@
             margin:auto
         }.nav-link{
             height:auto;
-            width:12%;
         }
         .tabs{
             height: 100vh;
