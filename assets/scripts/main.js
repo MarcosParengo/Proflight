@@ -10,6 +10,7 @@ $(document).ready(function () {
     containerEventos = $("#containerEventos")
     var testimonios = "assets/data/testimonios.json"
     var eventos = "assets/data/eventos.json"
+    
     LoadJson(testimonios, 1)
     LoadJson(eventos, 2)
 
