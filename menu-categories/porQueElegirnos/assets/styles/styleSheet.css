@@ -1,281 +1,476 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Montserrat';
-    }
-    html {
-        scroll-behavior: smooth;
-      }
-    body {
-        font-size: 12px;
-        margin: 0;
-        font-family:  Arial, Helvetica, sans-serif;
-        position: absolute;
-        width: 100%;
-    }
-    body h1{
-        font-size:30px;
-        font-weight: bold;
-        text-align: center;
-    }
-    body A {
-        color: white;
-        text-decoration: none;
-    }
-    body p {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    /*--------------------------------------------------navBar--------------------------------------------------*/
-    
-    .navbar{
-        padding-top: 0px;
-    }.navbar-brand{
-        padding-top: 20px;
-    }.navbar-nav{
-        height: 100vh;
-        background-color:rgba(200, 200, 200, 0.5);
-    }.nav-item{
-        color: white;
-        text-align: right;
-        margin: 0;
-    }.navbar-toggler{
-        align-items: flex-end;
-        text-align: end;
-        border: none;
-        border-radius: 0;
-        border-color:rgba(0, 0, 0, 0) ;
-        background-color: rgba(200, 200, 200, 0.0);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        outline:0;
-    } 
-    
-    /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
-    
-    @media only screen and (max-width: 392px) {
-        .navBarContainer{
-            background-color:rgba(200, 200, 200, 0.5);
-        }.col-xxs{
-            width: 100%!important;
-        }.navbar-brand{
-            padding-left: 0.5em;
-            margin-right: 0;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 20px;
-            text-align: right;
-        }.navbar-nav{
-            background-color:rgba(200, 200, 200, 0.0)!important;
-        }.navbar-toggler{
-            width: auto;
-            background-color: rgba(0,0,0,.0)!important;
-        }
-    }
-    @media only screen and (min-width: 392px) {
-        .navbar-brand{
-            padding-left: 0.5em;
-            margin-right: 0;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 50%;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 576px) {
-        .navbar-brand{
-            padding-left: 1em;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 33.33333%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 800 and up) */
-    @media only screen and (min-width: 768px) {
-        .navbar-brand{
-            padding-left: 3em;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .navbar-brand{
-            padding-left: 5em;
-        }
-        .nav-item{
-            padding-right: 30%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }.navbar-toggler img{
-            margin-right:30%
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .navbar-brand{
-            padding-left: 5em;
-        }
-        .nav-item{
-            padding-right: 30%;
-            font-size: 20px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }.navbar-toggler img{
-            margin-right:30%
-        }
-    }
-    /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
-    .home {
-        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/pf%20background%20porqueelegirnos.png);
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-    }
-    .fullPage{
-        height: 100vh;
-        width: 100%;
-        border: 3px;
-    }
-    .title{
-        font-size: 60px;
-        color: white;
-        text-align: start;
-    }
-    .paragraph{
-        font-size: 15px;
-        line-height: 2rem;
-    }
-    .button{
-        display: inline-block;
-        font-size: 13px;
-        background-color: white;
-        padding:.5rem .7rem .5rem .7rem ;
-        border-radius: 25px;
-        color: purple;
-        margin-right: .5rem ;
-    }
-    .button:hover{
-        color:rgb(138, 177, 230);
-        text-decoration: none;
-        opacity: 0.5;
-    }
-    /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
-    
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .home {
-            background-size: 100% 100%;
-        } 
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .home {
-            background-size: 100% 100%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .home {
-            background-size: 100% 100%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .home {
-            background-size: 100% 100%;
-        } 
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .home {
-            background-size: 100% 100%;
-        } 
-    }
-    
-    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-    
-    .footer h1 {
-        font-size:40px;
-        font-weight: bold;
-        text-align: end;
-        color :white;
-        padding-bottom: 1em;
-    }.footer h2 {
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: end;
-        color :white;
-        padding-top: 0;
-        padding-bottom: 1.5em;
-    }ul.social {
-        width: 100%;
-        text-align: start;
-        padding-bottom: 10%;
-    }ul.social > li {
-        display: inline-block;
-    }ul.social > li > a {
-        text-align: center;
-        display: inline-block;
-        font-size: 18px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        border:1px solid;
-        border-radius: 36px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        margin: 0 3px 3px 0;
-    }ul.social > li > a:hover {
-        text-decoration: none;
-        opacity: 0.5;
-    }
-    
-    /*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .footer .mail{
-            font-size:20px;
-            padding-bottom: 1em;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .footer .mail{
-            font-size:25px;
-            padding-bottom: 1em;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        
-    }
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 12px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 100%;
+}
+body h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+body A {
+  color: white;
+  text-decoration: none;
+}
+body p {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+/*--------------------------------------------------navBar--------------------------------------------------*/
+
+.navbar {
+  padding-top: 0px;
+}
+.navbar-brand {
+  padding-top: 20px;
+}
+.navbar-nav {
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.nav-item {
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+.navbar-toggler {
+  align-items: flex-end;
+  text-align: end;
+  border: none;
+  border-radius: 0;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(200, 200, 200, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 0;
+}
+
+/*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
+
+@media only screen and (max-width: 392px) {
+  .navBarContainer {
+    background-color: rgba(200, 200, 200, 0.5);
+  }
+  .col-xxs {
+    width: 100% !important;
+  }
+  .navbar-brand {
+    padding-left: 0.5em;
+    margin-right: 0;
+  }
+  .nav-item {
+    padding-right: 5%;
+    font-size: 20px;
+    text-align: right;
+  }
+  .navbar-nav {
+    background-color: rgba(200, 200, 200, 0) !important;
+  }
+  .navbar-toggler {
+    width: auto;
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+}
+@media only screen and (min-width: 392px) {
+  .navbar-brand {
+    padding-left: 0.5em;
+    margin-right: 0;
+  }
+  .nav-item {
+    padding-right: 5%;
+    font-size: 15px;
+    text-align: right;
+  }
+  .navbar-toggler {
+    width: 50%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .navbar-brand {
+    padding-left: 1em;
+  }
+  .nav-item {
+    padding-right: 5%;
+    font-size: 15px;
+    text-align: right;
+  }
+  .navbar-toggler {
+    width: 33.33333%;
+  }
+}
+/* Medium devices (landscape tablets, 800 and up) */
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    padding-left: 3em;
+  }
+  .nav-item {
+    padding-right: 5%;
+    font-size: 15px;
+    text-align: right;
+  }
+  .navbar-toggler {
+    width: 25%;
+  }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) {
+  .navbar-brand {
+    padding-left: 5em;
+  }
+  .nav-item {
+    padding-right: 30%;
+    font-size: 15px;
+    text-align: right;
+  }
+  .navbar-toggler {
+    width: 25%;
+  }
+  .navbar-toggler img {
+    margin-right: 30%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navbar-brand {
+    padding-left: 5em;
+  }
+  .nav-item {
+    padding-right: 30%;
+    font-size: 20px;
+    text-align: right;
+  }
+  .navbar-toggler {
+    width: 25%;
+  }
+  .navbar-toggler img {
+    margin-right: 30%;
+  }
+}
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+.home {
+  background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/pf%20background%20porqueelegirnos.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.fullPage {
+  height: 100vh;
+  width: 100%;
+  border: 3px;
+}
+.title {
+  font-size: 60px;
+  color: white;
+  text-align: start;
+}
+.paragraph {
+  font-size: 15px;
+  line-height: 2rem;
+}
+.button {
+  display: inline-block;
+  font-size: 13px;
+  background-color: white;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  border-radius: 25px;
+  color: purple;
+  margin-right: 0.5rem;
+}
+.button:hover {
+  color: rgb(138, 177, 230);
+  text-decoration: none;
+  opacity: 0.5;
+}
+/*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+  .home {
+    background-size: auto 100%;
+  }
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+  .home {
+    background-size: 100% 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .home {
+    background-size: 100% 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home {
+    background-size: 100% 100%;
+  }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) {
+  .home {
+    background-size: 100% 100%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .home {
+    background-size: 100% 100%;
+  }
+}
+/*---------------------------------------------------------Seccion Tabs----------------------------------------------------------------*/
+
+.tabs {
+  height: 100vh;
+  margin-bottom: 30%;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+.tabs .parent{
+    width:80%
+}
+.tabs h1 {
+  text-align: start;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 1);
+}
+.tabs .numero {
+  color: rgb(141, 150, 231);
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.tabs h2 {
+  border-top: 1px solid white;
+  text-align: start;
+  font-size: 15px;
+  font-weight: lighter;
+  color:white;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  line-height: 2rem;
+}
+.tabs h3 {
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 5%;
+}
+.tabs .specs {
+  text-align: start;
+  border-bottom: 1px solid;
+  border-color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+.tabs .nonUper {
+  text-align: start;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+.nav-tabs {
+  border: none !important;
+}
+.nav-tabs .nav-link {
+  border: none !important;
+  border: 0px solid transparent;
+}
+.nav-link img {
+  opacity: 0.3 !important;
+}
+.nav-link:hover img {
+  opacity: 0.7 !important;
+}
+.nav-link.active {
+  background-color: rgba(200, 200, 200, 0) !important;
+  border: none !important;
+}
+.nav-link.active img {
+  opacity: 1 !important;
+}
+.tab-pane {
+  color: white !important;
+}
+.tab-pane .titulo {
+  position: relative;
+}
+.titulo .texto {
+  text-align: start;
+  font-size: 30px;
+  padding-left: 0;
+}
+.titulo .number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15px;
+  color: rgb(53, 187, 215);
+}
+.tab-content .lead {
+  line-height: 2rem;
+  border-top: 1px solid;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 1);
+}
+.tab-content img {
+  display: block;
+  width: 100%;
+}
+
+/*-------------------------------------------------- Media Query seccion tabs --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+  .nav-link {
+    height: auto;
+  }
+  .tabs {
+    margin-top: 30%;
+    height: auto;
+    margin-bottom: 30%;
+  }
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+  .nav-link {
+    height: auto;
+  }
+  .tabs {
+    margin-top: 30%;
+    height: auto;
+    margin-bottom: 30%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .nav-link {
+    height: auto;
+  }
+  .tabs {
+    height: 100vh;
+    margin-bottom: 30%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-link {
+    height: auto;
+  }
+  .tabs {
+    height: 100vh;
+    margin-bottom: 30%;
+  }
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-link {
+    padding: 0%;
+  }
+  .tabs {
+    height: 100vh;
+    margin-bottom: 30%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav-link {
+    padding: 1%;
+  }
+  .tabs {
+    height: 100vh;
+    margin-bottom: 30%;
+  }
+}
+/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
+
+.footer h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: end;
+  color: white;
+  padding-bottom: 1em;
+}
+.footer h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: end;
+  color: white;
+  padding-top: 0;
+  padding-bottom: 1.5em;
+}
+ul.social {
+  width: 100%;
+  text-align: start;
+  padding-bottom: 10%;
+}
+ul.social > li {
+  display: inline-block;
+}
+ul.social > li > a {
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 36px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+ul.social > li > a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+  .footer .mail {
+    font-size: 20px;
+    padding-bottom: 1em;
+  }
+}
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+  .footer .mail {
+    font-size: 25px;
+    padding-bottom: 1em;
+  }
+}
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
