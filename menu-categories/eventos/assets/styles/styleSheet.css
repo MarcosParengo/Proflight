@@ -806,6 +806,12 @@ body p {
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
+.nonLanding {
+    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/eventos/assets/images/background/footer%20white.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 .footer .mail {
     font-size: 40px;
     font-weight: bold;
