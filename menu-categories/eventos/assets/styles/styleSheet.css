@@ -1,247 +1,885 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+}
+
+body h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/*--------------------------------------------------navBar--------------------------------------------------*/
+
+.navbar {
+    padding-top: 0px;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-nav {
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.nav-item {
+    color: white;
+    text-align: right;
+    margin: 0;
+}
+
+.navbar-toggler {
+    align-items: flex-end;
+    text-align: end;
+    border: none;
+    border-radius: 0;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(200, 200, 200, 0.0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: 0;
+}
+
+
+/*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
+
+@media only screen and (max-width: 392px) {
+    .navBarContainer {
+        background-color: rgba(200, 200, 200, 0.5);
     }
-    html {
-        scroll-behavior: smooth;
-      }
-    body {
-        font-size: 12px;
-        margin: 0;
-        font-family:  Arial, Helvetica, sans-serif;
-        position: absolute;
-        width: 100%;
+    .col-xxs {
+        width: 100%!important;
     }
-    body h1{
-        font-size:30px;
-        font-weight: bold;
-        text-align: center;
+    .navbar-brand {
+        padding-left: 0.5em;
+        margin-right: 0;
     }
-    body A {
-        color: white;
-        text-decoration: none;
-    }
-    body p {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    /*--------------------------------------------------navBar--------------------------------------------------*/
-    
-    .navbar{
-        padding-top: 0px;
-    }.navbar-brand{
-        padding-top: 20px;
-    }.navbar-nav{
-        height: 100vh;
-        background-color:rgba(200, 200, 200, 0.5);
-    }.nav-item{
-        color: white;
+    .nav-item {
+        padding-right: 5%;
+        font-size: 20px;
         text-align: right;
-        margin: 0;
-    }.navbar-toggler{
-        align-items: flex-end;
-        text-align: end;
-        border: none;
-        border-radius: 0;
-        border-color:rgba(0, 0, 0, 0) ;
-        background-color: rgba(200, 200, 200, 0.0);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        outline:0;
-    } 
-    
-    /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
-    
-    @media only screen and (max-width: 392px) {
-        .navBarContainer{
-            background-color:rgba(200, 200, 200, 0.5);
-        }.col-xxs{
-            width: 100%!important;
-        }.navbar-brand{
-            padding-left: 0.5em;
-            margin-right: 0;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 20px;
-            text-align: right;
-        }.navbar-nav{
-            background-color:rgba(200, 200, 200, 0.0)!important;
-        }.navbar-toggler{
-            width: auto;
-            background-color: rgba(0,0,0,.0)!important;
-        }
     }
-    @media only screen and (min-width: 392px) {
-        .navbar-brand{
-            padding-left: 0.5em;
-            margin-right: 0;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 50%;
-        }
+    .navbar-nav {
+        background-color: rgba(200, 200, 200, 0.0)!important;
     }
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 576px) {
-        .navbar-brand{
-            padding-left: 1em;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 33.33333%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 800 and up) */
-    @media only screen and (min-width: 768px) {
-        .navbar-brand{
-            padding-left: 3em;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }
+    .navbar-toggler {
+        width: auto;
+        background-color: rgba(0, 0, 0, .0)!important;
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .navbar-brand{
-            padding-left: 5em;
-        }
-        .nav-item{
-            padding-right: 30%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }.navbar-toggler img{
-            margin-right:30%
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .navbar-brand{
-            padding-left: 5em;
-        }
-        .nav-item{
-            padding-right: 30%;
-            font-size: 20px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }.navbar-toggler img{
-            margin-right:30%
-        }
+}
+
+@media only screen and (min-width: 392px) {
+    .navbar-brand {
+        padding-left: 0.5em;
+        margin-right: 0;
     }
-    /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 50%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 576px) {
+    .navbar-brand {
+        padding-left: 1em;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 33.33333%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 800 and up) */
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+        padding-left: 3em;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .navbar-brand {
+        padding-left: 5em;
+    }
+    .nav-item {
+        padding-right: 30%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+    .navbar-toggler img {
+        margin-right: 30%
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .navbar-brand {
+        padding-left: 5em;
+    }
+    .nav-item {
+        padding-right: 30%;
+        font-size: 20px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+    .navbar-toggler img {
+        margin-right: 30%
+    }
+}
+
+
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+
+.home {
+    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/eventos/assets/images/background/bg.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+/*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
+
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
     .home {
-        background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
-        background-repeat: no-repeat;
         background-size: auto 100%;
     }
-    /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
-    
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
+}
+
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .home {
+        background-size: auto 100%;
     }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
+}
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .home {
+        background-size: auto 100%;
     }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .home {
-            background-size: auto 100%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .home {
-            background-size: 100% 100%;
-        }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .home {
+        background-size: 100% 100%;
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .home {
-            background-size: 100% 100%;
-        } 
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .home {
-            background-size: 100% 100%;
-        } 
+}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .home {
+        background-size: 100% 100%;
     }
-    
-    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-    
-    .footer h1 {
-        font-size:40px;
-        font-weight: bold;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .home {
+        background-size: 100% 100%;
+    }
+}
+
+
+/*-------------------------------------------------- Seccion landing--------------------------------------------------*/
+
+.title {
+    font-size: 60px;
+    color: white;
+    text-align: end;
+}
+
+.subtitle {
+    font-size: 35px;
+    text-align: end;
+    color: rgb(143, 146, 150);
+    line-height: 3rem;
+}
+
+.fullPage {
+    height: 100vh;
+    width: 100%;
+    border: 3px;
+}
+
+.filtrar {
+    text-align: start;
+    font-size: 20px;
+    color: white;
+}
+
+.filtrar:hover {
+    color: rgb(53, 187, 215);
+}
+
+.carousel-indicators [data-bs-target] {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    border: 0px transparent;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.accordion-item {
+    border: 0px transparent;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.accordion-button {
+    border: 0px transparent;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.testimonio .title {
+    font-size: 35px;
+    color: white;
+    text-align: start;
+}
+
+.testimonio .subtitle {
+    font-size: 35px;
+    text-align: start;
+    color: rgb(143, 146, 150);
+    line-height: 3rem;
+}
+
+.testimonio .origen {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 2rem;
+    color: rgb(140, 146, 154)
+}
+
+.testimonio .paragraph {
+    font-size: 15px;
+    line-height: 2rem;
+    color: rgb(140, 146, 154)
+}
+
+.testimonio .line {
+    border-bottom: 1px solid;
+    border-color: rgb(140, 146, 154);
+    margin-bottom: 3rem;
+    width: 90%;
+}
+
+.contenedorTestimonio {
+    width: 70%
+}
+
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .title {
+        font-size: 30px;
         text-align: end;
-        color :white;
-        padding-bottom: 1em;
-    }.footer h2 {
-        font-size: 18px;
-        font-weight: lighter;
+    }
+    .subtitle {
+        font-size: 20px;
         text-align: end;
-        color :white;
-        padding-top: 0;
-        padding-bottom: 1.5em;
-    }ul.social {
-        width: 100%;
+        line-height: 3rem;
+    }
+    .filtrar {
         text-align: start;
-        padding-bottom: 10%;
-    }ul.social > li {
-        display: inline-block;
-    }ul.social > li > a {
-        text-align: center;
-        display: inline-block;
-        font-size: 18px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        border:1px solid;
-        border-radius: 36px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        margin: 0 3px 3px 0;
-    }ul.social > li > a:hover {
-        text-decoration: none;
-        opacity: 0.5;
+        font-size: 20px;
     }
-    
-    /*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
     }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
     }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        
+    .testimonio .paragraph {
+        font-size: 15px;
+        line-height: 1.3rem;
     }
+    .contenedorTestimonio {
+        width: 95%
+    }
+}
+
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .title {
+        font-size: 30px;
+        text-align: end;
+    }
+    .subtitle {
+        font-size: 20px;
+        text-align: end;
+        line-height: 3rem;
+    }
+    .filtrar {
+        text-align: start;
+        font-size: 20px;
+    }
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
+    }
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
+    }
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .testimonio .paragraph {
+        font-size: 15px;
+        line-height: 1.3rem;
+    }
+    .contenedorTestimonio {
+        width: 95%
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .title {
+        font-size: 40px;
+        text-align: end;
+    }
+    .subtitle {
+        font-size: 30px;
+        text-align: end;
+        line-height: 3rem;
+    }
+    .filtrar {
+        text-align: start;
+        font-size: 20px;
+    }
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
+    }
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
+    }
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .testimonio .paragraph {
+        font-size: 15px;
+        line-height: 1.3rem;
+    }
+    .contenedorTestimonio {
+        width: 90%
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .title {
+        font-size: 60px;
+        text-align: end;
+    }
+    .subtitle {
+        font-size: 35px;
+        text-align: end;
+        line-height: 3rem;
+    }
+    .filtrar {
+        text-align: start;
+        font-size: 20px;
+    }
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
+    }
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
+    }
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .testimonio .paragraph {
+        font-size: 13px;
+        line-height: 1.3rem;
+    }
+    .contenedorTestimonio {
+        width: 90%
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .title {
+        font-size: 60px;
+        text-align: end;
+    }
+    .subtitle {
+        font-size: 35px;
+        text-align: end;
+        line-height: 3rem;
+    }
+    .filtrar {
+        text-align: start;
+        font-size: 20px;
+    }
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
+    }
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
+    }
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .testimonio .paragraph {
+        font-size: 13px;
+        line-height: 1.3rem;
+    }
+    .contenedorTestimonio {
+        width: 80%
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        font-size: 60px;
+        text-align: end;
+    }
+    .subtitle {
+        font-size: 35px;
+        text-align: end;
+        line-height: 3rem;
+    }
+    .filtrar {
+        text-align: start;
+        font-size: 20px;
+    }
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
+    }
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
+    }
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .testimonio .paragraph {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .contenedorTestimonio {
+        width: 80%
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1350px) {
+    .title {
+        font-size: 60px;
+        text-align: end;
+    }
+    .subtitle {
+        font-size: 35px;
+        text-align: end;
+        line-height: 3rem;
+    }
+    .filtrar {
+        text-align: start;
+        font-size: 20px;
+    }
+    .testimonio .title {
+        font-size: 35px;
+        text-align: start;
+    }
+    .testimonio .subtitle {
+        font-size: 35px;
+        text-align: start;
+        line-height: 3rem;
+    }
+    .testimonio .origen {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .testimonio .paragraph {
+        font-size: 15px;
+        line-height: 2rem;
+    }
+    .contenedorTestimonio {
+        width: 70%
+    }
+}
+
+
+/*-------------------------------------------------- Seccion selector de testimonios --------------------------------------------------*/
+
+.alumnos {
+    padding-bottom: 10%;
+}
+
+.alumnos .title {
+    padding-top: 7%;
+    padding-left: 15%;
+    text-align: start;
+    color: rgb(133, 139, 148);
+}
+
+.alumnos .enfasis {
+    color: white;
+}
+
+.alumnos .card {
+    background-color: rgb(35, 47, 63);
+}
+
+.alumnos .card .profilePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -25%;
+}
+
+.alumnos .card .flag {
+    display: block;
+    margin-left: auto;
+    width: 10%;
+    margin-top: -30%;
+    margin-right: 20%;
+}
+
+.alumnos .show {
+    display: block;
+}
+
+.alumnos .show img {
+    width: 18%;
+    padding-left: 0.5em;
+}
+
+.alumnos .card .card-title {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.alumnos .card-body .nacionalidad {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.alumnos .card-body .testimonio {
+    font-size: 15px;
+    transition: opacity 2s ease-out;
+}
+
+.alumnos .card-footer {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-top: 0px solid;
+    background-color: rgba(0, 0, 0, .0);
+    color: rgb(53, 187, 215);
+    text-align: center;
+}
+
+.alumnos .card-footer a {
+    color: rgb(53, 187, 215);
+    text-transform: uppercase;
+}
+
+
+/*-------------------------------------------------- Media Query selector de testimonios --------------------------------------------------DONE*/
+
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .alumnoCard {
+        margin-top: 20%;
+    }
+    .containerTestimonios {
+        margin: 5%;
+    }
+    .alumnos .title {
+        padding-left: 10%;
+        font-size: 25px;
+    }
+}
+
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .alumnoCard {
+        margin-top: 20%;
+    }
+    .containerTestimonios {
+        margin: 5%;
+    }
+    .alumnos .title {
+        padding-left: 10%;
+        font-size: 25px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .alumnoCard {
+        margin-top: 20%;
+    }
+    .containerTestimonios {
+        margin: 5%;
+    }
+    .alumnos .title {
+        padding-left: 15%;
+        font-size: 25px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .alumnoCard {
+        margin-top: 5%;
+    }
+    .containerTestimonios {
+        margin: 5%;
+    }
+    .alumnos .title {
+        padding-left: 15%;
+        font-size: 25px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .alumnoCard {
+        margin-top: 5%;
+    }
+    .containerTestimonios {
+        margin: 5%;
+    }
+    .alumnos .title {
+        padding-left: 15%;
+        font-size: 30px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .alumnoCard {
+        margin-top: 5%;
+    }
+    .containerTestimonios {
+        margin: 5%;
+    }
+    .alumnos .title {
+        padding-left: 15%;
+        font-size: 30px;
+    }
+}
+
+
+/*-------------------------------------------------- Seccion footer--------------------------------------------------*/
+
+.footer .mail {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: end;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: end;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+}
+
+ul.social {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 10%;
+}
+
+ul.social>li {
+    display: inline-block;
+}
+
+ul.social>li>a {
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin: 0 3px 3px 0;
+}
+
+ul.social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
+
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .footer .mail {
+        font-size: 20px;
+        padding-bottom: 1em;
+    }
+}
+
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .footer .mail {
+        font-size: 25px;
+        padding-bottom: 1em;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
