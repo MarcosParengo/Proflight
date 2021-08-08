@@ -1,28 +1,28 @@
 var obj = [];
 
-$(document).ready(function () {
+$(document).ready(function() {
     var toggled = false;
     var navbarSupportedContent = $("#navbarSupportedContent")
     var navBarBrandImage = $("#navBarBrandImage")
     var navBarToggler = $("#navBarToggler")
     var navBarTogglerIcon = $("#navBarTogglerIcon")
-    containerTestimonios = $("#selectorDeTestimonios")
-    containerTestimonio= $("#containerTestimonio")
-    var testimonios = "assets/data/testimonios.json"
+    containerTestimonios = $("#selectorDeEventos")
+    containerTestimonio = $("#containerTestimonio")
+    var testimonios = "assets/data/eventos.json"
     var testimoniosCargados
 
     LoadJson(testimonios, 1)
 
-    var sourceSwap = function () {
+    var sourceSwap = function() {
         var $this = $(this);
         var newSource = $this.data('alt-src');
         $this.data('alt-src', $this.attr('src'));
         $this.attr('src', newSource);
     }
-    $(function () {
+    $(function() {
         navBarBrandImage.hover(sourceSwap, sourceSwap);
     });
-    navBarToggler.click(function () {
+    navBarToggler.click(function() {
         var algo = navbarSupportedContent.is(":visible")
         var newSource = navBarTogglerIcon.data('alt-src');
         navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
@@ -39,23 +39,23 @@ $(document).ready(function () {
 
 function LoadJson(url, selector) {
     $.ajax({
-        method: "get",
-        url: url,
-        dataType: "json"
-    }).done(function (data) {
-        obj = data
-        switch (selector) {
-            case 1:
-                testimoniosCargados = obj
-                fillContainerTestimonios(obj)
-                testimonio(0)
-                break;
-            case 2:
-                fillContainerEventos(obj)
-                break;
-        }
-    })
-        .fail(function (error) {
+            method: "get",
+            url: url,
+            dataType: "json"
+        }).done(function(data) {
+            obj = data
+            switch (selector) {
+                case 1:
+                    testimoniosCargados = obj
+                    fillContainerTestimonios(obj)
+                    testimonio(0)
+                    break;
+                case 2:
+                    fillContainerEventos(obj)
+                    break;
+            }
+        })
+        .fail(function(error) {
             console.log(error)
         })
 }
@@ -63,8 +63,8 @@ function LoadJson(url, selector) {
 function fillContainerTestimonios(obj) {
     let string = ""
 
-    obj.forEach(function (obj, i) {
-        if ((i % 4 === 0)) {
+    obj.forEach(function(obj, i) {
+        if ((i % 3 === 0)) {
             if (i === 0) {
                 string += (`
                 <div class='carousel-item active'}>
@@ -80,13 +80,10 @@ function fillContainerTestimonios(obj) {
             }
         }
         string += (`
-            <div class="alumnoCard col-sm-3 p-md-4 p-sm-0">
-                <div class="card h-100">
+            <div class="alumnoCard col-sm-4 p-md-4 p-sm-0">
+                <div class="card bg-light h-100">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
-                                <img src="assets/images/testimonio/profile/${obj.nombre}.png" class="profilePic" alt="...">
-                            </div>
                             <div class="col">
                                 <img src="assets/images/testimonio/bandera/${obj.origen}.png" class="flag" alt="-">
                             </div>
@@ -94,14 +91,18 @@ function fillContainerTestimonios(obj) {
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">${obj.nombre}</h5>
+                        <h5 class="card-info" style="color: rgb(53, 187, 215);">${obj.origen} ${obj.mes} ${obj.año}</h5>
+                        <h5 class="card-info" style="color: gray">${obj.dia} ${obj.mes} ${obj.año}</h5>
+                        <h5 class="card-info" style="color: gray">${obj.inicio}HS - ${obj.fin}HS ${obj.zonaHoraria}</h5>
+                        <h5 class="card-info" style="color: gray;text-transform:capitalize">${obj.ciudad}, ${obj.origen}</h5>
                     </div>
                     <div class="card-footer">
-                        <a class="show" href="#testimonio" onclick="testimonio(${i})">Ver testimonio</a>
+                        <button type="button"  class="btn btn-primary" onclick="testimonio(${i})">Inscribirse</button>
                     </div>
                 </div>
             </div>
         `)
-        if ((i + 1) % 4 === 0) {
+        if ((i + 1) % 3 === 0) {
             string += (`
                     </div>
                 </div>
@@ -111,27 +112,7 @@ function fillContainerTestimonios(obj) {
     })
     containerTestimonios.append(string)
 }
+
 function testimonio(numeroDeTestimonio) {
-    containerTestimonio.html(`<div class="row d-flex justify-content-center">
-    <div class="contenedorTestimonio">
-      <h1 class="title mb-5">${testimoniosCargados[numeroDeTestimonio].nombre}</h1>
-      <h2 class="origen mb-2">
-        país de origen: <img src="assets/images/components/flags/${testimoniosCargados[numeroDeTestimonio].flag}.png" alt="">
-        <span>${testimoniosCargados[numeroDeTestimonio].origen}</span>
-      </h2>
-    </div>
-  </div>
-  <div class="line"></div>
-  <div class="row d-flex justify-content-center">
-    <div class="row d-flex justify-content-center contenedorTestimonio">
-      <div class="col-4 d-none d-md-block d-lg-block d-xl-block">
-        <img src="assets/images/testimonio/picture/${testimoniosCargados[numeroDeTestimonio].nombre}.png" alt="" class="img-fluid">
-      </div>
-      <div class="col xs-12 md-12 lg-8 ms-0 ms-md-4 ms-lg-4 ms-xl-4">
-        <p class="paragraph">
-          ${testimoniosCargados[numeroDeTestimonio].testimonio}
-        </p>
-      </div>
-    </div>
-  </div>`)
+    console.log(numeroDeTestimonio)
 }
