@@ -1,28 +1,28 @@
 var obj = [];
 
-$(document).ready(function () {
+$(document).ready(function() {
     var toggled = false;
     var navbarSupportedContent = $("#navbarSupportedContent")
     var navBarBrandImage = $("#navBarBrandImage")
     var navBarToggler = $("#navBarToggler")
     var navBarTogglerIcon = $("#navBarTogglerIcon")
     containerTestimonios = $("#selectorDeTestimonios")
-    containerTestimonio= $("#containerTestimonio")
+    containerTestimonio = $("#containerTestimonio")
     var testimonios = "assets/data/testimonios.json"
     var testimoniosCargados
 
     LoadJson(testimonios, 1)
 
-    var sourceSwap = function () {
+    var sourceSwap = function() {
         var $this = $(this);
         var newSource = $this.data('alt-src');
         $this.data('alt-src', $this.attr('src'));
         $this.attr('src', newSource);
     }
-    $(function () {
+    $(function() {
         navBarBrandImage.hover(sourceSwap, sourceSwap);
     });
-    navBarToggler.click(function () {
+    navBarToggler.click(function() {
         var algo = navbarSupportedContent.is(":visible")
         var newSource = navBarTogglerIcon.data('alt-src');
         navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
@@ -39,23 +39,23 @@ $(document).ready(function () {
 
 function LoadJson(url, selector) {
     $.ajax({
-        method: "get",
-        url: url,
-        dataType: "json"
-    }).done(function (data) {
-        obj = data
-        switch (selector) {
-            case 1:
-                testimoniosCargados = obj
-                fillContainerTestimonios(obj)
-                testimonio(0)
-                break;
-            case 2:
-                fillContainerEventos(obj)
-                break;
-        }
-    })
-        .fail(function (error) {
+            method: "get",
+            url: url,
+            dataType: "json"
+        }).done(function(data) {
+            obj = data
+            switch (selector) {
+                case 1:
+                    testimoniosCargados = obj
+                    fillContainerTestimonios(obj)
+                    testimonio(0)
+                    break;
+                case 2:
+                    fillContainerEventos(obj)
+                    break;
+            }
+        })
+        .fail(function(error) {
             console.log(error)
         })
 }
@@ -63,7 +63,7 @@ function LoadJson(url, selector) {
 function fillContainerTestimonios(obj) {
     let string = ""
 
-    obj.forEach(function (obj, i) {
+    obj.forEach(function(obj, i) {
         if ((i % 4 === 0)) {
             if (i === 0) {
                 string += (`
@@ -88,7 +88,7 @@ function fillContainerTestimonios(obj) {
                                 <img src="assets/images/testimonio/profile/${obj.nombre}.png" class="profilePic" alt="...">
                             </div>
                             <div class="col">
-                                <img src="assets/images/testimonio/bandera/${obj.origen}.png" class="flag" alt="-">
+                                <img src="assets/images/testimonio/bandera/${obj.origen.toUpperCase()}.png" class="flag" alt="-">
                             </div>
                         </div>
                     </div>
@@ -111,6 +111,7 @@ function fillContainerTestimonios(obj) {
     })
     containerTestimonios.append(string)
 }
+
 function testimonio(numeroDeTestimonio) {
     containerTestimonio.html(`<div class="row d-flex justify-content-center">
     <div class="contenedorTestimonio">

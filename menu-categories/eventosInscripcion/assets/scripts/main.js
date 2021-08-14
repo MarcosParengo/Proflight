@@ -77,7 +77,7 @@ function fillContainerEventos(obj) {
                         ${obj.tipo}
                     </h1>
                     <h2 class="ubicacion pb-2">
-                        <img class="bandera" src="./assets/images/evento/bandera/${obj.origen}.png" alt="${obj.origen}">
+                        <img class="bandera" src="./assets/images/evento/bandera/${obj.origen.toUpperCase()}.png" alt="${obj.origen}">
                         <span class="ps-1"><strong>${obj.ciudad}</strong>, ${obj.origen}</span>
                     </h2>
                 </div>

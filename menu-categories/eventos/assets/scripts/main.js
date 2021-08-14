@@ -85,7 +85,7 @@ function fillContainerEventos(obj) {
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src="assets/images/evento/bandera/${obj.origen}.png" class="flag" alt="-">
+                                <img src="assets/images/evento/bandera/${obj.origen.toUpperCase()}.png" class="flag" alt="-">
                             </div>
                         </div>
                     </div>
