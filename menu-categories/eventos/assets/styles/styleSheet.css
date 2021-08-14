@@ -192,7 +192,7 @@ body p {
     background-size: auto 100%;
 }
 
-. page {
+.page {
     background-color: white;
 }
 
@@ -356,7 +356,7 @@ body p {
     }
     .subtitle {
         font-size: 20px;
-        line-height: 3rem;
+        line-height: 2rem;
     }
     .filtrar {
         text-align: start;
@@ -393,7 +393,7 @@ body p {
     }
     .subtitle {
         font-size: 20px;
-        line-height: 3rem;
+        line-height: 2rem;
     }
     .filtrar {
         text-align: start;
@@ -430,7 +430,7 @@ body p {
     }
     .subtitle {
         font-size: 20px;
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
     .filtrar {
         text-align: start;
@@ -467,7 +467,7 @@ body p {
     }
     .subtitle {
         font-size: 20px;
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
     .filtrar {
         text-align: start;
@@ -699,11 +699,6 @@ body p {
     text-align: center;
 }
 
-.alumnos .card-footer a {
-    color: rgb(53, 187, 215);
-    text-transform: uppercase;
-}
-
 
 /*-------------------------------------------------- Media Query selector de testimonios --------------------------------------------------DONE*/
 
@@ -880,23 +875,3 @@ ul.social>li>a:hover {
         padding-bottom: 1em;
     }
 }
-
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 1050px) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {}

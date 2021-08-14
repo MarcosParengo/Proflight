@@ -6,12 +6,12 @@ $(document).ready(function() {
     var navBarBrandImage = $("#navBarBrandImage")
     var navBarToggler = $("#navBarToggler")
     var navBarTogglerIcon = $("#navBarTogglerIcon")
-    containerTestimonios = $("#selectorDeEventos")
-    containerTestimonio = $("#containerTestimonio")
-    var testimonios = "assets/data/eventos.json"
-    var testimoniosCargados
+    containerEventos = $("#selectorDeEventos")
+    containerEvento = $("#containerEvento")
+    var Eventos = "assets/data/eventos.json"
+    var EventosCargados
 
-    LoadJson(testimonios, 1)
+    LoadJson(Eventos, 1)
 
     var sourceSwap = function() {
         var $this = $(this);
@@ -46,9 +46,9 @@ function LoadJson(url, selector) {
             obj = data
             switch (selector) {
                 case 1:
-                    testimoniosCargados = obj
-                    fillContainerTestimonios(obj)
-                    testimonio(0)
+                    EventosCargados = obj
+                    fillContainerEventos(obj)
+                    Evento(0)
                     break;
                 case 2:
                     fillContainerEventos(obj)
@@ -60,7 +60,7 @@ function LoadJson(url, selector) {
         })
 }
 
-function fillContainerTestimonios(obj) {
+function fillContainerEventos(obj) {
     let string = ""
 
     obj.forEach(function(obj, i) {
@@ -85,7 +85,7 @@ function fillContainerTestimonios(obj) {
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src="assets/images/testimonio/bandera/${obj.origen}.png" class="flag" alt="-">
+                                <img src="assets/images/evento/bandera/${obj.origen}.png" class="flag" alt="-">
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ function fillContainerTestimonios(obj) {
                         <h5 class="card-info" style="color: gray;text-transform:capitalize">${obj.ciudad}, ${obj.origen}</h5>
                     </div>
                     <div class="card-footer">
-                        <button type="button"  class="btn btn-primary" onclick="testimonio(${i})">Inscribirse</button>
+                        <a role="button" class="btn btn-primary" href="../eventosInscripcion/index.html?evento=${i}">Inscribirse</a>
                     </div>
                 </div>
             </div>
@@ -110,9 +110,5 @@ function fillContainerTestimonios(obj) {
         `)
         }
     })
-    containerTestimonios.append(string)
-}
-
-function testimonio(numeroDeTestimonio) {
-    console.log(numeroDeTestimonio)
+    containerEventos.append(string)
 }

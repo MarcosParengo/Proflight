@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+}
+
+body h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/*--------------------------------------------------navBar--------------------------------------------------*/
+
+.navbar {
+    padding-top: 0px;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-nav {
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.nav-item {
+    color: white;
+    text-align: right;
+    margin: 0;
+}
+
+.navbar-toggler {
+    align-items: flex-end;
+    text-align: end;
+    border: none;
+    border-radius: 0;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(200, 200, 200, 0.0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: 0;
+}
+
+
+/*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
+
+@media only screen and (max-width: 392px) {
+    .navBarContainer {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+    .col-xxs {
+        width: 100%!important;
+    }
+    .navbar-brand {
+        padding-left: 0.5em;
+        margin-right: 0;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 20px;
+        text-align: right;
+    }
+    .navbar-nav {
+        background-color: rgba(200, 200, 200, 0.0)!important;
+    }
+    .navbar-toggler {
+        width: auto;
+        background-color: rgba(0, 0, 0, .0)!important;
+    }
+}
+
+@media only screen and (min-width: 392px) {
+    .navbar-brand {
+        padding-left: 0.5em;
+        margin-right: 0;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 50%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 576px) {
+    .navbar-brand {
+        padding-left: 1em;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 33.33333%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 800 and up) */
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+        padding-left: 3em;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .navbar-brand {
+        padding-left: 5em;
+    }
+    .nav-item {
+        padding-right: 30%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+    .navbar-toggler img {
+        margin-right: 30%
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .navbar-brand {
+        padding-left: 5em;
+    }
+    .nav-item {
+        padding-right: 30%;
+        font-size: 20px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+    .navbar-toggler img {
+        margin-right: 30%
+    }
+}
+
+
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+
+.home {
+    background-color: white;
+}
+
+
+/*-------------------------------------------------- Seccion landing--------------------------------------------------*/
+
+.fullPage {
+    height: 100vh;
+    width: 100%;
+    border: 3px;
+}
+
+.top {
+    height: 45%;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 0px 0px 1px 1px;
+}
+
+.bottom {
+    height: 55%;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+}
+
+.bottom .title {
+    text-align: start;
+    font-size: 15px;
+    color: black;
+}
+
+.bottom .subtitle {
+    text-align: start;
+    font-size: 15px;
+    color: darkgray;
+}
+
+.pais {
+    font-size: 60px;
+    color: skyblue;
+    text-align: start;
+    font-weight: bolder;
+}
+
+.descripcion {
+    font-size: 35px;
+    text-align: start;
+    color: black;
+    opacity: 0.87;
+    line-height: 3rem;
+}
+
+.ubicacion {
+    font-size: 14px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.bandera {
+    width: 2rem;
+    height: 2rem
+}
+
+.inscribirseBtn {
+    background-color: skyblue;
+    text-transform: uppercase;
+    border-color: skyblue;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.tipoDeEvento {
+    text-transform: capitalize;
+    font-size: 11px;
+    color: darkgray;
+    font-weight: 700;
+}
+
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .title {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+    .top {
+        height: auto;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: auto;
+        border-width: 0px 0px 0px 1px;
+    }
+}
+
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .title {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+    .top {
+        height: auto;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: auto;
+        border-width: 0px 0px 0px 1px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .title {
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+    .top {
+        height: auto;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: auto;
+        border-width: 0px 0px 0px 1px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+    .top {
+        height: auto;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: auto;
+        border-width: 0px 0px 0px 1px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .title {
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+    .top {
+        height: 45%;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: 55%;
+        border-width: 0px 0px 0px 1px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+    .top {
+        height: 45%;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: 55%;
+        border-width: 0px 0px 0px 1px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1350px) {
+    .title {
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    .top {
+        height: 45%;
+        border-width: 0px 0px 1px 1px;
+    }
+    .bottom {
+        height: 55%;
+        border-width: 0px 0px 0px 1px;
+    }
+}
