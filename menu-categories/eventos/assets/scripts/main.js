@@ -8,8 +8,7 @@ $(document).ready(function() {
     var navBarTogglerIcon = $("#navBarTogglerIcon")
     containerEventos = $("#selectorDeEventos")
     containerEvento = $("#containerEvento")
-    var Eventos = "assets/data/eventos.json"
-    var EventosCargados
+    var Eventos = "../data/eventos.json"
 
     LoadJson(Eventos, 1)
 

@@ -7,7 +7,8 @@ $(document).ready(function() {
     var navBarToggler = $("#navBarToggler")
     var navBarTogglerIcon = $("#navBarTogglerIcon")
     containerevento = $("#containerEvento")
-    var eventos = "assets/data/eventos.json"
+        //var eventos = "assets/data/eventos.json"
+    var eventos = "../data/eventos.json"
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
