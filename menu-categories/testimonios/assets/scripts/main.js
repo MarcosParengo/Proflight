@@ -8,7 +8,7 @@ $(document).ready(function() {
     var navBarTogglerIcon = $("#navBarTogglerIcon")
     containerTestimonios = $("#selectorDeTestimonios")
     containerTestimonio = $("#containerTestimonio")
-    var testimonios = "assets/data/testimonios.json"
+    var testimonios = "../data/testimonios.json"
     var testimoniosCargados
 
     LoadJson(testimonios, 1)

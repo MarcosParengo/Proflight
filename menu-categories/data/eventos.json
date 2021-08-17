@@ -1,4 +1,5 @@
 [{
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -15,6 +16,7 @@
         "ciudad": "Distrito Federal"
     },
     {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -30,6 +32,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "Lima"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -45,6 +48,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "Bogotá"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -62,6 +66,7 @@
 
     },
     {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -77,6 +82,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "Buenos Aires"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -92,6 +98,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "Caracas"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -109,6 +116,7 @@
 
     },
     {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -124,6 +132,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "Panamá"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -139,6 +148,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "San Salvador"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -156,6 +166,7 @@
 
     },
     {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
@@ -171,6 +182,7 @@
         "zonaHoraria": "GMT-5 ",
         "ciudad": "Lima"
     }, {
+        "descripcion": "Charla informativa",
         "nombre": "Charla Informativa Gratuita",
         "ubicacion": "Hotel El Dorado Bogotá",
         "codigoDeUbicacion": "(CI .95 #1366, Bogotá, Colombia)",
