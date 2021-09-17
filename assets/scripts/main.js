@@ -8,22 +8,14 @@ $(document).ready(function() {
     var navBarTogglerIcon = $("#navBarTogglerIcon")
     containerTestimonios = $("#containerTestimonios")
     containerEventos = $("#containerEventos")
+    navBarText = $("#navBar-text")
     var testimonios = "menu-categories/data/testimonios.json"
     var eventos = "menu-categories/data/eventos.json"
 
     LoadJson(testimonios, 1)
     LoadJson(eventos, 2)
 
-    //Cambio de navBar brand on over
-    var sourceSwap = function() {
-        var $this = $(this);
-        var newSource = $this.data('alt-src');
-        $this.data('alt-src', $this.attr('src'));
-        $this.attr('src', newSource);
-    }
-    $(function() {
-        navBarBrandImage.hover(sourceSwap, sourceSwap);
-    });
+
     navBarToggler.click(function() {
         var algo = navbarSupportedContent.is(":visible")
         var newSource = navBarTogglerIcon.data('alt-src');

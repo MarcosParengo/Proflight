@@ -34,20 +34,49 @@ body p {
     font-size: 18px;
 }
 
+.rotatedText {
+    text-align: end;
+    color: white;
+    font-size: 20px;
+    transform: rotate(-90deg) translateX(50%);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    right:0;
+    top:50%;
+}
 
+.rotatedText::before {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 9rem;
+    margin: 0 1rem;
+    transform: translateY(-0.25rem);
+}
+
+.whatsapp{
+    float:right;
+    width:20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20em;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
 /*--------------------------------------------------navBar--------------------------------------------------*/
 
 .navbar {
     padding-top: 0px;
 }
 
-.navbar-brand {
-    padding-top: 20px;
-}
-
 .navbar-nav {
     height: 100vh;
     background-color: rgba(200, 200, 200, 0.5);
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-item {
@@ -68,6 +97,13 @@ body p {
     outline: 0;
 }
 
+#navBarBrandText {
+    display: none;
+}
+
+#navbar-brand:hover #navBarBrandText {
+    display: inline-block
+}
 
 /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
 
@@ -76,7 +112,7 @@ body p {
         background-color: rgba(200, 200, 200, 0.5);
     }
     .col-xxs {
-        width: 100%!important;
+        width: 100% !important;
     }
     .navbar-brand {
         padding-left: 0.5em;
@@ -88,11 +124,11 @@ body p {
         text-align: right;
     }
     .navbar-nav {
-        background-color: rgba(200, 200, 200, 0.0)!important;
+        background-color: rgba(200, 200, 200, 0.0) !important;
     }
     .navbar-toggler {
         width: auto;
-        background-color: rgba(0, 0, 0, .0)!important;
+        background-color: rgba(0, 0, 0, .0) !important;
     }
 }
 
@@ -110,7 +146,6 @@ body p {
         width: 50%;
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
@@ -128,7 +163,6 @@ body p {
     }
 }
 
-
 /* Medium devices (landscape tablets, 800 and up) */
 
 @media only screen and (min-width: 768px) {
@@ -144,7 +178,6 @@ body p {
         width: 25%;
     }
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
@@ -164,7 +197,6 @@ body p {
         margin-right: 30%
     }
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
@@ -185,12 +217,9 @@ body p {
     }
 }
 
-
 /*-------------------------------------------------- Seccion land -------------------------------------------------*/
 
 .land {
-    padding-top: 25em;
-    padding-bottom: 25em;
     background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/backgroundMain.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -199,21 +228,15 @@ body p {
 
 .land img {
     display: block;
-    width: 30%;
-    /*--------------------------------------------------Media Query land -------------------------------------------------DONE*/
+    width: 100%;
 }
+
+/*--------------------------------------------------Media Query land -------------------------------------------------DONE*/
 
 @media only screen and (max-width: 480px) {
     .land {
         background-size: auto;
         background-size: auto 100%;
-        padding-bottom: 27em;
-    }
-    .land img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
     }
 }
 
@@ -221,13 +244,6 @@ body p {
     .land {
         background-size: auto;
         background-size: auto 100%;
-        padding-bottom: 27em;
-    }
-    .land img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
     }
 }
 
@@ -235,13 +251,6 @@ body p {
     .land {
         background-size: auto;
         background-size: auto 100%;
-        padding-bottom: 27em;
-    }
-    .land img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
     }
 }
 
@@ -249,14 +258,7 @@ body p {
     .land {
         background-size: 100% 100%;
     }
-    .land img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-    }
 }
-
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
@@ -267,9 +269,7 @@ body p {
     box-sizing: border-box
 }
 
-
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
@@ -279,7 +279,6 @@ body p {
     }
 }
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
@@ -287,7 +286,6 @@ body p {
         background-size: auto 100%;
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
@@ -297,7 +295,6 @@ body p {
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -305,7 +302,6 @@ body p {
         background-size: auto 100%;
     }
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
@@ -315,7 +311,6 @@ body p {
     }
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
@@ -323,7 +318,6 @@ body p {
         background-size: 100% 100%;
     }
 }
-
 
 /*-------------------------------------------------- Seccion Bienvenido --------------------------------------------------*/
 
@@ -451,7 +445,6 @@ body p {
     transform: translate(-50%, -100%);
 }
 
-
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
@@ -487,7 +480,6 @@ body p {
         font-size: 16px;
     }
 }
-
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
@@ -525,7 +517,6 @@ body p {
     }
 }
 
-
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
@@ -558,7 +549,6 @@ body p {
         font-size: 12px;
     }
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
@@ -596,7 +586,6 @@ body p {
     }
 }
 
-
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
@@ -633,7 +622,6 @@ body p {
     }
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
@@ -668,7 +656,6 @@ body p {
         font-size: 22px;
     }
 }
-
 
 /*-------------------------------------------------- Sección programas --------------------------------------------------*/
 
@@ -709,10 +696,10 @@ body p {
 }
 
 .programas .carousel-caption {
-    right: 0!important;
-    left: 0!important;
-    top: 0!important;
-    bottom: auto!important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: auto !important;
 }
 
 .programas .carousel-caption h1 {
@@ -763,9 +750,7 @@ body p {
     height: 200px;
 }
 
-
 /*-------------------------------------------------- Media Query programas --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
@@ -799,7 +784,6 @@ body p {
     }
 }
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
@@ -831,7 +815,6 @@ body p {
         font-size: 12px;
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
@@ -865,7 +848,6 @@ body p {
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -897,7 +879,6 @@ body p {
         font-size: 15px;
     }
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
@@ -931,7 +912,6 @@ body p {
     }
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
@@ -962,7 +942,6 @@ body p {
         font-size: 15px;
     }
 }
-
 
 /*-------------------------------------------------- flota  Sección--------------------------------------------------*/
 
@@ -1091,9 +1070,7 @@ body p {
     font-size: 15px;
 }
 
-
 /*-------------------------------------------------- Media Query flota  --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
@@ -1121,7 +1098,6 @@ body p {
     }
 }
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
@@ -1147,7 +1123,6 @@ body p {
         padding-bottom: 5%;
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
@@ -1179,7 +1154,6 @@ body p {
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -1209,7 +1183,6 @@ body p {
         font-size: 18px;
     }
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
@@ -1241,7 +1214,6 @@ body p {
     }
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
@@ -1272,7 +1244,6 @@ body p {
     }
 }
 
-
 /*-------------------------------------------------- Sección tecnologia  --------------------------------------------------*/
 
 .tecnologia {
@@ -1289,33 +1260,33 @@ body p {
 }
 
 .nav-tabs {
-    border: none!important;
+    border: none !important;
 }
 
 .nav-tabs .nav-link {
-    border: none!important;
+    border: none !important;
     border: 0px solid transparent;
 }
 
 .nav-link img {
-    opacity: 0.3!important;
+    opacity: 0.3 !important;
 }
 
 .nav-link:hover img {
-    opacity: 0.7!important;
+    opacity: 0.7 !important;
 }
 
 .nav-link.active {
-    background-color: rgba(200, 200, 200, 0.0)!important;
-    border: none!important;
+    background-color: rgba(200, 200, 200, 0.0) !important;
+    border: none !important;
 }
 
 .nav-link.active img {
-    opacity: 1!important;
+    opacity: 1 !important;
 }
 
 .tab-pane {
-    color: white!important;
+    color: white !important;
 }
 
 .tab-pane .titulo {
@@ -1344,9 +1315,7 @@ body p {
     color: rgba(255, 255, 255, 1);
 }
 
-
 /*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
@@ -1368,7 +1337,6 @@ body p {
     }
 }
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
@@ -1388,7 +1356,6 @@ body p {
         padding-left: 0;
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
@@ -1451,7 +1418,6 @@ body p {
         padding-left: 0;
     }
 }
-
 
 /*-------------------------------------------------- Seccion Alumnos --------------------------------------------------*/
 
@@ -1539,9 +1505,7 @@ body p {
     text-transform: uppercase;
 }
 
-
 /*-------------------------------------------------- Media Query Alumnos --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
@@ -1558,7 +1522,6 @@ body p {
     }
 }
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
@@ -1573,7 +1536,6 @@ body p {
         font-size: 25px;
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
@@ -1590,7 +1552,6 @@ body p {
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -1605,7 +1566,6 @@ body p {
         font-size: 25px;
     }
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
@@ -1622,7 +1582,6 @@ body p {
     }
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
@@ -1637,7 +1596,6 @@ body p {
         font-size: 30px;
     }
 }
-
 
 /*-------------------------------------------------- Seccion Eventos  --------------------------------------------------*/
 
@@ -1721,46 +1679,38 @@ body p {
 }
 
 .eventos .btn-primary {
-    margin-top: 25%!important;
-    margin-bottom: 15%!important;
+    margin-top: 25% !important;
+    margin-bottom: 15% !important;
     border-radius: 20px;
     background-color: rgb(46, 144, 169);
     border-color: rgb(46, 144, 169);
 }
 
-
 /*-------------------------------------------------- Media Query Eventos  --------------------------------------------------TODO*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {}
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {}
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {}
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {}
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {}
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {}
-
 
 /*-------------------------------------------------- Seccion  Mas información--------------------------------------------------*/
 
@@ -1784,39 +1734,31 @@ body p {
     border-color: rgb(46, 144, 169);
 }
 
-
 /*-------------------------------------------------- Media Query  Mas información--------------------------------------------------TODO*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {}
 
-
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {}
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {}
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {}
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {}
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {}
-
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
 
@@ -1866,9 +1808,7 @@ ul.social>li>a:hover {
     opacity: 0.5;
 }
 
-
 /*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
@@ -1878,7 +1818,6 @@ ul.social>li>a:hover {
         padding-bottom: 1em;
     }
 }
-
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
