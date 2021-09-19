@@ -23,13 +23,11 @@
         </div>
     </a>
 
-
-
     <nav class="navbar fixed-top navbar-dark">
         <div class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
             <a class="navbar-brand" id="navbar-brand" href="#">
                 <img id="navBarBrandImage" src="assets\images\logo\isologo.svg" alt="Proflight">
-                <span id="navBarBrandText">Proflight</span>
+                <span id="navBarBrandText" class="ps-1">Proflight</span>
             </a>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img id="navBarTogglerIcon" data-alt-src="assets\images\logo\Cross.png"
@@ -96,31 +94,39 @@
         <section class="bienvenido ">
             <div class="parent container-fluid my-5 pt-0 mt-0 p-relative">
                 <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 ">
-                    <div class="childleft col-md-12 col-lg-9 ">
-                        <h1 id="home " class="bienvenidaTitulo ">¡Bienvenidos a ProFlight!</h1>
-                        <p class="lead mb-0 ">Somos una institución orientada a la formación de pilotos privados y comerciales capacitados para aportar al desarrollo futuro de la aeronáutica a nivel mundial.
+                    <div class="childleft col-md-12 col-lg-9 h-100">
+                        <h1 id="home" class="bienvenidaTitulo ">¡Bienvenidos a ProFlight!</h1>
+                        <p class="lead mb-0">Somos una institución orientada a la formación de pilotos privados y comerciales capacitados para aportar al desarrollo futuro de la aeronáutica a nivel mundial.
                         </p>
-                        <p class="lead pt-0 ">Con pilares en la exigencia, integralidad y desarrollo tencnológico hemos transgredido la educación convencional para enfocarnos en una enseñanza de estandares superiores.
+                        <p class="lead pt-0">Con pilares en la exigencia, integralidad y desarrollo tencnológico hemos transgredido la educación convencional para enfocarnos en una enseñanza de estandares superiores.
                         </p>
-                        <h2>El mundo avanza, no te quedes atras.</h2>
+                        <h2 class="footer">El mundo avanza, no te quedes atrás.</h2>
+                    </div>
+
+                    <div class="col-lg-6 p-0 d-none d-xs-none d-sm-none d-md-none d-lg-block " style="box-sizing: border-box;margin-left: -450px; margin-top: 0 ">
+                        <img src="assets\images\components\Pagina 2 04.png " alt="" style="display:block; width: 100%;">
+                    </div>
+                
+                    <div class="childleft col-md-12 col-lg-9 h-100">
                         <h1 class="cómopilotoTitulo ">¿Cómo me convierto en piloto?</h1>
-                        <p class="lead mb-0 ">Para convertirte en piloto hay varias etapas y distintas habilitaciones. Tu eliges que tan lejos ir. Si tu objetivo es solo aprender a volar, con la licencia de PPA (Piloto privado de avión) es suficiente. Pero si tu proyectas
+                        <p class="lead comoPiloto mb-0 ">Para convertirte en piloto hay varias etapas y distintas habilitaciones.<br>
+                            Tu eliges que tan lejos ir.<br>
+                            Si tu objetivo es solo aprender a volar, con la licencia de PPA (Piloto privado de avión) es suficiente. Pero si tu proyectas
                             ingresar a linea aérea deberás obtener una licencia de Piloto Comercial.
                             <br>En esta línea de tiempo te explicamos cronológicamente como se obtienen.
                         </p>
                         <div class="ps-3 ">
                             <ul class="timeline ">
-                                <li data-year="1 " data-text="piloto privado "></li>
-                                <li data-year="2 " data-text="habilitación de instrumentos "></li>
-                                <li data-year="3 " data-text="habilitación nocturno "></li>
-                                <li data-year="4 " data-text="habilitación bimotor "></li>
-                                <li data-year="5 " data-text="piloto comercial "></li>
+                                <li data-year="1 " data-text="piloto privado" ><div class="d-flex align-items-center"><span>1</span></div></li>
+                                <li data-year="2 " data-text="habilitación instrumentos "><div class="d-flex align-items-center"><span>2</span></div></li>
+                                <li data-year="3 " data-text="habilitación nocturno "><div class="d-flex align-items-center"><span>3</span></div></li>
+                                <li data-year="4 " data-text="habilitación bimotor "><div class="d-flex align-items-center"><span>4</span></div></li>
+                                <li data-year="5 " data-text="piloto comercial "><div class="d-flex align-items-center"><span>5</span></div></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 p-0 d-none d-xs-none d-sm-none d-md-none d-lg-block " style="box-sizing: border-box;margin-left: -450px; margin-top: 0 ">
-                        <img src="assets\images\components\Pagina 2 04.png " alt="" style="display:block; width: 100%;">
-                    </div>
+
+                    
                 </div>
                 <div class="rotatedTextContainer d-none d-md-none d-lg-block">
                     <h1 class="text">Cronología de estudio</h1>
@@ -400,7 +406,7 @@
                 <div class="row ">
                     <h1 class="title "><span>Nuestros alumnos </span><span class="enfasis ">recomiendan</span></h1>
                     <div class="container ">
-                        <div class="containerTestimonios row d-flex justify-content-center " id="containerTestimonios ">
+                        <div class="containerTestimonios row d-flex justify-content-center " id="containerTestimonios">
 
                         </div>
                     </div>
@@ -412,7 +418,7 @@
                 <div class="row ">
                     <h1 class="title "><span>Próximos eventos</span></h1>
                     <div class="container ">
-                        <div class="row m-5 d-flex justify-content-center " id="containerEventos ">
+                        <div class="row m-5 d-flex justify-content-center " id="containerEventos">
 
                         </div>
                     </div>

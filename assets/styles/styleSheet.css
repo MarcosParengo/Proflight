@@ -409,7 +409,7 @@ body p {
 .bienvenido .bienvenidaTitulo {
     text-align: start;
     font-size: 60px;
-    font-weight: lighter;
+    font-weight: bolder;
     color: rgba(255, 255, 255, 1);
     padding-bottom: 5%;
 }
@@ -423,25 +423,35 @@ body p {
 .bienvenido p.lead {
     text-align: left;
     color: white;
-    padding-right: 15%;
+    width: 70%;
     line-height: 40px;
 }
 
 .bienvenido .cómopilotoTitulo {
     text-align: start;
-    font-size: 40px;
-    font-weight: lighter;
+    font-size: 30px;
+    font-weight: 700;
     color: rgba(255, 255, 255, 1);
-    padding-top: 35%;
     padding-bottom: 5%;
+}
+
+.bienvenido .comoPiloto{
+    font-size: 15px!important;
+    line-height: 2em!important;
+}
+
+.bienvenido .footer{
+    color:var(--main-color);
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .timeline {
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 0;
-    width: 85%;
-    height: 20px;
+    width: 70%;
+    height: 30px;
     list-style: none;
     text-align: justify;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(48, 58, 62, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
@@ -451,13 +461,14 @@ body p {
     display: inline-block;
     content: "";
     width: 100%;
+    
 }
 
 .timeline li {
-    text-transform: uppercase;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    content: attr(data-year);
+    width: 30px;
+    height: 30px;
     background: rgba(58, 69, 83, 1);
     text-align: center;
     line-height: 1.2;
@@ -466,18 +477,17 @@ body p {
     border-radius: 50%;
 }
 
-.timeline li:before {
-    color: rgb(53, 187, 215);
-    display: inline-block;
-    content: attr(data-year);
-    font-size: 26px;
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
+.timeline > li > div{
+    height: 30px;
+    width: 30px;
 }
+.timeline > li > div > span{
+    width: 100%;
+    text-align: center;
+    color:var(--main-color);
+    font-weight: bolder;
+}
+
 
 .timeline li:nth-child(odd):before {
     top: -40px;
@@ -488,6 +498,10 @@ body p {
 }
 
 .timeline li:after {
+    text-transform: uppercase;
+    font-size:10px;
+    line-height: 1.5em;
+    letter-spacing: 0.3em;
     color: rgb(92, 100, 112);
     display: inline-block;
     content: attr(data-text);
@@ -529,6 +543,7 @@ body p {
         font-size: 25px;
     }
     .bienvenido p.lead {
+        
         font-size: 15px;
         line-height: 2rem;
         padding-right: 0%;
@@ -541,16 +556,14 @@ body p {
     }
     .bienvenido .childleft {
         padding-right: 0;
-        padding-top: 15%;
         padding-left: 0;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 25px;
-        padding-top: 35%;
         padding-bottom: 5%;
     }
     .timeline li:after {
-        font-size: 9px;
+        font-size: 8px;
     }
     .timeline li:before {
         font-size: 16px;
@@ -568,7 +581,6 @@ body p {
     .bienvenido p.lead {
         font-size: 15px;
         line-height: 2rem;
-        padding-right: 0%;
     }
     .bienvenido h2 {
         font-size: 17px;
@@ -578,16 +590,14 @@ body p {
     }
     .bienvenido .childleft {
         padding-right: 0;
-        padding-top: 15%;
         padding-left: 0;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 25px;
-        padding-top: 35%;
         padding-bottom: 5%;
     }
     .timeline li:after {
-        font-size: 12px;
+        font-size: 8px;
     }
     .timeline li:before {
         font-size: 16px;
@@ -605,7 +615,6 @@ body p {
     .bienvenido p.lead {
         font-size: 15px;
         line-height: 2rem;
-        padding-right: 0%;
     }
     .bienvenido h2 {
         font-size: 17px;
@@ -615,16 +624,14 @@ body p {
     }
     .bienvenido .childleft {
         padding-right: 5%;
-        padding-top: 0;
         padding-left: 0;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 25px;
-        padding-top: 35%;
         padding-bottom: 5%;
     }
     .timeline li:after {
-        font-size: 12px;
+        font-size: 8px;
     }
 }
 
@@ -639,7 +646,6 @@ body p {
     .bienvenido p.lead {
         font-size: 17px;
         line-height: 2rem;
-        padding-right: 15%;
     }
     .bienvenido h2 {
         font-size: 25px;
@@ -649,16 +655,14 @@ body p {
     }
     .bienvenido .childleft {
         padding-right: 5%;
-        padding-top: 15%;
         padding-left: 5%;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 30px;
-        padding-top: 35%;
         padding-bottom: 5%;
     }
     .timeline li:after {
-        font-size: 16px;
+        font-size: 10px;
     }
     .timeline li:before {
         font-size: 18px;
@@ -676,7 +680,6 @@ body p {
     .bienvenido p.lead {
         font-size: 17px;
         line-height: 2rem;
-        padding-right: 15%;
     }
     .bienvenido h2 {
         font-size: 30px;
@@ -686,16 +689,13 @@ body p {
     }
     .bienvenido .childleft {
         padding-right: 15%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 30px;
-        padding-top: 35%;
-        padding-bottom: 5%;
     }
     .timeline li:after {
-        font-size: 16px;
+        font-size: 12px;
     }
     .timeline li:before {
         font-size: 20px;
@@ -712,7 +712,6 @@ body p {
     }
     .bienvenido p.lead {
         font-size: 20px;
-        padding-right: 15%;
     }
     .bienvenido h2 {
         font-size: 30px;
@@ -722,16 +721,13 @@ body p {
     }
     .bienvenido .childleft {
         padding-right: 15%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 40px;
-        padding-top: 35%;
-        padding-bottom: 5%;
     }
     .timeline li:after {
-        font-size: 16px;
+        font-size: 12px;
     }
     .timeline li:before {
         font-size: 22px;
@@ -751,8 +747,6 @@ body p {
 
 .programas .childleft {
     padding-right: 20%;
-    padding-top: 15%;
-    padding-left: 0%;
 }
 
 .programas .programasTitulo {
@@ -761,7 +755,6 @@ body p {
     font-size: 35px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
 }
 
 .programas .more {
