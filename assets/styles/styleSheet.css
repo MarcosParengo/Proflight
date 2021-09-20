@@ -16,7 +16,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    letter-spacing: 0.1em
 }
 
 body h1 {
@@ -34,6 +35,10 @@ body p {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+.h-100vh {
+    height: 100vh
 }
 
 .p-relative {
@@ -396,14 +401,9 @@ body p {
 
 /*-------------------------------------------------- Seccion Bienvenido --------------------------------------------------*/
 
-.bienvenido .parent {
-    padding-left: 15%;
-}
-
 .bienvenido .childleft {
     padding-right: 15%;
-    padding-top: 15%;
-    padding-left: 0%;
+    padding-left: 15%;
 }
 
 .bienvenido .bienvenidaTitulo {
@@ -427,6 +427,12 @@ body p {
     line-height: 40px;
 }
 
+.bienvenido .imgContainer {
+    position: absolute;
+    right: 0em;
+    width: 50%;
+}
+
 .bienvenido .cómopilotoTitulo {
     text-align: start;
     font-size: 30px;
@@ -435,15 +441,21 @@ body p {
     padding-bottom: 5%;
 }
 
-.bienvenido .comoPiloto{
+.bienvenido .comoPiloto {
     font-size: 15px!important;
     line-height: 2em!important;
 }
 
-.bienvenido .footer{
-    color:var(--main-color);
+.bienvenido .footer {
+    color: var(--main-color);
     font-size: 25px;
     font-weight: bolder;
+}
+
+.bienvenido .circle {
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, -25%);
 }
 
 .timeline {
@@ -461,7 +473,6 @@ body p {
     display: inline-block;
     content: "";
     width: 100%;
-    
 }
 
 .timeline li {
@@ -477,17 +488,17 @@ body p {
     border-radius: 50%;
 }
 
-.timeline > li > div{
+.timeline>li>div {
     height: 30px;
     width: 30px;
 }
-.timeline > li > div > span{
+
+.timeline>li>div>span {
     width: 100%;
     text-align: center;
-    color:var(--main-color);
+    color: var(--main-color);
     font-weight: bolder;
 }
-
 
 .timeline li:nth-child(odd):before {
     top: -40px;
@@ -499,7 +510,7 @@ body p {
 
 .timeline li:after {
     text-transform: uppercase;
-    font-size:10px;
+    font-size: 10px;
     line-height: 1.5em;
     letter-spacing: 0.3em;
     color: rgb(92, 100, 112);
@@ -543,7 +554,6 @@ body p {
         font-size: 25px;
     }
     .bienvenido p.lead {
-        
         font-size: 15px;
         line-height: 2rem;
         padding-right: 0%;
@@ -551,12 +561,9 @@ body p {
     .bienvenido h2 {
         font-size: 17px;
     }
-    .bienvenido .parent {
-        padding-left: 5%;
-    }
     .bienvenido .childleft {
+        padding-left: 10%;
         padding-right: 0;
-        padding-left: 0;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 25px;
@@ -585,12 +592,9 @@ body p {
     .bienvenido h2 {
         font-size: 17px;
     }
-    .bienvenido .parent {
-        padding-left: 5%;
-    }
     .bienvenido .childleft {
+        padding-left: 10%;
         padding-right: 0;
-        padding-left: 0;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 25px;
@@ -619,12 +623,9 @@ body p {
     .bienvenido h2 {
         font-size: 17px;
     }
-    .bienvenido .parent {
-        padding-left: 5%;
-    }
     .bienvenido .childleft {
+        padding-left: 10%;
         padding-right: 5%;
-        padding-left: 0;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 25px;
@@ -650,12 +651,9 @@ body p {
     .bienvenido h2 {
         font-size: 25px;
     }
-    .bienvenido .parent {
-        padding-left: 5%;
-    }
     .bienvenido .childleft {
+        padding-left: 10%;
         padding-right: 5%;
-        padding-left: 5%;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 30px;
@@ -684,12 +682,9 @@ body p {
     .bienvenido h2 {
         font-size: 30px;
     }
-    .bienvenido .parent {
-        padding-left: 5%;
-    }
     .bienvenido .childleft {
+        padding-left: 5%;
         padding-right: 15%;
-        padding-left: 0%;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 30px;
@@ -716,12 +711,9 @@ body p {
     .bienvenido h2 {
         font-size: 30px;
     }
-    .bienvenido .parent {
-        padding-left: 15%;
-    }
     .bienvenido .childleft {
+        padding-left: 15%;
         padding-right: 15%;
-        padding-left: 0%;
     }
     .bienvenido .cómopilotoTitulo {
         font-size: 40px;
@@ -738,7 +730,7 @@ body p {
 /*-------------------------------------------------- Sección programas --------------------------------------------------*/
 
 .programas {
-    padding-bottom: 15%;
+    height: 100vh
 }
 
 .programas .parent {
@@ -753,7 +745,7 @@ body p {
     padding-left: 0%;
     text-align: start;
     font-size: 35px;
-    font-weight: lighter;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -788,11 +780,16 @@ body p {
 }
 
 .programas .title {
+    padding-left: 1em;
     color: white;
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .programas .number {
-    color: rgb(53, 187, 215);
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 500
 }
 
 .programas .sliderButton {
@@ -811,14 +808,14 @@ body p {
 }
 
 .programas .sliderButton:hover {
-    background-color: rgb(49, 171, 198);
+    color: var(--main-color);
 }
 
 .programas .btn-primary {
     font-size: 15px;
     border-radius: 20px;
-    background-color: rgb(53, 187, 215);
-    border-color: rgb(46, 144, 169);
+    color: var(--main-color);
+    color: var(--main-color);
 }
 
 .programas .bd-placeholder-img {
@@ -832,6 +829,9 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
+    .programas {
+        height: auto
+    }
     .programas .programasTitulo {
         text-align: start;
         font-size: 25px;
@@ -846,7 +846,6 @@ body p {
     }
     .programas .childleft {
         padding-right: 0%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .programas .carousel {
@@ -865,6 +864,9 @@ body p {
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
+    .programas {
+        height: auto
+    }
     .programas .programasTitulo {
         text-align: start;
         font-size: 30px;
@@ -879,7 +881,6 @@ body p {
     }
     .programas .childleft {
         padding-right: 0%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .programas .carousel {
@@ -898,6 +899,9 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
+    .programas {
+        height: auto
+    }
     .programas .programasTitulo {
         text-align: start;
         font-size: 35px;
@@ -912,7 +916,6 @@ body p {
     }
     .programas .childleft {
         padding-right: 0%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .programas .carousel {
@@ -931,6 +934,9 @@ body p {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
+    .programas {
+        height: auto
+    }
     .programas .programasTitulo {
         text-align: start;
         font-size: 40px;
@@ -945,7 +951,6 @@ body p {
     }
     .programas .childleft {
         padding-right: 0%;
-        padding-top: 15%;
         padding-left: 5%;
     }
     .programas .carousel {
@@ -964,6 +969,9 @@ body p {
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
+    .programas {
+        height: 100vh
+    }
     .programas .programasTitulo {
         text-align: start;
         font-size: 35px;
@@ -978,7 +986,6 @@ body p {
     }
     .programas .childleft {
         padding-right: 15%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .programas .carousel {
@@ -997,6 +1004,9 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .programas {
+        height: 100vh
+    }
     .programas .programasTitulo {
         text-align: start;
         font-size: 35px;
@@ -1010,7 +1020,6 @@ body p {
     }
     .programas .childleft {
         padding-right: 15%;
-        padding-top: 15%;
         padding-left: 0%;
     }
     .programas .carousel {
