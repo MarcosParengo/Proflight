@@ -1,4 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 * {
     box-sizing: border-box;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
@@ -755,7 +754,8 @@ body p {
 }
 
 .programas .carousel {
-    padding-right: 25%;
+    font-size: 15px;
+    max-width: 70ch
 }
 
 .programas .carousel-inner {
@@ -770,7 +770,7 @@ body p {
 }
 
 .programas .carousel-caption h1 {
-    font-size: 20px;
+    font-size: 17px;
     text-align: start;
 }
 
@@ -793,29 +793,31 @@ body p {
 }
 
 .programas .sliderButton {
-    height: 35px;
-    width: 35px;
-    padding: 6px;
+    text-align: center;
     border: none;
     border-radius: 50%;
     background-color: rgb(75, 84, 97);
+    color:black;
+    transition: background-color 0.5s ease;
+
+}
+.programas .sliderButton > .contentContainer{
+    height: 25px;
+    width: 25px;
+}
+
+.programas .sliderButton:hover{
+    background-color: var(--main-color);
+}
+
+.programas .sliderButton:hover .buttonContent{
+    filter: invert(0);
 }
 
 .programas .buttonContent {
-    padding: 6px;
     height: 20px;
     width: 15px;
-}
-
-.programas .sliderButton:hover {
-    color: var(--main-color);
-}
-
-.programas .btn-primary {
-    font-size: 15px;
-    border-radius: 20px;
-    color: var(--main-color);
-    color: var(--main-color);
+    filter: invert(100%);
 }
 
 .programas .bd-placeholder-img {

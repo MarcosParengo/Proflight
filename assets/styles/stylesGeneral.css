@@ -1,0 +1,294 @@
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+* {
+    box-sizing: border-box;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    --main-color: #00B0CE
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0.1em
+}
+
+body h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.h-100vh {
+    height: 100vh
+}
+
+.p-relative {
+    position: relative;
+}
+
+.rotatedTextContainer {
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
+    width: auto;
+    transform: rotate(-90deg) translateX(100%);
+    transform-origin: top right;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.rotatedTextContainer>.text {
+    text-align: end;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rotatedTextContainer>.text::before {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 9rem;
+    margin: 0 1rem;
+}
+
+.rotatedTextContainer>.text:hover {
+    color: var(--main-color);
+}
+
+.whatsappButtonContainer {
+    position: fixed;
+    bottom: 2em;
+    right: 0;
+    z-index: 1030;
+    background-color: rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.whatsappButtonContainer>.dialog {
+    display: inline-block;
+    position: relative;
+    background: white;
+    border-radius: 7px;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+}
+
+.whatsappButtonContainer>.dialog::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: transparent white;
+    border-width: 7px 0 7px 10px;
+    top: 50%;
+    right: -7px;
+    margin-top: -7px;
+}
+
+.whatsappButtonContainer>.dialog>.text {
+    padding: 1em 0.5em;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+.whatsappButtonContainer>.logo {
+    width: 4em;
+    margin-right: 1em
+}
+
+.transition {
+    height: 10vh;
+    background: rgb(9, 21, 38);
+    background: linear-gradient(180deg, rgba(9, 21, 38, 1) 0%, rgba(0, 13, 35, 1) 49%);
+}
+
+
+/*--------------------------------------------------navBar--------------------------------------------------*/
+
+.navbar {
+    padding-top: 0px;
+}
+
+.navbar-nav {
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-item {
+    color: white;
+    text-align: right;
+    margin: 0;
+}
+
+.navbar-toggler {
+    align-items: flex-end;
+    text-align: end;
+    border: none;
+    border-radius: 0;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(200, 200, 200, 0.0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: 0;
+}
+
+#navBarBrandText {
+    display: none;
+}
+
+#navbar-brand:hover #navBarBrandText {
+    display: inline-block
+}
+
+
+/*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
+
+@media only screen and (max-width: 392px) {
+    .navBarContainer {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+    .col-xxs {
+        width: 100% !important;
+    }
+    .navbar-brand {
+        padding-left: 0.5em;
+        margin-right: 0;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 20px;
+        text-align: right;
+    }
+    .navbar-nav {
+        background-color: rgba(200, 200, 200, 0.0) !important;
+    }
+    .navbar-toggler {
+        width: auto;
+        background-color: rgba(0, 0, 0, .0) !important;
+    }
+}
+
+@media only screen and (min-width: 392px) {
+    .navbar-brand {
+        padding-left: 0.5em;
+        margin-right: 0;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 50%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 576px) {
+    .navbar-brand {
+        padding-left: 1em;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 33.33333%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 800 and up) */
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+        padding-left: 3em;
+    }
+    .nav-item {
+        padding-right: 5%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .navbar-brand {
+        padding-left: 5em;
+    }
+    .nav-item {
+        padding-right: 30%;
+        font-size: 15px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+    .navbar-toggler img {
+        margin-right: 30%
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .navbar-brand {
+        padding-left: 5em;
+    }
+    .nav-item {
+        padding-right: 30%;
+        font-size: 20px;
+        text-align: right;
+    }
+    .navbar-toggler {
+        width: 25%;
+    }
+    .navbar-toggler img {
+        margin-right: 30%
+    }
+}
+
+.btn-primary {
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    border:transparent
+}
