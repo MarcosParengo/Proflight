@@ -45,11 +45,14 @@ body p {
     position: relative;
 }
 
-.rotatedTextContainer {
+.sectionLabel {
     position: absolute;
     bottom: 5em;
     right: 5em;
     width: auto;
+}
+
+.rotatedText{
     transform: rotate(-90deg) translateX(100%);
     transform-origin: top right;
     -moz-transform: rotate(-90deg);
@@ -58,14 +61,14 @@ body p {
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-.rotatedTextContainer>.text {
+.rotatedText>.text {
     text-align: end;
     color: white;
     font-size: 20px;
     font-weight: 400;
 }
 
-.rotatedTextContainer>.text::before {
+.rotatedText>.text::before {
     display: inline-block;
     content: "";
     border-top: .1rem solid white;
@@ -73,7 +76,7 @@ body p {
     margin: 0 1rem;
 }
 
-.rotatedTextContainer>.text:hover {
+.rotatedText>.text:hover {
     color: var(--main-color);
 }
 
