@@ -253,11 +253,13 @@
                     <img src="assets/images/components/Elipse.svg" alt="">
                 </div>
             </div>
-            <div class="elipse d-none d-md-none d-lg-block ">
-
-                <div class="rotatedText">
-                    <h1 class="text">Licencia de piloto privado</h1>
+            <div class="elipseText d-none d-md-none d-lg-block ">
+                <div class="textContainer">
+                    <div class="text">
+                        <h1 >Licencia de piloto privado</h1>
+                    </div>
                 </div>
+
             </div>
 
         </section>
@@ -278,21 +280,22 @@
                             <div class="item left">
                                 <img class="photo" src="assets\images\galleryCarousel\Cessna 150.png">
                                 <div class="txtOverlapParent d-none d-sm-none d-md-block">
-                                    <div class="txtOverlap">01. Cessna 150</div>
+                                    <div class="txtOverlap">07. Cessna 150</div>
                                 </div>
                             </div>
                             <div class="item center">
-                                <img class="photo" src="assets\images\galleryCarousel\Cessna 172.png">
+                                <img class="photo" src="assets\images\galleryCarousel\Tecnam.png">
                                 <div class="txtOverlapParent d-none d-sm-none d-md-block">
-                                    <div class="txtOverlap">02. Cessna 172</div>
+                                    <div class="txtOverlap">01. Tecnam P2002</div>
                                 </div>
                             </div>
                             <div class="item right">
-                                <img class="photo" src="assets\images\galleryCarousel\Tecnam.png">
+                                <img class="photo" src="assets\images\galleryCarousel\Cessna 172.png">
                                 <div class="txtOverlapParent d-none d-sm-none d-md-block">
-                                    <div class="txtOverlap">03. Tecnam P2002</div>
+                                    <div class="txtOverlap">01. Cessna 172</div>
                                 </div>
                             </div>
+                           
                         </div>
                         <div class="carousel-item">
                             <div class="item left">
@@ -335,24 +338,35 @@
                             </div>
                         </div>
                     </div>
-                    <button class="sliderButton" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                        <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="sliderButton mr-2" type="button" data-bs-target="#galleryCarousel"
-                        data-bs-slide="prev" style="margin-right: 2%;">
-                        <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-auto">
+                            <button class="sliderButton p-0 mt-3 me-3" type="button" data-bs-target="#galleryCarousel"
+                            data-bs-slide="prev">
+                                <div class="contentContainer d-flex align-items-center justify-content-center">
+                                    <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
+                                </div>
+                            </button>
+                            <button class="sliderButton p-0 mt-3" type="button" data-bs-target="#galleryCarousel"
+                                data-bs-slide="next">
+                                <div class="contentContainer d-flex align-items-center justify-content-center">
+                                    <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                     <br>
                     <p class="more">Si quieres saber mas acerca de nuestra flota <a
-                            href="menu-categories/flota/index.html"><button class="btn btn-primary m-2"
+                            href="menu-categories/flota/index.html"><button class="btn btn-primary ms-3 px-4 py-2"
                                 type="submit">Haz click aquí</button></p></a>
                 </div>
             </div>
         </section>
-        <section class="tecnologia">
-            <div class="container p-sm-0 p-md-5">
+        <section class="p-relative tecnologia">
+            <div class=" container p-sm-0 p-md-5">
                 <div class="row">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Tecnología</h1>
+                    <div class="container col-xxl-10 px-4">
+                        <h1 class="display-5 fw-bold lh-1 mb-3 ">Tecnología</h1>
+                    </div>
                     <nav>
                         <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-v1-tab" data-bs-toggle="tab"
@@ -457,12 +471,11 @@
                         </div>
                         <div class="tab-pane fade" id="nav-app" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <div class="container col-xxl-10 px-4 py-5">
-                                <div
-                                    class="row flex-lg-row-reverse align-items-center justify-content-between g-5 py-5">
-                                    <div class="col-md-6 col-lg-5 me-2 d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                                <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5 py-5">
+                                    <div class="col-md-6 col-lg-5 me-2 py-0 my-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
                                         <img src="assets\images\nav&tab\insideTab\app.png"
                                             class="d-block mx-lg-1 img-fluid" alt="Check In" loading="lazy">
-                                    </div>
+                                    </div class="py-0 my-0">
                                     <div class="col-lg-6">
                                         <h1 class="titulo display-4 fw-light p-0 pb-0 mb-3"><span
                                                 class="texto">Aplicación</span><span class="number">04.</span></h1>
@@ -506,12 +519,16 @@
                         </div>
                     </div>
                 </div>
+                
+            </div>
+            <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                <h1 class="text">Tecnología</h1>
             </div>
         </section>
         <section class="alumnos">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 class="title"><span>Nuestros alumnos </span><span class="enfasis">recomiendan</span></h1>
+                    <h1 class="title"><span>Nuestros alumnos nos </span><span class="enfasis">recomiendan</span></h1>
                     <div class="container">
                         <div class="containerTestimonios row d-flex justify-content-center" id="containerTestimonios">
 
@@ -522,25 +539,28 @@
         </section>
         <section class="eventos">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row p-relative">
                     <h1 class="title"><span>Próximos eventos</span></h1>
                     <div class="container">
                         <div class="row m-5 d-flex justify-content-center" id="containerEventos">
 
                         </div>
                     </div>
+                    <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                        <h1 class="text">Eventos</h1>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="masInformacion">
-            <div class="container">
+            <div class="container col-10">
                 <div class="row m-4">
-                    <div class="childleft col-lg-7">
+                    <div class="childleft col-lg-6">
                         <h2>Si has llegado hasta aquí es porque buscas introducirte en el mundo de la aviación. Para
                             alcanzar tus metas, tienes que formarte en un lugar de excelencia, por eso somos tu mejor
                             opción.
                         </h2>
-                        <a href="menu-categories/contacto/index.html"> <button class="btn btn-primary m-2 px-5 py-2"
+                        <a href="menu-categories/contacto/index.html"> <button class="btn btn-primary m-2 p-3 ms-0" 
                                 type="submit">Quiero más información</button></a>
                     </div>
                 </div>
@@ -553,19 +573,24 @@
                     <h2>+54 9 11 6010-4446</h2>
                     <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
                     <ul class="social">
-                        <li>
+                        <li class="me-2">
+                            <a target="_blank" title="">
+                                <span class="icon fa fa-envelope"></span>
+                            </a>
+                        </li>
+                        <li class="me-2">
                             <a target="_blank"
                                 href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
                                 title="">
                                 <span class="icon fas fa-phone"></span>
                             </a>
                         </li>
-                        <li>
+                        <li class="me-2">
                             <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
                                 <span class="icon fa fa-facebook"></span>
                             </a>
                         </li>
-                        <li>
+                        <li >
                             <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
                                 <span class="icon fab fa-instagram"></span>
                             </a>

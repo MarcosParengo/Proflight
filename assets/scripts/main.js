@@ -54,14 +54,19 @@ function LoadJson(url, selector) {
 
 function fillContainerTestimonios(obj) {
     obj.forEach(function(obj, i) {
-        if (i < 4) { containerTestimonios.append(`
-        <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-3 p-md-4 p-sm-0">
+        if (i < 8) { containerTestimonios.append(`
+        <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-3 p-md-3 p-sm-0">
             <div class="card h-100">
-                <img src="assets/images/testimonio/profile/${obj.nombre}.png" class="img-fluid" alt="...">
+                <Container class="img-container d-flex justify-content-center">
+                    <div class="p-relative w-50 img-container2">
+                        <img src="assets/images/testimonio/profile/${obj.nombre}.png" class="img-fluid" alt="...">
+                        <img src="assets/images/testimonio/bandera/${obj.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+                    </div>
+                </Container>  
                 <div class="card-body">
                 <h5 class="card-title">${obj.nombre}</h5>
-                <p class="hidden testimonio card-text">${obj.testimonioAdelanto}</p>
-                    <p class="show nacionalidad card-text">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
+                <p class="hidden testimonio card-text me-0">${obj.testimonio}</p>
+                <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
                 </div>
                 <div class="card-footer">
                 <a class="show" href="#">Ver testimonio</a>
@@ -79,17 +84,21 @@ function fillContainerEventos(obj) {
         if (i < 3) {
             containerEventos.append(`
         <div class="col-sm-4 p-4 mt-5">
-            <div class="card h-100" style="height: 400px;">
+            <div class="card h-100 " >
                 <div class="card-body text-center">
-                <p class="hidden ampliado titulo card-text" style="padding-top: 29.9%;">${obj.origen}, ${obj.dia} ${obj.mes} ${obj.año}</p>
-                <p class="hidden ampliado fecha card-text"> ${obj.dia} ${obj.mes} ${obj.año}</p>
-                <p class="hidden ampliado fecha card-text">${obj.inicio} ${obj.zonaHoraria}</p>
-                <p class="hidden ampliado card-text">${obj.ciudad}, ${obj.origen}</p>
-                <p class="hidden ampliado card-text">${obj.descripcion}</p>
-                <button class="hidden btn btn-primary mx-auto m-2" type="submit">Inscribirse</button>
+                <div class="hidden h-100">
+                    <div class="d-flex flex-column h-100">
+                        <p class="ampliado titulo card-text mb-0 " style="padding-top: 29.9%;">${obj.origen}, ${obj.dia} ${obj.mes} ${obj.año}</p>
+                        <p class="ampliado fecha card-text mb-0"> ${obj.fecha}</p>
+                        <p class="ampliado fecha card-text mb-0">${obj.horario}</p>
+                        <p class="ampliado card-text mb-0">${obj.ciudad}, ${obj.origen}</p>
+                        <p class="ampliado card-text mt-4 mb-0">${obj.descripcion}</p>
+                        <button class="hidden btn btn-primary px-4 py-2 mx-auto m-2 mt-auto" type="submit">Inscribirse</button>
+                    </div>
+                </div>
                 <img src="assets/images/eventos/banderas/${obj.origen.toLowerCase()}.png" class="show img-fluid" alt="...">
                 <p class="show resumen card-text">${obj.ciudad}, ${obj.origen}</p>
-                <p class="show resumen fecha card-text pb-5" style="color:gray;padding-bottom: 24.7%!important;"> ${obj.dia} ${obj.mes} ${obj.año}</p>                    
+                <p class="show resumen fecha card-text pb-5" style="color:gray;padding-bottom: 24.7%!important;"> ${obj.fecha}</p>                    
                 </div>
             </div>
         </div>
