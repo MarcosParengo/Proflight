@@ -1,996 +1,1210 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body h2 {
+    font-size: 20px;
+    color: white;
+    padding-right: 20%;
+    line-height: 2.5rem;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+.nosotros {
+    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/nosotros/assets/images/background/pf%20background%20misionvision.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+/*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .nosotros {
+        background-size: auto 100%;
     }
-    html {
-        scroll-behavior: smooth;
-      }
-    body {
-        font-size: 12px;
-        margin: 0;
-        font-family:  Arial, Helvetica, sans-serif;
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .nosotros {
+        background-size: auto 100%;
     }
-    body h1{
-        font-size:30px;
-        font-weight: bold;
-        text-align: center;
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .nosotros {
+        background-size: auto 100%;
     }
-    body h2{
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nosotros {
+        background-size: 100% 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 1050px) {
+    .nosotros {
+        background-size: 100% 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nosotros {
+        background-size: 100% 100%;
+    }
+}
+
+/*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
+.landing .container {
+    height: 100vh;
+}
+
+.landing .containerLinks {
+    padding-top: 15%;
+}
+
+.landing h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+    padding-bottom: 0.5em;
+}
+
+.landing h1:hover {
+    color: rgb(53, 187, 215);
+}
+
+.landing h2 {
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contadores {
+    position: absolute;
+    bottom: 0
+}
+
+.landing .contador img {
+    display: block;
+    width: 100%;
+}
+
+.landing .contador .number {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.landing .contador .label {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+}
+
+/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .landing h1 {
+        font-size: 30px;
+        padding-bottom: 0.5em;
+    }
+
+    .landing .containerLinks {
+        padding-top: 70%;
+    }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .landing h1 {
+        font-size: 30px;
+        padding-bottom: 0.5em;
+    }
+
+    .landing .containerLinks {
+        padding-top: 40%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .landing h1 {
+        font-size: 30px;
+        padding-bottom: 0.5em;
+    }
+
+    .landing .containerLinks {
+        padding-top: 15%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .landing h1 {
+        font-size: 40px;
+        padding-bottom: 0.5em;
+    }
+
+    .landing .containerLinks {
+        padding-top: 15%;
+    }
+
+    .landing .contador .number {
+        font-size: 15px;
+    }
+
+    .landing .contador .label {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .landing h1 {
+        font-size: 50px;
+        padding-bottom: 0.5em;
+    }
+
+    .landing .containerLinks {
+        padding-top: 15%;
+    }
+
+    .landing .contador .number {
+        font-size: 15px;
+    }
+
+    .landing .contador .label {
+        font-size: 15px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .landing h1 {
+        font-size: 60px;
+        padding-bottom: 0.5em;
+    }
+
+    .landing .containerLinks {
+        padding-top: 15%;
+    }
+
+    .landing .contador .number {
+        font-size: 18px;
+    }
+
+    .landing .contador .label {
+        font-size: 18px;
+    }
+}
+
+/*-------------------------------------------------- Seccion misionYVision --------------------------------------------------TODO*/
+.misionYVision h2 {
+    color: white;
+    font-size: 20px;
+    line-height: 2.5rem;
+    font-weight: 100;
+    padding-right: 10%;
+}
+
+.misionYVision .containerTexto {
+    padding-top: 15%;
+}
+
+.misionYVision img {
+    display: block;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.misionYVision .titulo {
+    font-size: 90px;
+    padding-top: 7%;
+    text-align: end;
+    padding-right: 10%;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+}
+
+.misionYVision .titulo:hover {
+    color: rgb(26, 73, 93);
+}
+
+.misionYVision .coordenadas {
+    text-align: end;
+    padding-right: 10%;
+}
+
+.misionYVision .texto img {
+    width: 50%;
+}
+
+/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .misionYVision h2 {
+        padding-top: 30%;
+        font-size: 15px;
+        line-height: 1.5rem;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .misionYVision .titulo {
+        font-size: 40px;
+        padding-top: 7%;
+        padding-right: 10%;
+        padding-left: 10%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    }
+
+    .misionYVision .texto img {
+        width: 70%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .misionYVision .coordenadas {
+        padding-top: 5%;
+    }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .misionYVision h2 {
+        font-size: 15px;
+        line-height: 1.5rem;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .misionYVision .titulo {
+        font-size: 40px;
+        padding-top: 7%;
+        padding-right: 10%;
+        padding-left: 10%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    }
+
+    .misionYVision .texto img {
+        width: 70%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .misionYVision h2 {
+        font-size: 15px;
+        line-height: 1.5rem;
+        padding-right: 10%;
+    }
+
+    .misionYVision .titulo {
+        font-size: 40px;
+        padding-top: 7%;
+        padding-right: 10%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .misionYVision h2 {
+        font-size: 15px;
+        line-height: 1.5rem;
+        padding-right: 10%;
+    }
+
+    .misionYVision .titulo {
+        font-size: 40px;
+        padding-top: 7%;
+        padding-right: 10%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {
+    .misionYVision h2 {
+        font-size: 15px;
+        line-height: 2.5rem;
+        padding-right: 10%;
+    }
+
+    .misionYVision .titulo {
+        font-size: 60px;
+        padding-top: 7%;
+        padding-right: 10%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .misionYVision h2 {
         font-size: 20px;
-        color: white;
+        line-height: 2.5rem;
+        padding-right: 10%;
+    }
+
+    .misionYVision .titulo {
+        font-size: 90px;
+        padding-top: 5%;
+        text-align: end;
+        padding-right: 10%;
+        font-weight: bolder;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    }
+}
+
+/*-------------------------------------------------- Seccion nuestra Vision --------------------------------------------------TODO*/
+
+.nuestraVision h1 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+    padding-right: 10%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: end;
+    color: white;
+}
+
+.nuestraVision .containerSec {
+    padding-top: 30%;
+}
+
+.nuestraVision .containerSec h1 {
+    margin-left: -125px;
+    padding-top: 10%;
+    font-size: 90px;
+    text-align: start;
+}
+
+.nuestraVision .containerSec h2 {
+    font-size: 20px;
+    color: white;
+    padding-right: 20%;
+    line-height: 2.5rem;
+}
+
+.nuestraVision .containerSec img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .nuestraVision .containerSec {
+        padding-top: 30%;
+    }
+
+    .nuestraVision .containerSec h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+        font-size: 30px;
+    }
+
+    .nuestraVision .containerSec h2 {
+        font-size: 15px;
+        padding-right: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0;
+        line-height: 2.0rem;
+    }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .nuestraVision .containerSec {
+        padding-top: 30%;
+    }
+
+    .nuestraVision .containerSec h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+        font-size: 35px;
+    }
+
+    .nuestraVision .containerSec h2 {
+        font-size: 18px;
+        padding-right: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0;
+        line-height: 2.5rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .nuestraVision .containerSec {
+        padding-top: 30%;
+    }
+
+    .nuestraVision .containerSec h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .nuestraVision .containerSec h2 {
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0;
+        line-height: 2.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nuestraVision .containerSec {
+        padding-top: 30%;
+    }
+
+    .nuestraVision .containerSec h1 {
+        margin-left: 0px;
+        padding-top: 10%;
+        font-size: 60px;
+    }
+
+    .nuestraVision .containerSec h2 {
+        font-size: 18px;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 2.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {
+    .nuestraVision .containerSec {
+        padding-top: 30%;
+    }
+
+    .nuestraVision .containerSec h1 {
+        margin-left: -125px;
+        padding-top: 10%;
+        font-size: 60px;
+    }
+
+    .nuestraVision .containerSec h2 {
+        font-size: 18px;
         padding-right: 20%;
         line-height: 2.5rem;
     }
-    body A {
-        color: white;
-        text-decoration: none;
+
+    .nuestraVision .containerSec img {
+        width: 90%;
     }
-    body p {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    /*--------------------------------------------------navBar--------------------------------------------------*/
-    
-    .navbar{
-        padding-top: 0px;
-    }.navbar-brand{
-        padding-top: 20px;
-    }.navbar-nav{
-        height: 100vh;
-        background-color:rgba(200, 200, 200, 0.5);
-    }.nav-item{
-        color: white;
-        text-align: right;
-        margin: 0;
-    }.navbar-toggler{
-        align-items: flex-end;
-        text-align: end;
-        border: none;
-        border-radius: 0;
-        border-color:rgba(0, 0, 0, 0) ;
-        background-color: rgba(200, 200, 200, 0.0);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        outline:0;
-    } 
-    
-    /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
-    
-    @media only screen and (max-width: 392px) {
-        .navBarContainer{
-            background-color:rgba(200, 200, 200, 0.5);
-        }.col-xxs{
-            width: 100%!important;
-        }.navbar-brand{
-            padding-left: 0.5em;
-            margin-right: 0;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 20px;
-            text-align: right;
-        }.navbar-nav{
-            background-color:rgba(200, 200, 200, 0.0)!important;
-        }.navbar-toggler{
-            width: auto;
-            background-color: rgba(0,0,0,.0)!important;
-        }
-    }
-    @media only screen and (min-width: 392px) {
-        .navbar-brand{
-            padding-left: 0.5em;
-            margin-right: 0;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 50%;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 576px) {
-        .navbar-brand{
-            padding-left: 1em;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 33.33333%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 800 and up) */
-    @media only screen and (min-width: 768px) {
-        .navbar-brand{
-            padding-left: 3em;
-        }.nav-item{
-            padding-right: 5%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .navbar-brand{
-            padding-left: 5em;
-        }
-        .nav-item{
-            padding-right: 30%;
-            font-size: 15px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }.navbar-toggler img{
-            margin-right:30%
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .navbar-brand{
-            padding-left: 5em;
-        }
-        .nav-item{
-            padding-right: 30%;
-            font-size: 20px;
-            text-align: right;
-        }.navbar-toggler{
-            width: 25%;
-        }.navbar-toggler img{
-            margin-right:30%
-        }
-    }
-    /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
-    .nosotros {
-        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/nosotros/assets/images/background/pf%20background%20misionvision.png);
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-    }
-    /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/ 
-    
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .nosotros {
-            background-size: auto 100%;
-        } 
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .nosotros {
-            background-size: auto 100%;
-        } 
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .nosotros {
-            background-size: auto 100%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .nosotros {
-            background-size: 100% 100%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 1050px) { 
-        .nosotros {
-            background-size: 100% 100%;
-        } 
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .nosotros {
-            background-size: 100% 100%;
-        } 
-    }
-    /*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
-    .landing .container{
-        height: 100vh;
-    }
-    .landing .containerLinks{
-        padding-top: 15%;
-    }
-    .landing h1 {
-        font-size:60px;
-        font-weight: bold;
-        text-align: start;
-        color :white;
-        padding-bottom: 0.5em;
-    }.landing h1:hover{
-        color:rgb(53,187,215);
-    }.landing h2 {
-        font-weight: lighter;
-        text-align: center;
-        color :white;
-        margin-bottom: 0;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }.contadores{
-        position : absolute;
-        bottom   : 0
-    }.landing .contador img{
-        display: block;
-        width: 100%;
-    }.landing .contador .number{
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 18px;
-    }.landing .contador .label{
-        color: rgba(255, 255, 255, 1);
-        font-size: 18px;
-    }
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .landing h1 {
-            font-size:30px;
-            padding-bottom: 0.5em;
-        }.landing .containerLinks{
-            padding-top: 70%;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .landing h1 {
-            font-size:30px;
-            padding-bottom: 0.5em;
-        }.landing .containerLinks{
-            padding-top: 40%;
-        } 
-        
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .landing h1 {
-            font-size:30px;
-            padding-bottom: 0.5em;
-        }.landing .containerLinks{
-            padding-top: 15%;
-        } 
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .landing h1 {
-            font-size:40px;
-            padding-bottom: 0.5em;
-        }.landing .containerLinks{
-            padding-top: 15%;
-        }.landing .contador .number{
-            font-size: 15px;
-        }.landing .contador .label{
-            font-size: 15px;
-        }
-    }
-    @media only screen and (min-width: 992px) { 
-        .landing h1 {
-            font-size:50px;
-            padding-bottom: 0.5em;
-        }.landing .containerLinks{
-            padding-top: 15%;
-        }.landing .contador .number{
-            font-size: 15px;
-        }.landing .contador .label{
-            font-size: 15px;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .landing h1 {
-            font-size:60px;
-            padding-bottom: 0.5em;
-        }.landing .containerLinks{
-            padding-top: 15%;
-        }.landing .contador .number{
-            font-size: 18px;
-        }.landing .contador .label{
-            font-size: 18px;
-        }
-    }
-     /*-------------------------------------------------- Seccion misionYVision --------------------------------------------------TODO*/
-    .misionYVision h2{
-        color: white;
-        font-size: 20px;
-        line-height: 2.5rem;
-        font-weight:100;
-        padding-right: 10%;
-    }.misionYVision .containerTexto{
-        padding-top: 15%;
-    }.misionYVision img{
-        display: block;
-        width: 100%;
-        padding-top: 10%;
-    }.misionYVision .titulo{
-        font-size: 90px;
-        padding-top: 7%;
-        text-align: end;
-        padding-right: 10%;
-        font-weight:bolder;
-        color:rgba(0,0,0,0);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color:rgba(26,73,93,0.3);
-    }.misionYVision .titulo:hover{
-        color: rgb(26,73,93);
-    }.misionYVision .coordenadas{
-        text-align: end;
-        padding-right: 10%;
-    }.misionYVision .texto img{
-        width: 50%;
-    }
-   /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .misionYVision h2{
-            padding-top: 30%;
-            font-size: 15px;
-            line-height: 1.5rem;
-            padding-right: 10%;
-            padding-left: 10%;
-        }.misionYVision .titulo{
-            font-size: 40px;
-            padding-top: 7%;
-            padding-right: 10%;
-            padding-left: 10%;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color:rgba(26,73,93,0.3);
-        }.misionYVision .texto img{
-            width: 70%;
-            padding-right: 10%;
-            padding-left: 10%;
-        }.misionYVision .coordenadas{
-            padding-top: 5%;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .misionYVision h2{
-            font-size: 15px;
-            line-height: 1.5rem;
-            padding-right: 10%;
-            padding-left: 10%;
-        }.misionYVision .titulo{
-            font-size: 40px;
-            padding-top: 7%;
-            padding-right: 10%;
-            padding-left: 10%;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color:rgba(26,73,93,0.3);
-        }.misionYVision .texto img{
-            width: 70%;
-            padding-right: 10%;
-            padding-left: 10%;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .misionYVision h2{
-            font-size: 15px;
-            line-height: 1.5rem;
-            padding-right: 10%;
-        }.misionYVision .titulo{
-            font-size: 40px;
-            padding-top: 7%;
-            padding-right: 10%;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color:rgba(26,73,93,0.3);
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .misionYVision h2{
-            font-size: 15px;
-            line-height: 1.5rem;
-            padding-right: 10%;
-        }.misionYVision .titulo{
-            font-size: 40px;
-            padding-top: 7%;
-            padding-right: 10%;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color:rgba(26,73,93,0.3);
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .misionYVision h2{
-            font-size: 15px;
-            line-height: 2.5rem;
-            padding-right: 10%;
-        }.misionYVision .titulo{
-            font-size: 60px;
-            padding-top: 7%;
-            padding-right: 10%;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color:rgba(26,73,93,0.3);
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .misionYVision h2{
-            font-size: 20px;
-            line-height: 2.5rem;
-            padding-right: 10%;
-        }.misionYVision .titulo{
-            font-size: 90px;
-            padding-top: 5%;
-            text-align: end;
-            padding-right: 10%;
-            font-weight:bolder;
-            color:rgba(0,0,0,0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color:rgba(26,73,93,0.3);
-        }
-    }
-    /*-------------------------------------------------- Seccion nuestra Vision --------------------------------------------------TODO*/
-    
-    .nuestraVision h1{
-        padding-top: 10%;
-        padding-bottom: 7%;
-        padding-right: 10%;
-        font-size:60px;
-        font-weight: bold;
-        text-align: end;
-        color :white; 
-    }.nuestraVision .containerSec{
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nuestraVision .containerSec {
         padding-top: 30%;
-    }.nuestraVision .containerSec h1{
+    }
+
+    .nuestraVision .containerSec h1 {
         margin-left: -125px;
         padding-top: 10%;
         font-size: 90px;
-        text-align: start;
-    }.nuestraVision .containerSec h2{
+    }
+
+    .nuestraVision .containerSec h2 {
         font-size: 20px;
-        color: white;
         padding-right: 20%;
         line-height: 2.5rem;
-    }.nuestraVision .containerSec img{
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .nuestraVision .containerSec{
-            padding-top: 30%;
-        }.nuestraVision .containerSec h1{
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-top: 10%;
-            font-size: 30px;
-        }.nuestraVision .containerSec h2{
-            font-size: 15px;
-            padding-right: 20%;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-right: 0;
-            line-height: 2.0rem;
-        } 
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .nuestraVision .containerSec{
-            padding-top: 30%;
-        }.nuestraVision .containerSec h1{
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-top: 10%;
-            font-size: 35px;
-        }.nuestraVision .containerSec h2{
-            font-size: 18px;
-            padding-right: 20%;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-right: 0;
-            line-height: 2.5rem;
-        } 
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .nuestraVision .containerSec{
-            padding-top: 30%;
-        }.nuestraVision .containerSec h1{
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-top: 10%;
-            padding: 0;
-            font-size: 50px;
-        }.nuestraVision .containerSec h2{
-            font-size: 18px;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-right: 0;
-            line-height: 2.5rem;
-        } 
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .nuestraVision .containerSec{
-            padding-top: 30%;
-        }.nuestraVision .containerSec h1{
-            margin-left: 0px;
-            padding-top: 10%;
-            font-size: 60px;
-        }.nuestraVision .containerSec h2{
-            font-size: 18px;
-            padding-right: 0;
-            padding-left: 0;
-            margin-left: 0;
-            margin-right: 0;
-            line-height: 2.5rem;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .nuestraVision .containerSec{
-            padding-top: 30%;
-        }.nuestraVision .containerSec h1{
-            margin-left: -125px;
-            padding-top: 10%;
-            font-size: 60px;
-        }.nuestraVision .containerSec h2{
-            font-size: 18px;
-            padding-right: 20%;
-            line-height: 2.5rem;
-        }.nuestraVision .containerSec img{
-            width: 90%;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .nuestraVision .containerSec{
-            padding-top: 30%;
-        }.nuestraVision .containerSec h1{
-            margin-left: -125px;
-            padding-top: 10%;
-            font-size: 90px;
-        }.nuestraVision .containerSec h2{
-            font-size: 20px;
-            padding-right: 20%;
-            line-height: 2.5rem;
-        }.nuestraVision .containerSec img{
-            width: 90%;
-        }
     }
 
-    /*-------------------------------------------------- Seccion Fundamentos institucionales ----------------------------------------------*/
-
-    .fundamentosInstitucionales{
-        margin-top: 15%;
-        margin-bottom: 15%;
-    }.fundamentosInstitucionales .childleft{
-        padding-top: 0%;
-        padding-left: 0%;
-    }.fundamentosInstitucionales .fundamentosTitulo{
-        padding-left: 0%;
-        text-align: start;
-        font-size: 45px;
-        font-weight: lighter;
-        color: rgba(255, 255, 255, 1);
-        padding-bottom: 5%;
-    }.fundamentosInstitucionales .more{
-        padding-top: 20px;
-        font-size: 15px;
-    }.fundamentosInstitucionales .data{
-        display: none;
+    .nuestraVision .containerSec img {
+        width: 90%;
     }
-    .fundamentosInstitucionales .carousel{
-        padding-right: 30%;
-    }.fundamentosInstitucionales .carousel-inner{
-        height: 100%;
-    }.fundamentosInstitucionales .carousel-caption{
-        right: 0!important;
-        left:0!important;
-        top: 0!important;
-        bottom: auto!important;
-    }.fundamentosInstitucionales .carousel-caption h1{
-        font-size: 20px;
-        text-align: start;
-    }.fundamentosInstitucionales .carousel-caption p{
+}
+
+/*-------------------------------------------------- Seccion Fundamentos institucionales ----------------------------------------------*/
+
+.fundamentosInstitucionales {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.fundamentosInstitucionales .childleft {
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
+.fundamentosInstitucionales .fundamentosTitulo {
+    padding-left: 0%;
+    text-align: start;
+    font-size: 45px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+}
+
+.fundamentosInstitucionales .more {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.fundamentosInstitucionales .data {
+    display: none;
+}
+
+.fundamentosInstitucionales .carousel {
+    padding-right: 30%;
+}
+
+.fundamentosInstitucionales .carousel-inner {
+    height: 100%;
+}
+
+.fundamentosInstitucionales .carousel-caption {
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: auto !important;
+}
+
+.fundamentosInstitucionales .carousel-caption h1 {
+    font-size: 20px;
+    text-align: start;
+}
+
+.fundamentosInstitucionales .carousel-caption p {
+    font-size: 15px;
+    line-height: 2rem;
+}
+
+.fundamentosInstitucionales .title {
+    color: white;
+}
+
+.fundamentosInstitucionales .number {
+    color: rgb(53, 187, 215);
+}
+
+.fundamentosInstitucionales .sliderButton {
+    height: 35px;
+    width: 35px;
+    padding: 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(75, 84, 97);
+}
+
+.fundamentosInstitucionales .buttonContent {
+    padding: 6px;
+    height: 20px;
+    width: 15px;
+}
+
+.fundamentosInstitucionales .sliderButton:hover {
+    background-color: rgb(49, 171, 198);
+}
+
+.fundamentosInstitucionales .btn-primary {
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(53, 187, 215);
+    border-color: rgb(46, 144, 169);
+}
+
+.fundamentosInstitucionales .bd-placeholder-img {
+    height: 200px;
+}
+
+.fundamentosInstitucionales .circle {
+    padding-top: 5%;
+}
+
+.fundamentosInstitucionales .circle img {
+    display: block;
+    width: 100%;
+}
+
+.fundamentosInstitucionales .one {
+    display: none;
+}
+
+.fundamentosInstitucionales .two {
+    display: none;
+}
+
+.fundamentosInstitucionales .three {
+    display: none;
+}
+
+.fundamentosInstitucionales .four {
+    display: none;
+}
+
+.fundamentosInstitucionales .five {
+    display: none;
+}
+
+.linea img {
+    display: block;
+    width: 80%;
+    float: right;
+}
+
+.fundamentosInstitucionales .viewCarousel {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(30, 30, 30);
+    vertical-align: middle;
+}
+
+.fundamentosInstitucionales .more {
+    color: rgba(0, 0, 0, 0);
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.fundamentosInstitucionales .more:hover {
+    color: rgb(49, 171, 198);
+}
+
+@media only screen and (max-width: 392px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 0%;
+        height: 60vh;
+    }
+
+    .fundamentosInstitucionales h2 {
         font-size: 15px;
         line-height: 2rem;
-    }.fundamentosInstitucionales .title{
-        color: white;
-    }.fundamentosInstitucionales .number{
-        color: rgb(53,187,215);
-    }.fundamentosInstitucionales .sliderButton{
-        height: 35px;
-        width: 35px;
-        padding:6px;
-        border: none;
-        border-radius: 50%;
-        background-color: rgb(75,84,97);
-    }.fundamentosInstitucionales .buttonContent{
-        padding:6px;
-        height: 20px;
-        width: 15px;
-    }.fundamentosInstitucionales .sliderButton:hover{
-        background-color: rgb(49,171,198);
-    }.fundamentosInstitucionales .btn-primary{
-        font-size: 15px;
-        border-radius: 20px;
-        background-color: rgb(53,187,215);
-        border-color:rgb(46,144,169);
-    }.fundamentosInstitucionales .bd-placeholder-img{
-        height: 200px;
-    }.fundamentosInstitucionales .circle{
-        padding-top: 5%;
-    }.fundamentosInstitucionales .circle img{
-        display: block;
-        width: 100%;
-    }.fundamentosInstitucionales .one{
-        display: none;
-    }.fundamentosInstitucionales .two{
-        display: none;
-    }.fundamentosInstitucionales .three{
-        display: none;
-    }.fundamentosInstitucionales .four{
-        display: none;
-    }.fundamentosInstitucionales .five{
-        display: none;
     }
-    .linea img{
-        display: block;
-        width: 80%;
-        float: right;
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 30px;
     }
-    .fundamentosInstitucionales .viewCarousel{
-        height: 35px;
-        width: 35px;
-        border: none;
-        border-radius: 50%;
-        background-color: rgb(30,30,30);
-        vertical-align: middle;
-    }.fundamentosInstitucionales .more{
-        color: rgba(0,0,0,0);
-        padding-top: 20px;
-        font-size: 15px;
-    }.fundamentosInstitucionales .more:hover{
-        color: rgb(49,171,198);
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 0;
     }
-    @media only screen and (max-width: 392px) {
-        .fundamentosInstitucionales .carousel{
-            padding-right: 0%;
-            height:60vh;
-        }.fundamentosInstitucionales h2{
-            font-size: 15px;
-            line-height: 2rem;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 30px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 0;
-        }.fundamentosInstitucionales{
-            margin-top: 30%;
-            margin-bottom: 30%;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .fundamentosInstitucionales .carousel{
-            padding-right: 0%;
-            height:40vh
-        }.fundamentosInstitucionales h2{
-            font-size: 15px;
-            line-height: 2rem;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 20px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 0;
-        }.fundamentosInstitucionales{
-            margin-top: 35%;
-            margin-bottom: 55%;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .fundamentosInstitucionales .carousel{
-            padding-right: 0%;
-            height:20vh
-        }.fundamentosInstitucionales h2{
-            font-size: 15px;
-            line-height: 2rem;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 25px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 0;
-        }.fundamentosInstitucionales{
-            margin-top: 15%;
-            margin-bottom: 15%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .fundamentosInstitucionales .carousel{
-            padding-right: 0%;
-        }.fundamentosInstitucionales h2{
-            font-size: 15px;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 35px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 0;
-        }.fundamentosInstitucionales{
-            margin-top: 15%;
-            margin-bottom: 15%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .fundamentosInstitucionales .carousel{
-            padding-right: 30%;
-            height:40vh
-        }.fundamentosInstitucionales h2{
-            font-size: 15px;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 35px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 20%;
-        }.fundamentosInstitucionales{
-            margin-top: 15%;
-            margin-bottom: 15%;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .fundamentosInstitucionales .carousel{
-            padding-right: 30%;
-            height:40vh
-        }.fundamentosInstitucionales h2{
-            font-size: 18px;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 40px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 10%;
-        }.fundamentosInstitucionales{
-            margin-top: 15%;
-            margin-bottom: 15%;
-        }
-    }
-    /* Extra large devices (large laptops and desktops, 1400px and up) */
-    @media only screen and (min-width: 1200px) {
-        .fundamentosInstitucionales .carousel{
-            padding-right: 30%;
-            height:40vh
-        }
-        .fundamentosInstitucionales h2{
-            font-size: 20px;
-        }.fundamentosInstitucionales .fundamentosTitulo{
-            font-size: 45px;
-        }.fundamentosInstitucionales h2{
-            padding-right: 20%;
-        }.fundamentosInstitucionales{
-            margin-top: 15%;
-            margin-bottom: 15%;
-        }
-    }
-    /*-------------------------------------------------- Seccion Politica de calidad ------------------------------------------------------*/
-    .PoliticaDeCalidad h1{
-        padding-top: 5%;
-        padding-bottom: 7%;
-        padding-right: 10%;
-        font-size:60px;
-        font-weight: bold;
-        text-align: end;
-        color :white; 
-    }.cover{
-        height:100vh;
-    }.PoliticaDeCalidad .containerText{
-        padding-top: 10%;
-    }.PoliticaDeCalidad .containerText h1{
-        padding-top: 0;
-        font-size: 35px;
-    }.PoliticaDeCalidad .containerText h2{
-        font-size: 20px;
-        color: white;
-        padding-right: 20%;
-        padding-top: 0;
-    }.PoliticaDeCalidad .row img{
-        display: block;
-        width: 100%;
-    }
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .PoliticaDeCalidad h1{
-            padding-bottom: 0%;
-            padding-right: 10%;
-            font-size:40px;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-        }.PoliticaDeCalidad .containerText h1{
-            font-size: 20px;
-            padding-right: 0;
-            text-align: center;
-        }.PoliticaDeCalidad .containerText h2{
-            font-size: 14px;
-            line-height: 1.5rem;
-            padding-top: 3rem;
-            padding-right: 0%;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-            padding-right: 5%;
-            padding-left: 5%;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .PoliticaDeCalidad h1{
-            padding-bottom: 0%;
-            padding-right: 10%;
-            font-size:40px;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-        }.PoliticaDeCalidad .containerText h1{
-            font-size: 25px;
-            padding-right: 0;
-            text-align: center;
-        }.PoliticaDeCalidad .containerText h2{
-            font-size: 16px;
-            line-height: 1.5rem;
-            padding-top: 3rem;
-            padding-right: 0%;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-            padding-right: 5%;
-            padding-left: 5%;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .PoliticaDeCalidad h1{
-            padding-bottom: 0%;
-            padding-right: 10%;
-            font-size:40px;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-        }.PoliticaDeCalidad .containerText h1{
-            font-size: 35px;
-            padding-right: 0;
-            text-align: center;
-        }.PoliticaDeCalidad .containerText h2{
-            font-size: 16px;
-            line-height: 2rem;
-            padding-top: 0;
-            padding-right: 0%;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-            padding-right: 5%;
-            padding-left: 5%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .PoliticaDeCalidad h1{
-            padding-bottom: 0%;
-            padding-right: 10%;
-            font-size:40px;
-        }.cover{
-            height:60vh;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-        }.PoliticaDeCalidad .containerText h1{
-            font-size: 35px;
-        }.PoliticaDeCalidad .containerText h2{
-            font-size: 16px;
-            line-height: 2rem;
-            padding-top: 0;
-            padding-right: 0%;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .PoliticaDeCalidad h1{
-            padding-bottom: 0%;
-            padding-right: 10%;
-            font-size:40px;
-        }.cover{
-            height:80vh;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-        }.PoliticaDeCalidad .containerText h1{
-            font-size: 35px;
-        }.PoliticaDeCalidad .containerText h2{
-            font-size: 16px;
-            line-height: 2rem;
-            padding-top: 0;
-            padding-right: 20%;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .PoliticaDeCalidad h1{
-            padding-bottom: 4%;
-            padding-right: 10%;
-            font-size:60px;
-        }.cover{
-            height:100vh;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-        }.PoliticaDeCalidad .containerText h1{
-            font-size: 35px;
-        }.PoliticaDeCalidad .containerText h2{
-            font-size: 20px;
-            padding-top: 0;
-            padding-right: 20%;
-        }.PoliticaDeCalidad .containerText{
-            padding-top: 10%;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
-    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-    .footer{
+
+    .fundamentosInstitucionales {
         margin-top: 30%;
+        margin-bottom: 30%;
     }
-    .footer h1 {
-        font-size:40px;
-        font-weight: bold;
-        text-align: end;
-        color :white;
-        padding-bottom: 1em;
-    }.footer h2 {
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 0%;
+        height: 40vh
+    }
+
+    .fundamentosInstitucionales h2 {
+        font-size: 15px;
+        line-height: 2rem;
+    }
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 20px;
+    }
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 0;
+    }
+
+    .fundamentosInstitucionales {
+        margin-top: 35%;
+        margin-bottom: 55%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 0%;
+        height: 20vh
+    }
+
+    .fundamentosInstitucionales h2 {
+        font-size: 15px;
+        line-height: 2rem;
+    }
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 25px;
+    }
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 0;
+    }
+
+    .fundamentosInstitucionales {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 0%;
+    }
+
+    .fundamentosInstitucionales h2 {
+        font-size: 15px;
+    }
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 35px;
+    }
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 0;
+    }
+
+    .fundamentosInstitucionales {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 30%;
+        height: 40vh
+    }
+
+    .fundamentosInstitucionales h2 {
+        font-size: 15px;
+    }
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 35px;
+    }
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 20%;
+    }
+
+    .fundamentosInstitucionales {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 30%;
+        height: 40vh
+    }
+
+    .fundamentosInstitucionales h2 {
         font-size: 18px;
-        font-weight: lighter;
-        text-align: end;
-        color :white;
-        padding-top: 0;
-        padding-bottom: 1.5em;
-    }ul.social {
-        width: 100%;
-        text-align: start;
-        padding-bottom: 10%;
-    }ul.social > li {
-        display: inline-block;
-    }ul.social > li > a {
+    }
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 40px;
+    }
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 10%;
+    }
+
+    .fundamentosInstitucionales {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1200px) {
+    .fundamentosInstitucionales .carousel {
+        padding-right: 30%;
+        height: 40vh
+    }
+
+    .fundamentosInstitucionales h2 {
+        font-size: 20px;
+    }
+
+    .fundamentosInstitucionales .fundamentosTitulo {
+        font-size: 45px;
+    }
+
+    .fundamentosInstitucionales h2 {
+        padding-right: 20%;
+    }
+
+    .fundamentosInstitucionales {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+/*-------------------------------------------------- Seccion Politica de calidad ------------------------------------------------------*/
+.PoliticaDeCalidad h1 {
+    padding-top: 5%;
+    padding-bottom: 7%;
+    padding-right: 10%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: end;
+    color: white;
+}
+
+.cover {
+    height: 100vh;
+}
+
+.PoliticaDeCalidad .containerText {
+    padding-top: 10%;
+}
+
+.PoliticaDeCalidad .containerText h1 {
+    padding-top: 0;
+    font-size: 35px;
+}
+
+.PoliticaDeCalidad .containerText h2 {
+    font-size: 20px;
+    color: white;
+    padding-right: 20%;
+    padding-top: 0;
+}
+
+.PoliticaDeCalidad .row img {
+    display: block;
+    width: 100%;
+}
+
+/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    .PoliticaDeCalidad h1 {
+        padding-bottom: 0%;
+        padding-right: 10%;
+        font-size: 40px;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+    }
+
+    .PoliticaDeCalidad .containerText h1 {
+        font-size: 20px;
+        padding-right: 0;
         text-align: center;
-        display: inline-block;
-        font-size: 18px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        border:1px solid;
-        border-radius: 36px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        margin: 0 3px 3px 0;
-    }ul.social > li > a:hover {
-        text-decoration: none;
-        opacity: 0.5;
     }
 
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        
+    .PoliticaDeCalidad .containerText h2 {
+        font-size: 14px;
+        line-height: 1.5rem;
+        padding-top: 3rem;
+        padding-right: 0%;
     }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
 
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
+}
 
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    .PoliticaDeCalidad h1 {
+        padding-bottom: 0%;
+        padding-right: 10%;
+        font-size: 40px;
     }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+    }
+
+    .PoliticaDeCalidad .containerText h1 {
+        font-size: 25px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .PoliticaDeCalidad .containerText h2 {
+        font-size: 16px;
+        line-height: 1.5rem;
+        padding-top: 3rem;
+        padding-right: 0%;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .PoliticaDeCalidad h1 {
+        padding-bottom: 0%;
+        padding-right: 10%;
+        font-size: 40px;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+    }
+
+    .PoliticaDeCalidad .containerText h1 {
+        font-size: 35px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .PoliticaDeCalidad .containerText h2 {
+        font-size: 16px;
+        line-height: 2rem;
+        padding-top: 0;
+        padding-right: 0%;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .PoliticaDeCalidad h1 {
+        padding-bottom: 0%;
+        padding-right: 10%;
+        font-size: 40px;
+    }
+
+    .cover {
+        height: 60vh;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+    }
+
+    .PoliticaDeCalidad .containerText h1 {
+        font-size: 35px;
+    }
+
+    .PoliticaDeCalidad .containerText h2 {
+        font-size: 16px;
+        line-height: 2rem;
+        padding-top: 0;
+        padding-right: 0%;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {
+    .PoliticaDeCalidad h1 {
+        padding-bottom: 0%;
+        padding-right: 10%;
+        font-size: 40px;
+    }
+
+    .cover {
+        height: 80vh;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+    }
+
+    .PoliticaDeCalidad .containerText h1 {
+        font-size: 35px;
+    }
+
+    .PoliticaDeCalidad .containerText h2 {
+        font-size: 16px;
+        line-height: 2rem;
+        padding-top: 0;
+        padding-right: 20%;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .PoliticaDeCalidad h1 {
+        padding-bottom: 4%;
+        padding-right: 10%;
+        font-size: 60px;
+    }
+
+    .cover {
+        height: 100vh;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+    }
+
+    .PoliticaDeCalidad .containerText h1 {
+        font-size: 35px;
+    }
+
+    .PoliticaDeCalidad .containerText h2 {
+        font-size: 20px;
+        padding-top: 0;
+        padding-right: 20%;
+    }
+
+    .PoliticaDeCalidad .containerText {
+        padding-top: 10%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
+.footer {
+    margin-top: 30%;
+}
+
+.footer h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: end;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: end;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+}
+
+ul.social {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 10%;
+}
+
+ul.social>li {
+    display: inline-block;
+}
+
+ul.social>li>a {
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin: 0 3px 3px 0;
+}
+
+ul.social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

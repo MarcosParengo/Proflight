@@ -4,39 +4,6 @@
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     --main-color: #00B0CE
 }
-
-html {
-    scroll-behavior: smooth;
-    box-sizing: border-box
-}
-
-body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    letter-spacing: 0.1em
-}
-
-body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-
-body A {
-    color: white;
-    text-decoration: none;
-}
-
-body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 .h-100vh {
     height: 100vh
 }

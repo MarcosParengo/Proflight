@@ -28,9 +28,14 @@ $(document).ready(function() {
         navBarTogglerIcon.attr('src', newSource);
         if (toggled == false) {
             navBarToggler.css('background-color', 'rgba(200,200,200,0.5)');
+            navBarToggler.css('backdrop-filter', 'blur(10px)');
+            navBarToggler.css('-webkit-backdrop-filter', 'blur(10px)');
             toggled = true;
         } else {
             navBarToggler.css('background-color', 'rgba(0,0,0,0.0)');
+            navBarToggler.css('backdrop-filter', 'blur(0px)');
+            navBarToggler.css('-webkit-backdrop-filter', 'blur(0px)');
+
             toggled = false;
         }
     })
