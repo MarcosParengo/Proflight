@@ -1,7 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
-* {
-    word-spacing: 2px;
 
+* {
     box-sizing: border-box;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     --main-color: #00B0CE;
@@ -61,8 +60,10 @@
 .rotatedText>.text {
     text-align: end;
     color: white;
-    font-size: 20px;
-    font-weight: 400;
+    font: normal normal normal 22px/25px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    opacity: 1;    font-weight: 400;
 }
 .rotatedText>.textBlack {
     text-align: end;
@@ -177,12 +178,8 @@
     outline: 0;
 }
 
-#navBarBrandText {
+#navBarBrandText{
     display: none;
-}
-
-#navbar-brand:hover #navBarBrandText {
-    display: inline-block
 }
 
 
@@ -304,7 +301,7 @@
 
 .btn-primary {
     font-size: 15px;
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: var(--main-color);
     border:transparent
 }

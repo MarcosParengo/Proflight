@@ -274,23 +274,20 @@ body p {
 
 .bienvenido .bienvenidaTitulo {
     text-align: start;
-    font-size: 60px;
-    font-weight: bolder;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
-}
-
-.bienvenido h2 {
-    color: rgb(27, 76, 96);
-    padding-top: 10%;
-    font-weight: bolder;
+    font: normal normal bold 53px/64px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .bienvenido p.lead {
     text-align: left;
-    color: white;
-    width: 70%;
-    line-height: 40px;
+    font: normal normal 300 16px Inter;
+    line-height: 2em;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 47ch;
 }
 
 .bienvenido .imgContainer {
@@ -298,24 +295,28 @@ body p {
     right: 0em;
     width: 50%;
 }
-
 .bienvenido .cómopilotoTitulo {
     text-align: start;
-    font-size: 30px;
+    font: normal normal medium 39px/46px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
     font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
 }
 
 .bienvenido .comoPiloto {
-    font-size: 15px!important;
-    line-height: 2em!important;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 60ch!important;
 }
 
 .bienvenido .footer {
     color: var(--main-color);
-    font-size: 25px;
-    font-weight: bolder;
+    font: normal normal bold 24px/94px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    opacity: 1;
 }
 
 .bienvenido .circle {
@@ -325,10 +326,11 @@ body p {
 }
 
 .timeline {
+    font: normal normal 300 16px/32px Inter;
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 0;
-    width: 70%;
+    width: 55ch;
     height: 30px;
     list-style: none;
     text-align: justify;
@@ -363,7 +365,8 @@ body p {
     width: 100%;
     text-align: center;
     color: var(--main-color);
-    font-weight: bolder;
+    font: normal normal bold 12px/30px Inter;
+    opacity: 1;
 }
 
 .timeline li:nth-child(odd):before {
@@ -375,11 +378,11 @@ body p {
 }
 
 .timeline li:after {
+    font: normal normal 300 10px/18px Inter;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
     text-transform: uppercase;
-    font-size: 10px;
-    line-height: 1.5em;
-    letter-spacing: 0.3em;
-    color: rgb(92, 100, 112);
+    opacity: 0.8;
     display: inline-block;
     content: attr(data-text);
     position: absolute;
@@ -415,18 +418,6 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .bienvenido .bienvenidaTitulo {
-        text-align: start;
-        font-size: 25px;
-    }
-    .bienvenido p.lead {
-        font-size: 15px;
-        line-height: 2rem;
-        padding-right: 0%;
-    }
-    .bienvenido h2 {
-        font-size: 17px;
-    }
     .bienvenido .childleft {
         padding-left: 10%;
         padding-right: 0;
@@ -447,17 +438,6 @@ body p {
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .bienvenido .bienvenidaTitulo {
-        text-align: start;
-        font-size: 30px;
-    }
-    .bienvenido p.lead {
-        font-size: 15px;
-        line-height: 2rem;
-    }
-    .bienvenido h2 {
-        font-size: 17px;
-    }
     .bienvenido .childleft {
         padding-left: 10%;
         padding-right: 0;
@@ -478,17 +458,6 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .bienvenido .bienvenidaTitulo {
-        text-align: start;
-        font-size: 35px;
-    }
-    .bienvenido p.lead {
-        font-size: 15px;
-        line-height: 2rem;
-    }
-    .bienvenido h2 {
-        font-size: 17px;
-    }
     .bienvenido .childleft {
         padding-left: 10%;
         padding-right: 5%;
@@ -506,17 +475,6 @@ body p {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .bienvenido .bienvenidaTitulo {
-        text-align: start;
-        font-size: 40px;
-    }
-    .bienvenido p.lead {
-        font-size: 17px;
-        line-height: 2rem;
-    }
-    .bienvenido h2 {
-        font-size: 25px;
-    }
     .bienvenido .childleft {
         padding-left: 10%;
         padding-right: 5%;
@@ -537,17 +495,6 @@ body p {
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .bienvenido .bienvenidaTitulo {
-        text-align: start;
-        font-size: 40px;
-    }
-    .bienvenido p.lead {
-        font-size: 17px;
-        line-height: 2rem;
-    }
-    .bienvenido h2 {
-        font-size: 30px;
-    }
     .bienvenido .childleft {
         padding-left: 5%;
         padding-right: 15%;
@@ -567,18 +514,8 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .bienvenido .bienvenidaTitulo {
-        text-align: start;
-        font-size: 60px;
-    }
-    .bienvenido p.lead {
-        font-size: 20px;
-    }
-    .bienvenido h2 {
-        font-size: 30px;
-    }
     .bienvenido .childleft {
-        padding-left: 15%;
+        padding-left: 16.7%;
         padding-right: 15%;
     }
     .bienvenido .cómopilotoTitulo {
@@ -609,11 +546,11 @@ body p {
 }
 
 .programas .programasTitulo {
-    padding-left: 0%;
+    font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
     text-align: start;
-    font-size: 35px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
 }
 
 .programas .more {
@@ -623,7 +560,7 @@ body p {
 
 .programas .carousel {
     font-size: 15px;
-    max-width: 70ch
+    max-width: 73ch
 }
 
 .programas .carousel-inner {
@@ -643,21 +580,24 @@ body p {
 }
 
 .programas .carousel-caption p {
-    font-size: 15px;
-    line-height: 2rem;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .programas .title {
-    padding-left: 1em;
-    color: white;
-    font-weight: 300;
-    font-size: 18px;
+    text-align: left;
+font: normal normal normal 16px/32px Inter;
+letter-spacing: 0px;
+color: #FFFFFF;
 }
 
 .programas .number {
-    color: var(--main-color);
-    font-size: 18px;
-    font-weight: 500
+    text-align: left;
+    font: normal normal bold 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
 }
 
 .programas .sliderButton {
@@ -688,11 +628,6 @@ body p {
     filter: invert(100%);
 }
 
-.programas .bd-placeholder-img {
-    height: 200px;
-}
-
-
 /*-------------------------------------------------- Media Query programas --------------------------------------------------DONE*/
 
 
@@ -701,10 +636,6 @@ body p {
 @media only screen and (max-width: 392px) {
     .programas {
         height: auto
-    }
-    .programas .programasTitulo {
-        text-align: start;
-        font-size: 25px;
     }
     .programas p.lead {
         font-size: 15px;
@@ -722,7 +653,7 @@ body p {
         padding-right: 5%;
     }
     .programas .bd-placeholder-img {
-        height: 270px;
+        height: 250px;
     }
     .programas .more {
         padding-top: 20px;
@@ -734,10 +665,6 @@ body p {
     .programas {
         height: auto
     }
-    .programas .programasTitulo {
-        text-align: start;
-        font-size: 30px;
-    }
     .programas p.lead {
         font-size: 15px;
         line-height: 2rem;
@@ -754,7 +681,7 @@ body p {
         padding-right: 5%;
     }
     .programas .bd-placeholder-img {
-        height: 260px;
+        height: 250px;
     }
     .programas .more {
         padding-top: 20px;
@@ -767,10 +694,6 @@ body p {
     .programas {
         height: auto
     }
-    .programas .programasTitulo {
-        text-align: start;
-        font-size: 35px;
-    }
     .programas p.lead {
         font-size: 15px;
         line-height: 2rem;
@@ -787,7 +710,7 @@ body p {
         padding-right: 5%;
     }
     .programas .bd-placeholder-img {
-        height: 220px;
+        height: 250px;
     }
     .programas .more {
         padding-top: 20px;
@@ -799,10 +722,6 @@ body p {
 @media only screen and (min-width: 768px) {
     .programas {
         height: auto
-    }
-    .programas .programasTitulo {
-        text-align: start;
-        font-size: 40px;
     }
     .programas p.lead {
         font-size: 17px;
@@ -820,7 +739,7 @@ body p {
         padding-right: 25%;
     }
     .programas .bd-placeholder-img {
-        height: 200px;
+        height: 250px;
     }
     .programas .more {
         padding-top: 20px;
@@ -831,10 +750,6 @@ body p {
 @media only screen and (min-width: 1050px) {
     .programas {
         height: 100vh
-    }
-    .programas .programasTitulo {
-        text-align: start;
-        font-size: 35px;
     }
     .programas p.lead {
         font-size: 17px;
@@ -852,7 +767,7 @@ body p {
         padding-right: 25%;
     }
     .programas .bd-placeholder-img {
-        height: 200px;
+        height: 250px;
     }
     .programas .more {
         padding-top: 20px;
@@ -864,26 +779,22 @@ body p {
     .programas {
         height: 100vh
     }
-    .programas .programasTitulo {
-        text-align: start;
-        font-size: 35px;
-    }
     .programas p.lead {
         font-size: 20px;
         padding-right: 15%;
     }
     .programas .parent {
-        padding-left: 15%;
+        padding-left: 16.7%;
     }
     .programas .childleft {
-        padding-right: 15%;
+        padding-right: 20%;
         padding-left: 0%;
     }
     .programas .carousel {
         padding-right: 25%;
     }
     .programas .bd-placeholder-img {
-        height: 200px;
+        height: 250px;
     }
     .programas .more {
         padding-top: 20px;
@@ -904,25 +815,24 @@ body p {
 
 .flota .flotaTitulo {
     text-align: start;
-    font-size: 30px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
+    font: normal normal 500  27px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .flota .lead {
     line-height: 2rem;
-    padding-right: 15%;
-    text-align: start;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--secondary-color);
-    padding-bottom: 5%;
+    width: 60ch;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .flota .carousel {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 14.5%;
+    padding-left: 14.5%;
 }
 
 .flota .carousel-inner {
@@ -1014,6 +924,7 @@ body p {
 }
 
 .flota .more {
+    padding-left: 13%;
     font-weight: 400;
     color:var(--secondary-color);
     padding-top: 20px;
@@ -1037,11 +948,6 @@ body p {
         font-size: 15px;
         padding-bottom: 5%;
     }
-    .flota .flotaTitulo {
-        text-align: start;
-        font-size: 25px;
-        padding-bottom: 5%;
-    }
 }
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
@@ -1056,10 +962,6 @@ body p {
         font-size: 15px;
         padding-bottom: 5%;
     }
-    .flota .flotaTitulo {
-        font-size: 25px;
-        padding-bottom: 5%;
-    }
 }
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
@@ -1072,10 +974,6 @@ body p {
         line-height: 2rem;
         padding-right: 5%;
         font-size: 15px;
-        padding-bottom: 5%;
-    }
-    .flota .flotaTitulo {
-        font-size: 25px;
         padding-bottom: 5%;
     }
     .flota .more {
@@ -1096,10 +994,6 @@ body p {
         font-size: 15px;
         padding-bottom: 5%;
     }
-    .flota .flotaTitulo {
-        font-size: 25px;
-        padding-bottom: 5%;
-    }
     .flota .more {
         padding-top: 20px;
         font-size: 12px;
@@ -1118,10 +1012,6 @@ body p {
         font-size: 15px;
         padding-bottom: 5%;
     }
-    .flota .flotaTitulo {
-        font-size: 30px;
-        padding-bottom: 5%;
-    }
     .flota .more {
         padding-top: 20px;
         font-size: 15px;
@@ -1130,18 +1020,13 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .flota .childleft {
-        padding-right: 20%;
         padding-top: 7%;
-        padding-left: 15%;
+        padding-left: 16.7%;
     }
     .flota .lead {
         line-height: 2rem;
         padding-right: 15%;
         font-size: 15px;
-        padding-bottom: 5%;
-    }
-    .flota .flotaTitulo {
-        font-size: 30px;
         padding-bottom: 5%;
     }
     .flota .more {
@@ -1216,11 +1101,13 @@ body p {
 }
 
 .tab-content .lead {
-    line-height: 2rem;
     border-top: 1px solid;
-    font-size: 15px;
-    font-weight: lighter;
-    color: var(--secondary-color)
+    text-align: left;
+    font: normal normal normal 14px/30px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    width:52ch;
 }
 
 .tecnologia .sectionLabel{
