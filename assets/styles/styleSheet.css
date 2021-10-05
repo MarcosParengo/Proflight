@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    --main-color: #00B0CE;
-    --secondary-color:#616161
+
 }
 
 html {
@@ -101,41 +100,6 @@ body p {
     width: auto;
 }
 
-
-.sectionLabel {
-    position: absolute;
-    bottom: 5em;
-    right: 5em;
-    width: auto;
-}
-
-.rotatedText{
-    transform: rotate(-90deg) translateX(100%);
-    transform-origin: top right;
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-.rotatedText>.text {
-    text-align: end;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.rotatedText>.text::before {
-    display: inline-block;
-    content: "";
-    border-top: .1rem solid white;
-    width: 9rem;
-    margin: 0 1rem;
-}
-
-.rotatedText>.text:hover {
-    color: var(--main-color);
-}
 
 .whatsappButtonContainer {
     position: fixed;

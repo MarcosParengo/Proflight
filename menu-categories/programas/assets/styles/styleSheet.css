@@ -1,548 +1,799 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Montserrat';
-    }
-    html {
-        scroll-behavior: smooth;
-      }
-    body {
-        font-size: 12px;
-        margin: 0;
-        font-family:  Arial, Helvetica, sans-serif;
-        position: absolute;
-    }
-    body h1{
-        font-size:60px;
-        font-weight: bold;
-        text-align: end;
-        color: black;
-    }body h2{
-        font-size: 20px;
-        color: black;
-        padding-right: 20%;
-        line-height: 2.5rem;
-    }
-    body A {
-        color: white;
-        text-decoration: none;
-    }
-    body p {
-        color: black;
-        text-decoration: none;
-        font-size: 18px;
-        text-align: end;
-        font-weight: bolder;
-    }
-    /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
-    .home {
-        background-color: white;
-    }
-    /*--------------------------------------------------Media Query pilotoPrivado --------------------------------------------------DONE*/ 
-    
-    .coverPage .container-fluid{
-        height: 100vh;
-    }.coverPage .row{
-        position: relative;
-        top: 30%;
-    }.coverPage .left h1{
-        padding-left: 25rem;
-    }
-    .coverPage .right{
-        padding-right: 15rem;
-    }
-    .coverPage .left p{
-        margin-bottom: .8rem;
-    }
-    .comercial .coverPage{
-        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/programas/assets/images/background/Background%2003-test.png);
-        background-repeat: no-repeat, repeat;
-        background-position: center left;
-    }.multiMotor .coverPage .left h1{
-        padding-left: 20rem;
-    }.instructor .coverPage{
-        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/programas/assets/images/background/Background%2003-test.png);
-        background-repeat: no-repeat, repeat;
-        background-position: center left;
-    }.instructor .descripcion .container{
-        height: auto;
-        padding-bottom: 20%;
-    }.instructor .descripcion .row{
-        top:0;
-    }
-    .instructor .descripcion{
-        height: auto;
-        top:0;
-    }
-    .instructor .descripcion .right{
-        border-top: 0px;
-        float: right;
-    }.instructor .descripcion .right{
-        padding-left: auto;
-    }
+}
+.min-100vh{
+    min-height:100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+}
+
+body h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: end;
+    color: black;
+}
+
+body h2 {
+    font-size: 20px;
+    color: black;
+    padding-right: 20%;
+    line-height: 2.5rem;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: end;
+}
+
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+.home {
+    background-color: white;
+}
+
+/*--------------------------------------------------Media Query pilotoPrivado --------------------------------------------------DONE*/
+.gradientBackground {
+    background: rgb(254, 254, 254);
+    background: linear-gradient(0deg, rgba(254, 254, 254, 1) 29%, rgba(234, 244, 244, 1) 61%, rgba(208, 231, 231, 1) 100%);
+
+}
+
+.coverPage .container-fluid {
+    height: 100vh;
+}
+
+.coverPage .row {
+    position: relative;
+    top: 30%;
+}
+
+.coverPage .left h1 {
+    font-size: 70px;
+}
+
+.coverPage .right {
+    padding-right: 15rem;
+}
+
+.coverPage .left p {
+    margin-bottom: .8rem;
+}
+
+.comercial .coverPage {
+    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/programas/assets/images/background/Background%2003-test.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center left;
+}
+
+.multiMotor .coverPage .left h1 {
+    padding-left: 20rem;
+}
+
+.instructor .descripcion .container {
+    height: auto;
+    padding-bottom: 20%;
+}
+
+.instructor .descripcion .row {
+    top: 0;
+}
+
+.instructor .descripcion {
+    height: auto;
+    top: 0;
+}
+
+.instructor .descripcion .right {
+    border-top: 0px;
+    float: right;
+}
+
+.instructor .descripcion .right {
+    padding-left: auto;
+}
 
 
-    .descripcion .container{
-        height: 100vh;
-    }.descripcion h1{
-        text-align: start;
-    }.descripcion h2{
-        text-align: start;
-    }.descripcion .row{
-        position: relative;
-        top: 30%;
-    }.descripcion .texto{
-        font-weight: bolder;
-        text-align: start;
+.descripcion .container {
+    height: 100vh;
+}
+
+.descripcion h1 {
+    text-align: start;
+}
+
+.descripcion h2 {
+    text-align: start;
+}
+
+.descripcion .row {
+    position: relative;
+    top: 30%;
+}
+
+.descripcion .texto {
+    text-align: start;
+    font-size: 30px;
+    padding-left: 0;
+}
+
+.descripcion .number {
+    float: inline-end;
+    text-align: end;
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+.descripcion .lead {
+    text-align: start;
+    line-height: 2rem;
+    border-top: 1px solid var(--secondary-color);
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 1);
+}
+
+.descripcion .textContainer {
+    position: relative;
+    top: 0;
+}
+
+.descripcion .one {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.descripcion .two {
+    display: none;
+    margin-top: 4rem;
+}
+
+.descripcion .three {
+    display: none;
+    margin-top: 4rem;
+}
+
+.descripcion .two .item1 {
+    display: show;
+}
+
+.descripcion .two .item2 {
+    display: none;
+}
+
+.descripcion .button {
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    background-color: gray;
+    border-radius: 2rem;
+}
+
+/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+@media only screen and (max-width: 392px) {
+    body h1 {
         font-size: 30px;
+        text-align: center;
+
+    }
+
+    body h2 {
+        font-size: 14px;
+        padding-right: 5%;
+        padding-left: 5%;
+        line-height: 1.5rem;
+        padding-bottom: 30%;
+    }
+
+    body p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .coverPage .container-fluid {
+        padding-top: 50%;
+        height: auto;
+    }
+
+    .coverPage .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .coverPage .left h1 {
+        font-size: 30px;
+    }
+
+    .coverPage .right {
+        padding-right: 1rem;
+    }
+
+    .coverPage .left p {
+        font-size: 14px;
+        padding-bottom: 5%;
+    }
+
+    .multiMotor .coverPage .left h1 {
+        padding-left: 0rem;
+    }
+
+    .descripcion .container {
+        height: auto;
+    }
+
+    .descripcion h1 {
+        text-align: center;
+    }
+
+    .descripcion h2 {
+        text-align: center;
+        padding-bottom: 0%;
+    }
+
+    .descripcion .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .descripcion .texto {
+        text-align: start;
+        font-size: 20px;
         padding-left: 0;
-    }.descripcion .number{
+    }
+
+    .descripcion .number {
         float: inline-end;
         text-align: end;
-        font-size:15px;
-        color: rgb(53,187,215);
-    }.descripcion .lead{
+        font-size: 15px;
+    }
+
+    .descripcion .lead {
         text-align: start;
         line-height: 2rem;
-        border-top: 1px solid;
         font-size: 15px;
-        font-weight: lighter;
-        color: rgba(0, 0, 0, 1);
-    }.descripcion .textContainer{
-        position: relative;
-        top: 0; 
     }
-    .descripcion .one{
-        margin-top: 4rem;
-        display: flex;
-    }.descripcion .two{
-       display: none;
-       margin-top: 4rem;
-    }.descripcion .three{
-        display: none;
-        margin-top: 4rem;
-     }.descripcion .two .item1{
-        display: show;
-    }.descripcion .two .item2{
-        display: none;
-    }
-    .descripcion .button{
-        padding: 1rem 1.2rem 1rem 1.2rem;
-        background-color: gray;
-        border-radius: 2rem;
-    }
-    
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        body h1{
-            font-size:30px;
-            text-align: center;
 
-        }body h2{
-            font-size: 14px;
-            padding-right: 5%;
-            padding-left: 5%;
-            line-height: 1.5rem;
-            padding-bottom: 30%;
-        }
-        body p {
-            font-size: 18px;
-            text-align: center;
-        }.coverPage .container-fluid{
-            padding-top: 50%;
-            height: auto;
-        }.coverPage .row{
-            position: relative;
-            top: 30%;
-        }.coverPage .left h1{
-            padding-left: 0rem;
-        }
-        .coverPage .right{
-            padding-right: 1rem;
-        }
-        .coverPage .left p{
-            font-size: 14px;
-            padding-bottom: 5%;
-        }
-        .multiMotor .coverPage .left h1{
-            padding-left: 0rem;
-        }
-        .descripcion .container{
-            height: auto;
-        }.descripcion h1{
-            text-align: center;
-        }.descripcion h2{
-            text-align: center;
-            padding-bottom: 0%;
-        }.descripcion .row{
-            position: relative;
-            top: 30%;
-        }.descripcion .texto{
-            text-align: start;
-            font-size: 20px;
-            padding-left: 0;
-        }.descripcion .number{
-            float: inline-end;
-            text-align: end;
-            font-size:15px;
-        }.descripcion .lead{
-            text-align: start;
-            line-height: 2rem;
-            border-top: 1px solid;
-            font-size: 15px;
-        }.descripcion .textContainer{
-            position: relative;
-            top: 0; 
-        }
-        .descripcion .one{
-            margin-top: 4rem;
-        }.descripcion .two{
-           margin-top: 4rem;
-        }.descripcion .three{
-            display: none;
-            margin-top: 4rem;
-        }.instructor .descripcion .right{
-            border-top: 0px;
-            float:none;
-        }.instructor .descripcion .left{
-            padding-left:5%
-        }
-        
+    .descripcion .textContainer {
+        position: relative;
+        top: 0;
     }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        body h1{
-            font-size:30px;
-            text-align: center;
-        }body h2{
-            font-size: 14px;
-            padding-right: 5%;
-            padding-left: 5%;
-            line-height: 1.5rem;
-        }
-        body p {
-            font-size: 18px;
-            text-align: center;
-        }.coverPage .container-fluid{
-            height: 100vh;
-        }.coverPage .row{
-            position: relative;
-            top: 30%;
-        }.coverPage .left h1{
-            padding-left: 0rem;
-        }
-        .coverPage .right{
-            padding-right: 1rem;
-        }
-        .coverPage .left p{
-            font-size: 14px;
-            margin-bottom: .8rem;
-        }
-        .multiMotor .coverPage .left h1{
-            padding-left: 0rem;
-        }
-        .descripcion .container{
-            height: 100vh;
-        }.descripcion h1{
-            text-align: center;
-        }.descripcion h2{
-            text-align: center;
-        }.descripcion .row{
-            position: relative;
-            top: 30%;
-        }.descripcion .texto{
-            text-align: start;
-            font-size: 20px;
-            padding-left: 0;
-        }.descripcion .number{
-            float: inline-end;
-            text-align: end;
-            font-size:15px;
-        }.descripcion .lead{
-            text-align: start;
-            line-height: 2rem;
-            border-top: 1px solid;
-            font-size: 15px;
-        }.descripcion .textContainer{
-            position: relative;
-            top: 0; 
-        }
-        .descripcion .one{
-            margin-top: 4rem;
-        }.descripcion .two{
-           margin-top: 4rem;
-        }.descripcion .three{
-            display: none;
-            margin-top: 4rem;
-        }.instructor .descripcion .right{
-            border-top: 0px;
-            float:none;
-        }.instructor .descripcion .left{
-            padding-left:5%
-        }
-    
+
+    .descripcion .one {
+        margin-top: 4rem;
     }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        body h1{
-            font-size:30px;
-            text-align: end;
-        }body h2{
-            font-size: 14px;
-            padding-right: 5%;
-            line-height: 1.5rem;
-        }
-        body p {
-            font-size: 18px;
-            text-align: end;
-        }.coverPage .container-fluid{
-            height: 100vh;
-        }.coverPage .row{
-            position: relative;
-            top: 30%;
-        }.coverPage .left h1{
-            padding-left: 0rem;
-        }
-        .coverPage .right{
-            padding-right: 1rem;
-        }
-        .coverPage .left p{
-            font-size: 15px;
-            margin-bottom: .8rem;
-        }
-        .multiMotor .coverPage .left h1{
-            padding-left: 20rem;
-        }
-        .descripcion .container{
-            height: 100vh;
-        }.descripcion h1{
-            text-align: start;
-        }.descripcion h2{
-            text-align: start;
-        }.descripcion .row{
-            position: relative;
-            top: 30%;
-        }.descripcion .texto{
-            text-align: start;
-            font-size: 20px;
-            padding-left: 0;
-        }.descripcion .number{
-            float: inline-end;
-            text-align: end;
-            font-size:15px;
-        }.descripcion .lead{
-            text-align: start;
-            line-height: 2rem;
-            border-top: 1px solid;
-            font-size: 15px;
-        }.descripcion .textContainer{
-            position: relative;
-            top: 0; 
-        }
-        .descripcion .one{
-            margin-top: 4rem;
-        }.descripcion .two{
-           margin-top: 4rem;
-        }.descripcion .three{
-            display: none;
-            margin-top: 4rem;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        body h1{
-            font-size:50px;
-            text-align: end;
-        }body h2{
-            font-size: 15px;
-            padding-right: 5%;
-            line-height: 1.5rem;
-        }
-        body p {
-            font-size: 15px;
-            text-align: end;
-        }.coverPage .container-fluid{
-            height: 100vh;
-        }.coverPage .row{
-            position: relative;
-            top: 30%;
-        }.coverPage .left h1{
-            padding-left: 10rem;
-        }
-        .coverPage .right{
-            padding-right: 5rem;
-        }
-        .coverPage .left p{
-            font-size: 18px;
-            margin-bottom: .8rem;
-        }
-        .multiMotor .coverPage .left h1{
-            padding-left: 20rem;
-        }
-        .descripcion .container{
-            height: 100vh;
-        }.descripcion h1{
-            text-align: start;
-        }.descripcion h2{
-            text-align: start;
-        }.descripcion .row{
-            position: relative;
-            top: 30%;
-        }.descripcion .texto{
-            text-align: start;
-            font-size: 30px;
-            padding-left: 0;
-        }.descripcion .number{
-            float: inline-end;
-            text-align: end;
-            font-size:15px;
-        }.descripcion .lead{
-            text-align: start;
-            line-height: 2rem;
-            border-top: 1px solid;
-            font-size: 15px;
-        }.descripcion .textContainer{
-            position: relative;
-            top: 0; 
-        }
-        .descripcion .one{
-            margin-top: 4rem;
-        }.descripcion .two{
-           margin-top: 4rem;
-        }.descripcion .three{
-            display: none;
-            margin-top: 4rem;
-        }
+
+    .descripcion .two {
+        margin-top: 4rem;
     }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        body h1{
-            font-size:50px;
-            text-align: end;
-        }body h2{
-            font-size: 15px;
-            padding-right: 20%;
-            line-height: 2rem;
-        }
-        body p {
-            font-size: 18px;
-            text-align: end;
-        }.coverPage .container-fluid{
-            height: 100vh;
-        }.coverPage .row{
-            position: relative;
-            top: 30%;
-        }.coverPage .left h1{
-            padding-left: 10rem;
-        }
-        .coverPage .right{
-            padding-right: 5rem;
-        }
-        .coverPage .left p{
-            font-size: 18px;
-            margin-bottom: .8rem;
-        }
-        .multiMotor .coverPage .left h1{
-            padding-left: 20rem;
-        }
-        .descripcion .container{
-            height: 100vh;
-        }.descripcion h1{
-            text-align: start;
-        }.descripcion h2{
-            text-align: start;
-        }.descripcion .row{
-            position: relative;
-            top: 30%;
-        }.descripcion .texto{
-            text-align: start;
-            font-size: 30px;
-            padding-left: 0;
-        }.descripcion .number{
-            float: inline-end;
-            text-align: end;
-            font-size:15px;
-        }.descripcion .lead{
-            text-align: start;
-            line-height: 2rem;
-            border-top: 1px solid;
-            font-size: 15px;
-        }.descripcion .textContainer{
-            position: relative;
-            top: 0; 
-        }
-        .descripcion .one{
-            margin-top: 4rem;
-        }.descripcion .two{
-           margin-top: 4rem;
-        }.descripcion .three{
-            display: none;
-            margin-top: 4rem;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        body h1{
-            font-size:50px;
-            text-align: end;
-        }body h2{
-            font-size: 15px;
-            padding-right: 20%;
-            line-height: 2rem;
-        }
-        body p {
-            font-size: 18px;
-            text-align: end;
-        }.coverPage .container-fluid{
-            height: 100vh;
-        }.coverPage .row{
-            position: relative;
-            top: 30%;
-        }.coverPage .left h1{
-            padding-left: 25rem;
-        }
-        .coverPage .right{
-            padding-right: 15rem;
-        }
-        .coverPage .left p{
-            font-size: 18px;
-            margin-bottom: .8rem;
-        }
-        .multiMotor .coverPage .left h1{
-            padding-left: 20rem;
-        }
-        .descripcion .container{
-            height: 100vh;
-        }.descripcion h1{
-            text-align: start;
-        }.descripcion h2{
-            text-align: start;
-        }.descripcion .row{
-            position: relative;
-            top: 30%;
-        }.descripcion .texto{
-            text-align: start;
-            font-size: 30px;
-            padding-left: 0;
-        }.descripcion .number{
-            float: inline-end;
-            text-align: end;
-            font-size:15px;
-        }.descripcion .lead{
-            text-align: start;
-            line-height: 2rem;
-            border-top: 1px solid;
-            font-size: 15px;
-        }.descripcion .textContainer{
-            position: relative;
-            top: 0; 
-        }
-        .descripcion .one{
-            margin-top: 4rem;
-        }.descripcion .two{
-           margin-top: 4rem;
-        }.descripcion .three{
-            display: none;
-            margin-top: 4rem;
-        }
+
+    .descripcion .three {
+        display: none;
+        margin-top: 4rem;
     }
+
+    .instructor .descripcion .right {
+        border-top: 0px;
+        float: none;
+    }
+
+    .instructor .descripcion .left {
+        padding-left: 5%
+    }
+
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+@media only screen and (min-width: 392px) {
+    body h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    body h2 {
+        font-size: 14px;
+        padding-right: 5%;
+        padding-left: 5%;
+        line-height: 1.5rem;
+    }
+
+    body p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .coverPage .container-fluid {
+        height: 100vh;
+    }
+
+    .coverPage .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .coverPage .left h1 {
+        font-size: 40px;
+    }
+
+    .coverPage .right {
+        padding-right: 1rem;
+    }
+
+    .coverPage .left p {
+        font-size: 14px;
+        margin-bottom: .8rem;
+    }
+
+    .multiMotor .coverPage .left h1 {
+        padding-left: 0rem;
+    }
+
+    .descripcion .container {
+        height: 100vh;
+    }
+
+    .descripcion h1 {
+        text-align: center;
+    }
+
+    .descripcion h2 {
+        text-align: center;
+    }
+
+    .descripcion .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .descripcion .texto {
+        text-align: start;
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .descripcion .number {
+        float: inline-end;
+        text-align: end;
+        font-size: 15px;
+    }
+
+    .descripcion .lead {
+        color: var(--secondary-color);
+        text-align: start;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+    .descripcion .textContainer {
+        position: relative;
+        top: 0;
+    }
+
+    .descripcion .one {
+        margin-top: 4rem;
+    }
+
+    .descripcion .two {
+        margin-top: 4rem;
+    }
+
+    .descripcion .three {
+        display: none;
+        margin-top: 4rem;
+    }
+
+    .instructor .descripcion .right {
+        border-top: 0px;
+        float: none;
+    }
+
+    .instructor .descripcion .left {
+        padding-left: 5%
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    body h1 {
+        font-size: 30px;
+        text-align: end;
+    }
+
+    body h2 {
+        font-size: 14px;
+        padding-right: 5%;
+        line-height: 1.5rem;
+    }
+
+    body p {
+        font-size: 18px;
+        text-align: end;
+    }
+
+    .coverPage .container-fluid {
+        height: 100vh;
+    }
+
+    .coverPage .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .coverPage .left h1 {
+        font-size: 50px;
+    }
+
+    .coverPage .right {
+        padding-right: 1rem;
+    }
+
+    .coverPage .left p {
+        font-size: 15px;
+        margin-bottom: .8rem;
+    }
+
+    .multiMotor .coverPage .left h1 {
+        padding-left: 20rem;
+    }
+
+    .descripcion .container {
+        height: 100vh;
+    }
+
+    .descripcion h1 {
+        text-align: start;
+    }
+
+    .descripcion h2 {
+        text-align: start;
+    }
+
+    .descripcion .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .descripcion .texto {
+        text-align: start;
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .descripcion .number {
+        float: inline-end;
+        text-align: end;
+        font-size: 15px;
+    }
+
+    .descripcion .lead {
+        text-align: start;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+    .descripcion .textContainer {
+        position: relative;
+        top: 0;
+    }
+
+    .descripcion .one {
+        margin-top: 4rem;
+    }
+
+    .descripcion .two {
+        margin-top: 4rem;
+    }
+
+    .descripcion .three {
+        display: none;
+        margin-top: 4rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body h1 {
+        font-size: 50px;
+        text-align: end;
+    }
+
+    body h2 {
+        font-size: 15px;
+        padding-right: 5%;
+        line-height: 1.5rem;
+    }
+
+    body p {
+        font-size: 15px;
+        text-align: end;
+    }
+
+    .coverPage .container-fluid {
+        height: 100vh;
+    }
+
+    .coverPage .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .coverPage .left h1 {
+        font-size: 50px;
+    }
+
+    .coverPage .right {
+        padding-right: 5rem;
+    }
+
+    .coverPage .left p {
+        font-size: 18px;
+        margin-bottom: .8rem;
+    }
+
+    .multiMotor .coverPage .left h1 {
+        padding-left: 20rem;
+    }
+
+    .descripcion .container {
+        height: 100vh;
+    }
+
+    .descripcion h1 {
+        text-align: start;
+    }
+
+    .descripcion h2 {
+        text-align: start;
+    }
+
+    .descripcion .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .descripcion .texto {
+        text-align: start;
+        font-size: 25px;
+        padding-left: 0;
+    }
+
+    .descripcion .number {
+        float: inline-end;
+        text-align: end;
+        font-size: 18px;
+    }
+
+    .descripcion .lead {
+        text-align: start;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+    .descripcion .textContainer {
+        position: relative;
+        top: 0;
+    }
+
+    .descripcion .one {
+        margin-top: 4rem;
+    }
+
+    .descripcion .two {
+        margin-top: 4rem;
+    }
+
+    .descripcion .three {
+        display: none;
+        margin-top: 4rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+@media only screen and (min-width: 992px) {
+    body h1 {
+        font-size: 50px;
+        text-align: end;
+    }
+
+    body h2 {
+        font-size: 15px;
+        padding-right: 20%;
+        line-height: 2rem;
+    }
+
+    body p {
+        font-size: 18px;
+        text-align: end;
+    }
+
+    .coverPage .container-fluid {
+        height: 100vh;
+    }
+
+    .coverPage .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .coverPage .left h1 {
+        font-size: 60px;
+    }
+
+    .coverPage .right {
+        padding-right: 5rem;
+    }
+
+    .coverPage .left p {
+        font-size: 18px;
+        margin-bottom: .8rem;
+    }
+
+    .multiMotor .coverPage .left h1 {
+        padding-left: 20rem;
+    }
+
+    .descripcion .container {
+        height: 100vh;
+    }
+
+    .descripcion h1 {
+        text-align: start;
+    }
+
+    .descripcion h2 {
+        text-align: start;
+    }
+
+    .descripcion .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .descripcion .texto {
+        text-align: start;
+        font-size: 25px;
+        padding-left: 0;
+    }
+
+    .descripcion .number {
+        float: inline-end;
+        text-align: end;
+        font-size: 18px;
+    }
+
+    .descripcion .lead {
+        text-align: start;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+    .descripcion .textContainer {
+        position: relative;
+        top: 0;
+    }
+
+    .descripcion .one {
+        margin-top: 4rem;
+    }
+
+    .descripcion .two {
+        margin-top: 4rem;
+    }
+
+    .descripcion .three {
+        display: none;
+        margin-top: 4rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body h1 {
+        font-size: 50px;
+        text-align: end;
+    }
+
+    body h2 {
+        font-size: 15px;
+        padding-right: 20%;
+        line-height: 2rem;
+    }
+
+    body p {
+        font-size: 18px;
+        text-align: end;
+    }
+
+    .coverPage .container-fluid {
+        height: 100vh;
+    }
+
+    .coverPage .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .coverPage .left h1 {
+        font-size: 60px;
+    }
+
+    .coverPage .right {
+        padding-right: 10rem;
+    }
+
+    .coverPage .left p {
+        font-size: 18px;
+        margin-bottom: .8rem;
+    }
+
+    .multiMotor .coverPage .left h1 {
+        padding-left: 20rem;
+    }
+
+    .descripcion .container {
+        height: 100vh;
+    }
+
+    .descripcion h1 {
+        text-align: start;
+    }
+
+    .descripcion h2 {
+        text-align: start;
+    }
+
+    .descripcion .row {
+        position: relative;
+        top: 30%;
+    }
+
+    .descripcion .texto {
+        text-align: start;
+        font-size: 25px;
+        padding-left: 0;
+    }
+
+    .descripcion .number {
+        float: inline-end;
+        text-align: end;
+        font-size: 20px;
+    }
+
+    .descripcion .lead {
+        text-align: start;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+    .descripcion .textContainer {
+        position: relative;
+        top: 0;
+    }
+
+    .descripcion .one {
+        margin-top: 4rem;
+    }
+
+    .descripcion .two {
+        margin-top: 4rem;
+    }
+
+    .descripcion .three {
+        display: none;
+        margin-top: 4rem;
+    }
+}

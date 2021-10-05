@@ -1,8 +1,14 @@
 @import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 * {
+    word-spacing: 2px;
+
     box-sizing: border-box;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    --main-color: #00B0CE
+    --main-color: #00B0CE;
+    --secondary-color:#616161
+}
+.secondaryColor{
+    color:var(--secondary-color)
 }
 .h-100vh {
     height: 100vh
@@ -17,6 +23,30 @@
     bottom: 5em;
     right: 5em;
     width: auto;
+}
+.weight-100{
+    font-weight: 100;
+}
+.weight-200{
+    font-weight: 200;
+}
+.weight-300{
+    font-weight:300 ;
+}
+.weight-400{
+    font-weight: 400;
+}
+.weight-500{
+    font-weight:500 ;
+}
+.weight-600{
+    font-weight:600 ;
+}
+.weight-700{
+    font-weight:700 ;
+}
+.weight-800{
+    font-weight:800 ;
 }
 
 .rotatedText{
@@ -34,6 +64,12 @@
     font-size: 20px;
     font-weight: 400;
 }
+.rotatedText>.textBlack {
+    text-align: end;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .rotatedText>.text::before {
     display: inline-block;
@@ -42,8 +78,18 @@
     width: 9rem;
     margin: 0 1rem;
 }
+.rotatedText>.textBlack::before {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 9rem;
+    margin: 0 1rem;
+}
 
 .rotatedText>.text:hover {
+    color: var(--main-color);
+}
+.rotatedText>.textBlack:hover {
     color: var(--main-color);
 }
 
