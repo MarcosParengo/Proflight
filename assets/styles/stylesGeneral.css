@@ -23,30 +23,6 @@
     right: 5em;
     width: auto;
 }
-.weight-100{
-    font-weight: 100;
-}
-.weight-200{
-    font-weight: 200;
-}
-.weight-300{
-    font-weight:300 ;
-}
-.weight-400{
-    font-weight: 400;
-}
-.weight-500{
-    font-weight:500 ;
-}
-.weight-600{
-    font-weight:600 ;
-}
-.weight-700{
-    font-weight:700 ;
-}
-.weight-800{
-    font-weight:800 ;
-}
 
 .rotatedText{
     transform: rotate(-90deg) translateX(100%);
@@ -74,6 +50,7 @@
 
 .rotatedText>.text::before {
     display: inline-block;
+    transform: translateY(-0.25em);
     content: "";
     border-top: .1rem solid white;
     width: 9rem;
@@ -130,9 +107,11 @@
 .whatsappButtonContainer>.dialog>.text {
     padding: 1em 0.5em;
     margin-bottom: 0;
-    font-size: 12px;
-    color: black;
-    text-align: center;
+    text-align: left;
+    font: normal normal normal 12px/11px Inter;
+    letter-spacing: 0px;
+    color: #0F2037;
+    opacity: 1;
 }
 
 .whatsappButtonContainer>.logo {
@@ -146,6 +125,30 @@
     background: linear-gradient(180deg, rgba(9, 21, 38, 1) 0%, rgba(0, 13, 35, 1) 49%);
 }
 
+.weight-100{
+    font-weight: 100;
+}
+.weight-200{
+    font-weight: 200;
+}
+.weight-300{
+    font-weight:300 ;
+}
+.weight-400{
+    font-weight: 400;
+}
+.weight-500{
+    font-weight:500 ;
+}
+.weight-600{
+    font-weight:600 ;
+}
+.weight-700{
+    font-weight:700 ;
+}
+.weight-800{
+    font-weight:800 ;
+}
 
 /*--------------------------------------------------navBar--------------------------------------------------*/
 
