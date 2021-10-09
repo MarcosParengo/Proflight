@@ -69,12 +69,12 @@ function fillContainerTestimonios(obj) {
                     </div>
                 </Container>  
                 <div class="card-body">
-                <h5 class="card-title">${obj.nombre}</h5>
-                <p class="hidden testimonio card-text me-0">${obj.testimonio}</p>
-                <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
+                    <h5 class="card-title">${obj.nombre}</h5>
+                    <p class="hidden testimonio card-text me-0">${obj.testimonioAdelanto}</p>
+                    <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
                 </div>
                 <div class="card-footer">
-                <a class="show" href="#">Ver testimonio</a>
+                <a class="show mb-3" href="#">Ver testimonio</a>
                 <a class="hidden" href="menu-categories/testimonios/index.html">continuar leyendo</a>
                 </div>
             </div>
@@ -91,20 +91,21 @@ function fillContainerEventos(obj) {
         <div class="col-sm-4 p-4 mt-5">
             <div class="card h-100 " >
                 <div class="card-body text-center">
-                <div class="hidden h-100">
-                    <div class="d-flex flex-column h-100">
-                        <p class="ampliado titulo card-text mb-0 " style="padding-top: 29.9%;">${obj.origen}, ${obj.dia} ${obj.mes} ${obj.año}</p>
-                        <p class="ampliado fecha card-text mb-0"> ${obj.fecha}</p>
-                        <p class="ampliado fecha card-text mb-0">${obj.horario}</p>
-                        <p class="ampliado card-text mb-0">${obj.ciudad}, ${obj.origen}</p>
-                        <p class="ampliado card-text mt-4 mb-0">${obj.descripcion}</p>
-                        <button class="hidden btn btn-primary px-4 py-2 mx-auto m-2 mt-auto" type="submit">Inscribirse</button>
+                    <div class="hidden ">
+                        <div class="d-flex flex-column h-100">
+                            <p class="ampliado titulo card-text mb-0 " style="padding-top: 29.9%;">${obj.origen}, ${obj.dia} ${obj.mes} ${obj.año}</p>
+                            <p class="ampliado fecha card-text mb-0"> ${obj.fecha}</p>
+                            <p class="ampliado fecha card-text mb-0">${obj.horario}</p>
+                            <p class="ampliado card-text mb-0">${obj.ciudad}, ${obj.origen}</p>
+                            <p class="ampliado card-text mt-4 mb-0">${obj.descripcion}</p>
+                            <button class="btn btn-primary px-4 py-2 mx-auto m-2 mt-auto" type="submit">Inscribirse</button>
+                        </div>
                     </div>
-                </div>
-                <img src="assets/images/eventos/banderas/${obj.origen.toLowerCase()}.png" class="show img-fluid" alt="...">
-                <p class="show resumen card-text">${obj.ciudad}, ${obj.origen}</p>
-                <p class="show resumen fecha card-text pb-5" style="color:gray;padding-bottom: 24.7%!important;"> ${obj.fecha}</p>                    
-                </div>
+                    <div class="show">
+                        <img src="assets/images/eventos/banderas/${obj.origen.toLowerCase()}.png" class=" img-fluid" alt="...">
+                        <p class=" resumen card-text">${obj.ciudad}, ${obj.origen}</p>
+                        <p class=" resumen fecha card-text pb-5" style="color:gray;padding-bottom: 24.7%!important;"> ${obj.fecha}</p>                    
+                    </div>
             </div>
         </div>
         `)
