@@ -68,14 +68,14 @@ function fillContainerTestimonios(obj) {
                         <img src="assets/images/testimonio/bandera/${obj.origen.toUpperCase()}.png" class="flag hidden" alt="-">
                     </div>
                 </Container>  
-                <div class="card-body">
+                <div class="card-body mt-2 mb-0 py-0">
                     <h5 class="card-title">${obj.nombre}</h5>
-                    <p class="hidden testimonio card-text me-0">${obj.testimonioAdelanto}</p>
+                    <p class="hidden testimonio card-text mb-0 me-0">${obj.testimonioAdelanto}</p>
                     <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
                 </div>
-                <div class="card-footer">
-                <a class="show mb-3" href="#">Ver testimonio</a>
-                <a class="hidden" href="menu-categories/testimonios/index.html">continuar leyendo</a>
+                <div class="py-0 my-0 card-footer">
+                <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+                <a class="hidden my-0 py-0 " href="menu-categories/testimonios/index.html">continuar leyendo</a>
                 </div>
             </div>
         </div>
@@ -103,8 +103,8 @@ function fillContainerEventos(obj) {
                     </div>
                     <div class="show">
                         <img src="assets/images/eventos/banderas/${obj.origen.toLowerCase()}.png" class=" img-fluid" alt="...">
-                        <p class=" resumen card-text">${obj.ciudad}, ${obj.origen}</p>
-                        <p class=" resumen fecha card-text pb-5" style="color:gray;padding-bottom: 24.7%!important;"> ${obj.fecha}</p>                    
+                        <p class="mb-0 resumen card-text">${obj.ciudad}, ${obj.origen}</p>
+                        <p class=" resumen fecha card-text pb-5"> ${obj.fecha}</p>                    
                     </div>
             </div>
         </div>

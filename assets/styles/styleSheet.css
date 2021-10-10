@@ -160,7 +160,6 @@ body p {
 .land {
     background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/backgroundMain.png);
     background-repeat: no-repeat;
-    background-size: auto 100%;
     height: 100vh;
 }
 
@@ -188,7 +187,7 @@ body p {
 @media only screen and (min-width: 572px) {
     .land {
         background-size: auto;
-        background-size: auto 100%;
+        background-size: 100% 100%;
     }
 }
 
@@ -290,7 +289,7 @@ body p {
 
 .bienvenido .cómopilotoTitulo {
     text-align: start;
-    font: normal normal medium 39px/46px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 39px/46px Neue Haas Grotesk Display Pro;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -415,7 +414,6 @@ body p {
         padding-right: 0;
     }
     .bienvenido .cómopilotoTitulo {
-        font-size: 25px;
         padding-bottom: 5%;
     }
     .timeline li:after {
@@ -434,7 +432,6 @@ body p {
         padding-right: 0;
     }
     .bienvenido .cómopilotoTitulo {
-        font-size: 25px;
         padding-bottom: 5%;
     }
     .timeline li:after {
@@ -453,7 +450,6 @@ body p {
         padding-right: 5%;
     }
     .bienvenido .cómopilotoTitulo {
-        font-size: 25px;
         padding-bottom: 5%;
     }
     .timeline li:after {
@@ -469,7 +465,6 @@ body p {
         padding-right: 5%;
     }
     .bienvenido .cómopilotoTitulo {
-        font-size: 30px;
         padding-bottom: 5%;
     }
     .timeline li:after {
@@ -487,9 +482,6 @@ body p {
         padding-left: 5%;
         padding-right: 15%;
     }
-    .bienvenido .cómopilotoTitulo {
-        font-size: 30px;
-    }
     .timeline li:after {
         font-size: 12px;
     }
@@ -504,9 +496,6 @@ body p {
     .bienvenido .childleft {
         padding-left: 16.7%;
         padding-right: 15%;
-    }
-    .bienvenido .cómopilotoTitulo {
-        font-size: 40px;
     }
     .timeline li:after {
         font-size: 12px;
@@ -541,7 +530,10 @@ body p {
 
 .programas .more {
     padding-top: 20px;
-    font-size: 15px;
+    font: normal normal 300 16px/20px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .programas .carousel {
@@ -642,7 +634,6 @@ body p {
     }
     .programas .more {
         padding-top: 20px;
-        font-size: 12px;
     }
 }
 
@@ -672,7 +663,6 @@ body p {
     }
     .programas .more {
         padding-top: 20px;
-        font-size: 12px;
     }
 }
 
@@ -702,7 +692,6 @@ body p {
     }
     .programas .more {
         padding-top: 20px;
-        font-size: 15px;
     }
 }
 
@@ -732,7 +721,6 @@ body p {
     }
     .programas .more {
         padding-top: 20px;
-        font-size: 15px;
     }
 }
 
@@ -762,7 +750,6 @@ body p {
     }
     .programas .more {
         padding-top: 20px;
-        font-size: 15px;
     }
 }
 
@@ -791,7 +778,6 @@ body p {
     }
     .programas .more {
         padding-top: 20px;
-        font-size: 15px;
     }
 }
 
@@ -920,10 +906,10 @@ body p {
 
 .flota .more {
     padding-left: 13%;
-    font-weight: 400;
-    color: var(--secondary-color);
-    padding-top: 20px;
-    font-size: 13px;
+    font: normal normal 300 16px/20px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 /*-------------------------------------------------- Media Query flota  --------------------------------------------------DONE*/
@@ -937,8 +923,6 @@ body p {
         padding-left: 10%;
     }
     .flota .lead {
-        line-height: 2rem;
-        font-size: 15px;
         padding-bottom: 5%;
     }
 }
@@ -952,9 +936,7 @@ body p {
         padding-left: 10%;
     }
     .flota .lead {
-        line-height: 2rem;
         padding-right: 0;
-        font-size: 15px;
         padding-bottom: 5%;
     }
 }
@@ -968,14 +950,11 @@ body p {
         padding-left: 10%;
     }
     .flota .lead {
-        line-height: 2rem;
         padding-right: 5%;
-        font-size: 15px;
         padding-bottom: 5%;
     }
     .flota .more {
         padding-top: 20px;
-        font-size: 10px;
     }
 }
 
@@ -995,7 +974,6 @@ body p {
     }
     .flota .more {
         padding-top: 20px;
-        font-size: 12px;
     }
 }
 
@@ -1008,14 +986,11 @@ body p {
         padding-left: 15%;
     }
     .flota .lead {
-        line-height: 2rem;
         padding-right: 10%;
-        font-size: 15px;
         padding-bottom: 5%;
     }
     .flota .more {
         padding-top: 20px;
-        font-size: 15px;
     }
 }
 
@@ -1027,14 +1002,11 @@ body p {
         padding-left: 16.7%;
     }
     .flota .lead {
-        line-height: 2rem;
         padding-right: 15%;
-        font-size: 15px;
         padding-bottom: 5%;
     }
     .flota .more {
         padding-top: 20px;
-        font-size: 17px;
     }
 }
 
@@ -1047,7 +1019,7 @@ body p {
 
 .tecnologia h1 {
     text-align: start;
-    font: normal normal medium 39px/120px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 39px Neue Haas Grotesk Display Pro;
     letter-spacing: 0px;
     opacity: 1;
     color: white
@@ -1106,7 +1078,7 @@ body p {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 12px;
+    font: normal normal 300 12px Inter;
     color: var(--main-color)
 }
 
@@ -1242,19 +1214,20 @@ body p {
 }
 
 .alumnos .title {
+    font: normal normal normal 27px Neue Haas Grotesk Display Pro;
     padding-top: 7%;
-    padding-left: 15%;
     text-align: start;
     color: rgb(133, 139, 148);
 }
 
 .alumnos .enfasis {
+    font: normal normal normal 27px Neue Haas Grotesk Display Pro;
     color: white;
 }
 
 .alumnos .card {
     border-radius: 0px;
-    background-color: rgba(79, 91, 106, 0.302);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .alumnos .imgContainer {
@@ -1311,7 +1284,7 @@ body p {
 
 .alumnos .card .card-title {
     text-align: center;
-    font: normal normal 300 16px/7px Inter;
+    font: normal normal 300 16px Inter;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -1319,7 +1292,7 @@ body p {
 
 .alumnos .card-body {
     font: normal normal 300 12px/18px Inter;
-    min-height: 12em;
+    min-height: 9em;
 }
 
 .alumnos .card-body .nacionalidad {
@@ -1365,12 +1338,8 @@ body p {
     .alumnoCard {
         margin-top: 30%;
     }
-    .containerTestimonios {
-        margin: 5%;
-    }
     .alumnos .title {
         padding-left: 10%;
-        font-size: 25px;
     }
 }
 
@@ -1380,12 +1349,8 @@ body p {
     .alumnoCard {
         margin-top: 30%;
     }
-    .containerTestimonios {
-        margin: 5%;
-    }
     .alumnos .title {
         padding-left: 10%;
-        font-size: 25px;
     }
 }
 
@@ -1395,12 +1360,8 @@ body p {
     .alumnoCard {
         margin-top: 40%;
     }
-    .containerTestimonios {
-        margin: 5%;
-    }
     .alumnos .title {
         padding-left: 15%;
-        font-size: 25px;
     }
 }
 
@@ -1410,12 +1371,8 @@ body p {
     .alumnoCard {
         margin-top: 10%;
     }
-    .containerTestimonios {
-        margin: 5%;
-    }
     .alumnos .title {
         padding-left: 15%;
-        font-size: 25px;
     }
 }
 
@@ -1425,12 +1382,8 @@ body p {
     .alumnoCard {
         margin-top: 7%;
     }
-    .containerTestimonios {
-        margin: 5%;
-    }
     .alumnos .title {
-        padding-left: 15%;
-        font-size: 30px;
+        padding-left: 16.7%
     }
 }
 
@@ -1440,12 +1393,8 @@ body p {
     .alumnoCard {
         margin-top: 10%;
     }
-    .containerTestimonios {
-        margin: 5%;
-    }
     .alumnos .title {
-        padding-left: 15%;
-        font-size: 30px;
+        padding-left: 16.7%;
     }
 }
 
@@ -1457,9 +1406,9 @@ body p {
 
 .eventos .title {
     padding-top: 7%;
-    padding-left: 15%;
+    padding-left: 16.7%;
     text-align: left;
-    font: normal normal medium 27px/32px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -1528,15 +1477,16 @@ body p {
 
 .eventos .card-body .resumen {
     padding-top: 2em;
-    font-size: 15px;
+    font: normal normal 300 14px/18px Inter;
     text-align: center;
 }
 
 .eventos .card-body .fecha {
     padding-top: 0em;
     text-transform: uppercase;
-    font-size: 15px;
-}
+    font: normal normal 300 14px/18px Inter;
+    letter-spacing: 0px;
+    color: #9A9A9A;}
 
 .eventos .card-body .ampliado {
     text-align: center;
@@ -1555,46 +1505,23 @@ body p {
     transition: opacity 2s ease-out;
 }
 
-/*-------------------------------------------------- Media Query Eventos  --------------------------------------------------*/
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 1050px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {}
-
-/*-------------------------------------------------- Seccion  Mas información--------------------------------------------------*/
-
 .masInformacion {
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 55ch;
     padding-bottom: 10%;
+    margin-left: 16.7%
 }
 
 .masInformacion h2 {
-    opacity: 0.8;
     text-align: start;
-    font-weight: 300;
     color: white;
-    font-size: 16px;
-    line-height: 2em;
     padding-bottom: 10%;
+    font: normal normal 300 16px/32px Inter;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
@@ -1608,10 +1535,11 @@ body p {
 }
 
 .footer h2 {
-    font-size: 18px;
-    font-weight: lighter;
+    font: normal normal 300 16px/48px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;  
     text-align: end;
-    color: white;
     padding-top: 0;
     padding-bottom: 1.5em;
 }
@@ -1675,7 +1603,9 @@ ul.social>li>a:hover {
 
 @media only screen and (min-width: 768px) {
     .footer .mail {
-        font-size: 30px;
+        font: normal normal bold 37px/120px Inter;
+        letter-spacing: 0px;
+ 
     }
 }
 
@@ -1683,7 +1613,9 @@ ul.social>li>a:hover {
 
 @media only screen and (min-width: 1050px) {
     .footer .mail {
-        font-size: 40px;
+        font: normal normal bold 37px/120px Inter; 
+        letter-spacing: 0px;
+
     }
 }
 
@@ -1691,6 +1623,8 @@ ul.social>li>a:hover {
 
 @media only screen and (min-width: 1200px) {
     .footer .mail {
-        font-size: 40px;
+        font: normal normal bold 37px/120px Inter;
+        letter-spacing: 0px;
+
     }
 }

@@ -1,9 +1,11 @@
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 * {
     box-sizing: border-box;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     --main-color: #00B0CE;
-    --secondary-color:#616161
+    --secondary-color:#616161;
+    --hover-btn-color:#0391ad
 }
 .secondaryColor{
     color:var(--secondary-color)
@@ -301,9 +303,19 @@
     }
 }
 
-.btn-primary {
-    font-size: 15px;
-    border-radius: 0px;
+.btn-primary{
+    font: normal normal normal 16px/19px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #F4F4F4;
+    opacity: 1;
     background-color: var(--main-color);
-    border:transparent
+    border:transparent;
+    border-radius: 0;
+    padding: 22px 14px;
+}
+.btn-primary:hover{
+    border:transparent;
+    background-color: var(--hover-btn-color);
+
+
 }
