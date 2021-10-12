@@ -172,7 +172,7 @@
     transition: background-color 0.5s;
 }
 
-.navbar-toggler {
+.navbar-toggler{
     align-items: flex-end;
     text-align: end;
     border: none;
@@ -182,6 +182,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     outline: 0;
+    transition: background-color 0.5s
 }
 
 .navbar-toggler:focus {
