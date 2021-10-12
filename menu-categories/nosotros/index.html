@@ -3,19 +3,30 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="/Proflight/assets/images/logo/iso azul..svg
+    <link rel="shortcut icon" href="/Proflight/assets/images/logo/iso azul.svg
 " />
     <title>Nosotros | ProFlight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <!-- <link rel="stylesheet" href="./assets/styles/grid.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
-    <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css"/>
+    <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color:#002e5d">
+    <a target="blank"
+        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
+        <div class="whatsappButtonContainer">
+            <div class="dialog">
+                <h1 class="text">¿Necesitas más información?</h1>
+            </div>
+            <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
+        </div>
+    </a>
     <nav class="navbar fixed-top navbar-dark">
         <div class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
             <a class="navbar-brand" id="navbar-brand" href="#">
@@ -74,42 +85,56 @@
         </div>
     </nav>
     <section class="nosotros">
-        <div class="landing container px-5">
-            <div class="row justify-content-end">
+        <div class="landing container-fluid p-relative">
+            <div class="row h-100vh justify-content-end align-items-center sameLeftSpace sameRightSpace p-relative">
                 <div class="col-12 containerLinks">
-                    <a href="#MisionYVision">
-                        <h1>Misión y visión</h1>
-                    </a>
-                    <a href="#MisionYVision">
-                        <h1>Fundamentos Institucionales</h1>
-                    </a>
-                    <a href="#PoliticaDeCalidad">
-                        <h1>Politica de calidad</h1>
-                    </a>
+                    <div class="textContainer">
+                        <a href="#MisionYVision">
+                            <h1 class="mb-0 link">Misión y visión</h1>
+                        </a>
+                    </div>
+                    <div class="textContainer">
+                        <a href="#MisionYVision">
+                            <h1 class="mb-0 link">Fundamentos Institucionales</h1>
+                        </a>
+                    </div>
+                    <div class="textContainer">
+                        <a href="#PoliticaDeCalidad">
+                            <h1 class="mb-0 link">Politica de calidad</h1>
+                        </a>
+                    </div>
                 </div>
-                <div class="contador col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                    <h2 class="number pe-0">0</h2>
-                    <img class="center-block" src="assets/images/land/Circle.png">
-                    <h2 class="label pe-0">Accidentes</h2>
-                </div>
-                <div class="contador col-6 col-sm-4 col-md-3 col-lg-2">
-                    <h2 class="number pe-0">223</h2>
-                    <img src="assets/images/land/Circle.png">
-                    <h2 class="label pe-0">Alumnos</h2>
+                <div class="contadores container-fluid d-lg-block d-md-none d-none">
+                    <div class="row justify-content-end d-flex">
+                        <div class="contador col-6 col-sm-4 col-md-3 col-lg-2">
+                            <h2 class="number pe-0 pb-0">0</h2>
+                            <img class="center-block" src="assets/images/land/Circle.svg">
+                            <h2 class="label pe-0">Accidentes</h2>
+                        </div>
+                        <div class="contador col-6 col-sm-4 col-md-3 col-lg-2 ">
+                            <h2 class="number pe-0 pb-0">223</h2>
+                            <img src="assets/images/land/Circle.svg">
+                            <h2 class="label pe-0">Alumnos</h2>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                <h1 class="text">Nosotros</h1>
+            </div>
         </div>
-        <div class="misionYVision container mt-5" id="MisionYVision">
-            <div class="containerTexto row">
-                <div class="texto col-md-7">
-                    <h2>Nuestra escuela está ubicada en el aeropuerto de Morón, con dos oficinas habilitadas dentro del Parque Industrial Tecnológico Aeronáutico Morón (PITAM), contando con la habilitacióny certificación como Centro de Instrucción de Aeronáutica
-                        Civil, expedido con el número DI-2019-104-APN- DNSO #ANAC emitido por la Administración Nacional de Aviación Civil (ANAC)</h2>
-                    <img src="assets/images/mision y vision/layer2.png">
+        <div class="misionYVision container-fluid mt-5 " id="MisionYVision">
+            <div class="containerTexto row sameLeftSpace">
+                <div>
+                    <h2 class="texto">Nuestra escuela está ubicada en el aeropuerto de Morón, con dos oficinas
+                        habilitadas dentro del
+                        Parque Industrial Tecnológico Aeronáutico Morón (PITAM), contando con la habilitación y
+                        certificación como Centro de Instrucción de Aeronáutica Civil, expedido con el número<br>
+                        Dl-2019-104-APN-DNSO #ANAC emitido por la Administración Nacional de Aviación Civil (ANAC)</h2>
                 </div>
-                <div class="col-sm-5 d-none d-sm-none d-md-block">
-                    <img src="assets/images/mision y vision/QRcode.png">
-                </div>
-                <div calss="col-12">
+
+                <div calss="d-flex justify-content-end">
                     <a>
                         <h1 class="titulo">Aeropuerto de Morón</h1>
                     </a>
@@ -117,107 +142,156 @@
                 </div>
             </div>
         </div>
-        <section class="nuestraVision container mt-5" id="nuestraVision">
-            <div class="containerSec row justify-content-end">
-                <div class="d-none d-md-none d-lg-block col-5">
+        <section class="nuestraVision divider container-fluid p-relative" id="nuestraVision">
+            <div class="containerSec row sameLeftSpace">
+                <div class="d-none d-md-none d-lg-flex col-auto justify-content-end px-0">
                     <img src="assets/images/mision/mision img@2x.png">
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <h1>Nuestra misión</h1>
-                    <h2>Somos una institución orientada a la formación de Pilotos Privados y Comerciales, que estén capacitados para que puedan aportar al desarrollo general en el marco aeronáutico a nivel mundial, basados en principios de calidad, seguridad,
+                    <h2>Somos una institución orientada a la formación de Pilotos Privados y Comerciales, que estén
+                        capacitados para que puedan aportar al desarrollo general en el marco aeronáutico a nivel
+                        mundial, basados en principios de calidad, seguridad,
                         integralidad y desarrollo tecnológico.</h2>
                 </div>
             </div>
-            <div class="containerSec row justify-content-end">
-                <div class="d-none d-md-none d-lg-block col-5">
-                    <img src="assets/images/mision/visionimg@2x.png" height="65%">
+            <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                <h1 class="text">Misión y Visión</h1>
+            </div>
+        </section>
+        <section class="nuestraVision divider container-fluid" id="nuestraVision">
+            <div class="containerSec row sameLeftSpace">
+                <div class="d-none d-md-none d-lg-flex col-auto justify-content-end px-0">
+                    <img src="assets/images/mision/visionimg@2x.png">
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <h1>Nuestra visión</h1>
-                    <h2>Para el 2021 lograremos posicionarnos como la mejor escuela de instrucción aeronáutica de Sudamérica, fortaleciendo cada vez más nuestro nivel de exigencia en los programas de formación básica y avanzada mediante la innovación e implementación
+                    <h2>Para el 2021 lograremos posicionarnos como la mejor escuela de instrucción aeronáutica de
+                        Sudamérica, fortaleciendo cada vez más nuestro nivel de exigencia en los programas de
+                        formación
+                        básica y avanzada mediante la innovación e implementación
                         de nuevos recursos tecnológicos.</h2>
                 </div>
             </div>
         </section>
+
         <section class="fundamentosInstitucionales">
-            <div class="parent container my-5 pt-0 mt-0">
-                <div class="row p-lg-4 p-md-5 p-5 pb-0 pe-lg-0 pt-lg-5 justify-content-start">
+            <div class="parent container-fluid my-5 pt-0 mt-0">
+                <div class="row justify-content-start sameLeftSpace">
                     <div class="childleft col-md-12 col-lg-7">
                         <h1 class="fundamentosTitulo">Fundamentos Institucionales</h1>
-                        <div id="aFundamentos" class="aFundamentos">
+                        <div id="aFundamentos" class="Fundamentos">
                             <h2>
-                                Además de la formación de pilotos competentes en el sector aeronáutico, en ProFlight Aviation Academy promovemos el desarrollo de valores que determinan la conducta de nuestros alumnos, pilotos y personal administrativos, para que de esta manera cada
+                                Además de la formación de pilotos competentes en el sector aeronáutico, en ProFlight
+                                Aviation Academy promovemos el desarrollo de valores que determinan la conducta de
+                                nuestros alumnos, pilotos y personal administrativos, para que de esta manera cada
                                 una de las expresiones personales sean características de nuestra cultura.
                             </h2>
-                            <p class="more">
-                                <button id="viewCarousel" class="viewCarousel" type="button">
-                <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
-                </button> Ver fundamentos institucionales
-                            </p>
+                            <div class="more d-flex align-items-center">
+                                <div class="d-inline-block">
+                                    <button id="viewCarousel"
+                                        class="viewCarousel d-flex justify-content-center align-items-center"
+                                        type="button">
+                                        <span class="buttonContent carousel-control-next-icon"
+                                            aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <span class="hidden ps-1">Ver fundamentos institucionales</span>
+                            </div>
                         </div>
                         <div id="data" class="data">
                             <div id="myCarousel" data-wrap="false" class="carousel slide">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-interval="0">
-                                        <svg class="bd-placeholder-img" width="50%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="200%" fill="#777" fill-opacity="0"/></svg>
+                                        <svg class="bd-placeholder-img" width="50%" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <rect width="100%" height="200%" fill="#777" fill-opacity="0" />
+                                        </svg>
                                         <div class="container">
                                             <div class="carousel-caption text-start">
-                                                <h1><span class="number">01. </span><span class="title">Seguridad</span></h1>
-                                                <p>Es el item que más priorizamos en ProFlight, el mantenimiento de nuestras aeronaves es altamente importante para nosotros, brindando asi calidad y seguridad en cada uno de nuestros vuelos.
+                                                <h1><span class="number">01. </span><span class="title">Seguridad</span>
+                                                </h1>
+                                                <p>Es el item que más priorizamos en ProFlight, el mantenimiento de
+                                                    nuestras aeronaves es altamente importante para nosotros, brindando
+                                                    asi calidad y seguridad en cada uno de nuestros vuelos.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-interval="0">
-                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <rect width="100%" height="100%" fill="#777" fill-opacity="0" />
+                                        </svg>
                                         <div class="container">
                                             <div class="carousel-caption text-start">
-                                                <h1><span class="number">02. </span><span class="title">Pasión</span></h1>
-                                                <p>Hacer lo que nos gusta y disfrutar de ellos es uno de los valores que más nos caracterizan.
+                                                <h1><span class="number">02. </span><span class="title">Pasión</span>
+                                                </h1>
+                                                <p>Hacer lo que nos gusta y disfrutar de ellos es uno de los valores que
+                                                    más nos caracterizan.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-interval="0">
-                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <rect width="100%" height="100%" fill="#777" fill-opacity="0" />
+                                        </svg>
                                         <div class="container">
                                             <div class="carousel-caption text-start">
-                                                <h1><span class="number">03 .</span><span class="title">Respeto</span></h1>
-                                                <p>Generar una cultura de decencia es una de nuestras tareas principales, son las acciones que nos proyectan.</p>
+                                                <h1><span class="number">03 .</span><span class="title">Respeto</span>
+                                                </h1>
+                                                <p>Generar una cultura de decencia es una de nuestras tareas
+                                                    principales, son las acciones que nos proyectan.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-interval="0">
-                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <rect width="100%" height="100%" fill="#777" fill-opacity="0" />
+                                        </svg>
                                         <div class="container p-0">
                                             <div class="carousel-caption text-start">
-                                                <h1><span class="number">04. </span><span class="title">Trabajo en equipo</span></h1>
-                                                <p>Poder debatir y establecer pautas para alcanzar un objetivo prestablecido será la meta de cada piloto en ProFlight.</p>
+                                                <h1><span class="number">04. </span><span class="title">Trabajo en
+                                                        equipo</span></h1>
+                                                <p>Poder debatir y establecer pautas para alcanzar un objetivo
+                                                    prestablecido será la meta de cada piloto en ProFlight.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-interval="0">
-                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777" fill-opacity="0"/></svg>
+                                        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <rect width="100%" height="100%" fill="#777" fill-opacity="0" />
+                                        </svg>
                                         <div class="container p-0">
                                             <div class="carousel-caption text-start">
-                                                <h1><span class="number">05. </span><span class="title">Responsabilidad</span></h1>
-                                                <p>Tenemos claro cuales con nuestros deberes y los cumplimos con calidad y excelencia, haciéndonos responsables de nuestros actos en todo momento.</p>
+                                                <h1><span class="number">05. </span><span
+                                                        class="title">Responsabilidad</span></h1>
+                                                <p>Tenemos claro cuales con nuestros deberes y los cumplimos con calidad
+                                                    y excelencia, haciéndonos responsables de nuestros actos en todo
+                                                    momento.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button id="prevCarousel" class="sliderButton mt-3" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
-              </button>
-                            <button id="nextCarousel" class="sliderButton mt-3" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
-              </button>
+                            <div class="d-inline-block">
+                                <button id="prevCarousel"
+                                    class="sliderButton d-flex justify-content-center align-items-center mt-3"
+                                    type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="d-inline-block">
+                                <button id="nextCarousel"
+                                    class="sliderButton d-flex justify-content-center align-items-center mt-3"
+                                    type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="container circulos d-none d-sm-none d-md-none d-lg-block col-lg-5 col-xl-4">
@@ -252,41 +326,55 @@
                 <div class="row  mb-5">
                     <div class="col-4 px-4"><img src="assets/images/politica de calidad/0T9A2592.png" alt=""></div>
                     <div class="col-4 px-4"><img src="assets/images/politica de calidad/Estudianteimg.png" alt=""></div>
-                    <div class="col-4 px-4"><img src="assets/images/politica de calidad/pf web edit - 8.png" alt=""></div>
+                    <div class="col-4 px-4"><img src="assets/images/politica de calidad/pf web edit - 8.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="container">
                 <div class="containerText row justify-content-end pt-0 mb-5">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h1>Seguridad Operacional</h1>
+                        <h1>Seguridad<br>Operacional</h1>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-8">
-                        <h2>En ProFlight nos basamos en la promoción de programas que se caracterizan por su excelencla académica y altos niveles de formación educativos. La seguridad operacional es el factor más determinante en la prestación de nuestro servicio
-                            ya que cantamos con politicas de mantenimiento exigidas en el marco legal por la autoridad aeronáutica competente. De esta manera tenemos la posibilidad de brindarle a cada uno de nuestros estudiantes la oportunidad de realizar
+                        <h2>En ProFlight nos basamos en la promoción de programas que se caracterizan por su excelencla
+                            académica y altos niveles de formación educativos. <br>La seguridad operacional es el factor más
+                            determinante en la prestación de nuestro servicio
+                            ya que cantamos con politicas de mantenimiento exigidas en el marco legal por la autoridad
+                            aeronáutica competente. De esta manera tenemos la posibilidad de brindarle a cada uno de
+                            nuestros estudiantes la oportunidad de realizar
                             su carrera de manera segura.</h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="footer" style="bottom:0">
+        <section class="footer h-100vh d-flex align-items-end">
             <div class="container">
                 <div class="row">
-                    <!-- <h1>info@proflight.com.ar</h1>-->
+                    <h1 class="mail pb-0">info@proflight.com.ar</h1>
                     <h2>+54 9 11 6010-4446</h2>
                     <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
                     <ul class="social">
-                        <li>
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia" title="">
+                        <li class="me-2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                title="">
+                                <span class="icon fa fa-envelope"></span>
+                            </a>
+                        </li>
+                        <li class="me-2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                title="">
                                 <span class="icon fas fa-phone"></span>
                             </a>
                         </li>
-                        <li>
+                        <li class="me-2">
                             <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
                                 <span class="icon fa fa-facebook"></span>
                             </a>
                         </li>
-                        <li>
+                        <li >
                             <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
                                 <span class="icon fab fa-instagram"></span>
                             </a>
@@ -296,9 +384,15 @@
             </div>
         </section>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>

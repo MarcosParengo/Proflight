@@ -76,7 +76,6 @@ $(document).ready(function () {
         comercialTwo.css('display','flex')
     })
     Toitem3Comercial.click(function(){
-        console.log("si")
         comercialTwo.css('display','none')
         comercialThree.css('display','flex')
     })

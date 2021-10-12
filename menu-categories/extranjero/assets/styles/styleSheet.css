@@ -85,91 +85,66 @@
         }
     }
     /*-------------------------------------------------- Seccion landing--------------------------------------------------TODO*/
-    
-    .landingYambientes {
-        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/extranjeros/assets/images/background/Backgroundcircle.png);
-        background-repeat: no-repeat, repeat;
-        background-position: center left;
-    }
-    
     .landing {
         height: 100vh;
+        background-image: url("../images/background/miguel-a-amutio-7C1tVElQwr4-unsplash\ 02@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        size: 100% 100%;
     }
     
     .landing h1 {
-        font-size: 50px
+        font: normal normal bold 58px/78px Neue Haas Grotesk Display Pro;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
     }
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    
-    @media only screen and (max-width: 392px) {
-        .landing h1 {
-            font-size: 35px
-        }
+    .circle{
+        width:40%;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
     }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    
-    @media only screen and (min-width: 392px) {
-        .landing h1 {
-            font-size: 45px
-        }
+    .circle img{
+        
+        width: 100%;
+        display: block;
     }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    
-    @media only screen and (min-width: 576px) {
-        .landing h1 {
-            font-size: 40px
-        }
-    }
-    /* Medium devices (landscape tablets, 768px and up) */
-    
-    @media only screen and (min-width: 768px) {
-        .landing h1 {
-            font-size: 45px
-        }
-    }
-    /* Large devices (laptops/desktops, 992px and up) */
-    
-    @media only screen and (min-width: 992px) {
-        .landing h1 {
-            font-size: 50px
-        }
-    }
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    
-    @media only screen and (min-width: 1200px) {
-        .landing h1 {
-            font-size: 50px
-        }
-    }
+   
     /*------------------------------------------------------------------------------------------------------------------------*/
     
     .ambientes {
-        height: 100vh;
+        background: rgb(9,21,38);
+        background: linear-gradient(180deg, aliceblue 0%, rgba(255,255,255,1) 100%);
+        min-height: 100vh;
     }
     
     .ambientes .texto .left {
         text-align: end;
-        font-weight: bolder;
-        font-size: 20px;
+        font: normal normal 700 16px/22px Inter;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
     }
     
     .ambientes .texto .right {
-        text-align: start;
-        font-weight: lighter;
-        font-size: 18px;
+        text-align: left;
+        font: normal normal 300 16px/32px Inter;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
     }
     
     .ambientes .titulo {
-        font-size: 50px;
+        font: normal normal bold 62px Neue Haas Grotesk Display Pro;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
     }
     /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
     /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
     
     @media only screen and (max-width: 392px) {
-        .ambientes .titulo {
-            font-size: 35px;
-        }
         .ambientes .texto .right {
             text-align: justify;
         }
@@ -177,9 +152,6 @@
     /*ultra Small devices (portrait tablets and large phones, 392px and up) */
     
     @media only screen and (min-width: 392px) {
-        .ambientes .titulo {
-            font-size: 50px;
-        }
         .ambientes .texto .right {
             text-align: justify;
         }
@@ -187,9 +159,7 @@
     /* Small devices (portrait tablets and large phones, 576px and up) */
     
     @media only screen and (min-width: 576px) {
-        .ambientes .titulo {
-            font-size: 50px;
-        }
+
         .ambientes .texto .right {
             text-align: start;
         }
@@ -197,9 +167,7 @@
     /* Medium devices (landscape tablets, 768px and up) */
     
     @media only screen and (min-width: 768px) {
-        .ambientes .titulo {
-            font-size: 50px;
-        }
+
         .ambientes .texto .right {
             text-align: start;
         }
@@ -207,9 +175,6 @@
     /* Large devices (laptops/desktops, 992px and up) */
     
     @media only screen and (min-width: 992px) {
-        .ambientes .titulo {
-            font-size: 50px;
-        }
         .ambientes .texto .right {
             text-align: start;
         }
@@ -217,9 +182,6 @@
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     
     @media only screen and (min-width: 1200px) {
-        .ambientes .titulo {
-            font-size: 50px;
-        }
         .ambientes .texto .right {
             text-align: start;
         }
@@ -384,7 +346,6 @@
     .inversion .info {
         color: grey;
         font-size: 15px;
-        line-height: 2rem;
     }
     /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
     /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
@@ -482,13 +443,11 @@
         text-transform: uppercase;
         color: grey;
         font-size: 22px;
-        line-height: 2rem;
     }
     
     .recibimiento .text {
         color: grey;
         font-size: 18px;
-        line-height: 2rem;
     }
     /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
     /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
@@ -543,7 +502,6 @@
         font-weight: lighter;
         font-size: 18px;
         padding-right: 40%;
-        line-height: 2.5rem;
     }
     /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
     /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
@@ -594,7 +552,6 @@
         .alojamientos .texto .right {
             font-size: 18px;
             padding-right: 40%;
-            line-height: 2.5rem;
         }
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -613,7 +570,6 @@
         .alojamientos .texto .right {
             font-size: 18px;
             padding-right: 40%;
-            line-height: 2.5rem;
         }
     }
     /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/

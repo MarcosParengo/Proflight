@@ -109,20 +109,26 @@ body p {
 
 
 /*-------------------------------------------------- Seccion landing--------------------------------------------------*/
-
+.sameLeft{
+    padding-left: 15%;
+}
+.footerBlack{
+    color:black!important
+}
 .title {
-    font-size: 60px;
-    color: white;
+    font: normal normal bold 68px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
     text-align: start;
-    font-weight: bolder;
 }
 
 .subtitle {
-    font-size: 20px;
     text-align: start;
-    color: white;
-    opacity: 0.87;
-    line-height: 3rem;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    max-width: 53ch;
 }
 
 .fullPage {
@@ -133,8 +139,10 @@ body p {
 
 .filtrar {
     text-align: start;
-    font-size: 20px;
-    color: rgb(122, 122, 122)
+    font: normal normal normal 16px/20px Inter;
+    letter-spacing: 0px;
+    opacity: 1; 
+    color: #0B131E
 }
 
 .filtrar:hover {
@@ -164,40 +172,40 @@ body p {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.testimonio .title {
+.evento .title {
     font-size: 35px;
     color: white;
     text-align: start;
 }
 
-.testimonio .subtitle {
+.evento .subtitle {
     font-size: 35px;
     text-align: start;
     color: rgb(143, 146, 150);
     line-height: 3rem;
 }
 
-.testimonio .origen {
+.evento .origen {
     text-transform: uppercase;
     font-size: 13px;
     line-height: 2rem;
     color: rgb(140, 146, 154)
 }
 
-.testimonio .paragraph {
+.evento .paragraph {
     font-size: 15px;
     line-height: 2rem;
     color: rgb(140, 146, 154)
 }
 
-.testimonio .line {
+.evento .line {
     border-bottom: 1px solid;
     border-color: rgb(140, 146, 154);
     margin-bottom: 3rem;
     width: 90%;
 }
 
-.contenedorTestimonio {
+.contenedorevento {
     width: 70%
 }
 
@@ -208,32 +216,25 @@ body p {
     .title {
         font-size: 30px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 2rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+  
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 20px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 15px;
         line-height: 1.3rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 95%
     }
 }
@@ -245,32 +246,25 @@ body p {
     .title {
         font-size: 30px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 2rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+  
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 35px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 15px;
         line-height: 1.3rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 95%
     }
 }
@@ -282,32 +276,25 @@ body p {
     .title {
         font-size: 40px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 2.5rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 35px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 15px;
         line-height: 1.3rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 90%
     }
 }
@@ -319,32 +306,25 @@ body p {
     .title {
         font-size: 60px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 2.5rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 20px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 13px;
         line-height: 1.3rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 90%
     }
 }
@@ -356,32 +336,25 @@ body p {
     .title {
         font-size: 60px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 3rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+  
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 35px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 13px;
         line-height: 1.3rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 80%
     }
 }
@@ -393,32 +366,25 @@ body p {
     .title {
         font-size: 60px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 3rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+  
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 35px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 14px;
         line-height: 1.5rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 80%
     }
 }
@@ -430,92 +396,94 @@ body p {
     .title {
         font-size: 60px;
     }
-    .subtitle {
-        font-size: 20px;
-        line-height: 2rem;
-    }
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .title {
+  
+    .evento .title {
         font-size: 35px;
         text-align: start;
     }
-    .testimonio .subtitle {
+    .evento .subtitle {
         font-size: 35px;
         text-align: start;
         line-height: 3rem;
     }
-    .testimonio .origen {
+    .evento .origen {
         font-size: 13px;
         line-height: 2rem;
     }
-    .testimonio .paragraph {
+    .evento .paragraph {
         font-size: 15px;
         line-height: 2rem;
     }
-    .contenedorTestimonio {
+    .contenedorevento {
         width: 70%
     }
 }
 
 
-/*-------------------------------------------------- Seccion selector de testimonios --------------------------------------------------*/
+/*-------------------------------------------------- Seccion selector de eventos --------------------------------------------------*/
 
-.alumnos {
+.eventos {
+    min-height: 70vh;
     padding-bottom: 10%;
 }
 
-.alumnos .title {
+.eventos .title {
     padding-top: 7%;
     padding-left: 15%;
     text-align: start;
     color: rgb(133, 139, 148);
 }
 
-.alumnos .enfasis {
+.eventos .enfasis {
     color: white;
 }
 
-.alumnos .card {
+.eventos .card {
     background-color: white;
 }
 
-.alumnos .card .profilePic {
+.eventos .card .profilePic {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.alumnos .card .flag {
+.eventos .card .flag {
     display: block;
     margin: auto;
     width: 15%;
 }
 
-.alumnos .show {
+.eventos .show {
     display: block;
 }
 
-.alumnos .show img {
+.eventos .show img {
     width: 18%;
     padding-left: 0.5em;
 }
 
-.alumnos .card .card-title {
-    color: gray;
-    font-size: 18px;
+.eventos .card .card-title {
+    font: normal normal normal 16px/20px Inter;
+    letter-spacing: 0px;
+    color: #6B6B6B;
+    opacity: 1;
     text-align: center;
 }
 
-.alumnos .card .card-info {
-    color: rgb(53, 187, 215);
-    font-size: 18px;
+.eventos .card .card-info {
+    font: normal normal medium 14px/20px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
     text-transform: uppercase;
     text-align: center;
 }
-
+.eventos .card  .alternate{
+    text-align: center;
+    font: normal normal 300 14px/20px Inter;
+    letter-spacing: 0px;
+    color: #6B6B6B;
+}
 .btn-primary {
     background-color: rgb(53, 187, 215);
     border-radius: 50px;
@@ -532,19 +500,19 @@ body p {
     border: none;
 }
 
-.alumnos .card-body .nacionalidad {
+.eventos .card-body .nacionalidad {
     text-align: center;
     text-transform: uppercase;
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
-.alumnos .card-body .testimonio {
+.eventos .card-body .evento {
     font-size: 15px;
     transition: opacity 2s ease-out;
 }
 
-.alumnos .card-footer {
+.eventos .card-footer {
     padding-bottom: 1em;
     padding-top: 1em;
     border-top: 0px solid;
@@ -554,19 +522,19 @@ body p {
 }
 
 
-/*-------------------------------------------------- Media Query selector de testimonios --------------------------------------------------DONE*/
+/*-------------------------------------------------- Media Query selector de eventos --------------------------------------------------DONE*/
 
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .alumnoCard {
+    .eventoCard {
         margin-top: 20%;
     }
-    .containerTestimonios {
+    .containereventos {
         margin: 5%;
     }
-    .alumnos .title {
+    .eventos .title {
         padding-left: 10%;
         font-size: 25px;
     }
@@ -576,13 +544,13 @@ body p {
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .alumnoCard {
+    .eventoCard {
         margin-top: 20%;
     }
-    .containerTestimonios {
+    .containereventos {
         margin: 5%;
     }
-    .alumnos .title {
+    .eventos .title {
         padding-left: 10%;
         font-size: 25px;
     }
@@ -592,13 +560,13 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .alumnoCard {
+    .eventoCard {
         margin-top: 20%;
     }
-    .containerTestimonios {
+    .containereventos {
         margin: 5%;
     }
-    .alumnos .title {
+    .eventos .title {
         padding-left: 15%;
         font-size: 25px;
     }
@@ -608,13 +576,13 @@ body p {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .alumnoCard {
+    .eventoCard {
         margin-top: 5%;
     }
-    .containerTestimonios {
+    .containereventos {
         margin: 5%;
     }
-    .alumnos .title {
+    .eventos .title {
         padding-left: 15%;
         font-size: 25px;
     }
@@ -624,13 +592,13 @@ body p {
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .alumnoCard {
+    .eventoCard {
         margin-top: 5%;
     }
-    .containerTestimonios {
+    .containereventos {
         margin: 5%;
     }
-    .alumnos .title {
+    .eventos .title {
         padding-left: 15%;
         font-size: 30px;
     }
@@ -640,13 +608,13 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .alumnoCard {
+    .eventoCard {
         margin-top: 5%;
     }
-    .containerTestimonios {
+    .containereventos {
         margin: 5%;
     }
-    .alumnos .title {
+    .eventos .title {
         padding-left: 15%;
         font-size: 30px;
     }
@@ -661,22 +629,6 @@ body p {
     background-size: 100% 100%;
 }
 
-.footer .mail {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: end;
-    color: black;
-    padding-bottom: 1em;
-}
-
-.footer h2 {
-    font-size: 18px;
-    font-weight: lighter;
-    text-align: end;
-    color: black;
-    padding-top: 0;
-    padding-bottom: 1.5em;
-}
 
 ul.social {
     width: 100%;
@@ -705,27 +657,4 @@ ul.social>li>a {
 ul.social>li>a:hover {
     text-decoration: none;
     opacity: 0.5;
-}
-
-
-/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
-
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .footer .mail {
-        font-size: 20px;
-        padding-bottom: 1em;
-    }
-}
-
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .footer .mail {
-        font-size: 25px;
-        padding-bottom: 1em;
-    }
 }

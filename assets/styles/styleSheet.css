@@ -35,14 +35,6 @@ body p {
     font-size: 18px;
 }
 
-.h-100vh {
-    height: 100vh
-}
-
-.p-relative {
-    position: relative;
-}
-
 .elipseText {
     white-space: nowrap;
     position: absolute;
@@ -170,32 +162,71 @@ body p {
 
 /*--------------------------------------------------Media Query land -------------------------------------------------DONE*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 340px) {
     .land {
         background-size: auto;
         background-size: auto 100%;
     }
+    .sameWidth{
+        padding:  0% 10%;
+    }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 340px) {
     .land {
         background-size: auto;
         background-size: auto 100%;
     }
+    .sameWidth{
+        padding:  0% 5%;
+    }
 }
 
-@media only screen and (min-width: 572px) {
+@media only screen and (min-width: 576px) {
     .land {
         background-size: auto;
         background-size: 100% 100%;
     }
+    .sameWidth{
+        padding:  0% 5%;
+    }
 }
 
-@media only screen and (min-width: 1324px) {
+@media only screen and (min-width: 768px) {
+    .land {
+        background-size: auto;
+        background-size: 100% 100%;
+    }
+    .sameWidth{
+        padding:  0% 5%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .land {
+        background-size: auto;
+        background-size: 100% 100%;
+    }
+    .sameWidth{
+        padding-left:  10%;
+    }
+}
+@media only screen and (min-width: 1200px) {
     .land {
         background-size: 100% 100%;
     }
+    .sameWidth{
+        padding-left:  16.7%;
+    }
 }
+@media only screen and (min-width: 1400px) {
+    .land {
+        background-size: 100% 100%;
+    }
+    .sameWidth{
+        padding-left:  16.7%;
+    }
+}
+
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
@@ -260,7 +291,6 @@ body p {
 
 .bienvenido childleft {
     padding-right: 15%;
-    padding-left: 15%;
 }
 
 .bienvenido .bienvenidaTitulo {
@@ -278,7 +308,7 @@ body p {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    width: 48ch;
+    max-width: 48ch;
 }
 
 .bienvenido .imgContainer {
@@ -301,7 +331,7 @@ body p {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    width: 60ch!important;
+    max-width: 60ch!important;
 }
 
 .bienvenido .footer {
@@ -322,7 +352,7 @@ body p {
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 0;
-    width: 55ch;
+    max-width: 55ch;
     height: 30px;
     list-style: none;
     text-align: justify;
@@ -410,7 +440,6 @@ body p {
 
 @media only screen and (max-width: 392px) {
     .bienvenido .childleft {
-        padding-left: 10%;
         padding-right: 0;
     }
     .bienvenido .cómopilotoTitulo {
@@ -428,7 +457,6 @@ body p {
 
 @media only screen and (min-width: 392px) {
     .bienvenido .childleft {
-        padding-left: 10%;
         padding-right: 0;
     }
     .bienvenido .cómopilotoTitulo {
@@ -446,7 +474,6 @@ body p {
 
 @media only screen and (min-width: 576px) {
     .bienvenido .childleft {
-        padding-left: 10%;
         padding-right: 5%;
     }
     .bienvenido .cómopilotoTitulo {
@@ -461,7 +488,6 @@ body p {
 
 @media only screen and (min-width: 768px) {
     .bienvenido .childleft {
-        padding-left: 10%;
         padding-right: 5%;
     }
     .bienvenido .cómopilotoTitulo {
@@ -479,7 +505,6 @@ body p {
 
 @media only screen and (min-width: 1050px) {
     .bienvenido .childleft {
-        padding-left: 5%;
         padding-right: 15%;
     }
     .timeline li:after {
@@ -494,7 +519,6 @@ body p {
 
 @media only screen and (min-width: 1200px) {
     .bienvenido .childleft {
-        padding-left: 16.7%;
         padding-right: 15%;
     }
     .timeline li:after {
@@ -510,10 +534,6 @@ body p {
 .programas {
     height: 100vh;
     overflow-x: hidden;
-}
-
-.programas .parent {
-    padding-left: 15%;
 }
 
 .programas .childleft {
@@ -535,12 +555,6 @@ body p {
     color: #FFFFFF;
     opacity: 1;
 }
-
-.programas .carousel {
-    font-size: 15px;
-    max-width: 73ch
-}
-
 .programas .carousel-inner {
     height: 100%;
 }
@@ -555,6 +569,11 @@ body p {
 .programas .carousel-caption h1 {
     font-size: 17px;
     text-align: start;
+}
+
+.programas .carousel{
+    font: normal normal 300 16px/32px Inter;
+    max-width: 50ch;
 }
 
 .programas .carousel-caption p {
@@ -619,15 +638,8 @@ body p {
         line-height: 2rem;
         padding-right: 0%;
     }
-    .programas .parent {
-        padding-left: 5%;
-    }
     .programas .childleft {
         padding-right: 0%;
-        padding-left: 0%;
-    }
-    .programas .carousel {
-        padding-right: 5%;
     }
     .programas .bd-placeholder-img {
         height: 250px;
@@ -648,15 +660,8 @@ body p {
         line-height: 2rem;
         padding-right: 0%;
     }
-    .programas .parent {
-        padding-left: 5%;
-    }
     .programas .childleft {
         padding-right: 0%;
-        padding-left: 0%;
-    }
-    .programas .carousel {
-        padding-right: 5%;
     }
     .programas .bd-placeholder-img {
         height: 250px;
@@ -677,15 +682,8 @@ body p {
         line-height: 2rem;
         padding-right: 0%;
     }
-    .programas .parent {
-        padding-left: 5%;
-    }
     .programas .childleft {
         padding-right: 0%;
-        padding-left: 0%;
-    }
-    .programas .carousel {
-        padding-right: 5%;
     }
     .programas .bd-placeholder-img {
         height: 250px;
@@ -706,15 +704,8 @@ body p {
         line-height: 2rem;
         padding-right: 15%;
     }
-    .programas .parent {
-        padding-left: 5%;
-    }
     .programas .childleft {
         padding-right: 0%;
-        padding-left: 5%;
-    }
-    .programas .carousel {
-        padding-right: 25%;
     }
     .programas .bd-placeholder-img {
         height: 250px;
@@ -735,15 +726,8 @@ body p {
         line-height: 2rem;
         padding-right: 15%;
     }
-    .programas .parent {
-        padding-left: 5%;
-    }
     .programas .childleft {
         padding-right: 15%;
-        padding-left: 0%;
-    }
-    .programas .carousel {
-        padding-right: 25%;
     }
     .programas .bd-placeholder-img {
         height: 250px;
@@ -763,15 +747,8 @@ body p {
         font-size: 20px;
         padding-right: 15%;
     }
-    .programas .parent {
-        padding-left: 16.7%;
-    }
     .programas .childleft {
         padding-right: 20%;
-        padding-left: 0%;
-    }
-    .programas .carousel {
-        padding-right: 25%;
     }
     .programas .bd-placeholder-img {
         height: 250px;
@@ -790,7 +767,6 @@ body p {
 .flota .childleft {
     padding-right: 20%;
     padding-top: 7%;
-    padding-left: 15%;
 }
 
 .flota .flotaTitulo {
@@ -803,7 +779,7 @@ body p {
 
 .flota .lead {
     line-height: 2rem;
-    width: 60ch;
+    max-width: 50ch;
     font: normal normal 300 16px/32px Inter;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -920,10 +896,6 @@ body p {
     .flota .childleft {
         padding-right: 10%;
         padding-top: 7%;
-        padding-left: 10%;
-    }
-    .flota .lead {
-        padding-bottom: 5%;
     }
 }
 
@@ -933,10 +905,8 @@ body p {
     .flota .childleft {
         padding-right: 10%;
         padding-top: 7%;
-        padding-left: 10%;
     }
     .flota .lead {
-        padding-right: 0;
         padding-bottom: 5%;
     }
 }
@@ -947,10 +917,8 @@ body p {
     .flota .childleft {
         padding-right: 10%;
         padding-top: 3%;
-        padding-left: 10%;
     }
     .flota .lead {
-        padding-right: 5%;
         padding-bottom: 5%;
     }
     .flota .more {
@@ -964,11 +932,9 @@ body p {
     .flota .childleft {
         padding-right: 20%;
         padding-top: 5%;
-        padding-left: 15%;
     }
     .flota .lead {
         line-height: 2rem;
-        padding-right: 10%;
         font-size: 15px;
         padding-bottom: 5%;
     }
@@ -983,10 +949,8 @@ body p {
     .flota .childleft {
         padding-right: 20%;
         padding-top: 7%;
-        padding-left: 15%;
     }
     .flota .lead {
-        padding-right: 10%;
         padding-bottom: 5%;
     }
     .flota .more {
@@ -999,10 +963,8 @@ body p {
 @media only screen and (min-width: 1200px) {
     .flota .childleft {
         padding-top: 7%;
-        padding-left: 16.7%;
     }
     .flota .lead {
-        padding-right: 15%;
         padding-bottom: 5%;
     }
     .flota .more {
@@ -1069,9 +1031,11 @@ body p {
 
 .titulo .texto {
     text-align: start;
-    font-weight: 400;
-    font-size: 25px;
-    padding-left: 0;
+    font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+       padding-left: 0;
 }
 
 .titulo .number {
@@ -1089,7 +1053,7 @@ body p {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    width: 52ch;
+    max-width: 52ch;
 }
 
 .tecnologia .sectionLabel {
@@ -1108,13 +1072,8 @@ body p {
     .nav-link {
         padding: 2%;
     }
-    .tecnologia h1 {
-        font-size: 25px;
-        padding-left: 5%;
-    }
     .titulo .texto {
         text-align: start;
-        font-size: 20px;
         padding-left: 0;
     }
 }
@@ -1128,13 +1087,8 @@ body p {
     .nav-link {
         padding: 2%;
     }
-    .tecnologia h1 {
-        font-size: 25px;
-        padding-left: 10%;
-    }
     .titulo .texto {
         text-align: start;
-        font-size: 20px;
         padding-left: 0;
     }
 }
@@ -1145,13 +1099,8 @@ body p {
     .nav-link img {
         height: 40px;
     }
-    .tecnologia h1 {
-        font-size: 30px;
-        padding-left: 10%;
-    }
     .titulo .texto {
         text-align: start;
-        font-size: 25px;
         padding-left: 0;
     }
 }
@@ -1162,13 +1111,8 @@ body p {
     .nav-link img {
         height: 50px;
     }
-    .tecnologia h1 {
-        font-size: 30px;
-        padding-left: 0;
-    }
     .titulo .texto {
         text-align: start;
-        font-size: 25px;
         padding-left: 0;
     }
 }
@@ -1179,13 +1123,8 @@ body p {
     .nav-link img {
         height: auto;
     }
-    .tecnologia h1 {
-        font-size: 30px;
-        padding-left: 0;
-    }
     .titulo .texto {
         text-align: start;
-        font-size: 20px;
         padding-left: 0;
     }
 }
@@ -1196,13 +1135,8 @@ body p {
     .nav-link img {
         height: auto;
     }
-    .tecnologia h1 {
-        font-size: 35px;
-        padding-left: 0;
-    }
     .titulo .texto {
         text-align: start;
-        font-size: 25px;
         padding-left: 0;
     }
 }
@@ -1262,7 +1196,6 @@ body p {
 }
 
 .alumnos .hidden {
-    font-size: 13px;
     opacity: 0;
     height: 0;
     padding-bottom: 0;
@@ -1338,9 +1271,6 @@ body p {
     .alumnoCard {
         margin-top: 30%;
     }
-    .alumnos .title {
-        padding-left: 10%;
-    }
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
@@ -1348,9 +1278,6 @@ body p {
 @media only screen and (min-width: 392px) {
     .alumnoCard {
         margin-top: 30%;
-    }
-    .alumnos .title {
-        padding-left: 10%;
     }
 }
 
@@ -1360,9 +1287,6 @@ body p {
     .alumnoCard {
         margin-top: 40%;
     }
-    .alumnos .title {
-        padding-left: 15%;
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1371,19 +1295,12 @@ body p {
     .alumnoCard {
         margin-top: 10%;
     }
-    .alumnos .title {
-        padding-left: 15%;
-    }
 }
-
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
     .alumnoCard {
         margin-top: 7%;
-    }
-    .alumnos .title {
-        padding-left: 16.7%
     }
 }
 
@@ -1393,9 +1310,7 @@ body p {
     .alumnoCard {
         margin-top: 10%;
     }
-    .alumnos .title {
-        padding-left: 16.7%;
-    }
+
 }
 
 /*-------------------------------------------------- Seccion Eventos  --------------------------------------------------*/
@@ -1406,7 +1321,6 @@ body p {
 
 .eventos .title {
     padding-top: 7%;
-    padding-left: 16.7%;
     text-align: left;
     font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
     letter-spacing: 0px;
@@ -1471,7 +1385,6 @@ body p {
 
 .eventos .card .card-title {
     color: white;
-    font-size: 18px;
     text-align: center;
 }
 
@@ -1506,125 +1419,17 @@ body p {
 }
 
 .masInformacion {
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    width: 55ch;
-    padding-bottom: 10%;
-    margin-left: 16.7%
+    font: normal normal 300 16px Inter;
+    padding-left: 13.2%;
+    padding-bottom: 20%;
 }
 
 .masInformacion h2 {
     text-align: start;
     color: white;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     font: normal normal 300 16px/32px Inter;
+    max-width: 65ch;
     color: #FFFFFF;
     opacity: 1;
-}
-
-/*-------------------------------------------------- Seccion footer--------------------------------------------------*/
-
-.footer h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: end;
-    color: white;
-    padding-bottom: 1em;
-}
-
-.footer h2 {
-    font: normal normal 300 16px/48px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;  
-    text-align: end;
-    padding-top: 0;
-    padding-bottom: 1.5em;
-}
-
-ul.social {
-    width: 100%;
-    text-align: start;
-    padding-bottom: 10%;
-}
-
-ul.social>li {
-    display: inline-block;
-}
-
-ul.social>li>a {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 36px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    margin: 0 3px 3px 0;
-}
-
-ul.social>li>a:hover {
-    text-decoration: none;
-    opacity: 0.5;
-}
-
-/*-------------------------------------------------- Media Query footer--------------------------------------------------*/
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .footer .mail {
-        font-size: 20px;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .footer .mail {
-        font-size: 25px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .footer .mail {
-        font-size: 30px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    .footer .mail {
-        font: normal normal bold 37px/120px Inter;
-        letter-spacing: 0px;
- 
-    }
-}
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 1050px) {
-    .footer .mail {
-        font: normal normal bold 37px/120px Inter; 
-        letter-spacing: 0px;
-
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-    .footer .mail {
-        font: normal normal bold 37px/120px Inter;
-        letter-spacing: 0px;
-
-    }
 }

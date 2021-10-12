@@ -88,7 +88,7 @@ function fillContainerEventos(obj) {
     obj.forEach(function(obj, i) {
         if (i < 3) {
             containerEventos.append(`
-        <div class="col-sm-4 p-4 mt-5">
+        <div class="col-sm-4 p-md-3 p-sm-0 mt-5">
             <div class="card h-100 " >
                 <div class="card-body text-center">
                     <div class="hidden ">

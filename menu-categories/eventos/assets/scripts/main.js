@@ -84,7 +84,7 @@ function fillContainerEventos(obj) {
             }
         }
         string += (`
-            <div class="alumnoCard col-sm-4 p-md-4 p-sm-0">
+            <div class="eventoCard col-sm-4 p-md-4 p-sm-0">
                 <div class="card bg-light h-100">
                     <div class="container">
                         <div class="row">
@@ -95,13 +95,13 @@ function fillContainerEventos(obj) {
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">${obj.nombre}</h5>
-                        <h5 class="card-info" style="color: rgb(53, 187, 215);">${obj.origen} ${obj.mes} ${obj.año}</h5>
-                        <h5 class="card-info" style="color: gray">${obj.dia} ${obj.mes} ${obj.año}</h5>
-                        <h5 class="card-info" style="color: gray">${obj.inicio}HS - ${obj.fin}HS ${obj.zonaHoraria}</h5>
-                        <h5 class="card-info" style="color: gray;text-transform:capitalize">${obj.ciudad}, ${obj.origen}</h5>
+                        <h5 class="card-info">${obj.origen}, ${obj.mes} ${obj.año}</h5>
+                        <h5 class="card-info alternate" style="color: gray">${obj.dia} ${obj.mes} ${obj.año}</h5>
+                        <h5 class="card-info alternate" style="color: gray">${obj.inicio}HS - ${obj.fin}HS ${obj.zonaHoraria}</h5>
+                        <h5 class="card-info alternate" style="color: gray;text-transform:capitalize">${obj.ciudad}, ${obj.origen}</h5>
                     </div>
                     <div class="card-footer">
-                        <a role="button" class="btn btn-primary" href="../eventosInscripcion/index.html?evento=${i}">Inscribirse</a>
+                        <a role="button" class="btn btn-primary px-5 py-3" href="../eventosInscripcion/index.html?evento=${i}">Inscribirse</a>
                     </div>
                 </div>
             </div>

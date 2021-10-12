@@ -33,157 +33,6 @@ body p {
 }
 
 
-/*--------------------------------------------------navBar--------------------------------------------------*/
-
-.navbar {
-    padding-top: 0px;
-}
-
-.navbar-brand {
-    padding-top: 20px;
-}
-
-.navbar-nav {
-    height: 100vh;
-    background-color: rgba(200, 200, 200, 0.5);
-}
-
-.nav-item {
-    color: white;
-    text-align: right;
-    margin: 0;
-}
-
-.navbar-toggler {
-    align-items: flex-end;
-    text-align: end;
-    border: none;
-    border-radius: 0;
-    border-color: rgba(0, 0, 0, 0);
-    background-color: rgba(200, 200, 200, 0.0);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    outline: 0;
-}
-
-
-/*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
-
-@media only screen and (max-width: 392px) {
-    .navBarContainer {
-        background-color: rgba(200, 200, 200, 0.5);
-    }
-    .col-xxs {
-        width: 100%!important;
-    }
-    .navbar-brand {
-        padding-left: 0.5em;
-        margin-right: 0;
-    }
-    .nav-item {
-        padding-right: 5%;
-        font-size: 20px;
-        text-align: right;
-    }
-    .navbar-nav {
-        background-color: rgba(200, 200, 200, 0.0)!important;
-    }
-    .navbar-toggler {
-        width: auto;
-        background-color: rgba(0, 0, 0, .0)!important;
-    }
-}
-
-@media only screen and (min-width: 392px) {
-    .navbar-brand {
-        padding-left: 0.5em;
-        margin-right: 0;
-    }
-    .nav-item {
-        padding-right: 5%;
-        font-size: 15px;
-        text-align: right;
-    }
-    .navbar-toggler {
-        width: 50%;
-    }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 576px) {
-    .navbar-brand {
-        padding-left: 1em;
-    }
-    .nav-item {
-        padding-right: 5%;
-        font-size: 15px;
-        text-align: right;
-    }
-    .navbar-toggler {
-        width: 33.33333%;
-    }
-}
-
-
-/* Medium devices (landscape tablets, 800 and up) */
-
-@media only screen and (min-width: 768px) {
-    .navbar-brand {
-        padding-left: 3em;
-    }
-    .nav-item {
-        padding-right: 5%;
-        font-size: 15px;
-        text-align: right;
-    }
-    .navbar-toggler {
-        width: 25%;
-    }
-}
-
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 1050px) {
-    .navbar-brand {
-        padding-left: 5em;
-    }
-    .nav-item {
-        padding-right: 30%;
-        font-size: 15px;
-        text-align: right;
-    }
-    .navbar-toggler {
-        width: 25%;
-    }
-    .navbar-toggler img {
-        margin-right: 30%
-    }
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-    .navbar-brand {
-        padding-left: 5em;
-    }
-    .nav-item {
-        padding-right: 30%;
-        font-size: 20px;
-        text-align: right;
-    }
-    .navbar-toggler {
-        width: 25%;
-    }
-    .navbar-toggler img {
-        margin-right: 30%
-    }
-}
-
-
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
@@ -226,26 +75,26 @@ body p {
 }
 
 .pais {
-    font-size: 60px;
-    color: skyblue;
+    font: normal normal bold 70px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
     text-align: start;
-    font-weight: bolder;
 }
 
 .descripcion {
-    font-size: 35px;
-    text-align: start;
-    color: black;
-    opacity: 0.87;
-    line-height: 3rem;
+    font: normal normal 600 39px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
 }
 
 .ubicacion {
-    font-size: 14px;
+    font: normal normal normal 13px Inter;
+    letter-spacing: 0px;
     color: grey;
     text-transform: uppercase;
 }
-
 .bandera {
     width: 2rem;
     height: 2rem

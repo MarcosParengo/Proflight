@@ -26,7 +26,6 @@ body h1 {
 body h2 {
     font-size: 20px;
     color: white;
-    padding-right: 20%;
     line-height: 2.5rem;
 }
 
@@ -92,24 +91,35 @@ body p {
 }
 
 /*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
-.landing .container {
+.sameLeftSpace{
+    padding-left:14%
+}
+.sameRightSpace{
+    padding-right:14%
+}
+.landing{
     height: 100vh;
 }
 
-.landing .containerLinks {
-    padding-top: 15%;
+.landing .textContainer{
+    font: normal normal normal 80px Neue Haas Grotesk Display Pro;
+    min-height: 1.2em;
+}
+.landing .link {
+    text-align: left;
+    font: normal normal normal 53px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: font-size 0.5s;
 }
 
-.landing h1 {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: start;
-    color: white;
-    padding-bottom: 0.5em;
-}
-
-.landing h1:hover {
-    color: rgb(53, 187, 215);
+.landing .link:hover {
+    color: var(--unnamed-color-00b0ce);
+    font: normal normal normal 80px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
 }
 
 .landing h2 {
@@ -123,7 +133,8 @@ body p {
 
 .contadores {
     position: absolute;
-    bottom: 0
+    bottom: 2em;
+    right:20%
 }
 
 .landing .contador img {
@@ -132,119 +143,29 @@ body p {
 }
 
 .landing .contador .number {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
+    text-align: center;
+    font: normal normal bold 22px/26px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .landing .contador .label {
-    color: rgba(255, 255, 255, 1);
-    font-size: 18px;
-}
-
-/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-@media only screen and (max-width: 392px) {
-    .landing h1 {
-        font-size: 30px;
-        padding-bottom: 0.5em;
-    }
-
-    .landing .containerLinks {
-        padding-top: 70%;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-@media only screen and (min-width: 392px) {
-    .landing h1 {
-        font-size: 30px;
-        padding-bottom: 0.5em;
-    }
-
-    .landing .containerLinks {
-        padding-top: 40%;
-    }
-
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
-    .landing h1 {
-        font-size: 30px;
-        padding-bottom: 0.5em;
-    }
-
-    .landing .containerLinks {
-        padding-top: 15%;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .landing h1 {
-        font-size: 40px;
-        padding-bottom: 0.5em;
-    }
-
-    .landing .containerLinks {
-        padding-top: 15%;
-    }
-
-    .landing .contador .number {
-        font-size: 15px;
-    }
-
-    .landing .contador .label {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .landing h1 {
-        font-size: 50px;
-        padding-bottom: 0.5em;
-    }
-
-    .landing .containerLinks {
-        padding-top: 15%;
-    }
-
-    .landing .contador .number {
-        font-size: 15px;
-    }
-
-    .landing .contador .label {
-        font-size: 15px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .landing h1 {
-        font-size: 60px;
-        padding-bottom: 0.5em;
-    }
-
-    .landing .containerLinks {
-        padding-top: 15%;
-    }
-
-    .landing .contador .number {
-        font-size: 18px;
-    }
-
-    .landing .contador .label {
-        font-size: 18px;
-    }
+    font: normal normal 300 16px/20px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
 /*-------------------------------------------------- Seccion misionYVision --------------------------------------------------TODO*/
-.misionYVision h2 {
-    color: white;
-    font-size: 20px;
-    line-height: 2.5rem;
-    font-weight: 100;
-    padding-right: 10%;
+.misionYVision .texto {
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    max-width:57ch;
 }
 
 .misionYVision .containerTexto {
@@ -261,49 +182,40 @@ body p {
     font-size: 90px;
     padding-top: 7%;
     text-align: end;
-    padding-right: 10%;
-    font-weight: bolder;
+    padding-right: 4%;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
+    -webkit-text-stroke-color: rgba(26, 73, 93, 0.5);
 }
 
 .misionYVision .titulo:hover {
-    color: rgb(26, 73, 93);
+    -webkit-text-stroke-color: #00B0CE;
+    color: #00B0CE8C;
+    opacity: 0.51;
 }
 
 .misionYVision .coordenadas {
     text-align: end;
-    padding-right: 10%;
-}
-
-.misionYVision .texto img {
-    width: 50%;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+    opacity: .5;
+    padding-right: 4%;
+    font-weight: lighter;
+    font: normal normal 300 16px/32px Inter;
 }
 
 /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 @media only screen and (max-width: 392px) {
-    .misionYVision h2 {
-        padding-top: 30%;
-        font-size: 15px;
-        line-height: 1.5rem;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
 
     .misionYVision .titulo {
-        font-size: 40px;
         padding-top: 7%;
-        padding-right: 10%;
         padding-left: 10%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
     }
 
     .misionYVision .texto img {
         width: 70%;
-        padding-right: 10%;
         padding-left: 10%;
     }
 
@@ -314,279 +226,89 @@ body p {
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
-    .misionYVision h2 {
-        font-size: 15px;
-        line-height: 1.5rem;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
+
 
     .misionYVision .titulo {
-        font-size: 40px;
         padding-top: 7%;
-        padding-right: 10%;
-        padding-left: 10%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
     }
 
     .misionYVision .texto img {
         width: 70%;
-        padding-right: 10%;
         padding-left: 10%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    .misionYVision h2 {
-        font-size: 15px;
-        line-height: 1.5rem;
-        padding-right: 10%;
-    }
 
     .misionYVision .titulo {
-        font-size: 40px;
         padding-top: 7%;
-        padding-right: 10%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .misionYVision h2 {
-        font-size: 15px;
-        line-height: 1.5rem;
-        padding-right: 10%;
-    }
 
     .misionYVision .titulo {
-        font-size: 40px;
         padding-top: 7%;
-        padding-right: 10%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
     }
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 992px) {
-    .misionYVision h2 {
-        font-size: 15px;
-        line-height: 2.5rem;
-        padding-right: 10%;
-    }
 
     .misionYVision .titulo {
-        font-size: 60px;
         padding-top: 7%;
-        padding-right: 10%;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .misionYVision h2 {
-        font-size: 20px;
-        line-height: 2.5rem;
-        padding-right: 10%;
-    }
+
 
     .misionYVision .titulo {
-        font-size: 90px;
         padding-top: 5%;
-        text-align: end;
-        padding-right: 10%;
-        font-weight: bolder;
-        color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(26, 73, 93, 0.3);
     }
 }
 
 /*-------------------------------------------------- Seccion nuestra Vision --------------------------------------------------TODO*/
-
-.nuestraVision h1 {
-    padding-top: 10%;
-    padding-bottom: 7%;
-    padding-right: 10%;
-    font-size: 60px;
-    font-weight: bold;
-    text-align: end;
-    color: white;
+.nuestraVision{
+    min-height: 100vh;
 }
-
-.nuestraVision .containerSec {
-    padding-top: 30%;
+.divider{
+    margin-top: 10%;
 }
-
 .nuestraVision .containerSec h1 {
-    margin-left: -125px;
-    padding-top: 10%;
-    font-size: 90px;
-    text-align: start;
+    margin-left: -2ch;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    font: normal normal bold 72px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+        text-align: start;
 }
 
 .nuestraVision .containerSec h2 {
-    font-size: 20px;
+    margin-left:10% ;
+    max-width: 43ch;
     color: white;
-    padding-right: 20%;
-    line-height: 2.5rem;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .nuestraVision .containerSec img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 80vh;
 }
 
-/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-@media only screen and (max-width: 392px) {
-    .nuestraVision .containerSec {
-        padding-top: 30%;
-    }
-
-    .nuestraVision .containerSec h1 {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 10%;
-        font-size: 30px;
-    }
-
-    .nuestraVision .containerSec h2 {
-        font-size: 15px;
-        padding-right: 20%;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-right: 0;
-        line-height: 2.0rem;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-@media only screen and (min-width: 392px) {
-    .nuestraVision .containerSec {
-        padding-top: 30%;
-    }
-
-    .nuestraVision .containerSec h1 {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 10%;
-        font-size: 35px;
-    }
-
-    .nuestraVision .containerSec h2 {
-        font-size: 18px;
-        padding-right: 20%;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-right: 0;
-        line-height: 2.5rem;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
-    .nuestraVision .containerSec {
-        padding-top: 30%;
-    }
-
-    .nuestraVision .containerSec h1 {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 10%;
-        padding: 0;
-        font-size: 50px;
-    }
-
-    .nuestraVision .containerSec h2 {
-        font-size: 18px;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-right: 0;
-        line-height: 2.5rem;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .nuestraVision .containerSec {
-        padding-top: 30%;
-    }
-
-    .nuestraVision .containerSec h1 {
-        margin-left: 0px;
-        padding-top: 10%;
-        font-size: 60px;
-    }
-
-    .nuestraVision .containerSec h2 {
-        font-size: 18px;
-        padding-right: 0;
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 0;
-        line-height: 2.5rem;
-    }
-}
-
-/* Large devices (laptops/desktops, 1050px and up) */
-@media only screen and (min-width: 992px) {
-    .nuestraVision .containerSec {
-        padding-top: 30%;
-    }
-
-    .nuestraVision .containerSec h1 {
-        margin-left: -125px;
-        padding-top: 10%;
-        font-size: 60px;
-    }
-
-    .nuestraVision .containerSec h2 {
-        font-size: 18px;
-        padding-right: 20%;
-        line-height: 2.5rem;
-    }
-
-    .nuestraVision .containerSec img {
-        width: 90%;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .nuestraVision .containerSec {
-        padding-top: 30%;
-    }
-
-    .nuestraVision .containerSec h1 {
-        margin-left: -125px;
-        padding-top: 10%;
-        font-size: 90px;
-    }
-
-    .nuestraVision .containerSec h2 {
-        font-size: 20px;
-        padding-right: 20%;
-        line-height: 2.5rem;
-    }
-
-    .nuestraVision .containerSec img {
-        width: 90%;
-    }
-}
 
 /*-------------------------------------------------- Seccion Fundamentos institucionales ----------------------------------------------*/
 
 .fundamentosInstitucionales {
-    margin-top: 15%;
-    margin-bottom: 15%;
+    min-height: 100vh;
 }
 
 .fundamentosInstitucionales .childleft {
@@ -595,12 +317,21 @@ body p {
 }
 
 .fundamentosInstitucionales .fundamentosTitulo {
-    padding-left: 0%;
+    padding-bottom: 2em;
     text-align: start;
-    font-size: 45px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
+    font: normal normal normal 39px/32px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.fundamentosInstitucionales h2 {
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    max-width: 50ch;
 }
 
 .fundamentosInstitucionales .more {
@@ -613,7 +344,8 @@ body p {
 }
 
 .fundamentosInstitucionales .carousel {
-    padding-right: 30%;
+    font: normal normal 300 16px/32px Inter;
+    max-width: 54ch;
 }
 
 .fundamentosInstitucionales .carousel-inner {
@@ -633,32 +365,63 @@ body p {
 }
 
 .fundamentosInstitucionales .carousel-caption p {
-    font-size: 15px;
-    line-height: 2rem;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .fundamentosInstitucionales .title {
-    color: white;
+    text-align: left;
+    font: normal normal normal 22px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }
 
 .fundamentosInstitucionales .number {
-    color: rgb(53, 187, 215);
+    text-align: left;
+    font: normal normal bold 22px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
 }
 
-.fundamentosInstitucionales .sliderButton {
-    height: 35px;
-    width: 35px;
-    padding: 6px;
+.fundamentosInstitucionales .viewCarousel {
+    font-size: 20px;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0px;
     border: none;
     border-radius: 50%;
-    background-color: rgb(75, 84, 97);
+    background-color: #000000;
+    vertical-align: middle;
+    transition: background-color 0.2s;
+}
+.fundamentosInstitucionales .viewCarousel:hover {
+    background-color: #00B0CE;
+}
+.fundamentosInstitucionales .sliderButton {
+    font-size: 20px;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%;
+    border: none;
+    border-radius: 50%;
+    background-color: #282837;
+    transition:background-color 0.2s;
 }
 
-.fundamentosInstitucionales .buttonContent {
-    padding: 6px;
-    height: 20px;
+.fundamentosInstitucionales  .sliderButton .buttonContent {
+    height: 15px;
     width: 15px;
 }
+.fundamentosInstitucionales  .viewCarousel .buttonContent {
+    height: 20px;
+    width: 20px;
+}
+
 
 .fundamentosInstitucionales .sliderButton:hover {
     background-color: rgb(49, 171, 198);
@@ -710,28 +473,23 @@ body p {
     float: right;
 }
 
-.fundamentosInstitucionales .viewCarousel {
-    height: 35px;
-    width: 35px;
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(30, 30, 30);
-    vertical-align: middle;
-}
-
 .fundamentosInstitucionales .more {
     color: rgba(0, 0, 0, 0);
     padding-top: 20px;
     font-size: 15px;
 }
-
-.fundamentosInstitucionales .more:hover {
+.fundamentosInstitucionales .more .hidden{
+    display: none;
+    color: transparent;
+    transition:color 0.2s;
+}
+.fundamentosInstitucionales .more:hover .hidden{
     color: rgb(49, 171, 198);
+    display: inline-block;
 }
 
 @media only screen and (max-width: 392px) {
     .fundamentosInstitucionales .carousel {
-        padding-right: 0%;
         height: 60vh;
     }
 
@@ -740,168 +498,51 @@ body p {
         line-height: 2rem;
     }
 
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 30px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 0;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 30%;
-        margin-bottom: 30%;
-    }
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
     .fundamentosInstitucionales .carousel {
-        padding-right: 0%;
         height: 40vh
     }
-
     .fundamentosInstitucionales h2 {
         font-size: 15px;
         line-height: 2rem;
-    }
-
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 20px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 0;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 35%;
-        margin-bottom: 55%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
     .fundamentosInstitucionales .carousel {
-        padding-right: 0%;
         height: 20vh
     }
-
     .fundamentosInstitucionales h2 {
         font-size: 15px;
         line-height: 2rem;
-    }
-
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 25px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 0;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 15%;
-        margin-bottom: 15%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .fundamentosInstitucionales .carousel {
-        padding-right: 0%;
-    }
-
     .fundamentosInstitucionales h2 {
         font-size: 15px;
-    }
-
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 35px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 0;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 15%;
-        margin-bottom: 15%;
     }
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 992px) {
     .fundamentosInstitucionales .carousel {
-        padding-right: 30%;
         height: 40vh
     }
-
     .fundamentosInstitucionales h2 {
         font-size: 15px;
-    }
-
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 35px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 20%;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 15%;
-        margin-bottom: 15%;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .fundamentosInstitucionales .carousel {
-        padding-right: 30%;
         height: 40vh
-    }
-
-    .fundamentosInstitucionales h2 {
-        font-size: 18px;
-    }
-
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 40px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 10%;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 15%;
-        margin-bottom: 15%;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1200px) {
-    .fundamentosInstitucionales .carousel {
-        padding-right: 30%;
-        height: 40vh
-    }
-
-    .fundamentosInstitucionales h2 {
-        font-size: 20px;
-    }
-
-    .fundamentosInstitucionales .fundamentosTitulo {
-        font-size: 45px;
-    }
-
-    .fundamentosInstitucionales h2 {
-        padding-right: 20%;
-    }
-
-    .fundamentosInstitucionales {
-        margin-top: 15%;
-        margin-bottom: 15%;
     }
 }
 
@@ -910,10 +551,10 @@ body p {
     padding-top: 5%;
     padding-bottom: 7%;
     padding-right: 10%;
-    font-size: 60px;
-    font-weight: bold;
-    text-align: end;
-    color: white;
+    text-align: right;
+    font: normal normal bold 72px/120px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }
 
 .cover {
@@ -925,15 +566,21 @@ body p {
 }
 
 .PoliticaDeCalidad .containerText h1 {
+    text-align: end;
     padding-top: 0;
-    font-size: 35px;
+    font: normal normal normal 39px/50px Neue Haas Grotesk Display Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .PoliticaDeCalidad .containerText h2 {
-    font-size: 20px;
-    color: white;
-    padding-right: 20%;
-    padding-top: 0;
+    max-width: 60ch;
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .PoliticaDeCalidad .row img {
@@ -947,7 +594,6 @@ body p {
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;
-        font-size: 40px;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -955,16 +601,12 @@ body p {
     }
 
     .PoliticaDeCalidad .containerText h1 {
-        font-size: 20px;
         padding-right: 0;
         text-align: center;
     }
 
     .PoliticaDeCalidad .containerText h2 {
-        font-size: 14px;
-        line-height: 1.5rem;
         padding-top: 3rem;
-        padding-right: 0%;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -979,7 +621,6 @@ body p {
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;
-        font-size: 40px;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -987,16 +628,13 @@ body p {
     }
 
     .PoliticaDeCalidad .containerText h1 {
-        font-size: 25px;
         padding-right: 0;
         text-align: center;
     }
 
     .PoliticaDeCalidad .containerText h2 {
-        font-size: 16px;
         line-height: 1.5rem;
         padding-top: 3rem;
-        padding-right: 0%;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -1011,7 +649,6 @@ body p {
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;
-        font-size: 40px;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -1019,16 +656,13 @@ body p {
     }
 
     .PoliticaDeCalidad .containerText h1 {
-        font-size: 35px;
         padding-right: 0;
         text-align: center;
     }
 
     .PoliticaDeCalidad .containerText h2 {
-        font-size: 16px;
         line-height: 2rem;
         padding-top: 0;
-        padding-right: 0%;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -1043,7 +677,6 @@ body p {
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;
-        font-size: 40px;
     }
 
     .cover {
@@ -1053,16 +686,12 @@ body p {
     .PoliticaDeCalidad .containerText {
         padding-top: 10%;
     }
-
     .PoliticaDeCalidad .containerText h1 {
-        font-size: 35px;
+        text-align: end;
     }
 
     .PoliticaDeCalidad .containerText h2 {
-        font-size: 16px;
-        line-height: 2rem;
         padding-top: 0;
-        padding-right: 0%;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -1077,7 +706,6 @@ body p {
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;
-        font-size: 40px;
     }
 
     .cover {
@@ -1087,16 +715,11 @@ body p {
     .PoliticaDeCalidad .containerText {
         padding-top: 10%;
     }
-
     .PoliticaDeCalidad .containerText h1 {
-        font-size: 35px;
+        text-align: end;
     }
-
     .PoliticaDeCalidad .containerText h2 {
-        font-size: 16px;
-        line-height: 2rem;
         padding-top: 0;
-        padding-right: 20%;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -1111,7 +734,6 @@ body p {
     .PoliticaDeCalidad h1 {
         padding-bottom: 4%;
         padding-right: 10%;
-        font-size: 60px;
     }
 
     .cover {
@@ -1123,13 +745,11 @@ body p {
     }
 
     .PoliticaDeCalidad .containerText h1 {
-        font-size: 35px;
+        text-align: end;
     }
 
     .PoliticaDeCalidad .containerText h2 {
-        font-size: 20px;
         padding-top: 0;
-        padding-right: 20%;
     }
 
     .PoliticaDeCalidad .containerText {
@@ -1138,73 +758,3 @@ body p {
         padding-left: 0;
     }
 }
-
-/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-.footer {
-    margin-top: 30%;
-}
-
-.footer h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: end;
-    color: white;
-    padding-bottom: 1em;
-}
-
-.footer h2 {
-    font-size: 18px;
-    font-weight: lighter;
-    text-align: end;
-    color: white;
-    padding-top: 0;
-    padding-bottom: 1.5em;
-}
-
-ul.social {
-    width: 100%;
-    text-align: start;
-    padding-bottom: 10%;
-}
-
-ul.social>li {
-    display: inline-block;
-}
-
-ul.social>li>a {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 36px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    margin: 0 3px 3px 0;
-}
-
-ul.social>li>a:hover {
-    text-decoration: none;
-    opacity: 0.5;
-}
-
-/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-@media only screen and (max-width: 392px) {}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-@media only screen and (min-width: 392px) {}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 1050px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}

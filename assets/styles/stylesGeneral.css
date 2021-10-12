@@ -11,7 +11,7 @@
     color:var(--secondary-color)
 }
 .h-100vh {
-    height: 100vh
+    min-height: 100vh
 }
 
 .p-relative {
@@ -59,6 +59,7 @@
 }
 .rotatedText>.textBlack::before {
     display: inline-block;
+    transform: translateY(-0.25em);
     content: "";
     border-top: .1rem solid black;
     width: 9rem;
@@ -168,6 +169,7 @@
     color: white;
     text-align: right;
     margin: 0;
+    transition: background-color 0.5s;
 }
 
 .navbar-toggler {
@@ -182,10 +184,17 @@
     outline: 0;
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
 #navBarBrandText{
     display: none;
 }
-
+.nav-item:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
 
 /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
 
@@ -311,11 +320,113 @@
     background-color: var(--main-color);
     border:transparent;
     border-radius: 0;
-    padding: 22px 14px;
+    padding: 14px 22px;
 }
 .btn-primary:hover{
     border:transparent;
     background-color: var(--hover-btn-color);
 
 
+}
+
+/*-------------------------------------------------- Seccion footer--------------------------------------------------*/
+
+.footer h1 {
+    font-weight: bold;
+    text-align: end;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.footer h2 {
+    font: normal normal 300 16px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;  
+    text-align: end;
+    padding-top: 0.5em;
+}
+
+ul.social {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 10%;
+}
+
+ul.social>li {
+    display: inline-block;
+}
+
+ul.social>li>a {
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin: 0 3px 3px 0;
+}
+
+ul.social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+/*-------------------------------------------------- Media Query footer--------------------------------------------------*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .footer .mail {
+        font-size: 20px;
+    }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .footer .mail {
+        font-size: 25px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .footer .mail {
+        font-size: 30px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .footer .mail {
+        font: normal normal bold 37px Inter;
+        letter-spacing: 0px;
+ 
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 1050px) {
+    .footer .mail {
+        font: normal normal bold 37px Inter; 
+        letter-spacing: 0px;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .footer .mail {
+        font: normal normal bold 37px/ Inter;
+        letter-spacing: 0px;
+
+    }
 }

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="/Proflight/assets/images/logo/iso azul.svg.png" />
-    <title>Testimonios | ProFlight</title>
+    <link rel="shortcut icon" href="/Proflight/assets/images/logo/iso azul.svg" />
+    <title>Eventos | ProFlight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <!-- <link rel="stylesheet" href="./assets/styles/grid.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
@@ -12,9 +12,22 @@
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color:white">
+    <a target="blank"
+        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
+        <div class="whatsappButtonContainer">
+            <div class="dialog">
+                <h1 class="text">¿Necesitas más información?</h1>
+            </div>
+            <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
+        </div>
+    </a>
+
     <nav class="navbar fixed-top navbar-light">
         <div class="navBarContainer container-fluid" style="padding: 0;">
             <a class="navbar-brand" id="navbar-brand" href="#">
@@ -45,7 +58,7 @@
                                     <a class="nav-link" href="../extranjero/index.html">Extranjero</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../testimonios/index.html">Testimonios</a>
+                                    <a class="nav-link" href="../eventos/index.html">eventos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../porQueElegirnos/index.html">¿Por qué elegirnos?</a>
@@ -74,21 +87,24 @@
 
     <section class="page">
         <a href="#nonLanding">
-            <section class="home">
-                <div class="container">
+            <section class="home p-relative">
+                <div class="container-fluid sameLeft">
                     <div class="fullPage row d-flex align-items-center">
-                        <div class="col-12 col-xs-12 col-md-12 col-lg-8 col-xl-6 me-sm-0 me-md-5 ">
+                        <div class="col-12 col-xs-12 col-md-12 col-lg-8 col-xl-6 me-sm-0 me-md-5 mb-5 pb-5">
                             <h1 class="title">
                                 Eventos
                             </h1>
                             <h2 class="pt-2 pt-md-5 subtitle">
                                 En esta sección puedes encontrar toda la información sobre las
                                 <strong>próximas charlas</strong> que realizaremos en tos distintos paises de Latinoamérica. Las mismas son <strong>totalmente gratuitas</strong> y están destinadas a la búsqueda de futuros estudiantes que tengan interés
-                                en realizar la carrera de Piloto Comercial o Privado en
+                                en realizar la carrera de Piloto Comercial o Privado en Argentina
                             </h2>
                         </div>
 
                     </div>
+                </div>
+                <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                    <h1 class="text">Eventos</h1>
                 </div>
             </section>
         </a>
@@ -96,12 +112,12 @@
             <section>
                 <div class="container col-9">
                     <div class="row ">
-                        <div class="accordion accordion" id="accordionExample">
+                        <div class="accordion accordion" id="accordionExample" style="min-height: 140px;">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         <h1 class="filtrar">
-                                        <span class="icon fas fa-filter"></span>
+                                        <span class="icon fas fa-filter me-2"></span>
                                         Filtrar Eventos por país
                                         </h1>
                                      </button>
@@ -127,7 +143,7 @@
                 </div>
             </section>
 
-            <section class="alumnos">
+            <section class="eventos">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -136,12 +152,6 @@
                     </div>
                 </div>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                    </div>
                     <div class="carousel-inner" id="selectorDeEventos">
 
                     </div>
@@ -156,26 +166,37 @@
                 </div>
             </section>
 
-            <section class="footer">
+            <section class="footer h-100vh d-flex align-items-end">
                 <div class="container">
-                    <div class="fullPage row d-flex align-items-end">
+                    <div class="row d-flex align-items-end">
                         <div>
-                            <h1 class="mail">info@proflight.com.ar</h1>
-                            <h2>+54 9 11 6010-4446</h2>
-                            <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
+                            <h1 class="mail pb-0 footerBlack">info@proflight.com.ar</h1>
+                            <h2 class="footerBlack">+54 9 11 6010-4446</h2>
+                            <h2 class="footerBlack">Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
                             <ul class="social">
-                                <li>
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia" title="">
+                                <li class="me-2">
+                                    <a class="footerBlack" target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                        title="">
+                                        <span class="icon fa fa-envelope"></span>
+                                    </a>
+                                </li>
+                                <li class="me-2">
+                                    <a class="footerBlack" target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                        title="">
                                         <span class="icon fas fa-phone"></span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
+                                <li class="me-2">
+                                    <a class="footerBlack" target="_blank" href="https://www.facebook.com/proflight.la"
+                                        title="">
                                         <span class="icon fa fa-facebook"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
+                                    <a class="footerBlack" target="_blank"
+                                        href="https://www.instagram.com/proflight.ar/" title="">
                                         <span class="icon fab fa-instagram"></span>
                                     </a>
                                 </li>
