@@ -7,6 +7,25 @@ $(document).ready(function () {
     var navBarToggler=$("#navBarToggler")
     var navBarTogglerIcon=$("#navBarTogglerIcon")
 
+
+    var right = document.getElementById("right");
+    var left = document.getElementById("left");
+
+    var toggled=false
+
+    $("#right").click(function(){
+        swapImage()
+    })
+    $("#left").click(function(){
+        swapImage()
+    })
+
+    const swapImage=function(){
+        let aux=left.className
+        $("#left").attr('class',right.className)
+        $('#right').attr('class',aux)
+    }
+
     var sourceSwap = function () {
         var $this = $(this);
         var newSource = $this.data('alt-src');

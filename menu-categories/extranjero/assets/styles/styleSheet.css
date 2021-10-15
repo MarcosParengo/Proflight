@@ -125,7 +125,7 @@
 
     .ambientes {
         background: rgb(9, 21, 38);
-        background: linear-gradient(180deg, aliceblue 0%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(180deg, rgb(243,245,248) 0%, rgba(255, 255, 255, 1) 100%);
         min-height: 100vh;
     }
 
@@ -459,6 +459,21 @@
         margin-left: -100px;
     }
 
+    .left-img{
+        position: absolute;
+        transition: all 1s;
+        transform: translate(-50%,35%);
+        left:0;
+        opacity:0.7
+    }
+    
+    .right-img{
+        position: absolute;
+        transition: all 1s;
+        left:33%;
+        opacity:1
+    }
+
     .alojamientos .left .first {
         margin-top: 2rem;
         opacity: 0.4;
@@ -467,11 +482,11 @@
     }
 
     .alojamientos .texto .titulo {
-        font: normal normal bold 58px/110px Roboto;
+        font: normal normal bold 58px Roboto;
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
-        padding-bottom: 3rem;
+        padding-bottom: .5em;
     }
 
     .alojamientos .texto .parrafo {
@@ -480,68 +495,6 @@
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
-    }
-
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-    @media only screen and (max-width: 392px) {
-        .alojamientos .texto h1 {
-            padding-bottom: 3rem;
-        }
-    }
-
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-    @media only screen and (min-width: 392px) {
-        .alojamientos .texto h1 {
-            padding-bottom: 3rem;
-        }
-    }
-
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-
-    @media only screen and (min-width: 576px) {
-        .alojamientos .texto h1 {
-            padding-bottom: 3rem;
-        }
-    }
-
-    /* Medium devices (landscape tablets, 768px and up) */
-
-    @media only screen and (min-width: 768px) {
-        .alojamientos .texto h1 {
-            padding-bottom: 3rem;
-        }
-    }
-
-    /* Large devices (laptops/desktops, 992px and up) */
-
-    @media only screen and (min-width: 992px) {
-        .alojamientos {
-            height: 100vh;
-        }
-        .alojamientos .texto {
-            padding-top: 5rem;
-        }
-        .alojamientos .texto h1 {
-            padding-bottom: 3rem;
-        }
-    }
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-
-    @media only screen and (min-width: 1200px) {
-        .alojamientos {
-            height: 100vh;
-        }
-        .alojamientos .texto {
-            padding-top: 5rem;
-        }
-        .alojamientos .texto h1 {
-            padding-bottom: 3rem;
-        }
     }
 
     /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
