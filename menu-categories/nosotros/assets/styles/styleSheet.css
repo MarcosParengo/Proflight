@@ -102,12 +102,12 @@ body p {
 }
 
 .landing .textContainer{
-    font: normal normal normal 80px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 80px Roboto;
     min-height: 1.2em;
 }
 .landing .link {
     text-align: left;
-    font: normal normal normal 53px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 53px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -116,7 +116,7 @@ body p {
 
 .landing .link:hover {
     color: var(--unnamed-color-00b0ce);
-    font: normal normal normal 80px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 80px Roboto;
     letter-spacing: 0px;
     color: #00B0CE;
     opacity: 1;
@@ -282,7 +282,7 @@ body p {
     margin-left: -2ch;
     padding-top: .7em;
     padding-bottom: .7em;
-    font: normal normal bold 72px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 72px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
         text-align: start;
@@ -319,7 +319,7 @@ body p {
 .fundamentosInstitucionales .fundamentosTitulo {
     padding-bottom: 2em;
     text-align: start;
-    font: normal normal normal 39px/32px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 39px/32px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -552,7 +552,7 @@ body p {
     padding-bottom: 7%;
     padding-right: 10%;
     text-align: right;
-    font: normal normal bold 72px/120px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 72px/120px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
@@ -568,7 +568,7 @@ body p {
 .PoliticaDeCalidad .containerText h1 {
     text-align: end;
     padding-top: 0;
-    font: normal normal normal 39px/50px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 39px/50px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;

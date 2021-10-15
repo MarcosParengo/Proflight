@@ -68,7 +68,7 @@ body p {
 
 .coverPage .left h1 {
     text-align: right;
-    font: normal normal bold 62px/78px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 62px/78px Roboto;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;
@@ -130,7 +130,7 @@ body p {
 .descripcion h1 {
     color: var(--unnamed-color-0b131e);
     text-align: left;
-    font: normal normal bold 40px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 40px Roboto;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;}

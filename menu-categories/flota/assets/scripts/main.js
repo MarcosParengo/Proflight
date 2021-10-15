@@ -6,6 +6,16 @@ $(document).ready(function () {
     var navBarBrandImage= $("#navBarBrandImage")
     var navBarToggler=$("#navBarToggler")
     var navBarTogglerIcon=$("#navBarTogglerIcon")
+    
+
+    $( ".right-img" ).click(function(){
+        var right=$( ".right-img" )
+        var left=$(".left-img")
+        right.attr('class', 'temporal')
+        left.attr('class', 'right-img')
+        $(".temporal").attr('class','left-img')
+        console.log("si")
+    })
 
     var sourceSwap = function () {
         var $this = $(this);

@@ -1,600 +1,525 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Montserrat';
-    }
-    html {
-        scroll-behavior: smooth;
-      }
-    body {
-        font-size: 12px;
-        margin: 0;
-        font-family:  Arial, Helvetica, sans-serif;
-        position: absolute;
-    }
-    body h1{
-        font-size:60px;
-        font-weight: bold;
-        text-align: start;
-        color: white;
-    }body h2{
-        font-size: 15px;
-        color: white;
-        padding-right: 20%;
-        line-height: 2rem;
-    }
-    body A {
-        color: white;
-        text-decoration: none;
-    }
-    body p {
-        color: white;
-        text-decoration: none;
-        font-size: 30px;
-        text-align: end;
-        font-weight: bolder;
-    }
-    /*---------------------------------------------------------Media query Background----------------------------------------------------------------*/
-    
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        } 
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .home {
-            background-size: auto 100%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .home {
-            background-size: 100% 100%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .home {
-            background-size: 100% 100%;
-        } 
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .home {
-            background-size: 100% 100%;
-        } 
-    }
-    /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
-    .home {
-       background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/menu-categories/flota/assets/images/background/pf%20background%20flota.png?raw=true);
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-    }.landing .coverPage .container-fluid{
-        height: 100vh;
-        margin-bottom: 10%;
-        margin-bottom: 15%;
-    }.landing .coverPage .row{
-        position: relative;
-        top: 15%;
-        margin-bottom: 15%;
+}
 
-    }.landing .coverPage .left{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+
+body h2 {
+    font-size: 15px;
+    color: white;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: end;
+    font-weight: bolder;
+}
+
+/*---------------------------------------------------------Media query Background----------------------------------------------------------------*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .home {
+        background-size: auto 100%;
+    }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .home {
+        background-size: auto 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .home {
+        background-size: auto 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .home {
+        background-size: 100% 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 992px) {
+    .home {
+        background-size: 100% 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .home {
+        background-size: 100% 100%;
+    }
+}
+
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+
+.home {
+    background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/menu-categories/flota/assets/images/background/pf%20background%20flota.png?raw=true);
+    background-repeat: no-repeat;
+}
+.h-80vh{
+    min-height: 80vh;
+}
+.coverPage .titulo {
+    text-align: start;
+    font: normal normal bold 68px Roboto;
+    letter-spacing: 0px;
+    padding-bottom: 45px;
+    color: #FEFEFE;
+    opacity: 1;
+}
+
+.landing .coverPage {
+    min-height: 100vh;
+}
+
+.landing .coverPage .row {
+    position: relative;
+}
+
+.landing .coverPage .left {
+    padding-right: 10rem;
+}
+
+.landing .coverPage .right .text {
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    opacity: 0.8;
+    max-width: 49ch;
+}
+
+.landing .coverPage .left p {
+    font: normal normal normal 37px/45px Roboto;
+    letter-spacing: 1.11px;
+    color: #FFFFFF;
+    opacity: 0.25;
+}
+
+.landing .coverPage img {
+    width: 80%;
+    float: right;
+}
+
+.simuladores .coverPage .container-fluid {
+    min-height: 70vh;
+}
+
+.simuladores .texto {
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    opacity: 0.8;
+    max-width: 45ch;
+}
+
+.simuladores .coverPage .row {
+    position: relative;
+}
+
+.simuladores .coverPage .right p {
+    text-align: left;
+    font: normal normal normal 37px/45px Roboto;
+    letter-spacing: 1.11px;
+    color: #FFFFFF;
+    opacity: 0.25;
+}
+.simuladores .line{
+    margin-top: 80px;
+    width:80%
+}
+/*-------------------------------------------------- Media Query landingHome--------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .landing .coverPage .left {
         padding-right: 10rem;
     }
-    .landing .coverPage .right{
-        padding-right: 15rem;
+    .landing .coverPage .right {
+        padding-right: 2em;
+        padding-left: 2em;
     }
-    .landing .coverPage .left p{
-        margin-bottom: .8rem;
-    }
-    .landing .coverPage img{
-        width: 80%;
-        float: right;
-    }
-
-    .simuladores .coverPage .container-fluid{
-        height: 100vh;
-    }
-    .simuladores .titulo{
-        padding-left: 15rem
-    }
-    .simuladores .coverPage .row{
-        position: relative;
-        top: 20%;
-    }.simuladores .coverPage .left{
-        padding-left: 15rem;
-    }
-    
-    .simuladores .coverPage .right p{
-        margin-bottom: .8rem;
-        text-align: start;
-    }
-
-        /*-------------------------------------------------- Media Query landingHome--------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-    
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }
-        .landing .coverPage .right{
-            padding-right: 2rem;
-            padding-left: 2rem;
-        }
-        .landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h1{
-            font-size:30px;
-            font-weight: bold;
-            text-align: start;
-            color: white;
-        }body h2{
-            font-size: 15px;
-            color: white;
-            padding-right: 0;
-            line-height: 2rem;
-        }.simuladores .titulo{
-            padding-left: 2rem;
-            padding-right:0rem
-        }.simuladores .coverPage .left{
-            padding-left: 2rem;
-            padding-right:2rem
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 2rem;
-            text-align: start;
-            font-size: 20px;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-    
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }
-        .landing .coverPage .right{
-            padding-right: 3rem;
-            padding-left: 3rem;
-        }
-        .landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h1{
-            font-size:40px;
-            font-weight: bold;
-            text-align: start;
-            color: white;
-        }body h2{
-            font-size: 15px;
-            color: white;
-            padding-right: 0;
-            line-height: 2rem;
-        }.simuladores .titulo{
-            padding-left: 3rem;
-            padding-right:0rem
-        }.simuladores .coverPage .left{
-            padding-left: 3rem;
-            padding-right:3rem
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 3rem;
-            text-align: start;
-            font-size: 20px;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-    
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }
-        .landing .coverPage .right{
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-        .landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h2{
-            font-size: 15px;
-            color: white;
-            padding-right: 0;
-            line-height: 2rem;
-        }.simuladores .titulo{
-            padding-left: 5rem;
-            padding-right:0rem
-        }.simuladores .coverPage .left{
-            padding-left: 5rem;
-            padding-right:5rem
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 5rem;
-            text-align: start;
-            font-size: 30px;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-    
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }
-        .landing .coverPage .right{
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-        .landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h2{
-            font-size: 15px;
-            color: white;
-            padding-right: 0;
-            line-height: 2rem;
-        }body h1{
-            font-size:60px;
-            font-weight: bold;
-            text-align: start;
-            color: white;
-        }.simuladores .titulo{
-            padding-left: 5rem;
-            padding-right:5rem
-        }.simuladores .coverPage .left{
-            padding-left: 5rem;
-            padding-right:5rem
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 5rem;
-            text-align: start;
-            font-size: 30px;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-    
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }
-        .landing .coverPage .right{
-            padding-right: 10rem;
-            padding-left: 0rem;
-        }
-        .landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h2{
-            font-size: 15px;
-            color: white;
-            padding-right: 0;
-            line-height: 2rem;
-        }body h1{
-            font-size:60px;
-            font-weight: bold;
-            text-align: start;
-            color: white;
-        }.simuladores .titulo{
-            padding-left: 15rem;
-            padding-right:0
-        }.simuladores .coverPage .left{
-            padding-left: 15rem;
-            padding-right:0
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 10rem;
-            text-align: start;
-            font-size: 30px;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-    
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }
-        .landing .coverPage .right{
-            padding-right: 10rem;
-            padding-left: 0;
-        }
-        .landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h2{
-            font-size: 15px;
-            color: white;
-            padding-right: 0;
-            line-height: 2rem;
-        }body h1{
-            font-size:60px;
-            font-weight: bold;
-            text-align: start;
-            color: white;
-        }.simuladores .titulo{
-            padding-left: 15rem;
-            padding-right:0
-        }.simuladores .coverPage .left{
-            padding-left: 15rem;
-            padding-right:0
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 5rem;
-            text-align: start;
-            font-size: 30px;
-        }
-    }
-    @media only screen and (min-width: 1300px) {
-        .landing .coverPage .row{
-            position: relative;
-            top: 15%;
-            margin-bottom: 15%;
-        }.landing .coverPage .left{
-            padding-right: 10rem;
-        }.landing .coverPage .right{
-            padding-right: 15rem;
-            padding-left: 0;
-        }.landing .coverPage .left p{
-            margin-bottom: .8rem;
-        }body h2{
-            font-size: 15px;
-            padding-right: 20%;
-            line-height: 2rem;
-        }body h1{
-            font-size:60px;
-            font-weight: bold;
-            text-align: start;
-            color: white;
-        }.simuladores .titulo{
-            padding-left: 15rem;
-            padding-right:0;
-        }.simuladores .coverPage .left{
-            padding-left: 15rem;
-            padding-right:0;
-        }.simuladores .coverPage .right p{
-            margin-bottom: .8rem;
-            padding-left: 0rem;
-            text-align: start;
-            font-size: 30px;
-        }
-    
-    }
-
-    /*---------------------------------------------------------Seccion Tabs----------------------------------------------------------------*/
-
-    .tabs{
-        height: 100vh;
-        margin-bottom: 30%;
-    }
-
-    .tabs {
-        padding-top: 15%;
-        padding-bottom: 10%;
-    }.tabs h1{
-        text-align: start;
-        font-size: 35px;
-        font-weight: lighter;
-        color: rgba(255, 255, 255, 1);
-        padding-bottom: 5%;
-    }.tabs h2{
-        text-align: start;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight:bolder;
-        color: rgb(53, 187, 215);
-        padding-bottom: 5%;
-    }.tabs h3{
-        text-align: start;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: lighter;
-        color: rgba(255, 255, 255, 1);
-        padding-bottom: 5%;
-    }.tabs .specs{
-        text-align: start;
-        border-bottom: 1px solid;
-        border-color: white;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: lighter;
-        color: rgba(255, 255, 255, 1);
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    }
-    .tabs .nonUper{
-        text-align: start;
-        text-transform: none;
-        font-size: 15px;
-        font-weight: lighter;
-        color: rgba(255, 255, 255, 1);
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    }
-    .nav-tabs{
-        border: none!important;
-    }.nav-tabs .nav-link{
-        border: none!important;
-        border: 0px solid transparent;
-    }.nav-link img{
-        opacity: 0.3!important;
-        display: block;
-        width: 100%;
-    }.nav-link:hover img{
-        opacity: 0.7!important;
-    }.nav-link.active{
-        background-color: rgba(200, 200, 200, 0.0)!important;
-        border: none!important;
-    }.nav-link.active img{
-        opacity: 1!important;
-    }.tab-pane{
-        color: white!important;
-    }.tab-pane .titulo{
-        position: relative;
-    }.titulo .texto{
-        text-align: start;
-        font-size: 30px;
-        padding-left: 0;
-    }.titulo .number{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        font-size:15px;
-        color: rgb(53,187,215);
-    }.tab-content .lead{
-        line-height: 2rem;
-        border-top: 1px solid;
-        font-size: 15px;
-        font-weight: lighter;
-        color: rgba(255, 255, 255, 1);
-    }
-    .tab-content img{
-        display: block;
-        width:100%;
-    }
-
-    /*-------------------------------------------------- Media Query seccion tabs --------------------------------------------------TODO*/
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-    @media only screen and (max-width: 392px) {
-        .nav-link img{
-            height:40%;
-            width:auto;
-            margin:auto
-        }.nav-link{
-            height:auto;        }
-        .tabs{
-            margin-top: 30%;
-            height: auto;
-            margin-bottom: 30%;
-        }
-    }
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-    @media only screen and (min-width: 392px) {
-        .nav-link img{
-            height:60%;
-            width:auto;
-            margin:auto
-        }.nav-link{
-            height:auto;
-        }
-        .tabs{
-            margin-top: 30%;
-            height: auto;
-            margin-bottom: 30%;
-        }
-    }
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-    @media only screen and (min-width: 576px) {
-        .nav-link img{
-            height:50%;
-            width:auto;
-            margin:auto
-        }.nav-link{
-            height:auto;
-        }
-        .tabs{
-            height: 100vh;
-            margin-bottom: 30%;
-        }
-    }  
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .nav-link img{
-            height:75%;
-            width:auto;
-            margin:auto
-        }.nav-link{
-            height:auto;
-        }
-        .tabs{
-            height: 100vh;
-            margin-bottom: 30%;
-        }
-    }
-    /* Large devices (laptops/desktops, 1050px and up) */
-    @media only screen and (min-width: 992px) { 
-        .nav-link img{
-            height:100%;
-            width:auto;
-        }.nav-link{
-            padding: 0%;
-        }
-        .tabs{
-            height: 100vh;
-            margin-bottom: 30%;
-        }
-    } 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        .nav-link img{
-            height:100%;
-            width:auto;
-        }.nav-link{
-            padding: 1%;
-        }
-        .tabs{
-            height: 100vh;
-            margin-bottom: 30%;
-        }
-    }
-    
-    /*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-    
-    .footer h1 {
-        font-size:40px;
-        font-weight: bold;
-        text-align: end;
-        color :white;
+    .coverPage .titulo {
+        font-size: 40px;
         padding-bottom: 1em;
-    }.footer h2 {
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: end;
-        color :white;
-        padding-top: 0;
-        padding-bottom: 1.5em;
-    }ul.social {
-        width: 100%;
-        text-align: start;
-        padding-bottom: 10%;
-    }ul.social > li {
-        display: inline-block;
-    }ul.social > li > a {
-        text-align: center;
-        display: inline-block;
-        font-size: 18px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        border:1px solid;
-        border-radius: 36px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        margin: 0 3px 3px 0;
-    }ul.social > li > a:hover {
-        text-decoration: none;
-        opacity: 0.5;
     }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
+    .landing .coverPage .left {
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .landing .coverPage .left {
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .landing .coverPage .left {
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 992px) {
+    .landing .coverPage .left {
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right {
+        padding-right: 0;
+        padding-left: 0rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .landing .coverPage .left {
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right {
+        padding-right: 10rem;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .landing .coverPage .left {
+        padding-right: 10rem;
+    }
+    .landing .coverPage .right {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/*---------------------------------------------------------Seccion Tabs----------------------------------------------------------------*/
+
+.tabs {
+    min-height: 100vh;
+}
+
+.tabs h1 {
+    text-align: start;
+    font-size: 35px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+}
+
+.tabs .titulo {
+    font: normal normal bold 12px/20px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.tabs h3 {
+    text-align: left;
+    font: normal normal normal 10px/38px Inter;
+    letter-spacing: 0px;
+    color: #B7B7B7;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.tabs .specs {
+    text-align: start;
+    border-bottom: 1px solid;
+    border-color: white;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.tabs .nonUper {
+    text-align: start;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.nav-tabs {
+    border: none!important;
+}
+
+.nav-tabs .nav-link {
+    border: none!important;
+    border: 0px solid transparent;
+    color: #B7B7B7CC;
+    padding:0em 2em;
+}
+
+.nav-tabs .nav-link .label{
+    margin-top: 1em;
+    font: normal normal 300 11px Inter;
+    letter-spacing: 0px;
+    opacity: 1;
+    text-transform: uppercase;
+    color: #B7B7B7CC;
+}
+
+.nav-link img{
+    opacity: 0.3!important;
+    display: block;
+}
+
+.nav-link .avion{
+    width: 93px;
+}
+
+.nav-link .simuladorB350{
+    width: 58px;
+}
+
+.nav-link .simuladorC182{
+    width: 60px;
+}
+
+.nav-link:hover img {
+    opacity: 0.7!important;
+}
+
+.nav-link:hover .label {
+    color: #00B0CE;
+}
+
+.nav-link.active {
+    background-color: rgba(200, 200, 200, 0.0)!important;
+    border: none!important;
+    color: #00B0CE;
+}
+
+.nav-link.active .label{ 
+    color: #00B0CE;
+}
+
+
+
+.nav-link.active img {
+    opacity: 1!important;
+}
+
+.tab-pane {
+    color: white!important;
+}
+
+.tab-pane .titulo {
+    position: relative;
+}
+
+.titulo .texto {
+    text-align: start;
+    font-size: 30px;
+    padding-left: 0;
+}
+
+.titulo .number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+    color: rgb(53, 187, 215);
+}
+.tab-content{
+    padding:0 8%
+}
+.tab-content .lead {
+    line-height: 2rem;
+    border-top: 1px solid;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+}
+
+.tab-content img {
+    display: block;
+    width: 100%;
+}
+.placeholder{
+    width: 60vw;
+    height: 70vh;
+}
+.left-img{
+    position: absolute;
+    transition: all 2s;
+    width: 33.33%;
+    left:0;
+}
+
+.right-img{
+    position: absolute;
+    transition: all 2s;
+    width: 66.66%;
+    left:33%
+
+}
+.temporal{
+    position: absolute;
+    transition: all 2s;
+    width: 66.66%;
+    left:33%
+}
+
+/*-------------------------------------------------- Media Query seccion tabs --------------------------------------------------TODO*/
+
+/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+
+@media only screen and (max-width: 392px) {
+    .nav-link {
+        height: auto;
+    }
+}
+
+/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+
+@media only screen and (min-width: 392px) {
     
+    .nav-link {
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .nav-link {
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .nav-link {
+        height: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 1050px and up) */
+
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        padding: 0%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .nav-link {
+        padding: 1%;
+    }
+}
+
+/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
+
+.footer h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: end;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: end;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+}
+
+ul.social {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 10%;
+}
+
+ul.social>li {
+    display: inline-block;
+}
+
+ul.social>li>a {
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin: 0 3px 3px 0;
+}
+
+ul.social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}

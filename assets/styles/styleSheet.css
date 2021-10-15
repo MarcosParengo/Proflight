@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -56,7 +56,7 @@ body p {
 
 .elipseText .textContainer>.text h1 {
     text-align: end;
-    font: normal normal normal 22px/25px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 22px/25px Roboto;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     opacity: 1;
@@ -295,7 +295,7 @@ body p {
 
 .bienvenido .bienvenidaTitulo {
     text-align: start;
-    font: normal normal bold 53px/64px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 53px/64px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -319,7 +319,7 @@ body p {
 
 .bienvenido .cómopilotoTitulo {
     text-align: start;
-    font: normal normal normal 39px/46px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 39px/46px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -336,7 +336,7 @@ body p {
 
 .bienvenido .footer {
     color: var(--main-color);
-    font: normal normal bold 24px/94px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 24px/94px Roboto;
     letter-spacing: 0px;
     opacity: 1;
 }
@@ -541,7 +541,7 @@ body p {
 }
 
 .programas .programasTitulo {
-    font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 27px/32px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -771,7 +771,7 @@ body p {
 
 .flota .flotaTitulo {
     text-align: start;
-    font: normal normal 500 27px Neue Haas Grotesk Display Pro;
+    font: normal normal 500 27px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -837,7 +837,7 @@ body p {
 .flota .txtOverlap {
     width: 100%;
     padding: 0 5% 0 5%;
-    font: normal normal bold 27px Neue Haas Grotesk Display Pro;
+    font: normal normal bold 27px Roboto;
     letter-spacing: 0px;
     color: #616161;
     opacity: 1;
@@ -981,7 +981,7 @@ body p {
 
 .tecnologia h1 {
     text-align: start;
-    font: normal normal normal 39px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 39px Roboto;
     letter-spacing: 0px;
     opacity: 1;
     color: white
@@ -1031,7 +1031,7 @@ body p {
 
 .titulo .texto {
     text-align: start;
-    font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 27px/32px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -1148,14 +1148,14 @@ body p {
 }
 
 .alumnos .title {
-    font: normal normal normal 27px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 27px Roboto;
     padding-top: 7%;
     text-align: start;
     color: rgb(133, 139, 148);
 }
 
 .alumnos .enfasis {
-    font: normal normal normal 27px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 27px Roboto;
     color: white;
 }
 
@@ -1322,7 +1322,7 @@ body p {
 .eventos .title {
     padding-top: 7%;
     text-align: left;
-    font: normal normal normal 27px/32px Neue Haas Grotesk Display Pro;
+    font: normal normal normal 27px/32px Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;

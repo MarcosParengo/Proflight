@@ -103,7 +103,7 @@
     }
 
     .landing h1 {
-        font: normal normal bold 58px Neue Haas Grotesk Display Pro;
+        font: normal normal bold 58px Roboto;
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
@@ -147,7 +147,7 @@
     }
 
     .ambientes .titulo {
-        font: normal normal bold 62px Neue Haas Grotesk Display Pro;
+        font: normal normal bold 62px Roboto;
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
@@ -227,7 +227,7 @@
 
     .arancelesLanding .texto .rightSub {
         text-align: start;
-        font: normal normal bold 38px/58px Neue Haas Grotesk Display Pro;
+        font: normal normal bold 38px/58px Roboto;
         letter-spacing: 1.14px;
         color: #0B131E;
         opacity: 1;
@@ -242,7 +242,7 @@
     }
 
     .titulo {
-        font: normal normal bold 58px Neue Haas Grotesk Display Pro;
+        font: normal normal bold 58px Roboto;
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
@@ -313,7 +313,7 @@
     }
 
     .inversion .titulo {
-        font: normal normal bold 38px/72px Neue Haas Grotesk Display Pro;
+        font: normal normal bold 38px/72px Roboto;
         letter-spacing: 1.14px;
         color: #0B131E;
         opacity: 1;
@@ -467,7 +467,7 @@
     }
 
     .alojamientos .texto .titulo {
-        font: normal normal bold 58px/110px Neue Haas Grotesk Display Pro;
+        font: normal normal bold 58px/110px Roboto;
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
