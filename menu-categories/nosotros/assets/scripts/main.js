@@ -45,12 +45,14 @@ $(document).ready(function () {
             toggled = false;
         }
     })
+
     viewCarousel.click(function() {
         aFundamentos.css('display','none');
         data.css('display','block');
         original.css('display','none');
         one.css('display','block');
     })
+    
     myCarousel.on('slide.bs.carousel', function (e) {
         if(e.from==0 && e.direction=="right"){
             aFundamentos.css('display','block');
@@ -59,7 +61,6 @@ $(document).ready(function () {
             one.css('display','none'); 
             five.css('display','none'); 
         }else{
-            console.log(e.to)
             switch(e.to){
                 case 0:
                     five.css('display','none');

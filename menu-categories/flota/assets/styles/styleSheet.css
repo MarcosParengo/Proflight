@@ -307,14 +307,14 @@ body p {
     border: none!important;
 }
 
-.nav-tabs .nav-link {
+.tabs .nav-tabs .nav-link {
     border: none!important;
     border: 0px solid transparent;
     color: #B7B7B7CC;
     padding:0em 2em;
 }
 
-.nav-tabs .nav-link .label{
+.tabs  .nav-tabs .nav-link .label{
     margin-top: 1em;
     font: normal normal 300 11px Inter;
     letter-spacing: 0px;
@@ -323,44 +323,44 @@ body p {
     color: #B7B7B7CC;
 }
 
-.nav-link img{
+.tabs  .nav-link img{
     opacity: 0.3!important;
     display: block;
 }
 
-.nav-link .avion{
+.tabs  .nav-link .avion{
     width: 93px;
 }
 
-.nav-link .simuladorB350{
+.tabs  .nav-link .simuladorB350{
     width: 58px;
 }
 
-.nav-link .simuladorC182{
+.tabs .nav-link .simuladorC182{
     width: 60px;
 }
 
-.nav-link:hover img {
+.tabs .nav-link:hover img {
     opacity: 0.7!important;
 }
 
-.nav-link:hover .label {
+.tabs .nav-link:hover .label {
     color: #00B0CE;
 }
 
-.nav-link.active {
+.tabs  .nav-link.active {
     background-color: rgba(200, 200, 200, 0.0)!important;
     border: none!important;
     color: #00B0CE;
 }
 
-.nav-link.active .label{ 
+.tabs .nav-link.active .label{ 
     color: #00B0CE;
 }
 
 
 
-.nav-link.active img {
+.tabs .nav-link.active img {
     opacity: 1!important;
 }
 
@@ -396,10 +396,21 @@ body p {
     color: rgba(255, 255, 255, 1);
 }
 
-.tab-content img {
+.tab-content .content{
+    display: inline-block;
+    width: auto;
+}
+
+.tab-content .chevron{
+    display: inline-block;
+    width: 20px;
+}
+
+.tab-content .content img,.tab-content .chevron img{
     display: block;
     width: 100%;
 }
+
 .placeholder{
     width: 60vw;
     height: 70vh;
@@ -430,7 +441,7 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .nav-link {
+    .tabs  .nav-link {
         height: auto;
     }
 }
@@ -439,7 +450,7 @@ body p {
 
 @media only screen and (min-width: 392px) {
     
-    .nav-link {
+    .tabs  .nav-link {
         height: auto;
     }
 }
@@ -447,7 +458,7 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .nav-link {
+    .tabs .nav-link {
         height: auto;
     }
 }
@@ -455,7 +466,7 @@ body p {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .nav-link {
+    .tabs .nav-link {
         height: auto;
     }
 }
@@ -463,7 +474,7 @@ body p {
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 992px) {
-    .nav-link {
+    .tabs .nav-link {
         padding: 0%;
     }
 }
@@ -471,7 +482,7 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .nav-link {
+    .tabs .nav-link {
         padding: 1%;
     }
 }

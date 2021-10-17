@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat';
@@ -31,8 +32,6 @@ body p {
     text-decoration: none;
     font-size: 18px;
 }
-
-
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
@@ -113,21 +112,29 @@ body p {
     width: 100%;
 }
 .form {
-    height: 100vh
+    padding-left: 12.5%;
+    min-height: 100vh
 }
 
 .form h1 {
-    font-size: 60px;
-    color: white;
-    opacity: 0.87;
     text-align: start;
+    font: normal normal bold 58px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
-
+.form-floating>label{
+    font: normal normal normal 16px/28px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
 .form-floating .form-control {
     background-color: transparent;
     border: 0px transparent;
     border-bottom: white 1px solid;
     border-radius: 0;
+    color: white;
 }
 
 .form-floating>label {
@@ -153,20 +160,21 @@ textarea {
     resize: none
 }
 
-.enviarMensaje {
-    text-transform: uppercase;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    border-color: lightgray;
-    color: lightgray;
+.form-select{
+    padding-left:0;
+    height: 100%;
+    background-color: transparent;
+    border: 0px transparent;
+    border-bottom: white 1px solid;
+    border-radius: 0;
+    color: white;
+    font: normal normal normal 16px/28px Inter;
+
 }
 
-.enviarMensaje:hover {
-    border-color: lightgray;
-    background-color: lightgray;
-    color: black;
+select option {
+    background: rgb(200, 200, 200);
+    color: #fff;
 }
 
 .footer{

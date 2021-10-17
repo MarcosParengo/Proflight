@@ -11,10 +11,17 @@ $(document).ready(function() {
     navBarText = $("#navBar-text")
     var testimonios = "menu-categories/data/testimonios.json"
     var eventos = "menu-categories/data/eventos.json"
+    var carouselProgramas=$('#carouselProgramas')
+    var elipseProgramas=$('#elipseProgramas')
+    var sectionLabelProgramas=$('#sectionLabelProgramas')
 
     LoadJson(testimonios, 1)
     LoadJson(eventos, 2)
-
+    const titles=["Licencia de piloto privado","Licencia de piloto comercial","Habilitación de vuelo multimotor","Instructor de vuelo","Licencia de Piloto Comercial"]
+    carouselProgramas.on('slide.bs.carousel', function (e) {
+        elipseProgramas.attr("src",`assets/images/components/Elipse${e.to}.svg`)
+        sectionLabelProgramas.html(titles[e.to])
+    })  
 
     navBarToggler.click(function() {
         var algo = navbarSupportedContent.is(":visible")
@@ -84,7 +91,6 @@ function fillContainerTestimonios(obj) {
 }
 
 function fillContainerEventos(obj) {
-    console.log(obj)
     obj.forEach(function(obj, i) {
         if (i < 3) {
             containerEventos.append(`

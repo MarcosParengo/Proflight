@@ -371,6 +371,7 @@ ul.social>li>a {
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
     margin: 0 3px 3px 0;
+    font-size: 20px;
 }
 
 ul.social>li>a:hover {

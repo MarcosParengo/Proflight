@@ -86,6 +86,7 @@
             </div>
         </div>
     </nav>
+
     <section class="home">
         <section class="landing">
             <section class="coverPage p-relative d-flex align-items-end align-items-sm-center">
@@ -129,8 +130,8 @@
                             <p>Entrenador<br>estático</p>
                         </div>
                         <div class="d-none d-md-flex justify-content-end px-0">
-                            <img class="line d-none d-md-none d-lg-block pe-0 me-0" src="assets\images\components\Line misc.png"
-                            alt="">
+                            <img class="line d-none d-md-none d-lg-block pe-0 me-0"
+                                src="assets\images\components\Line misc.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -209,23 +210,32 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-cessna150" role="tabpanel"
                             aria-labelledby="nav-cessna150-tab">
-                            <div class="container-fluid px-4">
+                            <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
-                                    <div class="col-12 col-sm-7 col-md-7 col-8">
-                                        <div class="container-fluid px-0 mx-0">
-                                            <div class="row p-relative">
-                                                <div class="placeholder"></div>
-                                                <div id="left-img" class="d-none d-md-none d-lg-block left-img img">
-                                                    <img src="assets/images/navTab/C150 2.png" alt="">
-                                                </div>
-                                                <div id="right-img" class="right-img img">
-                                                    <img src="assets/images/navTab/C150 1.png" alt="">
-                                                </div>
+                                    <div class="col-3 d-none d-md-none d-lg-block">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab1')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab1-1" class="d-block w-100" src="assets/images/navTab/C150 2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-7 col-md-7 col-lg-5">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab1-2"class="d-block w-100" src="assets/images/navTab/C150 1.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab1')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
-                                        <h2 class="titulo">Cessna 150</h2>
+                                        <h2 class="titulo" >Cessna 150</h2>
                                         <h3 class="specs">Specs</h3>
                                         <h3>2 personas</h3>
                                         <h3>100 hp</h3>
@@ -234,15 +244,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade  " id="nav-cessna172" role="tabpanel"
+                        <div class="tab-pane fade" id="nav-cessna172" role="tabpanel"
                             aria-labelledby="nav-cessna172-tab">
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/C172 2.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab2')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab2-1" class="d-block w-100" src="assets/images/navTab/C172.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/C172.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab2-2"class="d-block w-100" src="assets/images/navTab/C172 2.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab2')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">Cessna 172</h2>
@@ -258,11 +284,29 @@
                             aria-labelledby="nav-tecnamp2002-tab">
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
+
+
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/P2002.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab3')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab3-1" class="d-block w-100" src="assets/images/navTab/P2002.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/p2002 2.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab3-2"class="d-block w-100" src="assets/images/navTab/p2002 2.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab3')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">Tecnam p2002 </h2>
@@ -279,10 +323,26 @@
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/Cherokee.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab4')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab4-1" class="d-block w-100" src="assets/images/navTab/Cherokee.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/Cherokee 2.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab4-2"class="d-block w-100" src="assets/images/navTab/Cherokee 2.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab4')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">Pa 28 cherokee</h2>
@@ -298,11 +358,28 @@
                             aria-labelledby="nav-twincomanche-tab">
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
+
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/TW2.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab5')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab5-1" class="d-block w-100" src="assets/images/navTab/TW2.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/TW1.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab5-2"class="d-block w-100" src="assets/images/navTab/TW1.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab5')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">Twin Comanche</h2>
@@ -318,11 +395,28 @@
                             aria-labelledby="nav-beechcraft350-tab">
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
+                                    
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/B350.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab6')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab6-1" class="d-block w-100" src="assets/images/navTab/B350.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/B350 2.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab6-2"class="d-block w-100" src="assets/images/navTab/B350 2.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab6')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">simulador beechcraft 350</h2>
@@ -341,10 +435,26 @@
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/B350.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab7')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab7-1" class="d-block w-100" src="assets/images/navTab/B350.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/VR 1.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab7-2"class="d-block w-100" src="assets/images/navTab/B350 2.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab7')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">Simulador CESSNA 182</h2>
@@ -363,11 +473,28 @@
                             <div class="container col-xxl-10 px-4">
                                 <div class="row flex-lg-row align-items-center g-5 py-5">
                                     <div class="col-3 d-none d-md-none d-lg-block">
-                                        <img src="assets/images/navTab/VR 2.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab8')">
+                                                <img class="d-block swapImage" style="width: 20px;"
+                                                    src="assets/images/components/Chevron L.svg" alt="">
+                                            </div>
+                                            <div class="col-11" >
+                                                <img id="tab8-1" class="d-block w-100" src="assets/images/navTab/VR 1.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-7 col-md-7 col-lg-5">
-                                        <img src="assets/images/navTab/VR 1.png" alt="">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-11">
+                                                <img id="tab8-2"class="d-block w-100" src="assets/images/navTab/VR 2.png" alt="">
+                                            </div>
+                                            <div class="col-auto px-0 mx-0" onclick="toggleImage('tab8')">
+                                                <img class="d-block" style="width: 20px;"
+                                                    src="assets/images/components/Chevron R.svg" alt="">
+                                            </div>
+                                        </div>
                                     </div>
+
                                     <div class="col-12 col-sm-5 col-md-5 col-lg-4">
                                         <h2 class="titulo">Simulador de realidad virtual</h2>
                                         <h3 class="nonUper">Sabemos lo importante que es familiarizarse con la sensación

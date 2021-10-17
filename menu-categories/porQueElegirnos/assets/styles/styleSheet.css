@@ -252,30 +252,30 @@ body p {
     margin-bottom: 5%;
 }
 
-.nav-tabs {
+.tabs  .nav-tabs {
     border: none !important;
 }
 
-.nav-tabs .nav-link {
+.tabs  .nav-tabs .nav-link {
     border: none !important;
     border: 0px solid transparent;
 }
 
-.nav-link img {
+.tabs  .nav-link img {
     opacity: 0.3 !important;
     width: auto
 }
 
-.nav-link:hover img {
+.tabs  .nav-link:hover img {
     opacity: 0.7 !important;
 }
 
-.nav-link.active {
+.tabs  .nav-link.active {
     background-color: rgba(200, 200, 200, 0) !important;
     border: none !important;
 }
 
-.nav-link.active img {
+.tabs  .nav-link.active img {
     opacity: 1 !important;
 }
 
@@ -321,7 +321,7 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .nav-link {
+    .tabs  .nav-link {
         height: auto;
     }
     .tabs {
@@ -339,7 +339,7 @@ body p {
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .nav-link {
+    .tabs  .nav-link {
         height: auto;
     }
     .tabs {
@@ -357,7 +357,7 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .nav-link {
+    .tabs  .nav-link {
         height: auto;
     }
     .tabs {
@@ -375,7 +375,7 @@ body p {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .nav-link {
+    .tabs .nav-link {
         height: auto;
     }
     .tabs {
@@ -384,7 +384,7 @@ body p {
     .tabs .parent {
         width: 70%
     }
-    .nav-link img {
+    .tabs .nav-link img {
         height: auto
     }
 }
@@ -393,7 +393,7 @@ body p {
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 992px) {
-    .nav-link {
+    .tabs .nav-link {
         padding: 1%;
     }
     .tabs {
@@ -402,7 +402,7 @@ body p {
     .tabs .parent {
         width: 80%
     }
-    .nav-link img {
+    .tabs .nav-link img {
         height: auto
     }
 }
@@ -411,7 +411,7 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .nav-link {
+    .tabs .nav-link {
         padding: 1%;
     }
     .tabs {
@@ -420,7 +420,7 @@ body p {
     .tabs .parent {
         width: 80%
     }
-    .nav-link img {
+    .tabs .nav-link img {
         height: auto
     }
 }

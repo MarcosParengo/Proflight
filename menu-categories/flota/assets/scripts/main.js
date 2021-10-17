@@ -1,31 +1,17 @@
 var obj = [];
 
+function toggleImage(tab){
+    aux=($(`#${tab}-1`).attr('src'))
+    $(`#${tab}-1`).attr('src',($(`#${tab}-2`).attr('src')))
+    $(`#${tab}-2`).attr('src',aux)
+}    
+
+
 $(document).ready(function () {
     var toggled=false;
-    var navbarSupportedContent= $("#navbarSupportedContent")
-    var navBarBrandImage= $("#navBarBrandImage")
     var navBarToggler=$("#navBarToggler")
     var navBarTogglerIcon=$("#navBarTogglerIcon")
     
-
-    $( ".right-img" ).click(function(){
-        var right=$( ".right-img" )
-        var left=$(".left-img")
-        right.attr('class', 'temporal')
-        left.attr('class', 'right-img')
-        $(".temporal").attr('class','left-img')
-        console.log("si")
-    })
-
-    var sourceSwap = function () {
-        var $this = $(this);
-        var newSource = $this.data('alt-src');
-        $this.data('alt-src', $this.attr('src'));
-        $this.attr('src', newSource);
-    }
-    $(function () {
-        navBarBrandImage.hover(sourceSwap, sourceSwap);
-    });
     navBarToggler.click(function () {
         var newSource = navBarTogglerIcon.data('alt-src');
         navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
