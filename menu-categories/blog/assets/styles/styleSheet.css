@@ -40,29 +40,88 @@ body p {
 }
 
 .home {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 81, 121, 1) 31%, rgba(0, 212, 255, 1) 100%);
+    background-image: url("../images/background/blog\ bg.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.home .landing{
+    min-height: 80vw;
+}
+.home .landing .title {
+    padding-top: 25vh;
+    color: var(--unnamed-color-0b131e);
+    text-align: left;
+    font: normal normal bold 68px Roboto;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
 }
 
-
-/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-
-.footer h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: end;
-    color: white;
-    padding-bottom: 1em;
+.rightPadding {
+    padding-right: 15%;
 }
 
-.footer h2 {
-    font-size: 18px;
-    font-weight: lighter;
-    text-align: end;
-    color: white;
-    padding-top: 0;
-    padding-bottom: 1.5em;
+.leftPadding {
+    padding-left: 15%;
 }
+
+.nonLanding {
+    background-image: url("../images/background/footer\ white.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.black {
+    color: black!important;
+}
+.post{
+    min-height: 70vh;
+}
+.post-line{
+    border-bottom: #707070 1px solid;
+    opacity: 0.4;
+    filter: blur(2px);
+    width: 80vw;
+    margin-left: 10%;
+}
+.postContainer .post .date {
+    text-align: left;
+    font: normal normal 600 18px/30px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+
+.postContainer .post .title {
+    max-width: 27ch;
+    text-align: left;
+    font: normal normal 600 22px/30px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+}
+
+.postContainer .post .description {
+    max-width: 37ch;
+    text-align: left;
+    font: normal normal 600 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 0.8;
+}
+
+.postContainer .post .linkToPost {
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+    cursor:pointer;
+}
+
+/*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
 ul.social {
     width: 100%;
@@ -84,7 +143,7 @@ ul.social>li>a {
     border: 1px solid;
     border-radius: 36px;
     background-color: rgba(0, 0, 0, 0);
-    color: #fff;
+    color: black;
     margin: 0 3px 3px 0;
 }
 
@@ -93,35 +152,6 @@ ul.social>li>a:hover {
     opacity: 0.5;
 }
 
-
-/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
-
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {}
-
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {}
-
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 1050px) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {}
+.footer{
+    min-height:180vh ;
+}
