@@ -40,13 +40,15 @@ body p {
 }
 
 .home {
-    background-image: url("../images/background/blog\ bg.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    
     background-color: white;
 }
 .home .landing{
-    min-height: 80vw;
+    min-height: 100vh;
+    background-image: url("../images/background/blog\ bg.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 .home .landing .title {
     padding-top: 25vh;
@@ -75,6 +77,10 @@ body p {
 
 .black {
     color: black!important;
+}
+
+.postContainer{
+    padding-top: 10vh;
 }
 .post{
     min-height: 70vh;
@@ -153,5 +159,5 @@ ul.social>li>a:hover {
 }
 
 .footer{
-    min-height:180vh ;
+    min-height:150vh ;
 }
