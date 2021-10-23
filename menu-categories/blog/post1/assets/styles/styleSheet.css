@@ -143,29 +143,113 @@ max-width: 50ch;
     display: block;
 }
 
-.postContainer  .expensesList{
-    list-style-type: decimal;
+.postContainer  .List{
     list-style-position: outside;
-    padding:0
+    padding:0;
+    margin-top:30px
 }
 
-.postContainer .expensesItem{
+
+.postContainer  .expensesList{
+    list-style-type: decimal;
+}
+
+.postContainer .expensesList .expensesItem{
+    padding-left: 1ch;
     font: normal normal normal 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;
     max-width:58ch;
+    margin-bottom: 30px;
 }
 
-.postContainer .expensesItem::marker{
+.postContainer .expensesList .expensesItem::marker{
     text-align: left;
     font: normal normal 600 16px/32px Inter;
     letter-spacing: 0px;
     color: #00B0CE;
     opacity: 1;
 }
-    
-    
+
+.postContainer  .offersList{
+    list-style-type: disc;
+}
+
+.postContainer .offersList .offersItem{
+    text-align: left;
+    font: normal normal normal 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    margin-bottom: 30px;
+
+}
+.postContainer  .offersList .item1{
+    max-width: 72ch;
+}
+.postContainer  .offersList .item4{
+    max-width: 68ch;
+}
+.postContainer  .offersList .item5{
+    max-width: 67ch;
+}
+.postContainer  .offersList .item6{
+    max-width: 69ch;
+}
+
+.postContainer .offersList .offersItem::marker{
+    text-align: left;
+    font: normal normal 600 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+.postContainer .newsLetter{
+    width: 100%;
+    height: calc( 100vw * 0.308 );
+    background-size: cover;
+    background-image: url("../images/components/newsletter.png");
+}
+.newsLetter .title{
+    text-align: left;
+    font: normal normal 600 22px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+.newsLetter .subtitle{
+    padding: 2em 0;
+    text-align: left;
+    font: normal normal 600 12px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 0.7;
+}
+
+.newsLetter .form-floating-container {
+    max-width:33% ;
+    min-width: 6ch;
+}
+.newsLetter .form-floating>label{
+    font: normal normal normal 16px/28px Inter;
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+}
+.newsLetter .form-floating .form-control {
+    background-color: transparent;
+    border: 0px transparent;
+    border-bottom: black 1px solid;
+    border-radius: 0;
+    color: black;
+}
+
+.newsLetter .form-floating>label {
+    color: black;
+    padding: 1rem 0rem;
+    font-size: 17px
+}
 
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
