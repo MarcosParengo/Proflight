@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+}
+
+body h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+body A {
+    color: white;
+    text-decoration: none;
+}
+
+body p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
+
+.fullPage {
+    height: 100vh
+}
+
+.home {
+    background-color: white;
+}
+
+.home .landing {
+    min-height: 100vh;
+    background-image: url("../images/background/landingBG.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.home .halfWindow {
+    min-height: 50vh;
+}
+
+.home .landing .title {
+    padding-top: 25vh;
+    text-align: left;
+    font: normal normal bold 68px Roboto;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+}
+
+.home .landing .description {
+    padding-top: 30vh;
+    font: normal normal normal 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    max-width: 40ch;
+}
+.home .landing .description .emphasis {
+    font: normal normal bold 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #333333;}
+
+.rightPadding {
+    padding-right: 15%;
+}
+
+.leftMargin {
+    margin-left: 15%!important;
+}
+
+.leftPadding {
+    padding-left: 15%;
+}
+
+.nonLanding {
+    background-image: url("../images/background/footer\ white.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.black {
+    color: black!important;
+}
+
+.postContainer {
+    padding-top: 10vh;
+}
+
+.postContainer .date {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font: normal normal 600 18px/30px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+
+.postContainer .title {
+    text-align: left;
+    font: normal normal 600 22px/30px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+}
+
+.postContainer .section {
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    max-width: 75ch;
+    margin: 62px 0px;
+}
+
+.postContainer .section .subtitle {
+    text-align: left;
+    font: normal normal 600 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    padding-bottom: 2em;
+}
+
+.postContainer .section .content {
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+}
+
+.postContainer .section img {
+    margin-top: 10%;
+    width: 100%;
+    display: block;
+}
+
+.postContainer .List {
+    list-style-position: outside;
+    padding: 0;
+    margin-top: 30px
+}
+
+.postContainer .decimalList {
+    list-style-type: decimal-leading-zero;
+}
+
+.postContainer .decimalList .decimalItem {
+    padding-left: 1ch;
+    font: normal normal normal 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    max-width: 78ch;
+    margin-bottom: 30px;
+}
+.postContainer .decimalList .decimalItem .itemTitle{
+    text-align: left;
+    font: normal normal 700 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+}
+.postContainer .decimalList .decimalItem .content{
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+}
+.postContainer .decimalList .decimalItem::marker {
+    font: normal normal bold 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+
+.postContainer .offset {
+    font: normal normal normal 16px/32px Inter;
+    margin-left: calc( 15% - 3ch)
+}
+
+.postContainer .offset .title {
+    text-align: left;
+    font: normal normal 600 22px/38px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    max-width: 50ch;
+}
+
+.postContainer .offersList {
+    list-style-image: url("../images/components/itemdot.png");
+}
+
+.postContainer .offersList .offersItem {
+    text-align: left;
+    font: normal normal normal 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+
+.postContainer .offersList .offersItem::marker {
+    text-align: left;
+    font: normal normal 600 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+
+.postContainer .newsLetter {
+    width: 100%;
+    height: calc( 100vw * 0.308);
+    background-size: cover;
+    background-image: url("../images/components/newsletter.png");
+}
+
+.newsLetter .title {
+    text-align: left;
+    font: normal normal 600 22px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+
+.newsLetter .subtitle {
+    padding: 2em 0;
+    text-align: left;
+    font: normal normal 600 12px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 0.7;
+}
+
+.newsLetter .form-floating>label {
+    font: normal normal normal 16px/28px Inter;
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+}
+
+.newsLetter .form-floating .form-control {
+    margin-bottom: 3em;
+    background-color: transparent;
+    border: 0px transparent;
+    border-bottom: black 1px solid;
+    border-radius: 0;
+    color: black;
+}
+
+.newsLetter .form-floating>label {
+    color: black;
+    padding: 1rem 0rem;
+    font-size: 17px
+}
+
+.newsLetter .btn-primary {
+    padding: 14px 57px;
+}
+
+.newsLetter .privacy {
+    font: normal normal 600 12px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 0.7;
+}
+
+.newsLetter .privacy .emphasis {
+    color: #00B0CE;
+}
+
+.lastList {
+    font: normal normal normal 16px/32px Inter;
+    max-width: 70ch;
+}
+.lastMessage{
+    text-align: left;
+    font: normal normal bold 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    max-width: 70ch;
+    padding-bottom: 3em;
+}
+.lastMessageDescription{
+    font: normal normal 700 20px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+    max-width: 60ch;
+}
+.lastMessageDescriptionEmphasis{
+    font: normal normal bold 20px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+    max-width: 60ch;
+
+}
+.postContainer .postFooter{
+    margin:20vh 0
+}
+.postContainer .postFooter .scrollToStart{
+    font: normal normal 300 16px/110px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 0.8;
+}
+.postContainer .postFooter .scrollToStart:hover{
+    color:#00B0CE
+}
+.postContainer .postFooter .share{
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+.postContainer .postFooter .share .text{
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+.postContainer .postFooter .share .social {
+    text-align: start;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+
+}
+
+.postContainer .postFooter .share .social>li {
+    display: inline-block;
+}
+
+.postContainer .postFooter .share .social>li>a {
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #00B0CE;
+    margin: 0 3px 3px 0;
+    font-size: 20px;
+}
+
+.postContainer .postFooter .share .social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.postContainer .otherPosts {
+    font: normal normal normal 16px/32px Inter;
+    margin-left: calc( 15% - 20px)
+}
+.postContainer .otherPosts .title{
+    text-align: left;
+    font: normal normal medium 22px/110px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    margin-bottom:2em
+}
+
+.postContainer .postCarouselContainer .sliderButton{
+    margin-bottom:100px;
+    background:none;
+    padding:0;
+    border:none;
+    filter:invert(1);
+}
+.postContainer .postCarouselContainer .description{
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 0.8;
+}
+/*-------------------------------------------------- Seccion footer--------------------------------------------------*/
+
+ul.social {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 10%;
+}
+
+ul.social>li {
+    display: inline-block;
+}
+
+ul.social>li>a {
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    margin: 0 3px 3px 0;
+}
+
+ul.social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.footer {
+    min-height: 150vh;
+}

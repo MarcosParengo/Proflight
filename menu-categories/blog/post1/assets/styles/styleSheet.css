@@ -33,6 +33,7 @@ body p {
     font-size: 18px;
 }
 
+
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .fullPage {
@@ -40,19 +41,21 @@ body p {
 }
 
 .home {
-    
     background-color: white;
 }
-.home .landing{
+
+.home .landing {
     min-height: 100vh;
     background-image: url("../images/background/landingBG.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
 .home .halfWindow {
     min-height: 50vh;
 }
+
 .home .landing .title {
     padding-top: 25vh;
     text-align: left;
@@ -64,11 +67,11 @@ body p {
 
 .home .landing .description {
     text-align: left;
-font: normal normal normal 16px/32px Inter;
-letter-spacing: 0px;
-color: #333333;
-opacity: 1;
-max-width: 50ch;
+    font: normal normal normal 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    max-width: 50ch;
 }
 
 .rightPadding {
@@ -78,6 +81,7 @@ max-width: 50ch;
 .leftMargin {
     margin-left: 15%!important;
 }
+
 .leftPadding {
     padding-left: 15%;
 }
@@ -93,11 +97,11 @@ max-width: 50ch;
     color: black!important;
 }
 
-.postContainer{
+.postContainer {
     padding-top: 10vh;
 }
 
-.postContainer  .date {
+.postContainer .date {
     margin-top: 2em;
     margin-bottom: 2em;
     font: normal normal 600 18px/30px Inter;
@@ -106,7 +110,7 @@ max-width: 50ch;
     opacity: 1;
 }
 
-.postContainer  .title {
+.postContainer .title {
     text-align: left;
     font: normal normal 600 22px/30px Inter;
     letter-spacing: 0px;
@@ -114,7 +118,8 @@ max-width: 50ch;
     opacity: 1;
     max-width: 25ch;
 }
-.postContainer .section{
+
+.postContainer .section {
     text-align: left;
     font: normal normal 300 16px/32px Inter;
     letter-spacing: 0px;
@@ -122,7 +127,8 @@ max-width: 50ch;
     max-width: 78ch;
     margin: 62px 0px;
 }
-.postContainer  .section .subtitle {
+
+.postContainer .section .subtitle {
     text-align: left;
     font: normal normal 600 16px/32px Inter;
     letter-spacing: 0px;
@@ -130,41 +136,40 @@ max-width: 50ch;
     padding-bottom: 2em;
 }
 
-.postContainer  .section .content {
+.postContainer .section .content {
     text-align: left;
     font: normal normal 300 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
 }
 
-.postContainer  .section img {
+.postContainer .section img {
     margin-top: 10%;
     width: 100%;
     display: block;
 }
 
-.postContainer  .List{
+.postContainer .List {
     list-style-position: outside;
-    padding:0;
-    margin-top:30px
+    padding: 0;
+    margin-top: 30px
 }
 
-
-.postContainer  .expensesList{
+.postContainer .expensesList {
     list-style-type: decimal;
 }
 
-.postContainer .expensesList .expensesItem{
+.postContainer .expensesList .expensesItem {
     padding-left: 1ch;
     font: normal normal normal 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;
-    max-width:58ch;
+    max-width: 58ch;
     margin-bottom: 30px;
 }
 
-.postContainer .expensesList .expensesItem::marker{
+.postContainer .expensesList .expensesItem::marker {
     text-align: left;
     font: normal normal 600 16px/32px Inter;
     letter-spacing: 0px;
@@ -172,53 +177,73 @@ max-width: 50ch;
     opacity: 1;
 }
 
-.postContainer  .offersList{
-    list-style-type: disc;
+.postContainer .offers {
+    font: normal normal normal 16px/32px Inter;
+    margin-left: calc( 15% - 20px)
 }
 
-.postContainer .offersList .offersItem{
+.postContainer .offers .title {
+    text-align: left;
+    font: normal normal 600 22px/38px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    max-width: 50ch;
+}
+
+.postContainer .offersList {
+    list-style-image: url("../images/components/itemdot.png");
+}
+
+.postContainer .offersList .offersItem {
     text-align: left;
     font: normal normal normal 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;
     margin-bottom: 30px;
-
 }
-.postContainer  .offersList .item1{
+
+.postContainer .offersList .item1 {
     max-width: 72ch;
 }
-.postContainer  .offersList .item4{
+
+.postContainer .offersList .item4 {
     max-width: 68ch;
 }
-.postContainer  .offersList .item5{
+
+.postContainer .offersList .item5 {
     max-width: 67ch;
 }
-.postContainer  .offersList .item6{
+
+.postContainer .offersList .item6 {
     max-width: 69ch;
 }
 
-.postContainer .offersList .offersItem::marker{
+.postContainer .offersList .offersItem::marker {
     text-align: left;
     font: normal normal 600 16px/32px Inter;
     letter-spacing: 0px;
     color: #00B0CE;
     opacity: 1;
 }
-.postContainer .newsLetter{
+
+.postContainer .newsLetter {
     width: 100%;
-    height: calc( 100vw * 0.308 );
+    height: calc( 100vw * 0.308);
     background-size: cover;
     background-image: url("../images/components/newsletter.png");
 }
-.newsLetter .title{
+
+.newsLetter .title {
     text-align: left;
     font: normal normal 600 22px Inter;
     letter-spacing: 0px;
     color: #00B0CE;
     opacity: 1;
 }
-.newsLetter .subtitle{
+
+.newsLetter .subtitle {
     padding: 2em 0;
     text-align: left;
     font: normal normal 600 12px Inter;
@@ -227,17 +252,15 @@ max-width: 50ch;
     opacity: 0.7;
 }
 
-.newsLetter .form-floating-container {
-    max-width:33% ;
-    min-width: 6ch;
-}
-.newsLetter .form-floating>label{
+.newsLetter .form-floating>label {
     font: normal normal normal 16px/28px Inter;
     letter-spacing: 0px;
     color: black;
     opacity: 1;
 }
+
 .newsLetter .form-floating .form-control {
+    margin-bottom: 3em;
     background-color: transparent;
     border: 0px transparent;
     border-bottom: black 1px solid;
@@ -251,7 +274,131 @@ max-width: 50ch;
     font-size: 17px
 }
 
+.newsLetter .btn-primary {
+    padding: 14px 57px;
+}
 
+.newsLetter .privacy {
+    font: normal normal 600 12px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 0.7;
+}
+
+.newsLetter .privacy .emphasis {
+    color: #00B0CE;
+}
+
+.lastList {
+    font: normal normal normal 16px/32px Inter;
+    max-width: 70ch;
+}
+.lastMessage{
+    text-align: left;
+    font: normal normal bold 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    max-width: 70ch;
+    padding-bottom: 3em;
+}
+.lastMessageDescription{
+    font: normal normal 700 20px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+    max-width: 60ch;
+}
+.lastMessageDescriptionEmphasis{
+    font: normal normal bold 20px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+    max-width: 60ch;
+
+}
+.postContainer .postFooter{
+    margin:20vh 0
+}
+.postContainer .postFooter .scrollToStart{
+    font: normal normal 300 16px/110px Inter;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 0.8;
+}
+.postContainer .postFooter .scrollToStart:hover{
+    color:#00B0CE
+}
+.postContainer .postFooter .share{
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+.postContainer .postFooter .share .text{
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    opacity: 1;
+}
+.postContainer .postFooter .share .social {
+    text-align: start;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+
+}
+
+.postContainer .postFooter .share .social>li {
+    display: inline-block;
+}
+
+.postContainer .postFooter .share .social>li>a {
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 36px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #00B0CE;
+    margin: 0 3px 3px 0;
+    font-size: 20px;
+}
+
+.postContainer .postFooter .share .social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.postContainer .otherPosts {
+    font: normal normal normal 16px/32px Inter;
+    margin-left: calc( 15% - 20px)
+}
+.postContainer .otherPosts .title{
+    text-align: left;
+    font: normal normal medium 22px/110px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 1;
+    margin-bottom:2em
+}
+
+.postContainer .postCarouselContainer .sliderButton{
+    margin-bottom:100px;
+    background:none;
+    padding:0;
+    border:none;
+    filter:invert(1);
+}
+.postContainer .postCarouselContainer .description{
+    text-align: left;
+    font: normal normal 300 16px/32px Inter;
+    letter-spacing: 0px;
+    color: #0B131E;
+    opacity: 0.8;
+}
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
 ul.social {
@@ -283,6 +430,6 @@ ul.social>li>a:hover {
     opacity: 0.5;
 }
 
-.footer{
-    min-height:150vh ;
+.footer {
+    min-height: 150vh;
 }
