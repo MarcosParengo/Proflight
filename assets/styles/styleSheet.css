@@ -143,18 +143,37 @@ body p {
 
 .transition {
     height: 10vh;
-    background: rgb(9, 21, 38);
-    background: linear-gradient(180deg, rgba(9, 21, 38, 1) 0%, rgba(0, 13, 35, 1) 49%);
+    background-color:rgba(0, 13, 35, 1)
+}
+fade {
+    position: absolute;
+    bottom: 0px;
+
+    display: block;
+  
+    width: 100%;
+    height: 50px;
+  
+    background-image: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0), 
+        rgba(0, 13, 35, 0.9)
+    100%);
 }
 
 /*-------------------------------------------------- Seccion land -------------------------------------------------*/
 
 .land {
-    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/backgroundMain.png);
-    background-repeat: no-repeat;
     height: 100vh;
 }
+.land .landingBG{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    padding: 0;
+    z-index: -1;
 
+}
 .land img {
     display: block;
     width: 100%;
