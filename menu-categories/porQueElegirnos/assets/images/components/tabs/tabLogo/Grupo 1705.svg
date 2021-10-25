@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="19 0 38.67 39.48">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        opacity: 1;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+        font-family: Inter-ExtraLight, Inter;
+        font-weight: 200;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_1705" data-name="Grupo 1705" transform="translate(0.885)">
+    <g id="Grupo_1628" data-name="Grupo 1628" class="cls-1" transform="translate(18.115)">
+      <path id="Trazado_3105" data-name="Trazado 3105" class="cls-2" d="M49.736,67.91H16.6a2.94,2.94,0,0,1-2.761-3.085V42.615h1.1v22.21A1.762,1.762,0,0,0,16.6,66.677H49.736a1.762,1.762,0,0,0,1.657-1.851V37.68a1.762,1.762,0,0,0-1.657-1.851H16.6a1.762,1.762,0,0,0-1.657,1.851v2.468h-1.1V37.68A2.94,2.94,0,0,1,16.6,34.6H49.736A2.94,2.94,0,0,1,52.5,37.68V64.826A2.94,2.94,0,0,1,49.736,67.91Z" transform="translate(-13.838 -34.595)"/>
+      <path id="Trazado_3106" data-name="Trazado 3106" class="cls-2" d="M162.418,439.594H145.849a.587.587,0,0,1-.552-.617c0-3.085,2.91-3.085,3.866-3.085H159.1c.956,0,3.866,0,3.866,3.085A.587.587,0,0,1,162.418,439.594Zm-15.949-1.234H161.8c-.193-.759-.859-1.234-2.695-1.234h-9.941c-1.835,0-2.5.474-2.695,1.234Z" transform="translate(-134.804 -400.109)"/>
+      <path id="Trazado_3107" data-name="Trazado 3107" class="cls-2" d="M203.119,399.314h-8.836a.587.587,0,0,1-.552-.617V395a.587.587,0,0,1,.552-.617h8.836a.587.587,0,0,1,.552.617v3.7A.587.587,0,0,1,203.119,399.314Zm-8.284-1.234h7.732v-2.468h-7.732Z" transform="translate(-179.371 -362.296)"/>
+      <path id="Trazado_3108" data-name="Trazado 3108" class="cls-2" d="M20.757,339.027H58.312v1.234H20.757Z" transform="translate(-20.205 -311.881)"/>
+      <path id="Trazado_3109" data-name="Trazado 3109" class="cls-2" d="M228.324,366.7h4.418v1.234h-4.418Z" transform="translate(-211.203 -337.089)"/>
+    </g>
+  </g>
+</svg>

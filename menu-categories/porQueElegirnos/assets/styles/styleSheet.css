@@ -43,42 +43,62 @@ body p {
 }
 
 .fullPage {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     border: 3px;
 }
-
+.sameWidth{
+    width: 73.75%;
+}
 .title {
-    font-size: 60px;
-    color: white;
-    text-align: start;
+   text-align: start;
+font: normal normal bold 68px Roboto;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+margin-bottom: 39px;
 }
 
 .paragraph {
-    font-size: 15px;
-    line-height: 2rem;
+    text-align: left;
+font: normal normal 300 16px/32px Inter;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+    max-width: 63ch;
+}
+.como{
+    font: normal normal 300 16px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .button {
+    width: 24px;
+    height: 24px; 
     display: inline-block;
-    font-size: 13px;
+    font-size: 10px;
     background-color: white;
-    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     border-radius: 25px;
-    color: purple;
+    color: grey;
     margin-right: 0.5rem;
+    transition: all 0.5s;
 }
 
 .button:hover {
-    color: rgb(138, 177, 230);
+    background-color: #00AFCD;
     text-decoration: none;
-    opacity: 0.5;
 }
 
-.tab-tittle {
-    font-size: 10px;
-    color: antiquewhite;
+.tab-title {
+    padding-top: 1em;
+    text-align: center;
+    font: normal normal 300 12px/16px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
     text-transform: uppercase;
+    opacity: 1;
 }
 
 
@@ -96,15 +116,6 @@ body p {
         padding: 40% 0;
         width: auto;
     }
-    .title {
-        font-size: 30px;
-        color: white;
-        text-align: start;
-    }
-    .paragraph {
-        font-size: 15px;
-        line-height: 2rem;
-    }
 }
 
 
@@ -115,7 +126,7 @@ body p {
         background-size: 100% 100%;
     }
     .fullPage {
-        height: auto;
+        min-height: auto;
     }
 }
 
@@ -127,7 +138,7 @@ body p {
         background-size: 100% 100%;
     }
     .fullPage {
-        height: auto;
+        min-height: auto;
     }
 }
 
@@ -142,16 +153,7 @@ body p {
         height: 100vh;
     }
     .fullPage {
-        height: 70vh;
-    }
-    .title {
-        font-size: 60px;
-        color: white;
-        text-align: start;
-    }
-    .paragraph {
-        font-size: 15px;
-        line-height: 2rem;
+        min-height: 70vh;
     }
 }
 
@@ -163,16 +165,7 @@ body p {
         background-size: 100% 100%;
     }
     .fullPage {
-        height: 100vh;
-    }
-    .title {
-        font-size: 60px;
-        color: white;
-        text-align: start;
-    }
-    .paragraph {
-        font-size: 15px;
-        line-height: 2rem;
+        min-height: 100vh;
     }
 }
 
@@ -184,25 +177,12 @@ body p {
         background-size: 100% 100%;
     }
     .fullPage {
-        height: 100vh;
-    }
-    .title {
-        font-size: 60px;
-        color: white;
-        text-align: start;
-    }
-    .paragraph {
-        font-size: 15px;
-        line-height: 2rem;
+        min-height: 100vh;
     }
 }
 
 
 /*---------------------------------------------------------Seccion Tabs----------------------------------------------------------------*/
-
-.tabs .parent {
-    width: 80%
-}
 
 .tabs h1 {
     text-align: start;
@@ -256,27 +236,26 @@ body p {
     border: none !important;
 }
 
-.tabs  .nav-tabs .nav-link {
+.tabs  .nav-tabs  .nav-link {
     border: none !important;
     border: 0px solid transparent;
-}
-
-.tabs  .nav-link img {
-    opacity: 0.3 !important;
+    opacity: 0.4 !important;
     width: auto
 }
 
-.tabs  .nav-link:hover img {
+.tabs .nav-link img{
+    height: 50px;
+    display: block;
+}
+
+.tabs  .nav-link:hover{
     opacity: 0.7 !important;
 }
 
 .tabs  .nav-link.active {
     background-color: rgba(200, 200, 200, 0) !important;
     border: none !important;
-}
-
-.tabs  .nav-link.active img {
-    opacity: 1 !important;
+    opacity: 1!important;
 }
 
 .tab-pane {
@@ -288,25 +267,31 @@ body p {
 }
 
 .titulo .texto {
-    text-align: start;
-    font-size: 30px;
-    padding-left: 0;
+    font: normal normal bold 31px/32px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .titulo .number {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 15px;
-    color: rgb(53, 187, 215);
+    font: normal normal 300 12px/48px Inter;
+    letter-spacing: 0px;
+    color: #00B0CE;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
-.tab-content .lead {
+.tab-content .content {
     line-height: 2rem;
     border-top: 1px solid;
-    font-size: 15px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 1);
+    font: normal normal 300 14px/30px Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    max-width: 49ch;
 }
 
 .tab-content img {
@@ -314,205 +299,3 @@ body p {
     width: 100%;
 }
 
-
-/*-------------------------------------------------- Media Query seccion tabs --------------------------------------------------TODO*/
-
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .tabs  .nav-link {
-        height: auto;
-    }
-    .tabs {
-        height: auto;
-    }
-    .tabs .parent {
-        width: 95%
-    }
-    .nav-link img {
-        height: 30px
-    }
-}
-
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .tabs  .nav-link {
-        height: auto;
-    }
-    .tabs {
-        height: auto;
-    }
-    .tabs .parent {
-        width: 95%
-    }
-    .nav-link img {
-        height: 40px
-    }
-}
-
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .tabs  .nav-link {
-        height: auto;
-    }
-    .tabs {
-        height: auto;
-    }
-    .tabs .parent {
-        width: 95%
-    }
-    .nav-link img {
-        height: auto
-    }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    .tabs .nav-link {
-        height: auto;
-    }
-    .tabs {
-        height: auto;
-    }
-    .tabs .parent {
-        width: 70%
-    }
-    .tabs .nav-link img {
-        height: auto
-    }
-}
-
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 992px) {
-    .tabs .nav-link {
-        padding: 1%;
-    }
-    .tabs {
-        height: 100vh;
-    }
-    .tabs .parent {
-        width: 80%
-    }
-    .tabs .nav-link img {
-        height: auto
-    }
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-    .tabs .nav-link {
-        padding: 1%;
-    }
-    .tabs {
-        height: 100vh;
-    }
-    .tabs .parent {
-        width: 80%
-    }
-    .tabs .nav-link img {
-        height: auto
-    }
-}
-
-
-/*-------------------------------------------------- Seccion footer--------------------------------------------------TODO*/
-
-.footer h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: end;
-    color: white;
-    padding-bottom: 1em;
-}
-
-.footer h2 {
-    font-size: 18px;
-    font-weight: lighter;
-    text-align: end;
-    color: white;
-    padding-top: 0;
-    padding-bottom: 1.5em;
-}
-
-ul.social {
-    width: 100%;
-    text-align: start;
-    padding-bottom: 10%;
-}
-
-ul.social>li {
-    display: inline-block;
-}
-
-ul.social>li>a {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 36px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    margin: 0 3px 3px 0;
-}
-
-ul.social>li>a:hover {
-    text-decoration: none;
-    opacity: 0.5;
-}
-
-
-/*-------------------------------------------------- Media Query footer--------------------------------------------------TODO*/
-
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .footer .mail {
-        font-size: 20px;
-        padding-bottom: 1em;
-    }
-}
-
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .footer .mail {
-        font-size: 25px;
-        padding-bottom: 1em;
-    }
-}
-
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Large devices (laptops/desktops, 1050px and up) */
-
-@media only screen and (min-width: 1050px) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {}

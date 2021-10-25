@@ -162,25 +162,29 @@ body p {
 }
 
 .postContainer .decimalList .decimalItem {
+    margin-top: 2em;
     padding-left: 1ch;
     font: normal normal normal 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;
     max-width: 78ch;
-    margin-bottom: 30px;
+    margin-bottom: 4em;
 }
 .postContainer .decimalList .decimalItem .itemTitle{
     text-align: left;
     font: normal normal 700 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
+    margin-bottom: 2.5em;
 }
 .postContainer .decimalList .decimalItem .content{
     text-align: left;
     font: normal normal 300 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
+    margin-bottom: 2.5em;
+
 }
 .postContainer .decimalList .decimalItem::marker {
     font: normal normal bold 16px/32px Inter;
@@ -203,11 +207,14 @@ body p {
     max-width: 50ch;
 }
 
-.postContainer .offersList {
+.postContainer .discList {
+    font: normal normal normal 16px/32px Inter;
     list-style-image: url("../images/components/itemdot.png");
+    margin-bottom: 4em;
 }
 
-.postContainer .offersList .offersItem {
+.postContainer .discList .discItem {
+    padding-left: 1ch;
     text-align: left;
     font: normal normal normal 16px/32px Inter;
     letter-spacing: 0px;
@@ -217,7 +224,7 @@ body p {
 }
 
 
-.postContainer .offersList .offersItem::marker {
+.postContainer .discList .discItem::marker {
     text-align: left;
     font: normal normal 600 16px/32px Inter;
     letter-spacing: 0px;
@@ -286,17 +293,14 @@ body p {
     color: #00B0CE;
 }
 
-.lastList {
-    font: normal normal normal 16px/32px Inter;
-    max-width: 70ch;
-}
+
 .lastMessage{
     text-align: left;
     font: normal normal bold 16px/32px Inter;
     letter-spacing: 0px;
     color: #0B131E;
     opacity: 1;
-    max-width: 70ch;
+    max-width: 75ch;
     padding-bottom: 3em;
 }
 .lastMessageDescription{

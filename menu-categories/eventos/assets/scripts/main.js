@@ -101,7 +101,7 @@ function fillContainerEventos(obj) {
                         <h5 class="card-info alternate" style="color: gray;text-transform:capitalize">${obj.ciudad}, ${obj.origen}</h5>
                     </div>
                     <div class="card-footer">
-                        <a role="button" class="btn btn-primary px-5 py-3" href="../eventosInscripcion/index.html?evento=${i}">Inscribirse</a>
+                        <a role="button" class="btn btn-primary px-5 py-3" href="../eventosInscripcion/?evento=${i}">Inscribirse</a>
                     </div>
                 </div>
             </div>

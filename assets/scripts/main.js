@@ -82,7 +82,7 @@ function fillContainerTestimonios(obj) {
                 </div>
                 <div class="py-0 my-0 card-footer">
                 <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
-                <a class="hidden my-0 py-0 " href="menu-categories/testimonios/index.html">continuar leyendo</a>
+                <a class="hidden my-0 py-0 " href="menu-categories/testimonios/">continuar leyendo</a>
                 </div>
             </div>
         </div>
