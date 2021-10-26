@@ -9,23 +9,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <!-- <link rel="stylesheet" href="./assets/styles/grid.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
 
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+        AOS.init();
+    </script>
 </head>
 
 <body style="background-color:#002e5d">
+    <a target="blank"
+        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
+        <div class="whatsappButtonContainer">
+            <div class="dialog">
+                <h1 class="text">¿Necesitas más información?</h1>
+            </div>
+            <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
+        </div>
+    </a>
     <nav class="navbar fixed-top navbar-dark">
         <div class="navBarContainer container-fluid" style="padding: 0;">
             <a class="navbar-brand" id="navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight\assets\images\logo\isologo.svg" alt="Proflight">
                 <span id="navBarBrandText" class="ps-1">Proflight</span>
             </a>
-            <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img id="navBarTogglerIcon" data-alt-src="assets\images\logo\Cross.png" src="assets\images\logo\Menu.png" >
-      </button>
+            <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img id="navBarTogglerIcon" data-alt-src="assets\images\logo\Cross.png"
+                    src="assets\images\logo\Menu.png">
+            </button>
             <div class="container-fluid">
                 <div class="row justify-content-end">
                     <div class="col-xxs col-6 col-sm-4  col-md-3 p-0">
@@ -72,30 +92,94 @@
         </div>
     </nav>
 
+    <div class="container-fluid px-0 home">
 
-
-    <div class="container-fluid home">
-        <div class="row fullPage d-flex align-items-center justify-content-center">
-            <h1>Cooming soon...</h1>
+        <div class="row fullPage w-100" style="position: absolute;">
+            <div class="row fullPage p-relative">
+                <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                    <h1 class="text">Galeria</h1>
+                </div>
+            </div>
         </div>
-        <section class="footer">
+        <div class="container-fluid content">
+            <div class="row">
+                <div data-aos="zoom-out-up"  class="img1">
+                    <img class="d-block w-100" src="assets/images/components/1@2x.png" alt="">
+                </div>
+                <div data-aos="fade-up-up" data-aos-offset="200" class="img2">
+                    <img class="d-block w-100" src="assets/images/components/2@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-left" class="img3">
+                    <img data-aos="zoom-out-up" class="d-block w-100" src="assets/images/components/3@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-right" data-aos-offset="200" class="img4">
+                    <img data-aos="zoom-out-up" class="d-block w-100" src="assets/images/components/4@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-left"  class="img5">
+                    <img data-aos="zoom-out-up" class="d-block w-100" src="assets/images/components/5@2x.png" alt="">
+                </div>
+                <div data-aos="fade-up-right"  data-aos-offset="200" class="img6">
+                    <img data-aos="zoom-out-up" class="d-block w-100" src="assets/images/components/6@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-left" class="img7">
+                    <img data-aos="zoom-out-up" class="d-block w-100" src="assets/images/components/7@2x.png" alt="">
+                </div>
+                <div data-aos="fade-up-right" data-aos-offset="400" class="img8">
+                    <img data-aos="zoom-out-up" class="d-block w-100" src="assets/images/components/8@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-left" class="img9">
+                    <img class="d-block w-100" src="assets/images/components/9@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-in-up" data-aos-offset="400" class="img10">
+                    <img class="d-block w-100" src="assets/images/components/10@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-up" class="img11">
+                    <img class="d-block w-100" src="assets/images/components/11@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-in-right" data-aos-offset="400" class="img12">
+                    <img class="d-block w-100" src="assets/images/components/12@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-up" class="img13">
+                    <img class="d-block w-100" src="assets/images/components/13@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-in-right" data-aos-offset="300" class="img14">
+                    <img class="d-block w-100" src="assets/images/components/14@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-out-down" class="img15">
+                    <img data-aos="zoom-out-left" class="d-block w-100" src="assets/images/components/15@2x.png" alt="">
+                </div>
+                <div data-aos="zoom-in-up" data-aos-offset="300" class="img16">
+                    <img class="d-block w-100" src="assets/images/components/16@2x.png" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="footer h-100vh d-flex align-items-end">
             <div class="container">
                 <div class="row">
-                    <!-- <h1>info@proflight.com.ar</h1>-->
+                    <h1 class="mail pb-0">info@proflight.com.ar</h1>
                     <h2>+54 9 11 6010-4446</h2>
                     <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
                     <ul class="social">
-                        
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia" title="">
+                        <li class="me-2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                title="">
+                                <span class="icon fa fa-envelope"></span>
+                            </a>
+                        </li>
+                        <li class="me-2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                title="">
                                 <span class="icon fas fa-phone-alt"></span>
                             </a>
                         </li>
-                        
+                        <li class="me-2">
                             <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
                                 <span class="icon fa fa-facebook"></span>
                             </a>
                         </li>
-                        
+                        <li>
                             <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
                                 <span class="icon fab fa-instagram"></span>
                             </a>
@@ -105,11 +189,23 @@
             </div>
         </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
