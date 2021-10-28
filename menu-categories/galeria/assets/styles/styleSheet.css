@@ -44,95 +44,112 @@ body p {
 .home {
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 81, 121, 1) 31%, rgba(0, 212, 255, 1) 100%);
-}
-.home .content{
-    background-image: url(../images/background/bg.png);
+    background-image: url(../images/background/Fondo\ 2.png);
     background-size: 100vw auto;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
-.home .footer{
-    background-image: url(../images/background/footer.png);
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
+
+.contentBG{
+    width: 100%;
+    display:block;
+    z-index: 1;
+    right:0;
+    transition:opacity 0.3s
 }
 .img1{
     margin-top:12.5vh;
     width: 24.6%;
     margin-left: 19.7%;
+    z-index: 100;
 }
 .img2{
     margin-top:22.3vh;
     width: 37.65%;
     margin-left: 5.6%;
+    z-index: 100;
 }
 .img3{
     margin-top:9.2vh;
     width: 22.57%;
     margin-left: 22.57%;
+    z-index: 100;
 }
 .img4{
     margin-top:22.3vh;
     width: 30%;
     margin-left: 5.15%;
+    z-index: 100;
 }
 .img5{
     margin-top:10.78vh;
     width: 22.4%;
     margin-left: 22.65%;
+    z-index: 100;
 }
 .img6{
     margin-top:9.14vh;
     width: 32.34%;
     margin-left: 7%;
+    z-index: 100;
 }
 .img7{
     margin-top:24.5vh;
     width: 22.6%;
     margin-left: 22.6%;
+    z-index: 100;
 }
 .img8{
     margin-top:15.1vh;
     width: 36.5%;
     margin-left: 5%;
+    z-index: 100;
 }
 .img9{
     margin-top:24.5vh;
     width: 22.4%;
     margin-left: 23.125%;
+    z-index: 100;
 }
 .img10{
     margin-top:3.74vh;
     width: 36.17%;
     margin-left: 3%;
+    z-index: 100;
 }
 .img11{
     margin-top:25.75vh;
     width: 21.6%;
     margin-left: 24.2%;
+    z-index: 100;
 }
 .img12{
     margin-top:16.8vh;
     width: 35.15%;
     margin-left: 3%;
+    z-index: 100;
 }
 .img13{
     margin-top:23.12vh;
     margin-left: 23.2%;
     width: 22.1%;
+    z-index: 100;
 }
 .img14{
     margin-top:13.5vh;
     width: 37.42%;
     margin-left: 4.5%;
+    z-index: 100;
 }
 .img15{
     margin-top:27.2vh;
     margin-left: 23.3%;
     width: 23.3%;
+    z-index: 100;
 }
 .img16{
     margin-top:17.6vh;
     width: 37.42%;
     margin-left: 4.5%;
+    z-index: 100;
 }

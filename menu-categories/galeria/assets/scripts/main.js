@@ -1,11 +1,25 @@
 var obj = [];
 
 $(document).ready(function () {
-    var toggled=false;
-    var navbarSupportedContent= $("#navbarSupportedContent")
-    var navBarBrandImage= $("#navBarBrandImage")
-    var navBarToggler=$("#navBarToggler")
-    var navBarTogglerIcon=$("#navBarTogglerIcon")
+    var toggled = false;
+    var navbarSupportedContent = $("#navbarSupportedContent")
+    var navBarBrandImage = $("#navBarBrandImage")
+    var navBarToggler = $("#navBarToggler")
+    var navBarTogglerIcon = $("#navBarTogglerIcon")
+
+    var contentBG = $("#contentBG")
+    contentBG.css({ position: "fixed", top: "0" });
+    $(window).scroll(function () {
+        var contentHeight = $("#galeria").height();
+        if($(window).scrollTop()+$(window).height()<contentHeight){
+            contentBG.css({ opacity: 1 });
+            console.log(contentHeight,$(window).scrollTop()+$(window).height())
+            console.log("No paso footer")
+        }else{
+            contentBG.css({ opacity: 0 });
+            console.log("paso footer")
+        }
+    });
 
     var sourceSwap = function () {
         var $this = $(this);
@@ -17,7 +31,7 @@ $(document).ready(function () {
         navBarBrandImage.hover(sourceSwap, sourceSwap);
     });
     navBarToggler.click(function () {
-        var algo=navbarSupportedContent.is(":visible")
+        var algo = navbarSupportedContent.is(":visible")
         var newSource = navBarTogglerIcon.data('alt-src');
         navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
         navBarTogglerIcon.attr('src', newSource);
@@ -33,4 +47,4 @@ $(document).ready(function () {
             toggled = false;
         }
     })
-})   
+})
