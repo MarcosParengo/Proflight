@@ -153,9 +153,20 @@
 .navbar {
     padding-top: 0px;
 }
-
+#navBar{
+    transition: background-color 0.3s;
+}
+.navbar-height-without-header{
+    height: calc(100vh - 75px);
+}
+.social-mobile{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    opacity:1;
+    transition:bottom 0.3s, opacity 0.2s;
+}
 .navbar-nav {
-    height: 100vh;
     background-color: rgba(200, 200, 200, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -180,7 +191,11 @@
     outline: 0;
     transition: background-color 0.5s
 }
-
+.navbar-brand {
+    font: normal normal 300 18px Inter;
+    background-color: transparent;
+    border:none
+}
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
@@ -195,26 +210,29 @@
 .nav-link{
     font: normal normal normal 18px/25px Inter;
 }
+.navbar-collapse.collapsing .social-mobile{
+    bottom:100vh;
+    opacity: 0;
+}
+.navbar-collapse.show .social-mobile{
+    opacity: 1;
+    transition: opacity 0.4s;
+}
 /*--------------------------------------------------Media Query navBar--------------------------------------------------DONE*/
 
 @media only screen and (max-width: 392px) {
-    .navBarContainer {
-        background-color: rgba(200, 200, 200, 0.5);
-    }
     .col-xxs {
         width: 100% !important;
     }
     .navbar-brand {
         padding-left: 0.5em;
         margin-right: 0;
+        visibility:hidden;
     }
     .nav-item {
         padding-right: 5%;
         font-size: 20px;
         text-align: right;
-    }
-    .navbar-nav {
-        background-color: rgba(200, 200, 200, 0.0) !important;
     }
     .navbar-toggler {
         width: auto;
@@ -222,10 +240,11 @@
     }
 }
 
-@media only screen and (min-width: 392px) {
+@media only screen and (max-width: 576px) {
     .navbar-brand {
-        padding-left: 0.5em;
+        padding-left: 1em;
         margin-right: 0;
+        visibility:hidden;
     }
     .nav-item {
         padding-right: 5%;
@@ -233,7 +252,36 @@
         text-align: right;
     }
     .navbar-toggler {
-        width: 50%;
+        width: auto;
+        background-color: rgba(0, 0, 0, .0) !important;
+        backdrop-filter: unset!important;
+    }
+    .nav-link{
+        text-align: start;
+        border-bottom: 1px solid;
+        padding-left:0.5em!important;
+        font: normal normal 300 18px Inter;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .nav-item{
+        padding-left: 0.5em;
+        padding-right: 0em;
+    }
+    .navbar-nav{
+        background-color: transparent!important;
+        backdrop-filter: unset!important;
+    }
+    
+    .social-mobile ul.social>li>a {
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 36px;
+        font-size: 10px;
+        margin:0
     }
 }
 
@@ -251,6 +299,9 @@
     }
     .navbar-toggler {
         width: 33.33333%;
+    }
+    .navBarContainer {
+        background-color: rgba(201, 39, 39, 0.0);
     }
 }
 

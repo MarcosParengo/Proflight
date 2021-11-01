@@ -33,22 +33,29 @@
     </a>
 
     <nav class="navbar fixed-top navbar-dark">
-        <div class="navBarContainer container-fluid" style="padding: 0;">
-            <a class="navbar-brand" id="navbar-brand" href="#">
-                <img id="navBarBrandImage" src="/Proflight\assets\images\logo\isologo.svg" alt="Proflight">
-                <span id="navBarBrandText" class="ps-1">Proflight</span>
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
+            <a class="d-none d-sm-block navbar-brand" href="#">
+                <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
+
+            <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+            </button>
+
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <img id="navBarTogglerIcon" data-alt-src="assets\images\logo\Cross.png"
                     src="assets\images\logo\Menu.png">
             </button>
-            <div class="container-fluid">
-                <div class="row justify-content-end">
-                    <div class="col-xxs col-6 col-sm-4  col-md-3 p-0">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid">
+                    <div class="row justify-content-end">
+                        <div class="col-12 col-sm-4 col-md-3 p-0 navbar-height-without-header">
+                            <ul class="navbar-nav navbar-height-without-header me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link" href="/Proflight/">Home</a>
                                 </li>
@@ -83,10 +90,39 @@
                                     <a class="nav-link" href="../blog/">Blog</a>
                                 </li>
                             </ul>
+                            <div class="social-mobile d-block d-sm-none">
+                                <ul class="social p-0 m-0">
+                                    <li class="me-2">
+                                        <a target="_blank"
+                                            href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                            title="">
+                                            <span class="icon fa fa-envelope"></span>
+                                        </a>
+                                    </li>
+                                    <li class="me-2">
+                                        <a target="_blank"
+                                            href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                            title="">
+                                            <span class="icon fas fa-phone-alt"></span>
+                                        </a>
+                                    </li>
+                                    <li class="me-2">
+                                        <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
+                                            <span class="icon fa fa-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
+                                            <span class="icon fab fa-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </nav>
 

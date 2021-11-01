@@ -19,7 +19,7 @@
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a class="d-none d-sm-block" target="blank"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -30,21 +30,30 @@
     </a>
 
     <nav class="navbar fixed-top navbar-dark">
-        <div class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
-            <a class="navbar-brand" id="navbar-brand" href="#">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
+            <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="assets\images\logo\isologo.svg" alt="Proflight">
             </a>
+
+            <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img id="navBarBrandImage" src="assets\images\logo\isologo.svg" alt="Proflight">
+            </button>
+
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <img id="navBarTogglerIcon" data-alt-src="assets\images\logo\Cross.png"
                     src="assets\images\logo\Menu.png">
             </button>
-            <div class="container-fluid">
-                <div class="row justify-content-end">
-                    <div class="col-xxs col-6 col-sm-4 col-md-3 p-0">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid">
+                    <div class="row justify-content-end">
+                        <div class="col-12 col-sm-4 col-md-3 p-0 navbar-height-without-header">
+
+                            <ul class="navbar-nav navbar-height-without-header me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#home">Home</a>
                                 </li>
@@ -80,29 +89,58 @@
                                     <a class="nav-link" href="menu-categories/blog/">Blog</a>
                                 </li>
                             </ul>
+                            <div class="social-mobile d-block d-sm-none">
+                                <ul class="social p-0 m-0">
+                                    <li class="me-2">
+                                        <a target="_blank"
+                                            href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                            title="">
+                                            <span class="icon fa fa-envelope"></span>
+                                        </a>
+                                    </li>
+                                    <li class="me-2">
+                                        <a target="_blank"
+                                            href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                            title="">
+                                            <span class="icon fas fa-phone-alt"></span>
+                                        </a>
+                                    </li>
+                                    <li class="me-2">
+                                        <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
+                                            <span class="icon fa fa-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
+                                            <span class="icon fab fa-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </nav>
+
     <div class="container-fluid px-0">
         <div class="row mx-0 d-flex align-items-center justify-content-center land  text-center p-relative">
-            
             <div class="col-8 col-sm-8 col-md-4 col-lg-3 pb-5 mb-5">
                 <img src="assets/images/logo/logo.svg" alt="Proflight Aviation Academy">
             </div>
             <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                 <h1 class="text">Mainpage</h1>
             </div>
-            <video class="landingBG"autoplay muted loop id="myVideo">
+            <video class="landingBG" autoplay muted loop id="myVideo">
                 <source src="assets/home_video.mp4" type="video/mp4">
             </video>
-            <fade/>
+            <fade />
 
         </div>
     </div>
-    
+
     <div class="transition">
     </div>
     <section class="home">
@@ -272,8 +310,8 @@
                             </div>
                         </button>
                         <p class="more">Si quieres saber mas acerca de cada plan <a
-                                href="menu-categories/programas/"><button
-                                    class="btn btn-primary m-2 px-4 py-2" type="submit">Haz click aquí</button></a></p>
+                                href="menu-categories/programas/"><button class="btn btn-primary m-2 px-4 py-2"
+                                    type="submit">Haz click aquí</button></a></p>
                     </div>
                 </div>
 
@@ -386,8 +424,8 @@
                     </div>
                 </div>
                 <p class="more pt-0 mt-0">Si quieres saber mas acerca de nuestra flota <a
-                        href="menu-categories/flota/"><button class="btn btn-primary ms-3 px-4 py-2"
-                            type="submit">Haz click aquí</button></p></a>
+                        href="menu-categories/flota/"><button class="btn btn-primary ms-3 px-4 py-2" type="submit">Haz
+                            click aquí</button></p></a>
             </div>
         </section>
         <section class="p-relative tecnologia">
@@ -594,8 +632,8 @@
                 alcanzar tus metas, tienes que formarte en un lugar de excelencia, por eso somos tu mejor
                 opción.
             </h2>
-            <a href="menu-categories/contacto/"> <button class="btn btn-primary m-2 p-3 ms-0"
-                    type="submit">Quiero más información</button></a>
+            <a href="menu-categories/contacto/"> <button class="btn btn-primary m-2 p-3 ms-0" type="submit">Quiero más
+                    información</button></a>
         </section>
         <section class="footer">
             <div class="container">

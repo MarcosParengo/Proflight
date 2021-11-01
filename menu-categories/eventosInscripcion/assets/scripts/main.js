@@ -2,10 +2,12 @@ var obj = [];
 
 $(document).ready(function() {
     var toggled = false;
-    var navbarSupportedContent = $("#navbarSupportedContent")
-    var navBarBrandImage = $("#navBarBrandImage")
+    var navBar = $("#navBar")
+    var navbarBrand = $("#navbar-brand")
     var navBarToggler = $("#navBarToggler")
     var navBarTogglerIcon = $("#navBarTogglerIcon")
+    navBarText = $("#navBar-text")
+    
     containerevento = $("#containerEvento")
     var eventos = "../data/eventos.json"
 
@@ -15,26 +17,55 @@ $(document).ready(function() {
 
     LoadJson(eventos, 1, evento)
 
-    var sourceSwap = function() {
-        var $this = $(this);
-        var newSource = $this.data('alt-src');
-        $this.data('alt-src', $this.attr('src'));
-        $this.attr('src', newSource);
-    }
-    $(function() {
-        navBarBrandImage.hover(sourceSwap, sourceSwap);
-    });
-    navBarToggler.click(function() {
-        var algo = navbarSupportedContent.is(":visible")
-        var newSource = navBarTogglerIcon.data('alt-src');
-        navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
-        navBarTogglerIcon.attr('src', newSource);
+    navbarBrand.click(function () {
+        if(toggled){
+            if ($(window).width() < 576) {
+                $('#navbarSupportedContent').removeClass('show') 
+               $('#navbarSupportedContent').addClass('collapsing') 
+                navBarToggler.css('visibility', 'visible')                
+                navbarBrand.css('visibility', 'hidden')
+                navBar.css('background-color', 'rgba(200,200,200,0.0)');
+                navBar.css('backdrop-filter', 'unset');
+                navBar.css('-webkit-backdrop-filter', 'unset');
+                toggled=!toggled
+            }
+        }
+    })
+
+    navBarToggler.click(function () {
+
         if (toggled == false) {
-            navBarToggler.css('background-color', 'rgba(200,200,200,0.5)');
-            toggled = true;
+            toggled = !toggled;
+            if ($(window).width() < 576) {
+                navbarBrand.css('visibility', 'visible')
+                navBarToggler.css('visibility', 'hidden')
+                navBar.css('background-color', 'rgba(50,50,50,0.5)');
+                navBar.css('backdrop-filter', 'blur(10px)');
+                navBar.css('-webkit-backdrop-filter', 'blur(10px)');
+            } else {
+                var newSource = navBarTogglerIcon.data('alt-src');
+                navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
+                navBarTogglerIcon.attr('src', newSource);
+                navBarToggler.css('background-color', 'rgba(200,200,200,0.5)');
+                navBarToggler.css('backdrop-filter', 'blur(10px)');
+                navBarToggler.css('-webkit-backdrop-filter', 'blur(10px)');
+            }
         } else {
-            navBarToggler.css('background-color', 'rgba(0,0,0,0.0)');
-            toggled = false;
+            if ($(window).width() < 576) {
+                navBarToggler.css('visibility', 'visible')
+                navbarBrand.css('visibility', 'hidden')
+                navBar.css('background-color', 'rgba(200,200,200,0.0)');
+                navBar.css('backdrop-filter', 'unset');
+                navBar.css('-webkit-backdrop-filter', 'unset');
+            } else {
+                var newSource = navBarTogglerIcon.data('alt-src');
+                navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
+                navBarTogglerIcon.attr('src', newSource);
+                navBarToggler.css('background-color', 'rgba(0,0,0,0.0)');
+                navBarToggler.css('backdrop-filter', 'blur(0px)');
+                navBarToggler.css('-webkit-backdrop-filter', 'blur(0px)');
+            }
+            toggled = !toggled;
         }
     })
 })
