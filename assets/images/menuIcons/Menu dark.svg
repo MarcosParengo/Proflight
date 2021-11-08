@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.625" height="26" viewBox="0 0 34.625 26">
+    <defs>
+        <style>.a{fill:none;stroke:#4b4d50;stroke-linecap:round;stroke-width:3px;}</style>
+    </defs>
+    <g transform="translate(-1186.188 -53.5)">
+        <g transform="translate(1187.688 55)">
+            <line class="a" x2="31.625" />
+            <line class="a" x2="31.625" transform="translate(0 11.5)" />
+            <line class="a" x2="31.625" transform="translate(0 23)" />
+        </g>
+    </g>
+</svg>

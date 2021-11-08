@@ -47,14 +47,15 @@ body p {
 .d-flex{
     display: flex;
 }
-/*--------------------------------------------------Media Query pilotoPrivado --------------------------------------------------DONE*/
-.footerBlack{
-    color: hsl(0, 0%, 0%)!important;
+
+.min-80vh{
+    min-height: 80vh;
 }
+/*--------------------------------------------------Media Query pilotoPrivado --------------------------------------------------DONE*/
 .home{
     background: rgb(254, 254, 254);
     background-position: bottom;
-    background-image: url("../images/background/footer.png");
+    background-image: url("../images/background/footer white.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -91,6 +92,8 @@ body p {
     color: #0B131E;
     opacity: 1;
 }
+
+
 
 .comercial .coverPage {
     background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/programas/assets/images/background/Background%2003-test.png);
@@ -204,133 +207,26 @@ body p {
 }
 
 /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-@media only screen and (max-width: 392px) {
-    body h1 {
-        text-align: center;
-
-    }
-
-    body p {
-        text-align: center;
-    }
-
-    .coverPage .container-fluid {
-        padding-top: 50%;
-        height: auto;
-    }
-
-    .descripcion .container {
-        height: auto;
-    }
-
-    .descripcion h1 {
-        text-align: center;
-    }
-
-    .descripcion h2 {
-        text-align: center;
-        padding-bottom: 0%;
-    }
-
-    .descripcion .lead {
-        text-align: start;
-        line-height: 2rem;
-    }
-
-    .descripcion .one {
-        margin-top: 4rem;
-    }
-
-    .descripcion .two {
-        margin-top: 4rem;
-    }
-
-    .descripcion .three {
-        display: none;
-        margin-top: 4rem;
-    }
-
-    .instructor .descripcion .right {
-        border-top: 0px;
-        float: none;
-    }
-
-    .instructor .descripcion .left {
-        padding-left: 5%
-    }
-
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-@media only screen and (min-width: 392px) {
-    body h1 {
-        text-align: center;
-    }
-
-    body p {
-        text-align: center;
-    }
-
-    .coverPage .container-fluid {
-        height: 100vh;
-    }
-
-
-    .descripcion .container {
-        height: 100vh;
-    }
-
-    .descripcion h1 {
-        text-align: center;
-    }
-
-    .descripcion h2 {
-        text-align: center;
-    }
-
-
-    .descripcion .lead {
-        color: var(--secondary-color);
-        text-align: start;
-        line-height: 2rem;
-    }
-
-    .descripcion .one {
-        margin-top: 4rem;
-    }
-
-    .descripcion .two {
-        margin-top: 4rem;
-    }
-
-    .descripcion .three {
-        display: none;
-        margin-top: 4rem;
-    }
-
-    .instructor .descripcion .right {
-        border-top: 0px;
-        float: none;
-    }
-
-    .instructor .descripcion .left {
-        padding-left: 5%
-    }
-
-}
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 768px) {
+    .coverPage .left h1{
+        text-align: center;
+    }
     body h1 {
-        text-align: end;
+        text-align: center;
     }
     body p {
         text-align: end;
     }
-
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none!important;
+    }
     .coverPage .container-fluid {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .descripcion .container {
@@ -349,9 +245,6 @@ body p {
         text-align: start;
         line-height: 2rem;
     }
-
-
-
     .descripcion .one {
         margin-top: 4rem;
     }
@@ -363,6 +256,164 @@ body p {
     .descripcion .three {
         display: none;
         margin-top: 4rem;
+    }
+    .comercial .coverPage {
+        background-image: none;
+        background-repeat: no-repeat, repeat;
+        background-position: center left;
+    }
+    .home{
+        background-image: none;
+        background-color: transparent;
+        
+    }
+    body{
+        background: rgb(254, 254, 254);
+        background-position: bottom;
+        background-image: url("../images/background/fondo\ mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .gradientBackground {
+        background-image: none;
+        background-color: transparent;
+    }
+    .mobile.margin{
+        margin-left: 37px;
+        margin-right: 37px
+    }
+    .mobile .margin{
+        margin-left: 37px;
+        margin-right: 37px
+    }
+    .coverPage .mobile .title{
+        text-align: left;
+        font: normal normal 400 34px/42px Roboto;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
+    }
+    .coverPage .mobile .subtitle{
+        text-align: left;
+        font: normal normal 300 16px/28px Inter;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
+    }
+    .coverPage .mobile .text{
+        text-align: left;
+        font: normal normal 300 15px/28px Inter;
+        letter-spacing: 0px;
+        color: #707070;
+        opacity: 0.7;
+    }
+    .descripcion .mobile .title{
+        text-align: left;
+        font: normal normal bold 20px/42px Inter;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
+    }
+    .descripcion .mobile .subtitle{
+        text-align: left;
+        font: normal normal 300 12px/28px Inter;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
+    }
+    .descripcion .mobile .titleAsCover{
+        text-align: left;
+        font: normal normal 400 34px/42px Roboto;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
+        margin-bottom: 27px;
+    }
+    .descripcion .mobile .subtitleAsCover{
+        text-align: left;
+        font: normal normal 300 16px/28px Inter;
+        letter-spacing: 0px;
+        color: #0B131E;
+        opacity: 1;
+        margin-bottom: 35px;
+    }
+    .descripcion .mobile .accordion-item{
+        border-bottom: none;
+        background-color: transparent;
+    }
+    .descripcion .mobile .accordion-body p{
+        text-align: left;
+        font: normal normal 300 15px/27px Inter;
+        opacity:0.7;
+        max-width:31ch;
+    }
+    .descripcion .mobile .accordion-body h3{
+        color:#00B0CE;
+        font: normal normal bold 15px/22px Inter;
+        border-bottom: black 1px solid;
+        margin-left:37px ;
+    }
+    .descripcion .mobile .accordion-body .list{
+        padding:0;
+        margin-bottom: 0;
+        list-style-position: outside;
+        list-style-image: url("../images/components/itemdot.png");
+    }
+    .descripcion .mobile .accordion-body .list-inside{
+        padding:0;
+        margin-bottom: 0;
+        list-style-position: inside;
+        list-style-image: url("../images/components/itemdot.png");
+    }
+    .descripcion .mobile .accordion-body .list li,
+    .descripcion .mobile .accordion-body .list-inside li{
+        font: normal normal 300 15px/27px Inter;
+        color:#707070;
+        max-width:30ch
+    }
+    .descripcion .mobile .accordion-button{
+        background: #00B0CE7d 0% 0% no-repeat padding-box;
+        border: none;
+        margin: 0;
+        font: normal normal 300 14px Inter;
+        letter-spacing: 0px;
+        color: #0A1627;
+        opacity: 1;
+    }
+    .descripcion .mobile .accordion-button.collapsed{
+        background: #94aacb33 0% 0% no-repeat padding-box;
+        border: 1px solid #0A162733;
+        margin: 0;
+        color: #0A1627ee;
+    
+    }
+    
+    .descripcion .mobile .accordion-button::after {
+        flex-shrink: 0;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-left: auto;
+        content: "";
+        background-size: 0.5rem;
+        transition: transform .2s ease-in-out;
+    }
+    .descripcion .mobile .carousel-item {
+        min-height: 70vh;
+        transition: all 0.5s;
+    }
+    
+    
+    .carousel-dark .carousel-indicator{
+        background-color: #E8E8E8!important;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        opacity: 1;
+        transition: background-color 0.5s;
+    }
+    .carousel-dark .carousel-indicator.active{
+        background-color: #00B0CE!important;
     }
 }
 
@@ -377,9 +428,11 @@ body p {
     }
 
     .coverPage .container-fluid {
-        height: 100vh;
+        min-height: 100vh;
     }
-
+    .mobile{
+        display: none;
+    }
 
 
     .descripcion .container {
@@ -425,7 +478,7 @@ body p {
     }
 
     .coverPage .container-fluid {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .descripcion .container {
@@ -470,7 +523,7 @@ body p {
     }
 
     .coverPage .container-fluid {
-        height: 100vh;
+        min-height: 100vh;
     }
 
 

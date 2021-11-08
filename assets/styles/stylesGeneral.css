@@ -159,13 +159,14 @@
 .navbar-height-without-header{
     height: calc(100vh - 75px);
 }
-.social-mobile{
+.social-mobile,.social-mobile-dark{
     position:fixed;
     bottom:20px;
     right:20px;
     opacity:1;
     transition:bottom 0.3s, opacity 0.2s;
 }
+
 .navbar-nav {
     background-color: rgba(200, 200, 200, 0.5);
     backdrop-filter: blur(10px);
@@ -210,11 +211,12 @@
 .nav-link{
     font: normal normal normal 18px/25px Inter;
 }
-.navbar-collapse.collapsing .social-mobile{
+
+.navbar-collapse.collapsing .social-mobile,.navbar-collapse.collapsing .social-mobile-dark{
     bottom:100vh;
     opacity: 0;
 }
-.navbar-collapse.show .social-mobile{
+.navbar-collapse.show .social-mobile,.navbar-collapse.collapsing .social-mobile-dark{
     opacity: 1;
     transition: opacity 0.4s;
 }
@@ -273,12 +275,21 @@
         background-color: transparent!important;
         backdrop-filter: unset!important;
     }
-    
     .social-mobile ul.social>li>a {
         line-height: 30px;
         width: 30px;
         height: 30px;
         border: 1px solid;
+        border-radius: 36px;
+        font-size: 10px;
+        margin:0
+    }
+    .social-mobile-dark ul.social>li>a {
+        color:black;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        border:black 1px solid;
         border-radius: 36px;
         font-size: 10px;
         margin:0
@@ -396,6 +407,7 @@
 }
 
 ul.social {
+    padding-left: 0;
     width: 100%;
     text-align: start;
     padding-bottom: 10%;
@@ -424,21 +436,64 @@ ul.social>li>a:hover {
     opacity: 0.5;
 }
 
-/*-------------------------------------------------- Media Query footer--------------------------------------------------*/
 
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .footer .mail {
-        font-size: 20px;
-    }
+.footer.dark h1 {
+    color: #0B131E;
 }
 
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
+.footer.dark h2 {
+    color: #0B131E;
+}
+.footer.dark ul.social>li>a {
+    color: #0B131E;
+}
+ul.social>li>a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+/*-------------------------------------------------- Media Query footer--------------------------------------------------*/
 
-@media only screen and (min-width: 392px) {
+
+@media only screen and (max-width: 576px) {
     .footer .mail {
-        font-size: 25px;
+        text-align: left;
+        font: normal normal normal 20px/28px Inter;
+    }
+    .footer h1 {
+        text-align: end;
+        padding-bottom: 1em;
+    }
+    
+    .footer h2 {
+        text-align: left;
+        font: normal normal 300 15px/28px Inter;
+    }
+    
+    ul.social {
+        width: 100%;
+        text-align: start;
+        padding-bottom: 10%;
+    }
+    
+    ul.social>li {
+        display: inline-block;
+    }
+    
+    ul.social>li>a {
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 36px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        margin: 0 3px 3px 0;
+        font-size: 10px;
+    }
+    
+    ul.social>li>a:hover {
+        text-decoration: none;
+        opacity: 0.5;
     }
 }
 
