@@ -135,6 +135,7 @@
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
+        transform: translateY(6px);
     }
 
     .ambientes .texto .right {
@@ -241,70 +242,14 @@
         max-width: 50ch;
     }
 
-    .titulo {
+    .arancelesLanding .texto .titulo {
         font: normal normal bold 58px Roboto;
         letter-spacing: 0px;
         color: #0B131E;
         opacity: 1;
     }
 
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
 
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-    @media only screen and (max-width: 392px) {
-        .arancelesLanding .texto .right {
-            text-align: justify;
-        }
-    }
-
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-    @media only screen and (min-width: 392px) {
-        .arancelesLanding .texto .right {
-            text-align: justify;
-        }
-    }
-
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-
-    @media only screen and (min-width: 576px) {
-        .arancelesLanding .texto .right {
-            text-align: start;
-        }
-    }
-
-    /* Medium devices (landscape tablets, 768px and up) */
-
-    @media only screen and (min-width: 768px) {
-        .arancelesLanding .texto .right {
-            text-align: start;
-        }
-    }
-
-    /* Large devices (laptops/desktops, 992px and up) */
-
-    @media only screen and (min-width: 992px) {
-        .arancelesLanding .texto .right {
-            text-align: start;
-        }
-    }
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-
-    @media only screen and (min-width: 1200px) {
-        .arancelesLanding .texto .right {
-            text-align: start;
-        }
-    }
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-
-    @media only screen and (min-width: 1200px) {
-        .arancelesLanding .texto .right {
-            text-align: start;
-        }
-    }
 
     /*-------------------------------------------------------------------------------------------------------------------------*/
 
@@ -500,32 +445,136 @@
         opacity: 1;
     }
 
-    /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
+        /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
 
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
+    /* Small devices (portrait tablets and large phones, 768 and down) */
 
-    @media only screen and (max-width: 392px) {}
+    @media only screen and (max-width: 768px) {
+       
+        .mobile{
+            display:block
+        }
+        .desktop{
+            display: none;
+        }
+        .margin{
+            margin-left: 37px;
+        }
+        .landing h1 {
+            text-align: left;
+            font: normal normal 500 34px/42px Roboto;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+        }
+        .ambientes .titulo {
+            text-align: left;
+            font: normal normal bold 20px/34px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+            margin-bottom: 30px;
+        }
+        .ambientes .texto .left {
+            text-align: start;
+            font: normal normal 500 16px/22px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+            margin-bottom: 40px;
+        }
+        .ambientes .texto .right {
+            font: normal normal 400 15px/37px Inter;
+            text-align: left;
+            color: #7a7d81;
+            opacity: 1;
+            max-width:30ch
+        }
+        .ambientes .coordenadas {
+            text-align: left;
+            font: normal normal 300 13px/42px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            text-transform: uppercase;
+            opacity: 0.2;
+            margin-left: 92px;
+            border-bottom: #0B131E33 1px solid;
+        }
+        .arancelesLanding .texto .titulo {
+            text-align: left;
+            font: normal normal bold 20px/42px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+        }
+        .arancelesLanding .texto .rightSub{
+            text-align: left;
+            font: normal normal 500 20px/34px Roboto;
+            letter-spacing: 0px;
+            color: #35BBD7;
+            opacity: 1;
+            margin-bottom: 30px;
+        }
+        .arancelesLanding .texto .right {
+            margin-top: 30px;
+            text-align: left;
+            font: normal normal 300 15px/28px Inter;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;
+            max-width: 32ch;
+        }
+        .inversion .mobileTitulo{
+            text-align: left;
+            font: normal normal medium 34px/42px Neue Haas Grotesk Display Pro;
+            letter-spacing: 0px;
+            color: #00B0CE;
+            opacity: 0.7;
+        }
+        .inversion .titulo {
+            text-align: left;
+            font: normal normal 500 20px/34px Roboto;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+        }
 
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-    @media only screen and (min-width: 392px) {}
-
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-
-    @media only screen and (min-width: 576px) {}
+    }
 
     /* Medium devices (landscape tablets, 768px and up) */
 
-    @media only screen and (min-width: 768px) {}
+    @media only screen and (min-width: 768px) {
+        .arancelesLanding .texto .right {
+            text-align: start;
+        }
+        .mobile{
+            display:none
+            
+        }
+    }
 
     /* Large devices (laptops/desktops, 992px and up) */
 
-    @media only screen and (min-width: 992px) {}
+    @media only screen and (min-width: 992px) {
+        .arancelesLanding .texto .right {
+            text-align: start;
+        }
+    }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-    @media only screen and (min-width: 1200px) {}
+    @media only screen and (min-width: 1200px) {
+        .arancelesLanding .texto .right {
+            text-align: start;
+        }
+    }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-    @media only screen and (min-width: 1200px) {}
+    @media only screen and (min-width: 1200px) {
+        .arancelesLanding .texto .right {
+            text-align: start;
+        }
+    }
+
+   

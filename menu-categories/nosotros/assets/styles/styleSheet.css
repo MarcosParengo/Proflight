@@ -588,64 +588,8 @@ body p {
 }
 
 
-/*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-@media only screen and (max-width: 392px) {
-    .PoliticaDeCalidad h1 {
-        padding-bottom: 0%;
-        padding-right: 10%;
-    }
-
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-    }
-
-    .PoliticaDeCalidad .containerText h1 {
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .PoliticaDeCalidad .containerText h2 {
-        padding-top: 3rem;
-    }
-
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-@media only screen and (min-width: 392px) {
-    .PoliticaDeCalidad h1 {
-        padding-bottom: 0%;
-        padding-right: 10%;
-    }
-
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-    }
-
-    .PoliticaDeCalidad .containerText h1 {
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .PoliticaDeCalidad .containerText h2 {
-        line-height: 1.5rem;
-        padding-top: 3rem;
-    }
-
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-}
-
 /* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 768px) {
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;
@@ -670,10 +614,19 @@ body p {
         padding-right: 5%;
         padding-left: 5%;
     }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none!important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    -movile{
+        display: none;
+    }
     .PoliticaDeCalidad h1 {
         padding-bottom: 0%;
         padding-right: 10%;

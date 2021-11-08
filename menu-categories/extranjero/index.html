@@ -16,10 +16,11 @@
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a class="desktop" target="blank"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -28,7 +29,7 @@
             <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
         </div>
     </a>
-    
+
     <nav class="navbar fixed-top navbar-light">
         <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
@@ -126,8 +127,14 @@
         <div class="landingYambientes">
             <div class="container-fluid">
                 <div class="row landing d-flex align-items-center p-relative">
-                    <div class="col-12 col-sm-8 col-md-8 col-lg-10 offset-0 offset-lg-2">
-                        <h1>Estudia conociendo <br>los mejores paisajes</h1>
+                    <div class="ps-0  col-12 col-sm-8 col-md-8 col-lg-10 offset-0 offset-lg-2">
+                        <h1 class="margin">Estudia
+                            <br class="d-sm-block d-md-none">
+                            conociendo
+                            <br>los mejores
+                            <br class="d-sm-block d-md-none">
+                            paisajes
+                        </h1>
                     </div>
                     <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                         <h1 class="textBlack">Extranjeros</h1>
@@ -140,17 +147,23 @@
             <div class="container-fluid p-0">
                 <div class="ambientes row d-flex align-items-center g-0">
                     <div class="row p-0 m-0">
-                        <div class="col-12 col-sm-10 offset-sm-0 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
-                            <h1 class="titulo">Ambientes<br> de vuelo</h1>
+                        <div class="px-0 col-12 col-sm-10 offset-sm-0 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
+                            <h1 class="margin titulo">Ambientes<br> de vuelo</h1>
                         </div>
-                        <div class="texto d-none d-sm-none d-md-block col-md-4 col-lg-6">
-                            <h2 class="left">Localización<br> geografica</h2>
+                        <div class="texto px-0 px-md-2 col-md-4 col-lg-6">
+                            <h2 class="left margin">Localización<br class="d-none d-sm-none d-md-block"> geografica</h2>
                         </div>
-                        <div class="texto col-12 col-sm-10 col-md-8 col-lg-4">
-                            <p class="right">Gracias a su localización geográfica, Argentina le brinda a los alumnos la
+                        <div class="texto px-0  col-12 col-sm-10 col-md-8 col-lg-4">
+                            <p class="margin right">Gracias a su localización geográfica, Argentina le brinda a los
+                                alumnos la
                                 posibilidad de formarse en diversos ambientes de vuelo, donde experimentan desde los
                                 fuertes vientos y bajas temperaturas de la Patagonia hasta las
                                 altas temperaturas caracteristicas del norte del pais.</p>
+                        </div>
+                        <div class="mobile  px-0 col-12">
+                            <p class="coordenadas">
+                                O 64°0'0" S 34°0'0"
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -165,32 +178,43 @@
                 <div class="left second d-none d-md-none d-lg-block col-lg-4 col-xl-3 pe-0">
                     <img src="assets/images/components/0T9A2594.png" alt="">
                 </div>
-                <div class="texto col-12 col-sm-10 col-md-10 col-lg-6 ps-auto ps-md-auto ps-lg-5">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="titulo ps-3">Aranceles</h1>
-                        </div>
-                        <div class="col-12 col-sm-8 col-md-8 col-lg-10 col-xl-8">
-                            <h2 class="rightSub">¡Vuela en el país más económico del mundo!</h2>
-                        </div>
-                        <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-8">
-                            <p class="right">Somos la escuela de aviación que mayor cantidad de alumnos extranjero
-                                recibe cada año, porque contamos con los mejores aranceles del mercado. Además, contamos
-                                con la certificación del departamento de Migraciones de Argentina
-                                para validar permisos de permanencia de hasta 3 años.</p>
+                <div class="texto  px-0 col-12 col-sm-12 col-md-10 col-lg-6 ps-0 ps-sm-0 ps-md-auto ps-lg-5">
+                    <div class="container-fluid px-0">
+                        <div class="row w-100 m-0 p-0">
+                            <div class="px-0 col-12">
+                                <h1 class="margin titulo ps-md-3">Aranceles</h1>
+                            </div>
+                            <div class="px-0 col-12 col-sm-8 col-md-8 col-lg-10 col-xl-8">
+                                <h2 class="margin rightSub">¡Vuela en el país más
+                                    <br class="d-sm-block d-md-none">
+                                    económico del mundo!
+                                </h2>
+                            </div>
+                            <div class="mobile col-12 px-0">
+                                <img class="d-block w-100"src="assets/images/components/0T9A2594.png"  alt="">
+                            </div>
+                            <div class="px-0 col-12 col-sm-10 col-md-10 col-lg-10 col-8">
+                                <p class="right margin">Somos la escuela de aviación que mayor cantidad de alumnos
+                                    extranjero
+                                    recibe cada año, porque contamos con los mejores aranceles del mercado.
+                                    <br> Además,contamos
+                                    con la certificación del departamento de Migraciones de Argentina
+                                    para validar permisos de permanencia de hasta 3 años.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row inversion justify-content-center align-items-center px-auto px-md-5 px-xl-5">
-                <div class="p-relative d-flex justify-content-center col-8">
-                    <div class="col-md-10">
-                        <h1 class="titulo">Invierte tan solo <br> U$S 26.000 por la carrera completa</h1>
-                        <div class="container-fluid px-0">
+        <div class="container-fluid px-0">
+            <div class="row w-100 m-0 p-0 inversion justify-content-center align-items-center px-auto px-md-5 px-xl-5">
+                <div class="px-0 p-md-2 p-relative d-flex justify-content-center col-12 col-sm-12 col-md-10 col-lg-8">
+                    <div class="col-12 col-md-10">
+                        <h1 class="mobileTitulo margin">Inversión</h1>
+                        <h1 class="titulo margin">Invierte tan solo <br class="d-none d-md-block"> U$S 26.000 <br class="d-block d-md-none">por la carrera completa</h1>
+                        <div class="desktop container-fluid px-0">
                             <div class="row">
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-5">
+                                <div class=" col-12 col-sm-6 col-md-6 col-lg-6 mt-5">
                                     <h2 class="titulo-card">
                                         Incluye
                                     </h2>
@@ -241,7 +265,7 @@
                             <span class="text">Alojamientos</span>
                             <span class="mt-auto numero">.02</span>
                         </h2>
-                        <h3 class="info py-4 limite" >
+                        <h3 class="info py-4 limite">
                             Zonas urbanas cercanas a la academia
                         </h3>
                         <h4 class="text">
@@ -249,13 +273,11 @@
                             estudiantes pasan la mayor parte del tiempo.
                         </h4>
                         <a href="#alojamientos">
-                           <button 
-                            class="button d-flex justify-content-center align-items-center"
-                            type="button">
-                            <span class="buttonContent" aria-hidden="true">+</span>
-                        </button> 
+                            <button class="button d-flex justify-content-center align-items-center" type="button">
+                                <span class="buttonContent" aria-hidden="true">+</span>
+                            </button>
                         </a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -275,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div
                     class="texto col-12 col-md-12 col-lg-6 col-xl-6 ps-auto ps-md-auto ps-lg-5 align-items-center d-flex">
                     <div>
