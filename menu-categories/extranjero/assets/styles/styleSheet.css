@@ -44,30 +44,6 @@
 
     /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
 
-    /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-    @media only screen and (max-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        }
-    }
-
-    /*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-    @media only screen and (min-width: 392px) {
-        .home {
-            background-size: auto 100%;
-        }
-    }
-
-    /* Small devices (portrait tablets and large phones, 576px and up) */
-
-    @media only screen and (min-width: 576px) {
-        .home {
-            background-size: 100% 100%;
-        }
-    }
-
     /* Medium devices (landscape tablets, 768px and up) */
 
     @media only screen and (min-width: 768px) {
@@ -450,15 +426,38 @@
     /* Small devices (portrait tablets and large phones, 768 and down) */
 
     @media only screen and (max-width: 768px) {
-       
+        .home{
+            background-image:url(../images/background/footerwhite.png);
+            background-position: bottom;
+            background-size: 100% auto;
+        }
+        .landing {
+            min-height: 100vh;
+            background-image: url(../images/background/bglandingmobile.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .mobile{
             display:block
         }
         .desktop{
-            display: none;
+            display: none!important;
         }
         .margin{
             margin-left: 37px;
+            margin-right: 37px;
+        }
+        .circleMobile{
+            position: absolute;
+            top:0;
+            width: 200%;
+            transition: transform 2s;
+        }
+        .circleMobile.beforeScroll{
+            transform:translateX(-50%) translateY(10%) rotate(0deg)
+        }
+        .circleMobile.afterScroll{
+            transform:translateX(-50%) translateY(60%) rotate(180deg)
         }
         .landing h1 {
             text-align: left;
@@ -488,7 +487,6 @@
             text-align: left;
             color: #7a7d81;
             opacity: 1;
-            max-width:30ch
         }
         .ambientes .coordenadas {
             text-align: left;
@@ -522,7 +520,6 @@
             letter-spacing: 0px;
             color: #707070;
             opacity: 1;
-            max-width: 32ch;
         }
         .inversion .mobileTitulo{
             text-align: left;
@@ -530,6 +527,7 @@
             letter-spacing: 0px;
             color: #00B0CE;
             opacity: 0.7;
+            margin-bottom:50px ;
         }
         .inversion .titulo {
             text-align: left;
@@ -537,8 +535,138 @@
             letter-spacing: 0px;
             color: #0B131E;
             opacity: 1;
+            margin-bottom:50px ;
         }
+        .mobile-info.placeholder{
+            z-index: -1;
+            position: relative;
+            opacity: 0;
+        }
+        .mobile-info{
+            position: absolute;
+        }
+        .mobile-info .titulo{
+            text-align: left;
+            font: normal normal 300 13px/29px Inter;
+            letter-spacing: 0px;
+            color: #00B0CE;
+            text-transform: uppercase;
+            opacity: 1;
+            border:#70707033 1px solid;
+            border-left:none;
+            padding-left:37px;
+            margin-right:111px;
+            margin-bottom:29px;
+            transition: 1s transform 1s ease-out,2s visibility, opacity 1.5s;
+        }
+        .mobile-info .texto{
+            text-align: left;
+            font: normal normal 300 15px/36px Inter;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;
+            transition: transform 2s ease-out,2s visibility, opacity 1.5s;
+        }
+        .mobile-info.toggled .titulo{
+            transform: translateX(-100%) translateY(-200%);
+            transition: transform 1s ease-in,1s visibility,opacity 1.5s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .mobile-info.toggled .texto{
+            transform: translateY(-100vh);
+            transition: transform 2s ease-in,2s visibility, opacity 1.5s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .mobile.beforeScroll,.mobile.afterScroll{
+            overflow: hidden;
+        }
+        .mobile.beforeScroll .cover{
+            width: 100%;
+            display: block;
+            transform: scale(1.4);
+            transition:transform 2s ease-in;
 
+        }
+        .mobile.afterScroll .cover{
+            width: 100%;
+            display: block;
+            transform: scale(1.0);
+            transition:transform 2s ease-in;
+        }
+        .mobile .contenedor-titulo{
+            margin-top:33px;
+            margin-left: 37px;
+            padding:0 37px 14px 0;
+            border-bottom:#0B131E 1px solid;
+        }
+        
+        .mobile .contenedor-titulo .titulo{
+            text-align: left;
+            font: normal normal bold 20px/34px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+            width: auto;
+            display: inline-block;
+            margin:0%
+        }
+        .mobile .contenedor-titulo .number{
+            text-align: right;
+            font: normal normal 600 14px/28px Inter;
+            letter-spacing: 0px;
+            color: #00B0CE;
+            text-transform: uppercase;
+            opacity: 1;
+            width: auto;
+            float: right;
+        }
+        .recibimientoContainer{
+            padding-bottom: 40%;
+        }
+        .recibimiento .mobile .texto{
+            margin-top: 21px;
+            text-align: left;
+            font: normal normal 300 15px/28px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+        }
+        .alojamientos .mobile .subtitle{
+            margin-top: 35px;
+            text-align: left;
+            font: normal normal 300 12px/28px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        .alojamientos .mobile .texto{
+            margin-top: 19px;
+            margin-bottom: 0;
+            text-align: left;
+            font: normal normal 300 15px/28px Inter;
+            letter-spacing: 0px;
+            color: #0B131E;
+            opacity: 1;
+        }
+        .alojamientos .mobile .texto:first-of-type{
+            margin-top: 36px;
+        }
+        .alojamientos .mobile .beforeScroll .contenedor-texto{
+            transform: translateY(50vh);
+            transition:transform 0.5s ease-out,opacity 1s ease-out;
+            opacity: 0;
+        }
+        .alojamientos .mobile .afterScroll .contenedor-texto{
+            transform: translateY(0);
+            opacity: 1;
+            transition:transform 0.5s ease-out,opacity 1s ease-out;
+        }
+        .footer{
+            width: 100%;
+        }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
@@ -550,6 +678,9 @@
         .mobile{
             display:none
             
+        }
+        .footer{
+            width: 90%;
         }
     }
 
@@ -575,6 +706,7 @@
         .arancelesLanding .texto .right {
             text-align: start;
         }
+        
     }
 
    

@@ -229,7 +229,7 @@
     .navbar-brand {
         padding-left: 0.5em;
         margin-right: 0;
-        visibility:hidden;
+        visibility:visible;
     }
     .nav-item {
         padding-right: 5%;
@@ -246,7 +246,7 @@
     .navbar-brand {
         padding-left: 1em;
         margin-right: 0;
-        visibility:hidden;
+        visibility:visible;
     }
     .nav-item {
         padding-right: 5%;
@@ -268,7 +268,7 @@
         opacity: 1;
     }
     .nav-item{
-        padding-left: 0.5em;
+        padding-left: 32px;
         padding-right: 0em;
     }
     .navbar-nav{
@@ -461,18 +461,22 @@ ul.social>li>a:hover {
     }
     .footer h1 {
         text-align: end;
-        padding-bottom: 1em;
+        padding-bottom: 42px;
+        padding-top: 224px;
     }
     
     .footer h2 {
         text-align: left;
         font: normal normal 300 15px/28px Inter;
+        padding-bottom: 19px;
     }
     
     ul.social {
         width: 100%;
         text-align: start;
-        padding-bottom: 10%;
+        padding-top: 68px;
+        padding-bottom: 73px;
+        margin-bottom:0px
     }
     
     ul.social>li {
@@ -497,6 +501,10 @@ ul.social>li>a:hover {
     }
     .navbar-toggler{
         padding-right: 32px;
+        padding-top: 32px;
+    }
+    .navbar-brand{
+        padding-left: 32px;
         padding-top: 32px;
     }
 }

@@ -31,17 +31,17 @@
     </a>
 
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
-
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
-
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -128,7 +128,7 @@
             <div class="container-fluid">
                 <div class="row landing d-flex align-items-center p-relative">
                     <div class="ps-0  col-12 col-sm-8 col-md-8 col-lg-10 offset-0 offset-lg-2">
-                        <h1 class="margin">Estudia
+                        <h1 id="landingTitle" class="margin">Estudia
                             <br class="d-sm-block d-md-none">
                             conociendo
                             <br>los mejores
@@ -143,6 +143,9 @@
                         <img src="assets/images/background/Backgroundcircle.png" alt="none">
                     </div>
                 </div>
+            </div>
+            <div id="circle" class="mobile circleMobile beforeScroll">
+                <img class="w-100 d-block" src="assets/images/background/Backgroundcircle.png" alt="none">
             </div>
             <div class="container-fluid p-0">
                 <div class="ambientes row d-flex align-items-center g-0">
@@ -191,7 +194,7 @@
                                 </h2>
                             </div>
                             <div class="mobile col-12 px-0">
-                                <img class="d-block w-100"src="assets/images/components/0T9A2594.png"  alt="">
+                                <img class="d-block w-100" src="assets/images/components/0T9A2594.png" alt="">
                             </div>
                             <div class="px-0 col-12 col-sm-10 col-md-10 col-lg-10 col-8">
                                 <p class="right margin">Somos la escuela de aviación que mayor cantidad de alumnos
@@ -199,7 +202,8 @@
                                     recibe cada año, porque contamos con los mejores aranceles del mercado.
                                     <br> Además,contamos
                                     con la certificación del departamento de Migraciones de Argentina
-                                    para validar permisos de permanencia de hasta 3 años.</p>
+                                    para validar permisos de permanencia de hasta 3 años.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -211,7 +215,9 @@
                 <div class="px-0 p-md-2 p-relative d-flex justify-content-center col-12 col-sm-12 col-md-10 col-lg-8">
                     <div class="col-12 col-md-10">
                         <h1 class="mobileTitulo margin">Inversión</h1>
-                        <h1 class="titulo margin">Invierte tan solo <br class="d-none d-md-block"> U$S 26.000 <br class="d-block d-md-none">por la carrera completa</h1>
+                        <h1 onclick="toggleInfo('inversion')" class="titulo margin">Invierte tan solo <br
+                                class="d-none d-md-block"> U$S 26.000 <br class="d-block d-md-none">por la carrera
+                            completa</h1>
                         <div class="desktop container-fluid px-0">
                             <div class="row">
                                 <div class=" col-12 col-sm-6 col-md-6 col-lg-6 mt-5">
@@ -237,6 +243,37 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="inversion1" class="mobile mobile-info">
+                            <h1 class="titulo">I N C L U Y E</h1>
+                            <p class="texto margin">
+                                250 horas de vuelo
+                                <br>45 horas de simulador
+                                <br>1.200 horas de teoría
+                                <br>Libros de las todas habilitaciones
+                                <br>Certificado médico.
+                                <br>Uniforme
+                            </p>
+                        </div>
+                        <div id="inversion2" onclick="toggleInfo('inversion')" class="mobile mobile-info toggled">
+                            <h1 class="titulo">L I C E N C I A S</h1>
+                            <p class="texto margin">
+                                PPA: Piloto Privado de Avión
+                                <br>PCA: Piloto Comercial de Avión
+                                <br>HVI: Habilitación vuelo por instrumentos
+                                <br>Multímetro Habilitación vuelo nocturno
+                            </p>
+                        </div>
+                        <div class="mobile mobile-info placeholder">
+                            <h1 class="titulo">I N C L U Y E</h1>
+                            <p class="texto margin">
+                                250 horas de vuelo
+                                <br>45 horas de simulador
+                                <br>1.200 horas de teoría
+                                <br>Libros de las todas habilitaciones
+                                <br>Certificado médico.
+                                <br>Uniforme
+                            </p>
+                        </div>
                     </div>
                     <div class="rotatedLabel d-none d-md-none d-lg-block">
                         <h2 class="label">Inversión</h2>
@@ -244,10 +281,10 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="recibimiento d-flex align-items-center justify-content-center">
-                <div class="row col-8">
-                    <div class="card px-0 col-12 col-md-12 col-lg-auto mt-5">
+        <div class="recibimientoContainer container-fluid px-0">
+            <div class="w-100 recibimiento d-flex align-items-center justify-content-center">
+                <div class="row col-12 col-sm-12 col-md-10 col-lg-8">
+                    <div class="desktop card px-0 col-12 col-md-12 col-lg-auto mt-5">
                         <h2 class="titulo-card d-flex align-items-end justify-content-between mb-1">
                             <span class="text">Recibimiento y traslados</span>
                             <span class="mt-auto ps-4 numero">.01</span>
@@ -260,7 +297,7 @@
                             y que su<br> llegada a la Argentina sea placentera.
                         </h4>
                     </div>
-                    <div class="card px-0 col-12 col-md-12 col-lg-auto offset-0 offset-md-0 offset-lg-1 mt-5">
+                    <div class="desktop card px-0 col-12 col-md-12 col-lg-auto offset-0 offset-md-0 offset-lg-1 mt-5">
                         <h2 class="titulo-card d-flex align-items-end justify-content-between mb-1">
                             <span class="text">Alojamientos</span>
                             <span class="mt-auto numero">.02</span>
@@ -279,12 +316,27 @@
                         </a>
 
                     </div>
+                    <div id="coverRecibimiento" class="mobile beforeScroll col-12 px-0">
+                        <img class="cover" src="assets/images/components/recibimiento.png" alt="">
+                    </div>
+                    <div class="col-12 px-0 mobile">
+                        <div class="contenedor-titulo ">
+                            <h1 class="titulo">
+                                Recibimiento <br>y traslados para todos<br> nuestros estudiantes
+                            </h1>
+                            <h1 class="number">01</h1>
+                        </div>
+                        <p class="texto margin">
+                            Cuando un nuevo estudiante arriba al país, lo recogemos en el aeropuerto para asistirlo y
+                            que su llegada a la Argentina sea placentera.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid" id="alojamientos">
             <div class="row alojamientos d-flex align-items-start justify-content-end">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="desktop col-lg-6 d-none d-lg-block">
                     <div class="row p-relative">
                         <div id="left" class="left-img col-xl-4 p-0 d-xl-block d-lg-none d-none">
                             <img class="d-block w-100" src="assets/images/components/alojam2.png" alt="">
@@ -297,9 +349,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div
-                    class="texto col-12 col-md-12 col-lg-6 col-xl-6 ps-auto ps-md-auto ps-lg-5 align-items-center d-flex">
+                    class=" desktop texto col-12 col-md-12 col-lg-6 col-xl-6 ps-auto ps-md-auto ps-lg-5 align-items-center d-flex">
                     <div>
                         <h1 class="titulo">Alojamientos</h1>
                         <p class="parrafo">-Alojamientos exclusivos de hombres y mujeres
@@ -312,9 +363,85 @@
                         </p>
                     </div>
                 </div>
+                <div id="coverAlojamiento" class="mobile beforeScroll col-12 px-0">
+                    <img class="cover" src="assets/images/components/alojamiento.png" alt="">
+                </div>
+                <div class="col-12 px-0 mobile">
+                    <div class="contenedor-titulo ">
+                        <h1 class="titulo">
+                            Alojamientos
+                        </h1>
+                        <h1 class="number">02</h1>
+                    </div>
+                    <h2 class="subtitle margin">ZONAS URBANAS CERCANAS A LA ACADEMÍA</h2>
+                    <div id="alojamientosDescripcion" class="margin beforeScroll">
+                        <div class="contenedor-texto">
+                            <p class="texto ">
+                                Todos los hospedajes son cómodos y seguros ya que son los lugares donde los estudiantes
+                                pasan la mayor parte del tiempo.
+                            </p>
+                            <p class="texto ">
+                                Alojamientos exclusivos de hombres y mujeres.
+                            </p>
+                            <p class="texto ">
+                                Servicio de mantenimiento 24 horas los 365 días del año.
+                            </p>
+                            <p class="texto ">
+                                Servicio de limpieza semanal.
+                            </p>
+                            <p class="texto ">
+                                Ropa de cama incluida y laundry en el complejo.
+                            </p>
+                            <p class="texto ">
+                                Wifi y cable de alta calidad.
+                            </p>
+                            <p class="texto ">
+                                Calefacción con aire acondicionado frío/calor.
+                            </p>
+                            <p class="texto ">
+                                Ubicados en zonas urbanas dentro de un radio de 15 cuadras de la academia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
+        <div class="d-flex justify-content-center">
+            <section class="footer dark margin">
+                <h1 class="mail pb-0 footerBlack">info@proflight.com.ar</h1>
+                <h2 class="footerBlack">+54 9 11 6010-4446</h2>
+                <h2 class="footerBlack">Av. Figueroa Alcorta 500,<br class="d-sm-block d-md-none"> Castelar, Bs. As.</h2>
+                <ul class="social">
+                    <li class="me-2">
+                        <a class="footerBlack" target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                            title="">
+                            <span class="icon fa fa-envelope"></span>
+                        </a>
+                    </li>
+                    <li class="me-2">
+                        <a class="footerBlack" target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                            title="">
+                            <span class="icon fas fa-phone-alt"></span>
+                        </a>
+                    </li>
+                    <li class="me-2">
+                        <a class="footerBlack" target="_blank" href="https://www.facebook.com/proflight.la"
+                            title="">
+                            <span class="icon fa fa-facebook"></span>
+                        </a>
+                    </li>
+                    <li class="me-2">
+                        <a class="footerBlack" target="_blank"
+                            href="https://www.instagram.com/proflight.ar/" title="">
+                            <span class="icon fab fa-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
