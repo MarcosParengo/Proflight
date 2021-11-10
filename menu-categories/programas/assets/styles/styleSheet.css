@@ -103,7 +103,7 @@ body p {
 
 
 .instructor .descripcion .container {
-    height: auto;
+    min-height: auto;
     padding-bottom: 20%;
 }
 
@@ -112,7 +112,7 @@ body p {
 }
 
 .instructor .descripcion {
-    height: auto;
+    min-height: auto;
     top: 0;
 }
 
@@ -127,7 +127,7 @@ body p {
 
 
 .descripcion .container {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .descripcion h1 {
@@ -230,7 +230,7 @@ body p {
     }
 
     .descripcion .container {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .descripcion h1 {
@@ -436,7 +436,7 @@ body p {
 
 
     .descripcion .container {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .descripcion h1 {
@@ -482,7 +482,7 @@ body p {
     }
 
     .descripcion .container {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .descripcion h1 {
@@ -528,7 +528,7 @@ body p {
 
 
     .descripcion .container {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .descripcion h1 {
