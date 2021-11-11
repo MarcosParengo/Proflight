@@ -4,8 +4,13 @@ function toggleImage(tab){
     aux=($(`#${tab}-1`).attr('src'))
     $(`#${tab}-1`).attr('src',($(`#${tab}-2`).attr('src')))
     $(`#${tab}-2`).attr('src',aux)
-}    
+} 
 
+function togglePosition(id){
+    tab=( id.substring(0, id.length - 1))
+    $(`#${tab}1`).attr('class','imagen left')
+    $(`#${tab}2`).attr('class','imagen center')
+}  
 
 $(document).ready(function () {
     var toggled = false;
@@ -19,9 +24,7 @@ $(document).ready(function () {
         if(toggled){
             if ($(window).width() < 576) {
                 $('#navbarSupportedContent').removeClass('show') 
-               $('#navbarSupportedContent').addClass('collapsing') 
-                navBarToggler.css('visibility', 'visible')                
-                navbarBrand.css('visibility', 'hidden')
+                $('#navbarSupportedContent').addClass('collapsing') 
                 navBar.css('background-color', 'rgba(200,200,200,0.0)');
                 navBar.css('backdrop-filter', 'unset');
                 navBar.css('-webkit-backdrop-filter', 'unset');
@@ -35,8 +38,8 @@ $(document).ready(function () {
         if (toggled == false) {
             toggled = !toggled;
             if ($(window).width() < 576) {
-                navbarBrand.css('visibility', 'visible')
-                navBarToggler.css('visibility', 'hidden')
+                //navbarBrand.css('visibility', 'visible')
+                //navBarToggler.css('visibility', 'hidden')
                 navBar.css('background-color', 'rgba(50,50,50,0.5)');
                 navBar.css('backdrop-filter', 'blur(10px)');
                 navBar.css('-webkit-backdrop-filter', 'blur(10px)');
@@ -50,8 +53,8 @@ $(document).ready(function () {
             }
         } else {
             if ($(window).width() < 576) {
-                navBarToggler.css('visibility', 'visible')
-                navbarBrand.css('visibility', 'hidden')
+                //navBarToggler.css('visibility', 'visible')
+                //navbarBrand.css('visibility', 'hidden')
                 navBar.css('background-color', 'rgba(200,200,200,0.0)');
                 navBar.css('backdrop-filter', 'unset');
                 navBar.css('-webkit-backdrop-filter', 'unset');

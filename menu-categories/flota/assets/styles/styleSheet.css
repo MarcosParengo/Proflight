@@ -166,47 +166,6 @@ body p {
     margin-top: 80px;
     width:80%
 }
-/*-------------------------------------------------- Media Query landingHome--------------------------------------------------TODO*/
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .landing .coverPage .left {
-        padding-right: 10rem;
-    }
-    .landing .coverPage .right {
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-    .coverPage .titulo {
-        font-size: 40px;
-        padding-bottom: 1em;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .landing .coverPage .left {
-        padding-right: 10rem;
-    }
-    .landing .coverPage .right {
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .landing .coverPage .left {
-        padding-right: 10rem;
-    }
-    .landing .coverPage .right {
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
@@ -410,11 +369,6 @@ body p {
     display: block;
     width: 100%;
 }
-
-.placeholder{
-    width: 60vw;
-    height: 70vh;
-}
 .left-img{
     position: absolute;
     transition: all 2s;
@@ -437,31 +391,6 @@ body p {
 }
 
 /*-------------------------------------------------- Media Query seccion tabs --------------------------------------------------TODO*/
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .tabs  .nav-link {
-        height: auto;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    
-    .tabs  .nav-link {
-        height: auto;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .tabs .nav-link {
-        height: auto;
-    }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
@@ -533,4 +462,193 @@ ul.social>li>a {
 ul.social>li>a:hover {
     text-decoration: none;
     opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mobile{
+        display:block
+    }
+    .desktop{
+        display: none!important;
+    }
+    .margin{
+        margin-left: 37px;
+        margin-right: 37px;
+    }
+    .padding{
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+    .footer{
+        width: 100%;
+    }
+    .right{
+        padding:0
+    }
+    .left{
+        padding:0
+    }
+    .landing .coverPage .right .text {
+        text-align: left;
+        font: normal normal 300 15px/28px Inter;
+        letter-spacing: 0px;
+    }
+    .coverPage .titulo {
+        text-align: left;
+        font: normal normal bold 45px/38px Roboto;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        padding-bottom: 42px;
+    }
+    .simuladores{
+        min-height: 100vh;
+    }
+    .simuladores .texto {
+        text-align: left;
+        font: normal normal 300 15px/28px Inter;
+        letter-spacing: 0px;
+    }
+    .simuladores .coverPage {
+        min-height: 100vh;
+    }
+    .simuladores .coverPage .container-fluid {
+        min-height: auto;
+    }
+    .accordionFlota{
+        min-height: 100vh;
+    }
+    .accordionFlota .title{
+        text-align: left;
+        font: normal normal bold 14px/22px Inter;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-bottom: 29px;
+    }
+    .accordionFlota .accordion-item{
+        border:0;
+    }
+    .accordionFlota .accordion-button{
+        text-align: left;
+        font: normal normal 300 14px Inter;
+        letter-spacing: 0px;
+        background: #FFFFFF0F 0% 0% no-repeat padding-box;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF33;
+        opacity: 1; 
+    }
+    .accordionFlota .accordion-button::after {
+        flex-shrink: 0;
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-left: auto;
+        content: "";
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-size: 0.75rem;
+        transition: transform .2s ease-in-out;
+}
+    .accordionFlota .accordion-item {
+        background-color: transparent;
+    }
+    .accordionFlota .accordion-button{
+        padding: 12px 39px 15px 37px;
+    }
+    .accordionFlota .accordion-body{
+        padding: 19px 0;
+    }
+    .accordionFlota .accordion-body .texto{
+        margin-left: 37px;
+        
+    }
+    .accordionFlota .accordion-body .texto .titulo{
+        color: var(--unnamed-color-00b0ce);
+        text-align: left;
+        font: normal normal bold 16px Inter;
+        letter-spacing: 0px;
+        color: #00B0CE;
+        text-transform: uppercase;
+        opacity: 1;
+        border-bottom:#707070 1px solid;
+        padding-bottom:9px;
+        margin-bottom: 7px;
+        padding-right:37px
+    }
+    .accordionFlota .accordion-body .texto .descripcion{
+        text-align: left;
+        font: normal normal 300 14px Inter;
+        letter-spacing: 0px;
+        color: #B7B7B7;
+        text-shadow: 0px 3px 6px #00000029;
+        text-transform: uppercase;
+        padding-bottom: 14px;
+        margin-bottom: 0;
+        opacity: 1;
+    }
+    .accordionFlota .accordion-body .texto .descripcion:last-of-type{
+        padding-bottom: 0;
+    }
+    .accordionFlota .accordion-body .imagenes{
+        overflow-x: hidden;
+        position: relative;
+        margin-bottom:33px ;
+        margin-top:31px ;
+
+    }
+    .accordionFlota .accordion-body .imagenes .imagen{
+        transition: all 0.5s;
+    }
+    .accordionFlota .accordion-body .imagenes .imagen img{
+        width: 100%;
+        display: block;
+    }
+    .accordionFlota .accordion-body .imagenes .imagen.placeholder{
+        pointer-events: none;
+        opacity: 0;
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    .accordionFlota .accordion-body .imagenes .imagen.center{
+        position: absolute;
+        right:39px ;
+        left: 39px;
+    }
+    .accordionFlota .accordion-body .imagenes .imagen.left,.accordionFlota .accordion-body .imagenes .imagen.right{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        opacity: 0.5;
+    }
+    
+    .accordionFlota .accordion-body .imagenes .imagen.right{
+        transform: translateX(92%);
+        right: 0;
+    }
+    .accordionFlota .accordion-body .imagenes .imagen.left{
+        transform: translateX(-92%);
+        left: 0;
+    }
+    .accordionFlota .accordion-body .imagenes .imagen.right img,
+    .accordionFlota .accordion-body .imagenes .imagen.left img{
+        height: 75%;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .arancelesLanding .texto .right {
+        text-align: start;
+    }
+    .mobile{
+        display:none
+        
+    }
+    .footer{
+        width: 90%;
+    }
 }
