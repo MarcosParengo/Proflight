@@ -1,212 +1,275 @@
-
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+	box-sizing: border-box;
+	font-family: 'Montserrat';
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	width: 100%;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-    background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20contacto.png?raw=true);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    overflow-x: hidden;
+	background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20contacto.png?raw=true);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	overflow-x: hidden;
 }
 
-
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
-
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
-.divider{
-    height: 4em;
+.divider {
+	height: 4em;
 }
-.circle{
-    position: absolute;
-    right: 0;
-    top:0;
-    transform: translateX(50%) translateY(-25%);
+.circle {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(50%) translateY(-25%);
 }
-.circle img{
-    display: block;
-    width: 100%;
+.circle img {
+	display: block;
+	width: 100%;
 }
 .form {
-    padding-left: 12.5%;
-    min-height: 100vh
+	padding-left: 12.5%;
+	min-height: 100vh;
 }
 
-.form h1 {
-    text-align: start;
-    font: normal normal bold 58px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+.form .title {
+	margin-top:50px;
+	text-align: start;
+	font: normal normal bold 58px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
-.form-floating>label{
-    font: normal normal normal 16px/28px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+.form-floating > label {
+	font: normal normal normal 16px/28px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 .form-floating .form-control {
-    background-color: transparent;
-    border: 0px transparent;
-    border-bottom: white 1px solid;
-    border-radius: 0;
-    color: white;
+	background-color: transparent;
+	border: 0px transparent;
+	border-bottom: white 1px solid;
+	border-radius: 0;
+	color: white;
 }
 
-.form-floating>label {
-    color: white;
-    padding: 1rem 0rem;
-    font-size: 17px
+.form-floating > label {
+	color: white;
+	padding: 1rem 0rem;
+	font-size: 17px;
 }
 
 .input-group-text {
-    background-color: transparent;
-    border: 0px transparent;
-    border-bottom: white 1px solid;
-    border-radius: 0;
-    color: white;
+	background-color: transparent;
+	border: 0px transparent;
+	border-bottom: white 1px solid;
+	border-radius: 0;
+	color: white;
 }
 
 .mensaje {
-    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(42, 54, 72, 0.7));
-    background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(42, 54, 72, 0.7));
+	background-color: rgba(0, 0, 0, 0);
 }
 
 textarea {
-    resize: none
+	resize: none;
 }
 
-.form-select{
-    padding-left:0;
-    height: 100%;
-    background-color: transparent;
-    border: 0px transparent;
-    border-bottom: white 1px solid;
-    border-radius: 0;
-    color: white;
-    font: normal normal normal 16px/28px Inter;
-
+.form-select {
+    padding: .75rem 0;
+	height: 100%;
+	background-color: transparent;
+	border: 0px transparent;
+	border-bottom: white 1px solid;
+	border-radius: 0;
+	color: white;
+	font: normal normal normal 16px/28px Inter;
 }
 
 select option {
-    background: rgb(200, 200, 200);
-    color: #fff;
+	background: rgb(200, 200, 200);
+	color: #fff;
 }
 
-.footer{
-    min-height: 100vh;
+.footer-parent {
+	min-height: 100vh;
 }
 
+.footer h1 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: end;
+	color: white;
+	padding-bottom: 1em;
+}
+
+.footer h2 {
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: end;
+	color: white;
+	padding-top: 0;
+	padding-bottom: 1.5em;
+}
 
 ul.social {
-    width: 100%;
-    text-align: start;
-    padding-bottom: 10%;
+	width: 100%;
+	text-align: start;
+	padding-bottom: 10%;
 }
 
-ul.social>li {
-    display: inline-block;
+ul.social > li {
+	display: inline-block;
 }
 
-ul.social>li>a {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 36px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    margin: 0 3px 3px 0;
+ul.social > li > a {
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid;
+	border-radius: 36px;
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	margin: 0 3px 3px 0;
 }
 
-ul.social>li>a:hover {
-    text-decoration: none;
-    opacity: 0.5;
+ul.social > li > a:hover {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none !important;
+	}
+	.margin {
+		margin-left: 38px;
+		margin-right: 38px;
+	}
+	.padding {
+		padding-left: 38px;
+		padding-right: 38px;
+	}
+	.footer {
+		width: 100%;
+	}
+	.form {
+		padding-left: 0%;
+		min-height: 100vh;
+	}
+	.form-floating > label {
+		font: normal normal normal 15px/28px Inter;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		opacity: 1;
+	}
+	.form-floating {
+		padding-bottom: 10px;
+	}
+	.form-floating.mensaje{
+		margin-bottom: 39px;
+		padding-bottom: 0;
+	}
+	.btn-primary {
+		padding:11px 12px!important;
+		margin-bottom:20px
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+	.arancelesLanding .texto .right {
+		text-align: start;
+	}
+	.mobile {
+		display: none;
+	}
+	.footer {
+		width: 90%;
+	}
 }

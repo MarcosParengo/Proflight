@@ -22,7 +22,7 @@
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a class="d-none d-lg-block" target="blank"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -126,10 +126,10 @@
     </nav>
 
     <section class="home p-relative">
-        <div class="container-fluid">
-            <div class="row-flex d-flex align-items-center form p-relative">
-                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                    <h1 class="title">Contacto</h1>
+        <div class="container-fluid px-0">
+            <div class="row-flex d-flex align-items-end align-items-sm-center form p-relative">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 padding">
+                    <h1 class="desktop title">Contacto</h1>
                     <div class="row g-0 g-md-5">
                         <div class="col-12 col-md-6">
                             <div class="form-floating">
@@ -141,6 +141,12 @@
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="apellido" placeholder="Apellido">
                                 <label class="label" for="apellido">Apellido</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <input type="mail" class="form-control" id="mail" placeholder="Correo electronico">
+                                <label class="label" for="mail">Correo electronico</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -174,22 +180,16 @@
                             </select>
 
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <input type="mail" class="form-control" id="mail" placeholder="Correo electronico">
-                                <label class="label" for="mail">Correo electronico</label>
-                            </div>
-                        </div>
-                        <div class="divider"></div>
+                       
                         <div class="col-12">
-                            <div class="form-floating">
+                            <div class="form-floating mensaje">
                                 <textarea class="form-control mensaje" id="floatingTextarea2"
                                     style="height: 150px"></textarea>
                                 <label for="floatingTextarea2">Mensaje</label>
                             </div>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-primary enviarMensaje px-4 py-3">Enviar
+                            <button type="button" class="btn btn-primary enviarMensaje px-sm-4 py-sm-3">Enviar
                                 mensaje</button>
                         </div>
                     </div>
@@ -199,39 +199,41 @@
                 </div>
             </div>
         </div>
-        <div class="circle">
+        <div class="circle d-none d-sm-block">
             <img src="assets/images/components/Grupo 7053.png" alt="">
         </div>
-        <section class="footer d-flex align-items-end">
-            <div class=" container ">
-                <div class="row ">
-                    <h1 class="mail ">info@proflight.com.ar</h1>
-                    <h2>+54 9 11 6010-4446</h2>
-                    <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
-                    <ul class="social ">
-                        <li class="me-3">
-                            <a href="https://www.facebook.com/ " title=" ">
-                                <span class="icon fas fa-phone-alt "></span>
-                            </a>
-                        </li>
-                        <li class="me-3">
-                            <a href="https://www.facebook.com/ " title=" ">
-                                <span class="icon fas fa-envelope "></span>
-                            </a>
-                        </li>
-                        <li class="me-3">
-                            <a href="https://www.facebook.com/ " title=" ">
-                                <span class="icon fa fa-facebook "></span>
-                            </a>
-                        </li>
-                        <li class="me-3">
-                            <a href="https://www.instagram.com/ " title=" ">
-                                <span class="icon fab fa-instagram "></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <section class="footer-parent margin d-flex align-items-end justify-content-center">
+            <div class="footer">
+            <h1 class="mail pb-0 ">info@proflight.com.ar</h1>
+            <h2>+54 9 11 6010-4446</h2>
+            <h2>Av. Figueroa Alcorta 500,<br class="d-sm-block d-md-none"> Castelar, Bs. As.</h2>
+            <ul class="social">
+                <li class="me-2">
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                        title="">
+                        <span class="icon fa fa-envelope"></span>
+                    </a>
+                </li>
+                <li class="me-2">
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                        title="">
+                        <span class="icon fas fa-phone-alt"></span>
+                    </a>
+                </li>
+                <li class="me-2">
+                    <a target="_blank" href="https://www.facebook.com/proflight.la" title="">
+                        <span class="icon fa fa-facebook"></span>
+                    </a>
+                </li>
+                <li class="me-2">
+                    <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
+                        <span class="icon fab fa-instagram"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>   
         </section>
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "

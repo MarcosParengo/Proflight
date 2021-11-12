@@ -6,10 +6,24 @@ function toggleImage(tab){
     $(`#${tab}-2`).attr('src',aux)
 } 
 
-function togglePosition(id){
-    tab=( id.substring(0, id.length - 1))
-    $(`#${tab}1`).attr('class','imagen left')
-    $(`#${tab}2`).attr('class','imagen center')
+function togglePosition(clicked){
+    
+    tab=( clicked.substring(0, clicked.length - 1))
+
+    const elementClicked=$(`#${clicked}`)
+    const image1=$(`#${tab}1`)
+    const image2=$(`#${tab}2`)
+    
+    console.log(elementClicked.attr('class'))
+    
+    if(elementClicked.attr('class')==='imagen right'){
+        image1.attr('class','imagen left')
+        elementClicked.attr('class','imagen center')
+    }else if(elementClicked.attr('class')==='imagen left'){
+        elementClicked.attr('class','imagen center')
+        image2.attr('class','imagen right')
+    }
+    
 }  
 
 $(document).ready(function () {
