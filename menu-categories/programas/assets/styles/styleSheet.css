@@ -346,7 +346,6 @@ body p {
         text-align: left;
         font: normal normal 300 15px/27px Inter;
         opacity:0.7;
-        max-width:31ch;
     }
     .descripcion .mobile .accordion-body h3{
         color:#00B0CE;
@@ -370,7 +369,6 @@ body p {
     .descripcion .mobile .accordion-body .list-inside li{
         font: normal normal 300 15px/27px Inter;
         color:#707070;
-        max-width:30ch
     }
     .descripcion .mobile .accordion-button{
         background: #00B0CE7d 0% 0% no-repeat padding-box;
