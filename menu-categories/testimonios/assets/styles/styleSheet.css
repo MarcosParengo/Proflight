@@ -1,44 +1,44 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+	box-sizing: border-box;
+	font-family: 'Montserrat';
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
-    overflow-x: hidden;
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/pf%20background%20testimonios.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+	background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/pf%20background%20testimonios.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
 
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
@@ -46,386 +46,403 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
 
 /*-------------------------------------------------- Seccion landing--------------------------------------------------*/
 
 .circle {
-    position: absolute;
-    width: 70%;
-    right: 0;
-    transform: translateX(50%) translateY(-10%);
+	position: absolute;
+	width: 70%;
+	right: 0;
+	transform: translateX(50%) translateY(-10%);
 }
 
 .circle img {
-    width: 100%;
+	width: 100%;
 }
 
 .title {
-    text-align: right;
-    font: normal normal bold 68px/32px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: right;
+	font: normal normal bold 68px/32px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .subtitle {
-    text-align: right;
-    font: normal normal normal 30px/60px Roboto;
-    letter-spacing: 0px;
-    color: #B7B7B7;
+	text-align: right;
+	font: normal normal normal 30px/60px Roboto;
+	letter-spacing: 0px;
+	color: #b7b7b7;
 }
 
 .fullPage {
-    min-height: 100vh;
-    border: 3px;
+	min-height: 100vh;
+	border: 3px;
 }
 
 .filtrar {
-    text-align: center;
-    font: normal normal normal 16px/20px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    opacity: 1;
+	text-align: center;
+	font: normal normal normal 16px/20px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	opacity: 1;
 }
 
 .filtrar:hover {
-    color: #00B0CE;
+	color: #00b0ce;
+}
+.filterContainer{
+	font-size: 20px;
+	min-height: calc( 4.5rem + 1em + 40px );
+}
+
+.countryFlagFilter {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	margin-right: 72px;
+}
+.countryFlagFilter:last-of-type {
+	margin-right: 0;
 }
 
 .accordion-button::after {
-    display: none;
+	display: none;
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: white;
-    opacity: 0.5;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    transition: opacity 0s,background-color 0s;
+	background-color: white;
+	opacity: 0.5;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	transition: opacity 0s, background-color 0s;
 }
-
 
 .carousel-indicators .active {
-    background-color: #00B0CE;
-    opacity: 1;
+	background-color: #00b0ce;
+	opacity: 1;
 }
-.carousel-control-next{
-    justify-content: end;
+.carousel-control-next {
+	justify-content: end;
+	width: auto;
 }
 .carousel-control-prev {
-    justify-content: start;
-
+	justify-content: start;
+	width: auto;
 }
 .accordion-button:not(.collapsed) {
-    border: 0px transparent;
-    background-color: rgba(0, 0, 0, 0);
+	border: 0px transparent;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .accordion-item {
-    border: 0px transparent;
-    background-color: rgba(0, 0, 0, 0);
+	border: 0px transparent;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .accordion-button {
-    border: 0px transparent;
-    background-color: rgba(0, 0, 0, 0);
+	border: 0px transparent;
+	background-color: rgba(0, 0, 0, 0);
 }
-
+.paisSeleccionado {
+	text-align: center;
+	font: normal normal 800 39px/32px Inter;
+	letter-spacing: 1.17px;
+	color: #ffffff;
+	opacity: 1;
+	padding-top:42px;
+	padding-bottom:35px;
+	text-transform: capitalize;
+}
 .testimonio .title {
-    text-align: left;
-    font: normal normal normal 39px/32px Roboto;
-    letter-spacing: 1.17px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: left;
+	font: normal normal normal 39px/32px Roboto;
+	letter-spacing: 1.17px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .testimonio .subtitle {
-    font-size: 35px;
-    text-align: start;
-    color: rgb(143, 146, 150);
-    line-height: 3rem;
+	font-size: 35px;
+	text-align: start;
+	color: rgb(143, 146, 150);
+	line-height: 3rem;
 }
 
 .testimonio .origen {
-    text-align: left;
-    font: normal normal normal 10px/38px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 0.3;
-    letter-spacing: 0.4em;
+	text-align: left;
+	font: normal normal normal 10px/38px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase;
+	opacity: 0.3;
+	letter-spacing: 0.4em;
 }
 
-
 .testimonio .paragraph {
-    text-align: left;
-    font: normal normal 300 14px/30px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width: 58ch;
+	text-align: left;
+	font: normal normal 300 14px/30px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 58ch;
 }
 
 .testimonio .line {
-    border-bottom: 1px solid;
-    border-color: rgb(140, 146, 154);
-    margin-bottom: 3rem;
-    display: inline-block;
-    width: 49.8%;
+	border-bottom: 1px solid;
+	border-color: rgb(140, 146, 154);
+	margin-bottom: 3rem;
+	display: inline-block;
+	width: 49.8%;
 }
 
 .contenedorTestimonio {
-    width: 70%
+	width: 70%;
 }
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .contenedorTestimonio {
-        width: 95%
-    }
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.contenedorTestimonio {
+		width: 95%;
+	}
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .contenedorTestimonio {
-        width: 95%
-    }
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.testimonio .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.contenedorTestimonio {
+		width: 95%;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.testimonio .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
 
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-
-    .contenedorTestimonio {
-        width: 90%
-    }
+	.contenedorTestimonio {
+		width: 90%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .contenedorTestimonio {
-        width: 90%
-    }
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.testimonio .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.contenedorTestimonio {
+		width: 90%;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .contenedorTestimonio {
-        width: 80%
-    }
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.testimonio .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.contenedorTestimonio {
+		width: 80%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .contenedorTestimonio {
-        width: 80%
-    }
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.testimonio .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.contenedorTestimonio {
+		width: 80%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1350px) {
-    .filtrar {
-        text-align: start;
-        font-size: 20px;
-    }
-    .testimonio .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .contenedorTestimonio {
-        width: 70%
-    }
+	.filtrar {
+		text-align: start;
+		font-size: 20px;
+	}
+	.testimonio .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.contenedorTestimonio {
+		width: 70%;
+	}
 }
 
 /*-------------------------------------------------- Seccion selector de testimonios --------------------------------------------------*/
 
 .alumnos {
-    padding-bottom: 10%;
+	padding-bottom: 10%;
 }
 
 .alumnos .title {
-    padding-top: 7%;
-    padding-left: 15%;
-    text-align: start;
-    color: rgb(133, 139, 148);
+	padding-top: 7%;
+	padding-left: 15%;
+	text-align: start;
+	color: rgb(133, 139, 148);
 }
 
 .alumnos .enfasis {
-    color: white;
+	color: white;
 }
 
 .alumnos .card {
-    background-color: rgb(35, 47, 63);
-    border-radius: 0;
+	background-color: rgb(35, 47, 63);
+	border-radius: 0;
 }
 
 .alumnos .card .profilePic {
-    display: block;
-    width: 60%;
-    margin-top: -30%;
+	display: block;
+	width: 60%;
+	margin-top: -30%;
 }
 
 .alumnos .card .flag {
-    position: absolute;
-    width: 41px;
-    right: 0;
-    top:50%;
-    transform:translateX(50%) translateY(-50%)
+	position: absolute;
+	width: 41px;
+	right: 0;
+	top: 50%;
+	transform: translateX(50%) translateY(-50%);
 }
 
 .alumnos .show {
-    display: block;
+	display: block;
 }
 
 .alumnos .show img {
-    width: 18%;
-    padding-left: 0.5em;
+	width: 18%;
+	padding-left: 0.5em;
 }
 
 .alumnos .card .card-title {
-    text-align: center;
-font: normal normal 300 16px/9px Inter;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+	text-align: center;
+	font: normal normal 300 16px/9px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .alumnos .card-body .nacionalidad {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 2em;
-    padding-bottom: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .alumnos .card-body .testimonio {
-    font-size: 15px;
-    transition: opacity 2s ease-out;
+	font-size: 15px;
+	transition: opacity 2s ease-out;
 }
 
 .alumnos .card-footer {
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-top: 0px solid;
-    background-color: rgba(0, 0, 0, .0);
-    color: rgb(53, 187, 215);
-    text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	border-top: 0px solid;
+	background-color: rgba(0, 0, 0, .0);
+	color: rgb(53, 187, 215);
+	text-align: center;
 }
 
 .alumnos .card-footer a {
-    text-align: center;
-    font: normal normal normal 10px/29px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    text-transform: uppercase;
-    opacity: 1;
+	text-align: center;
+	font: normal normal normal 10px/29px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	text-transform: uppercase;
+	opacity: 1;
 }
 
 /*-------------------------------------------------- Media Query selector de testimonios --------------------------------------------------DONE*/
@@ -433,95 +450,95 @@ opacity: 1;
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .alumnoCard {
-        margin-top: 20%;
-    }
-    .containerTestimonios {
-        margin: 5%;
-    }
-    .alumnos .title {
-        padding-left: 10%;
-        font-size: 25px;
-    }
+	.alumnoCard {
+		margin-top: 20%;
+	}
+	.containerTestimonios {
+		margin: 5%;
+	}
+	.alumnos .title {
+		padding-left: 10%;
+		font-size: 25px;
+	}
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .alumnoCard {
-        margin-top: 20%;
-    }
-    .containerTestimonios {
-        margin: 5%;
-    }
-    .alumnos .title {
-        padding-left: 10%;
-        font-size: 25px;
-    }
+	.alumnoCard {
+		margin-top: 20%;
+	}
+	.containerTestimonios {
+		margin: 5%;
+	}
+	.alumnos .title {
+		padding-left: 10%;
+		font-size: 25px;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .alumnoCard {
-        margin-top: 20%;
-    }
-    .containerTestimonios {
-        margin: 5%;
-    }
-    .alumnos .title {
-        padding-left: 15%;
-        font-size: 25px;
-    }
+	.alumnoCard {
+		margin-top: 20%;
+	}
+	.containerTestimonios {
+		margin: 5%;
+	}
+	.alumnos .title {
+		padding-left: 15%;
+		font-size: 25px;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .alumnoCard {
-        margin-top: 5%;
-    }
-    .containerTestimonios {
-        margin: 5%;
-    }
-    .alumnos .title {
-        padding-left: 15%;
-        font-size: 25px;
-    }
+	.alumnoCard {
+		margin-top: 5%;
+	}
+	.containerTestimonios {
+		margin: 5%;
+	}
+	.alumnos .title {
+		padding-left: 15%;
+		font-size: 25px;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .alumnoCard {
-        margin-top: 5%;
-    }
-    .containerTestimonios {
-        margin: 5%;
-    }
-    .alumnos .title {
-        padding-left: 15%;
-        font-size: 30px;
-    }
+	.alumnoCard {
+		margin-top: 5%;
+	}
+	.containerTestimonios {
+		margin: 5%;
+	}
+	.alumnos .title {
+		padding-left: 15%;
+		font-size: 30px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .alumnoCard {
-        margin-top: 5%;
-    }
-    .containerTestimonios {
-        margin: 5%;
-    }
-    .alumnos .title {
-        padding-left: 15%;
-        font-size: 30px;
-    }
+	.alumnoCard {
+		margin-top: 5%;
+	}
+	.containerTestimonios {
+		margin: 5%;
+	}
+	.alumnos .title {
+		padding-left: 15%;
+		font-size: 30px;
+	}
 }
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
 .footer {
-    min-height: 80vh;
+	min-height: 80vh;
 }

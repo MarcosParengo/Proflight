@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-color:#002e5d" style="overflow-x: hidden;">
+
+<body className="p-relative" style="background-color:#002e5d">
     <a target="blank"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
@@ -25,16 +26,18 @@
             <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
         </div>
     </a>
-    
+
     <nav class="navbar fixed-top navbar-dark">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,7 +46,7 @@
                     data-alt-src="/Proflight/assets\images\menuIcons\Cross light.svg"
                     src="/Proflight/assets\images\menuIcons\Menu light.svg">
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container-fluid">
                     <div class="row justify-content-end">
@@ -118,17 +121,17 @@
 
         </div>
     </nav>
-    
+
     <div class="circle">
         <img src="assets/images/components/Circle.png" alt="">
     </div>
     <section class="home">
         <section class="p-relative">
-            
-            <a href="#testimonio" >
+
+            <a href="#testimonio">
                 <div class="container-fluid">
                     <div class="fullPage row d-flex justify-content-center align-items-center p-relative">
-                        
+
                         <div class="col me-sm-0 me-md-5 col-xs-12 col-md-12 col-lg-5 col-xl-4">
                             <h1 class="title">
                                 Testimonios
@@ -143,15 +146,15 @@
                         <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                             <h1 class="text">Flota</h1>
                         </div>
-                        
+
                     </div>
                 </div>
             </a>
         </section>
-        
+
 
         <section>
-            <div class="container" style="min-height: 140px;">
+            <div class="container filterContainer">
                 <div class="row">
                     <div class="accordion accordion" id="accordion">
                         <div class="accordion-item">
@@ -168,15 +171,13 @@
                                 data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <div>
-                                        <img class="me-3" src="assets/images/components/flags/ARG.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/CHI.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/COL.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/ECU.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/MEX.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/PAN.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/PER.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/SAL.png" alt="">
-                                            <img class="me-3"src="assets/images/components/flags/VZLA.png" alt="">
+                                        <img id="ARGENTINA" class="countryFlagFilter" src="assets/images/testimonio/bandera/ARGENTINA.svg" onclick="pais(id)" alt="">
+                                        <img id="GUATEMALA" class="countryFlagFilter" src="assets/images/testimonio/bandera/GUATEMALA.svg" onclick="pais(id)" alt="">
+                                        <img id="COLOMBIA" class="countryFlagFilter" src="assets/images/testimonio/bandera/COLOMBIA.svg" onclick="pais(id)" alt="">
+                                        <img id="EL SALVADOR" class="countryFlagFilter" src="assets/images/testimonio/bandera/EL SALVADOR.svg" onclick="pais(id)" alt="">
+                                        <img id="PANAMÁ" class="countryFlagFilter" src="assets/images/testimonio/bandera/PANAMÁ.svg" onclick="pais(id)" alt="">
+                                        <img id="PERÚ" class="countryFlagFilter" src="assets/images/testimonio/bandera/PERÚ.svg" onclick="pais(id)" alt="">
+                                        <img id="VENEZUELA" class="countryFlagFilter" src="assets/images/testimonio/bandera/VENEZUELA.svg" onclick="pais(id)" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -185,27 +186,26 @@
                 </div>
             </div>
         </section>
-
+        <div class="w-100">
+            <h1 class="paisSeleccionado" id="paisSeleccionado"></h1>
+        </div>
         <section class="alumnos">
             <div class="container-fluid">
                 <div class="row">
                     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                        <div class="carousel-indicators" id="carouselIndicators">
+                            
                         </div>
                         <div class="carousel-inner" id="selectorDeTestimonios">
-        
+
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <button id="prev" class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <button id="next" class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>

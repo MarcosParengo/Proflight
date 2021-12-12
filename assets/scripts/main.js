@@ -106,18 +106,18 @@ function fillContainerTestimonios(obj) {
             <div class="card h-100">
                 <Container class="img-container d-flex justify-content-center">
                     <div class="p-relative w-50 img-container2">
-                        <img src="assets/images/testimonio/profile/${obj.nombre}.png" class="img-fluid" alt="...">
+                        <img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj.nombre}.png" class="img-fluid" alt="...">
                         <img src="assets/images/testimonio/bandera/${obj.origen.toUpperCase()}.png" class="flag hidden" alt="-">
                     </div>
                 </Container>  
                 <div class="card-body mt-2 mb-0 py-0">
                     <h5 class="card-title">${obj.nombre}</h5>
                     <p class="hidden testimonio card-text mb-0 me-0">${obj.testimonioAdelanto}</p>
-                    <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen}.png" alt="-"></p>
+                    <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj.origen}<img src="assets/images/testimonio/bandera/${obj.origen.toUpperCase()}.png" alt="-"></p>
                 </div>
                 <div class="py-0 my-0 card-footer">
                 <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
-                <a class="hidden my-0 py-0 " href="menu-categories/testimonios/">continuar leyendo</a>
+                <a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj.origen.toLowerCase()}&alumno=${obj.nombre}">continuar leyendo</a>
                 </div>
             </div>
         </div>

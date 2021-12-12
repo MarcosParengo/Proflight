@@ -1,85 +1,86 @@
-[{
-        "nombre": "Malvin Elias Ponce Carrera",
+[
+    {
+        "nombre": "Juan Andres Rivera",
+        "origen": "COLOMBIA",
+        "testimonio": "\u201CCuando somos pequeños solemos tener muchas fantasías en cuanto a lo que queremos ser, un día elegimos ser doctores, pero al otro queremos ser chef. Mi gran sueño siempre fue el de manejar un avión. Ahora lo estoy logrando, gracias a Dios, a mi familia que ha sido mi motivación y soporte para hacer realidad este sueño y a Proflight”.",
+        "testimonioAdelanto": "Cuando somos pequeños solemos tener muchas fantasías en cuanto a lo que queremos ser, un día elegimos ser doctores, pero al otro queremos ser chef. Mi gran sueño siempre fue....",
+        "flag": "COL"
+    },
+    {
+        "nombre": "Alejandro Zapata",
+        "origen": "COLOMBIA",
+        "testimonio": "“Proflight es el lugar donde los sueños se cumplen, un lugar con excelentes instalaciones preparadas totalmente para la formación personal y profesional de los estudiantes, un lugar en el que te sientes como en casa. Ningún soñador es pequeño y ningún sueño es demasiado grande. Intentalo… Te aseguro que será la mejor experiencia de tu vida.”",
+        "testimonioAdelanto": "Proflight es el lugar donde los sueños se cumplen, un lugar con excelentes instalaciones preparadas totalmente para la formación personal y profesional de los estudiantes, un lugar en ...",
+        "flag": "COL"
+    },
+    {
+        "nombre": "Diogenes Rodriguez",
         "origen": "PANAMÁ",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
+        "testimonio": "“Escogí Proflight por su buen programa de estudio. Al llegar a Argentina tuve un acogedor recibimiento. Comencé sin conocimientos pero he tenido buenos instructores a quienes escucho atentamente y conservo sus enseñanzas para ser un piloto con todas las cualidades necesarias para prosperar. Gracias, gracias, gracias al equipo de Proflight por hacer de mí un gran profesional.”",
+        "testimonioAdelanto": "Escogí Proflight por su buen programa de estudio. Al llegar a Argentina tuve un acogedor recibimiento. Comencé sin conocimientos pero he tenido buenos instructores a quienes escucho...",
         "flag": "PAN"
+    },
+    {
+        "nombre": "Jesús Orocu",
+        "origen": "PANAMÁ",
+        "testimonio": "“Al inicio Proflight llamó mi atención por su metodología de estudio, la veía interesante y distinta a otras escuelas. Al llegar a Argentina fue algo caótico para ser honesto, ¡son muchos cambios! Pero no me arrepiento de nada! He conocido buenos instructores y compañeros que siempre están para ayudarme. Además hay buen vínculo entre instructores y alumnos, algo que considero muy importante. El sistema de gestión de vuelos, simuladores y evaluaciones de la escuela es excelente. ¡Vamos! ¿Qué más puedo decir? Sin dudas recomiendo Proflight.”",
+        "testimonioAdelanto": "Al inicio Proflight llamó mi atención por su metodología de estudio, la veía interesante y distinta a otras escuelas. Al llegar a Argentina fue algo caótico para ser honesto...",
+        "flag": "PAN"
+    },
+    {
+        "nombre": "Karlo Ato",
+        "origen": "PERÚ",
+        "testimonio": "“Desde los 10 años siempre estuvo en mi mente ser piloto de avión y a medida que crecía mi sueño se hacía más grande. Hasta que tuve la oportunidad de llegar a Proflight. Esta es la escuela con la que todo extranjero sueña. Recomiendo que aquellos con mis mismos sueños puedan cumplirlos aquí, no se arrepentirán”",
+        "testimonioAdelanto": "Desde los 10 años siempre estuvo en mi mente ser piloto de avión y a medida que crecía mi sueño se hacía más grande. Hasta que tuve la oportunidad de llegar a Proflight. Esta es la...",
+        "flag": "PER"
+    },
+    {
+        "nombre": "Michell Dominguez",
+        "origen": "VENEZUELA",
+        "testimonio": "“Cuando llegué a Proflight me encontré con mucho más de lo que esperaba. La escuela tiene unas instalaciones muy completas, con sistemas y aplicaciones online, mucha tecnología, simuladores con el mejor equipamiento, aviones con sistemas Garmin para mayor aprendizaje, los mejores instructores y el mejor trato. Proflight fue la mejor decisión para cumplir mi sueño.”",
+        "testimonioAdelanto": "Cuando llegué a Proflight me encontré con mucho más de lo que esperaba. La escuela tiene unas instalaciones muy completas, con sistemas y aplicaciones online, mucha tecnología...",
+        "flag": "VEN"
+    }, 
+    {
+        "nombre": "Xavier Cruz Esperanza",
+        "origen": "EL SALVADOR",
+        "testimonio": "“Escogí Proflight por la oportunidad que me brindaba de estudiar en el extranjero. Estudiar en Argentina es una experiencia completamente nueva, que vale la pena vivir. Conocí mucha gente de otros países, que me ayudó a entender más otras culturas. También el estar solo en un país distinto, me hizo valorar más el dinero, a ser más consciente de mis acciones y así también a madurar.”",
+        "testimonioAdelanto": "Escogí Proflight por la oportunidad que me brindaba de estudiar en el extranjero. Estudiar en Argentina es una experiencia completamente nueva, que vale la pena vivir. Conocí mucha...",
+        "flag": "SAL"
+    },
+    {
+        "nombre": "Guillermo Villalta",
+        "origen": "EL SALVADOR",
+        "testimonio": "“Cuando decidí empezar a estudiar aviación elegí Proflight por muchas razones que la hacen ser una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos enseñan y nos inculcan a hacer procesos que nos servirán en el futuro. La academia tiene instalaciones de primera calidad, todo lo necesario para aprender y adentrarse en este mundo, simuladores muy bien equipados y una flota de aviones con un sistema Garmin que hace que la experiencia de vuelo y aprendizaje sea mucho mejor.”",
+        "testimonioAdelanto": "Cuando decidí empezar a estudiar aviación elegí Proflight por muchas razones que la hacen ser una de las mejores academias de aviación, pero sobre todo por su método...",
+        "flag": "SAL"
+    },
+    {
+        "nombre": "Andres Barreto",
+        "origen": "COLOMBIA",
+        "testimonio": "“Decidir iniciar la carrera de mis sueños, ha sido sin duda alguna la decisión más arriesgada y entre tanto la más importante de mi vida. Tan importante como fue obtener mis alas, fue la determinación de elegir la mejor forma de llegar a cumplir mi meta. Así como la licencia te habilita para ser, una academia te forja para llevarte hasta alcanzarlo.”",
+        "testimonioAdelanto": "Decidir iniciar la carrera de mis sueños, ha sido sin duda alguna la decisión más arriesgada y entre tanto la más importante de mi vida. Tan importante como fue...",
+        "flag": "COL"
+    },
+    {
+        "nombre": "David Castilla",
+        "origen": "GUATEMALA",
+        "testimonio": "“Mi experiencia en la escuela ha sido perfecta, no puedo pedir más. Desde mis compañeros de casa, instructores, otros pilotos y líderes, todos me han apoyado y enseñado algo. Con tantos recursos he logrado aprender mucho en tan poco tiempo y me emociona lo que aún me queda por aprender. Sin duda una de las mejores decisiones que he tomado ha sido venir a Argentina con Proflight.”",
+        "testimonioAdelanto": "“Mi experiencia en la escuela ha sido perfecta, no puedo pedir más. Desde mis compañeros de casa, instructores, otros pilotos y líderes, todos me han apoyado y enseñado algo...",
+        "flag": "GUA"
+    },
+    {
+        "nombre": "Lisandro Sanchez",
+        "origen": "ARGENTINA",
+        "testimonio": "“Elegí ProFlight porque me pareció la mejor escuela por el gran plan de estudio, la calidad, la variedad en sus simuladores y flota. Cuentan con un sistema de check in y estados de vuelo, atribuyendo mayor control y organización a la escuela. Además, un sitio web donde se puede ver la continuidad y el avance del curso.”",
+        "testimonioAdelanto": "“Elegí ProFlight porque me pareció la mejor escuela por el gran plan de estudio, la calidad, la variedad en sus simuladores y flota...",
+        "flag": "ARG"
     },
     {
         "nombre": "Luis Brokamp",
         "origen": "PANAMÁ",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
+        "testimonio": "“Mi sueño era ser piloto. Cuando me contacté con el equipo de Proflight supe que tenía que estudiar aquí, y no me equivoque. El día que llegué a Argentina fui cálidamente recibido en el aeropuerto y en la escuela. Ese mismo día comencé a estudiar y en poco tiempo comencé a volar. He conocido más de 40 aeropuertos. Estoy feliz de la decisión que tome, he aprendido mucho más de lo que imaginaba.”",
+        "testimonioAdelanto": "“Mi sueño era ser piloto. Cuando me contacté con el equipo de Proflight supe que tenía que estudiar aquí, y no me equivoque. El día que...”",
         "flag": "PAN"
-    },
-    {
-        "nombre": "Guilermo Villalta Sánchez",
-        "origen": "EL SALVADOR",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "SAL"
-    },
-    {
-        "nombre": "José Salvador Henández",
-        "origen": "ARGENTINA",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "ARG"
-    },
-    {
-        "nombre": "Malvin Elias Ponce Carrera",
-        "origen": "PANAMÁ",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "PAN"
-    },
-    {
-        "nombre": "Luis Brokamp",
-        "origen": "PANAMÁ",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "PAN"
-    },
-    {
-        "nombre": "Guilermo Villalta Sánchez",
-        "origen": "EL SALVADOR",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "SAL"
-    },
-    {
-        "nombre": "José Salvador Henández",
-        "origen": "ARGENTINA",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "ARG"
-    },
-    {
-        "nombre": "Malvin Elias Ponce Carrera",
-        "origen": "PANAMÁ",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "PAN"
-    },
-    {
-        "nombre": "Luis Brokamp",
-        "origen": "PANAMÁ",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "PAN"
-    },
-    {
-        "nombre": "Guilermo Villalta Sánchez",
-        "origen": "EL SALVADOR",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "SAL"
-    },
-    {
-        "nombre": "José Salvador Henández",
-        "origen": "ARGENTINA",
-        "testimonio": "Desde siempre uno de mis más grandes sueños fue ser piloto, mi padre me enseñó y adentró a este mundo tan maravilloso. Cuando decidí estudiar aviación elegí ProFlight.ar porque es una de las mejores academias de aviación, pero sobre todo por su método de enseñanza, porque desde el primer momento nos inculcan procesos que nos servirán más adelante.<br> La academia tiene instalaciones de primera calidad, lo último en tecnología y un sistema de simuladores muy bien equipado, además de tener un aprendizaje de la mano de instructores muy experimentados.<br> Pero sin lugar a dudas lo que más me ha gustado son sus aviones, se encuentran en un estado excelente, relucientes y pintados exactamente iguales todos con sistema Garmin, haciendo la experiencia de vuelo hermosa. Es un placer volarlos. ¡Venir a Argentina a cumplir mi sueño fue una gran elección!",
-        "testimonioAdelanto": "Mi sueño era ser piloto y al momento de elegir una academia había muchas posibilidades pero cuando me contacte con el equipo de Proflight supe que tenía que estudiar aquí..",
-        "flag": "ARG"
     }
 ]
