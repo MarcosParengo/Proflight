@@ -1,661 +1,678 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+	box-sizing: border-box;
+	font-family: 'Montserrat';
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	width: 100%;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
 
 .accordion-button::after {
-    display: none;
+	display: none;
 }
-
-
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/eventos/assets/images/background/bg.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+	background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/eventos/assets/images/background/bg.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
 
 .page {
-    background-color: white;
+	background-color: white;
 }
-
 
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
 
-
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
-
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
-
 
 /*-------------------------------------------------- Seccion landing--------------------------------------------------*/
-.sameLeft{
-    padding-left: 15%;
+.sameLeft {
+	padding-left: 15%;
 }
-.footerBlack{
-    color:black!important
+.footerBlack {
+	color: black !important;
 }
 .title {
-    font: normal normal bold 68px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    text-align: start;
+	font: normal normal bold 68px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	text-align: start;
 }
 
 .subtitle {
-    text-align: start;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    max-width: 53ch;
+	text-align: start;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	max-width: 53ch;
 }
 
 .fullPage {
-    height: 100vh;
-    width: 100%;
-    border: 3px;
+	height: 100vh;
+	width: 100%;
+	border: 3px;
+}
+.filter .button {
+	background-color: transparent;
+	border: none;
+}
+.filter .button .filter-button-text {
+	text-align: start;
+	font: normal normal normal 16px/20px Inter;
+	letter-spacing: 0px;
+	opacity: 1;
+	color: #0b131e;
+	transition: all 0.5s;
 }
 
-.filtrar {
-    text-align: start;
-    font: normal normal normal 16px/20px Inter;
-    letter-spacing: 0px;
-    opacity: 1; 
-    color: #0B131E
+.filter .button.active .filter-button-text {
+	color: rgb(53, 187, 215) !important;
 }
 
-.filtrar:hover {
-    color: rgb(53, 187, 215);
+.filter .button .filter-button-text:hover {
+	color: rgb(53, 187, 215) !important;
+}
+
+.filter .text {
+	cursor: pointer;
+	text-align: left;
+	font: normal normal normal 20px/24px Inter;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+	text-transform: capitalize;
+}
+.filter .text:hover {
+	color: rgb(53, 187, 215) !important;
+}
+
+.filter .flag {
+	display: inline-block;
+	width: 30px;
+}
+
+.flags {
+	transition: 0.5s all;
+	opacity: 1;
+}
+.flags.hidden {
+	opacity: 0;
 }
 
 .carousel-indicators [data-bs-target] {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
 }
 
 .accordion-button:not(.collapsed) {
-    border: 0px transparent;
-    background-color: rgba(0, 0, 0, 0);
+	border: 0px transparent;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .accordion-item {
-    border: 0px transparent;
-    background-color: rgba(0, 0, 0, 0);
+	border: 0px transparent;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .accordion-button {
-    border: 0px transparent;
-    background-color: rgba(0, 0, 0, 0);
+	border: 0px transparent;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .evento .title {
-    font-size: 35px;
-    color: white;
-    text-align: start;
+	font-size: 35px;
+	color: white;
+	text-align: start;
 }
 
 .evento .subtitle {
-    font-size: 35px;
-    text-align: start;
-    color: rgb(143, 146, 150);
-    line-height: 3rem;
+	font-size: 35px;
+	text-align: start;
+	color: rgb(143, 146, 150);
+	line-height: 3rem;
 }
 
 .evento .origen {
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 2rem;
-    color: rgb(140, 146, 154)
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 2rem;
+	color: rgb(140, 146, 154);
 }
 
 .evento .paragraph {
-    font-size: 15px;
-    line-height: 2rem;
-    color: rgb(140, 146, 154)
+	font-size: 15px;
+	line-height: 2rem;
+	color: rgb(140, 146, 154);
 }
 
 .evento .line {
-    border-bottom: 1px solid;
-    border-color: rgb(140, 146, 154);
-    margin-bottom: 3rem;
-    width: 90%;
+	border-bottom: 1px solid;
+	border-color: rgb(140, 146, 154);
+	margin-bottom: 3rem;
+	width: 90%;
 }
 
 .contenedorevento {
-    width: 70%
+	width: 70%;
 }
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .title {
-        font-size: 30px;
-    }
-  
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 20px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 15px;
-        line-height: 1.3rem;
-    }
-    .contenedorevento {
-        width: 95%
-    }
-}
+	.title {
+		font-size: 30px;
+	}
 
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 20px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 15px;
+		line-height: 1.3rem;
+	}
+	.contenedorevento {
+		width: 95%;
+	}
+}
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .title {
-        font-size: 30px;
-    }
-  
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 15px;
-        line-height: 1.3rem;
-    }
-    .contenedorevento {
-        width: 95%
-    }
-}
+	.title {
+		font-size: 30px;
+	}
 
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 15px;
+		line-height: 1.3rem;
+	}
+	.contenedorevento {
+		width: 95%;
+	}
+}
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .title {
-        font-size: 40px;
-    }
+	.title {
+		font-size: 40px;
+	}
 
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 15px;
-        line-height: 1.3rem;
-    }
-    .contenedorevento {
-        width: 90%
-    }
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 15px;
+		line-height: 1.3rem;
+	}
+	.contenedorevento {
+		width: 90%;
+	}
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .title {
-        font-size: 60px;
-    }
+	.title {
+		font-size: 60px;
+	}
 
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 20px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 13px;
-        line-height: 1.3rem;
-    }
-    .contenedorevento {
-        width: 90%
-    }
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 20px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 13px;
+		line-height: 1.3rem;
+	}
+	.contenedorevento {
+		width: 90%;
+	}
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .title {
-        font-size: 60px;
-    }
-  
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 13px;
-        line-height: 1.3rem;
-    }
-    .contenedorevento {
-        width: 80%
-    }
-}
+	.title {
+		font-size: 60px;
+	}
 
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 13px;
+		line-height: 1.3rem;
+	}
+	.contenedorevento {
+		width: 80%;
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .title {
-        font-size: 60px;
-    }
-  
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 14px;
-        line-height: 1.5rem;
-    }
-    .contenedorevento {
-        width: 80%
-    }
-}
+	.title {
+		font-size: 60px;
+	}
 
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 14px;
+		line-height: 1.5rem;
+	}
+	.contenedorevento {
+		width: 80%;
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1350px) {
-    .title {
-        font-size: 60px;
-    }
-  
-    .evento .title {
-        font-size: 35px;
-        text-align: start;
-    }
-    .evento .subtitle {
-        font-size: 35px;
-        text-align: start;
-        line-height: 3rem;
-    }
-    .evento .origen {
-        font-size: 13px;
-        line-height: 2rem;
-    }
-    .evento .paragraph {
-        font-size: 15px;
-        line-height: 2rem;
-    }
-    .contenedorevento {
-        width: 70%
-    }
-}
+	.title {
+		font-size: 60px;
+	}
 
+	.evento .title {
+		font-size: 35px;
+		text-align: start;
+	}
+	.evento .subtitle {
+		font-size: 35px;
+		text-align: start;
+		line-height: 3rem;
+	}
+	.evento .origen {
+		font-size: 13px;
+		line-height: 2rem;
+	}
+	.evento .paragraph {
+		font-size: 15px;
+		line-height: 2rem;
+	}
+	.contenedorevento {
+		width: 70%;
+	}
+}
 
 /*-------------------------------------------------- Seccion selector de eventos --------------------------------------------------*/
 
 .eventos {
-    min-height: 70vh;
-    padding-bottom: 10%;
+	min-height: 70vh;
+	padding-bottom: 10%;
 }
 
 .eventos .title {
-    padding-top: 7%;
-    padding-left: 15%;
-    text-align: start;
-    color: rgb(133, 139, 148);
+	padding-top: 7%;
+	padding-left: 15%;
+	text-align: start;
+	color: rgb(133, 139, 148);
 }
 
 .eventos .enfasis {
-    color: white;
+	color: white;
 }
 
 .eventos .card {
-    background-color: white;
+	background: transparent linear-gradient(180deg, #8ab6f326 0%, #C9C9C926 65%, #F0F0F026 90%, #AEBDE626 100%) 0% 0%
+		no-repeat padding-box;
 }
 
 .eventos .card .profilePic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .eventos .card .flag {
-    display: block;
-    margin: auto;
-    width: 15%;
+	display: block;
+	margin: auto;
+	width: 15%;
+	margin-top: 14px;
+	margin-bottom: 24px;
 }
 
 .eventos .show {
-    display: block;
+	display: block;
 }
 
 .eventos .show img {
-    width: 18%;
-    padding-left: 0.5em;
+	width: 18%;
+	padding-left: 0.5em;
 }
 
 .eventos .card .card-title {
-    font: normal normal normal 16px/20px Inter;
-    letter-spacing: 0px;
-    color: #6B6B6B;
-    opacity: 1;
-    text-align: center;
+	font: normal normal normal 16px/20px Inter;
+	letter-spacing: 0px;
+	color: #6b6b6b;
+	opacity: 1;
+	text-align: center;
+	margin-bottom: 28px;
 }
 
 .eventos .card .card-info {
-    font: normal normal medium 14px/20px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    text-transform: uppercase;
-    text-align: center;
+	font: normal normal 700 14px/20px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	text-transform: uppercase;
+	text-align: center;
 }
-.eventos .card  .alternate{
-    text-align: center;
-    font: normal normal 300 14px/20px Inter;
-    letter-spacing: 0px;
-    color: #6B6B6B;
+.eventos .card .alternate {
+	text-align: center;
+	font: normal normal 300 14px/20px Inter;
+	letter-spacing: 0px;
+	color: #6b6b6b;
+}
+.eventos .card .alternate:last-of-type {
+	padding-bottom: 0;
 }
 .btn-primary {
-    background-color: rgb(53, 187, 215);
-    border-radius: 50px;
-    border: none
+	background-color: rgb(53, 187, 215);
+	border-radius: 50px;
+	border: none;
 }
 
 .btn-primary :hover {
-    background-color: rgb(0, 0, 0);
-    border-radius: 50px;
-    border: none
+	background-color: rgb(0, 0, 0);
+	border-radius: 50px;
+	border: none;
 }
 
 .card {
-    border: none;
+	border: none;
+}
+.eventos .card-body {
+	padding: 0;
 }
 
 .eventos .card-body .nacionalidad {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 2em;
-    padding-bottom: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .eventos .card-body .evento {
-    font-size: 15px;
-    transition: opacity 2s ease-out;
+	font-size: 15px;
+	transition: opacity 2s ease-out;
 }
 
 .eventos .card-footer {
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-top: 0px solid;
-    background-color: rgba(0, 0, 0, .0);
-    color: rgb(53, 187, 215);
-    text-align: center;
+	padding-bottom: 39px;
+	padding-top: 39px;
+	border-top: 0px solid;
+	background-color: rgba(0, 0, 0, .0);
+	color: rgb(53, 187, 215);
+	text-align: center;
 }
 
-
 /*-------------------------------------------------- Media Query selector de eventos --------------------------------------------------DONE*/
-
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-    .eventoCard {
-        margin-top: 20%;
-    }
-    .containereventos {
-        margin: 5%;
-    }
-    .eventos .title {
-        padding-left: 10%;
-        font-size: 25px;
-    }
+	.eventoCard {
+		margin-top: 20%;
+	}
+	.containereventos {
+		margin: 5%;
+	}
+	.eventos .title {
+		padding-left: 10%;
+		font-size: 25px;
+	}
 }
-
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-    .eventoCard {
-        margin-top: 20%;
-    }
-    .containereventos {
-        margin: 5%;
-    }
-    .eventos .title {
-        padding-left: 10%;
-        font-size: 25px;
-    }
+	.eventoCard {
+		margin-top: 20%;
+	}
+	.containereventos {
+		margin: 5%;
+	}
+	.eventos .title {
+		padding-left: 10%;
+		font-size: 25px;
+	}
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-    .eventoCard {
-        margin-top: 20%;
-    }
-    .containereventos {
-        margin: 5%;
-    }
-    .eventos .title {
-        padding-left: 15%;
-        font-size: 25px;
-    }
+	.eventoCard {
+		margin-top: 20%;
+	}
+	.containereventos {
+		margin: 5%;
+	}
+	.eventos .title {
+		padding-left: 15%;
+		font-size: 25px;
+	}
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .eventoCard {
-        margin-top: 5%;
-    }
-    .containereventos {
-        margin: 5%;
-    }
-    .eventos .title {
-        padding-left: 15%;
-        font-size: 25px;
-    }
+	.eventoCard {
+		margin-top: 5%;
+	}
+	.containereventos {
+		margin: 5%;
+	}
+	.eventos .title {
+		padding-left: 15%;
+		font-size: 25px;
+	}
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .eventoCard {
-        margin-top: 5%;
-    }
-    .containereventos {
-        margin: 5%;
-    }
-    .eventos .title {
-        padding-left: 15%;
-        font-size: 30px;
-    }
+	.eventoCard {
+		margin-top: 5%;
+	}
+	.containereventos {
+		margin: 5%;
+	}
+	.eventos .title {
+		padding-left: 15%;
+		font-size: 30px;
+	}
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .eventoCard {
-        margin-top: 5%;
-    }
-    .containereventos {
-        margin: 5%;
-    }
-    .eventos .title {
-        padding-left: 15%;
-        font-size: 30px;
-    }
+	.eventoCard {
+		margin-top: 5%;
+	}
+	.containereventos {
+		margin: 5%;
+	}
+	.eventos .title {
+		padding-left: 15%;
+		font-size: 30px;
+	}
 }
-
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
 .nonLanding {
-    background-image: url("../images/background/footer\ white.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: bottom;
+	background-image: url("../images/background/footer\ white.svg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom;
 }
-
 
 ul.social {
-    width: 100%;
-    text-align: start;
-    padding-bottom: 10%;
+	width: 100%;
+	text-align: start;
+	padding-bottom: 10%;
 }
 
-ul.social>li {
-    display: inline-block;
+ul.social > li {
+	display: inline-block;
 }
 
-ul.social>li>a {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 36px;
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
-    margin: 0 3px 3px 0;
+ul.social > li > a {
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid;
+	border-radius: 36px;
+	background-color: rgba(0, 0, 0, 0);
+	color: black;
+	margin: 0 3px 3px 0;
 }
 
-ul.social>li>a:hover {
-    text-decoration: none;
-    opacity: 0.5;
+ul.social > li > a:hover {
+	text-decoration: none;
+	opacity: 0.5;
 }

@@ -30,14 +30,16 @@
     </a>
 
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,7 +48,7 @@
                     data-alt-src="/Proflight/assets\images\menuIcons\Cross dark.svg"
                     src="/Proflight/assets\images\menuIcons\Menu dark.svg">
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container-fluid">
                     <div class="row justify-content-end">
@@ -148,50 +150,29 @@
             </section>
         </a>
         <div class="nonLanding" id="nonLanding">
-            <section>
+            <section class="filter">
                 <div class="container col-9">
                     <div class="row ">
-                        <div class="accordion accordion" id="accordionExample" style="min-height: 140px;">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        <h1 class="filtrar">
-                                            <span class="icon fas fa-filter me-2"></span>
-                                            Filtrar Eventos por país
-                                        </h1>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div>
-                                            <img class="me-3" src="assets/images/components/flags/ARG.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/CHI.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/COL.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/ECU.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/MEX.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/PAN.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/PER.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/SAL.png" alt="">
-                                            <img class="me-3" src="assets/images/components/flags/VZLA.png" alt="">
-                                        </div>
-                                    </div>
+                        <div class="col-3">
+                            <button id="buttonFilter" type="button" class="button" onclick="toggleFilter()">
+                                <h1 class="filter-button-text">
+                                    <span class="icon fas fa-filter me-2"></span>
+                                    Filtrar Eventos por país
+                                </h1>
+                            </button>
+                        </div>
+                        <div class="col-9 flags hidden" id="flags">
+                            <div class="container-fluid">
+                                <div class="row" id="countryFilters">
+                                    
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
 
             <section class="eventos">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-
-                        </div>
-                    </div>
-                </div>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner" id="selectorDeEventos">
 

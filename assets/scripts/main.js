@@ -19,7 +19,6 @@ $(document).ready(function() {
 	carouselIndicators = $('#carouselIndicators');
 
 	LoadJson(testimonios, 1);
-	indicators();
 	LoadJson(eventos, 2);
 	const titles = [
 		'Licencia de piloto privado',

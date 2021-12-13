@@ -8,6 +8,13 @@
     --hover-btn-color:#35BBD7;
     --btn-color:#00AFCD;
 }
+.navbar{
+    pointer-events: none;
+}
+.navbar-brand,.navbar-toggler,.navbar-height-without-header{
+    pointer-events: all;
+}
+
 .secondaryColor{
     color:var(--secondary-color)
 }
