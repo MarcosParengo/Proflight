@@ -247,6 +247,21 @@ body p {
 	width: 70%;
 }
 
+.chevronLeftContainer,.chevronRightContainer{
+	position:absolute;
+	cursor:pointer;
+	width:auto;
+	height:100%;
+	display:flex;
+	align-items: center;
+}
+.chevronLeftContainer{	
+	left:0%;
+}
+.chevronRightContainer{
+	right:0%;
+}
+
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {

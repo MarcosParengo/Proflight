@@ -3,8 +3,9 @@ let testimoniosCargados = [];
 let tituloPaisSeleccionado = $();
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-paisSeleccionado = urlParams.get('pais') || 'COLOMBIA';
-alumnoSeleccionado = urlParams.get('alumno') || 'Alejandro Zapata';
+let paisSeleccionado = urlParams.get('pais') || 'COLOMBIA';
+let alumnoSeleccionado = urlParams.get('alumno') || 'Juan Andres Rivera';
+let indexDelAlumnoSeleccionado=0
 
 $(document).ready(function() {
 	var toggled = false;
@@ -87,9 +88,11 @@ function LoadJson(url, selector, pais) {
 					testimoniosCargados = obj;
 					testimoniosFiltrados = obj.filter((testimonio) => testimonio.origen === pais);
 					fillContainerTestimonios(testimoniosFiltrados);
-					const indexDelAlumnoSeleccionado=testimoniosFiltrados.findIndex(alumno=>alumno.nombre===alumnoSeleccionado)
-					console.log(indexDelAlumnoSeleccionado)
-					testimonio( indexDelAlumnoSeleccionado === -1 ? 0 : indexDelAlumnoSeleccionado);
+					indexDelAlumnoSeleccionado = testimoniosFiltrados.findIndex(
+						(alumno) => alumno.nombre === alumnoSeleccionado
+					)
+					indexDelAlumnoSeleccionado=indexDelAlumnoSeleccionado===-1 ? 0 : indexDelAlumnoSeleccionado
+					testimonio(indexDelAlumnoSeleccionado);
 					indicators();
 					tituloPaisSeleccionado.text(pais.toLowerCase());
 					break;
@@ -155,32 +158,44 @@ function fillContainerTestimonios(obj) {
 }
 
 function testimonio(numeroDeTestimonio) {
-	containerTestimonio.html(`<div class="row d-flex justify-content-center">
-    <div class="contenedorTestimonio">
-      <h1 class="title mb-5">${testimoniosFiltrados[numeroDeTestimonio].nombre}</h1>
-      <h2 class="mb-2 d-flex align-items-center">
-        <span class="origen">PAÍS DE ORIGEN: </span><img class="mx-2 d-inline-block" style="width:22px" src="assets/images/testimonio/bandera/${testimoniosFiltrados[
-			numeroDeTestimonio
-		].origen}.svg" alt="">
-        <span class="origen">${testimoniosFiltrados[numeroDeTestimonio].origen}</span>
-      </h2>
-    </div>
-  </div>
-  <div class="line"></div><div class="line" style="margin-left:0.4%"></div>
+	indexDelAlumnoSeleccionado=numeroDeTestimonio
 
-  <div class="row d-flex justify-content-center">
-    <div class="row d-flex justify-content-center contenedorTestimonio">
-      <div class="ps-0 col-4 d-none d-md-block d-lg-block d-xl-block">
-        <img src="assets/images/testimonio/picture/${testimoniosFiltrados[numeroDeTestimonio]
-			.nombre}.png" alt="" class="img-fluid">
-      </div>
-      <div class="col xs-12 md-12 lg-8 ms-0 ms-md-4 ms-lg-4 ms-xl-4">
-        <p class="paragraph">
-          ${testimoniosFiltrados[numeroDeTestimonio].testimonio}
-        </p>
-      </div>
-    </div>
-  </div>`);
+	containerTestimonio.html(`
+	<div class="row d-flex justify-content-center">
+		<div class="contenedorTestimonio">
+		<h1 class="title mb-5">${testimoniosFiltrados[numeroDeTestimonio].nombre}</h1>
+		<h2 class="mb-2 d-flex align-items-center">
+			<span class="origen">PAÍS DE ORIGEN: </span><img class="mx-2 d-inline-block" style="width:22px" src="assets/images/testimonio/bandera/${testimoniosFiltrados[
+				numeroDeTestimonio
+			].origen}.svg" alt="">
+			<span class="origen">${testimoniosFiltrados[numeroDeTestimonio].origen}</span>
+		</h2>
+		</div>
+  	</div>
+  	<div class="line"></div>
+	<div class="line" style="margin-left:0.4%"></div>
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-center p-relative">
+			<div class="chevronLeftContainer" onclick="anteriorTestimonio()">
+				<img src="assets/images/components/Chevron.svg" alt="">
+			</div>
+			<div class="row d-flex justify-content-center contenedorTestimonio">
+				<div class="ps-0 col-4 d-none d-md-block d-lg-block d-xl-block">
+					<img src="assets/images/testimonio/picture/${testimoniosFiltrados[numeroDeTestimonio]
+						.nombre}.png" alt="" class="img-fluid">
+				</div>
+				<div class="col xs-12 md-12 lg-8 ms-0 ms-md-4 ms-lg-4 ms-xl-4">
+					<p class="paragraph">
+					${testimoniosFiltrados[numeroDeTestimonio].testimonio}
+					</p>
+				</div>
+			</div>
+			<div class="chevronRightContainer" onclick="proximoTestimonio()">
+				<img src="assets/images/components/Chevron-1.svg" alt="">
+			</div>	
+		</div>
+	</div>
+  `);
 }
 
 function indicators() {
@@ -214,6 +229,25 @@ function pais(pais) {
 	tituloPaisSeleccionado.text(pais.toLowerCase());
 	testimoniosFiltrados = testimoniosCargados.filter((testimonio) => testimonio.origen === pais);
 	fillContainerTestimonios(testimoniosFiltrados);
-	testimonio(0);
+	indexDelAlumnoSeleccionado=0
+	testimonio(indexDelAlumnoSeleccionado);
 	indicators();
+}
+
+function anteriorTestimonio(){
+	if(indexDelAlumnoSeleccionado > 0 ){
+		indexDelAlumnoSeleccionado--
+	}else{
+		indexDelAlumnoSeleccionado=testimoniosFiltrados.length-1
+	}
+	testimonio(indexDelAlumnoSeleccionado)
+}
+
+function proximoTestimonio(){
+	if(indexDelAlumnoSeleccionado < testimoniosFiltrados.length-1){
+		indexDelAlumnoSeleccionado++
+	}else{
+		indexDelAlumnoSeleccionado=0
+	}
+	testimonio(indexDelAlumnoSeleccionado)
 }
