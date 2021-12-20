@@ -671,15 +671,19 @@ body p {
 		position: absolute;
 		left: 10px;
 		top: 50%;
+		opacity: 0;
 		transform: translateY(-50%);
-		animation: opacityGrow 1s;
+	}
+	.animated .mobile .alumnos .cifra {
+		animation: opacityGrow 1s forwards;
 	}
 	.landing .mobile .alumnos .circulo {
 		display: block;
 		width: 70%;
-		position: absolute;
 		left: 0;
-		top: 50%;
+		transform: translateX(-100%);
+	}
+	.animated .landing .mobile .alumnos .circulo {
 		animation: 1s fromLeftCircle forwards;
 	}
 	.landing .mobile .alumnos .label {
@@ -688,10 +692,12 @@ body p {
 		color: #ffffff;
 		text-transform: uppercase;
 		position: absolute;
-		top: 50%;
+		top: 100%;
 		right: 36px;
-		animation: 1s fromBottom;
 		transform: translateY(-50%);
+	}
+	.animated .landing .mobile .alumnos .label {
+		animation: 1s fromBottom forwards;
 	}
 	.landing .textContainer {
 		min-height: unset;
@@ -703,6 +709,8 @@ body p {
 		color: #ffffff;
 		opacity: 0.2;
 		margin-bottom: 14px;
+	}
+	.animated .landing .link {
 		animation: 2s highlightLinks forwards;
 	}
 	.landing .link.secondLink {
@@ -717,9 +725,12 @@ body p {
 		letter-spacing: 0px;
 		color: #ffffff;
 		opacity: 1;
+		transform: translateX(-150%);
+	}
+	.animated .landing .containerLinks .text {
 		animation: 2s fromLeftText forwards;
 		animation-delay: 3s;
-		transform: translateX(-150%);
+
 	}
 	.nuestraVision {
 		position: relative;
@@ -763,8 +774,8 @@ body p {
 		color: #ffffff;
 		opacity: 1;
 	}
-	.PoliticaDeCalidad{
-		position:relative
+	.PoliticaDeCalidad {
+		position: relative;
 	}
 	.PoliticaDeCalidad .background {
 		left: 0;
@@ -778,15 +789,15 @@ body p {
 	.PoliticaDeCalidad h1 {
 		padding: 0;
 	}
-	.PoliticaDeCalidad .containerText{
-		z-index:2;
+	.PoliticaDeCalidad .containerText {
+		z-index: 2;
 		position: relative;
 	}
 	.PoliticaDeCalidad .containerText .title-mobile {
 		text-align: left;
 		font: normal normal 500 34px/38px Roboto !important;
 		margin-bottom: 88px;
-		margin-top:186px;
+		margin-top: 186px;
 		letter-spacing: 0px;
 		color: #ffffff;
 		opacity: 1;
@@ -839,10 +850,10 @@ body p {
 
 	@keyframes fromLeftCircle {
 		from {
-			transform: translate(-100%, -50%);
+			transform: translateX(-100%);
 		}
 		to {
-			transform: translate(-25%, -50%);
+			transform: translateX(-25%);
 		}
 	}
 

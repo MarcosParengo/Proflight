@@ -1,6 +1,7 @@
 var obj = [];
 
 $(document).ready(function () {
+
     var toggled = false;
     var navBar = $("#navBar")
     var navbarBrand = $("#navbar-brand")
@@ -19,6 +20,8 @@ $(document).ready(function () {
     var three=$('#three')
     var four=$('#four')
     var five=$('#five')
+
+    $('body').addClass('animated')
 
     navbarBrand.click(function () {
         if(toggled){
