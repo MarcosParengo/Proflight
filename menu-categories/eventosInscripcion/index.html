@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <!-- <link rel="stylesheet" href="./assets/styles/grid.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
 </head>
 
 <body style="background-color:white">
-    
+
     <nav class="navbar fixed-top navbar-light">
         <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
@@ -35,10 +36,11 @@
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarTogglerIcon" data-alt-src="/Proflight/assets/images/menuIcons/Cross dark.svg"
+                <img class="py-1" height="35" id="navBarTogglerIcon"
+                    data-alt-src="/Proflight/assets/images/menuIcons/Cross dark.svg"
                     src="/Proflight/assets/images/menuIcons/Menu dark.svg">
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container-fluid">
                     <div class="row justify-content-end">
@@ -120,10 +122,89 @@
 
             </div>
         </section>
-        <script src=" https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
-        <script src="assets/scripts/main.js "></script>
+        <section class="footer mobile h-100vh d-flex align-items-end">
+            <div class="container">
+                <div class="row d-flex align-items-end">
+                    <div>
+                        <h1 class="mail pb-0 footerBlack">info@proflight.com.ar</h1>
+                        <h2 class="footerBlack">+54 9 11 6010-4446</h2>
+                        <h2 class="footerBlack">Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
+                        <ul class="social">
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                    title="">
+                                    <span class="icon fa fa-envelope"></span>
+                                </a>
+                            </li>
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                    title="">
+                                    <span class="icon fas fa-phone-alt"></span>
+                                </a>
+                            </li>
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank" href="https://www.facebook.com/proflight.la"
+                                    title="">
+                                    <span class="icon fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank" href="https://www.instagram.com/proflight.ar/"
+                                    title="">
+                                    <span class="icon fab fa-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1 class="title">¡MUCHAS GRACIAS!</h1>
+                    <div class="subtitleContainer d-flex justify-content-center">
+                        <img src="assets/images/components/iconCheck.svg" alt="">
+                        <h2 class="subtitle">Se ha enviado un correo de confirmación para confirmar el registro al
+                            evento</h2>
+                    </div>
+                    <div class="subtitleContainer d-flex justify-content-center">
+                        <h3 class="subsubtitle">Por favor revise su bandeja de entrada para continuar.</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="../eventos/"  class="btn btn-primary">
+                            Continuar
+                        </a>
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <div class="failed-container">
+                            <h4 class="failed">No recibí el correo</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary">Reenviar correo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js "
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js "
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js "
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF "
+        crossorigin="anonymous "></script>
+    <script src="assets/scripts/main.js "></script>
 </body>
 
 </html>
