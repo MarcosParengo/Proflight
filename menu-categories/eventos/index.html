@@ -19,7 +19,7 @@
 </head>
 
 <body style="background-color:white">
-    <a target="blank"
+    <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -125,11 +125,12 @@
     </nav>
 
     <section class="page">
-        <a href="#nonLanding">
-            <section class="home p-relative">
-                <div class="container-fluid sameLeft">
-                    <div class="fullPage row d-flex align-items-center">
-                        <div class="col-12 col-xs-12 col-md-12 col-lg-8 col-xl-6 me-sm-0 me-md-5 mb-5 pb-5">
+        <section class="home p-relative">
+            <div class="container-fluid px-0">
+                <div class="fullPage row d-flex align-items-start align-items-md-center sameLeft sameRight m-0">
+                    <div class="col-12 col-xs-12 col-md-12 col-lg-8 col-xl-6 px-0 me-sm-0 me-md-5 mb-5 pb-5">
+                        <a href="#nonLanding">
+
                             <h1 class="title">
                                 Eventos
                             </h1>
@@ -140,20 +141,20 @@
                                 la búsqueda de futuros estudiantes que tengan interés
                                 en realizar la carrera de Piloto Comercial o Privado en Argentina
                             </h2>
-                        </div>
-
+                        </a>
                     </div>
+
                 </div>
-                <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
-                    <h1 class="text">Eventos</h1>
-                </div>
-            </section>
-        </a>
+            </div>
+            <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                <h1 class="text">Eventos</h1>
+            </div>
+        </section>
         <div class="nonLanding" id="nonLanding">
             <section class="filter">
-                <div class="container col-9">
-                    <div class="row ">
-                        <div class="col-3">
+                <div class="container col-12 col-md-9">
+                    <div class="row">
+                        <div class="desktop col-md-12 col-lg-3">
                             <button id="buttonFilter" type="button" class="button" onclick="toggleFilter()">
                                 <h1 class="filter-button-text">
                                     <span class="icon fas fa-filter me-2"></span>
@@ -161,13 +162,22 @@
                                 </h1>
                             </button>
                         </div>
-                        <div class="col-9 flags hidden" id="flags">
+                        <div class="desktop col-md-12 col-lg-9 flags hidden" id="flags">
                             <div class="container-fluid">
                                 <div class="row" id="countryFilters">
-                                    
+
                                 </div>
 
                             </div>
+                        </div>
+                        <div class="col-12 pt-2 mobile sameLeft sameRight">
+                                <a class="d-block filterBtn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Filtrar eventos por pais
+                                </a>
+                                <ul class="dropdown-menu" id="countryFiltersMobile" aria-labelledby="dropdownMenuLink">
+                                  
+                                </ul>
+                                <p id="MostrandoEventos" class="mostrandoEventos"></p>
                         </div>
                     </div>
             </section>

@@ -9,6 +9,8 @@ $(document).ready(function () {
     navBarText = $("#navBar-text")
 
     var myCarousel=$('#myCarousel')
+    var viewCarousel=$('#viewCarousel')
+
     var aFundamentos=$("#aFundamentos")
     var data=$('#data')
     var original=$('#original')

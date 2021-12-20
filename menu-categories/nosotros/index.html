@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a class="desktop" target="blank"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -27,16 +28,18 @@
             <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
         </div>
     </a>
-    
+
     <nav class="navbar fixed-top navbar-dark">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -45,7 +48,7 @@
                     data-alt-src="/Proflight/assets\images\menuIcons\Cross light.svg"
                     src="/Proflight/assets\images\menuIcons\Menu light.svg">
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container-fluid">
                     <div class="row justify-content-end">
@@ -123,23 +126,36 @@
 
     <section class="nosotros">
         <div class="landing container-fluid p-relative">
-            <div class="row h-100vh justify-content-end align-items-center sameLeftSpace sameRightSpace p-relative">
-                <div class="col-12 containerLinks">
+            <div class="row mobile min-100vh">
+                <div class="col-12 px-0 alumnos">
+                    <h1 class="cifra">223</h1>
+                    <img class="circulo" src="assets/images/mobile/Grupo 9794.svg" alt="">
+                    <h2 class="label">Estudiantes</h2>
+                </div>
+            </div>
+            <div class="row h-100vh justify-content-end align-items-end align-items-md-center sameLeftSpace sameRightSpace p-relative">
+                <div class="col-12 px-0 containerLinks">
                     <div class="textContainer">
                         <a href="#MisionYVision">
-                            <h1 class="mb-0 link">Misión y visión</h1>
+                            <h1 class="mb-md-0 link">Misión y visión</h1>
                         </a>
                     </div>
                     <div class="textContainer">
                         <a href="#MisionYVision">
-                            <h1 class="mb-0 link">Fundamentos Institucionales</h1>
+                            <h1 class="mb-md-0 link secondLink">Fundamentos Institucionales</h1>
                         </a>
                     </div>
                     <div class="textContainer">
                         <a href="#PoliticaDeCalidad">
-                            <h1 class="mb-0 link">Politica de calidad</h1>
+                            <h1 class="mb-md-0 link thirdLink">Politica de calidad</h1>
                         </a>
                     </div>
+                    <p class="text mobile">
+                        Nuestra escuela está ubicada en el aeropuerto de Morón, con dos oficinas habilitadas dentro
+                        del Parque Industrial Tecnológico Aeronáutico Morón (PITAM), contando con la habilitación y
+                        certificación como Centro de Instrucción de Aeronáutica Civil, expedido con el número
+                        Dl-2019-104-APN- DNSO #ANAC emitido por la Administración Nacional de Aviación Civil (ANAC)
+                    </p>
                 </div>
                 <div class="contadores container-fluid d-lg-block d-md-none d-none">
                     <div class="row justify-content-end d-flex">
@@ -161,7 +177,7 @@
                 <h1 class="text">Nosotros</h1>
             </div>
         </div>
-        <div class="misionYVision container-fluid mt-5 " id="MisionYVision">
+        <div class="misionYVision container-fluid mt-5 desktop" id="MisionYVision">
             <div class="containerTexto row sameLeftSpace">
                 <div>
                     <h2 class="texto">Nuestra escuela está ubicada en el aeropuerto de Morón, con dos oficinas
@@ -179,12 +195,12 @@
                 </div>
             </div>
         </div>
-        <section class="nuestraVision divider container-fluid p-relative" id="nuestraVision">
-            <div class="containerSec row sameLeftSpace">
+        <section class="nuestraVision divider container-fluid p-relative" id="nuestraMision">
+            <div class="containerSec row sameLeftSpace sameRightSpace">
                 <div class="d-none d-md-none d-lg-flex col-auto justify-content-end px-0">
-                    <img src="assets/images/mision/mision img@2x.png">
+                    <img src="assets/images/mision/mision img@2x.png" alt="">
                 </div>
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-12 col-lg-6  px-0">
                     <h1>Nuestra misión</h1>
                     <h2>Somos una institución orientada a la formación de Pilotos Privados y Comerciales, que estén
                         capacitados para que puedan aportar al desarrollo general en el marco aeronáutico a nivel
@@ -192,16 +208,17 @@
                         integralidad y desarrollo tecnológico.</h2>
                 </div>
             </div>
+            <img class="background mobile" src="assets/images/mobile/mision.png" alt="">
             <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                 <h1 class="text">Misión y Visión</h1>
             </div>
         </section>
         <section class="nuestraVision divider container-fluid" id="nuestraVision">
-            <div class="containerSec row sameLeftSpace">
+            <div class="containerSec row sameLeftSpace sameRightSpace">
                 <div class="d-none d-md-none d-lg-flex col-auto justify-content-end px-0">
                     <img src="assets/images/mision/visionimg@2x.png">
                 </div>
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-12 col-lg-6 px-0">
                     <h1>Nuestra visión</h1>
                     <h2>Para el 2021 lograremos posicionarnos como la mejor escuela de instrucción aeronáutica de
                         Sudamérica, fortaleciendo cada vez más nuestro nivel de exigencia en los programas de
@@ -210,11 +227,12 @@
                         de nuevos recursos tecnológicos.</h2>
                 </div>
             </div>
+            <img class="background mobile" src="assets/images/mobile/vision.png" alt="">
         </section>
 
         <section class="fundamentosInstitucionales">
             <div class="parent container-fluid my-5 pt-0 mt-0">
-                <div class="row justify-content-start sameLeftSpace">
+                <div class="row justify-content-start sameLeftSpace sameRightSpace">
                     <div class="childleft col-md-12 col-lg-7">
                         <h1 class="fundamentosTitulo">Fundamentos Institucionales</h1>
                         <div id="aFundamentos" class="Fundamentos">
@@ -226,7 +244,8 @@
                             </h2>
                             <div class="more d-flex align-items-center">
                                 <div class="d-inline-block">
-                                    <button id="viewCarousel"
+                                    <button 
+                                        id="viewCarousel"
                                         class="viewCarousel d-flex justify-content-center align-items-center"
                                         type="button">
                                         <span class="buttonContent carousel-control-next-icon"
@@ -367,19 +386,24 @@
                     </div>
                 </div>
             </div>
+            <img class="background mobile" src="assets/images/mobile/calidad.png" alt="">
+
             <div class="container">
-                <div class="containerText row justify-content-end pt-0 mb-5">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h1>Seguridad<br>Operacional</h1>
+                <div class="containerText row justify-content-end pt-0 mb-5 sameLeftSpace specialRightSpace">
+                    <div class="col-sm-12 col-md-4 col-lg-4 px-0 px-md-2">
+                        <h1 class="mobile title-mobile">Política de calidad</h1>
+
+                        <h2 class="title">Seguridad<br class="d-none d-md-block"> Operacional</h1>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
-                        <h2>En ProFlight nos basamos en la promoción de programas que se caracterizan por su excelencla
-                            académica y altos niveles de formación educativos. <br>La seguridad operacional es el factor más
+                    <div class="col-sm-12 col-md-8 col-lg-8 px-0 px-md-2">
+                        <p>En ProFlight nos basamos en la promoción de programas que se caracterizan por su excelencla
+                            académica y altos niveles de formación educativos. <br>La seguridad operacional es el factor
+                            más
                             determinante en la prestación de nuestro servicio
                             ya que cantamos con politicas de mantenimiento exigidas en el marco legal por la autoridad
                             aeronáutica competente. De esta manera tenemos la posibilidad de brindarle a cada uno de
                             nuestros estudiantes la oportunidad de realizar
-                            su carrera de manera segura.</h2>
+                            su carrera de manera segura.</p>
                     </div>
                 </div>
             </div>
@@ -388,10 +412,10 @@
         <section class="footer h-100vh d-flex align-items-end">
             <div class="container">
                 <div class="row">
-                    <h1 class="mail pb-0">info@proflight.com.ar</h1>
-                    <h2>+54 9 11 6010-4446</h2>
-                    <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
-                    <ul class="social">
+                    <h1 class="mail pb-0 px-0">info@proflight.com.ar</h1>
+                    <h2 class="px-0">+54 9 11 6010-4446</h2>
+                    <h2 class="px-0">Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
+                    <ul class="social px-0">
                         <li class="me-2">
                             <a target="_blank"
                                 href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
@@ -411,7 +435,7 @@
                                 <span class="icon fa fa-facebook"></span>
                             </a>
                         </li>
-                        <li >
+                        <li>
                             <a target="_blank" href="https://www.instagram.com/proflight.ar/" title="">
                                 <span class="icon fab fa-instagram"></span>
                             </a>

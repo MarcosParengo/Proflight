@@ -7,6 +7,9 @@ let paisSeleccionado = urlParams.get('pais') || 'COLOMBIA';
 let eventoSeleccionado = urlParams.get('alumno') || 'Juan Andres Rivera';
 var flags = $('#flags');
 var countryFilters = $('#countryFilters');
+var countryFiltersMobile = $('#countryFiltersMobile');
+var MostrandoEventos = $('#MostrandoEventos');
+
 var paises = [];
 
 $(document).ready(function() {
@@ -17,6 +20,8 @@ $(document).ready(function() {
 	var navBarTogglerIcon = $('#navBarTogglerIcon');
 	flags = $('#flags');
 	countryFilters = $('#countryFilters');
+	countryFiltersMobile = $('#countryFiltersMobile');
+	MostrandoEventos = $('#MostrandoEventos');
 	navBarText = $('#navBar-text');
 
 	containerEventos = $('#selectorDeEventos');
@@ -92,6 +97,7 @@ function LoadJson(url, selector, pais) {
 					eventosFiltrados = obj.filter((evento) => evento.origen === pais);
 					fillFilterEventos();
 					fillContainerEventos();
+					updateMostrandoEventos(pais)
 					break;
 				case 2:
 					fillContainerEventos();
@@ -112,6 +118,7 @@ function pais(pais) {
 	paisSeleccionado = pais;
 	eventosFiltrados = eventosCargados.filter((evento) => evento.origen === pais);
 	fillContainerEventos();
+	updateMostrandoEventos(pais)
 }
 
 function fillContainerEventos() {
@@ -120,7 +127,7 @@ function fillContainerEventos() {
 		if (i % 3 === 0) {
 			if (i === 0) {
 				string += `
-                <div class='carousel-item active'}>
+                <div class='carousel-item active'>
                     <div class="container mb-5">
                         <div class="row d-flex justify-content-center">
                 `;
@@ -165,6 +172,7 @@ function fillContainerEventos() {
         `;
 		}
 	});
+	
 	containerEventos.html(string);
 }
 
@@ -177,5 +185,18 @@ function fillFilterEventos() {
 				${pais.toLowerCase()}
 			</h1>
 		</div>`);
+		countryFiltersMobile.append(`
+		<li>
+			<a class="dropdown-item" id="${pais.toUpperCase()}" onclick="pais(id)" >
+				<img src="assets/images/evento/bandera/${pais.toUpperCase()}.png" alt="">
+				${pais.toLowerCase()}
+			</a>
+		</li>
+		`);
 	});
+}
+
+function updateMostrandoEventos(pais){
+
+	MostrandoEventos.html(`<p id="mostrandoEventos" class="mostrandoEventos">Mostrando eventos de <img src="assets/images/evento/bandera/${pais.toUpperCase()}.png" alt=""> ${pais.toLowerCase()}</p>`);
 }

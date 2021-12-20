@@ -234,68 +234,31 @@ body p {
 }
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-	.title {
-		font-size: 30px;
-	}
-
-	.evento .title {
-		font-size: 35px;
-		text-align: start;
-	}
-	.evento .subtitle {
-		font-size: 20px;
-		text-align: start;
-		line-height: 3rem;
-	}
-	.evento .origen {
-		font-size: 13px;
-		line-height: 2rem;
-	}
-	.evento .paragraph {
-		font-size: 15px;
-		line-height: 1.3rem;
-	}
-	.contenedorevento {
-		width: 95%;
-	}
+.mobile {
+	display: none;
 }
 
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
+@media only screen and (max-width: 768px) {
+	.sameLeft {
+		padding-left: 38px;
+	}
+	.sameRight {
+		padding-right: 38px;
+	}
 	.title {
-		font-size: 30px;
+		margin-top: 150px;
+		text-align: left;
+		font: normal normal 500 34px/42px Roboto;
+		letter-spacing: 0px;
+		color: #0a1627;
+		opacity: 1;
 	}
-
-	.evento .title {
-		font-size: 35px;
-		text-align: start;
-	}
-	.evento .subtitle {
-		font-size: 35px;
-		text-align: start;
-		line-height: 3rem;
-	}
-	.evento .origen {
-		font-size: 13px;
-		line-height: 2rem;
-	}
-	.evento .paragraph {
-		font-size: 15px;
-		line-height: 1.3rem;
-	}
-	.contenedorevento {
-		width: 95%;
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-	.title {
-		font-size: 40px;
+	.subtitle {
+		text-align: left;
+		font: normal normal 300 15px/28px Roboto;
+		letter-spacing: 0px;
+		color: #0a1627;
+		opacity: 1;
 	}
 
 	.evento .title {
@@ -317,6 +280,77 @@ body p {
 	}
 	.contenedorevento {
 		width: 90%;
+	}
+	.mobile .filterBtn {
+		background-color: transparent;
+		border: none;
+		color: var(--unnamed-color-4b4d50);
+		text-align: left;
+		font: normal normal normal 18px/24px Inter;
+		letter-spacing: 0px;
+		color: #4b4d50;
+		opacity: 1;
+		padding-left:0
+	}
+	.dropdown-toggle::after {
+		transform: rotate(-90deg);
+		transition: all 0.5s;
+	}
+	.dropdown-toggle.show::after {
+		transform: rotate(0deg);
+	}
+	.dropdown-menu.show {
+		width: calc(100% - 38px - 38px);
+		background: #707070 0% 0% no-repeat padding-box;
+		opacity: 1;
+		border-radius: 0;
+		animation: 0.5s opacityGrow forwards;
+	}
+	.dropdown-item {
+		margin-left: 20px;
+		border-bottom: 1px solid #FFFFFF54;
+		text-align: left;
+		font: normal normal normal 18px/24px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 0.8;
+		text-transform: capitalize;
+	}
+	.dropdown-item img {
+		width: 32px;
+	}
+	.mostrandoEventos {
+		padding:21px 0px;
+		text-align: left;
+		font: normal normal normal 14px/22px Inter;
+		letter-spacing: 0px;
+		color: #707070;
+		opacity: 1;
+		text-transform: capitalize;
+	}
+	.mostrandoEventos img{
+		width: 32px;
+	}
+	.eventoCard {
+		padding: 0 38px;
+	}
+
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	.footer {
+		padding: 0 38px;
+	}
+	@keyframes opacityGrow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
 }
 
@@ -552,9 +586,6 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-	.eventoCard {
-		margin-top: 20%;
-	}
 	.containereventos {
 		margin: 5%;
 	}
@@ -567,9 +598,6 @@ body p {
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-	.eventoCard {
-		margin-top: 20%;
-	}
 	.containereventos {
 		margin: 5%;
 	}
@@ -582,9 +610,6 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-	.eventoCard {
-		margin-top: 20%;
-	}
 	.containereventos {
 		margin: 5%;
 	}

@@ -1,713 +1,885 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+	box-sizing: border-box;
+	font-family: 'Inter';
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 body h2 {
-    font-size: 20px;
-    color: white;
-    line-height: 2.5rem;
+	font-size: 20px;
+	color: white;
+	line-height: 2.5rem;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+.min-100vh {
+	min-height: 100vh;
 }
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 .nosotros {
-    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/nosotros/assets/images/background/pf%20background%20misionvision.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+	background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/nosotros/assets/images/background/pf%20background%20misionvision.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
 
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 @media only screen and (max-width: 392px) {
-    .nosotros {
-        background-size: auto 100%;
-    }
+	.nosotros {
+		background-size: auto 100%;
+	}
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
-    .nosotros {
-        background-size: auto 100%;
-    }
+	.nosotros {
+		background-size: auto 100%;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    .nosotros {
-        background-size: auto 100%;
-    }
+	.nosotros {
+		background-size: auto 100%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .nosotros {
-        background-size: 100% 100%;
-    }
+	.nosotros {
+		background-size: 100% 100%;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 1050px) {
-    .nosotros {
-        background-size: 100% 100%;
-    }
+	.nosotros {
+		background-size: 100% 100%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .nosotros {
-        background-size: 100% 100%;
-    }
+	.nosotros {
+		background-size: 100% 100%;
+	}
 }
 
 /*-------------------------------------------------- Seccion landing --------------------------------------------------TODO*/
-.sameLeftSpace{
-    padding-left:14%
+.sameLeftSpace {
+	padding-left: 14%;
 }
-.sameRightSpace{
-    padding-right:14%
+.sameRightSpace {
+	padding-right: 14%;
 }
-.landing{
-    height: 100vh;
+.landing {
+	min-height: 100vh;
 }
 
-.landing .textContainer{
-    font: normal normal normal 80px Roboto;
-    min-height: 1.2em;
+.landing .textContainer {
+	font: normal normal normal 80px Roboto;
+	min-height: 1.2em;
 }
 .landing .link {
-    text-align: left;
-    font: normal normal normal 53px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    transition: font-size 0.5s;
+	text-align: left;
+	font: normal normal normal 53px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	transition: font-size 0.5s;
 }
 
 .landing .link:hover {
-    color: var(--unnamed-color-00b0ce);
-    letter-spacing: 0px;
-    color: #00B0CE;
-    opacity: 1;
+	color: var(--unnamed-color-00b0ce);
+	letter-spacing: 0px;
+	color: #00b0ce;
+	opacity: 1;
 }
 
 .landing h2 {
-    font-weight: lighter;
-    text-align: center;
-    color: white;
-    margin-bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .contadores {
-    position: absolute;
-    bottom: 2em;
-    right:20%
+	position: absolute;
+	bottom: 2em;
+	right: 20%;
 }
 
 .landing .contador img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .landing .contador .number {
-    text-align: center;
-    font: normal normal bold 22px/26px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: center;
+	font: normal normal bold 22px/26px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .landing .contador .label {
-    font: normal normal 300 16px/20px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 1;
+	font: normal normal 300 16px/20px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase;
+	opacity: 1;
 }
 
 /*-------------------------------------------------- Seccion misionYVision --------------------------------------------------TODO*/
 .misionYVision .texto {
-    text-align: left;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width:57ch;
+	text-align: left;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 57ch;
 }
 
 .misionYVision .containerTexto {
-    padding-top: 15%;
+	padding-top: 15%;
 }
 
 .misionYVision img {
-    display: block;
-    width: 100%;
-    padding-top: 10%;
+	display: block;
+	width: 100%;
+	padding-top: 10%;
 }
 
 .misionYVision .titulo {
-    font-size: 90px;
-    padding-top: 7%;
-    text-align: end;
-    padding-right: 4%;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(26, 73, 93, 0.5);
+	font-size: 90px;
+	padding-top: 7%;
+	text-align: end;
+	padding-right: 4%;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgba(26, 73, 93, 0.5);
 }
 
 .misionYVision .titulo:hover {
-    -webkit-text-stroke-color: #00B0CE;
-    color: #00B0CE8C;
-    opacity: 0.51;
+	-webkit-text-stroke-color: #00b0ce;
+	color: #00B0CE8C;
+	opacity: 0.51;
 }
 
 .misionYVision .coordenadas {
-    text-align: end;
-    letter-spacing: 1.8px;
-    color: #FFFFFF;
-    opacity: .5;
-    padding-right: 4%;
-    font-weight: lighter;
-    font: normal normal 300 16px/32px Inter;
+	text-align: end;
+	letter-spacing: 1.8px;
+	color: #ffffff;
+	opacity: .5;
+	padding-right: 4%;
+	font-weight: lighter;
+	font: normal normal 300 16px/32px Inter;
 }
 
 /*-------------------------------------------------- Media Query --------------------------------------------------TODO*/
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 @media only screen and (max-width: 392px) {
+	.misionYVision .titulo {
+		padding-top: 7%;
+		padding-left: 10%;
+	}
 
-    .misionYVision .titulo {
-        padding-top: 7%;
-        padding-left: 10%;
-    }
+	.misionYVision .texto img {
+		width: 70%;
+		padding-left: 10%;
+	}
 
-    .misionYVision .texto img {
-        width: 70%;
-        padding-left: 10%;
-    }
-
-    .misionYVision .coordenadas {
-        padding-top: 5%;
-    }
+	.misionYVision .coordenadas {
+		padding-top: 5%;
+	}
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
+	.misionYVision .titulo {
+		padding-top: 7%;
+	}
 
-
-    .misionYVision .titulo {
-        padding-top: 7%;
-    }
-
-    .misionYVision .texto img {
-        width: 70%;
-        padding-left: 10%;
-    }
+	.misionYVision .texto img {
+		width: 70%;
+		padding-left: 10%;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-
-    .misionYVision .titulo {
-        padding-top: 7%;
-    }
+	.misionYVision .titulo {
+		padding-top: 7%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-    .misionYVision .titulo {
-        padding-top: 7%;
-    }
+	.misionYVision .titulo {
+		padding-top: 7%;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 992px) {
-
-    .misionYVision .titulo {
-        padding-top: 7%;
-    }
+	.misionYVision .titulo {
+		padding-top: 7%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
-
-    .misionYVision .titulo {
-        padding-top: 5%;
-    }
+	.misionYVision .titulo {
+		padding-top: 5%;
+	}
 }
 
 /*-------------------------------------------------- Seccion nuestra Vision --------------------------------------------------TODO*/
-.nuestraVision{
-    min-height: 100vh;
+.nuestraVision {
+	min-height: 100vh;
 }
-.divider{
-    margin-top: 10%;
+.divider {
+	margin-top: 10%;
 }
 .nuestraVision .containerSec h1 {
-    margin-left: -2ch;
-    padding-top: .7em;
-    padding-bottom: .7em;
-    font: normal normal bold 72px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-        text-align: start;
+	margin-left: -2ch;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	font: normal normal bold 72px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-align: start;
 }
 
 .nuestraVision .containerSec h2 {
-    margin-left:10% ;
-    max-width: 43ch;
-    color: white;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	margin-left: 10%;
+	max-width: 43ch;
+	color: white;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .nuestraVision .containerSec img {
-    display: block;
-    width: auto;
-    height: 80vh;
+	display: block;
+	width: auto;
+	height: 80vh;
 }
-
 
 /*-------------------------------------------------- Seccion Fundamentos institucionales ----------------------------------------------*/
 
 .fundamentosInstitucionales {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 .fundamentosInstitucionales .childleft {
-    padding-top: 0%;
-    padding-left: 0%;
+	padding-top: 0%;
+	padding-left: 0%;
 }
 
 .fundamentosInstitucionales .fundamentosTitulo {
-    padding-bottom: 2em;
-    text-align: start;
-    font: normal normal normal 39px/32px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	padding-bottom: 2em;
+	text-align: start;
+	font: normal normal normal 39px/32px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .fundamentosInstitucionales h2 {
-    text-align: left;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width: 50ch;
+	text-align: left;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 50ch;
 }
 
 .fundamentosInstitucionales .more {
-    padding-top: 20px;
-    font-size: 15px;
+	padding-top: 20px;
+	font-size: 15px;
 }
 
 .fundamentosInstitucionales .data {
-    display: none;
+	display: none;
 }
 
 .fundamentosInstitucionales .carousel {
-    font: normal normal 300 16px/32px Inter;
-    max-width: 54ch;
+	font: normal normal 300 16px/32px Inter;
+	max-width: 54ch;
 }
 
 .fundamentosInstitucionales .carousel-inner {
-    height: 100%;
+	height: 100%;
 }
 
 .fundamentosInstitucionales .carousel-caption {
-    right: 0 !important;
-    left: 0 !important;
-    top: 0 !important;
-    bottom: auto !important;
+	right: 0 !important;
+	left: 0 !important;
+	top: 0 !important;
+	bottom: auto !important;
 }
 
 .fundamentosInstitucionales .carousel-caption h1 {
-    font-size: 20px;
-    text-align: start;
+	font-size: 20px;
+	text-align: start;
 }
 
 .fundamentosInstitucionales .carousel-caption p {
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .fundamentosInstitucionales .title {
-    text-align: left;
-    font: normal normal normal 22px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+	text-align: left;
+	font: normal normal normal 22px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
 }
 
 .fundamentosInstitucionales .number {
-    text-align: left;
-    font: normal normal bold 22px/32px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
+	text-align: left;
+	font: normal normal bold 22px/32px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
 }
 
 .fundamentosInstitucionales .viewCarousel {
-    font-size: 20px;
-    width: 1.2em;
-    height: 1.2em;
-    padding: 0px;
-    border: none;
-    border-radius: 50%;
-    background-color: #000000;
-    vertical-align: middle;
-    transition: background-color 0.2s;
+	font-size: 20px;
+	width: 1.2em;
+	height: 1.2em;
+	padding: 0px;
+	border: none;
+	border-radius: 50%;
+	background-color: #000000;
+	vertical-align: middle;
+	transition: background-color 0.2s;
 }
 .fundamentosInstitucionales .viewCarousel:hover {
-    background-color: #00B0CE;
+	background-color: #00b0ce;
 }
 .fundamentosInstitucionales .sliderButton {
-    font-size: 20px;
-    width: 1.2em;
-    height: 1.2em;
-    padding: 0;
-    margin-right: 10px;
-    border: none;
-    border-radius: 50%;
-    border: none;
-    border-radius: 50%;
-    background-color: #282837;
-    transition:background-color 0.2s;
+	font-size: 20px;
+	width: 1.2em;
+	height: 1.2em;
+	padding: 0;
+	margin-right: 10px;
+	border: none;
+	border-radius: 50%;
+	border: none;
+	border-radius: 50%;
+	background-color: #282837;
+	transition: background-color 0.2s;
 }
 
-.fundamentosInstitucionales  .sliderButton .buttonContent {
-    height: 15px;
-    width: 15px;
+.fundamentosInstitucionales .sliderButton .buttonContent {
+	height: 15px;
+	width: 15px;
 }
-.fundamentosInstitucionales  .viewCarousel .buttonContent {
-    height: 20px;
-    width: 20px;
+.fundamentosInstitucionales .viewCarousel .buttonContent {
+	height: 20px;
+	width: 20px;
 }
-
 
 .fundamentosInstitucionales .sliderButton:hover {
-    background-color: rgb(49, 171, 198);
+	background-color: rgb(49, 171, 198);
 }
 
 .fundamentosInstitucionales .btn-primary {
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: rgb(53, 187, 215);
-    border-color: rgb(46, 144, 169);
+	font-size: 15px;
+	border-radius: 20px;
+	background-color: rgb(53, 187, 215);
+	border-color: rgb(46, 144, 169);
 }
 
 .fundamentosInstitucionales .bd-placeholder-img {
-    height: 200px;
+	height: 200px;
 }
 
 .fundamentosInstitucionales .circle {
-    padding-top: 5%;
+	padding-top: 5%;
 }
 
 .fundamentosInstitucionales .circle img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .fundamentosInstitucionales .one {
-    display: none;
+	display: none;
 }
 
 .fundamentosInstitucionales .two {
-    display: none;
+	display: none;
 }
 
 .fundamentosInstitucionales .three {
-    display: none;
+	display: none;
 }
 
 .fundamentosInstitucionales .four {
-    display: none;
+	display: none;
 }
 
 .fundamentosInstitucionales .five {
-    display: none;
+	display: none;
 }
 
 .linea img {
-    display: block;
-    width: 80%;
-    float: right;
+	display: block;
+	width: 80%;
+	float: right;
 }
 
 .fundamentosInstitucionales .more {
-    color: rgba(0, 0, 0, 0);
-    padding-top: 20px;
-    font-size: 15px;
+	color: rgba(0, 0, 0, 0);
+	padding-top: 20px;
+	font-size: 15px;
 }
-.fundamentosInstitucionales .more .hidden{
-    display: none;
-    color: transparent;
-    transition:color 0.2s;
+.fundamentosInstitucionales .more .hidden {
+	display: none;
+	color: transparent;
+	transition: color 0.2s;
 }
-.fundamentosInstitucionales .more:hover .hidden{
-    color: rgb(49, 171, 198);
-    display: inline-block;
+.fundamentosInstitucionales .more:hover .hidden {
+	color: rgb(49, 171, 198);
+	display: inline-block;
 }
 
 @media only screen and (max-width: 392px) {
-    .fundamentosInstitucionales .carousel {
-        height: 60vh;
-    }
-
-    .fundamentosInstitucionales h2 {
-        font-size: 15px;
-        line-height: 2rem;
-    }
-
+	.fundamentosInstitucionales .carousel {
+		height: 60vh;
+	}
 }
 
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 @media only screen and (min-width: 392px) {
-    .fundamentosInstitucionales .carousel {
-        height: 40vh
-    }
-    .fundamentosInstitucionales h2 {
-        font-size: 15px;
-        line-height: 2rem;
-    }
+	.fundamentosInstitucionales .carousel {
+		height: 40vh;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    .fundamentosInstitucionales .carousel {
-        height: 20vh
-    }
-    .fundamentosInstitucionales h2 {
-        font-size: 15px;
-        line-height: 2rem;
-    }
+	.fundamentosInstitucionales .carousel {
+		height: 20vh;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .fundamentosInstitucionales h2 {
-        font-size: 15px;
-    }
+	.fundamentosInstitucionales h2 {
+		font-size: 15px;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 992px) {
-    .fundamentosInstitucionales .carousel {
-        height: 40vh
-    }
-    .fundamentosInstitucionales h2 {
-        font-size: 15px;
-    }
+	.fundamentosInstitucionales .carousel {
+		height: 40vh;
+	}
+	.fundamentosInstitucionales h2 {
+		font-size: 15px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .fundamentosInstitucionales .carousel {
-        height: 40vh
-    }
+	.fundamentosInstitucionales .carousel {
+		height: 40vh;
+	}
 }
 
 /*-------------------------------------------------- Seccion Politica de calidad ------------------------------------------------------*/
 .PoliticaDeCalidad h1 {
-    padding-top: 5%;
-    padding-bottom: 7%;
-    padding-right: 10%;
-    text-align: right;
-    font: normal normal bold 72px/120px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+	padding-top: 5%;
+	padding-bottom: 7%;
+	padding-right: 10%;
+	text-align: right;
+	font: normal normal bold 72px/120px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
 }
 
 .cover {
-    height: 100vh;
+	min-height: 100vh;
 }
 
 .PoliticaDeCalidad .containerText {
-    padding-top: 10%;
-}
-
-.PoliticaDeCalidad .containerText h1 {
-    text-align: end;
-    padding-top: 0;
-    font: normal normal normal 39px/50px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	padding-top: 10%;
 }
 
 .PoliticaDeCalidad .containerText h2 {
-    max-width: 60ch;
-    text-align: left;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: end;
+	padding-top: 0;
+	font: normal normal normal 39px/50px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+}
+
+.PoliticaDeCalidad .containerText p {
+	max-width: 60ch;
+	text-align: left;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .PoliticaDeCalidad .row img {
-    display: block;
-    width: 100%;
-}
-
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (max-width: 768px) {
-    .PoliticaDeCalidad h1 {
-        padding-bottom: 0%;
-        padding-right: 10%;
-    }
-
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-    }
-
-    .PoliticaDeCalidad .containerText h1 {
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .PoliticaDeCalidad .containerText h2 {
-        line-height: 2rem;
-        padding-top: 0;
-    }
-
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-    .mobile{
-        display: block;
-    }
-    .desktop{
-        display: none!important;
-    }
+	display: block;
+	width: 100%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    -movile{
-        display: none;
-    }
-    .PoliticaDeCalidad h1 {
-        padding-bottom: 0%;
-        padding-right: 10%;
-    }
+	.mobile {
+		display: none;
+	}
+	.PoliticaDeCalidad h1 {
+		padding-bottom: 0%;
+		padding-right: 10%;
+	}
 
-    .cover {
-        height: 60vh;
-    }
+	.cover {
+		min-height: 60vh;
+	}
 
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-    }
-    .PoliticaDeCalidad .containerText h1 {
-        text-align: end;
-    }
+	.PoliticaDeCalidad .containerText {
+		padding-top: 10%;
+	}
+	.PoliticaDeCalidad .containerText h2 {
+		text-align: end;
+	}
 
-    .PoliticaDeCalidad .containerText h2 {
-        padding-top: 0;
-    }
+	.PoliticaDeCalidad .containerText p {
+		padding-top: 0;
+	}
 
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-        padding-right: 0;
-        padding-left: 0;
-    }
+	.PoliticaDeCalidad .containerText {
+		padding-top: 10%;
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 @media only screen and (min-width: 992px) {
-    .PoliticaDeCalidad h1 {
-        padding-bottom: 0%;
-        padding-right: 10%;
-    }
+	.PoliticaDeCalidad h1 {
+		padding-bottom: 0%;
+		padding-right: 10%;
+	}
 
-    .cover {
-        height: 80vh;
-    }
+	.cover {
+		min-height: 80vh;
+	}
 
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-    }
-    .PoliticaDeCalidad .containerText h1 {
-        text-align: end;
-    }
-    .PoliticaDeCalidad .containerText h2 {
-        padding-top: 0;
-    }
+	.PoliticaDeCalidad .containerText {
+		padding-top: 10%;
+	}
+	.PoliticaDeCalidad .containerText h2 {
+		text-align: end;
+	}
+	.PoliticaDeCalidad .containerText p {
+		padding-top: 0;
+	}
 
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-        padding-right: 0;
-        padding-left: 0;
-    }
+	.PoliticaDeCalidad .containerText {
+		padding-top: 10%;
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .PoliticaDeCalidad h1 {
-        padding-bottom: 4%;
-        padding-right: 10%;
-    }
+	.PoliticaDeCalidad h1 {
+		padding-bottom: 4%;
+		padding-right: 10%;
+	}
 
-    .cover {
-        height: 100vh;
-    }
+	.cover {
+		min-height: 100vh;
+	}
 
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-    }
+	.PoliticaDeCalidad .containerText {
+		padding-top: 10%;
+	}
 
-    .PoliticaDeCalidad .containerText h1 {
-        text-align: end;
-    }
+	.PoliticaDeCalidad .containerText h2 {
+		text-align: end;
+	}
 
-    .PoliticaDeCalidad .containerText h2 {
-        padding-top: 0;
-    }
+	.PoliticaDeCalidad .containerText p {
+		padding-top: 0;
+	}
 
-    .PoliticaDeCalidad .containerText {
-        padding-top: 10%;
-        padding-right: 0;
-        padding-left: 0;
-    }
+	.PoliticaDeCalidad .containerText {
+		padding-top: 10%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (max-width: 768px) {
+	.landing .mobile .alumnos {
+		position: relative;
+		min-height: 100vh;
+	}
+	.landing .mobile .alumnos .cifra {
+		text-align: start;
+		font: normal normal 300 52px/63px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		text-transform: uppercase;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		animation: opacityGrow 1s;
+	}
+	.landing .mobile .alumnos .circulo {
+		display: block;
+		width: 70%;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		animation: 1s fromLeftCircle forwards;
+	}
+	.landing .mobile .alumnos .label {
+		font: normal normal 100 14px/17px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		text-transform: uppercase;
+		position: absolute;
+		top: 50%;
+		right: 36px;
+		animation: 1s fromBottom;
+		transform: translateY(-50%);
+	}
+	.landing .textContainer {
+		min-height: unset;
+	}
+	.landing .link {
+		text-align: left;
+		font: normal normal normal 32px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 0.2;
+		margin-bottom: 14px;
+		animation: 2s highlightLinks forwards;
+	}
+	.landing .link.secondLink {
+		animation-delay: 1s;
+	}
+	.landing .link.thirdLink {
+		animation-delay: 2s;
+	}
+	.landing .containerLinks .text {
+		text-align: left;
+		font: normal normal 300 15px/26px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		animation: 2s fromLeftText forwards;
+		animation-delay: 3s;
+		transform: translateX(-150%);
+	}
+	.nuestraVision {
+		position: relative;
+	}
+	.nuestraVision .background {
+		left: 0;
+		top: 0;
+		z-index: 1;
+		width: 100%;
+		position: absolute;
+		max-height: 100vh;
+	}
+	.containerSec {
+		position: relative;
+		z-index: 2;
+	}
+	.nuestraVision .containerSec h1 {
+		padding: 0;
+		margin-bottom: 63px;
+		margin-top: 100px;
+		margin-left: 0;
+		text-align: left;
+		font: normal normal 600 34px/38px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		word-spacing: 100vw;
+	}
+	.nuestraVision .containerSec h2 {
+		margin-left: 0;
+		text-align: left;
+		font: normal normal 300 15px/28px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.fundamentosInstitucionales .fundamentosTitulo {
+		text-align: left;
+		font: normal normal normal 24px/32px Roboto;
+		letter-spacing: 0.48px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.PoliticaDeCalidad{
+		position:relative
+	}
+	.PoliticaDeCalidad .background {
+		left: 0;
+		top: 0;
+		z-index: 1;
+		width: 100%;
+		position: absolute;
+		max-height: 100vh;
+	}
+
+	.PoliticaDeCalidad h1 {
+		padding: 0;
+	}
+	.PoliticaDeCalidad .containerText{
+		z-index:2;
+		position: relative;
+	}
+	.PoliticaDeCalidad .containerText .title-mobile {
+		text-align: left;
+		font: normal normal 500 34px/38px Roboto !important;
+		margin-bottom: 88px;
+		margin-top:186px;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.PoliticaDeCalidad .containerText .title {
+		text-align: left;
+		font: normal normal normal 18px/24px Inter;
+		margin-bottom: 44px;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.PoliticaDeCalidad .containerText p {
+		text-align: left;
+		font: normal normal 300 15px/26px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+
+	.divider {
+		margin: 40% 0%;
+	}
+	.specialRightSpace {
+		padding-right: 25px;
+	}
+	.sameLeftSpace {
+		padding-left: 38px;
+	}
+	.sameRightSpace {
+		padding-right: 38px;
+	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none !important;
+	}
+	.footer {
+		padding: 0 38px;
+	}
+	@keyframes opacityGrow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fromLeftCircle {
+		from {
+			transform: translate(-100%, -50%);
+		}
+		to {
+			transform: translate(-25%, -50%);
+		}
+	}
+
+	@keyframes fromBottom {
+		from {
+			top: 100%;
+			opacity: 0.5;
+		}
+		to {
+			top: 50%;
+			opacity: 1;
+		}
+	}
+
+	@keyframes highlightLinks {
+		0% {
+			color: #ffffff;
+			opacity: 0.2;
+		}
+
+		30%,
+		50% {
+			color: #00b0ce;
+			opacity: 1;
+			text-shadow: 0px 3px 6px #FFFFFF4D;
+		}
+		100% {
+			color: #ffffff;
+			opacity: 1;
+		}
+	}
+	@keyframes fromLeftText {
+		from {
+			transform: translateX(-150%);
+		}
+		to {
+			transform: translateX(0%);
+		}
+	}
 }
