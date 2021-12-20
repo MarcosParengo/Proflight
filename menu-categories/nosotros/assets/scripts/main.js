@@ -21,7 +21,7 @@ $(document).ready(function () {
     var four=$('#four')
     var five=$('#five')
 
-    $('body').addClass('animated')
+    $('#landing').addClass('animated')
 
     navbarBrand.click(function () {
         if(toggled){
@@ -72,6 +72,12 @@ $(document).ready(function () {
                 navBarToggler.css('-webkit-backdrop-filter', 'blur(0px)');
             }
             toggled = !toggled;
+        }
+    })
+
+    $(window).bind("scroll", function () {
+        if ($(this).scrollTop() > $('#containerLinks').offset().top-100) {
+            $('#containerLinks').addClass('animated')
         }
     })
 

@@ -674,18 +674,14 @@ body p {
 		opacity: 0;
 		transform: translateY(-50%);
 	}
-	.animated .mobile .alumnos .cifra {
-		animation: opacityGrow 1s forwards;
-	}
+	
 	.landing .mobile .alumnos .circulo {
 		display: block;
 		width: 70%;
 		left: 0;
 		transform: translateX(-100%);
 	}
-	.animated .landing .mobile .alumnos .circulo {
-		animation: 1s fromLeftCircle forwards;
-	}
+
 	.landing .mobile .alumnos .label {
 		font: normal normal 100 14px/17px Inter;
 		letter-spacing: 0px;
@@ -696,8 +692,14 @@ body p {
 		right: 36px;
 		transform: translateY(-50%);
 	}
-	.animated .landing .mobile .alumnos .label {
+	.landing .mobile.animated .alumnos .circulo {
+		animation: 1s fromLeftCircle forwards;
+	}
+	.landing .mobile.animated .alumnos .label {
 		animation: 1s fromBottom forwards;
+	}
+	.landing .mobile.animated .alumnos .cifra {
+		animation: opacityGrow 1s forwards;
 	}
 	.landing .textContainer {
 		min-height: unset;
@@ -710,7 +712,7 @@ body p {
 		opacity: 0.2;
 		margin-bottom: 14px;
 	}
-	.animated .landing .link {
+	.landing .animated .link {
 		animation: 2s highlightLinks forwards;
 	}
 	.landing .link.secondLink {
@@ -727,10 +729,9 @@ body p {
 		opacity: 1;
 		transform: translateX(-150%);
 	}
-	.animated .landing .containerLinks .text {
+	.landing .animated .containerLinks .text {
 		animation: 2s fromLeftText forwards;
 		animation-delay: 3s;
-
 	}
 	.nuestraVision {
 		position: relative;
