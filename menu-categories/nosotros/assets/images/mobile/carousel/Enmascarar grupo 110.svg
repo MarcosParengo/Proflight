@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet"
+    width="360" height="140">
+    <defs>
+        <style>
+            .a,.b,.c,.d,.e,.f,.g,.h{
+                transition: all 0.5s ease;
+            }
+            .a,
+            .e {
+                fill: #fff;
+            }
+
+            .a {
+                stroke: #707070;
+            }
+
+            .b {
+                clip-path: url(#a);
+            }
+
+            .c {
+                clip-path: url(#b);
+            }
+
+            .d,
+            .f,
+            .h {
+                fill: none;
+            }
+
+            .d,
+            .f {
+                stroke: #fff;
+            }
+
+            .d {
+                stroke-dasharray: 2 8;
+            }
+
+            .g {
+                stroke: none;
+            }
+
+            .firstSelected #firstDot .f .g,
+            .secondSelected #secondDot .f .g,
+            .thirdSelected #thirdDot .f .g,
+            .fourthSelected #fourthDot .f .g,
+            .fifthSelected #fifthDot .f .g,
+            .firstSelected #firstDot .f .h,
+            .secondSelected #secondDot .f .h,
+            .thirdSelected #thirdDot .f .h,
+            .fourthSelected #fourthDot .f .h,
+            .fifthSelected #fifthDot .f .h {
+                stroke: #00b0ce;
+            }
+
+            .firstSelected #firstDot .e,
+            .secondSelected #secondDot .e,
+            .thirdSelected #thirdDot .e,
+            .fourthSelected #fourthDot .e,
+            .fifthSelected #fifthDot .e {
+                fill: #00b0ce;
+            }
+
+        </style>
+        <clipPath id="a">
+            <rect class="a" width="360" height="140" transform="translate(0 3276)" />
+        </clipPath>
+        <clipPath id="b">
+            <rect class="a" width="360" height="168" transform="translate(0 3414)" />
+        </clipPath>
+    </defs>
+    <g id="carouselIndicator" class="b firstSelected" transform="translate(0 -3276)">
+        <g class="c" transform="translate(0 -161)">
+            <g class="d" transform="translate(-55 3079)">
+                <circle class="g" cx="231" cy="231" r="231" />
+                <circle class="h" cx="231" cy="231" r="230.5" />
+            </g>
+        </g>
+        <g id="firstDot" transform="translate(-1383.334 265.666)">
+            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
+            <g class="f" transform="translate(1420.333 3064.333)">
+                <circle class="g" cx="5" cy="5" r="5" />
+                <circle class="h" cx="5" cy="5" r="4.5" />
+            </g>
+        </g>
+        <g id="fourthDot" transform="translate(-1176.334 298.666)">
+            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
+            <g class="f" transform="translate(1420.333 3064.333)">
+                <circle class="g" cx="5" cy="5" r="5" />
+                <circle class="h" cx="5" cy="5" r="4.5" />
+            </g>
+        </g>
+        <g id="secondDot" transform="translate(-1313.334 301.666)">
+            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
+            <g class="f" transform="translate(1420.333 3064.333)">
+                <circle class="g" cx="5" cy="5" r="5" />
+                <circle class="h" cx="5" cy="5" r="4.5" />
+            </g>
+        </g>
+        <g id="thirdDot" transform="translate(-1244.334 310.666)">
+            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
+            <g class="f" transform="translate(1420.333 3064.333)">
+                <circle class="g" cx="5" cy="5" r="5" />
+                <circle class="h" cx="5" cy="5" r="4.5" />
+            </g>
+        </g>
+        <g id="fifthDot" transform="translate(-1107.334 261.666)">
+            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
+            <g class="f" transform="translate(1420.333 3064.333)">
+                <circle class="g" cx="5" cy="5" r="5" />
+                <circle class="h" cx="5" cy="5" r="4.5" />
+            </g>
+        </g>
+        <g transform="translate(-1043.334 201.666)">
+            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
+            <g class="f" transform="translate(1420.333 3064.333)">
+                <circle class="g" cx="5" cy="5" r="5" />
+                <circle class="h" cx="5" cy="5" r="4.5" />
+            </g>
+        </g>
+    </g>
+</svg>

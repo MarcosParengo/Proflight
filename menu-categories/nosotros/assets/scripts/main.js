@@ -22,7 +22,7 @@ $(document).ready(function () {
     var five=$('#five')
 
     $('#landing').addClass('animated')
-
+    loadSVGInline()
     navbarBrand.click(function () {
         if(toggled){
             if ($(window).width() < 576) {
@@ -83,6 +83,9 @@ $(document).ready(function () {
 
     viewCarousel.click(function() {
         aFundamentos.css('display','none');
+        $('#carouselIndicatorContainer').css('opacity', '1')
+        $('#carouselIndicatorContainer').css('max-height', '150px')
+
         data.css('display','block');
         original.css('display','none');
         one.css('display','block');
@@ -90,34 +93,43 @@ $(document).ready(function () {
     
     myCarousel.on('slide.bs.carousel', function (e) {
         if(e.from==0 && e.direction=="right"){
+            $('#carouselIndicatorContainer').css('opacity', '0')
+            $('#carouselIndicatorContainer').css('max-height', '50px')
+
             aFundamentos.css('display','block');
             data.css('display','none');
             original.css('display','block');
             one.css('display','none'); 
             five.css('display','none'); 
         }else{
+            $("#carouselIndicator").removeClass();
             switch(e.to){
                 case 0:
+                    $('#carouselIndicator').addClass('b firstSelected')
                     five.css('display','none');
                     two.css('display','none');
                     one.css('display','block');  
                 break
                 case 1:
+                    $('#carouselIndicator').addClass('b secondSelected')
                     one.css('display','none');
                     three.css('display','none');
                     two.css('display','block'); 
                 break
                 case 2:
+                    $('#carouselIndicator').addClass('b thirdSelected')
                     two.css('display','none');
                     four.css('display','none');
                     three.css('display','block'); 
                 break
                 case 3:
+                    $('#carouselIndicator').addClass('b fourthSelected')
                     five.css('display','none');
                     three.css('display','none');
                     four.css('display','block'); 
                 break
                 case 4:
+                    $('#carouselIndicator').addClass('b fifthSelected')
                     one.css('display','none');
                     four.css('display','none');
                     five.css('display','block'); 
@@ -133,3 +145,20 @@ $(document).ready(function () {
         
     })  
 })   
+
+function loadSVGInline()
+{
+    var SVGFile="assets/images/mobile/carousel/Enmascarar grupo 110.svg"
+    var loadXML = new XMLHttpRequest;
+    function handler(){
+        if(loadXML.readyState == 4 && loadXML.status == 200)
+        {
+            carouselIndicatorContainer.innerHTML=loadXML.responseText
+        }
+    }
+    if (loadXML != null){
+        loadXML.open("GET", SVGFile, true);
+        loadXML.onreadystatechange = handler;
+        loadXML.send();
+    }
+}
