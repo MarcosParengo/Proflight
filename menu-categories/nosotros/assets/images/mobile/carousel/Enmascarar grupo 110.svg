@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet"
-    width="360" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 360 140">
     <defs>
         <style>
             .a,.b,.c,.d,.e,.f,.g,.h{
@@ -38,7 +37,7 @@
             }
 
             .g {
-                stroke: none;
+                stroke: #00000000;
             }
 
             .firstSelected #firstDot .f .g,

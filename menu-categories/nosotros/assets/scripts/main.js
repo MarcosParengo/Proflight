@@ -84,7 +84,7 @@ $(document).ready(function () {
     viewCarousel.click(function() {
         aFundamentos.css('display','none');
         $('#carouselIndicatorContainer').css('opacity', '1')
-        $('#carouselIndicatorContainer').css('max-height', '150px')
+        $('#carouselIndicatorContainer').css('max-height', '40vw')
 
         data.css('display','block');
         original.css('display','none');

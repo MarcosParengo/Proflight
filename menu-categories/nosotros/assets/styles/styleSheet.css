@@ -761,7 +761,7 @@ body p {
 
 	.carouselIndicatorContainer{
 		opacity: 0;
-		max-height: 40vw;
+		max-height: 50px;
 		transition: all 0.5s;
 	}
 	.fundamentosInstitucionales .fundamentosTitulo {
