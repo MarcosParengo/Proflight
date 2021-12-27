@@ -1,301 +1,367 @@
 * {
-    box-sizing: border-box;
-    font-family: "Montserrat";
+	box-sizing: border-box;
+	font-family: "Montserrat";
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	width: 100%;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
-
-
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-    background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/pf%20background%20porqueelegirnos.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+	background-image: url(../images/background/bgDesktop.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
 
 .fullPage {
-    min-height: 100vh;
-    width: 100%;
-    border: 3px;
+	min-height: 100vh;
+	width: 100%;
+	border: 3px;
 }
-.sameWidth{
-    width: 73.75%;
+.sameWidth {
+	width: 73.75%;
 }
 .title {
-   text-align: start;
-font: normal normal bold 68px Roboto;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
-margin-bottom: 39px;
+	text-align: start;
+	font: normal normal bold 68px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	margin-bottom: 39px;
 }
 
 .paragraph {
-    text-align: left;
-font: normal normal 300 16px/32px Inter;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
-    max-width: 63ch;
+	text-align: left;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 63ch;
 }
-.como{
-    font: normal normal 300 16px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+.como {
+	font: normal normal 300 16px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .button {
-    width: 24px;
-    height: 24px; 
-    display: inline-block;
-    font-size: 10px;
-    background-color: white;
-    border-radius: 25px;
-    color: grey;
-    margin-right: 0.5rem;
-    transition: all 0.5s;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	font-size: 10px;
+	background-color: white;
+	border-radius: 25px;
+	color: grey;
+	margin-right: 0.5rem;
+	transition: all 0.5s;
 }
 
 .button:hover {
-    background-color: #00AFCD;
-    text-decoration: none;
+	background-color: #00afcd;
+	text-decoration: none;
 }
 
 .tab-title {
-    padding-top: 1em;
-    text-align: center;
-    font: normal normal 300 12px/16px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 1;
+	padding-top: 1em;
+	text-align: center;
+	font: normal normal 300 12px/16px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase;
+	opacity: 1;
 }
-
 
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
 
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .home {
-        background-size: auto 100%;
+@media only screen and (max-width: 768px) {
+	.home {
+		background-size: 100% 100%;
+	}
+	.fullPage {
+		min-height: auto;
+	}
+	.title {
+		margin-top: 160px;
+		font: normal normal 500 33px/38px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.paragraph {
+		text-align: left;
+		font: normal normal 300 15px/28px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		margin-bottom: 100px;
+	}
+	.como {
+		font: normal normal 300 14px/38px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 0.8;
+	}
+	.accordion{
+		min-height: 586px;
+	}
+	.accordion-button {
+		width:calc( 100% - 50px);
+		background-color: transparent !important;
+		font: normal normal 300 14px/20px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		padding: 0;
+		margin: 8px 0px 8px 28px;
+	}
+	.accordion-button::after {
+        width:9.417px;
+        height:5.208px;
+		background-size: unset!important;
+        background-repeat:no-repeat!important;
+        background-position: right!important;
+        background:url("../images/components/accordion/Icon\ feather-chevron-down2.svg");
+	}
+    .accordion-button:not(.collapsed)::after{
+        background:url("../images/components/accordion/Icon\ feather-chevron-down2.svg");
     }
-    .fullPage {
-        height: auto;
-        padding: 40% 0;
-        width: auto;
-    }
+	.accordion-button:not(.collapsed) {
+		color: #ffffff;
+	}
+	.buttonIcon {
+		width: 50px;
+	}
+	.accordion-item {
+		background-color: #FFFFFF03 !important;
+		border: none;
+	}
+	.accordion-item:first-of-type {
+		border-top: #FFFFFF51 1px solid !important;
+	}
+	.accordion-body {
+		padding: 0;
+		border-bottom: #FFFFFF51 1px solid !important;
+		border-top: none;
+	}
+	.accordion-body .text {
+		font: normal normal 300 12px/22px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		margin-bottom: 0px;
+		margin: 42px 0px 42px 38px;
+		width: calc(100% - 180px);
+	}
+	.accordion-body .imagen {
+		border-radius: 10px;
+		position: absolute;
+		right: 0;
+		transform: translateX(50%);
+	}
+	.accordion-header {
+		border: #FFFFFF51 1px solid !important;
+	}
+
+	.sameWidth {
+		width: 100%;
+		padding: 0 26px 0 38px;
+	}
+	.desktop {
+		display: none !important;
+	}
+	.overflowHidden{
+		overflow-x: hidden;
+	}
+	.footer{
+		padding:0 38px
+	}
+	.home {
+		background-image: url(../images/background/bgMobile.png);
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
 }
-
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .home {
-        background-size: 100% 100%;
-    }
-    .fullPage {
-        min-height: auto;
-    }
-}
-
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .home {
-        background-size: 100% 100%;
-    }
-    .fullPage {
-        min-height: auto;
-    }
-}
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .home {
-        background-size: 100% 100%;
-    }
-    .fullPage {
-        height: 100vh;
-    }
-    .fullPage {
-        min-height: 70vh;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
+	.fullPage {
+		height: 100vh;
+	}
+	.fullPage {
+		min-height: 70vh;
+	}
+	.mobile {
+		display: none;
+	}
 }
-
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .home {
-        background-size: 100% 100%;
-    }
-    .fullPage {
-        min-height: 100vh;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
+	.fullPage {
+		min-height: 100vh;
+	}
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .home {
-        background-size: 100% 100%;
-    }
-    .fullPage {
-        min-height: 100vh;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
+	.fullPage {
+		min-height: 100vh;
+	}
 }
-
 
 /*---------------------------------------------------------Seccion Tabs----------------------------------------------------------------*/
 
 .tabs h1 {
-    text-align: start;
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgba(255, 255, 255, 1);
+	text-align: start;
+	font-size: 30px;
+	font-weight: bolder;
+	color: rgba(255, 255, 255, 1);
 }
 
 .tabs .numero {
-    color: rgb(141, 150, 231);
-    font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+	color: rgb(141, 150, 231);
+	font-size: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .tabs h2 {
-    border-top: 1px solid white;
-    text-align: start;
-    font-size: 15px;
-    font-weight: lighter;
-    color: white;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    line-height: 2rem;
+	border-top: 1px solid white;
+	text-align: start;
+	font-size: 15px;
+	font-weight: lighter;
+	color: white;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	line-height: 2rem;
 }
 
 .tabs .specs {
-    text-align: start;
-    border-bottom: 1px solid;
-    border-color: white;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+	text-align: start;
+	border-bottom: 1px solid;
+	border-color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: lighter;
+	color: rgba(255, 255, 255, 1);
+	padding-bottom: 5%;
+	margin-bottom: 5%;
 }
 
 .tabs .nonUper {
-    text-align: start;
-    text-transform: none;
-    font-size: 15px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+	text-align: start;
+	text-transform: none;
+	font-size: 15px;
+	font-weight: lighter;
+	color: rgba(255, 255, 255, 1);
+	padding-bottom: 5%;
+	margin-bottom: 5%;
 }
 
-.tabs  .nav-tabs {
-    border: none !important;
+.tabs .nav-tabs {
+	border: none !important;
 }
 
-.tabs  .nav-tabs  .nav-link {
-    border: none !important;
-    border: 0px solid transparent;
-    opacity: 0.4 !important;
-    width: auto
+.tabs .nav-tabs .nav-link {
+	border: none !important;
+	border: 0px solid transparent;
+	opacity: 0.4 !important;
+	width: auto;
 }
 
-.tabs .nav-link img{
-    height: 50px;
-    display: block;
+.tabs .nav-link img {
+	height: 50px;
+	display: block;
 }
 
-.tabs  .nav-link:hover{
-    opacity: 0.7 !important;
+.tabs .nav-link:hover {
+	opacity: 0.7 !important;
 }
 
-.tabs  .nav-link.active {
-    background-color: rgba(200, 200, 200, 0) !important;
-    border: none !important;
-    opacity: 1!important;
+.tabs .nav-link.active {
+	background-color: rgba(200, 200, 200, 0) !important;
+	border: none !important;
+	opacity: 1 !important;
 }
 
 .tab-pane {
-    color: white !important;
+	color: white !important;
 }
 
 .tab-pane .titulo {
-    position: relative;
+	position: relative;
 }
 
 .titulo .texto {
-    font: normal normal bold 31px/32px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	font: normal normal bold 31px/32px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .titulo .number {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font: normal normal 300 12px/48px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    text-transform: uppercase;
-    opacity: 1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font: normal normal 300 12px/48px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	text-transform: uppercase;
+	opacity: 1;
 }
 
 .tab-content .content {
-    line-height: 2rem;
-    border-top: 1px solid;
-    font: normal normal 300 14px/30px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width: 49ch;
+	line-height: 2rem;
+	border-top: 1px solid;
+	font: normal normal 300 14px/30px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 49ch;
 }
 
 .tab-content img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
-

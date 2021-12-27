@@ -44,7 +44,7 @@ body p {
 }
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 .nosotros {
-	background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/nosotros/assets/images/background/pf%20background%20misionvision.png);
+	background-image: url(../images/background/bgDesktop.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
@@ -850,7 +850,11 @@ body p {
 	.footer {
 		padding: 0 38px;
 	}
-	
+	.nosotros {
+		background-image: url(../images/background/bgMobile.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
 }
 
 @keyframes opacityGrow {

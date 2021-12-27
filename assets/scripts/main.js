@@ -219,7 +219,7 @@ function fillContainerEventos(obj) {
                         </div>
                     </div>
                     <div class="show">
-                        <img src="assets/images/eventos/banderas/${obj.origen.toLowerCase()}.png" class=" img-fluid" alt="...">
+                        <img src="menu-categories/eventos/assets/images/evento/bandera/${obj.origen.toUpperCase()}.png" class=" img-fluid" alt="...">
                         <p class="mb-0 resumen card-text">${obj.ciudad}, ${obj.origen}</p>
                         <p class=" resumen fecha card-text pb-5"> ${obj.fecha}</p>                    
                     </div>

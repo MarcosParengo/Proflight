@@ -21,7 +21,7 @@
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -30,16 +30,18 @@
             <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
         </div>
     </a>
-    
+
     <nav class="navbar fixed-top navbar-dark">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,7 +50,7 @@
                     data-alt-src="/Proflight/assets\images\menuIcons\Cross light.svg"
                     src="/Proflight/assets\images\menuIcons\Menu light.svg">
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container-fluid">
                     <div class="row justify-content-end">
@@ -125,8 +127,8 @@
     </nav>
 
     <section class="home">
-        <div class="container-fluid">
-            <div class="fullPage row d-flex align-items-center justify-content-center">
+        <div class="container-fluid px-0">
+            <div class="fullPage row d-flex align-items-center justify-content-center mx-0 px-0">
                 <div class="sameWidth">
                     <h1 class="title">¿Por qué elegirnos?</h1>
                     <p class="paragraph">
@@ -134,18 +136,18 @@
                         academia del mundo, buscamos la profesionalización desde los primeros pasos de los alumnos de
                         una manera metódica, pero también didáctica.
                     </p>
-                    <a class="d-inline-block" href="#tabs" title="">
+                    <a class="desktop d-inline-block" href="#tabs" title="">
                         <div class="button d-flex justify-content-center align-items-center">
                             <span class="icon fas fa-chevron-down">
                             </span>
                         </div>
                     </a>
-                    <span class="como">Te enseñamos cómo</span>
+                    <span class="como">Te enseñamos cómo<span class="mobile">:</span></span>
                 </div>
             </div>
         </div>
 
-        <section  class="tabs">
+        <section class="tabs desktop">
             <div class="container-fluid parent p-relative">
                 <div id="tabs" class="row d-flex fullPage align-items-center justify-content-center">
                     <div class="sameWidth">
@@ -316,12 +318,164 @@
                 </div>
         </section>
 
+            <div class="accordion mobile accordion-flush" id="accordionIntructor">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="buttonIcon">
+                                <img width="26" class="me-4" src="assets/images/components/accordion/header/1.svg"
+                                    alt="">
+                            </div>
+                            Volar en Argentina
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionIntructor">
+                        <div class="accordion-body px-0">
+
+                            <div class="d-flex align-items-center p-relative overflowHidden">
+                                <p class="text">
+                                    Es el segundo país más extenso de Sudamérica, y uno de los territorios con más
+                                    aeropuertos de la región (1138). Aquí podrás conocer las Cataratas del Iguazú: una
+                                    de
+                                    las 7 maravillas del mundo. También recorrerás glaciares, montañas, desiertos, ríos
+                                    y
+                                    mar. Volar en Argentina es una experiencia inolvidable; ven a disfrutarla con
+                                    nosotros.
+                                </p>
+                                <img height="190" class="mx-auto imagen"
+                                    src="assets/images/components/accordion/content/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="buttonIcon">
+                                <img width="26" class="me-4" src="assets/images/components/accordion/header/2.svg"
+                                    alt="">
+                            </div>
+
+                            Diversidad de flota
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionIntructor">
+                        <div class="accordion-body px-0">
+                            <div class="d-flex align-items-center p-relative overflowHidden">
+                                <p class="text">
+                                    No realizaras todas tus horas en un solo tipo de aeronave, experimentaras vuelos
+                                    pesados,
+                                    livianos, ala baja, ala alta, aviones monomotor y bimotor. Lo cual te preparará para
+                                    adaptarte a cualquier tipo de avión.
+                                </p>
+                                <img height="190" class="mx-auto imagen"
+                                    src="assets/images/components/accordion/content/2.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="buttonIcon">
+                                <img width="18" class="me-4" src="assets/images/components/accordion/header/3.svg"
+                                    alt="">
+                            </div>
+                            Plan Académico
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionIntructor">
+                        <div class="accordion-body px-0">
+                            <div class="d-flex align-items-center p-relative overflowHidden">
+                                <p class="text">
+                                    Los alumnos tendrán una alta carga teórica para estudiar y rendir. Aunque en
+                                    Argentina
+                                    no es obligatoria la teoría, para nosotros es uno de los puntos mas importantes de
+                                    la
+                                    carrera, el piloto debe estar muy bien instruido tanto en conocimientos propios de
+                                    la
+                                    aeronave como en conocimientos generales relacionados. Toda la bibliografía es de
+                                    autoría propia.
+                                </p>
+                                <img height="190" class="mx-auto imagen"
+                                    src="assets/images/components/accordion/content/3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="buttonIcon">
+                                <img width="20" src="assets/images/components/accordion/header/4.svg" alt="">
+                            </div>
+                            Tecnología
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionIntructor">
+                        <div class="accordion-body px-0">
+                            <div class="d-flex align-items-center p-relative overflowHidden">
+                                <p class="text">
+                                    Cada avión de nuestra flota se encuentra equipado con lo ultimo en pantallas de
+                                    navegación garmin. Los alumnos aprenderán a leer instrumentos analógicos y
+                                    pantallas.
+                                </p>
+                                <img height="190" class="mx-auto imagen"
+                                    src="assets/images/components/accordion/content/4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <div class="buttonIcon">
+                                <img width="20" class="mx-auto" src="assets/images/components/accordion/header/5.svg"
+                                    alt="">
+                            </div>
+                            Pro Experience
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionIntructor">
+                        <div class="accordion-body px-0">
+                            <div class="d-flex align-items-center p-relative overflowHidden">
+                                <p class="text">
+                                    ProXperience es un programa en el cual mostramos que nuestro foco son los
+                                    alumnos.
+                                    Proyectos, tecnología, salidas recreativas, todo gira en torno de dar la
+                                    mejor
+                                    experiencia de estudio en Argentina a nuestros estudiantes.
+                                </p>
+                                <img height="190" class="mx-auto imagen"
+                                    src="assets/images/components/accordion/content/5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         <section class="footer h-100vh d-flex align-items-end">
             <div class="container">
                 <div class="row">
-                    <h1 class="mail pb-0">info@proflight.com.ar</h1>
-                    <h2>+54 9 11 6010-4446</h2>
-                    <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
+                    <h1 class="mail pb-0 px-0">info@proflight.com.ar</h1>
+                    <h2 class="px-0">+54 9 11 6010-4446</h2>
+                    <h2 class="px-0">Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
                     <ul class="social">
                         <li class="me-2">
                             <a target="_blank"
