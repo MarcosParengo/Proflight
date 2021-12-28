@@ -344,6 +344,11 @@ body p {
 	.footer {
 		padding: 0 38px;
 	}
+	body{
+		background-image: url(../images/background/bgMobile.png);
+
+	}
+	
 	@keyframes opacityGrow {
 		from {
 			opacity: 0;

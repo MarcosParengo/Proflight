@@ -36,38 +36,12 @@ body p {
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-	background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/assets/images/background/pf%20background%20testimonios.png);
+	background-image: url(../images/background/bgDesktop.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
 
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-	.home {
-		background-size: auto 100%;
-	}
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-	.home {
-		background-size: auto 100%;
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-	.home {
-		background-size: auto 100%;
-	}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
 	.home {
@@ -135,9 +109,9 @@ body p {
 .filtrar:hover {
 	color: #00b0ce;
 }
-.filterContainer{
+.filterContainer {
 	font-size: 20px;
-	min-height: calc( 4.5rem + 1em + 40px );
+	min-height: calc(4.5rem + 1em + 40px);
 }
 
 .countryFlagFilter {
@@ -197,8 +171,8 @@ body p {
 	letter-spacing: 1.17px;
 	color: #ffffff;
 	opacity: 1;
-	padding-top:42px;
-	padding-bottom:35px;
+	padding-top: 42px;
+	padding-bottom: 35px;
 	text-transform: capitalize;
 }
 .testimonio .title {
@@ -247,65 +221,205 @@ body p {
 	width: 70%;
 }
 
-.chevronLeftContainer,.chevronRightContainer{
-	position:absolute;
-	cursor:pointer;
-	width:auto;
-	height:100%;
-	display:flex;
+.chevronLeftContainer,
+.chevronRightContainer {
+	position: absolute;
+	cursor: pointer;
+	width: auto;
+	height: 100%;
+	display: flex;
 	align-items: center;
 }
-.chevronLeftContainer{	
-	left:0%;
+.chevronLeftContainer {
+	left: 0%;
 }
-.chevronRightContainer{
-	right:0%;
+.chevronRightContainer {
+	right: 0%;
 }
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
-@media only screen and (max-width: 392px) {
-	.filtrar {
-		text-align: start;
-		font-size: 20px;
+@media only screen and (max-width: 768px) {
+	.landing {
+		padding: 0 21px;
 	}
+	.landingImageContainer {
+		position: relative;
+	}
+	.landingImageContainer .title {
+		text-align: left;
+		font: normal normal 500 45px/38px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		position: absolute;
+		bottom: 0;
+		left: 16px;
+	}
+	.subtitle {
+		text-align: left;
+		font: normal normal 500 20px/32px Roboto;
+		letter-spacing: 0.4px;
+		color: #ffffff;
+		opacity: 1;
+		margin-top: 47px;
+		margin-left: 16px;
+	}
+	/*Filter*/
+	.mobile .filterBtn {
+		background-color: transparent;
+		border: none;
+		text-align: left;
+		font: normal normal normal 18px/24px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		opacity: 1;
+		padding-left: 0;
+	}
+	.dropdown-toggle::after {
+		transform: rotate(-90deg);
+		transition: all 0.5s;
+	}
+	.dropdown-toggle.show::after {
+		transform: rotate(0deg);
+	}
+	.dropdown-menu.show {
+		width: calc(100% - 38px - 38px);
+		background: #707070 0% 0% no-repeat padding-box;
+		opacity: 1;
+		border-radius: 0;
+		animation: 0.5s opacityGrow forwards;
+	}
+	.dropdown-item {
+		width: calc(100% - 20px);
+		margin-left: 20px;
+		border-bottom: 1px solid #FFFFFF54;
+		text-align: left;
+		font: normal normal normal 17px/22px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 0.8;
+		text-transform: capitalize;
+		padding-left: 0;
+	}
+	.dropdown-item img {
+		width: 26px;
+	}
+	.mostrandoTestimonios {
+		text-align: left;
+		font: normal normal normal 16px/40px inter;
+		letter-spacing: 0px;
+		color: #ffffffB2;
+		text-transform: capitalize;
+	}
+	.mostrandoTestimonios img {
+		width: 28px;
+		margin-right: 14px;
+	}
+	/**/
 	.contenedorTestimonio {
 		width: 95%;
-	}
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-	.filtrar {
-		text-align: start;
-		font-size: 20px;
 	}
 	.testimonio .subtitle {
 		font-size: 35px;
 		text-align: start;
 		line-height: 3rem;
 	}
-	.contenedorTestimonio {
-		width: 95%;
+	.h-0 {
+		height: 0;
 	}
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-	.filtrar {
-		text-align: start;
-		font-size: 20px;
+	.testimonioCardContainer {
+		margin-top: 25%;
 	}
-	.testimonio .subtitle {
-		font-size: 35px;
-		text-align: start;
-		line-height: 3rem;
+	.testimonioCardContainer:first-of-type {
+		margin-left: 8%;
+	}
+	.testimonioCardContainer:last-of-type {
+		margin-right: 8%;
+	}
+	.testimonioCard {
+		background: #CECECE18 0% 0% no-repeat padding-box;
+		height: 100%;
+	}
+	.testimonioCard .imageContainer {
+		transform: translateY(-50%);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.testimonioCard .imageContainer .image {
+		position: relative;
+		width: 50%;
+		padding-top: 50%;
+	}
+	.testimonioCard .imageContainer .image .profile {
+		position: absolute;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border-radius: 100%;
+	}
+	.testimonioCard .imageContainer .image .flag {
+		position: absolute;
+		object-fit: cover;
+		width: 31px;
+		top: 50%;
+		right: 0;
+		transform: translate(50%, -50%);
+	}
+	.testimonioCard .name {
+		text-align: center;
+		font: normal normal normal 15px/11px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		margin-top: calc(25% + 23px);
+	}
+	.testimonioCard .testimonio {
+		text-align: left;
+		font: normal normal normal 13px/22px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 0.9;
+		margin-top: 23px;
+		padding: 0 18px;
 	}
 
-	.contenedorTestimonio {
-		width: 90%;
+	.overflow-auto {
+		overflow-x: auto;
+	}
+	.desktop {
+		display: none;
+	}
+	.home {
+		background-image: url(../images/background/bgMobile.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.sameLeft {
+		padding-left: 38px;
+	}
+	.sameRight {
+		padding-right: 38px;
+	}
+	.footer{
+		padding:0 38px
+	}
+	.footer h1{
+		padding-top: 0px!important;
+	}
+	@keyframes opacityGrow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
 }
 
@@ -323,6 +437,9 @@ body p {
 	}
 	.contenedorTestimonio {
 		width: 90%;
+	}
+	.mobile {
+		display: none;
 	}
 }
 

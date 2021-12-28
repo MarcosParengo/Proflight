@@ -17,7 +17,7 @@
 </head>
 
 <body className="p-relative" style="background-color:#002e5d">
-    <a target="blank"
+    <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -122,17 +122,15 @@
         </div>
     </nav>
 
-    <div class="circle">
+    <div class="circle desktop">
         <img src="assets/images/components/Circle.png" alt="">
     </div>
     <section class="home">
         <section class="p-relative">
-
             <a href="#testimonio">
                 <div class="container-fluid">
                     <div class="fullPage row d-flex justify-content-center align-items-center p-relative">
-
-                        <div class="col me-sm-0 me-md-5 col-xs-12 col-md-12 col-lg-5 col-xl-4">
+                        <div class="col me-sm-0 me-md-5 col-xs-12 col-md-12 col-lg-5 col-xl-4 desktop">
                             <h1 class="title">
                                 Testimonios
                             </h1>
@@ -140,13 +138,21 @@
                                 El sueño de<br>convertirse en piloto
                             </h2>
                         </div>
-                        <div class="col ms-4 col-lg-5 col-xl-4 d-none d-md-none d-lg-block d-xl-block">
+                        <div class="col ms-4 col-lg-5 col-xl-4 desktop">
                             <img class="d-block w-100" src="assets/images\components\IMG_3483 02.png" alt="">
                         </div>
-                        <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+                        <div class="sectionLabel rotatedText desktop">
                             <h1 class="text">Testimonios</h1>
                         </div>
-
+                        <div class="mobile landing">
+                            <div class="landingImageContainer">
+                                <img src="assets/images/mobile/landing.png" alt="" class="d-block w-100">
+                                <h1 class="title">Testimonios</h1>
+                            </div>
+                            <h2 class="subtitle">
+                                Nuestros alumnos <br>nos recomiendan
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -156,7 +162,7 @@
         <section>
             <div class="container filterContainer">
                 <div class="row">
-                    <div class="accordion accordion" id="accordion">
+                    <div class="desktop accordion accordion" id="accordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -170,31 +176,34 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <div>
-                                        <img id="ARGENTINA" class="countryFlagFilter" src="assets/images/testimonio/bandera/ARGENTINA.svg" onclick="pais(id)" alt="">
-                                        <img id="GUATEMALA" class="countryFlagFilter" src="assets/images/testimonio/bandera/GUATEMALA.svg" onclick="pais(id)" alt="">
-                                        <img id="COLOMBIA" class="countryFlagFilter" src="assets/images/testimonio/bandera/COLOMBIA.svg" onclick="pais(id)" alt="">
-                                        <img id="EL SALVADOR" class="countryFlagFilter" src="assets/images/testimonio/bandera/EL SALVADOR.svg" onclick="pais(id)" alt="">
-                                        <img id="PANAMÁ" class="countryFlagFilter" src="assets/images/testimonio/bandera/PANAMÁ.svg" onclick="pais(id)" alt="">
-                                        <img id="PERÚ" class="countryFlagFilter" src="assets/images/testimonio/bandera/PERÚ.svg" onclick="pais(id)" alt="">
-                                        <img id="VENEZUELA" class="countryFlagFilter" src="assets/images/testimonio/bandera/VENEZUELA.svg" onclick="pais(id)" alt="">
+                                    <div id="countryFilters">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 pt-2 mobile sameLeft sameRight">
+                        <a class="d-block filterBtn btn btn-secondary dropdown-toggle" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Filtrar eventos por pais
+                        </a>
+                        <ul class="dropdown-menu" id="countryFiltersMobile" aria-labelledby="dropdownMenuLink">
+
+                        </ul>
+                        <p id="mostrandoTestimonios" class="mostrandoTestimonios"></p>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="w-100">
+        <div class="w-100 desktop">
             <h1 class="paisSeleccionado" id="paisSeleccionado"></h1>
         </div>
         <section class="alumnos">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row desktop">
                     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators" id="carouselIndicators">
-                            
+
                         </div>
                         <div class="carousel-inner" id="selectorDeTestimonios">
 
@@ -211,14 +220,57 @@
                         </button>
                     </div>
                 </div>
+                <div id="containerTestimoniosMobile" class="row d-flex d-sm-flex d-md-none flex-nowrap overflow-auto align-items-stretch">
+                    <div class="col-10 testimonioCardContainer">
+                        <div class="testimonioCard">
+                            <div class="h-0">
+                                <div class="imageContainer">
+                                    <div class="image">
+                                        <img src="assets/images/testimonio/picture/Alejandro Zapata.png" alt=""
+                                            class="profile">
+                                        <img class="flag" src="assets/images/testimonio/bandera/ARGENTINA.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="name">Alejandro Zapata</h1>
+                            <p class="testimonio">
+                                “Proflight es el lugar donde los sueños se cumplen, un lugar con excelentes
+                                instalaciones preparadas totalmente para la formación personal y profesional de los
+                                estudiantes, un lugar en el que te sientes como en casa. Ningún soñador es pequeño y
+                                ningún sueño es demasiado grande. Intentalo… Te aseguro que será la mejor experiencia de
+                                tu vida.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-10 testimonioCardContainer">
+                        <div class="testimonioCard">
+                            <div class="imageContainer">
+                                <div class="image">
+                                    <img src="assets/images/testimonio/picture/Alejandro Zapata.png" alt=""
+                                        class="profile">
+                                    <img class="flag" src="assets/images/testimonio/bandera/ARGENTINA.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 testimonioCardContainer">
+                        <div class="testimonioCard">
+                            <div class="imageContainer">
+                                <div class="image">
+                                    <img src="assets/images/testimonio/picture/Alejandro Zapata.png" alt=""
+                                        class="profile">
+                                    <img class="flag" src="assets/images/testimonio/bandera/ARGENTINA.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="testimonio" class="testimonio">
+        <section id="testimonio" class="testimonio desktop">
             <div class="container-fluid">
                 <div class="row" id="containerTestimonio">
-
-
                 </div>
             </div>
         </section>
@@ -226,9 +278,9 @@
         <section class="footer d-flex align-items-end">
             <div class="container">
                 <div class="row">
-                    <h1 class="mail pb-0">info@proflight.com.ar</h1>
-                    <h2>+54 9 11 6010-4446</h2>
-                    <h2>Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
+                    <h1 class="mail pb-0 px-0">info@proflight.com.ar</h1>
+                    <h2 class="px-0">+54 9 11 6010-4446</h2>
+                    <h2 class="px-0">Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
                     <ul class="social">
                         <li class="me-2">
                             <a target="_blank"

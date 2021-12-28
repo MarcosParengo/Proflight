@@ -158,6 +158,8 @@ body p {
 	}
 	.buttonIcon {
 		width: 50px;
+		display: flex;
+		justify-content: center;
 	}
 	.accordion-item {
 		background-color: #FFFFFF03 !important;

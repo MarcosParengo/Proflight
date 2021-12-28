@@ -5,7 +5,13 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 let paisSeleccionado = urlParams.get('pais') || 'COLOMBIA';
 let alumnoSeleccionado = urlParams.get('alumno') || 'Juan Andres Rivera';
-let indexDelAlumnoSeleccionado=0
+let indexDelAlumnoSeleccionado = 0;
+var countryFiltersMobile = $('#countryFiltersMobile');
+var countryFilters = $('#countryFilters');
+var mostrandoTestimonios = $('#mostrandoTestimonios');
+var containerTestimoniosMobile = $('#containerTestimoniosMobile');
+
+var paises = [];
 
 $(document).ready(function() {
 	var toggled = false;
@@ -15,10 +21,14 @@ $(document).ready(function() {
 	var navBarTogglerIcon = $('#navBarTogglerIcon');
 	tituloPaisSeleccionado = $('#paisSeleccionado');
 	navBarText = $('#navBar-text');
-
+	countryFiltersMobile = $('#countryFiltersMobile');
+	countryFilters = $('#countryFilters');
+	mostrandoTestimonios = $('#mostrandoTestimonios');
 	containerTestimonios = $('#selectorDeTestimonios');
 	containerTestimonio = $('#containerTestimonio');
 	carouselIndicators = $('#carouselIndicators');
+	containerTestimoniosMobile = $('#containerTestimoniosMobile');
+
 	var testimonios = '../data/testimonios.json';
 
 	LoadJson(testimonios, 1, paisSeleccionado.toUpperCase());
@@ -87,14 +97,19 @@ function LoadJson(url, selector, pais) {
 				case 1:
 					testimoniosCargados = obj;
 					testimoniosFiltrados = obj.filter((testimonio) => testimonio.origen === pais);
+					paises = Array.from(new Set(obj.map((testiomonioMap) => testiomonioMap.origen))).sort();
+					fillFilterTestimonios();
 					fillContainerTestimonios(testimoniosFiltrados);
+					fillContainerTestimoniosMobile(testimoniosFiltrados);
+
 					indexDelAlumnoSeleccionado = testimoniosFiltrados.findIndex(
 						(alumno) => alumno.nombre === alumnoSeleccionado
-					)
-					indexDelAlumnoSeleccionado=indexDelAlumnoSeleccionado===-1 ? 0 : indexDelAlumnoSeleccionado
+					);
+					indexDelAlumnoSeleccionado = indexDelAlumnoSeleccionado === -1 ? 0 : indexDelAlumnoSeleccionado;
 					testimonio(indexDelAlumnoSeleccionado);
 					indicators();
 					tituloPaisSeleccionado.text(pais.toLowerCase());
+					updateMostrandoTestimonios(pais.toLowerCase());
 					break;
 				case 2:
 					fillContainerEventos(obj);
@@ -157,8 +172,35 @@ function fillContainerTestimonios(obj) {
 	containerTestimonios.html(string);
 }
 
+function fillContainerTestimoniosMobile(obj) {
+	let string = '';
+	obj.forEach(function(obj, i) {
+		string += `
+				<div class="col-10 testimonioCardContainer">
+					<div class="testimonioCard">
+						<div class="h-0">
+							<div class="imageContainer">
+								<div class="image">
+									<img src="assets/images/testimonio/profile/${obj.nombre}.png" alt=""
+										class="profile">
+									<img class="flag"  src="assets/images/testimonio/bandera/${obj.origen.toUpperCase()}.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<h1 class="name">${obj.nombre}</h1>
+						<p class="testimonio">
+							${obj.testimonio}
+						</p>
+					</div>
+				</div>
+                `;
+	});
+
+	containerTestimoniosMobile.html(string);
+}
+
 function testimonio(numeroDeTestimonio) {
-	indexDelAlumnoSeleccionado=numeroDeTestimonio
+	indexDelAlumnoSeleccionado = numeroDeTestimonio;
 
 	containerTestimonio.html(`
 	<div class="row d-flex justify-content-center">
@@ -227,27 +269,54 @@ function indicators() {
 function pais(pais) {
 	paisSeleccionado = pais;
 	tituloPaisSeleccionado.text(pais.toLowerCase());
+	updateMostrandoTestimonios(pais.toLowerCase());
 	testimoniosFiltrados = testimoniosCargados.filter((testimonio) => testimonio.origen === pais);
 	fillContainerTestimonios(testimoniosFiltrados);
-	indexDelAlumnoSeleccionado=0
+	fillContainerTestimoniosMobile(testimoniosFiltrados);
+	indexDelAlumnoSeleccionado = 0;
 	testimonio(indexDelAlumnoSeleccionado);
 	indicators();
 }
 
-function anteriorTestimonio(){
-	if(indexDelAlumnoSeleccionado > 0 ){
-		indexDelAlumnoSeleccionado--
-	}else{
-		indexDelAlumnoSeleccionado=testimoniosFiltrados.length-1
+function anteriorTestimonio() {
+	if (indexDelAlumnoSeleccionado > 0) {
+		indexDelAlumnoSeleccionado--;
+	} else {
+		indexDelAlumnoSeleccionado = testimoniosFiltrados.length - 1;
 	}
-	testimonio(indexDelAlumnoSeleccionado)
+	testimonio(indexDelAlumnoSeleccionado);
 }
 
-function proximoTestimonio(){
-	if(indexDelAlumnoSeleccionado < testimoniosFiltrados.length-1){
-		indexDelAlumnoSeleccionado++
-	}else{
-		indexDelAlumnoSeleccionado=0
+function proximoTestimonio() {
+	if (indexDelAlumnoSeleccionado < testimoniosFiltrados.length - 1) {
+		indexDelAlumnoSeleccionado++;
+	} else {
+		indexDelAlumnoSeleccionado = 0;
 	}
-	testimonio(indexDelAlumnoSeleccionado)
+	testimonio(indexDelAlumnoSeleccionado);
+}
+
+function fillFilterTestimonios() {
+	paises.forEach(function(pais, i) {
+		countryFilters.append(`
+		<img id="${pais.toUpperCase()}" class="countryFlagFilter"
+                                            src="assets/images/testimonio/bandera/${pais.toUpperCase()}.svg" onclick="pais(id)"
+                                            alt="">
+
+		`);
+		countryFiltersMobile.append(`
+		<li>
+			<a class="dropdown-item" id="${pais.toUpperCase()}" onclick="pais(id)" >
+				<img src="assets/images/testimonio/bandera/${pais.toUpperCase()}.svg"  alt="">
+				${pais.toLowerCase()}
+			</a>
+		</li>
+		`);
+	});
+}
+
+function updateMostrandoTestimonios(pais) {
+	mostrandoTestimonios.html(
+		`<p id="mostrandoTestimonios" class="mostrandoTestimonios">Mostrando testimonios de:<br><img src="assets/images/testimonio/bandera/${pais.toUpperCase()}.svg" alt="">${pais.toLowerCase()}</p>`
+	);
 }
