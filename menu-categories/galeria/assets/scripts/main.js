@@ -1,5 +1,32 @@
 var obj = [];
 
+
+function togglePosition(clicked){
+    $("#indicator").text(clicked)
+    const elementClicked=$(`#${clicked}`)
+    const rightOneClicked=$(`#${parseInt(clicked)+1}`)
+    const rightTwoClicked=$(`#${parseInt(clicked)+2}`)
+    const leftOneClicked=$(`#${parseInt(clicked)-1}`)
+    const leftTwoClicked=$(`#${parseInt(clicked)-2}`)
+
+    if(elementClicked.attr('class')==='imagen right'){
+        console.log("derecha")
+        elementClicked.attr('class','imagen center')
+        rightOneClicked.attr('class','imagen right')
+        leftOneClicked.attr('class','imagen left')
+        leftTwoClicked.attr('class','imagen left out')
+    }else if(elementClicked.attr('class')==='imagen left'){
+        console.log("izquierda")
+
+        elementClicked.attr('class','imagen center')
+        leftOneClicked.attr('class','imagen left')
+        rightOneClicked.attr('class','imagen right')
+        rightTwoClicked.attr('class','imagen right out')
+        console.log("derecha")
+    }
+    
+} 
+
 $(document).ready(function () {
     var toggled = false;
     var navBar = $("#navBar")

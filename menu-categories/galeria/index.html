@@ -25,7 +25,7 @@
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -128,7 +128,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid px-0 home">
+    <div class="container-fluid px-0 home  desktop">
 
         <div class="row fullPage w-100" style="position: absolute;">
             <div class="row fullPage p-relative">
@@ -137,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <div  id="galeria" class="container-fluid  content p-relative">
+        <div  id="galeria" class="container-fluid  content p-relative ">
             <div class="contentBG" id="contentBG">
                 <img src="assets/images/background/Fondo 1.png" alt="bg" class="w-100 d-block" >
             </div>
@@ -231,6 +231,47 @@
         </section>
     </div>
 
+    <div class="mobile container fluid px-0">
+        <div class="row w-100 mx-0">
+            <h1 class="title">Galeria de imágenes</h1>
+            <div class="imagenes px-0">
+                <div id="1" class="imagen center" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/1.png" alt="">
+                </div>
+                <div id="2" class="imagen right" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/2.png" alt="">
+                </div>
+                <div id="3" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/3.png" alt="">
+                </div>
+                <div id="4" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/4.png" alt="">
+                </div>
+                <div id="5" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/5.png" alt="">
+                </div>
+                <div id="6" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/6.png" alt="">
+                </div>
+                <div id="7" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/7.png" alt="">
+                </div>
+                <div id="8" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/8.png" alt="">
+                </div>
+                <div id="9" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/9.png" alt="">
+                </div>
+                <div id="10" class="imagen right out" onclick="togglePosition(id)">
+                    <img src="assets/images/slider/10.png" alt="">
+                </div>
+                <div class="imagen placeholder">
+                    <img src="assets/images/slider/1.png" alt="">
+                </div>
+            </div>
+            <h2 class="indicator selected"><span id="indicator">1</span><span class="total">/10</span></h2c>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
