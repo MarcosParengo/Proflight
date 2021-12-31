@@ -1,163 +1,275 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+	box-sizing: border-box;
+	font-family: 'Montserrat';
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	width: 100%;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .fullPage {
-    height: 100vh
+	height: 100vh;
 }
 
 .home {
-    
-    background-color: white;
+	background-color: white;
 }
-.home .landing{
-    min-height: 100vh;
-    background-image: url("../images/background/blog\ bg.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+.home .landing {
+	min-height: 100vh;
+	background-image: url("../images/background/blog\ bg.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: bottom center;
 }
 .home .landing .title {
-    padding-top: 25vh;
-    color: var(--unnamed-color-0b131e);
-    text-align: left;
-    font: normal normal bold 68px Roboto;
-    letter-spacing: 0px;
-    color: #0B131E;
-    opacity: 1;
+	padding-top: 25vh;
+	text-align: left;
+	font: normal normal bold 68px Roboto;
+	letter-spacing: 0px;
+	color: #0b131e;
+	opacity: 1;
 }
 
 .rightPadding {
-    padding-right: 15%;
+	padding-right: 15%;
 }
 
 .leftPadding {
-    padding-left: 15%;
+	padding-left: 15%;
 }
 
 .nonLanding {
-    background-image: url("../images/background/footer\ white.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: bottom;
+	background-image: url("../images/background/footer\ white.svg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 .black {
-    color: black!important;
+	color: black !important;
 }
 
-.postContainer{
-    padding-top: 10vh;
+.postContainer {
+	padding-top: 10vh;
 }
-.post{
-    min-height: 70vh;
+.post {
+	min-height: 70vh;
 }
-.post-line{
-    border-bottom: #707070 1px solid;
-    opacity: 0.4;
-    filter: blur(2px);
-    width: 80vw;
-    margin-left: 10%;
+.post-line {
+	border-bottom: #707070 1px solid;
+	opacity: 0.4;
+	filter: blur(2px);
+	width: 80vw;
+	margin-left: 10%;
 }
 .postContainer .post .date {
-    text-align: left;
-    font: normal normal 600 18px/30px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    opacity: 1;
+	text-align: left;
+	font: normal normal 600 18px/30px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	opacity: 1;
 }
 
 .postContainer .post .title {
-    max-width: 27ch;
-    text-align: left;
-    font: normal normal 600 22px/30px Inter;
-    letter-spacing: 0px;
-    color: #0B131E;
-    opacity: 1;
+	max-width: 27ch;
+	text-align: left;
+	font: normal normal 600 22px/30px Inter;
+	letter-spacing: 0px;
+	color: #0b131e;
+	opacity: 1;
 }
 
 .postContainer .post .description {
-    max-width: 37ch;
-    text-align: left;
-    font: normal normal 600 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #0B131E;
-    opacity: 0.8;
+	max-width: 37ch;
+	text-align: left;
+	font: normal normal 600 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #0b131e;
+	opacity: 0.8;
 }
 
 .postContainer .post .linkToPost {
-    text-align: left;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    opacity: 1;
-    cursor:pointer;
+	text-align: left;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	opacity: 1;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.home .landing {
+		background-image: none;
+		position: relative;
+		overflow-x: hidden;
+	}
+	.loaded .home .landing .bgImage {
+		position: absolute;
+		width: 100vw;
+	}
+	.loaded .home .landing .bgImage {
+		animation: ease-out 1s fromRight forwards;
+	}
+	.home .landing .title {
+		top: 154px;
+		left: 37px;
+		width: 243px;
+		height: 41px;
+		text-align: left;
+		font: normal normal 500 34px/42px Roboto;
+		letter-spacing: 0px;
+		color: #534e4e;
+		opacity: 1;
+	}
+    .nonLanding {
+        background-image: url("../images/background/footerMobile.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .postContainer{
+        margin-top: 111px;
+    }
+	.post{
+		padding: 0px 25px;
+        height: auto;
+        min-height: unset;
+	}
+    .post.second{
+        margin-top: 67px;
+    }
+    .postContainer .thumbnail{
+        position: relative;
+    }
+    .postContainer .thumbnail .image{
+        width:100%;
+        display:block
+    }
+    .postContainer .thumbnail .text{
+        position: absolute;
+        right: 47px;
+        left: 9px;
+        bottom: 10px;
+        text-align: left;
+        font: normal normal bold 16px/21px Inter;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        padding:0;
+        margin:0
+    }
+	.postContainer .post .description {
+		text-align: left;
+		font: normal normal 500 13px/24px Inter;
+		letter-spacing: 0px;
+		color: #1d2140;
+		opacity: 0.45;
+        margin:0;
+        padding:0;
+		margin-top: 18px;
+        max-width: unset;
+	}
+
+	.postContainer .post .linkToPost {
+		text-align: left;
+		font: normal normal 300 11px/32px Inter;
+		letter-spacing: 0px;
+		color: #00b0ce;
+		opacity: 1;
+		cursor: pointer;
+        margin-top: 7px;
+	}
+
+    .footer {
+        min-height: unset;
+        padding: 0px 38px;
+    }
+    .footer h1{
+        padding-top: 161px;
+    }
+	.noPadding {
+		padding: 0;
+	}
+
+	.desktop {
+		display: none;
+	}
+	@keyframes fromRight {
+		0% {
+			opacity: 0.3;
+			transform: translateX(100px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+    .footer {
+        min-height: 150vh;
+    }
 }
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
 ul.social {
-    width: 100%;
-    text-align: start;
-    padding-bottom: 10%;
+	width: 100%;
+	text-align: start;
+	padding-bottom: 10%;
 }
 
-ul.social>li {
-    display: inline-block;
+ul.social > li {
+	display: inline-block;
 }
 
-ul.social>li>a {
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 36px;
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
-    margin: 0 3px 3px 0;
+ul.social > li > a {
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid;
+	border-radius: 36px;
+	background-color: rgba(0, 0, 0, 0);
+	color: black;
+	margin: 0 3px 3px 0;
 }
 
-ul.social>li>a:hover {
-    text-decoration: none;
-    opacity: 0.5;
-}
-
-.footer{
-    min-height:150vh ;
+ul.social > li > a:hover {
+	text-decoration: none;
+	opacity: 0.5;
 }

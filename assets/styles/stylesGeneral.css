@@ -467,20 +467,26 @@ ul.social>li>a:hover {
     }
     .footer h1 {
         text-align: end;
-        padding-bottom: 42px;
+        margin:0;
+        padding:0;
         padding-top: 224px;
     }
     
     .footer h2 {
         text-align: left;
         font: normal normal 300 15px/28px Inter;
-        padding-bottom: 19px;
+        padding:0;
+        margin:0;
+        padding-top: 42px;
+    }
+    .footer h2:last-of-type{
+        padding-top: 19px;
     }
     
     ul.social {
         width: 100%;
         text-align: start;
-        padding-top: 68px;
+        padding-top: 59px;
         padding-bottom: 73px;
         margin-bottom:0px
     }

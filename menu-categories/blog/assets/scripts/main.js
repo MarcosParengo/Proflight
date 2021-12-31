@@ -1,6 +1,8 @@
 var obj = [];
 
 $(document).ready(function () {
+    $('body').addClass('loaded') 
+
     var toggled = false;
     var navBar = $("#navBar")
     var navbarBrand = $("#navbar-brand")

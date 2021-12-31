@@ -16,7 +16,7 @@
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -25,16 +25,18 @@
             <img src="/Proflight/assets/images/logo/whatsapp.svg" alt="whatsapp" class="logo">
         </div>
     </a>
-    
+
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,7 +45,7 @@
                     data-alt-src="/Proflight/assets\images\menuIcons\Cross dark.svg"
                     src="/Proflight/assets\images\menuIcons\Menu dark.svg">
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="container-fluid">
                     <div class="row justify-content-end">
@@ -121,15 +123,23 @@
 
     <div class="container-fluid px-0 home">
         <section class="landing" id="inicio">
+            <div class="bgImage mobile">
+                <img src="assets/images/mobile/Banner 1.png" alt="">
+            </div>
             <div class="container-fluid p-relative">
                 <div class="row h-100vh">
                     <div class="col-12 halfWindow">
                         <h1 class="leftMargin title">Blog</h1>
 
                     </div>
-                    <div class="col-12 halfWindow">
+                    <div class="col-12 halfWindow desktop">
                         <p class="leftMargin description">Elegir la mejor academia no es fácil, por eso en este artículo
                             te mostramos cuáles son los aspectos más importantes que deberías evaluar</p>
+                    </div>
+                    <div class="mobile col-12 halfWindow d-flex align-items-end">
+                        <p class="leftMargin description">
+                            6 claves para elegir la mejor académia de aviación
+                        </p>
                     </div>
                 </div>
                 <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
@@ -139,82 +149,302 @@
         </section>
         <div class="nonLanding">
             <div class="postContainer">
-                <h2 class="date leftMargin">16 DICIEMBRE 2020</h2>
-                <h1 class="title leftMargin">Guia de las 6 claves para elegir la mejor académia de aviación</h1>
 
-                <div class="section leftMargin">
-                    <h2 class="subtitle">¿La academia se destaca por su formación?</h2>
-                    <h3 class="content">Podemos empezar cuestionándonos algunos aspectos generales de estudio, por
-                        ejemplo si la formación del centro es integral. Una academia ideal aborda la educación desde
-                        muchas más perspectivas que la académica, preparando a los alumnos
-                        para que no solo adquieran los conocimientos prácticos y teóricos necesarios para ser piloto,
-                        sino que también formen la disciplina, actitud y aptitud correcta para superar procesos de
-                        selección de las mejores líneas aéreas.
-                        <br> También es importante analizar algunos aspectos como: ¿la formación es personalizada?,
-                        ¿cuántos alumnos hay por clase?, ¿se realiza un seguimiento de los estudiantes?, ¿cómo <br>son
-                        los planes de estudio?, ¿la academia cuenta
-                        con experiencia académica?.
-                    </h3>
+                <div class="desktop">
+                    <h2 class="date leftMargin desktop">16 DICIEMBRE 2020</h2>
+                    <h1 class="title leftMargin desktop">Guia de las 6 claves para elegir la mejor académia de aviación
+                    </h1>
+                    <div class="section leftMargin">
+                        <h2 class="subtitle">¿La academia se destaca por su formación?</h2>
+                        <h3 class="content">Podemos empezar cuestionándonos algunos aspectos generales de estudio, por
+                            ejemplo si la formación del centro es integral. Una academia ideal aborda la educación desde
+                            muchas más perspectivas que la académica, preparando a los alumnos
+                            para que no solo adquieran los conocimientos prácticos y teóricos necesarios para ser
+                            piloto,
+                            sino que también formen la disciplina, actitud y aptitud correcta para superar procesos de
+                            selección de las mejores líneas aéreas.
+                            <br> También es importante analizar algunos aspectos como: ¿la formación es personalizada?,
+                            ¿cuántos alumnos hay por clase?, ¿se realiza un seguimiento de los estudiantes?, ¿cómo
+                            <br>son
+                            los planes de estudio?, ¿la academia cuenta
+                            con experiencia académica?.
+                        </h3>
+                    </div>
+
+                    <div class="section leftMargin">
+                        <h2 class="subtitle">¿Dónde se encuentra la academia? </h2>
+                        <h3 class="content">Es importante considerar este aspecto ya que los alumnos deberán realizar
+                            sus
+                            estudios dentro de un espacio aéreo que cumpla con las exigencias de la aeronáutica actual.
+                            as
+                            academias que se encuentran cerca de aeropuertos con gran
+                            movimiento, permiten que los alumnos puedan experimentar entornos desafiantes, transitados y
+                            profesionales. La geografía del país en donde se encuentre la academia también es
+                            fundamental ya
+                            que los alumnos deben formarse bajo diversos
+                            ambientes de vuelo y experimentar diferentes temperaturas y viento</h3>
+                        <img src="assets/images/components/Pro Flight-18.png" alt="academia">
+                    </div>
                 </div>
 
-                <div class="section leftMargin">
-                    <h2 class="subtitle">¿Dónde se encuentra la academia? </h2>
-                    <h3 class="content">Es importante considerar este aspecto ya que los alumnos deberán realizar sus
-                        estudios dentro de un espacio aéreo que cumpla con las exigencias de la aeronáutica actual. as
-                        academias que se encuentran cerca de aeropuertos con gran
-                        movimiento, permiten que los alumnos puedan experimentar entornos desafiantes, transitados y
-                        profesionales. La geografía del país en donde se encuentre la academia también es fundamental ya
-                        que los alumnos deben formarse bajo diversos
-                        ambientes de vuelo y experimentar diferentes temperaturas y viento</h3>
-                    <img src="assets/images/components/Pro Flight-18.png" alt="academia">
+                <div class="mobile">
+                    <h1 class="sectionTitle">
+                        Elegir la mejor academia no es fácil, por eso en este artículo te mostramos
+                        cuáles son los aspectos más importantes que deberías evaluar.
+                    </h1>
+                    <div class="accordion" id="accordion1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="oneHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#oneCollapseOne" aria-expanded="true"
+                                    aria-controls="oneCollapseOne">
+                                    ¿La academia se destaca por<br> su formación?
+                                </button>
+                            </h2>
+                            <div id="oneCollapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    <h3 class="content">Podemos empezar cuestionándonos algunos aspectos generales de
+                                        estudio, por
+                                        ejemplo si la formación del centro es integral. Una academia ideal aborda la
+                                        educación desde
+                                        muchas más perspectivas que la académica, preparando a los alumnos
+                                        para que no solo adquieran los conocimientos prácticos y teóricos necesarios
+                                        para ser
+                                        piloto,
+                                        sino que también formen la disciplina, actitud y aptitud correcta para superar
+                                        procesos de
+                                        selección de las mejores líneas aéreas.
+                                        <br> También es importante analizar algunos aspectos como: ¿la formación es
+                                        personalizada?,
+                                        ¿cuántos alumnos hay por clase?, ¿se realiza un seguimiento de los estudiantes?,
+                                        ¿cómo
+                                        <br>son
+                                        los planes de estudio?, ¿la academia cuenta
+                                        con experiencia académica?.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="oneHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#oneCollapseTwo" aria-expanded="true"
+                                    aria-controls="oneCollapseTwo">
+                                    ¿Dónde se encuentra la academia?
+                                </button>
+                            </h2>
+                            <div id="oneCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    <h3 class="content">Es importante considerar este aspecto ya que los alumnos deberán
+                                        realizar
+                                        sus
+                                        estudios dentro de un espacio aéreo que cumpla con las exigencias de la
+                                        aeronáutica actual.
+                                        as
+                                        academias que se encuentran cerca de aeropuertos con gran
+                                        movimiento, permiten que los alumnos puedan experimentar entornos desafiantes,
+                                        transitados y
+                                        profesionales. La geografía del país en donde se encuentre la academia también
+                                        es
+                                        fundamental ya
+                                        que los alumnos deben formarse bajo diversos
+                                        ambientes de vuelo y experimentar diferentes temperaturas y viento
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="imageLabel w-100 d-block" src="assets/images/components/Pro Flight-18.png"
+                        alt="academia">
                 </div>
-                <div class="section leftMargin mb-0">
-                    <h2 class="subtitle">¿Cuáles son los gastos extras que debería considerar?</h2>
-                    <h3 class="content">Es conveniente analizar qué beneficios y herramientas ofrece la academia y qué
-                        gastos no están incluidos en el programa. Podemos evaluar la academia prestando atención.</h3>
+
+                <div class="desktop">
+                    <div class="section leftMargin mb-0">
+                        <h2 class="subtitle">¿Cuáles son los gastos extras que debería considerar?</h2>
+                        <h3 class="content">Es conveniente analizar qué beneficios y herramientas ofrece la academia y
+                            qué
+                            gastos no están incluidos en el programa. Podemos evaluar la academia prestando atención.
+                        </h3>
+                    </div>
+                    <ul class="expensesList List">
+                        <li class="leftMargin expensesItem">Si contempla aptos médicos y seguro.</li>
+                        <li class="leftMargin expensesItem">Si te brindan uniformes y headset.</li>
+                        <li class="leftMargin expensesItem">En la aeronáutica es fundamental contar con un buen manejo
+                            del
+                            inglés, por lo que es importante considerar si en la academia podemos desarrollar este tipo
+                            de
+                            habilidad.
+                        </li>
+                        <li class="leftMargin expensesItem">Si eres extranjero también deberás considerar los gastos de
+                            hospedaje, transporte, alimentación, planes de teléfono y permisos de estudio.</li>
+                    </ul>
+                    <div class="section leftMargin">
+                        <h2 class="subtitle">¿Cuántas aeronaves tienen en la academia y en qué condiciones se
+                            encuentran?
+                        </h2>
+                        <h3 class="content">Conocer estos datos es primordial para evaluar la continuidad de
+                            entrenamiento
+                            que podrá tener el alumno, ya que una academia con escasas aeronaves podrá retrasar el
+                            avance de
+                            los estudiantes. Entrenar con una gran variedad de aeronaves
+                            también es una ventaja para los pilotos a la hora de buscar trabajo. Además, te recomendamos
+                            evaluar si la escuela ofrece entrenamientos con simulador ya que no es un requisito para
+                            obtener
+                            la licencia pero sí una herramienta muy
+                            útil a la hora de familiarizarse con el entorno y las aeronaves.</h3>
+                        <img src="assets/images/components/Intersección 36.png" alt="academia">
+                    </div>
                 </div>
-                <ul class="expensesList List">
-                    <li class="leftMargin expensesItem">Si contempla aptos médicos y seguro.</li>
-                    <li class="leftMargin expensesItem">Si te brindan uniformes y headset.</li>
-                    <li class="leftMargin expensesItem">En la aeronáutica es fundamental contar con un buen manejo del
-                        inglés, por lo que es importante considerar si en la academia podemos desarrollar este tipo de
-                        habilidad.
-                    </li>
-                    <li class="leftMargin expensesItem">Si eres extranjero también deberás considerar los gastos de
-                        hospedaje, transporte, alimentación, planes de teléfono y permisos de estudio.</li>
-                </ul>
-                <div class="section leftMargin">
-                    <h2 class="subtitle">¿Cuántas aeronaves tienen en la academia y en qué condiciones se encuentran?
-                    </h2>
-                    <h3 class="content">Conocer estos datos es primordial para evaluar la continuidad de entrenamiento
-                        que podrá tener el alumno, ya que una academia con escasas aeronaves podrá retrasar el avance de
-                        los estudiantes. Entrenar con una gran variedad de aeronaves
-                        también es una ventaja para los pilotos a la hora de buscar trabajo. Además, te recomendamos
-                        evaluar si la escuela ofrece entrenamientos con simulador ya que no es un requisito para obtener
-                        la licencia pero sí una herramienta muy
-                        útil a la hora de familiarizarse con el entorno y las aeronaves.</h3>
-                    <img src="assets/images/components/Intersección 36.png" alt="academia">
+
+                <div class="mobile">
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="oneHeadingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#twoCollapseOne" aria-expanded="true"
+                                    aria-controls="twoCollapseOne">
+                                    ¿Cuáles son los gastos extras que debería considerar?
+                                </button>
+                            </h2>
+                            <div id="twoCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <h3 class="content">
+                                        Es conveniente analizar qué beneficios y herramientas ofrece la academia y qué
+                                        gastos no están incluidos en el programa. Podemos evaluar la academia prestando
+                                        atención.
+                                    </h3>
+                                    <ul class="expensesList List">
+                                        <li class=" expensesItem">Si contempla aptos médicos y seguro.</li>
+                                        <li class=" expensesItem">Si te brindan uniformes y headset.</li>
+                                        <li class=" expensesItem">En la aeronáutica es fundamental contar con
+                                            un buen manejo
+                                            del
+                                            inglés, por lo que es importante considerar si en la academia podemos
+                                            desarrollar este tipo
+                                            de
+                                            habilidad.
+                                        </li>
+                                        <li class=" expensesItem">Si eres extranjero también deberás
+                                            considerar los gastos de
+                                            hospedaje, transporte, alimentación, planes de teléfono y permisos de
+                                            estudio.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="oneHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#twoCollapseTwo" aria-expanded="true"
+                                    aria-controls="twoCollapseTwo">
+                                    ¿Cuántas aeronaves tienen en la academia y en qué condiciones se encuentran?
+                                </button>
+                            </h2>
+                            <div id="twoCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <h3 class="content">
+                                        Conocer estos datos es primordial para evaluar la continuidad de entrenamiento
+                                        que podrá tener el alumno, ya que una academia con escasas aeronaves podrá
+                                        retrasar el avance de los estudiantes. Entrenar con una gran variedad de
+                                        aeronaves también es una ventaja para los pilotos a la hora de buscar trabajo.
+                                        Además, te recomendamos evaluar si la escuela ofrece entrenamientos con
+                                        simulador ya que no es un requisito para obtener la licencia pero sí una
+                                        herramienta muy útil a la hora de familiarizarse con el entorno y las aeronaves.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="imageLabel w-100 d-block" src="assets/images/components/Intersección 36.png"
+                        alt="academia">
                 </div>
-                <div class="section leftMargin">
-                    <h2 class="subtitle">¿La academia cuenta con suficientes herramientas y recursos tecnológicos?</h2>
-                    <h3 class="content"> La industria aeronáutica evolucionó mucho en los últimos años por eso a la hora
-                        de elegir la mejor academia es importante evaluar la innovación y tecnología con la que cuenta
-                        para formar a sus alumnos ya que esta puede contribuir a
-                        mejorar los procesos de capacitación y aumentar la seguridad aérea. Alguno de los puntos a
-                        considerar son: la equipación de las aeronaves, si cuenta con entrenadores estáticos, si
-                        utilizan plataformas y apps para facilitar la capacitación,
-                        herramientas para programación de vuelos, check in, meteorología y otros.</h3>
+
+                <div class="desktop">
+                    <div class="section leftMargin">
+                        <h2 class="subtitle">¿La academia cuenta con suficientes herramientas y recursos tecnológicos?
+                        </h2>
+                        <h3 class="content"> La industria aeronáutica evolucionó mucho en los últimos años por eso a la
+                            hora
+                            de elegir la mejor academia es importante evaluar la innovación y tecnología con la que
+                            cuenta
+                            para formar a sus alumnos ya que esta puede contribuir a
+                            mejorar los procesos de capacitación y aumentar la seguridad aérea. Alguno de los puntos a
+                            considerar son: la equipación de las aeronaves, si cuenta con entrenadores estáticos, si
+                            utilizan plataformas y apps para facilitar la capacitación,
+                            herramientas para programación de vuelos, check in, meteorología y otros.</h3>
+                    </div>
+                    <div class="section leftMargin">
+                        <h2 class="subtitle">¿La academia cuenta con permisos de estadías para extranjeros?</h2>
+                        <h3 class="content"> Organizar y planificar todos los aspectos necesarios para ir a estudiar al
+                            extranjero conlleva tiempo y dedicación. Si estás interesado en estudiar en el exterior te
+                            recomendamos que además de ir preparando la documentación necesaria
+                            para inscribirte, averigues si la academia cuenta con permisos que te permitan concretar tus
+                            estudios y quedarte en el país.
+                        </h3>
+                        <img src="assets/images/components/Pro Flight-5.png" alt="academia">
+                    </div>
                 </div>
-                <div class="section leftMargin">
-                    <h2 class="subtitle">¿La academia cuenta con permisos de estadías para extranjeros?</h2>
-                    <h3 class="content"> Organizar y planificar todos los aspectos necesarios para ir a estudiar al
-                        extranjero conlleva tiempo y dedicación. Si estás interesado en estudiar en el exterior te
-                        recomendamos que además de ir preparando la documentación necesaria
-                        para inscribirte, averigues si la academia cuenta con permisos que te permitan concretar tus
-                        estudios y quedarte en el país.
-                    </h3>
-                    <img src="assets/images/components/Pro Flight-5.png" alt="academia">
+
+                <div class="mobile">
+                    <div class="accordion" id="accordion3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="oneHeadingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threeCollapseOne" aria-expanded="true"
+                                    aria-controls="threeCollapseOne">
+                                    ¿La academia cuenta con<br class="mobile">suficientes herramientas
+                                    <br class="mobile">y recursos tecnológicos? </button>
+                            </h2>
+                            <div id="threeCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordion3">
+                                <div class="accordion-body">
+                                    <h3 class="content">
+                                        La industria aeronáutica evolucionó mucho en los últimos años
+                                        por eso a la hora de elegir la mejor academia es importante evaluar la
+                                        innovación y tecnología con la que cuenta para formar a sus alumnos ya que esta
+                                        puede contribuir a mejorar los procesos de capacitación y aumentar la seguridad
+                                        aérea. Alguno de los puntos a considerar son: la equipación de las aeronaves, si
+                                        cuenta con entrenadores estáticos, si utilizan plataformas y apps para facilitar
+                                        la capacitación, herramientas para programación de vuelos, check in,
+                                        meteorología y otros.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="oneHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#threeCollapseTwo" aria-expanded="true"
+                                    aria-controls="threeCollapseTwo">
+                                    ¿La academia cuenta con<br class="mobile"> permisos de estadías para <br
+                                        class="mobile">estudiantes extranjeros?
+                                </button>
+                            </h2>
+                            <div id="threeCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordion3">
+                                <div class="accordion-body">
+                                    <h3 class="content">
+                                        Organizar y planificar todos los aspectos necesarios para ir a estudiar al
+                                        extranjero conlleva tiempo y dedicación. Si estás interesado en estudiar en el
+                                        exterior te recomendamos que además de ir preparando la documentación necesaria
+                                        para inscribirte, averigues si la academia cuenta con permisos que te permitan
+                                        concretar tus estudios y quedarte en el país.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="imageLabel w-100 d-block" src="assets/images/components/Pro Flight-5.png"
+                        alt="academia">
                 </div>
+
                 <div class="section offers">
                     <h1 class="title">Si aún tienes dudas en la elección de una academia para realizar tu carrera de
                         piloto te contamos que ProFlight te brinda.</h1>
@@ -236,7 +466,7 @@
                     <li class="leftMargin offersItem item6 ps-1">Operamos en el aeropuerto de Morón, el tercer
                         aeropuerto con mayor movimiento </br>en todo Argentina, registrando más de 70 mil vuelos anuales
                         y contando con servicio de
-                        </br> control aéreo y pista asfaltada con más de 2800 metros.</br>bt> Esto nos permite
+                        </br> control aéreo y pista asfaltada con más de 2800 metros.</br> Esto nos permite
                         garantizar a nuestros pilotos la formación dentro de un espacio aéreo con las exigencias de un
                         entorno profesional de vuelo. Además, nos encontramos
                         en las inmediaciones de más de 5 aeropuertos internacionales que contribuyen al desarrollo
@@ -251,14 +481,14 @@
                                     <h2 class="subtitle">Completa el formulario para recibir más información.</h2>
                                     <div class="container-fluid ps-0">
                                         <div class="row">
-                                            <div class="col-3">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="nombre"
                                                         placeholder="Nombre">
                                                     <label class="label" for="nombre">Nombre</label>
                                                 </div>
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="nacionalidad"
                                                         placeholder="Nombre">
@@ -266,7 +496,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-3">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-floating">
                                                     <input type="email" class="form-control" id="email"
                                                         placeholder="Nombre">
@@ -282,7 +512,8 @@
                                             </div>
                                             <div class="col-auto">
                                                 <h1 class="privacy my-0 py-0">Al enviar usted acepta nuestra <a
-                                                        target="blank" href="" class="emphasis">Polìtica de
+                                                        target="blank" href="" class="emphasis"><br
+                                                            class="mobile">Polìtica de
                                                         privacidad.</a></a>
                                                 </h1>
                                             </div>
@@ -294,7 +525,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="offersList List">
+                <ul class="offersList List differentPadding">
                     <li class="leftMargin offersItem lastList">Certificación de todos los equipos por la ANAC
                         (Administración Nacional Aeronáutica Civil).</li>
                     <li class="leftMargin offersItem lastList">Recibimos a todos nuestros estudiantes extranjeros en el
@@ -330,9 +561,10 @@
                         buscar
                         trabajo. Un piloto más preparado, mejor entrenado y con más horas de vuelo tiene posibilidades
                         más altas de conseguir trabajo en una Aerolínea.</h1>
-                    <h2 class="lastMessageDescription">Solo con volar no alcanza, hacen falta más cosas.</h2>
+                    <h2 class="lastMessageDescription">Solo con volar no alcanza, hacen <br class="mobile"> falta más
+                        cosas.</h2>
                     <h2 class="lastMessageDescription"> Nuestra calidad humana es la
-                        que reluce lo mejor de cada estudiante</h2>
+                        que reluce <br class="mobile"> lo mejor de cada estudiante</h2>
                     <h2 class="lastMessageDescriptionEmphasis">Y ESO ES LO QUE NOS DESTACA.</h2>
                 </div>
                 <div class="container postFooter">
@@ -375,7 +607,20 @@
                         También te puede interesar:
                     </h1>
                 </div>
-                <div class="postCarouselContainer">
+                <div class="container-fluid mobile">
+                    <div class="row d-flex flex-nowrap overflow-x">
+                        <div class="col-12 thumbnail">
+                            <h1 class="text">¿Cómo convertirte en Piloto comercial de avión?</h1>
+                            <img class="image" src="assets/images/mobile/post1.png" alt="">
+                        </div>
+                        <div class="col-12 thumbnail">
+                            <h1 class="text">¿Cómo convertirte en Piloto comercial de avión?</h1>
+                            <img class="image" src="assets/images/mobile/post2.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="postCarouselContainer desktop">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-1 d-flex justify-content-center">
@@ -407,12 +652,14 @@
                                                     <div class="col-6">
                                                         <a href="../../blog/post2/">
                                                             <img class="d-block w-100"
-                                                            src="assets/images/components/mini2.png" alt="">
-                                                        <p class="description">¿Qué tener en cuenta a la hora de elegir
-                                                            una academia?<br> Encontrar el mejor lugar para estudiar no
-                                                            es
-                                                            tarea fácil.<br> Podemos empezar cuestionándonos algunos
-                                                            aspectos...</p>
+                                                                src="assets/images/components/mini2.png" alt="">
+                                                            <p class="description">¿Qué tener en cuenta a la hora de
+                                                                elegir
+                                                                una academia?<br> Encontrar el mejor lugar para estudiar
+                                                                no
+                                                                es
+                                                                tarea fácil.<br> Podemos empezar cuestionándonos algunos
+                                                                aspectos...</p>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -435,12 +682,14 @@
                                                     <div class="col-6">
                                                         <a href="../../blog/post2/">
                                                             <img class="d-block w-100"
-                                                            src="assets/images/components/mini2.png" alt="">
-                                                        <p class="description">¿Qué tener en cuenta a la hora de elegir
-                                                            una academia?<br> Encontrar el mejor lugar para estudiar no
-                                                            es
-                                                            tarea fácil.<br> Podemos empezar cuestionándonos algunos
-                                                            aspectos...</p>
+                                                                src="assets/images/components/mini2.png" alt="">
+                                                            <p class="description">¿Qué tener en cuenta a la hora de
+                                                                elegir
+                                                                una academia?<br> Encontrar el mejor lugar para estudiar
+                                                                no
+                                                                es
+                                                                tarea fácil.<br> Podemos empezar cuestionándonos algunos
+                                                                aspectos...</p>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -469,7 +718,7 @@
                         <div>
                             <h1 class="black mail pb-0">info@proflight.com.ar</h1>
                             <h2 class="black">+54 9 11 6010-4446</h2>
-                            <h2 class="black">Av. Figueroa Alcorta 500, Castelar, Bs. As.</h2>
+                            <h2 class="black">Av. Figueroa Alcorta 500,<br class="mobile"> Castelar, Bs. As.</h2>
                             <ul class="social">
                                 <li class="me-2">
                                     <a class="footerBlack" target="_blank"
