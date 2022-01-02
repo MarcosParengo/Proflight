@@ -16,7 +16,7 @@
 </head>
 
 <body style="background-color:#002e5d">
-    <a target="blank"
+    <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -27,14 +27,16 @@
     </a>
 
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
+            style="padding: 0;">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -121,15 +123,23 @@
 
     <div class="container-fluid px-0 home">
         <section class="landing" id="inicio">
+            <div class="bgImage mobile">
+                <img src="assets/images/mobile/landing.png" alt="">
+            </div>
             <div class="container-fluid p-relative">
                 <div class="row h-100vh">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 noPadding">
                         <h1 class="leftMargin title">Blog</h1>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 desktop">
                         <p class="leftMargin description">Seguramente te has preguntado que hay que estudiar para estar
                             al mando de un avión de una arelolínea comercial.<br><span class="emphasis"> En este
                                 articulo te lo contamos</span></p>
+                    </div>
+                    <div class="col-12 mobile noPadding d-flex align-items-end">
+                        <p class="description">
+                            ¿Cómo convertirte en <br> Piloto comercial de avión?
+                        </p>
                     </div>
                 </div>
                 <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
@@ -139,9 +149,12 @@
         </section>
         <div class="nonLanding">
             <div class="postContainer">
-                <h2 class="date leftMargin">16 DICIEMBRE 2020</h2>
-                <h1 class="title leftMargin">Guia para convertirte en Piloto comercial de avión</h1>
-
+                <h2 class="date leftMargin desktop">16 DICIEMBRE 2020</h2>
+                <h1 class="title leftMargin desktop">Guia para convertirte en Piloto comercial de avión</h1>
+                <h1 class="sectionTitle">
+                    Seguramente te has preguntado que hay que estudiar para estar al mando de un avión de una arelolínea
+                    comercial. En este articulo te lo contamos.
+                </h1>
                 <div class="section leftMargin">
                     <h3 class="content">Para conseguir tu licencia y poder volar, debes cumplir con una formación
                         teórica y práctica y es fundamental que realices tus estudios en una academia de excelencia como
@@ -170,8 +183,9 @@
                             Una vez recibido de PPA, el estudiante deberá
                             realizar de 20 a 25 horas de navegación a los siguientes aeropuertos: San Fernando, Mar del
                             Plata, Rosario, Chascomús, Luján, La Plata, Lobos, entre otros.</h2>
-                        <img class="d-block w-100" src="assets/images/components/Intersección 39.png" alt="">
+                        <img class="d-none d-md-block w-100" src="assets/images/components/Intersección 39.png" alt="">
                     </li>
+                    <img class="mobile d-block w-100" src="assets/images/components/Intersección 39.png" alt="">
                     <li class="leftMargin decimalItem item1 ps-1">
                         <h1 class="itemTitle">Habilitación de vuelo por instrumentos </h1>
                         <h2 class="content">El período de duración de esta etapa y las cantidad de horas de vuelo y
@@ -196,8 +210,9 @@
                             Para esta etapa de la formación se realizarán 10 horas de vuelo nocturno y se entrenará la
                             capacidad de los estudiantes para realizar aproximaciones nocturnas en aeródromos.</h2>
                         <h2 class="content">Duración: 15 días.</h2>
-                        <img class="w-100 d-block" src="assets/images/components/3.png" alt="vuelos nocturnos">
+                        <img class="d-none d-md-block w-100" src="assets/images/components/3.png" alt="vuelos nocturnos">
                     </li>
+                    <img class="mobile w-100 d-block" src="assets/images/components/3.png" alt="vuelos nocturnos">
                     <li class="leftMargin decimalItem item1 ps-1">
                         <h1 class="itemTitle">Segunda fase de navegaciones </h1>
                         <h2 class="content">
@@ -219,14 +234,14 @@
                                     <h2 class="subtitle">Completa el formulario para recibir más información.</h2>
                                     <div class="container-fluid ps-0">
                                         <div class="row">
-                                            <div class="col-3">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="nombre"
                                                         placeholder="Nombre">
                                                     <label class="label" for="nombre">Nombre</label>
                                                 </div>
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="nacionalidad"
                                                         placeholder="Nombre">
@@ -234,7 +249,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-3">
+                                            <div class="col-12 col-md-3">
                                                 <div class="form-floating">
                                                     <input type="email" class="form-control" id="email"
                                                         placeholder="Nombre">
@@ -287,7 +302,7 @@
                     <h1 class="lastMessage">Muchos alumnos de todas partes del mundo ingresan a nuestra escuela con el
                         sueño de convertirse en extraordinarios pilotos. Si llegaste hasta aquí es porque tu también lo
                         deseas. Ahora que ya conoces las etapas para convertirte en Piloto Comercial de Avión.</h1>
-                    <h2 class="lastMessageDescription"> ¿Qué esperas para cumplir tu sueño?</h2>
+                    <h2 class="lastMessageDescription"> ¿Qué esperas para cumplir <br class="mobile"> tu sueño?</h2>
                     <h2 class="lastMessageDescriptionEmphasis">¡QUEREMOS QUE TÚ TAMBIÉN SEAS PARTE!</h2>
                 </div>
                 <div class="container postFooter">
@@ -330,7 +345,20 @@
                         También te puede interesar:
                     </h1>
                 </div>
-                <div class="postCarouselContainer">
+                <div class="container-fluid mobile">
+                    <div class="row d-flex flex-nowrap overflow-x">
+                        <div class="col-12 thumbnail">
+                            <h1 class="text">6 claves para elegir la mejor académia de aviación</h1>
+                            <img class="image" src="assets/images/mobile/post1.png" alt="">
+                        </div>
+                        <div class="col-12 thumbnail">
+                            <h1 class="text">¿Cómo convertirte en Piloto comercial de avión?</h1>
+                            <img class="image" src="assets/images/mobile/post2.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="postCarouselContainer desktop">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-1 d-flex justify-content-center">
