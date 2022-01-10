@@ -1,1285 +1,1044 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-    box-sizing: border-box
+	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 body {
-    font-size: 12px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    letter-spacing: 0.1em
+	font-size: 12px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 0.1em;
+	background-color: #002e5d;
 }
 
 body h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 body A {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 body p {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
 
 .elipseText {
-    white-space: nowrap;
-    position: absolute;
-    right: 0%;
-    width: auto;
-    top: 50%;
-    transform: translateX(40%) translateY(-90%)
+	white-space: nowrap;
+	position: absolute;
+	right: 0%;
+	width: auto;
+	top: 50%;
+	transform: translateX(40%) translateY(-90%);
 }
 
 .elipseText .textContainer {
-    width: 50vh;
-    transform: rotate(-90deg);
-    transform-origin: center;
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+	width: 50vh;
+	transform: rotate(-90deg);
+	transform-origin: center;
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-.elipseText .textContainer>.text h1 {
-    text-align: end;
-    font: normal normal normal 22px/25px Roboto;
-    letter-spacing: 0.66px;
-    color: #FFFFFF;
-    opacity: 1;
-    display: inline-block;
+.elipseText .textContainer > .text h1 {
+	text-align: end;
+	font: normal normal normal 22px/25px Roboto;
+	letter-spacing: 0.66px;
+	color: #ffffff;
+	opacity: 1;
+	display: inline-block;
 }
 
-.elipseText .textContainer>.text::before {
-    display: inline-block;
-    content: "";
-    border-top: .1rem solid white;
-    font-size: 20px;
-    width: 4em;
-    margin: 0 1rem;
-    transform: translateY(-0.25em);
+.elipseText .textContainer > .text::before {
+	display: inline-block;
+	content: "";
+	border-top: .1rem solid white;
+	font-size: 20px;
+	width: 4em;
+	margin: 0 1rem;
+	transform: translateY(-0.25em);
 }
 
-.elipseText .textContainer>.text:hover {
-    color: var(--main-color);
+.elipseText .textContainer > .text:hover {
+	color: var(--main-color);
 }
 
 .elipse {
-    position: absolute;
-    right: 0%;
-    width: auto;
-    height: 90vh;
+	position: absolute;
+	right: 0%;
+	width: auto;
+	height: 90vh;
 }
 
 .elipse .container {
-    transform: translateX(50%);
-    height: 100%;
-    width: auto;
+	transform: translateX(50%);
+	height: 100%;
+	width: auto;
 }
 
 .elipse .container img {
-    height: 100%;
-    width: auto;
+	height: 100%;
+	width: auto;
 }
 
 .whatsappButtonContainer {
-    position: fixed;
-    bottom: 2em;
-    right: 0;
-    z-index: 1030;
-    background-color: rgba(200, 200, 200, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 5px 0px 0px 5px;
+	position: fixed;
+	bottom: 2em;
+	right: 0;
+	z-index: 1030;
+	background-color: rgba(200, 200, 200, 0.2);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 5px 0px 0px 5px;
 }
 
-.whatsappButtonContainer>.dialog {
-    display: inline-block;
-    position: relative;
-    background: white;
-    border-radius: 7px;
-    margin: 1.5em 1.5em 1.5em 1.5em;
+.whatsappButtonContainer > .dialog {
+	display: inline-block;
+	position: relative;
+	background: white;
+	border-radius: 7px;
+	margin: 1.5em 1.5em 1.5em 1.5em;
 }
 
-.whatsappButtonContainer>.dialog::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: transparent white;
-    border-width: 7px 0 7px 10px;
-    top: 50%;
-    right: -7px;
-    margin-top: -7px;
+.whatsappButtonContainer > .dialog::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 0;
+	z-index: 1;
+	border-style: solid;
+	border-color: transparent white;
+	border-width: 7px 0 7px 10px;
+	top: 50%;
+	right: -7px;
+	margin-top: -7px;
 }
 
-.whatsappButtonContainer>.dialog>.text {
-    padding: 1em 0.5em;
-    margin-bottom: 0;
-    font-size: 12px;
-    color: black;
-    text-align: center;
+.whatsappButtonContainer > .dialog > .text {
+	padding: 1em 0.5em;
+	margin-bottom: 0;
+	font-size: 12px;
+	color: black;
+	text-align: center;
 }
 
-.whatsappButtonContainer>.logo {
-    width: 4em;
-    margin-right: 1em
+.whatsappButtonContainer > .logo {
+	width: 4em;
+	margin-right: 1em;
 }
 
 .transition {
-    height: 10vh;
-    background-color:rgba(0, 13, 35, 1)
+	height: 10vh;
+	background-color: rgba(0, 13, 35, 1);
 }
 fade {
-    position: absolute;
-    bottom: 0px;
+	position: absolute;
+	bottom: 0px;
 
-    display: block;
-  
-    width: 100%;
-    height: 50px;
-  
-    background-image: linear-gradient(to bottom, 
-        rgba(255, 255, 255, 0), 
-        rgba(0, 13, 35, 0.9)
-    100%);
+	display: block;
+
+	width: 100%;
+	height: 50px;
+
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 13, 35, 0.9) 100%);
 }
 
 /*-------------------------------------------------- Seccion land -------------------------------------------------*/
 
 .land {
-    height: 100vh;
+	height: 100vh;
 }
-.land .landingBG{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    padding: 0;
-    z-index: -1;
-
+.land .landingBG {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	padding: 0;
+	z-index: -1;
 }
 .land img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
 /*--------------------------------------------------Media Query land -------------------------------------------------DONE*/
 
-@media only screen and (max-width: 340px) {
-    .land {
-        background-size: auto;
-        background-size: auto 100%;
-    }
-    .sameWidth{
-        padding:  0% 10%;
-    }
-}
-
-@media only screen and (min-width: 340px) {
-    .land {
-        background-size: auto;
-        background-size: auto 100%;
-    }
-    .sameWidth{
-        padding:  0% 5%;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    .land {
-        background-size: auto;
-        background-size: 100% 100%;
-    }
-    .sameWidth{
-        padding:  0% 5%;
-    }
-}
-
 @media only screen and (min-width: 768px) {
-    .land {
-        background-size: auto;
-        background-size: 100% 100%;
-    }
-    .sameWidth{
-        padding:  0% 5%;
-    }
+	.land {
+		background-size: auto;
+		background-size: 100% 100%;
+	}
+	.sameWidth {
+		padding: 0% 5%;
+	}
 }
 @media only screen and (min-width: 992px) {
-    .land {
-        background-size: auto;
-        background-size: 100% 100%;
-    }
-    .sameWidth{
-        padding-left:  10%;
-    }
+	.land {
+		background-size: auto;
+		background-size: 100% 100%;
+	}
+	.sameWidth {
+		padding-left: 10%;
+	}
 }
 @media only screen and (min-width: 1200px) {
-    .land {
-        background-size: 100% 100%;
-    }
-    .sameWidth{
-        padding-left:  16.7%;
-    }
+	.land {
+		background-size: 100% 100%;
+	}
+	.sameWidth {
+		padding-left: 16.7%;
+	}
 }
 @media only screen and (min-width: 1400px) {
-    .land {
-        background-size: 100% 100%;
-    }
-    .sameWidth{
-        padding-left:  16.7%;
-    }
+	.land {
+		background-size: 100% 100%;
+	}
+	.sameWidth {
+		padding-left: 16.7%;
+	}
 }
-
 
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-    background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20home.png?raw=true);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    box-sizing: border-box
+	background-image: url(../images/background/pf\ background\ home.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	box-sizing: border-box;
 }
 
 /*--------------------------------------------------Media Query landingHome --------------------------------------------------DONE*/
 
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .home {
-        background-size: auto 100%;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .home {
-        background-size: auto 100%;
-    }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .home {
-        background-size: auto 100%;
-    }
+	.home {
+		background-size: auto 100%;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .home {
-        background-size: 100% 100%;
-    }
+	.home {
+		background-size: 100% 100%;
+	}
 }
 
 /*-------------------------------------------------- Seccion Bienvenido --------------------------------------------------*/
 
 .bienvenido childleft {
-    padding-right: 15%;
+	padding-right: 15%;
 }
 
 .bienvenido .bienvenidaTitulo {
-    text-align: start;
-    font: normal normal bold 53px/64px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: start;
+	font: normal normal bold 53px/64px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	padding-bottom: 3rem;
 }
 
 .bienvenido p.lead {
-    text-align: left;
-    font: normal normal 300 16px Inter;
-    line-height: 2em;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width: 48ch;
+	text-align: left;
+	font: normal normal 300 16px Inter;
+	line-height: 2em;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 48ch;
 }
 
 .bienvenido .imgContainer {
-    position: absolute;
-    right: 0em;
-    width: 50%;
+	position: absolute;
+	right: 0em;
+	width: 50%;
 }
 
 .bienvenido .cómopilotoTitulo {
-    text-align: start;
-    font: normal normal normal 39px/46px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    font-weight: 700;
+	text-align: start;
+	font: normal normal normal 39px/46px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	font-weight: 700;
 }
 
 .bienvenido .comoPiloto {
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width: 60ch!important;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 60ch !important;
 }
 
 .bienvenido .footer {
-    color: var(--main-color);
-    font: normal normal bold 24px/94px Roboto;
-    letter-spacing: 0px;
-    opacity: 1;
+	color: var(--main-color);
+	font: normal normal bold 24px/94px Roboto;
+	letter-spacing: 0px;
+	opacity: 1;
+	padding-top: 3rem;
 }
 
 .bienvenido .circle {
-    position: absolute;
-    left: 0;
-    transform: translate(-50%, -25%);
+	position: absolute;
+	left: 0;
+	transform: translate(-50%, -25%);
 }
 
 .timeline {
-    font: normal normal 300 16px/32px Inter;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-left: 0;
-    max-width: 55ch;
-    height: 30px;
-    list-style: none;
-    text-align: justify;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(48, 58, 62, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+	font: normal normal 300 16px/32px Inter;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-left: 0;
+	max-width: 55ch;
+	height: 30px;
+	list-style: none;
+	text-align: justify;
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0) 45%,
+		rgba(48, 58, 62, 1) 51%,
+		rgba(255, 255, 255, 0) 57%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
 
 .timeline:after {
-    display: inline-block;
-    content: "";
-    width: 100%;
+	display: inline-block;
+	content: "";
+	width: 100%;
 }
 
 .timeline li {
-    display: inline-block;
-    content: attr(data-year);
-    width: 30px;
-    height: 30px;
-    background: rgba(58, 69, 83, 1);
-    text-align: center;
-    line-height: 1.2;
-    position: relative;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+	display: inline-block;
+	content: attr(data-year);
+	width: 30px;
+	height: 30px;
+	background: rgba(58, 69, 83, 1);
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }
 
-.timeline>li>div {
-    height: 30px;
-    width: 30px;
+.timeline > li > div {
+	height: 30px;
+	width: 30px;
 }
 
-.timeline>li>div>span {
-    width: 100%;
-    text-align: center;
-    color: var(--main-color);
-    font: normal normal bold 12px/30px Inter;
-    opacity: 1;
+.timeline > li > div > span {
+	width: 100%;
+	text-align: center;
+	color: var(--main-color);
+	font: normal normal bold 12px/30px Inter;
+	opacity: 1;
 }
 
 .timeline li:nth-child(odd):before {
-    top: -40px;
+	top: -40px;
 }
 
 .timeline li:nth-child(even):before {
-    bottom: -40px;
+	bottom: -40px;
 }
 
 .timeline li:after {
-    font: normal normal 300 10px/18px Inter;
-    letter-spacing: 0.2em;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 0.8;
-    display: inline-block;
-    content: attr(data-text);
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
+	font: normal normal 300 10px/18px Inter;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	text-transform: uppercase;
+	opacity: 0.8;
+	display: inline-block;
+	content: attr(data-text);
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .timeline li:nth-child(odd):after {
-    bottom: 0;
-    margin-bottom: -10px;
-    -webkit-transform: translate(-50%, 100%);
-    -moz-transform: translate(-50%, 100%);
-    -ms-transform: translate(-50%, 100%);
-    -o-transform: translate(-50%, 100%);
-    transform: translate(-50%, 100%);
+	bottom: 0;
+	margin-bottom: -10px;
+	-webkit-transform: translate(-50%, 100%);
+	-moz-transform: translate(-50%, 100%);
+	-ms-transform: translate(-50%, 100%);
+	-o-transform: translate(-50%, 100%);
+	transform: translate(-50%, 100%);
 }
 
 .timeline li:nth-child(even):after {
-    top: 0;
-    margin-top: -10px;
-    -webkit-transform: translate(-50%, -100%);
-    -moz-transform: translate(-50%, -100%);
-    -ms-transform: translate(-50%, -100%);
-    -o-transform: translate(-50%, -100%);
-    transform: translate(-50%, -100%);
+	top: 0;
+	margin-top: -10px;
+	-webkit-transform: translate(-50%, -100%);
+	-moz-transform: translate(-50%, -100%);
+	-ms-transform: translate(-50%, -100%);
+	-o-transform: translate(-50%, -100%);
+	transform: translate(-50%, -100%);
 }
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .bienvenido .childleft {
-        padding-right: 0;
-    }
-    .bienvenido .cómopilotoTitulo {
-        padding-bottom: 5%;
-    }
-    .timeline li:after {
-        font-size: 8px;
-    }
-    .timeline li:before {
-        font-size: 16px;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .bienvenido .childleft {
-        padding-right: 0;
-    }
-    .bienvenido .cómopilotoTitulo {
-        padding-bottom: 5%;
-    }
-    .timeline li:after {
-        font-size: 8px;
-    }
-    .timeline li:before {
-        font-size: 16px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .bienvenido .childleft {
-        padding-right: 5%;
-    }
-    .bienvenido .cómopilotoTitulo {
-        padding-bottom: 5%;
-    }
-    .timeline li:after {
-        font-size: 8px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .bienvenido .childleft {
-        padding-right: 5%;
-    }
-    .bienvenido .cómopilotoTitulo {
-        padding-bottom: 5%;
-    }
-    .timeline li:after {
-        font-size: 10px;
-    }
-    .timeline li:before {
-        font-size: 18px;
-    }
+	.bienvenido .childleft {
+		padding-right: 5%;
+	}
+	.bienvenido .cómopilotoTitulo {
+		padding-bottom: 5%;
+	}
+	.timeline li:after {
+		font-size: 10px;
+	}
+	.timeline li:before {
+		font-size: 18px;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .bienvenido .childleft {
-        padding-right: 15%;
-    }
-    .timeline li:after {
-        font-size: 12px;
-    }
-    .timeline li:before {
-        font-size: 20px;
-    }
+	.bienvenido .childleft {
+		padding-right: 15%;
+	}
+	.timeline li:after {
+		font-size: 12px;
+	}
+	.timeline li:before {
+		font-size: 20px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .bienvenido .childleft {
-        padding-right: 15%;
-    }
-    .timeline li:after {
-        font-size: 12px;
-    }
-    .timeline li:before {
-        font-size: 22px;
-    }
+	.bienvenido .childleft {
+		padding-right: 15%;
+	}
+	.timeline li:after {
+		font-size: 12px;
+	}
+	.timeline li:before {
+		font-size: 22px;
+	}
 }
 
 /*-------------------------------------------------- Sección programas --------------------------------------------------*/
 
 .programas {
-    height: 100vh;
-    overflow-x: hidden;
+	height: 100vh;
+	overflow-x: hidden;
 }
 
 .programas .childleft {
-    padding-right: 20%;
+	padding-right: 20%;
 }
 
 .programas .programasTitulo {
-    font: normal normal normal 27px/32px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    text-align: start;
+	font: normal normal normal 27px/32px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	text-align: start;
 }
 
 .programas .more {
-    padding-top: 20px;
-    font: normal normal 300 16px/20px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	padding-top: 20px;
+	font: normal normal 300 16px/20px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 .programas .carousel-inner {
-    height: 100%;
+	height: 100%;
 }
 
 .programas .carousel-caption {
-    right: 0 !important;
-    left: 0 !important;
-    top: 0 !important;
-    bottom: auto !important;
+	right: 0 !important;
+	left: 0 !important;
+	top: 0 !important;
+	bottom: auto !important;
 }
 
 .programas .carousel-caption h1 {
-    font-size: 17px;
-    text-align: start;
+	font-size: 17px;
+	text-align: start;
 }
 
-.programas .carousel{
-    font: normal normal 300 16px/32px Inter;
-    max-width: 50ch;
+.programas .carousel {
+	font: normal normal 300 16px/32px Inter;
+	max-width: 50ch;
 }
 
 .programas .carousel-caption p {
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .programas .title {
-    text-align: left;
-    font: normal normal normal 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+	text-align: left;
+	font: normal normal normal 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
 }
 
 .programas .number {
-    text-align: left;
-    font: normal normal bold 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
+	text-align: left;
+	font: normal normal bold 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
 }
 
 .programas .sliderButton {
-    text-align: center;
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(75, 84, 97);
-    color: black;
-    transition: background-color 0.5s ease;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	background-color: rgb(75, 84, 97);
+	color: black;
+	transition: background-color 0.5s ease;
 }
 
-.programas .sliderButton>.contentContainer {
-    height: 25px;
-    width: 25px;
+.programas .sliderButton > .contentContainer {
+	height: 25px;
+	width: 25px;
 }
 
 .programas .sliderButton:hover {
-    background-color: var(--main-color);
+	background-color: var(--main-color);
 }
 
 .programas .sliderButton:hover .buttonContent {
-    filter: invert(0);
+	filter: invert(0);
 }
 
 .programas .buttonContent {
-    height: 20px;
-    width: 15px;
-    filter: invert(100%);
+	height: 20px;
+	width: 15px;
+	filter: invert(100%);
 }
 
 /*-------------------------------------------------- Media Query programas --------------------------------------------------DONE*/
 
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .programas {
-        height: auto
-    }
-    .programas p.lead {
-        font-size: 15px;
-        line-height: 2rem;
-        padding-right: 0%;
-    }
-    .programas .childleft {
-        padding-right: 0%;
-    }
-    .programas .bd-placeholder-img {
-        height: 250px;
-    }
-    .programas .more {
-        padding-top: 20px;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .programas {
-        height: auto
-    }
-    .programas p.lead {
-        font-size: 15px;
-        line-height: 2rem;
-        padding-right: 0%;
-    }
-    .programas .childleft {
-        padding-right: 0%;
-    }
-    .programas .bd-placeholder-img {
-        height: 250px;
-    }
-    .programas .more {
-        padding-top: 20px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .programas {
-        height: auto
-    }
-    .programas p.lead {
-        font-size: 15px;
-        line-height: 2rem;
-        padding-right: 0%;
-    }
-    .programas .childleft {
-        padding-right: 0%;
-    }
-    .programas .bd-placeholder-img {
-        height: 250px;
-    }
-    .programas .more {
-        padding-top: 20px;
-    }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .programas {
-        height: auto
-    }
-    .programas p.lead {
-        font-size: 17px;
-        line-height: 2rem;
-        padding-right: 15%;
-    }
-    .programas .childleft {
-        padding-right: 0%;
-    }
-    .programas .bd-placeholder-img {
-        height: 250px;
-    }
-    .programas .more {
-        padding-top: 20px;
-    }
+	.programas {
+		height: auto;
+	}
+	.programas p.lead {
+		font-size: 17px;
+		line-height: 2rem;
+		padding-right: 15%;
+	}
+	.programas .childleft {
+		padding-right: 0%;
+	}
+	.programas .bd-placeholder-img {
+		height: 250px;
+	}
+	.programas .more {
+		padding-top: 20px;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .programas {
-        height: 100vh
-    }
-    .programas p.lead {
-        font-size: 17px;
-        line-height: 2rem;
-        padding-right: 15%;
-    }
-    .programas .childleft {
-        padding-right: 15%;
-    }
-    .programas .bd-placeholder-img {
-        height: 250px;
-    }
-    .programas .more {
-        padding-top: 20px;
-    }
+	.programas {
+		height: 100vh;
+	}
+	.programas p.lead {
+		font-size: 17px;
+		line-height: 2rem;
+		padding-right: 15%;
+	}
+	.programas .childleft {
+		padding-right: 15%;
+	}
+	.programas .bd-placeholder-img {
+		height: 250px;
+	}
+	.programas .more {
+		padding-top: 20px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .programas {
-        height: 100vh
-    }
-    .programas p.lead {
-        font-size: 20px;
-        padding-right: 15%;
-    }
-    .programas .childleft {
-        padding-right: 20%;
-    }
-    .programas .bd-placeholder-img {
-        height: 250px;
-    }
-    .programas .more {
-        padding-top: 20px;
-    }
+	.programas {
+		height: 100vh;
+	}
+	.programas p.lead {
+		font-size: 20px;
+		padding-right: 15%;
+	}
+	.programas .childleft {
+		padding-right: 20%;
+	}
+	.programas .bd-placeholder-img {
+		height: 250px;
+	}
+	.programas .more {
+		padding-top: 20px;
+	}
 }
 
 /*-------------------------------------------------- flota  Sección--------------------------------------------------*/
 
 .flota .parent {
-    padding-left: 0%;
+	padding-left: 0%;
 }
 
 .flota .childleft {
-    padding-right: 20%;
-    padding-top: 7%;
+	padding-right: 20%;
+	padding-top: 7%;
 }
 
 .flota .flotaTitulo {
-    text-align: start;
-    font: normal normal 500 27px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: start;
+	font: normal normal 500 27px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .flota .lead {
-    line-height: 2rem;
-    max-width: 50ch;
-    font: normal normal 300 16px/32px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	line-height: 2rem;
+	max-width: 50ch;
+	font: normal normal 300 16px/32px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .flota .carousel {
-    padding-right: 14.5%;
-    padding-left: 14.5%;
+	padding-right: 14.5%;
+	padding-left: 14.5%;
 }
 
 .flota .carousel-inner {
-    padding-bottom: 2%;
+	padding-bottom: 2%;
 }
 
 .flota .item {
-    position: relative;
+	position: relative;
 }
 
 .flota .left {
-    width: 30%;
-    float: left;
+	width: 30%;
+	float: left;
 }
 
 .flota .center {
-    margin-left: 5%;
-    width: 30%;
-    margin-right: 5%;
-    float: left;
+	margin-left: 5%;
+	width: 30%;
+	margin-right: 5%;
+	float: left;
 }
 
 .flota .right {
-    width: 30%;
-    float: left;
+	width: 30%;
+	float: left;
 }
 
 .item .photo {
-    width: 100%;
+	width: 100%;
 }
 
 .flota .item .txtOverlapParent {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 2550, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.2s linear;
-    transition: visibility 0s, opacity 0.2s linear;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 2550, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: visibility 0s, opacity 0.2s linear;
+	transition: visibility 0s, opacity 0.2s linear;
 }
 
 .flota .txtOverlap {
-    width: 100%;
-    padding: 0 5% 0 5%;
-    font: normal normal bold 27px Roboto;
-    letter-spacing: 0px;
-    color: #616161;
-    opacity: 1;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
+	width: 100%;
+	padding: 0 5% 0 5%;
+	font: normal normal bold 27px Roboto;
+	letter-spacing: 0px;
+	color: #616161;
+	opacity: 1;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
 }
 
 .flota .item:hover div {
-    opacity: 1;
-    visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
 .flota .sliderButton {
-    text-align: center;
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(75, 84, 97);
-    color: black;
-    transition: background-color 0.5s ease;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	background-color: rgb(75, 84, 97);
+	color: black;
+	transition: background-color 0.5s ease;
 }
 
-.flota .sliderButton>.contentContainer {
-    height: 25px;
-    width: 25px;
+.flota .sliderButton > .contentContainer {
+	height: 25px;
+	width: 25px;
 }
 
 .flota .sliderButton:hover {
-    background-color: var(--main-color);
+	background-color: var(--main-color);
 }
 
 .flota .sliderButton:hover .buttonContent {
-    filter: invert(0);
+	filter: invert(0);
 }
 
 .flota .buttonContent {
-    height: 20px;
-    width: 15px;
-    filter: invert(100%);
+	height: 20px;
+	width: 15px;
+	filter: invert(100%);
 }
 
 .flota .more {
-    padding-left: 13%;
-    font: normal normal 300 16px/20px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	padding-left: 13%;
+	font: normal normal 300 16px/20px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 /*-------------------------------------------------- Media Query flota  --------------------------------------------------DONE*/
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
-@media only screen and (max-width: 392px) {
-    .flota .childleft {
-        padding-right: 10%;
-        padding-top: 7%;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .flota .childleft {
-        padding-right: 10%;
-        padding-top: 7%;
-    }
-    .flota .lead {
-        padding-bottom: 5%;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .flota .childleft {
-        padding-right: 10%;
-        padding-top: 3%;
-    }
-    .flota .lead {
-        padding-bottom: 5%;
-    }
-    .flota .more {
-        padding-top: 20px;
-    }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .flota .childleft {
-        padding-right: 20%;
-        padding-top: 5%;
-    }
-    .flota .lead {
-        line-height: 2rem;
-        font-size: 15px;
-        padding-bottom: 5%;
-    }
-    .flota .more {
-        padding-top: 20px;
-    }
+	.flota .childleft {
+		padding-right: 20%;
+		padding-top: 5%;
+	}
+	.flota .lead {
+		line-height: 2rem;
+		font-size: 15px;
+		padding-bottom: 5%;
+	}
+	.flota .more {
+		padding-top: 20px;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .flota .childleft {
-        padding-right: 20%;
-        padding-top: 7%;
-    }
-    .flota .lead {
-        padding-bottom: 5%;
-    }
-    .flota .more {
-        padding-top: 20px;
-    }
+	.flota .childleft {
+		padding-right: 20%;
+		padding-top: 7%;
+	}
+	.flota .lead {
+		padding-bottom: 5%;
+	}
+	.flota .more {
+		padding-top: 20px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .flota .childleft {
-        padding-top: 7%;
-    }
-    .flota .lead {
-        padding-bottom: 5%;
-    }
-    .flota .more {
-        padding-top: 20px;
-    }
+	.flota .childleft {
+		padding-top: 7%;
+	}
+	.flota .lead {
+		padding-bottom: 5%;
+	}
+	.flota .more {
+		padding-top: 20px;
+	}
 }
 
 /*-------------------------------------------------- Sección tecnologia  --------------------------------------------------*/
 
 .tecnologia {
-    padding-top: 15%;
-    padding-bottom: 10%;
+	padding-top: 15%;
+	padding-bottom: 10%;
 }
 
 .tecnologia h1 {
-    text-align: start;
-    font: normal normal normal 39px Roboto;
-    letter-spacing: 0px;
-    opacity: 1;
-    color: white
+	text-align: start;
+	font: normal normal normal 39px Roboto;
+	letter-spacing: 0px;
+	opacity: 1;
+	color: white;
 }
 
 .nav-tabs {
-    border: none !important;
+	border: none !important;
 }
 
 .nav-tabs .nav-link {
-    border: none !important;
-    border: 0px solid transparent;
-    opacity: 0.3;
-    padding: 0px 17px
+	border: none !important;
+	border: 0px solid transparent;
+	opacity: 0.3;
+	padding: 0px 17px;
 }
 .nav-link img {
-    opacity: 1 !important;
-    height: 31px;
+	opacity: 1 !important;
+	height: 31px;
 }
 
 .nav-link:hover {
-    opacity: 0.7 !important;
+	opacity: 0.7 !important;
 }
 
-.nav-link .buttonLabel{
-    font: normal normal 300 12px/48px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+.nav-link .buttonLabel {
+	font: normal normal 300 12px/48px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase;
 }
-.nav-link.active{
-    background-color: rgba(200, 200, 200, 0.0) !important;
-    border: none !important;
+.nav-link.active {
+	background-color: rgba(200, 200, 200, 0.0) !important;
+	border: none !important;
 }
 
-.nav-link.active{
-    opacity: 1 !important;
+.nav-link.active {
+	opacity: 1 !important;
 }
 
 .tab-pane {
-    color: white !important;
+	color: white !important;
 }
 
 .tab-pane .titulo {
-    position: relative;
+	position: relative;
 }
 
 .titulo .texto {
-    text-align: start;
-    font: normal normal normal 27px/32px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-       padding-left: 0;
+	text-align: start;
+	font: normal normal normal 27px/32px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	padding-left: 0;
 }
 
 .titulo .number {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font: normal normal 300 12px Inter;
-    color: var(--main-color)
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font: normal normal 300 12px Inter;
+	color: var(--main-color);
 }
 
 .tab-content .lead {
-    border-top: 1px solid;
-    text-align: left;
-    font: normal normal normal 14px/30px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    max-width: 52ch;
+	border-top: 1px solid;
+	text-align: left;
+	font: normal normal normal 14px/30px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	max-width: 52ch;
 }
 
 .tecnologia .sectionLabel {
-    bottom: auto;
-    top: 120vh
+	bottom: auto;
+	top: 120vh;
 }
 
-/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------DONE*/
-
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .nav-link img {
-        height: 25px;
-    }
-    .nav-link {
-        padding: 2%;
-    }
-    .titulo .texto {
-        text-align: start;
-        padding-left: 0;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .nav-link img {
-        height: 30px;
-    }
-    .nav-link {
-        padding: 2%;
-    }
-    .titulo .texto {
-        text-align: start;
-        padding-left: 0;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .nav-link img {
-        height: 40px;
-    }
-    .titulo .texto {
-        text-align: start;
-        padding-left: 0;
-    }
-}
+/*-------------------------------------------------- Media Query tecnologia  --------------------------------------------------DONE*
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .nav-link img {
-        height: 50px;
-    }
-    .titulo .texto {
-        text-align: start;
-        padding-left: 0;
-    }
+	.nav-link img {
+		height: 50px;
+	}
+	.titulo .texto {
+		text-align: start;
+		padding-left: 0;
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .nav-link img {
-        height: auto;
-    }
-    .titulo .texto {
-        text-align: start;
-        padding-left: 0;
-    }
+	.nav-link img {
+		height: auto;
+	}
+	.titulo .texto {
+		text-align: start;
+		padding-left: 0;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .nav-link img {
-        height: auto;
-    }
-    .titulo .texto {
-        text-align: start;
-        padding-left: 0;
-    }
+	.nav-link img {
+		height: auto;
+	}
+	.titulo .texto {
+		text-align: start;
+		padding-left: 0;
+	}
 }
 
 /*-------------------------------------------------- Seccion Alumnos --------------------------------------------------*/
 
 .alumnos {
-    padding-bottom: 10%;
+	padding-bottom: 10%;
 }
 
 .alumnos .title {
-    font: normal normal normal 27px Roboto;
-    padding-top: 7%;
-    text-align: start;
-    color: rgb(133, 139, 148);
+	font: normal normal normal 27px Roboto;
+	padding-top: 7%;
+	text-align: start;
+	color: rgb(133, 139, 148);
 }
 
 .alumnos .enfasis {
-    font: normal normal normal 27px Roboto;
-    color: white;
+	font: normal normal normal 27px Roboto;
+	color: white;
 }
 
 .alumnos .card {
-    border-radius: 0px;
-    background-color: rgba(255, 255, 255, .1);
+	border-radius: 0px;
+	background-color: rgba(255, 255, 255, .1);
 }
 
 .alumnos .imgContainer {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -25%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -25%;
 }
 
-.img-container{
-    margin-top: -25%;
+.img-container {
+	margin-top: -25%;
 }
 .alumnos .card .img-fluid {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .alumnos .card .flag {
-    position: absolute;
-    width: 20%;
-    right: 5%;
-    top: 70%;
-    transform: translate(50%,-50%);
+	position: absolute;
+	width: 20%;
+	right: 5%;
+	top: 70%;
+	transform: translate(50%, -50%);
 }
 
 .alumnos .card:hover .hidden {
-    opacity: 1;
-    height: auto;
+	opacity: 1;
+	height: auto;
 }
 
 .alumnos .card:hover .show {
-    display: none!important;
+	display: none !important;
 }
 
 .alumnos .hidden {
-    opacity: 0;
-    height: 0;
-    padding-bottom: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+	opacity: 0;
+	height: 0;
+	padding-bottom: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .alumnos .show {
-    display: block;
+	display: block;
 }
 
 .alumnos .show img {
-    font: normal normal 300 13px/19px Inter;
-    width: 2.5em;
-    padding-left: 0.5em;
+	font: normal normal 300 13px/19px Inter;
+	width: 2.5em;
+	padding-left: 0.5em;
 }
 
 .alumnos .card .card-title {
-    text-align: center;
-    font: normal normal 300 16px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: center;
+	font: normal normal 300 16px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .alumnos .card-body {
-    font: normal normal 300 12px/18px Inter;
-    min-height: 9em;
+	font: normal normal 300 12px/18px Inter;
+	min-height: 9em;
 }
 
 .alumnos .card-body .nacionalidad {
-    text-align: left;
-    font: normal normal 300 13px/19px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFFE6;
-    opacity: 1;
-    text-transform: uppercase;
+	text-align: left;
+	font: normal normal 300 13px/19px Inter;
+	letter-spacing: 0px;
+	color: #FFFFFFE6;
+	opacity: 1;
+	text-transform: uppercase;
 }
 
 .alumnos .card-body .testimonio {
-    text-align: left;
-    font: normal normal 300 12px/18px Inter;
-    letter-spacing: 0px;
-    color: #F7F7F7;
-    transition: opacity 2s ease-out;
+	text-align: left;
+	font: normal normal 300 12px/18px Inter;
+	letter-spacing: 0px;
+	color: #f7f7f7;
+	transition: opacity 2s ease-out;
 }
 
 .alumnos .card-footer {
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-top: 0px solid;
-    background-color: rgba(0, 0, 0, .0);
-    color: var(--main-color);
-    text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	border-top: 0px solid;
+	background-color: rgba(0, 0, 0, .0);
+	color: var(--main-color);
+	text-align: center;
 }
 
 .alumnos .card-footer a {
-    color: var(--main-color);
-    font: normal normal normal 10px/29px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    text-transform: uppercase;
-    opacity: 1;
+	color: var(--main-color);
+	font: normal normal normal 10px/29px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	text-transform: uppercase;
+	opacity: 1;
 }
 .carousel-indicators [data-bs-target] {
 	background-color: white;
@@ -1299,171 +1058,362 @@ fade {
 
 /*-------------------------------------------------- Media Query Alumnos --------------------------------------------------DONE*/
 
-/*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-
-@media only screen and (max-width: 392px) {
-    .alumnoCard {
-        margin-top: 30%;
-    }
-}
-
-/*ultra Small devices (portrait tablets and large phones, 392px and up) */
-
-@media only screen and (min-width: 392px) {
-    .alumnoCard {
-        margin-top: 30%;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .alumnoCard {
-        margin-top: 40%;
-    }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .alumnoCard {
-        margin-top: 10%;
-    }
+	.alumnoCard {
+		margin-top: 10%;
+	}
 }
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-    .alumnoCard {
-        margin-top: 7%;
-    }
+	.alumnoCard {
+		margin-top: 7%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .alumnoCard {
-        margin-top: 10%;
-    }
-
+	.alumnoCard {
+		margin-top: 10%;
+	}
 }
 
 /*-------------------------------------------------- Seccion Eventos  --------------------------------------------------*/
 
 .eventos {
-    padding-bottom: 15%;
+	padding-bottom: 15%;
 }
 
 .eventos .title {
-    padding-top: 7%;
-    text-align: left;
-    font: normal normal normal 27px/32px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+	padding-top: 7%;
+	text-align: left;
+	font: normal normal normal 27px/32px Roboto;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .eventos .card {
-    border: 0px solid;
-    border-radius: 0;
-    min-height: 400px;
-    background-color: transparent;   
+	border: 0px solid;
+	border-radius: 0;
+	min-height: 400px;
+	background-color: transparent;
 }
 
 .eventos .card-body {
-    padding: 0rem;
+	padding: 0rem;
 }
 
 .eventos .card .img-fluid {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-top: 15%;
-    padding-bottom: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-top: 15%;
+	padding-bottom: 10%;
 }
 
 .eventos .card:hover .hidden {
-    height: 100%;
-    opacity:1
+	height: 100%;
+	opacity: 1;
 }
 
 .eventos .card:hover .show {
-    height: 0;
-    opacity:0
+	height: 0;
+	opacity: 0;
 }
 
 .eventos .hidden {
-    overflow: hidden;
+	overflow: hidden;
 
-    background: transparent linear-gradient(180deg, rgba(138, 182, 243,0.15) 0%, rgba(79, 105, 140,0.15) 65%, rgba(255,255,255,0.15) 100%) 0% 0% no-repeat padding-box;
-    background-color: rgba(0, 0, 0, 0);
-    height: 0;
-    opacity:0;
-    transition: opacity 0.5s ease-out;
+	background: transparent
+		linear-gradient(
+			180deg,
+			rgba(138, 182, 243, 0.15) 0%,
+			rgba(79, 105, 140, 0.15) 65%,
+			rgba(255, 255, 255, 0.15) 100%
+		)
+		0% 0% no-repeat padding-box;
+	background-color: rgba(0, 0, 0, 0);
+	height: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
 }
 
 .eventos .show {
-    overflow: hidden;
-    height: 100%;
-    background: transparent linear-gradient(180deg, rgb(138, 182, 243,0) 0%, rgba(79, 105, 140,.15) 65%, rgba(255,255,255,.15) 100%) 0% 0% no-repeat padding-box;    
-    background-color: rgba(0, 0, 0, 0);
-    display: block!important;
-    opacity:1;
-    transition: opacity 0.5s ease-out;
+	overflow: hidden;
+	height: 100%;
+	background: transparent
+		linear-gradient(180deg, rgb(138, 182, 243, 0) 0%, rgba(79, 105, 140, .15) 65%, rgba(255, 255, 255, .15) 100%) 0%
+		0% no-repeat padding-box;
+	background-color: rgba(0, 0, 0, 0);
+	display: block !important;
+	opacity: 1;
+	transition: opacity 0.5s ease-out;
 }
 
 .eventos .show img {
-    width: 18%;
-    padding-left: 0.5em;
+	width: 18%;
+	padding-left: 0.5em;
 }
 
 .eventos .card .card-title {
-    color: white;
-    text-align: center;
+	color: white;
+	text-align: center;
 }
 
 .eventos .card-body .resumen {
-    padding-top: 2em;
-    font: normal normal 300 14px/18px Inter;
-    text-align: center;
+	padding-top: 2em;
+	font: normal normal 300 14px/18px Inter;
+	text-align: center;
 }
 
 .eventos .card-body .fecha {
-    padding-top: 0em;
-    text-transform: uppercase;
-    font: normal normal 300 14px/18px Inter;
-    letter-spacing: 0px;
-    color: #9A9A9A;}
+	padding-top: 0em;
+	text-transform: uppercase;
+	font: normal normal 300 14px/18px Inter;
+	letter-spacing: 0px;
+	color: #9a9a9a;
+}
 
 .eventos .card-body .ampliado {
-    text-align: center;
-    font: normal normal 300 14px/20px Inter;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    transition: opacity 2s ease-out;
+	text-align: center;
+	font: normal normal 300 14px/20px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	transition: opacity 2s ease-out;
 }
 
 .eventos .card-body .titulo {
-    text-transform: uppercase;
-    text-align: center;
-    font: normal normal bold 14px/20px Inter;
-    letter-spacing: 0px;
-    color: #00B0CE;
-    transition: opacity 2s ease-out;
+	text-transform: uppercase;
+	text-align: center;
+	font: normal normal bold 14px/20px Inter;
+	letter-spacing: 0px;
+	color: #00b0ce;
+	transition: opacity 2s ease-out;
 }
 
 .masInformacion {
-    font: normal normal 300 16px Inter;
-    padding-left: 13.2%;
-    padding-bottom: 20%;
+	font: normal normal 300 16px Inter;
+	padding-left: 13.2%;
+	padding-bottom: 20%;
 }
 
 .masInformacion h2 {
-    text-align: start;
-    color: white;
-    padding-bottom: 5%;
-    font: normal normal 300 16px/32px Inter;
-    max-width: 65ch;
-    color: #FFFFFF;
-    opacity: 1;
+	text-align: start;
+	color: white;
+	padding-bottom: 5%;
+	font: normal normal 300 16px/32px Inter;
+	max-width: 65ch;
+	color: #ffffff;
+	opacity: 1;
+}
+
+/*------------------------------Mobile styles------------------------------------*/
+@media only screen and (max-width: 768px) {
+	.land {
+		background-size: auto;
+		background-size: auto 100%;
+	}
+	.sameWidth {
+		padding: 0% 44px;
+	}
+	.home {
+		background-image: url(../images/mobile/Fondo\ HOME.png);
+		background-size: auto 100%;
+	}
+	.bienvenido .bienvenidaTitulo {
+		font: normal normal 500 32px/42px Roboto;
+		padding-bottom: 41px;
+		margin-bottom: 0;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.bienvenido p.lead {
+		text-align: left;
+		font: normal normal 300 14px/25px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.bienvenido .footer {
+		padding-top: 40px;
+		text-align: left;
+		font: normal normal bold 18px/24px Inter;
+		letter-spacing: 0px;
+		color: #00b0ce;
+		opacity: 0.7;
+		padding-right: 30px;
+	}
+	.bienvenido .section{
+		transition: all 1s;
+		animation:1s opacity-grow
+	}
+	.bienvenido .section.inactive {
+		display: none !important;
+		opacity:0
+	}
+	.bienvenido .anac {
+		width: 219px;
+		height: 26px;
+		opacity: 1;
+		margin-bottom: 31px;
+	}
+	.bienvenido .certificado {
+		text-align: center;
+		font: normal normal 500 14px/25px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		margin-bottom: 24px;
+	}
+	.bienvenido .icon {
+		width: 34px;
+		height: 34px;
+		margin-bottom: 11px;
+	}
+	.bienvenido .ubicacion {
+		text-align: center;
+		font: normal normal 500 14px/20px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		text-shadow: 0px 3px 6px #00000069;
+		opacity: 1;
+		margin-bottom: 0;
+	}
+
+	.bienvenido .statsCard {
+		background: transparent linear-gradient(180deg, #8ab6f326 0%, #c9c9c926 68%, #efefef26 90%, #aebde626 100%) 0%
+			0% no-repeat padding-box;
+	}
+    .bienvenido .statsCard .iconCircled{
+        margin-top: -19px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1px solid #FFFFFF;
+        background-color: #192C3D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .bienvenido .statsCard .iconCircled .icon{
+        width: 20px;
+        display: block;
+        padding:0;
+        margin:0
+    }
+    .bienvenido .statsCard .label{
+        text-align: center;
+        font: normal normal 500 10px/16px Inter;
+        letter-spacing: 0px;
+        color: #00B0CE;
+        text-shadow: 0px 3px 6px #0000005E;
+        opacity: 1;
+    }
+	.bienvenido .number.withPlus::before {
+		display:inline-flex;
+		content:'+'
+	}
+	.bienvenido .number {
+		display:inline-flex;
+		text-align: center;
+		font: normal normal 500 18px/30px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+
+	.bienvenido .childleft {
+		padding-right: 0;
+	}
+	.bienvenido .cómopilotoTitulo {
+		padding-bottom: 5%;
+	}
+	.timeline li:after {
+		font-size: 8px;
+	}
+	.timeline li:before {
+		font-size: 16px;
+	}
+	.bienvenido .childleft {
+		padding-right: 0;
+	}
+	.bienvenido .cómopilotoTitulo {
+		padding-bottom: 5%;
+	}
+	.timeline li:after {
+		font-size: 8px;
+	}
+	.timeline li:before {
+		font-size: 16px;
+	}
+	.bienvenido .childleft {
+		padding-right: 0;
+	}
+	.bienvenido .cómopilotoTitulo {
+		padding-bottom: 5%;
+	}
+	.timeline li:after {
+		font-size: 8px;
+	}
+	.timeline li:before {
+		font-size: 16px;
+	}
+	.programas {
+		height: auto;
+	}
+	.programas p.lead {
+		font-size: 15px;
+		line-height: 2rem;
+		padding-right: 0%;
+	}
+	.programas .childleft {
+		padding-right: 0%;
+	}
+	.programas .bd-placeholder-img {
+		height: 250px;
+	}
+	.programas .more {
+		padding-top: 20px;
+	}
+	.flota .childleft {
+		padding-right: 10%;
+		padding-top: 7%;
+	}
+	.nav-link img {
+		height: 25px;
+	}
+	.nav-link {
+		padding: 2%;
+	}
+	.titulo .texto {
+		text-align: start;
+		padding-left: 0;
+	}
+	.alumnoCard {
+		margin-top: 30%;
+	}
+	.desktop {
+		display: none !important;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.mobile {
+		display: none !important;
+	}
+}
+
+@keyframes opacity-grow {
+	0%{
+		opacity:0
+	}
+	100%{
+		opacity:1
+	}
 }

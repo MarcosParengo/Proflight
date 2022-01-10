@@ -3,6 +3,7 @@ var carouselIndicators = $('#carouselIndicators');
 
 $(document).ready(function() {
 	var toggled = false;
+	var fired = false;
 	var navBar = $('#navBar');
 	var navbarBrand = $('#navbar-brand');
 	var navBarToggler = $('#navBarToggler');
@@ -17,6 +18,30 @@ $(document).ready(function() {
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	carouselIndicators = $('#carouselIndicators');
+
+	$(window).bind('scroll', function() {
+		if ($(this).scrollTop() > $('#bienvenida').offset().top && !fired) {
+			fired = true;
+			setTimeout(function() {
+				$('#BienvenidaFirstSection').toggleClass('inactive');
+				$('#BienvenidaFirstSection').toggleClass('active');
+
+				$('#BienvenidaSecondSection').toggleClass('inactive');
+				$('#BienvenidaSecondSection').toggleClass('active');
+
+				setTimeout(function() {
+					$('#BienvenidaSecondSection').toggleClass('inactive');
+					$('#BienvenidaThirdSection').toggleClass('inactive');
+					$('#BienvenidaSecondSection').toggleClass('active');
+					$('#BienvenidaThirdSection').toggleClass('active');
+					horasDeInstruccion.innerHTML = 15000;
+					instructores.innerHTML = 25;
+					aeronaves.innerHTML = 11;
+					alumnos.innerHTML = 250;
+				},3000);
+			}, 3000);
+		}
+	});
 
 	LoadJson(testimonios, 1);
 	LoadJson(eventos, 2);
@@ -148,10 +173,10 @@ function fillContainerTestimonios(obj) {
             </div>
         </div>
         `;
-        
-        if(i===obj.length-1&&obj.length%8<=4){
-            for (let index = 0; index < 8-obj.length%8 ; index++) {
-                string += `
+
+		if (i === obj.length - 1 && obj.length % 8 <= 4) {
+			for (let index = 0; index < 8 - obj.length % 8; index++) {
+				string += `
                 <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-3 p-md-3 p-sm-0" style="visibility: hidden">
                     <div class="card h-100">
                         <Container class="img-container d-flex justify-content-center">
@@ -172,8 +197,8 @@ function fillContainerTestimonios(obj) {
                     </div>
                 </div>
                 `;
-            }
-        }
+			}
+		}
 		if ((i + 1) % 8 === 0) {
 			string += `
                     </div>

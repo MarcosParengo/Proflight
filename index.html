@@ -10,6 +10,7 @@
     <link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/odometer-theme-car.css" />
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <link rel="stylesheet" href="./assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
@@ -18,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color:#002e5d">
-    <a class="d-none d-sm-block" target="blank"
+<body>
+    <a class="desktop" target="blank"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
             <div class="dialog">
@@ -30,7 +31,7 @@
     </a>
 
     <nav class="navbar fixed-top navbar-dark">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center" style="padding: 0;">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-center p-0">
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="assets\images\logo\isologo.svg" alt="Proflight">
             </a>
@@ -129,36 +130,113 @@
     <div class="container-fluid px-0">
         <div class="row mx-0 d-flex align-items-center justify-content-center land  text-center p-relative">
             <div class="col-8 col-sm-8 col-md-4 col-lg-3 pb-5 mb-5">
-                <img src="assets/images/logo/logo.svg" alt="Proflight Aviation Academy">
+                <img class="desktop" src="assets/images/logo/logo.svg" alt="Proflight Aviation Academy">
+                <img class="mobile" src="assets/images/mobile/Logo Inicio.svg" alt="Proflight Aviation Academy">
             </div>
-            <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
+            <div class="sectionLabel rotatedText desktop">
                 <h1 class="text">Mainpage</h1>
             </div>
-            <video class="landingBG" autoplay muted loop id="myVideo">
-                <source src="assets/home_video.mp4" type="video/mp4">
+            <video class="desktop landingBG" autoplay muted loop id="myVideo">
+                <source src="assets/images/background/home_video.mp4" type="video/mp4">
             </video>
-            <fade />
-
+            <video class="mobile landingBG" autoplay muted loop id="myVideoMobile">
+                <source src="assets/images/mobile/Video nubes_home mobile.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 
-    <div class="transition">
+    <div class="desktop transition">
     </div>
     <section class="home">
         <section class="bienvenido">
             <div class="parent container-fluid my-5 pt-0 mt-0 p-relative">
                 <div class="row pb-0 pe-lg-0 pt-lg-5 px-0">
                     <div class="p-relative fluid d-flex align-items-center sameWidth">
-                        <div class="childleft col-12 col-lg-10 h-100vh" style="overflow: hidden;">
-                            <h1 id="home" class="bienvenidaTitulo pb-5">¡Bienvenidos a ProFlight!</h1>
-                            <p class="lead mb-0">Somos una institución orientada a la formación de pilotos privados y
-                                comerciales capacitados para aportar al desarrollo futuro de la aeronáutica a nivel
-                                mundial.
-                                <br>Con pilares en la exigencia, integralidad y desarrollo tencnológico
-                                hemos transgredido la educación convencional para enfocarnos en una enseñanza de
-                                estandares superiores.
-                            </p>
-                            <h2 class="footer pt-5">El mundo avanza, no te quedes atrás.</h2>
+                        <div id="bienvenida"
+                            class="childleft col-12 col-lg-10 h-100vh d-flex align-items-center align-items-md-start overflow-hidden">
+                            <div id="BienvenidaFirstSection" class="section active">
+                                <h1 id="home" class="bienvenidaTitulo">¡Bienvenidos a ProFlight!</h1>
+                                <p class="lead mb-0">Somos una institución orientada a la formación de pilotos privados
+                                    y
+                                    comerciales capacitados para aportar al desarrollo futuro de la aeronáutica a nivel
+                                    mundial.
+                                    <br class="desktop">Con pilares en la exigencia, integralidad y desarrollo
+                                    tencnológico
+                                    hemos transgredido la educación convencional para enfocarnos en una enseñanza de
+                                    estandares superiores.
+                                </p>
+                                <h2 class="footer">El mundo avanza, no te quedes atrás.</h2>
+                            </div>
+                            <div id="BienvenidaSecondSection" class="mobile section inactive">
+                                <div class="d-flex justify-content-center w-100">
+                                    <img src="assets/images/mobile/ANAC.svg" class="anac mx-auto" alt="">
+                                </div>
+                                <h1 class="certificado">
+                                    Certificados bajo RAAC 141
+                                </h1>
+                                <div class="d-flex justify-content-center w-100">
+                                    <img src="assets/images/mobile/airport.svg" alt="" class="mx-auto icon">
+                                </div>
+                                <h2 class="ubicacion">
+                                    Nos encontramos ubicados en un Aeropuerto Internacional
+                                </h2>
+                            </div>
+                            <div id="BienvenidaThirdSection" class="mobile section container-fluid inactive px-0">
+                                <div class="row gx-4 gy-5">
+                                    <div class="col-6">
+                                        <div class="statsCard h-100">
+                                            <div class="iconContainer w-100 d-flex justify-content-center">
+                                                <div class="iconCircled">
+                                                    <img src="assets/images/mobile/Reloj.svg" alt="" class="icon">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="number withPlus odometer" id="horasDeInstruccion">00000</div>
+                                            </div>
+                                            <h2 class="label">Horas de instrucción <br>por año</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="statsCard h-100">
+                                            <div class="iconContainer w-100 d-flex justify-content-center">
+                                                <div class="iconCircled">
+                                                    <img src="assets/images/mobile/Intructor.svg" alt="" class="icon">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="number  odometer" id="instructores">00</div>
+                                            </div>
+                                            <h2 class="label">Instructores <br>certificados</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="statsCard h-100">
+                                            <div class="iconContainer w-100 d-flex justify-content-center">
+                                                <div class="iconCircled">
+                                                    <img src="assets/images/mobile/Aeronave.svg" alt="" class="icon">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="number odometer" id="aeronaves">00</div>
+                                            </div>
+                                            <h2 class="label">Aeronaves</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="statsCard h-100">
+                                            <div class="iconContainer w-100 d-flex justify-content-center">
+                                                <div class="iconCircled">
+                                                    <img src="assets/images/mobile/alumnos.svg" alt="" class="icon">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="number withPlus odometer" id="alumnos">000</div>
+                                            </div>
+                                            <h2 class="label">Alumnos <br>en el ultimo año</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="p-0 d-none d-xs-none d-sm-none d-md-none d-lg-block imgContainer">
                             <img src="assets\images\components\Pagina 2 04.png" alt="" class="d-block w-100">
@@ -608,10 +686,10 @@
                         <div class="m-1 m-lg-5 containerTestimonios row d-flex justify-content-center">
                             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators" id="carouselIndicators">
-                                    
+
                                 </div>
                                 <div class="carousel-inner" id="containerTestimonios">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -688,6 +766,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/scripts/odometer.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
 
