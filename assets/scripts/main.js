@@ -1,5 +1,25 @@
 var obj = [];
 var carouselIndicators = $('#carouselIndicators');
+var flotaSelected=1
+function select(selector){
+	const id = parseInt(selector.charAt(selector.length - 1));
+    $(`#icon-flota-${flotaSelected}`).attr('src',`assets/images/mobile/Nuestra Flota/selector/${flotaSelected}.svg`)
+    $(`#icon-flota-${id}`).attr('src',`assets/images/mobile/Nuestra Flota/selector/${id}-selected.svg`)
+	$(`#flota-selector-${id}`).toggleClass('selected')
+	$(`#flota-selector-${flotaSelected}`).toggleClass('selected')
+	
+	$(`#flota-imagen-${id}`).attr('class', 'imagen center');
+	$(`#flota-imagen-${id+1}`).attr('class', 'imagen right');
+	$(`#flota-imagen-${id-1}`).attr('class', 'imagen left');
+	$(`#flota-imagen-${id+2}`).attr('class', 'imagen right out');
+	$(`#flota-imagen-${id-2}`).attr('class', 'imagen left out');
+	$(`#flota-imagen-${id+3}`).attr('class', 'imagen right out');
+	$(`#flota-imagen-${id-3}`).attr('class', 'imagen left out');
+	$(`#flota-imagen-${id+4}`).attr('class', 'imagen right out');
+	$(`#flota-imagen-${id-4}`).attr('class', 'imagen left out');
+	
+	flotaSelected=id
+} 
 
 $(document).ready(function() {
 	var toggled = false;
