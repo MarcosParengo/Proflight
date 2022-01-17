@@ -1,25 +1,133 @@
 var obj = [];
 var carouselIndicators = $('#carouselIndicators');
-var flotaSelected=1
-function select(selector){
+var flotaSelected = 1;
+var programaSelected = 1;
+
+function selectFlota(selector) {
 	const id = parseInt(selector.charAt(selector.length - 1));
-    $(`#icon-flota-${flotaSelected}`).attr('src',`assets/images/mobile/Nuestra Flota/selector/${flotaSelected}.svg`)
-    $(`#icon-flota-${id}`).attr('src',`assets/images/mobile/Nuestra Flota/selector/${id}-selected.svg`)
-	$(`#flota-selector-${id}`).toggleClass('selected')
-	$(`#flota-selector-${flotaSelected}`).toggleClass('selected')
-	
+	$(`#icon-flota-${flotaSelected}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${flotaSelected}.svg`);
+	$(`#icon-flota-${id}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${id}-selected.svg`);
+	$(`#flota-selector-${id}`).toggleClass('selected');
+	$(`#flota-selector-${flotaSelected}`).toggleClass('selected');
+
 	$(`#flota-imagen-${id}`).attr('class', 'imagen center');
-	$(`#flota-imagen-${id+1}`).attr('class', 'imagen right');
-	$(`#flota-imagen-${id-1}`).attr('class', 'imagen left');
-	$(`#flota-imagen-${id+2}`).attr('class', 'imagen right out');
-	$(`#flota-imagen-${id-2}`).attr('class', 'imagen left out');
-	$(`#flota-imagen-${id+3}`).attr('class', 'imagen right out');
-	$(`#flota-imagen-${id-3}`).attr('class', 'imagen left out');
-	$(`#flota-imagen-${id+4}`).attr('class', 'imagen right out');
-	$(`#flota-imagen-${id-4}`).attr('class', 'imagen left out');
-	
-	flotaSelected=id
-} 
+	$(`#flota-imagen-${id + 1}`).attr('class', 'imagen right');
+	$(`#flota-imagen-${id - 1}`).attr('class', 'imagen left');
+	$(`#flota-imagen-${id + 2}`).attr('class', 'imagen right out');
+	$(`#flota-imagen-${id - 2}`).attr('class', 'imagen left out');
+	$(`#flota-imagen-${id + 3}`).attr('class', 'imagen right out');
+	$(`#flota-imagen-${id - 3}`).attr('class', 'imagen left out');
+	$(`#flota-imagen-${id + 4}`).attr('class', 'imagen right out');
+	$(`#flota-imagen-${id - 4}`).attr('class', 'imagen left out');
+
+	flotaSelected = id;
+}
+
+var i = 0;
+
+var counterBack = setInterval('progressGrow()', 200);
+
+function progressGrow() {
+	i++;
+	if (i <= 100) {
+		$(`#programas-progressBar-${programaSelected}`).css('width', i + '%');
+	} else {
+		if (programaSelected < 5) {
+			selectPrograma((programaSelected + 1).toString());
+		} else {
+			selectPrograma('1');
+		}
+	}
+}
+
+function selectPrograma(selector) {
+	const id = parseInt(selector.charAt(selector.length - 1));
+	clearInterval(counterBack);
+	$(`#programas-progressBar-${programaSelected}`).css('width', '0%');
+	$(`#programas-selector-${programaSelected}`).toggleClass('selected');
+	$(`#programas-selector-${id}`).toggleClass('selected');
+	$(`#programas-content-tab-${programaSelected}`).toggleClass('active');
+	$(`#programas-content-tab-${id}`).toggleClass('active');
+
+	programaSelected = id;
+	i = 0;
+	counterBack = setInterval('progressGrow()', 200);
+}
+
+function selectPreviousPrograma() {
+	if (programaSelected > 1) {
+		selectPrograma((programaSelected - 1).toString());
+	} else {
+		selectPrograma('5');
+	}
+}
+
+function selectNextPrograma() {
+	if (programaSelected <= 5) {
+		selectPrograma((programaSelected + 1).toString());
+	} else {
+		selectPrograma('0');
+	}
+}
+
+let touchstartX = 0;
+let touchendX = 0;
+
+const sliderAlumnos = document.getElementById('sliderAlumnos');
+
+function handleGesture() {
+	let id = $('.alumnocard.center').attr('id');
+	let centerElement = parseInt(id.charAt(id.length - 1))
+
+	if (touchendX < touchstartX && centerElement < 10) {
+		$('#alumno-card-' + (centerElement - 1).toString()).attr('class', 'alumnocard left out');
+		$('#alumno-card-' + centerElement).attr('class', 'alumnocard left');
+		$('#alumno-card-' + (centerElement + 1).toString()).attr('class', 'alumnocard center');
+		$('#indicator').text(centerElement + 1);
+		$('#alumno-card-' + (centerElement + 2).toString()).attr('class', 'alumnocard right');
+		$('#alumno-card-' + (centerElement + 3).toString()).attr('class', 'alumnocard right out');
+	}
+	if (touchendX > touchstartX && centerElement > 1) {
+		$('#alumno-card-' + (centerElement + 1).toString()).attr('class', 'alumnocard right out');
+		$('#alumno-card-' + centerElement).attr('class', 'alumnocard right');
+		$('#' + (centerElement - 1).toString()).attr('class', 'alumnocard center');
+		$('#indicator').text(centerElement - 1);
+		$('#alumno-card-' + (centerElement - 2).toString()).attr('class', 'alumnocard left');
+		$('#alumno-card-' + (centerElement - 3).toString()).attr('class', 'alumnocard left out');
+	}
+}
+
+sliderAlumnos.addEventListener('touchstart', (e) => {
+	touchstartX = e.changedTouches[0].screenX;
+});
+
+sliderAlumnos.addEventListener('touchend', (e) => {
+	touchendX = e.changedTouches[0].screenX;
+	handleGesture();
+});
+
+function togglePosition(id) {
+	let clicked = parseInt(id.charAt(id.length - 1))
+	console.log(clicked)
+	//$('#indicator').text(clicked);
+	const elementClicked = $(`#alumno-card-${clicked}`);
+	const rightOneClicked = $(`#alumno-card-${parseInt(clicked) + 1}`);
+	const rightTwoClicked = $(`#alumno-card-${parseInt(clicked) + 2}`);
+	const leftOneClicked = $(`#alumno-card-${parseInt(clicked) - 1}`);
+	const leftTwoClicked = $(`#alumno-card-${parseInt(clicked) - 2}`);
+
+	if (elementClicked.attr('class') === 'alumnocard right') {
+		elementClicked.attr('class', 'alumnocard center');
+		rightOneClicked.attr('class', 'alumnocard right');
+		leftOneClicked.attr('class', 'alumnocard left');
+		leftTwoClicked.attr('class', 'alumnocard left out');
+	} else if (elementClicked.attr('class') === 'alumnocard left') {
+		elementClicked.attr('class', 'alumnocard center');
+		leftOneClicked.attr('class', 'alumnocard left');
+		rightOneClicked.attr('class', 'alumnocard right');
+		rightTwoClicked.attr('class', 'alumnocard right out');
+	}
+}
 
 $(document).ready(function() {
 	var toggled = false;
@@ -38,18 +146,23 @@ $(document).ready(function() {
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	carouselIndicators = $('#carouselIndicators');
-
+	var bienvenidaTimeout;
+	var bienvenidaTimeout2;
 	$(window).bind('scroll', function() {
-		if ($(this).scrollTop() > $('#bienvenida').offset().top && !fired) {
+		if (
+			$(this).scrollTop() > $('#bienvenida').offset().top &&
+			!fired &&
+			$('#bienvenida').height() + $('#bienvenida').offset().top > $(this).scrollTop()
+		) {
 			fired = true;
-			setTimeout(function() {
+			bienvenidaTimeout = setTimeout(function() {
 				$('#BienvenidaFirstSection').toggleClass('inactive');
 				$('#BienvenidaFirstSection').toggleClass('active');
 
 				$('#BienvenidaSecondSection').toggleClass('inactive');
 				$('#BienvenidaSecondSection').toggleClass('active');
 
-				setTimeout(function() {
+				bienvenidaTimeout2 = setTimeout(function() {
 					$('#BienvenidaSecondSection').toggleClass('inactive');
 					$('#BienvenidaThirdSection').toggleClass('inactive');
 					$('#BienvenidaSecondSection').toggleClass('active');
@@ -58,8 +171,26 @@ $(document).ready(function() {
 					instructores.innerHTML = 25;
 					aeronaves.innerHTML = 11;
 					alumnos.innerHTML = 250;
-				},3000);
+				}, 3000);
 			}, 3000);
+		} else if (fired && $('#bienvenida').height() + $('#bienvenida').offset().top < $(this).scrollTop()) {
+			clearTimeout(bienvenidaTimeout);
+			clearTimeout(bienvenidaTimeout2);
+
+			$('#BienvenidaFirstSection').removeClass('inactive');
+			$('#BienvenidaSecondSection').removeClass('active');
+			$('#BienvenidaThirdSection').removeClass('active');
+
+			$('#BienvenidaFirstSection').addClass('active');
+			$('#BienvenidaSecondSection').addClass('inactive');
+			$('#BienvenidaThirdSection').addClass('inactive');
+
+			horasDeInstruccion.innerHTML = 0;
+			instructores.innerHTML = 0;
+			aeronaves.innerHTML = 0;
+			alumnos.innerHTML = 0;
+
+			fired = false;
 		}
 	});
 
@@ -156,7 +287,7 @@ function LoadJson(url, selector) {
 function fillContainerTestimonios(obj) {
 	let string = '';
 	obj.forEach(function(testimonio, i) {
-		if (i % 8 === 0) {
+		if (i % 6 === 0) {
 			if (i === 0) {
 				string += `
                 <div class='carousel-item active'>
@@ -173,7 +304,7 @@ function fillContainerTestimonios(obj) {
 		}
 
 		string += `
-        <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-3 p-md-3 p-sm-0">
+        <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-4 p-md-3 p-sm-0">
             <div class="card h-100">
                 <Container class="img-container d-flex justify-content-center">
                     <div class="p-relative w-50 img-container2">
@@ -194,32 +325,7 @@ function fillContainerTestimonios(obj) {
         </div>
         `;
 
-		if (i === obj.length - 1 && obj.length % 8 <= 4) {
-			for (let index = 0; index < 8 - obj.length % 8; index++) {
-				string += `
-                <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-3 p-md-3 p-sm-0" style="visibility: hidden">
-                    <div class="card h-100">
-                        <Container class="img-container d-flex justify-content-center">
-                            <div class="p-relative w-50 img-container2">
-                                <img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
-                                <img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
-                            </div>
-                        </Container>  
-                        <div class="card-body mt-2 mb-0 py-0">
-                            <h5 class="card-title">${testimonio.nombre}</h5>
-                            <p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
-                            <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
-                        </div>
-                        <div class="py-0 my-0 card-footer">
-                        <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
-                        <a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar leyendo</a>
-                        </div>
-                    </div>
-                </div>
-                `;
-			}
-		}
-		if ((i + 1) % 8 === 0) {
+		if ((i + 1) % 6 === 0) {
 			string += `
                     </div>
                 </div>
@@ -233,7 +339,7 @@ function fillContainerTestimonios(obj) {
 
 function indicators(obj) {
 	let string = '';
-	const pages = Math.ceil(obj.length / 8);
+	const pages = Math.ceil(obj.length / 6);
 
 	for (let index = 0; index < pages; index++) {
 		string += `

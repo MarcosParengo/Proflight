@@ -284,11 +284,11 @@
                 </div>
             </div>
         </section>
-        <section class="programas p-relative d-flex align-items-center ">
-            <div class=" parent container-fluid my-5 pt-0 mt-0">
-                <div class="row  pb-0 pe-lg-0 pt-lg-5 sameWidth">
+        <section class="programas p-relative d-flex align-items-start align-items-md-center ">
+            <div class=" parent container-fluid px-0 my-5 pt-0 mt-0">
+                <div class="row w-100 mx-0  pb-0 pe-lg-0 pt-lg-5 sameWidth desktop">
                     <div class="px-0 col-12">
-                        <h1 class="programasTitulo pb-4">Programas</h1>
+                        <h1 class="programasTitulo pb-0 pb-md-4">Programas</h1>
                         <div id="carouselProgramas" class="carousel slide pb-5" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -389,12 +389,185 @@
                                 <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
                             </div>
                         </button>
-                        <p class="more">Si quieres saber mas acerca de cada plan <a
-                                href="menu-categories/programas/"><button class="btn btn-primary m-2 px-4 py-2"
-                                    type="submit">Haz click aquí</button></a></p>
+                        <p class="more">Si quieres saber más acerca de cada plan
+                            <br class="mobile">
+                            <a href="menu-categories/programas/">
+                                <button class="btn btn-primary m-md-2 px-md-4 py-md-2" type="submit">
+                                    Haz click aquí
+                                </button>
+                            </a>
+                        </p>
                     </div>
                 </div>
+                <div class="row w-100 mx-0  pb-0 pe-lg-0 pt-lg-5 sameWidth-3 mobile">
+                    <div class="px-0 col-12">
+                        <h1 class="programasTitulo pb-0 pb-md-4">Programas</h1>
+                        <div class="tabs mobile">
+                            <div class="d-flex justify-content-between selector">
+                                <div class="item">
+                                    <div class="icon privado selected" id="programas-selector-1"
+                                        onclick="selectPrograma(id)">
+                                        <img src="assets/images/mobile/Programas/1 privado.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon" id="programas-selector-2" onclick="selectPrograma(id)">
+                                        <img src="assets/images/mobile/Programas/2 instrumentos.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon" id="programas-selector-3" onclick="selectPrograma(id)">
+                                        <img src="assets/images/mobile/Programas/3 nocturna.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon" id="programas-selector-4" onclick="selectPrograma(id)">
+                                        <img src="assets/images/mobile/Programas/4 bimotor.svg" alt="">
+                                    </div>
 
+                                </div>
+                                <div class="item">
+                                    <div class="icon" id="programas-selector-5" onclick="selectPrograma(id)">
+                                        <img src="assets/images/mobile/Programas/5 comercial.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between selector">
+                                <div class="item">
+                                    <div class="progress">
+                                        <div id="programas-progressBar-1" class="progress-bar" role="progressbar"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="progress">
+                                        <div id="programas-progressBar-2" class="progress-bar" role="progressbar"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="progress">
+                                        <div id="programas-progressBar-3" class="progress-bar" role="progressbar"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="progress">
+                                        <div id="programas-progressBar-4" class="progress-bar" role="progressbar"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="progress">
+                                        <div id="programas-progressBar-5" class="progress-bar" role="progressbar"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div id="programas-content-tab-1" class="content-tab active">
+                                    <h1 class="title">
+                                        <span class="number">01.&nbsp;&nbsp; </span>
+                                        Licencia Piloto Privado
+                                        <div class="control next" onclick="selectNextPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/next.svg" alt="">
+                                        </div>
+                                    </h1>
+                                    <p class="text">
+                                        Esta es tu primera licencia, en donde tendrás que volar un mínimo de
+                                        40 horas, 10 de simulador y aprobar 13 materias, ofrecemos dos planes para
+                                        realizar esta licencia (plan 61 y plan 141).
+                                    </p>
+                                </div>
+                                <div id="programas-content-tab-2" class="content-tab">
+                                    <h1 class="title">
+                                        <div class="control previous" onclick="selectPreviousPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/previous.svg" alt="">
+                                        </div>
+                                        <span class="number">02.&nbsp;</span>
+                                        Habilitación Instrumentos
+                                        <div class="control next" onclick="selectNextPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/next.svg" alt="">
+                                        </div>
+                                    </h1>
+                                    <h2 class="highlight">
+                                        Programa exclusivo de Proflight
+                                    </h2>
+                                    <p class="text">
+                                        En esta habilitación tendrás que volar 30 horas, 25 de simulador y las 10
+                                        examenes, en donde aprenderás procedimientos avanzados de navegación aérea
+                                    </p>
+                                </div>
+                                <div id="programas-content-tab-3" class="content-tab">
+                                    <h1 class="title">
+                                        <div class="control previous" onclick="selectPreviousPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/previous.svg" alt="">
+                                        </div>
+                                        <span class="number">03.&nbsp;</span>
+                                        03. Habilitación Nocturna
+                                        <div class="control next" onclick="selectNextPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/next.svg" alt="">
+                                        </div>
+                                    </h1>
+                                    <p class="text">
+                                        Habilitación para poder volar de noche, se requiere 10 horas de vuelo en un
+                                        aeropuerto nocturno.
+                                    </p>
+                                </div>
+                                <div id="programas-content-tab-4" class="content-tab">
+                                    <h1 class="title">
+                                        <div class="control previous" onclick="selectPreviousPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/previous.svg" alt="">
+                                        </div>
+                                        <span class="number">04.&nbsp; </span>
+                                        Habilitación Bimotor
+                                        <div class="control next" onclick="selectNextPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/next.svg" alt="">
+                                        </div>
+                                    </h1>
+                                    <p class="text">
+                                        Con esta habilitación podrás desarrollar la habilidad para volar una aeronave
+                                        con dos motores, la solicitan casi todas las aerolíneas del mundo. En argentina
+                                        son 7 horas y para los extranjeros son 10.
+                                    </p>
+                                </div>
+                                <div id="programas-content-tab-5" class="content-tab">
+                                    <h1 class="title">
+                                        <div class="control previous" onclick="selectPreviousPrograma()">
+                                            <img class="icon" src="assets/images/mobile/Programas/previous.svg" alt="">
+                                        </div>
+                                        <span class="number">05.&nbsp;&nbsp; </span>
+                                        Licencia Piloto Comercial
+                                    </h1>
+                                    <p class="text">
+                                        Esta licencia es obligatoria para ingresar a cualquier aerolínea del mundo, los
+                                        requisitos son 200 horas de vuelo y 30 de simulador. Dentro de las 200 horas de
+                                        vuelo y simuladores están incluidas las habilitaciones Instrumentos, Nocturno y
+                                        Bimotor, es decir que solo tendrán que volar 150 horas y 5 de simulador.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="more">Si quieres saber más acerca de cada plan
+                            <br class="mobile">
+                            <a href="menu-categories/programas/">
+                                <button class="btn btn-primary m-md-2 px-md-4 py-md-2" type="submit">
+                                    Haz click aquí
+                                </button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="elipse d-none d-md-none d-lg-block ">
                 <div class="container">
@@ -562,35 +735,35 @@
                         </p>
                     </div>
                     <div class="col-12 sameWidth-2 d-flex justify-content-between">
-                        <div class="selector selected" id="flota-selector-1" onclick="select(id)">
+                        <div class="selector selected" id="flota-selector-1" onclick="selectFlota(id)">
                             <div class="w-100 d-flex w-100 justify-content-center">
                                 <img id="icon-flota-1" class="icon"
                                     src="assets/images/mobile/Nuestra Flota/selector/1-selected.svg" alt="">
                             </div>
                             <p class="label">CESSNA 150</p>
                         </div>
-                        <div class="selector" id="flota-selector-2" onclick="select(id)">
+                        <div class="selector" id="flota-selector-2" onclick="selectFlota(id)">
                             <div class="w-100 d-flex w-100 justify-content-center">
                                 <img id="icon-flota-2" class="icon"
                                     src="assets/images/mobile/Nuestra Flota/selector/2.svg" alt="">
                             </div>
                             <p class="label">CESSNA 172</p>
                         </div>
-                        <div class="selector" id="flota-selector-3" onclick="select(id)">
+                        <div class="selector" id="flota-selector-3" onclick="selectFlota(id)">
                             <div class="w-100 d-flex w-100 justify-content-center">
                                 <img id="icon-flota-3" class="icon"
                                     src="assets/images/mobile/Nuestra Flota/selector/3.svg" alt="">
                             </div>
                             <p class="label">TECNAM <br>P2002</p>
                         </div>
-                        <div class="selector" id="flota-selector-4" onclick="select(id)">
+                        <div class="selector" id="flota-selector-4" onclick="selectFlota(id)">
                             <div class="w-100 d-flex w-100 justify-content-center">
                                 <img id="icon-flota-4" class="icon"
                                     src="assets/images/mobile/Nuestra Flota/selector/4.svg" alt="">
                             </div>
                             <p class="label">PA 28 <br>CHEROKEE</p>
                         </div>
-                        <div class="selector" id="flota-selector-5" onclick="select(id)">
+                        <div class="selector" id="flota-selector-5" onclick="selectFlota(id)">
                             <div class="w-100 d-flex w-100 justify-content-center">
                                 <img id="icon-flota-5" class="icon"
                                     src="assets/images/mobile/Nuestra Flota/selector/5.svg" alt="">
@@ -600,23 +773,23 @@
                     </div>
                     <div class="col-12 px-0 mx-0">
                         <div class="imagenes px-0" id="slider">
-                            <div id="flota-imagen-1" class="imagen center" onclick="select(id)">
+                            <div id="flota-imagen-1" class="imagen center" onclick="selectFlota(id)">
                                 <img class="d-block w-100" src="assets/images/mobile/Nuestra Flota/imagen/1.png" alt="">
                                 <p class="label">CESSNA 150</p>
                             </div>
-                            <div id="flota-imagen-2" class="imagen right" onclick="select(id)">
+                            <div id="flota-imagen-2" class="imagen right" onclick="selectFlota(id)">
                                 <img class="d-block w-100" src="assets/images/mobile/Nuestra Flota/imagen/2.png" alt="">
                                 <p class="label">CESSNA 172</p>
                             </div>
-                            <div id="flota-imagen-3" class="imagen right out" onclick="select(id)">
+                            <div id="flota-imagen-3" class="imagen right out" onclick="selectFlota(id)">
                                 <img class="d-block w-100" src="assets/images/mobile/Nuestra Flota/imagen/3.png" alt="">
                                 <p class="label">TECNAM P2002</p>
                             </div>
-                            <div id="flota-imagen-4" class="imagen right out" onclick="select(id)">
+                            <div id="flota-imagen-4" class="imagen right out" onclick="selectFlota(id)">
                                 <img class="d-block w-100" src="assets/images/mobile/Nuestra Flota/imagen/4.png" alt="">
                                 <p class="label">PA 28 CHEROKEE</p>
                             </div>
-                            <div id="flota-imagen-5" class="imagen right out" onclick="select(id)">
+                            <div id="flota-imagen-5" class="imagen right out" onclick="selectFlota(id)">
                                 <img class="d-block w-100" src="assets/images/mobile/Nuestra Flota/imagen/5.png" alt="">
                                 <p class="label">TWIN COMANCHE</p>
 
@@ -920,7 +1093,8 @@
                                         </p>
                                     </div>
                                     <div class="col-auto px-0 d-flex align-items-center justify-content-center">
-                                        <img class="padres" src="assets/images/mobile/Tecnología/images/Padres.png" alt="">
+                                        <img class="padres" src="assets/images/mobile/Tecnología/images/Padres.png"
+                                            alt="">
                                     </div>
                                 </div>
                             </div>
@@ -934,11 +1108,137 @@
             </div>
         </section>
         <section class="alumnos">
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="title sameWidth"><span>Nuestros alumnos nos </span><span
+            <div class="container-fluid px-0">
+                <div class="row w-100 mx-0">
+                    <h1 class="title sameWidth"><span>Nuestros alumnos <br class="mobile"> nos </span><span
                             class="enfasis">recomiendan</span></h1>
-                    <div class="container col-10">
+                    <div class="cardsContainer px-0 mobile" id="sliderAlumnos">
+                        <div class="alumnocard center" id="alumno-card-1" onclick="togglePosition(id)">
+                            <div class="alumnoCard">
+                                <div class="card h-100">
+                                    <Container class="img-container d-flex justify-content-center">
+                                        <div class="p-relative w-50 img-container2">
+                                            <img src="menu-categories/testimonios/assets/images/testimonio/profile/Alejandro Zapata.png"
+                                                class="img-fluid" alt="...">
+                                            <img src="assets/images/testimonio/bandera/ARGENTINA.png"
+                                                class="flag hidden" alt="-">
+                                        </div>
+                                    </Container>
+                                    <div class="card-body mt-2 mb-0 py-0">
+                                        <h5 class="card-title">${testimonio.nombre}</h5>
+                                        <p class="hidden testimonio card-text mb-0 me-0">
+                                            ${testimonio.testimonioAdelanto}
+                                        </p>
+                                        <p
+                                            class="show nacionalidad card-text d-flex align-items-center justify-content-center">
+                                            ${testimonio.origen}<img
+                                                src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png"
+                                                alt="-"></p>
+                                    </div>
+                                    <div class="py-0 my-0 card-footer">
+                                        <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+                                        <a class="hidden my-0 py-0 "
+                                            href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar
+                                            leyendo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alumnocard right" id="alumno-card-2" onclick="togglePosition(id)">
+                            <div class="alumnoCard">
+                                <div class="card h-100">
+                                    <Container class="img-container d-flex justify-content-center">
+                                        <div class="p-relative w-50 img-container2">
+                                            <img src="menu-categories/testimonios/assets/images/testimonio/profile/Alejandro Zapata.png"
+                                                class="img-fluid" alt="...">
+                                            <img src="assets/images/testimonio/bandera/ARGENTINA.png"
+                                                class="flag hidden" alt="-">
+                                        </div>
+                                    </Container>
+                                    <div class="card-body mt-2 mb-0 py-0">
+                                        <h5 class="card-title">${testimonio.nombre}</h5>
+                                        <p class="hidden testimonio card-text mb-0 me-0">
+                                            ${testimonio.testimonioAdelanto}
+                                        </p>
+                                        <p
+                                            class="show nacionalidad card-text d-flex align-items-center justify-content-center">
+                                            ${testimonio.origen}<img
+                                                src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png"
+                                                alt="-"></p>
+                                    </div>
+                                    <div class="py-0 my-0 card-footer">
+                                        <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+                                        <a class="hidden my-0 py-0 "
+                                            href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar
+                                            leyendo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alumnocard right out" id="alumno-card-3" onclick="togglePosition(id)">
+                            <div class="alumnoCard">
+                                <div class="card h-100">
+                                    <Container class="img-container d-flex justify-content-center">
+                                        <div class="p-relative w-50 img-container2">
+                                            <img src="menu-categories/testimonios/assets/images/testimonio/profile/Alejandro Zapata.png"
+                                                class="img-fluid" alt="...">
+                                            <img src="assets/images/testimonio/bandera/ARGENTINA.png"
+                                                class="flag hidden" alt="-">
+                                        </div>
+                                    </Container>
+                                    <div class="card-body mt-2 mb-0 py-0">
+                                        <h5 class="card-title">${testimonio.nombre}</h5>
+                                        <p class="hidden testimonio card-text mb-0 me-0">
+                                            ${testimonio.testimonioAdelanto}
+                                        </p>
+                                        <p
+                                            class="show nacionalidad card-text d-flex align-items-center justify-content-center">
+                                            ${testimonio.origen}<img
+                                                src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png"
+                                                alt="-"></p>
+                                    </div>
+                                    <div class="py-0 my-0 card-footer">
+                                        <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+                                        <a class="hidden my-0 py-0 "
+                                            href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar
+                                            leyendo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alumnocard placeholder">
+                            <div class="alumnoCard">
+                                <div class="card h-100">
+                                    <Container class="img-container d-flex justify-content-center">
+                                        <div class="p-relative w-50 img-container2">
+                                            <img src="menu-categories/testimonios/assets/images/testimonio/profile/Alejandro Zapata.png"
+                                                class="img-fluid" alt="...">
+                                            <img src="assets/images/testimonio/bandera/ARGENTINA.png"
+                                                class="flag hidden" alt="-">
+                                        </div>
+                                    </Container>
+                                    <div class="card-body mt-2 mb-0 py-0">
+                                        <h5 class="card-title">${testimonio.nombre}</h5>
+                                        <p class="hidden testimonio card-text mb-0 me-0">
+                                            ${testimonio.testimonioAdelanto}
+                                        </p>
+                                        <p
+                                            class="show nacionalidad card-text d-flex align-items-center justify-content-center">
+                                            ${testimonio.origen}<img
+                                                src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png"
+                                                alt="-"></p>
+                                    </div>
+                                    <div class="py-0 my-0 card-footer">
+                                        <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+                                        <a class="hidden my-0 py-0 "
+                                            href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar
+                                            leyendo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container col-10 desktop">
                         <div class="m-1 m-lg-5 containerTestimonios row d-flex justify-content-center">
                             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators" id="carouselIndicators">
@@ -973,10 +1273,11 @@
                 alcanzar tus metas, tienes que formarte en un lugar de excelencia, por eso somos tu mejor
                 opción.
             </h2>
-            <a href="menu-categories/contacto/"> <button class="btn btn-primary m-2 p-3 ms-0" type="submit">Quiero más
+            <a href="menu-categories/contacto/"> <button class="btn btn-primary m-0 m-md-2 p-md-3 ms-md-0"
+                    type="submit">Quiero más
                     información</button></a>
         </section>
-        <section class="footer">
+        <section class="footer sameWidth-3">
             <div class="container">
                 <div class="row">
                     <h1 class="mail pb-0">info@proflight.com.ar</h1>

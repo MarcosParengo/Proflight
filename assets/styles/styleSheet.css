@@ -964,14 +964,7 @@ fade {
 	transform: translate(50%, -50%);
 }
 
-.alumnos .card:hover .hidden {
-	opacity: 1;
-	height: auto;
-}
 
-.alumnos .card:hover .show {
-	display: none !important;
-}
 
 .alumnos .hidden {
 	opacity: 0;
@@ -1063,6 +1056,14 @@ fade {
 @media only screen and (min-width: 768px) {
 	.alumnoCard {
 		margin-top: 10%;
+	}
+	.alumnos .card:hover .hidden {
+		opacity: 1;
+		height: auto;
+	}
+	
+	.alumnos .card:hover .show {
+		display: none !important;
 	}
 }
 /* Large devices (laptops/desktops, 1050px and up) */
@@ -1482,19 +1483,128 @@ fade {
 	.programas-lineaDelTiempo .inside-circle .label .focus {
 		color: #35bbd7;
 	}
+	.programas {
+		min-height: 100vh;
+	}
 	.programas p.lead {
 		font-size: 15px;
 		line-height: 2rem;
 		padding-right: 0%;
 	}
-	.programas .childleft {
-		padding-right: 0%;
+	.programas .programasTitulo {
+		margin: 0;
+		padding: 0;
+		margin-top: 69px;
+		margin-bottom: 42px;
+		text-align: left;
+		font: normal normal 500 20px/32px Neue Haas Grotesk Display Pro;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
 	}
-	.programas .bd-placeholder-img {
-		height: 250px;
+	.programas .tabs {
+		min-height: 55vh;
 	}
-	.programas .more {
+	.programas .tabs .selector .item {
+		width: 49px;
+	}
+	.programas .tabs .selector .item .icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.programas .tabs .selector .item .icon img {
+		display: block;
+		height: 100%;
+		filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(100%) contrast(104%);
+		transition: .6s filter;
+	}
+	.programas .tabs .selector .item .icon.privado img {
+		height: auto;
+		width: 100%;
+	}
+	.programas .tabs .selector .item .icon.selected img {
+		filter: unset;
+	}
+	.programas .tabs .selector .item .progress {
+		margin-top: 7px;
+		background: #FFFFFF33 0% 0% no-repeat padding-box;
+		height: 3px;
+	}
+	.programas .tabs .selector .item .progress-bar {
+		background: #00b0ce 0% 0% no-repeat padding-box;
+		transition: .09s width;
+	}
+	.programas .tabs .content .content-tab {
 		padding-top: 20px;
+		display: none;
+	}
+	.programas .tabs .content .content-tab.active {
+		display: block;
+	}
+	.programas .tabs .content .content-tab .title {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 35px;
+		text-align: left;
+		font: normal normal normal 16px/32px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+	}
+	.programas .tabs .content .content-tab .number {
+		color: #00b0ce;
+	}
+	.programas .tabs .content .content-tab .control {
+		display: inline-flex;
+		align-items: center;
+		height: 100%;
+		cursor: pointer;
+	}
+	.programas .tabs .content .content-tab .control.next {
+		margin-left: 19px;
+	}
+	.programas .tabs .content .content-tab .control.previous {
+		margin-right: 8px;
+	}
+	.programas .tabs .content .content-tab .control .icon {
+		display: block;
+		height: 11px;
+	}
+	.programas .tabs .content .content-tab .text {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		font: normal normal 300 14px/25px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		text-shadow: 0px 3px 6px #00000029;
+		opacity: 1;
+	}
+	.programas .tabs .content .content-tab .highlight {
+		text-align: left;
+		font: italic normal 300 14px/25px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+
+	.programas .more {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		font: normal normal 300 14px/17px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.programas .more .btn-primary {
+		margin-top: 19px;
+		padding: 11px 17px 10px 18px;
+		text-align: center;
+		font: normal normal normal 15px/34px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
 	}
 	.flota .title {
 		margin: 0;
@@ -1631,7 +1741,7 @@ fade {
 		opacity: 1;
 	}
 	.tabs-row {
-		min-height: 60vh!important;
+		min-height: 60vh !important;
 	}
 	.tecnologia .tab-content {
 		padding: 0;
@@ -1661,7 +1771,7 @@ fade {
 	.tecnologia .tab-content .checkin {
 		width: 109px;
 		display: block;
-		margin-left:23px
+		margin-left: 23px;
 	}
 	.tecnologia .tab-content .app {
 		width: 123px;
@@ -1689,8 +1799,99 @@ fade {
 		text-align: start;
 		padding-left: 0;
 	}
+	.alumnos .title {
+		text-align: left;
+		font: normal normal 500 24px/38px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.alumnos .enfasis {
+		text-align: left;
+		font: normal normal 500 24px/38px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.alumnos .cardsContainer {
+		overflow-x: hidden;
+		position: relative;
+	}
+	.alumnos .alumnocard {
+		transition: all 1s;
+	}
+	.alumnos .alumnocard img {
+		width: 100%;
+		display: block;
+	}
+	.alumnos .alumnocard.placeholder {
+		pointer-events: none;
+		opacity: 0;
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+	.alumnos .alumnocard.center {
+		position: absolute;
+		right: 39px;
+		left: 39px;
+	}
+	.alumnos .alumnocard.left,
+	.alumnos .alumnocard.right {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		position: absolute;
+		opacity: 0.5;
+	}
+
+	.alumnos .alumnocard.right {
+		transform: translateX(100%) scale(0.9);
+		right: 39px;
+		left: 39px;
+	}
+	.alumnos .alumnocard.right.out {
+		transform: translateX(200%) scale(0.9);
+		right: 39px;
+		left: 39px;
+	}
+	.alumnos .alumnocard.left {
+		transform: translateX(-100%) scale(0.9);
+		right: 39px;
+		left: 39px;
+	}
+	.alumnos .alumnocard.left.out {
+		transform: translateX(-200%) scale(0.9);
+		right: 39px;
+		left: 39px;
+	}
+
 	.alumnoCard {
+		width:100%;
 		margin-top: 30%;
+	}
+	.masInformacion {
+		padding: 0 31px;
+	}
+	.masInformacion h2 {
+		padding-bottom: 32px;
+		margin: 0;
+		text-align: left;
+		font: normal normal 300 15px/28px Inter;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.masInformacion .btn-primary {
+		padding: 11px 15px;
+		text-align: center;
+		font: normal normal normal 14px/17px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+
+	.footer .mail {
+		padding-top: 101px;
 	}
 	.desktop {
 		display: none !important;
