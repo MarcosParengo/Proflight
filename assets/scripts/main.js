@@ -2,6 +2,18 @@ var obj = [];
 var carouselIndicators = $('#carouselIndicators');
 var flotaSelected = 1;
 var programaSelected = 1;
+var i = 0;
+var counterBack = setInterval('progressGrow()', 200);
+
+function toggleShowAlumnoCard(id){
+	let index = parseInt(id.split('-')[id.split('-').length-1]);
+	console.log(index)
+	$("#alumno-card-default-hidden-body-"+index).attr("style","opacity:1;height:auto")
+	$("#alumno-card-default-show-body-"+index).attr("style","display: none!important")
+	$("#alumno-card-default-hidden-footer-"+index).attr("style","opacity:1;height:auto")
+	$("#alumno-card-default-show-footer-"+index).attr("style","display: none!important")
+
+}
 
 function selectFlota(selector) {
 	const id = parseInt(selector.charAt(selector.length - 1));
@@ -22,10 +34,6 @@ function selectFlota(selector) {
 
 	flotaSelected = id;
 }
-
-var i = 0;
-
-var counterBack = setInterval('progressGrow()', 200);
 
 function progressGrow() {
 	i++;
@@ -75,25 +83,25 @@ let touchendX = 0;
 
 const sliderAlumnos = document.getElementById('sliderAlumnos');
 
-function handleGesture() {
+function handleGestureAlumnos() {
 	let id = $('.alumnocard.center').attr('id');
-	let centerElement = parseInt(id.charAt(id.length - 1))
+	let centerElement = parseInt(id.split('-')[id.split('-').length-1]);
 
-	if (touchendX < touchstartX && centerElement < 10) {
+	if (touchendX < touchstartX && centerElement < 12) {
 		$('#alumno-card-' + (centerElement - 1).toString()).attr('class', 'alumnocard left out');
 		$('#alumno-card-' + centerElement).attr('class', 'alumnocard left');
 		$('#alumno-card-' + (centerElement + 1).toString()).attr('class', 'alumnocard center');
-		$('#indicator').text(centerElement + 1);
 		$('#alumno-card-' + (centerElement + 2).toString()).attr('class', 'alumnocard right');
 		$('#alumno-card-' + (centerElement + 3).toString()).attr('class', 'alumnocard right out');
+		$('#indicator-alumnos').text(centerElement + 1);
 	}
 	if (touchendX > touchstartX && centerElement > 1) {
 		$('#alumno-card-' + (centerElement + 1).toString()).attr('class', 'alumnocard right out');
 		$('#alumno-card-' + centerElement).attr('class', 'alumnocard right');
-		$('#' + (centerElement - 1).toString()).attr('class', 'alumnocard center');
-		$('#indicator').text(centerElement - 1);
+		$('#alumno-card-' + (centerElement - 1).toString()).attr('class', 'alumnocard center');
 		$('#alumno-card-' + (centerElement - 2).toString()).attr('class', 'alumnocard left');
 		$('#alumno-card-' + (centerElement - 3).toString()).attr('class', 'alumnocard left out');
+		$('#indicator-alumnos').text(centerElement - 1);
 	}
 }
 
@@ -103,19 +111,17 @@ sliderAlumnos.addEventListener('touchstart', (e) => {
 
 sliderAlumnos.addEventListener('touchend', (e) => {
 	touchendX = e.changedTouches[0].screenX;
-	handleGesture();
+	handleGestureAlumnos();
 });
 
-function togglePosition(id) {
-	let clicked = parseInt(id.charAt(id.length - 1))
-	console.log(clicked)
-	//$('#indicator').text(clicked);
+function togglePositionAlumnos(id) {
+	let clicked = parseInt(id.split('-')[id.split('-').length-1]);
+	$('#indicator-alumnos').text(clicked);
 	const elementClicked = $(`#alumno-card-${clicked}`);
 	const rightOneClicked = $(`#alumno-card-${parseInt(clicked) + 1}`);
 	const rightTwoClicked = $(`#alumno-card-${parseInt(clicked) + 2}`);
 	const leftOneClicked = $(`#alumno-card-${parseInt(clicked) - 1}`);
 	const leftTwoClicked = $(`#alumno-card-${parseInt(clicked) - 2}`);
-
 	if (elementClicked.attr('class') === 'alumnocard right') {
 		elementClicked.attr('class', 'alumnocard center');
 		rightOneClicked.attr('class', 'alumnocard right');
@@ -146,8 +152,10 @@ $(document).ready(function() {
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	carouselIndicators = $('#carouselIndicators');
+
 	var bienvenidaTimeout;
 	var bienvenidaTimeout2;
+
 	$(window).bind('scroll', function() {
 		if (
 			$(this).scrollTop() > $('#bienvenida').offset().top &&
@@ -333,8 +341,57 @@ function fillContainerTestimonios(obj) {
         `;
 		}
 	});
-
 	containerTestimonios.html(string);
+
+	obj.forEach(function(testimonio, i) {
+		$("#sliderAlumnos").append(
+			`<div class="alumnocard ${i===0 ? "center" : i===1 ? "right" : "right out"}" id="alumno-card-${i+1}" onclick="togglePositionAlumnos(id)">
+			<div class="alumnoCard">
+				<div class="card h-100">
+					<Container class="img-container d-flex justify-content-center">
+						<div class="p-relative w-50 img-container2">
+							<img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
+							<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+						</div>
+					</Container>  
+					<div class="card-body mt-2 mb-0 py-0">
+						<h5 class="card-title">${testimonio.nombre}</h5>
+						<p id="alumno-card-default-hidden-body-${i}" class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
+						<p id="alumno-card-default-show-body-${i}" class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
+					</div>
+					<div class="py-0 my-0 card-footer">
+					<a id="alumno-card-default-show-footer-${i}"  class="show mt-0 py-0 mb-3 footerLink" id="verTestimonio-${i}" onclick="toggleShowAlumnoCard(id)">Ver testimonio</a>
+					<a id="alumno-card-default-hidden-footer-${i}"  class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar leyendo</a>
+					</div>
+				</div>
+			</div>       
+		</div>`
+		);
+	});
+	$("#sliderAlumnos").append(
+		`<div class="alumnocard placeholder">
+	<div class="alumnoCard">
+		<div class="card h-100">
+			<Container class="img-container d-flex justify-content-center">
+				<div class="p-relative w-50 img-container2">
+					<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0].nombre}.png" class="img-fluid" alt="...">
+					<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" class="flag hidden" alt="-">
+				</div>
+			</Container>  
+			<div class="card-body mt-2 mb-0 py-0">
+				<h5 class="card-title">${obj[0].nombre}</h5>
+				<p class="hidden testimonio card-text mb-0 me-0">${obj[0].testimonioAdelanto}</p>
+				<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj[0].origen}<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" alt="-"></p>
+			</div>
+			<div class="py-0 my-0 card-footer">
+			<a class="show mt-0 py-0 mb-3">Ver testimonio</a>
+			<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj[0].origen.toLowerCase()}&alumno=${obj[0].nombre}">continuar leyendo</a>
+			</div>
+		</div>
+	</div>       
+</div>`
+)
+	$("#alumnosTotal").text("/"+obj.length)
 }
 
 function indicators(obj) {

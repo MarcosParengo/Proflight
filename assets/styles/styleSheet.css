@@ -1800,6 +1800,8 @@ fade {
 		padding-left: 0;
 	}
 	.alumnos .title {
+		padding-top:69px;
+		padding-bottom:69px;
 		text-align: left;
 		font: normal normal 500 24px/38px Roboto;
 		letter-spacing: 0px;
@@ -1820,20 +1822,26 @@ fade {
 	.alumnos .alumnocard {
 		transition: all 1s;
 	}
-	.alumnos .alumnocard img {
-		width: 100%;
-		display: block;
+	/*
+	.alumnos .alumnocard.center .card:hover .hidden {
+		opacity: 1;
+		height: auto;
 	}
+	
+	.alumnos .alumnocard.center .card:hover .show {
+		display: none !important;
+	}
+	*/
 	.alumnos .alumnocard.placeholder {
 		pointer-events: none;
 		opacity: 0;
-		padding-left: 39px;
-		padding-right: 39px;
+		padding-left: 54px;
+		padding-right: 54px;
 	}
 	.alumnos .alumnocard.center {
 		position: absolute;
-		right: 39px;
-		left: 39px;
+		right: 54px;
+		left: 54px;
 	}
 	.alumnos .alumnocard.left,
 	.alumnos .alumnocard.right {
@@ -1846,28 +1854,44 @@ fade {
 
 	.alumnos .alumnocard.right {
 		transform: translateX(100%) scale(0.9);
-		right: 39px;
-		left: 39px;
+		right: 54px;
+		left: 54px;
 	}
 	.alumnos .alumnocard.right.out {
 		transform: translateX(200%) scale(0.9);
-		right: 39px;
-		left: 39px;
+		right: 54px;
+		left: 54px;
 	}
 	.alumnos .alumnocard.left {
 		transform: translateX(-100%) scale(0.9);
-		right: 39px;
-		left: 39px;
+		right: 54px;
+		left: 54px;
 	}
 	.alumnos .alumnocard.left.out {
 		transform: translateX(-200%) scale(0.9);
-		right: 39px;
-		left: 39px;
+		right: 54px;
+		left: 54px;
 	}
-
 	.alumnoCard {
 		width:100%;
 		margin-top: 30%;
+	}
+	.indicator.selected{
+		padding-top: 30px;
+		padding-right: 54px;
+		margin-bottom: 0;
+		text-align: right;
+		font: normal normal bold 20px/38px Inter;
+		letter-spacing: 1px;
+		color: #00b0ce;
+		opacity: 1;
+	}
+	.indicator .total {
+		text-align: left;
+		font: normal normal 300 16px/38px Inter;
+		letter-spacing: 0.8px;
+		color: #ffffff;
+		opacity: 0.7;
 	}
 	.masInformacion {
 		padding: 0 31px;
