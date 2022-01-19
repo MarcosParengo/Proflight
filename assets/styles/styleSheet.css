@@ -964,8 +964,6 @@ fade {
 	transform: translate(50%, -50%);
 }
 
-
-
 .alumnos .hidden {
 	opacity: 0;
 	height: 0;
@@ -1061,7 +1059,7 @@ fade {
 		opacity: 1;
 		height: auto;
 	}
-	
+
 	.alumnos .card:hover .show {
 		display: none !important;
 	}
@@ -1232,6 +1230,28 @@ fade {
 		background-image: url(../images/mobile/Fondo\ HOME.png);
 		background-size: 100% 100%;
 	}
+	.arrow{
+		position:absolute;
+		bottom:47px
+	}
+	.arrow .dotContainer{
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom:6px
+	}
+	.arrow .dot{
+		height:3px;
+		width:3px;
+		border-radius: 100%;
+		background: #fff;
+	}
+	.arrow .chevron img{
+		height: 9px;
+		display:block
+	}
+
 	.bienvenido .bienvenidaTitulo {
 		font: normal normal 500 32px/42px Roboto;
 		padding-bottom: 41px;
@@ -1800,8 +1820,8 @@ fade {
 		padding-left: 0;
 	}
 	.alumnos .title {
-		padding-top:69px;
-		padding-bottom:69px;
+		padding-top: 69px;
+		padding-bottom: 69px;
 		text-align: left;
 		font: normal normal 500 24px/38px Roboto;
 		letter-spacing: 0px;
@@ -1815,6 +1835,9 @@ fade {
 		color: #ffffff;
 		opacity: 1;
 	}
+	.alumnos .card-body {
+		min-height: 8em;
+	}
 	.alumnos .cardsContainer {
 		overflow-x: hidden;
 		position: relative;
@@ -1822,16 +1845,6 @@ fade {
 	.alumnos .alumnocard {
 		transition: all 1s;
 	}
-	/*
-	.alumnos .alumnocard.center .card:hover .hidden {
-		opacity: 1;
-		height: auto;
-	}
-	
-	.alumnos .alumnocard.center .card:hover .show {
-		display: none !important;
-	}
-	*/
 	.alumnos .alumnocard.placeholder {
 		pointer-events: none;
 		opacity: 0;
@@ -1873,10 +1886,10 @@ fade {
 		left: 54px;
 	}
 	.alumnoCard {
-		width:100%;
+		width: 100%;
 		margin-top: 30%;
 	}
-	.indicator.selected{
+	.indicator.selected {
 		padding-top: 30px;
 		padding-right: 54px;
 		margin-bottom: 0;
@@ -1892,6 +1905,126 @@ fade {
 		letter-spacing: 0.8px;
 		color: #ffffff;
 		opacity: 0.7;
+	}
+
+	.eventos .title {
+		margin: 112px 64px 40px 64px;
+		padding: 0;
+		text-align: left;
+		font: normal normal 500 24px/32px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+	}
+	.eventos .eventocard .flagContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-top: 26px;
+	}
+	.eventos .eventocard .flagContainer .image {
+		width: 73px;
+		height: 73px;
+		display: block;
+	}
+	.eventos .eventocard .title {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 37px;
+		margin-top: 10px;
+		text-align: center;
+		font: normal normal normal 16px/20px Inter;
+		letter-spacing: 0px;
+		color: #6b6b6b;
+		opacity: 1;
+	}
+	.eventos .eventocard .content {
+		text-align: center;
+		font: normal normal 300 14px/20px Inter;
+		letter-spacing: 0px;
+		color: #6b6b6b;
+		text-transform: capitalize;
+	}
+	.eventos .eventocard .content .emphasis {
+		color: #00b0ce;
+		text-transform: uppercase;
+	}
+	.eventos .eventocard .btn {
+		margin-top: 24px;
+		margin-bottom: 29px;
+		text-align: center;
+		font: normal normal normal 15px/17px Roboto;
+		letter-spacing: 0px;
+		color: #ffffff;
+		opacity: 1;
+		padding: 11px 27px;
+	}
+	.eventos .eventosContainer {
+		overflow-x: hidden;
+		position: relative;
+	}
+	.eventos .eventocard {
+		background: transparent linear-gradient(180deg, #8AB6F326 0%, #C9C9C926 68%, #EFEFEF26 90%, #AEBDE626 100%) 0%
+			0% no-repeat padding-box;
+		transition: all 1s;
+	}
+	.eventos .eventocard.placeholder {
+		pointer-events: none;
+		opacity: 0;
+		margin-left: 42px;
+		margin-right: 42px;
+	}
+	.eventos .eventocard.center {
+		position: absolute;
+		right: 42px;
+		left: 42px;
+	}
+	.eventos .eventocard.left,
+	.eventos .eventocard.right {
+		height: 100%;
+		position: absolute;
+		opacity: 0.5;
+	}
+
+	.eventos .eventocard.right {
+		transform: translateX(100%) scale(0.9);
+		right: 42px;
+		left: 42px;
+	}
+	.eventos .eventocard.right.out {
+		transform: translateX(200%) scale(0.9);
+		right: 42px;
+		left: 42px;
+	}
+	.eventos .eventocard.left {
+		transform: translateX(-100%) scale(0.9);
+		right: 42px;
+		left: 42px;
+	}
+	.eventos .eventocard.left.out {
+		transform: translateX(-200%) scale(0.9);
+		right: 42px;
+		left: 42px;
+	}
+	.eventos .indicatorsContainer {
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top:8px
+	}
+	.eventos .indicatorsContainer .indicator {
+		padding:0;
+		margin:0 3px;
+		width: 10px;
+		height: 10px;
+		background: #E8E8E87f 0% 0% no-repeat padding-box;
+		border-radius: 100%;
+		transition:0.5s all
+	}
+	.eventos .indicatorsContainer .indicator.selected {
+		background: #00b0ce 0% 0% no-repeat padding-box;
 	}
 	.masInformacion {
 		padding: 0 31px;

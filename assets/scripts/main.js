@@ -4,15 +4,16 @@ var flotaSelected = 1;
 var programaSelected = 1;
 var i = 0;
 var counterBack = setInterval('progressGrow()', 200);
+var maxEventos = 0;
+var maxAlumnos = 0;
 
-function toggleShowAlumnoCard(id){
-	let index = parseInt(id.split('-')[id.split('-').length-1]);
-	console.log(index)
-	$("#alumno-card-default-hidden-body-"+index).attr("style","opacity:1;height:auto")
-	$("#alumno-card-default-show-body-"+index).attr("style","display: none!important")
-	$("#alumno-card-default-hidden-footer-"+index).attr("style","opacity:1;height:auto")
-	$("#alumno-card-default-show-footer-"+index).attr("style","display: none!important")
-
+function toggleShowAlumnoCard(id) {
+	let index = parseInt(id.split('-')[id.split('-').length - 1]);
+	console.log(index);
+	$('#alumno-card-default-hidden-body-' + index).attr('style', 'opacity:1;height:auto');
+	$('#alumno-card-default-show-body-' + index).attr('style', 'display: none!important');
+	$('#alumno-card-default-hidden-footer-' + index).attr('style', 'opacity:1;height:auto');
+	$('#alumno-card-default-show-footer-' + index).attr('style', 'display: none!important');
 }
 
 function selectFlota(selector) {
@@ -85,9 +86,9 @@ const sliderAlumnos = document.getElementById('sliderAlumnos');
 
 function handleGestureAlumnos() {
 	let id = $('.alumnocard.center').attr('id');
-	let centerElement = parseInt(id.split('-')[id.split('-').length-1]);
+	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
 
-	if (touchendX < touchstartX && centerElement < 12) {
+	if (touchendX < touchstartX && centerElement < maxAlumnos) {
 		$('#alumno-card-' + (centerElement - 1).toString()).attr('class', 'alumnocard left out');
 		$('#alumno-card-' + centerElement).attr('class', 'alumnocard left');
 		$('#alumno-card-' + (centerElement + 1).toString()).attr('class', 'alumnocard center');
@@ -115,7 +116,7 @@ sliderAlumnos.addEventListener('touchend', (e) => {
 });
 
 function togglePositionAlumnos(id) {
-	let clicked = parseInt(id.split('-')[id.split('-').length-1]);
+	let clicked = parseInt(id.split('-')[id.split('-').length - 1]);
 	$('#indicator-alumnos').text(clicked);
 	const elementClicked = $(`#alumno-card-${clicked}`);
 	const rightOneClicked = $(`#alumno-card-${parseInt(clicked) + 1}`);
@@ -132,6 +133,75 @@ function togglePositionAlumnos(id) {
 		leftOneClicked.attr('class', 'alumnocard left');
 		rightOneClicked.attr('class', 'alumnocard right');
 		rightTwoClicked.attr('class', 'alumnocard right out');
+	}
+}
+
+const sliderEventos = document.getElementById('sliderEventos');
+
+function handleGestureEventos() {
+	let id = $('.eventocard.center').attr('id');
+	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
+
+	if (touchendX < touchstartX && centerElement < maxEventos) {
+		$('#indicator-evento-' + centerElement.toString()).toggleClass('selected');
+		$('#indicator-evento-' + (centerElement + 1).toString()).toggleClass('selected');
+		$('#evento-card-' + (centerElement - 1).toString()).attr('class', 'eventocard left out');
+		$('#evento-card-' + centerElement).attr('class', 'eventocard left');
+		$('#evento-card-' + (centerElement + 1).toString()).attr('class', 'eventocard center');
+		$('#evento-card-' + (centerElement + 2).toString()).attr('class', 'eventocard right');
+		$('#evento-card-' + (centerElement + 3).toString()).attr('class', 'eventocard right out');
+		$('#indicator-eventos').text(centerElement + 1);
+	}
+	if (touchendX > touchstartX && centerElement > 1) {
+		$('#indicator-evento-' + centerElement.toString()).toggleClass('selected');
+		$('#indicator-evento-' + (centerElement - 1).toString()).toggleClass('selected');
+		$('#evento-card-' + (centerElement + 1).toString()).attr('class', 'eventocard right out');
+		$('#evento-card-' + centerElement).attr('class', 'eventocard right');
+		$('#evento-card-' + (centerElement - 1).toString()).attr('class', 'eventocard center');
+		$('#evento-card-' + (centerElement - 2).toString()).attr('class', 'eventocard left');
+		$('#evento-card-' + (centerElement - 3).toString()).attr('class', 'eventocard left out');
+		$('#indicator-eventos').text(centerElement - 1);
+	}
+}
+
+sliderEventos.addEventListener('touchstart', (e) => {
+	console.log('si');
+	touchstartX = e.changedTouches[0].screenX;
+});
+
+sliderEventos.addEventListener('touchend', (e) => {
+	touchendX = e.changedTouches[0].screenX;
+	handleGestureEventos();
+});
+
+function togglePositionEventos(id) {
+	let clicked = parseInt(id.split('-')[id.split('-').length - 1]);
+
+	$('#indicator-eventos').text(clicked);
+	const elementClicked = $(`#evento-card-${clicked}`);
+	const rightOneClicked = $(`#evento-card-${parseInt(clicked) + 1}`);
+	const rightTwoClicked = $(`#evento-card-${parseInt(clicked) + 2}`);
+	const leftOneClicked = $(`#evento-card-${parseInt(clicked) - 1}`);
+	const leftTwoClicked = $(`#evento-card-${parseInt(clicked) - 2}`);
+	const indicatorElementClicked = $(`#indicator-evento-${clicked}`);
+	const indicatorRightOneClicked = $(`#indicator-evento-${clicked + 1}`);
+	const indicatorLeftOneClicked = $(`#indicator-evento-${clicked - 1}`);
+
+	indicatorElementClicked.toggleClass('selected');
+	if (elementClicked.attr('class') === 'eventocard right') {
+		indicatorLeftOneClicked.toggleClass('selected');
+
+		elementClicked.attr('class', 'eventocard center');
+		rightOneClicked.attr('class', 'eventocard right');
+		leftOneClicked.attr('class', 'eventocard left');
+		leftTwoClicked.attr('class', 'eventocard left out');
+	} else if (elementClicked.attr('class') === 'eventocard left') {
+		indicatorRightOneClicked.toggleClass('selected');
+
+		elementClicked.attr('class', 'eventocard center');
+		leftOneClicked.attr('class', 'eventocard left');
+		rightOneClicked.attr('class', 'eventocard right');
+		rightTwoClicked.attr('class', 'eventocard right out');
 	}
 }
 
@@ -158,7 +228,7 @@ $(document).ready(function() {
 
 	$(window).bind('scroll', function() {
 		if (
-			$(this).scrollTop() > $('#bienvenida').offset().top &&
+			$(this).scrollTop() > $('#bienvenida').offset().top-10 &&
 			!fired &&
 			$('#bienvenida').height() + $('#bienvenida').offset().top > $(this).scrollTop()
 		) {
@@ -343,9 +413,11 @@ function fillContainerTestimonios(obj) {
 	});
 	containerTestimonios.html(string);
 
+	maxAlumnos = obj.length;
 	obj.forEach(function(testimonio, i) {
-		$("#sliderAlumnos").append(
-			`<div class="alumnocard ${i===0 ? "center" : i===1 ? "right" : "right out"}" id="alumno-card-${i+1}" onclick="togglePositionAlumnos(id)">
+		$('#sliderAlumnos').append(
+			`<div class="alumnocard ${i === 0 ? 'center' : i === 1 ? 'right' : 'right out'}" id="alumno-card-${i +
+				1}" onclick="togglePositionAlumnos(id)">
 			<div class="alumnoCard">
 				<div class="card h-100">
 					<Container class="img-container d-flex justify-content-center">
@@ -368,30 +440,33 @@ function fillContainerTestimonios(obj) {
 		</div>`
 		);
 	});
-	$("#sliderAlumnos").append(
+	$('#sliderAlumnos').append(
 		`<div class="alumnocard placeholder">
 	<div class="alumnoCard">
 		<div class="card h-100">
 			<Container class="img-container d-flex justify-content-center">
 				<div class="p-relative w-50 img-container2">
-					<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0].nombre}.png" class="img-fluid" alt="...">
+					<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0]
+						.nombre}.png" class="img-fluid" alt="...">
 					<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" class="flag hidden" alt="-">
 				</div>
 			</Container>  
 			<div class="card-body mt-2 mb-0 py-0">
 				<h5 class="card-title">${obj[0].nombre}</h5>
 				<p class="hidden testimonio card-text mb-0 me-0">${obj[0].testimonioAdelanto}</p>
-				<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj[0].origen}<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" alt="-"></p>
+				<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj[0]
+					.origen}<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" alt="-"></p>
 			</div>
 			<div class="py-0 my-0 card-footer">
 			<a class="show mt-0 py-0 mb-3">Ver testimonio</a>
-			<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj[0].origen.toLowerCase()}&alumno=${obj[0].nombre}">continuar leyendo</a>
+			<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj[0].origen.toLowerCase()}&alumno=${obj[0]
+			.nombre}">continuar leyendo</a>
 			</div>
 		</div>
 	</div>       
 </div>`
-)
-	$("#alumnosTotal").text("/"+obj.length)
+	);
+	$('#alumnosTotal').text('/' + obj.length);
 }
 
 function indicators(obj) {
@@ -423,7 +498,7 @@ function fillContainerEventos(obj) {
                             <p class="ampliado fecha card-text mb-0">${obj.horario}</p>
                             <p class="ampliado card-text mb-0">${obj.ciudad}, ${obj.origen}</p>
                             <p class="ampliado card-text mt-4 mb-0">${obj.descripcion}</p>
-                            <button class="btn btn-primary px-4 py-2 mx-auto m-2 mt-auto" type="submit">Inscribirse</button>
+                            <a class="btn btn-primary px-4 py-2 mx-auto m-2 mt-auto" href="menu-categories/eventos/?pais=${obj.origen.toLowerCase()}" >Inscribirse</a>
                         </div>
                     </div>
                     <div class="show">
@@ -436,4 +511,57 @@ function fillContainerEventos(obj) {
         `);
 		}
 	});
+
+	maxEventos = obj.length;
+
+	obj.forEach(function(evento, i) {
+		$('#sliderEventos').append(
+			`
+			<div id="evento-card-${i + 1}" class="eventocard ${i === 0
+				? 'center'
+				: i === 1 ? 'right' : 'right out'}" onclick="togglePositionEventos(id)">
+				<div class="flagContainer">
+					<img class="image" alt=""
+					src="menu-categories/eventos/assets/images/evento/bandera/${evento.origen.toUpperCase()}.png" >
+				</div>
+				<h1 class="title">
+					${evento.nombre}
+				</h1>
+				<p class="content">
+					<span class="emphasis">
+						${evento.origen}, ${evento.mes.substring(0, 3)} ${evento.año}
+					</span>
+					<br>${evento.fecha}<br>${evento.inicio}HS ${evento.zonaHoraria}<br>${evento.ciudad}, ${evento.origen.toLowerCase()}
+				</p>
+				<div class="d-flex justify-content-center">
+					<a class="btn btn-primary" type="submit" href="menu-categories/eventos/?pais=${evento.origen.toLowerCase()}">Inscribirse</a>
+				</div>                            
+			</div>
+			`
+		);
+
+		$('#indicatorEventosMobile').append(`
+		<div id="indicator-evento-${i + 1}" class="indicator ${i === 0 ? 'selected' : ''}"></div>
+		`);
+	});
+	$('#sliderEventos').append(
+		`<div id="evento-card-${i + 1}" class="eventocard placeholder" onclick="togglePositionEventos(id)">
+		<div class="flagContainer">
+			<img class="image" alt=""
+			src="menu-categories/eventos/assets/images/evento/bandera/${obj[0].origen.toUpperCase()}.png" >
+		</div>
+		<h1 class="title">
+			${obj[0].descripcion}
+		</h1>
+		<p class="content">
+			<span class="emphasis">
+				PERÚ, DIC 2021
+			</span>
+			<br>1 DIC 2021<br>17:30HS GMT-5<br>Lima, Perú
+		</p>
+		<div class="d-flex justify-content-center">
+			<button class="btn btn-primary" type="submit">Inscribirse</button>
+		</div>                            
+	</div>`
+	);
 }
