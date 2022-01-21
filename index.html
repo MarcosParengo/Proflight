@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -168,9 +169,10 @@
                         <div id="bienvenida"
                             class="childleft col-12 col-lg-10 h-100vh d-flex align-items-center align-items-md-start overflow-hidden">
                             <div id="BienvenidaFirstSection" class="section active">
-                                <h1 id="home" class="bienvenidaTitulo">¡Bienvenidos a ProFlight!</h1>
-                                <p class="lead mb-0">Somos una institución orientada a la formación de pilotos privados
-                                    y
+                                <h1 id="home" class="bienvenidaTitulo" data-aos="fade-right">¡Bienvenidos a ProFlight!
+                                </h1>
+                                <p class="lead mb-0" data-aos="fade-left">
+                                    Somos una institución orientada a la formación de pilotos privados y
                                     comerciales capacitados para aportar al desarrollo futuro de la aeronáutica a nivel
                                     mundial.
                                     <br class="desktop">Con pilares en la exigencia, integralidad y desarrollo
@@ -178,7 +180,7 @@
                                     hemos transgredido la educación convencional para enfocarnos en una enseñanza de
                                     estandares superiores.
                                 </p>
-                                <h2 class="footer">El mundo avanza, no te quedes atrás.</h2>
+                                <h2 class="footer" data-aos="fade-left">El mundo avanza, no te quedes atrás.</h2>
                             </div>
                             <div id="BienvenidaSecondSection" class="mobile section inactive">
                                 <div class="d-flex justify-content-center w-100">
@@ -258,8 +260,9 @@
                     </div>
                     <div class="p-relative fluid d-flex align-items-center h-100vh sameWidth desktop">
                         <div class="childleft col-12 col-lg-10">
-                            <h1 class="cómopilotoTitulo">¿Cómo me convierto en piloto?</h1>
-                            <p class="lead comoPiloto mb-0">Para convertirte en piloto hay varias etapas y distintas
+                            <h1 class="cómopilotoTitulo" data-aos="fade-right">¿Cómo me convierto en piloto?</h1>
+                            <p class="lead comoPiloto mb-0" data-aos="fade-left">Para convertirte en piloto hay varias
+                                etapas y distintas
                                 habilitaciones.
                                 <br> Tu eliges que tan lejos ir.<br> Si tu objetivo es solo aprender a volar, con la
                                 licencia de PPA (Piloto privado de avión) es suficiente. Pero si tu proyectas ingresar a
@@ -267,7 +270,7 @@
                                 Comercial.
                                 <br>En esta línea de tiempo te explicamos cronológicamente como se obtienen.
                             </p>
-                            <div class="ps-3">
+                            <div class="ps-3" data-aos="fade-up">
                                 <ul class="timeline">
                                     <li data-year="1" data-text="piloto privado">
                                         <div class="d-flex align-items-center"><span>1</span></div>
@@ -301,8 +304,9 @@
             <div class=" parent container-fluid px-0 my-5 pt-0 mt-0">
                 <div class="row w-100 mx-0  pb-0 pe-lg-0 pt-lg-5 sameWidth desktop">
                     <div class="px-0 col-12">
-                        <h1 class="programasTitulo pb-0 pb-md-4">Programas</h1>
-                        <div id="carouselProgramas" class="carousel slide pb-5" data-bs-ride="carousel">
+                        <h1 class="programasTitulo pb-0 pb-md-4" data-aos="fade-right">Programas</h1>
+                        <div id="carouselProgramas" interval="false" class="carousel slide pb-5" data-bs-ride="carousel"
+                            data-aos="fade-left">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg"
@@ -390,26 +394,28 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="sliderButton p-0 mt-2 me-3" type="button" data-bs-target="#carouselProgramas"
-                            data-bs-slide="prev">
-                            <div class="contentContainer d-flex align-items-center justify-content-center">
-                                <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
-                            </div>
-                        </button>
-                        <button class="sliderButton p-0 mt-2" type="button" data-bs-target="#carouselProgramas"
-                            data-bs-slide="next">
-                            <div class="contentContainer d-flex align-items-center justify-content-center">
-                                <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
-                            </div>
-                        </button>
-                        <p class="more">Si quieres saber más acerca de cada plan
-                            <br class="mobile">
-                            <a href="menu-categories/programas/">
-                                <button class="btn btn-primary m-md-2 px-md-4 py-md-2" type="submit">
-                                    Haz click aquí
-                                </button>
-                            </a>
-                        </p>
+                        <div div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <button class="sliderButton p-0 mt-2 me-3" type="button" data-bs-target="#carouselProgramas"
+                                data-bs-slide="prev">
+                                <div class="contentContainer d-flex align-items-center justify-content-center">
+                                    <span class="buttonContent carousel-control-prev-icon" aria-hidden="true"></span>
+                                </div>
+                            </button>
+                            <button class="sliderButton p-0 mt-2" type="button" data-bs-target="#carouselProgramas"
+                                data-bs-slide="next">
+                                <div class="contentContainer d-flex align-items-center justify-content-center">
+                                    <span class="buttonContent carousel-control-next-icon" aria-hidden="true"></span>
+                                </div>
+                            </button>
+                            <p class="more">Si quieres saber más acerca de cada plan
+                                <br class="mobile">
+                                <a href="menu-categories/programas/">
+                                    <button class="btn btn-primary m-md-2 px-md-4 py-md-2" type="submit">
+                                        Haz click aquí
+                                    </button>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row w-100 mx-0  pb-0 pe-lg-0 pt-lg-5 sameWidth-3 mobile">
@@ -643,14 +649,16 @@
             <div class="parent container-fluid my-5 pt-0 mt-0 desktop">
                 <div class="row p-0 pb-0 pe-lg-0 pt-lg-5">
                     <div class="sameWidth col-md-12 col-lg-9">
-                        <h1 class="flotaTitulo pb-3">Vuela la mejor flota del país</h1>
-                        <p class="lead mb-0">Estudia en la academia con la flota más moderna y sofisticada. Contamos con
+                        <h1 class="flotaTitulo pb-3" data-aos="fade-right">Vuela la mejor flota del país</h1>
+                        <p class="lead mb-0" data-aos="fade-left">Estudia en la academia con la flota más moderna y
+                            sofisticada. Contamos con
                             11 aeronaves, equipadas con GPS integrado con pantallas Garmin, doble radio, headset Bose,
                             rastreo satelital, paneles de fibra de carbono.
                         </p>
                     </div>
                 </div>
-                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="galleryCarousel" interval="false" class="carousel slide" data-bs-ride="carousel"
+                    data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="item left">
@@ -731,9 +739,14 @@
                         </div>
                     </div>
                 </div>
-                <p class="more pt-0 mt-0">Si quieres saber mas acerca de nuestra flota <a
-                        href="menu-categories/flota/"><button class="btn btn-primary ms-3 px-4 py-2" type="submit">Haz
-                            click aquí</button></p></a>
+                <p class="more pt-0 mt-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    Si quieres saber mas acerca de nuestra flota
+                    <a href="menu-categories/flota/">
+                        <button class="btn btn-primary ms-3 px-4 py-2" type="submit">
+                            Haz click aquí
+                        </button>
+                    </a>
+                </p>
             </div>
             <div class="container-fluid px-0 mobile">
                 <div class="row w-100 mx-0">
@@ -825,15 +838,16 @@
             </div>
         </section>
         <section class="p-relative tecnologia">
-            <h1 class="mb-3 sameWidth sameWidth-3 title">Tecnología</h1>
+            <h1 class="mb-3 sameWidth sameWidth-3 title" div data-aos="fade-right">Tecnología</h1>
             <p class="paragraph sameWidth-3 mobile">
                 Buscamos la profesionalización de nuestros alumnos mediante sistemas íntegramente
                 digitalizados, lo que nos posiciona como la academia con la tecnología más avanzada de Latinoamérica.
             </p>
             <div class="container p-0 p-sm-0 p-md-5">
-                <div class="row w-100 mx-0 h-100vh tabs-row ">
+                <div class="row w-100 mx-0 h-100vh tabs-row">
                     <nav class="sameWidth-3">
-                        <div class="nav nav-tabs d-flex justify-content-between" id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs d-flex justify-content-sm-between justify-content-md-center"
+                            id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-v1-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-v1" type="button" role="tab" aria-controls="nav-home"
                                 aria-selected="true">
@@ -899,13 +913,13 @@
                             aria-labelledby="nav-home-tab">
                             <div class="container col-xxl-10 px-4 py-5 desktop">
                                 <div class="row flex-lg-row-reverse align-items-center justify-content-end g-5">
-                                    <div
-                                        class="mt-0 col-10 col-sm-8 col-lg-6 pe-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
-                                        <img src="assets/images/nav&tab/insideTab/v1.png"
+                                    <div data-aos="fade-left"
+                                        class="slideLeft mt-0 col-10 col-sm-8 col-lg-6 pe-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                                        <img alt="" src="assets/images/nav&tab/insideTab/v1.png"
                                             class="d-block mx-lg-1 pl-0 img-fluid" alt="Sistema V1" width="700"
                                             height="500" loading="lazy">
                                     </div>
-                                    <div class="col-lg-auto pt-0 mt-0">
+                                    <div data-aos="fade-right" class="slideRight col-lg-auto pt-0 mt-0">
                                         <h1 class="titulo display-4 p-0 fw-light pb-0 mb-3"><span class="texto">Sistema
                                                 V1</span><span class="number">01.</span></h1>
                                         <p class="lead">
@@ -945,11 +959,11 @@
                             <div class="container col-xxl-10 px-4 py-5 desktop">
                                 <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5">
                                     <div
-                                        class="mt-0 col-md-6 col-lg-3 me-5 d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                                        class="slideLeft mt-0 col-md-6 col-lg-3 me-5 d-none d-xs-none d-sm-none d-md-none d-lg-block">
                                         <img alt="" src="assets\images\nav&tab\insideTab\checkIn.png"
                                             class="d-block mx-lg-1 img-fluid" alt="Check In" loading="lazy">
                                     </div>
-                                    <div class="col-lg-auto pt-0 mt-0">
+                                    <div data-aos="fade-right" class="slideRight col-lg-auto pt-0 mt-0">
                                         <h1 class="titulo display-4 fw-light p-0 pb-0 mb-3"><span class="texto">Check
                                                 In</span><span class="number">02.</span></h1>
                                         <p class="lead pt-3 lh-2">
@@ -988,13 +1002,13 @@
                         <div class="tab-pane fade" id="nav-modoAerop" role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="container col-xxl-10 px-4 py-5 desktop">
                                 <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5 ">
-                                    <div
-                                        class="mt-0 col-md-6 col-lg-6 me-0 pe-0 ps-0 mt-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                                    <div data-aos="fade-left"
+                                        class="slideLeft mt-0 col-md-6 col-lg-6 me-0 pe-0 ps-0 mt-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
                                         <img alt="" src="assets\images\nav&tab\insideTab\modoAerop.png"
                                             class="d-block mx-lg-1 img-fluid" height="100px" alt="Modo Aereopuerto"
                                             loading="lazy">
                                     </div>
-                                    <div class="col-lg-auto pt-0 mt-0">
+                                    <div data-aos="fade-right" class="slideRight col-lg-auto pt-0 mt-0">
                                         <h1 class="titulo display-4 fw-light p-0 pb-0 mb-3"><span class="texto">Pantalla
                                                 Modo Aeropuerto</span><span class="number">03.</span></h1>
                                         <p class="lead pt-3 lh-2">
@@ -1030,12 +1044,12 @@
                         <div class="tab-pane fade" id="nav-app" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <div class="container col-xxl-10 px-4 py-5 desktop">
                                 <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5">
-                                    <div
-                                        class="mt-0 col-md-6 col-lg-5 me-2 my-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                                    <div data-aos="fade-left"
+                                        class="slideLeft mt-0 col-md-6 col-lg-5 me-2 my-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
                                         <img alt="" src="assets\images\nav&tab\insideTab\app.png"
                                             class="d-block mx-lg-1 img-fluid" alt="Check In" loading="lazy">
                                     </div>
-                                    <div class="col-lg-auto pt-0 mt-0">
+                                    <div data-aos="fade-right" class="slideRight col-lg-auto pt-0 mt-0">
                                         <h1 class="titulo display-4 fw-light p-0 pb-0 mb-3"><span
                                                 class="texto">Aplicación</span><span class="number">04.</span></h1>
                                         <p class="lead pt-3 lh-2">
@@ -1073,13 +1087,13 @@
                         <div class="tab-pane fade" id="nav-padres" role="tabpanel" aria-labelledby="nav-contact-tab">
                             <div class="container col-xxl-10 px-4 py-5 desktop">
                                 <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5">
-                                    <div
-                                        class="mt-0 col-md-6 col-lg-6 me-0 pe-0 ps-0 mt-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
+                                    <div data-aos="fade-left"
+                                        class="slideLeft mt-0 col-md-6 col-lg-6 me-0 pe-0 ps-0 mt-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">
                                         <img alt="" src="assets\images\nav&tab\insideTab\padres.png"
                                             class="d-block mx-lg-1 img-fluid" height="100px" alt="Modo Aereopuerto"
                                             loading="lazy">
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div data-aos="fade-right" class="slideRight col-lg-6">
                                         <h1 class="titulo display-4 fw-light p-0 pb-0 mb-3"><span
                                                 class="texto">Padres</span><span class="number">05.</span></h1>
                                         <p class="lead pt-3">
@@ -1114,7 +1128,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                 <h1 class="text">Tecnología</h1>
@@ -1123,7 +1136,7 @@
         <section class="alumnos">
             <div class="container-fluid px-0">
                 <div class="row w-100 mx-0">
-                    <h1 class="title sameWidth">
+                    <h1 data-aos="fade-right" class="title sameWidth">
                         <span>Nuestros alumnos <br class="mobile"> nos </span>
                         <span class="enfasis">recomiendan</span>
                     </h1>
@@ -1134,9 +1147,10 @@
                         <span id="indicator-alumnos">1</span>
                         <span id="alumnosTotal" class="total">/12</span>
                     </h2>
-                    <div class="container col-10 desktop">
+                    <div div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"
+                        class="container col-10 desktop">
                         <div class="m-1 m-lg-5 containerTestimonios row d-flex justify-content-center">
-                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div id="myCarousel" interval="false" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators" id="carouselIndicators">
 
                                 </div>
@@ -1152,8 +1166,8 @@
         <section class="eventos">
             <div class="container-fluid desktop">
                 <div class="row p-relative">
-                    <h1 class="title sameWidth">Próximos eventos</h1>
-                    <div class="container col-10">
+                    <h1 data-aos="fade-right" class="title sameWidth">Próximos eventos</h1>
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" class="container col-10">
                         <div class="row m-1 m-lg-5 d-flex justify-content-center" id="containerEventos">
 
                         </div>
@@ -1178,7 +1192,7 @@
                 </div>
             </div>
         </section>
-        <section class="masInformacion">
+        <section div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class=" masInformacion">
             <h2>Si has llegado hasta aquí es porque buscas introducirte en el mundo de la aviación. Para
                 alcanzar tus metas, tienes que formarte en un lugar de excelencia, por eso somos tu mejor
                 opción.
@@ -1235,6 +1249,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/odometer.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -463,11 +463,8 @@ ul.social > li > a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-	.mobile {
-		display: block;
-	}
 	.desktop {
-		display: none !important;
+		display: none!important;
 	}
 	.margin {
 		margin-left: 37px;
@@ -660,7 +657,7 @@ ul.social > li > a:hover {
 		text-align: start;
 	}
 	.mobile {
-		display: none;
+		display: none!important;
 	}
 	.footer {
 		width: 90%;

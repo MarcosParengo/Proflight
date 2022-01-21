@@ -35,7 +35,7 @@ body p {
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-	background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/assets/images/background/pf%20background%20contacto.png?raw=true);
+	background-image: url(../images/background/pf\ background\ contacto.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	overflow-x: hidden;

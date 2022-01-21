@@ -7,7 +7,6 @@
 " />
     <title>¿Por Que elegirnos? | ProFlight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
-    <!-- <link rel="stylesheet" href="./assets/styles/grid.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -16,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body style="background-color:#002e5d">
@@ -130,19 +129,23 @@
         <div class="container-fluid px-0">
             <div class="fullPage row d-flex align-items-center justify-content-center mx-0 px-0">
                 <div class="sameWidth">
-                    <h1 class="title">¿Por qué elegirnos?</h1>
-                    <p class="paragraph">
-                        La inversión en sistemas íntegramente digitalizados es lo que nos distingue de cualquier otra
-                        academia del mundo, buscamos la profesionalización desde los primeros pasos de los alumnos de
-                        una manera metódica, pero también didáctica.
-                    </p>
-                    <a class="desktop d-inline-block" href="#tabs" title="">
-                        <div class="button d-flex justify-content-center align-items-center">
-                            <span class="icon fas fa-chevron-down">
-                            </span>
-                        </div>
-                    </a>
-                    <span class="como">Te enseñamos cómo<span class="mobile">:</span></span>
+                    <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="title">
+                        ¿Por qué elegirnos?
+                    </h1>
+                    <div data-aos="fade-right">
+                        <p class="paragraph">
+                            La inversión en sistemas íntegramente digitalizados es lo que nos distingue de cualquier
+                            otra academia del mundo, buscamos la profesionalización desde los primeros pasos de los
+                            alumnos de una manera metódica, pero también didáctica.
+                        </p>
+                        <a class="desktop d-inline-block" href="#tabs" title="">
+                            <div class="button d-flex justify-content-center align-items-center">
+                                <span class="icon fas fa-chevron-down">
+                                </span>
+                            </div>
+                        </a>
+                        <span class="como">Te enseñamos cómo<span class="mobile">:</span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,17 +207,19 @@
                                 <div class="container">
                                     <div class="row flex-lg-row d-flex justify-content-between g-5 py-5">
                                         <div class="col-12 col-md-12 col-lg-auto col-xl-auto ps-0 pe-0 pe-md-0 pe-xl-5">
-                                            <h1 class="titulo"><span class="texto">Volar en Argentina</span><span
-                                                    class="numero">01.</span>
+                                            <h1 class="titulo" data-aos="fade-right">
+                                                <span class="texto">Volar en Argentina</span>
+                                                <span class="numero">01.</span>
                                             </h1>
-                                            <h2 class="content">Es el segundo país más extenso de Sudamérica, y uno de
+                                            <h2 class="content" data-aos="fade-right" data-aos-delay="100">
+                                                Es el segundo país más extenso de Sudamérica, y uno de
                                                 los territorios con más aeropuertos de la región (1138). Aquí podrás
                                                 conocer las Cataratas del Iguazú: una de las 7 maravillas del mundo.
                                                 También recorrerás glaciares, montañas, desiertos, ríos y mar. Volar en
                                                 Argentina es una experiencia inolvidable; ven a disfrutarla con
                                                 nosotros.</h2>
                                         </div>
-                                        <div class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
+                                        <div data-aos="fade-left" class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
                                             <img class="d-block w-100"
                                                 src="./assets/images/components/tabs/TabImagen/mecanicoimg.png" alt="">
                                         </div>
@@ -226,14 +231,19 @@
                                 <div class="container">
                                     <div class="row flex-lg-row d-flex justify-content-between g-5 py-5">
                                         <div class="col-12 col-md-12 col-lg-auto ps-0 pe-0 pe-md-0 pe-xl-5">
-                                            <h1 class="titulo"><span class="texto">Diversidad de flota</span><span
-                                                    class="numero">02.</span></h1>
-                                            <h2 class="content">No realizaras todas tus horas en un solo tipo de
+                                            <h1 class="titulo" data-aos="fade-right">
+                                                <span class="texto">
+                                                    Diversidad de flota
+                                                </span>
+                                                <span class="numero">02.</span>
+                                            </h1>
+                                            <h2 class="content" data-aos="fade-right" data-aos-delay="100">
+                                                No realizaras todas tus horas en un solo tipo de
                                                 aeronave, experimentaras vuelos pesados, livianos, ala baja, ala alta,
                                                 aviones monomotor y bimotor. Lo cual te preparará para adaptarte a
                                                 cualquier tipo de avión.</h2>
                                         </div>
-                                        <div class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
+                                        <div data-aos="fade-left" class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
                                             <img class="d-block w-100"
                                                 src="./assets/images/components/tabs/TabImagen/Grupo 7112.png" alt="">
                                         </div>
@@ -245,17 +255,22 @@
                                 <div class="container">
                                     <div class="row flex-lg-row d-flex justify-content-between g-5 py-5">
                                         <div class="col-12 col-md-12 col-lg-auto ps-0 pe-0 pe-md-0 pe-xl-5">
-                                            <h1 class="titulo"><span class="texto">Plan académico y</br> material de
-                                                    estudio
-                                                    propio</span><span class="numero">03.</span></h1>
-                                            <h2 class="content">Los alumnos tendrán una alta carga teórica para estudiar
+                                            <h1 class="titulo" data-aos="fade-right">
+                                                <span class="texto">
+                                                    Plan académico y</br> material de
+                                                    estudio propio
+                                                </span>
+                                                <span class="numero">03.</span>
+                                            </h1>
+                                            <h2 class="content" data-aos="fade-right" data-aos-delay="100">
+                                                Los alumnos tendrán una alta carga teórica para estudiar
                                                 y rendir. Aunque en Argentina no es obligatoria la teoría, para nosotros
                                                 es uno de los puntos mas importantes de la carrera, el piloto debe estar
                                                 muy bien instruido tanto en conocimientos propios de la aeronave como en
                                                 conocimientos generales relacionados. Toda la bibliografía es de autoría
                                                 propia.</h2>
                                         </div>
-                                        <div class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
+                                        <div data-aos="fade-left" class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
                                             <img class="d-block w-100"
                                                 src="./assets/images/components/tabs/TabImagen/material de estudio.png"
                                                 alt="">
@@ -268,16 +283,17 @@
                                 <div class="container">
                                     <div class="row flex-lg-row d-flex justify-content-between g-5 py-5">
                                         <div class="col-12 col-md-12 col-lg-auto ps-0 pe-0 pe-md-0 pe-xl-5">
-                                            <h1 class="titulo"><span class="texto">Tecnología</span><span
-                                                    class="numero">04.</span>
+                                            <h1 class="titulo" data-aos="fade-right">
+                                                <span class="texto">Tecnología</span>
+                                                <span class="numero">04.</span>
                                             </h1>
-                                            <h2 class="content">
+                                            <h2 class="content" data-aos="fade-right" data-aos-delay="100">
                                                 Cada avión de nuestra flota se encuentra equipado con lo ultimo en
                                                 pantallas de navegación garmin. Los alumnos aprenderán a leer
                                                 instrumentos analógicos y pantallas.
                                             </h2>
                                         </div>
-                                        <div class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
+                                        <div data-aos="fade-left" class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
                                             <img class="d-block w-100"
                                                 src="./assets/images/components/tabs/TabImagen/app+web.png" alt="">
                                         </div>
@@ -290,17 +306,18 @@
                                 <div class="container">
                                     <div class="row flex-lg-row d-flex justify-content-between g-5 py-5">
                                         <div class="col-12 col-md-12 col-lg-auto ps-0 pe-0 pe-md-0 pe-xl-5">
-                                            <h1 class="titulo"><span class="texto">Pro experience</span><span
-                                                    class="numero">04.</span>
+                                            <h1 class="titulo" data-aos="fade-right">
+                                                <span class="texto">Pro experience</span>
+                                                <span class="numero">04.</span>
                                             </h1>
-                                            <h2 class="content">
+                                            <h2 class="content" data-aos="fade-right" data-aos-delay="100">
                                                 ProXperience es un programa en el cual mostramos que nuestro foco son
                                                 los alumnos. Proyectos, tecnología, salidas recreativas, todo gira en
                                                 torno de dar la mejor experiencia de estudio en Argentina a nuestros
                                                 estudiantes.
                                             </h2>
                                         </div>
-                                        <div class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
+                                        <div data-aos="fade-left" class="col-6 ps-5 d-none d-md-none d-lg-block pe-0">
                                             <img class="d-block w-100"
                                                 src="./assets/images/components/tabs/TabImagen/proexperienceimage.png"
                                                 alt="">
@@ -318,157 +335,154 @@
                 </div>
         </section>
 
-            <div class="accordion mobile accordion-flush" id="accordionIntructor">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <div class="buttonIcon">
-                                <img width="26" src="assets/images/components/accordion/header/1.svg"
-                                    alt="">
-                            </div>
-                            Volar en Argentina
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionIntructor">
-                        <div class="accordion-body px-0">
+        <div class="accordion mobile accordion-flush" id="accordionIntructor">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="buttonIcon">
+                            <img width="26" src="assets/images/components/accordion/header/1.svg" alt="">
+                        </div>
+                        Volar en Argentina
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionIntructor">
+                    <div class="accordion-body px-0">
 
-                            <div class="d-flex align-items-center p-relative overflowHidden">
-                                <p class="text">
-                                    Es el segundo país más extenso de Sudamérica, y uno de los territorios con más
-                                    aeropuertos de la región (1138). Aquí podrás conocer las Cataratas del Iguazú: una
-                                    de
-                                    las 7 maravillas del mundo. También recorrerás glaciares, montañas, desiertos, ríos
-                                    y
-                                    mar. Volar en Argentina es una experiencia inolvidable; ven a disfrutarla con
-                                    nosotros.
-                                </p>
-                                <img height="190" class="mx-auto imagen"
-                                    src="assets/images/components/accordion/content/1.png" alt="">
-                            </div>
+                        <div class="d-flex align-items-center p-relative overflowHidden">
+                            <p class="text">
+                                Es el segundo país más extenso de Sudamérica, y uno de los territorios con más
+                                aeropuertos de la región (1138). Aquí podrás conocer las Cataratas del Iguazú: una
+                                de
+                                las 7 maravillas del mundo. También recorrerás glaciares, montañas, desiertos, ríos
+                                y
+                                mar. Volar en Argentina es una experiencia inolvidable; ven a disfrutarla con
+                                nosotros.
+                            </p>
+                            <img height="190" class="mx-auto imagen"
+                                src="assets/images/components/accordion/content/1.png" alt="">
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <div class="buttonIcon">
-                                <img width="26" src="assets/images/components/accordion/header/2.svg"
-                                    alt="">
-                            </div>
-
-                            Diversidad de flota
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionIntructor">
-                        <div class="accordion-body px-0">
-                            <div class="d-flex align-items-center p-relative overflowHidden">
-                                <p class="text">
-                                    No realizaras todas tus horas en un solo tipo de aeronave, experimentaras vuelos
-                                    pesados,
-                                    livianos, ala baja, ala alta, aviones monomotor y bimotor. Lo cual te preparará para
-                                    adaptarte a cualquier tipo de avión.
-                                </p>
-                                <img height="190" class="mx-auto imagen"
-                                    src="assets/images/components/accordion/content/2.png" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <div class="buttonIcon">
-                                <img width="18" src="assets/images/components/accordion/header/3.svg"
-                                    alt="">
-                            </div>
-                            Plan Académico
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionIntructor">
-                        <div class="accordion-body px-0">
-                            <div class="d-flex align-items-center p-relative overflowHidden">
-                                <p class="text">
-                                    Los alumnos tendrán una alta carga teórica para estudiar y rendir. Aunque en
-                                    Argentina
-                                    no es obligatoria la teoría, para nosotros es uno de los puntos mas importantes de
-                                    la
-                                    carrera, el piloto debe estar muy bien instruido tanto en conocimientos propios de
-                                    la
-                                    aeronave como en conocimientos generales relacionados. Toda la bibliografía es de
-                                    autoría propia.
-                                </p>
-                                <img height="190" class="mx-auto imagen"
-                                    src="assets/images/components/accordion/content/3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <div class="buttonIcon">
-                                <img width="23" src="assets/images/components/accordion/header/4.svg" alt="">
-                            </div>
-                            Tecnología
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionIntructor">
-                        <div class="accordion-body px-0">
-                            <div class="d-flex align-items-center p-relative overflowHidden">
-                                <p class="text">
-                                    Cada avión de nuestra flota se encuentra equipado con lo ultimo en pantallas de
-                                    navegación garmin. Los alumnos aprenderán a leer instrumentos analógicos y
-                                    pantallas.
-                                </p>
-                                <img height="190" class="mx-auto imagen"
-                                    src="assets/images/components/accordion/content/4.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <div class="buttonIcon">
-                                <img width="20" class="mx-auto" src="assets/images/components/accordion/header/5.svg"
-                                    alt="">
-                            </div>
-                            Pro Experience
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#accordionIntructor">
-                        <div class="accordion-body px-0">
-                            <div class="d-flex align-items-center p-relative overflowHidden">
-                                <p class="text">
-                                    ProXperience es un programa en el cual mostramos que nuestro foco son los
-                                    alumnos.
-                                    Proyectos, tecnología, salidas recreativas, todo gira en torno de dar la
-                                    mejor
-                                    experiencia de estudio en Argentina a nuestros estudiantes.
-                                </p>
-                                <img height="190" class="mx-auto imagen"
-                                    src="assets/images/components/accordion/content/5.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="buttonIcon">
+                            <img width="26" src="assets/images/components/accordion/header/2.svg" alt="">
+                        </div>
+
+                        Diversidad de flota
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionIntructor">
+                    <div class="accordion-body px-0">
+                        <div class="d-flex align-items-center p-relative overflowHidden">
+                            <p class="text">
+                                No realizaras todas tus horas en un solo tipo de aeronave, experimentaras vuelos
+                                pesados,
+                                livianos, ala baja, ala alta, aviones monomotor y bimotor. Lo cual te preparará para
+                                adaptarte a cualquier tipo de avión.
+                            </p>
+                            <img height="190" class="mx-auto imagen"
+                                src="assets/images/components/accordion/content/2.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="buttonIcon">
+                            <img width="18" src="assets/images/components/accordion/header/3.svg" alt="">
+                        </div>
+                        Plan Académico
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionIntructor">
+                    <div class="accordion-body px-0">
+                        <div class="d-flex align-items-center p-relative overflowHidden">
+                            <p class="text">
+                                Los alumnos tendrán una alta carga teórica para estudiar y rendir. Aunque en
+                                Argentina
+                                no es obligatoria la teoría, para nosotros es uno de los puntos mas importantes de
+                                la
+                                carrera, el piloto debe estar muy bien instruido tanto en conocimientos propios de
+                                la
+                                aeronave como en conocimientos generales relacionados. Toda la bibliografía es de
+                                autoría propia.
+                            </p>
+                            <img height="190" class="mx-auto imagen"
+                                src="assets/images/components/accordion/content/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="buttonIcon">
+                            <img width="23" src="assets/images/components/accordion/header/4.svg" alt="">
+                        </div>
+                        Tecnología
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionIntructor">
+                    <div class="accordion-body px-0">
+                        <div class="d-flex align-items-center p-relative overflowHidden">
+                            <p class="text">
+                                Cada avión de nuestra flota se encuentra equipado con lo ultimo en pantallas de
+                                navegación garmin. Los alumnos aprenderán a leer instrumentos analógicos y
+                                pantallas.
+                            </p>
+                            <img height="190" class="mx-auto imagen"
+                                src="assets/images/components/accordion/content/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <div class="buttonIcon">
+                            <img width="20" class="mx-auto" src="assets/images/components/accordion/header/5.svg"
+                                alt="">
+                        </div>
+                        Pro Experience
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionIntructor">
+                    <div class="accordion-body px-0">
+                        <div class="d-flex align-items-center p-relative overflowHidden">
+                            <p class="text">
+                                ProXperience es un programa en el cual mostramos que nuestro foco son los
+                                alumnos.
+                                Proyectos, tecnología, salidas recreativas, todo gira en torno de dar la
+                                mejor
+                                experiencia de estudio en Argentina a nuestros estudiantes.
+                            </p>
+                            <img height="190" class="mx-auto imagen"
+                                src="assets/images/components/accordion/content/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <section class="footer h-100vh d-flex align-items-end">
             <div class="container">
@@ -517,6 +531,10 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

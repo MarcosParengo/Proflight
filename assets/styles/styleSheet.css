@@ -807,6 +807,35 @@ fade {
 	color: white;
 }
 
+.tecnologia .tab-pane.fade.show.active .slideLeft{
+	animation:0.5s slideLeft forwards;
+}
+.tecnologia .tab-pane.fade.show.active .slideRight{
+	animation:0.5s slideRight forwards;
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
 .nav-tabs {
 	border: none !important;
 }
