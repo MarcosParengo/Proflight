@@ -1935,7 +1935,9 @@ fade {
 		color: #ffffff;
 		opacity: 0.7;
 	}
-
+	.eventos{
+		padding-bottom: 7%;
+	}
 	.eventos .title {
 		margin: 112px 64px 40px 64px;
 		padding: 0;

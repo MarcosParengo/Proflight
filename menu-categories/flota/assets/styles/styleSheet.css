@@ -266,6 +266,10 @@ body p {
 	border: none !important;
 }
 
+.swapImage{
+	cursor:pointer
+}
+
 .tabs .nav-tabs .nav-link {
 	border: none !important;
 	border: 0px solid transparent;
@@ -368,6 +372,26 @@ body p {
 	display: block;
 	width: 100%;
 }
+.imageContainer{
+	z-index:2
+}
+.tab-pane.fade.show.active .slideLeft{
+	animation:0.5s slideLeft forwards;
+	z-index:1
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(-50%);
+		opacity: 0;
+	}
+	
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
 .left-img {
 	position: absolute;
 	transition: all 2s;

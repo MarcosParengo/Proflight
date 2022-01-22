@@ -17,6 +17,7 @@ function toggleShowAlumnoCard(id) {
 }
 
 function selectFlota(selector) {
+	console.log(selector)
 	const id = parseInt(selector.charAt(selector.length - 1));
 	$(`#icon-flota-${flotaSelected}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${flotaSelected}.svg`);
 	$(`#icon-flota-${id}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${id}-selected.svg`);
@@ -35,6 +36,29 @@ function selectFlota(selector) {
 
 	flotaSelected = id;
 }
+
+const sliderFlota = document.getElementById('sliderFlota');
+
+function handleGestureFlota() {
+	let id = $('.imagen.center').attr('id')
+	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
+
+	if (touchendX < touchstartX && centerElement < maxEventos) {
+		selectFlota((centerElement+1).toString())
+	}
+	if (touchendX > touchstartX && centerElement > 1) {
+		selectFlota((centerElement-1).toString())
+	}
+}
+
+sliderFlota.addEventListener('touchstart', (e) => {
+	touchstartX = e.changedTouches[0].screenX;
+});
+
+sliderFlota.addEventListener('touchend', (e) => {
+	touchendX = e.changedTouches[0].screenX;
+	handleGestureFlota();
+});
 
 function progressGrow() {
 	i++;
@@ -78,6 +102,29 @@ function selectNextPrograma() {
 		selectPrograma('0');
 	}
 }
+
+const sliderProgramas = document.getElementById('sliderProgramas');
+
+function handleGestureProgramas() {
+	let id = $('.icon.selected').attr('id')
+	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
+
+	if (touchendX < touchstartX && centerElement < maxEventos) {
+		selectPrograma((centerElement+1).toString())
+	}
+	if (touchendX > touchstartX && centerElement > 1) {
+		selectPrograma((centerElement-1).toString())
+	}
+}
+
+sliderProgramas.addEventListener('touchstart', (e) => {
+	touchstartX = e.changedTouches[0].screenX;
+});
+
+sliderProgramas.addEventListener('touchend', (e) => {
+	touchendX = e.changedTouches[0].screenX;
+	handleGestureProgramas();
+});
 
 let touchstartX = 0;
 let touchendX = 0;

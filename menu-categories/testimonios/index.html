@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body className="p-relative" style="background-color:#002e5d">
@@ -29,6 +31,7 @@
     <nav class="navbar fixed-top navbar-dark">
         <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
             style="padding: 0;">
+
             <a class="d-none d-sm-block navbar-brand" href="#">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
@@ -130,14 +133,14 @@
                 <div class="container-fluid">
                     <div class="fullPage row d-flex justify-content-center align-items-center p-relative">
                         <div class="col me-sm-0 me-md-5 col-xs-12 col-md-12 col-lg-5 col-xl-4 desktop">
-                            <h1 class="title">
+                            <h1 class="title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                                 Testimonios
                             </h1>
-                            <h2 class="pt-5 subtitle">
+                            <h2 class=" pt-5 subtitle" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                                 El sueño de<br>convertirse en piloto
-                            </h2>
+                                </h2>
                         </div>
-                        <div class="col ms-4 col-lg-5 col-xl-4 desktop">
+                        <div class="col ms-4 col-lg-5 col-xl-4 desktop" data-aos="fade-left">
                             <img class="d-block w-100" src="assets/images\components\IMG_3483 02.png" alt="">
                         </div>
                         <div class="sectionLabel rotatedText desktop">
@@ -219,7 +222,8 @@
                         </button>
                     </div>
                 </div>
-                <div id="containerTestimoniosMobile" class="row d-flex d-sm-flex d-md-none flex-nowrap overflow-auto align-items-stretch">
+                <div id="containerTestimoniosMobile"
+                    class="row d-flex d-sm-flex d-md-none flex-nowrap overflow-auto align-items-stretch">
                     <div class="col-10 testimonioCardContainer">
                         <div class="testimonioCard">
                             <div class="h-0">
@@ -319,6 +323,10 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

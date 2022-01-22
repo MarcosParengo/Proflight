@@ -306,7 +306,12 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 768px) {
+    .navBarContainer{
+        background: linear-gradient(180deg, rgba(0,0,0,0.8799894957983193) 0%, rgba(0,0,0,0.7539390756302521) 39%, rgba(0,0,0,0) 100%);    }
+
+}
+    @media only screen and (min-width: 576px) {
     .navbar-brand {
         padding-left: 1em;
     }

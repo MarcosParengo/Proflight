@@ -42,6 +42,9 @@ body p {
 .min-100vh {
 	min-height: 100vh;
 }
+.row{
+	overflow-x: hidden;
+}
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 .nosotros {
 	background-image: url(../images/background/bgDesktop.png);
@@ -273,6 +276,7 @@ body p {
 	margin-top: 10%;
 }
 .nuestraVision .containerSec h1 {
+	z-index:100;
 	margin-left: -2ch;
 	padding-top: .7em;
 	padding-bottom: .7em;
