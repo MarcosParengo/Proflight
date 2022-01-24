@@ -86,7 +86,7 @@ body p {
 }
 
 .nonLanding {
-	background-image: url("../images/background/footer\ white.svg");
+	background-image: url("../images/background/footer\ white.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -394,6 +394,23 @@ body p {
 	letter-spacing: 0px;
 	color: #0b131e;
 	opacity: 0.8;
+	max-width: 46ch;
+}
+.postContainer .postCarouselContainer .postTitle {
+	padding:0;
+	margin:0;
+	text-align: left;
+	font: normal normal 500 16px/24px Inter;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 1;
+	position: absolute;
+	bottom: 24px;
+	left: 20px;
+	max-width: 30ch;
+}
+.postContainer .postCarouselContainer .postTitle.post2 {
+	max-width: 21ch;
 }
 
 @media only screen and (max-width: 768px) {
@@ -554,9 +571,9 @@ body p {
 		letter-spacing: 0.32px;
 		color: #00b0ce;
 	}
-    .overflow-x{
-        overflow-x: auto;
-    }
+	.overflow-x {
+		overflow-x: auto;
+	}
 	.thumbnail {
 		position: relative;
 	}
@@ -582,7 +599,7 @@ body p {
 		padding-top: 0;
 	}
 	.footer {
-		min-height: unset!important;
+		min-height: unset !important;
 		padding: 0px 38px;
 	}
 	.footer h1 {

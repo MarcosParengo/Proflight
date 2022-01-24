@@ -114,10 +114,6 @@ body p {
 	color: darkgray;
 	font-weight: 700;
 }
-
-.mobile {
-	display: none;
-}
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (max-width: 768px) {
@@ -339,11 +335,8 @@ body p {
 	.leftSpace {
 		padding-left: 55px;
 	}
-	.mobile {
-		display: block;
-	}
 	.desktop {
-		display: none;
+		display: none!important;
 	}
 	.footer {
 		padding: 0 38px;
@@ -370,6 +363,9 @@ body p {
 	.bottom {
 		height: auto;
 		border-width: 0px 0px 0px 1px;
+	}
+	.mobile{
+		display: none!important;
 	}
 }
 

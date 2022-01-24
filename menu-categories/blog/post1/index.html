@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="assets/images/logo/Logo Horz square.png" />
+    <link rel="shortcut icon" href="/Proflight/assets/images/logo/iso azul.svg" />
     <title>Blog | ProFlight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body style="background-color:#002e5d">
@@ -26,9 +27,8 @@
     </a>
 
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center"
-            style="padding: 0;">
-            <a class="d-none d-sm-block navbar-brand" href="#">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-items-sm-center p-0">
+            <a class="d-none d-sm-block navbar-brand" href="/Proflight/">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
@@ -128,10 +128,10 @@
             <div class="container-fluid p-relative">
                 <div class="row h-100vh">
                     <div class="col-12 halfWindow">
-                        <h1 class="leftMargin title">Blog</h1>
+                        <h1 class="leftMargin title" data-aos="fade-right">Blog</h1>
 
                     </div>
-                    <div class="col-12 halfWindow desktop">
+                    <div class="col-12 halfWindow desktop" data-aos="fade-up" data-aos-delay="250">
                         <p class="leftMargin description">Elegir la mejor academia no es fácil, por eso en este artículo
                             te mostramos cuáles son los aspectos más importantes que deberías evaluar</p>
                     </div>
@@ -448,6 +448,7 @@
                     <h1 class="title">Si aún tienes dudas en la elección de una academia para realizar tu carrera de
                         piloto te contamos que ProFlight te brinda.</h1>
                 </div>
+
                 <ul class="offersList List">
                     <li class="leftMargin offersItem item1 ps-1">Un plan de estudio desarrollado por pilotos de línea
                         aérea, psicólogos e instructores de</br> vuelo integrado a las plataformas virtuales, donde
@@ -470,7 +471,9 @@
                         entorno profesional de vuelo. Además, nos encontramos
                         en las inmediaciones de más de 5 aeropuertos internacionales que contribuyen al desarrollo
                         integral de los pilotos.</li>
+
                 </ul>
+
                 <div class="newsLetter">
                     <div class="leftMargin h-100">
                         <div class="container-fluid h-100">
@@ -524,6 +527,7 @@
                         </div>
                     </div>
                 </div>
+
                 <ul class="offersList List differentPadding">
                     <li class="leftMargin offersItem lastList">Certificación de todos los equipos por la ANAC
                         (Administración Nacional Aeronáutica Civil).</li>
@@ -555,6 +559,7 @@
                         años más.
                     </li>
                 </ul>
+
                 <div class="leftMargin">
                     <h1 class="lastMessage">Seleccionar una buena academia de aviación hace la diferencia a la hora de
                         buscar
@@ -566,6 +571,7 @@
                         que reluce <br class="mobile"> lo mejor de cada estudiante</h2>
                     <h2 class="lastMessageDescriptionEmphasis">Y ESO ES LO QUE NOS DESTACA.</h2>
                 </div>
+
                 <div class="container postFooter">
                     <div class="row d-flex justify-content-end">
                         <div class="col-auto">
@@ -601,11 +607,13 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="otherPosts">
                     <h1 class="title">
                         También te puede interesar:
                     </h1>
                 </div>
+
                 <div class="container-fluid mobile">
                     <div class="row d-flex flex-nowrap overflow-x">
                         <div class="col-12 thumbnail">
@@ -619,6 +627,7 @@
                     </div>
 
                 </div>
+
                 <div class="postCarouselContainer desktop">
                     <div class="container-fluid">
                         <div class="row">
@@ -639,26 +648,37 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <a href="../../blog/post1/">
-                                                            <img class="d-block w-100"
-                                                                src="assets/images/components/mini1.png" alt="">
-                                                            <p class="description">Elegir la mejor academia no es fácil,
-                                                                por
-                                                                eso en este artículo te mostramos cuáles son los
-                                                                aspectos
-                                                                más importantes que deberías evaluar...</p>
+                                                            <div class="w-100 p-relative">
+                                                                <img class="d-block w-100"
+                                                                    src="assets/images/components/mini1.png" alt="">
+                                                                <p class="postTitle">
+                                                                    Guia de las 6 claves para elegir la mejor académia
+                                                                    de aviación
+                                                                </p>
+                                                            </div>
+                                                            <p class="description">
+                                                                Elegir la mejor academia no es fácil, por eso en este
+                                                                artículo te mostramos cuáles son los
+                                                                aspectos más importantes que deberías evaluar...
+                                                            </p>
                                                         </a>
                                                     </div>
                                                     <div class="col-6">
                                                         <a href="../../blog/post2/">
-                                                            <img class="d-block w-100"
-                                                                src="assets/images/components/mini2.png" alt="">
-                                                            <p class="description">¿Qué tener en cuenta a la hora de
-                                                                elegir
-                                                                una academia?<br> Encontrar el mejor lugar para estudiar
-                                                                no
-                                                                es
-                                                                tarea fácil.<br> Podemos empezar cuestionándonos algunos
-                                                                aspectos...</p>
+                                                           
+                                                                <div class="w-100 p-relative">
+                                                                    <img class="d-block w-100"
+                                                                    src="assets/images/components/mini2.png" alt="">
+                                                                    <p class="postTitle post2">
+                                                                        Guia para convertirte en Piloto comercial de avión
+                                                                    </p>
+                                                                </div>
+                                                            <p class="description">
+                                                                ¿Qué tener en cuenta a la hora de elegir una academia?
+                                                                Encontrar el mejor lugar para estudiar no es tarea
+                                                                fácil. Podemos empezar cuestionándonos algunos
+                                                                aspectos...
+                                                            </p>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -669,26 +689,36 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <a href="../../blog/post1/">
-                                                            <img class="d-block w-100"
-                                                                src="assets/images/components/mini1.png" alt="">
-                                                            <p class="description">Elegir la mejor academia no es fácil,
-                                                                por
-                                                                eso en este artículo te mostramos cuáles son los
-                                                                aspectos
-                                                                más importantes que deberías evaluar...</p>
+                                                            <div class="w-100 p-relative">
+                                                                <img class="d-block w-100"
+                                                                    src="assets/images/components/mini1.png" alt="">
+                                                                <p class="postTitle">
+                                                                    Guia de las 6 claves para elegir la mejor académia
+                                                                    de aviación
+                                                                </p>
+                                                            </div>
+                                                            <p class="description">
+                                                                Elegir la mejor academia no es fácil, por eso en este
+                                                                artículo te mostramos cuáles son los
+                                                                aspectos más importantes que deberías evaluar...
+                                                            </p>
                                                         </a>
                                                     </div>
                                                     <div class="col-6">
                                                         <a href="../../blog/post2/">
-                                                            <img class="d-block w-100"
+                                                            <div class="w-100 p-relative">
+                                                                <img class="d-block w-100"
                                                                 src="assets/images/components/mini2.png" alt="">
-                                                            <p class="description">¿Qué tener en cuenta a la hora de
-                                                                elegir
-                                                                una academia?<br> Encontrar el mejor lugar para estudiar
-                                                                no
-                                                                es
-                                                                tarea fácil.<br> Podemos empezar cuestionándonos algunos
-                                                                aspectos...</p>
+                                                                <p class="postTitle post2">
+                                                                    Guia para convertirte en Piloto comercial de avión
+                                                                </p>
+                                                            </div>
+                                                            <p class="description">
+                                                                ¿Qué tener en cuenta a la hora de elegir una academia?
+                                                                Encontrar el mejor lugar para estudiar no es tarea
+                                                                fácil. Podemos empezar cuestionándonos algunos
+                                                                aspectos...
+                                                            </p>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -764,6 +794,10 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

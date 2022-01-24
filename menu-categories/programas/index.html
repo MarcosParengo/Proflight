@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 </head>
@@ -29,14 +30,15 @@
     </a>
 
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
-            <a class="d-none d-sm-block navbar-brand" href="#">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-items-sm-center p-0">
+            <a class="d-none d-sm-block navbar-brand" href="/Proflight/">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
+                <img class="py-1" height="35" id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg"
+                    alt="Proflight">
             </button>
             <button id="navBarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -132,14 +134,15 @@
                                 <h2 class="subtitle margin">Con habilitación VFR controlado</h2>
                             </div>
                             <div
-                                class="d-none d-md-block left col-12 col-sm-12 col-md-6  pe-2 pe-md-5 d-flex align-items-end align-items-end flex-column bd-highlight">
-                                <h1>Piloto Privado<br>de avión</h1>
-                                <div class="mt-auto pb-0 mb-0">
-                                    <p class="pb-0 mb-0">Con habilitación VFR controlado</p>
+                                class="d-none d-md-flex left col-12 col-sm-12 col-md-6  pe-2 pe-md-5 d-flex align-items-end flex-column bd-highlight">
+                                <h1 data-aos="fade-right">Piloto Privado<br>de avión</h1>
+                                <div class="mt-auto pb-0 mb-0" data-aos="fade-up" data-aos-delay="500">
+                                    <p class="pb-2 mb-0">Con habilitación VFR controlado</p>
                                 </div>
                             </div>
                             <div class="d-none d-md-block col-12 col-sm-6 ps-md-5 d-flex h-100 mt-2">
-                                <h2 class="right">Con esta licencia el estudiante cumplirá su pasión de volar bajo los
+                                <h2 class="my-0 right" data-aos="fade-left" data-aos-delay="250">Con esta licencia el
+                                    estudiante cumplirá su pasión de volar bajo los
                                     más altos
                                     estándares de calidad en el sector aeronáutico, desempeñándose como piloto al mando
                                     de
@@ -151,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sectionLabel rotatedText d-none d-md-none d-lg-none">
+                    <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                         <h1 class="textBlack">Programas</h1>
                     </div>
                 </div>
@@ -160,11 +163,11 @@
                 <div
                     class="container-fluid  p-0 col-12 col-sm-12 col-md-10 col-lg-9 col-xl-9 min-100vh d-flex align-items-sm-start align-items-md-center">
                     <div class="row w-100" style="--bs-gutter-x: 0rem;">
-                        <div class="desktop col-5 offset-lg-1">
+                        <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
                             <h1 class="ps-0">Piloto Privado de avión</h1>
                             <h2 class="ps-0">Con habilitación VFR controlado</h2>
                         </div>
-                        <div id="privadoOne" class="desktop row">
+                        <div id="privadoOne" class="desktop row" data-aos="fade-up" data-aos-delay="250">
                             <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
                                 <div class="col-12 col-lg-6 col-xl-5 ps-0 pe-5">
                                     <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
@@ -213,57 +216,65 @@
                                 </div>
                                 <div class="col-12 col-lg-6 col-xl-5">
                                     <div id="privadoitem1" class="item1">
-                                        <div class="row textContainer">
-                                            <div class="col-auto me-0 pe-0">
-                                                <h1
-                                                    class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                                    <span class="texto">Plan 141</span>
-                                                    <span class="number mt-auto">4.</span>
-                                                </h1>
-                                                <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
-                                                    Es un programa único en la región, ya que el seguimiento que se
-                                                    realiza
-                                                    del estudiante es semanal a través de la plataforma estudiantil. El
-                                                    estudiante se adecúa de manera rigurosa al plan de estudio,
-                                                    rindiendo
-                                                    exámenes parciales en cada etapa. El padre
-                                                    podrá visualizar todo el avance del estudiante de forma remota.
-                                                </p>
+                                        <h1
+                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                            <span class="texto">Plan 141</span>
+                                        </h1>
+                                        <div class="p-relative">
+                                            <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                                Es un programa único en la región, ya que el seguimiento que se
+                                                realiza
+                                                del estudiante es semanal a través de la plataforma estudiantil.
+                                                El
+                                                estudiante se adecúa de manera rigurosa al plan de estudio,
+                                                rindiendo
+                                                exámenes parciales en cada etapa. El padre
+                                                podrá visualizar todo el avance del estudiante de forma remota.
+                                            </p>
+                                            <div id="nextRightPrivado" class="chevron-left">
+                                                <img height="33px" width="18px"
+                                                    src="assets/images/components/Chevron.svg" alt="">
                                             </div>
-                                            <div class="col-2 col-md-1 mt-5">
-                                                <i id="nextRightPrivado" class="button fas fa-chevron-right"></i>
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <div class="circles">
+                                                    <div class="circle active"></div>
+                                                    <div class="circle"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="privadoitem2" class="item2">
-                                        <div class="row textContainer">
-                                            <div class="col-auto me-0 pe-0">
-                                                <h1
-                                                    class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                                    <span class="texto">Plan 62</span>
-                                                    <span class="number mt-auto">5.</span>
-                                                </h1>
-                                                <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
-                                                    El plan de estudio va al ritmo del estudiante, no se le exigirá que
-                                                    rinda materias en un tiempo determinado ni tampoco el uso del
-                                                    uniforme.
-                                                    Es un plan diseñado principalmente para personas que realizan el
-                                                    curso
-                                                    de aviación por hobby, por falta de tiempo,
-                                                    recursos o estudiantes que ya realizaron el curso de tierra en otro
-                                                    país
-                                                    y no requieren cursar nuevamente en Argentina.
-                                                </p>
+                                        <h1
+                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                            <span class="texto">Plan 62</span>
+                                        </h1>
+                                        <div class="p-relative">
+
+                                            <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                                El plan de estudio va al ritmo del estudiante, no se le exigirá que
+                                                rinda materias en un tiempo determinado ni tampoco el uso del
+                                                uniforme.
+                                                Es un plan diseñado principalmente para personas que realizan el
+                                                curso
+                                                de aviación por hobby, por falta de tiempo,
+                                                recursos o estudiantes que ya realizaron el curso de tierra en otro
+                                                país
+                                                y no requieren cursar nuevamente en Argentina.
+                                            </p>
+                                            <div id="prevRightPrivado" class="chevron-left">
+                                                <img height="33px" width="18px"
+                                                    src="assets/images/components/Chevron.svg" alt="">
                                             </div>
-                                            <div class="col-2 col-md-1 mt-5">
-                                                <i id="prevRightPrivado" class="button fas fa-chevron-left"></i>
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <div class="circles">
+                                                    <div class="circle"></div>
+                                                    <div class="circle active"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="mobile">
                             <div class="margin">
@@ -369,13 +380,14 @@
                             <div class="row">
                                 <div
                                     class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
-                                    <h1>Piloto Comercial <br>de avión</h1>
-                                    <div class="mt-auto pb-0 mb-0">
+                                    <h1 data-aos="fade-left">Piloto Comercial <br>de avión</h1>
+                                    <div class="mt-auto pb-0 mb-0" data-aos="fade-up" data-aos-delay="250">
                                         <p class="pb-0 mb-0">Con habilitación de vuelo por instrumento</p>
                                     </div>
                                 </div>
                                 <div class="desktop col-12 col-sm-6 ps-md-5 d-flex h-100 mt-2">
-                                    <h2 class="right">Los estudiantes desarrollarán las competencias suficientes para
+                                    <h2 class="right" data-aos="fade-right" data-aos-delay="250">Los estudiantes
+                                        desarrollarán las competencias suficientes para
                                         desempeñarse como
                                         primer oficial de las lineas aéreas de transporte comercial. Se destacarán por
                                         su
@@ -395,11 +407,11 @@
                 <section class="descripcion">
                     <div class="container-fluid px-0 col-sm-12 col-md-11 col-lg-9 min-100vh h-auto">
                         <div class="row" style="--bs-gutter-x: 0rem;">
-                            <div class="desktop col-5 offset-lg-1">
+                            <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
                                 <h1 class="ps-0">Piloto Comercial de avión</h1>
                                 <h2 class="ps-0">Con habilitación de vuelo por instrumento</h2>
                             </div>
-                            <div id="comercialOne" class="desktop one row">
+                            <div id="comercialOne" class="desktop one row" data-aos="fade-up" data-aos-delay="250">
                                 <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
                                     <div class="col-12 col-lg-6 col-xl-5 ps-0 pe-5">
                                         <h1
@@ -450,35 +462,46 @@
                                                 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
                                                 <span class="texto">Avión</span>
                                             </h1>
-                                            <div class="row textContainer">
-                                                <div class="col-10 col-md-11 me-0 pe-0">
-                                                    <p class="lead pt-3 lh-2">
-                                                        &#10004;80 horas de navegación
-                                                        <br>&#10004;80 horas de vuelo local
-                                                        <br>&#10004;40 horas de instrumento
-                                                    </p>
+                                            <div class="textContainer p-relative">
+                                                <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                                    &#10004;80 horas de navegación
+                                                    <br>&#10004;80 horas de vuelo local
+                                                    <br>&#10004;40 horas de instrumento
+                                                </p>
+                                                <div id="nextRightComercial" class="chevron-left">
+                                                    <img height="33px" width="18px"
+                                                        src="assets/images/components/Chevron.svg" alt="">
                                                 </div>
-                                                <div class="col-2 col-md-1 mt-5">
-                                                    <i id="nextRightComercial" class="button fas fa-chevron-right"></i>
+                                                <div class="w-100 d-flex justify-content-center">
+                                                    <div class="circles">
+                                                        <div class="circle"></div>
+                                                        <div class="circle active"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="comercialitem2" class="item2">
+                                        <div id="comercialitem2" class="item2 h-100">
                                             <h1
                                                 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
                                                 <span class="texto">Simulador</span>
                                             </h1>
-                                            <div class="row textContainer">
-                                                <div class="col-10 col-md-11 me-0 pe-0">
-                                                    <p class="lead pt-3 lh-2">
-                                                        &#10004;15 horas de Cessna 182
-                                                        <br>&#10004;15 horas de Beechcraft 350
+                                            <div class="p-relative textContainer h-100">
+                                                <p class="lead pt-3 lh-2">
+                                                    &#10004;15 horas de Cessna 182
+                                                    <br>&#10004;15 horas de Beechcraft 350
+
+                                                </p>
+                                                <div id="prevRightComercial" class="chevron-left rotated">
+                                                    <img height="33px" width="18px"
+                                                        src="assets/images/components/Chevron.svg" alt="">
                                                 </div>
-                                                <div class="col-2 col-md-1 mt-5">
-                                                    <i id="prevRightComercial" class="button fas fa-chevron-left"></i>
+                                                <div class="w-100 d-flex justify-content-center">
+                                                    <div class="circles">
+                                                        <div class="circle"></div>
+                                                        <div class="circle active"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -653,15 +676,16 @@
                             <div class="row px-0">
                                 <div
                                     class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
-                                    <h1>Habilitación de <br>vuelo multimotor</h1>
-                                    <div class="mt-auto pt-1 mt-sm-5 pt-sm-5">
+                                    <h1 data-aos="fade-left">Habilitación de <br>vuelo multimotor</h1>
+                                    <div data-aos="fade-up" data-aos-delay="250" class="mt-auto pt-1 mt-sm-5 pt-sm-5">
                                         <p>10 horas de vuelo con un bimotor Seneca II.</p>
                                         <p>Incluye teoría y 4 horas de simulador.</p>
                                         <p>Esta habilitación demanda entre 15 y 20 días.</p>
                                     </div>
                                 </div>
                                 <div class="desktop col-12 col-sm-6 ps-md-5 mt-2 d-flex h-100">
-                                    <h2 class="right">Los estudiantes pueden escoger realizarla en Argentina o en el
+                                    <h2 data-aos="fade-right" data-aos-delay="250" class="right">Los estudiantes pueden
+                                        escoger realizarla en Argentina o en el
                                         país de origen de
                                         cada uno, aunque siempre recomendamos realizarlo en nuestro país para luego
                                         regresar
@@ -692,14 +716,15 @@
                             <div class="row">
                                 <div
                                     class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
-                                    <h1>Instructor de vuelo</h1>
-                                    <div class="mt-auto pt-1 mt-sm-5 pt-sm-5">
+                                    <h1 data-aos="fade-left">Instructor de vuelo</h1>
+                                    <div data-aos="fade-up" data-aos-delay="250" class="mt-auto pt-1 mt-sm-5 pt-sm-5">
                                         <p class="mb-0 pb-0">Según lo establecido en las regulaciones</p>
                                         <p>argentinas RAAC parte 61</p>
                                     </div>
                                 </div>
                                 <div class="desktop col-12 col-sm-6 ps-md-5 mt-2 d-flex h-100">
-                                    <h2 class="right"> Todo piloto acreedor de esta licencia será una persona con la
+                                    <h2 data-aos="fade-right" data-aos-delay="250" class="right"> Todo piloto acreedor
+                                        de esta licencia será una persona con la
                                         capacidad y vocación
                                         para contribuir al desarrollo y crecimiento profesional de alumnos</h2>
                                 </div>
@@ -710,13 +735,13 @@
                 <section class="descripcion">
                     <div class="container-fluid px-0 col-12 col-sm-12 col-md-11 col-9 min-100vh">
                         <div class="row px-0" style="--bs-gutter-x: 0rem;">
-                            <div class="desktop col-5 offset-lg-1">
+                            <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
                                 <h1 class="ps-0">
                                     <h1>Instructor de vuelo</h1>
                                     <h2 class="ps-0">Según lo establecido en las regulaciones argentinas RAAC parte 61
                                     </h2>
                             </div>
-                            <div class="row">
+                            <div class="row" data-aos="fade-up" data-aos-delay="250">
                                 <div class="desktop one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
                                     <div class="col-12 col-sm-5 ps-0 pe-5">
                                         <h1
@@ -724,7 +749,7 @@
                                             <span class="texto">Requisitos para licencia de Instructor</span>
                                             <span class="number mt-auto">01.</span>
                                         </h1>
-                                        <p class="lead pt-3 lh-2 weight-100" style="border-top: none;">
+                                        <p class="lead pt-3 lh-2 weight-100">
                                             -Ser titular de la licencia de Piloto Comercial, Piloto
                                             <br>Comercial de Primera Clase de Avión o Piloto de
                                             <br> Transporte de Línea Aérea o Piloto de Planeador.
@@ -789,12 +814,14 @@
                                                     data-bs-ride="carousel">
                                                     <div class="carousel-indicators">
                                                         <button type="button" data-bs-target="#carouselInstructor"
-                                                            data-bs-slide-to="0" class="carousel-indicator active" aria-current="true"
-                                                            aria-label="Slide 1"></button>
-                                                        <button class="carousel-indicator"type="button" data-bs-target="#carouselInstructor"
-                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                        <button class="carousel-indicator" type="button" data-bs-target="#carouselInstructor"
-                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            data-bs-slide-to="0" class="carousel-indicator active"
+                                                            aria-current="true" aria-label="Slide 1"></button>
+                                                        <button class="carousel-indicator" type="button"
+                                                            data-bs-target="#carouselInstructor" data-bs-slide-to="1"
+                                                            aria-label="Slide 2"></button>
+                                                        <button class="carousel-indicator" type="button"
+                                                            data-bs-target="#carouselInstructor" data-bs-slide-to="2"
+                                                            aria-label="Slide 3"></button>
                                                     </div>
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active" data-bs-interval="10000">
@@ -852,7 +879,8 @@
                         <section class="footer dark">
                             <h1 class="mail pb-0 footerBlack">info@proflight.com.ar</h1>
                             <h2 class="footerBlack">+54 9 11 6010-4446</h2>
-                            <h2 class="footerBlack">Av. Figueroa Alcorta 500,<br class="d-sm-block d-md-none"> Castelar, Bs. As.</h2>
+                            <h2 class="footerBlack">Av. Figueroa Alcorta 500,<br class="d-sm-block d-md-none"> Castelar,
+                                Bs. As.</h2>
                             <ul class="social">
                                 <li class="me-2">
                                     <a class="footerBlack" target="_blank"
@@ -898,6 +926,10 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

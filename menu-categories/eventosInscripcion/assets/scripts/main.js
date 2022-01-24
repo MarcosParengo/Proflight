@@ -98,12 +98,12 @@ function fillContainerEventos(obj) {
 	containerevento.html(`
         <div class="fullPage row d-block d-md-flex m-0">
             <div class="desktop col-12 col-lg-5 col-xl-5 top d-md-flex align-items-end justify-content-end px-sm-2 pe-md-5 pe-lg-5 pe-xl-5 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0">
-                <h1 class="pais">
+                <h1 data-aos="fade-right" class="pais">
                     ${obj.origen}
                 </h1>
             </div>
             <div class="px-0 col-12 col-lg-7 col-xl-7 px-sm-2  ps-md-5 ps-lg-5 ps-xl-5 top d-flex align-items-end">
-                <div>
+                <div data-aos="fade-left" data-aos-delay="500">
                     <h1 class="rightSpace leftSpace descripcion pb-md-3">
                         ${obj.tipo}
                     </h1>
@@ -114,7 +114,8 @@ function fillContainerEventos(obj) {
                     </h2>
                 </div>
             </div>
-            <div class="rightSpace leftSpace col-12 offset-lg-5 offset-xl-5 col-lg-7 col-xl-7 px-sm-2  ps-md-5 ps-lg-5 ps-xl-5 bottom justify-content-start ">
+            <div class="overflow-hidden rightSpace leftSpace col-12 offset-lg-5 offset-xl-5 col-lg-7 col-xl-7 px-sm-2  ps-md-5 ps-lg-5 ps-xl-5 bottom justify-content-start ">
+                <div data-aos="fade-left" data-aos-delay="500" >
                 <div class="mt-0 mt-md-5">
                     <h1 class="title">
                         ${obj.ubicacion}
@@ -134,6 +135,7 @@ function fillContainerEventos(obj) {
                 <div class="mt-5 mb-5 pb-5 desktop">
                     <button class="btn btn-primary inscribirseBtn px-3 px-sm-2 px-md-5 px-xl-5 me-1 me-sm-2 me-md-5 me-xl-5">inscribirse</button>
                     <span class="tipoDeEvento ms-4 ms-sm-2 ms-md-5 ms-xl-5 ">Evento gratuito</span>
+                </div>
                 </div>
             </div>
 

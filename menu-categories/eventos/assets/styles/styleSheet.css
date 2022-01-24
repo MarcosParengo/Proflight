@@ -39,7 +39,7 @@ body p {
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-	background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/eventos/assets/images/background/bg.png);
+	background-image: url(../images/background/bg.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
@@ -672,7 +672,7 @@ body p {
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 
 .nonLanding {
-	background-image: url("../images/background/footer\ white.svg");
+	background-image: url("../images/background/footer\ white.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: bottom;

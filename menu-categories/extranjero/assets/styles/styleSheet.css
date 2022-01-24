@@ -31,11 +31,15 @@
         text-decoration: none;
         font-size: 18px;
     }
+    .row{
+        overflow: hidden;
+    }
 
     /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
     .home {
-        background-image: url(https://raw.githubusercontent.com/MarcosParengo/Proflight/master/menu-categories/extranjeros/assets/images/background/miguel-a-amutio-7C1tVElQwr4-unsplash%2002%402x.png);
+        background-image:url(../images/background/footer\ white.png);
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: auto 100%;
         background-color: rgba(255, 255, 255, 1);
@@ -56,7 +60,7 @@
 
     @media only screen and (min-width: 1050px) {
         .home {
-            background-size: 100% 100%;
+            background-size: 100% auto;
         }
     }
 
@@ -64,8 +68,8 @@
 
     @media only screen and (min-width: 1200px) {
         .home {
-            background-size: 100% 100%;
-        }
+            background-size: 100% auto;
+        }}
     }
 
     /*-------------------------------------------------- Seccion landing--------------------------------------------------TODO*/
@@ -242,7 +246,6 @@
     }
 
     .inversion .rotatedLabel {
-        transform: rotate(-90deg);
         transform-origin: bottom left;
         -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -251,8 +254,22 @@
        position: absolute;
        left: 0;
        bottom: 0;
+       animation:0.5s fromLeft forwards
     }
+    @keyframes fromLeft {
+        0%{
+            transform: translateX(-50%) rotate(-90deg);
 
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0%) rotate(-90deg);
+
+            opacity: 1;
+        }
+
+        
+    }
     .inversion .label {
         font: normal normal bold 58px Inter;
         letter-spacing: 0px;

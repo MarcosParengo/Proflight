@@ -91,7 +91,7 @@ body p {
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
 
 .home {
-	background-image: url(https://github.com/MarcosParengo/Proflight/blob/master/menu-categories/flota/assets/images/background/pf%20background%20flota.png?raw=true);
+	background-image: url(../images/background/pf\ background\ flota.png);
 	background-repeat: no-repeat;
 }
 .h-80vh {

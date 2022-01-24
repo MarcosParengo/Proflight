@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="assets/images/logo/Logo Horz square.png" />
+    <link rel="shortcut icon" href="/Proflight/assets/images/logo/iso azul.svg" />
     <title>Blog | ProFlight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="/Proflight/assets/styles/stylesGeneral.css" />
     <link rel="stylesheet" href="./assets/styles/styleSheet.css" />
     <script src="https://kit.fontawesome.com/5e81f310cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body style="background-color:#002e5d">
+<body>
     <a target="blank" class="desktop"
         href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia">
         <div class="whatsappButtonContainer">
@@ -26,8 +27,8 @@
     </a>
 
     <nav class="navbar fixed-top navbar-light">
-        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-sm-items-center" style="padding: 0;">
-            <a class="d-none d-sm-block navbar-brand" href="#">
+        <div id="navBar" class="navBarContainer container-fluid d-flex align-items-start align-items-sm-center" style="padding: 0;">
+            <a class="d-none d-sm-block navbar-brand" href="/Proflight/">
                 <img id="navBarBrandImage" src="/Proflight/assets/images/logo/iso azul.svg" alt="Proflight">
             </a>
             <button id="navbar-brand" class="d-block d-sm-none navbar-brand" type="button" data-bs-toggle="collapse"
@@ -126,7 +127,9 @@
             </div>
             <div class="container-fluid p-relative">
                 <div class="row h-100vh">
-                    <h1 class="leftPadding title">Blog</h1>
+                    <h1 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" class="leftPadding title">Blog</h1>
                 </div>
                 <div class="sectionLabel rotatedText d-none d-md-none d-lg-block">
                     <h1 class="textBlack">Blog</h1>
@@ -137,7 +140,7 @@
             <div class="postContainer">
                 <div class="container-fluid noPadding">
                     <div class="container-fluid noPadding px-md-auto leftPadding rightPadding">
-                        <div class="row w-100 gx-0 gy-0 gx-md-5 d-flex justify-content-start align-items-center post ">
+                        <div class="row w-100 mx-0 gx-0 gy-0 gx-md-5 d-flex justify-content-start align-items-center post ">
                             <div class="col-12 col-md-6 col-6-auto pe-0 pe-md-5 ">
                                 <h2 class="date desktop">16 DICIEMBRE 2020</h2>
                                 <h1 class="title desktop">Guia de las 6 claves para elegir la mejor académia de aviación</h1>
@@ -157,8 +160,8 @@
                     </div>
                     <div class="post-line desktop"></div>
                     <div class="container-fluid noPadding leftPadding rightPadding">
-                        <div class="row gy-0 gx-0 gx-md-5 d-flex justify-content-start align-items-center post second ">
-                            <div class="col-12 col-md-6 col-lg-auto pe-0 pe-md-5">
+                        <div class="row w-100 mx-0 gy-0 gx-0 gx-md-5 d-flex justify-content-start align-items-center post second ">
+                            <div class="col-12 col-md-6 col-lg-6 pe-0 pe-md-5">
                                 <h2 class="date desktop">16 DICIEMBRE 2020</h2>
 
                                 <h1 class="title desktop">La mejor academia</h1>
@@ -233,6 +236,10 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
