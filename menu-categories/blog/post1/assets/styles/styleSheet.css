@@ -99,18 +99,17 @@ body p {
 .postContainer {
 	padding-top: 10vh;
 }
-
 .postContainer .date {
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 86px;
+	margin-bottom: 38px;
 	font: normal normal 600 18px/30px Inter;
 	letter-spacing: 0px;
 	color: #00b0ce;
 	opacity: 1;
 }
-
 .postContainer .title {
 	text-align: left;
+	margin-bottom: 0;
 	font: normal normal 600 22px/30px Inter;
 	letter-spacing: 0px;
 	color: #0b131e;
@@ -125,6 +124,11 @@ body p {
 	color: #0b131e;
 	max-width: 78ch;
 	margin: 62px 0px;
+}
+
+.postContainer .section.first {
+	margin-top: 38px;
+	margin-bottom: 57px;
 }
 
 .postContainer .section .subtitle {
@@ -302,7 +306,7 @@ body p {
 	padding-bottom: 3em;
 }
 .lastMessageDescription {
-	font: normal normal 700 20px Inter;
+	font: normal normal 400 20px Inter;
 	letter-spacing: 0px;
 	color: #00b0ce;
 	opacity: 1;
@@ -397,8 +401,8 @@ body p {
 	max-width: 46ch;
 }
 .postContainer .postCarouselContainer .postTitle {
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 	text-align: left;
 	font: normal normal 500 16px/24px Inter;
 	letter-spacing: 0px;
