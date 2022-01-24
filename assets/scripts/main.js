@@ -252,6 +252,20 @@ function togglePositionEventos(id) {
 	}
 }
 
+function scrollContainerAlumnosDesktop(id){
+	let clicked = parseInt(id.split('-')[id.split('-').length - 1]);
+
+	$('.indicator.active').removeClass('active');
+	$('#'+id).addClass('active')
+
+	document.getElementById('ContainerAlumnosDesktop').scrollTo({
+		top: 0,
+		left: window.innerWidth*(clicked-1),
+		behavior: 'smooth'
+	  });
+
+}
+
 $(document).ready(function() {
 	var toggled = false;
 	var fired = false;
@@ -410,57 +424,59 @@ function LoadJson(url, selector) {
 }
 
 function fillContainerTestimonios(obj) {
-	let string = '';
-	obj.forEach(function(testimonio, i) {
-		if (i % 6 === 0) {
-			if (i === 0) {
-				string += `
-                <div class='carousel-item active'>
-                    <div class="container-fluid mb-5">
-                        <div class="row d-flex justify-content-center">
-                `;
-			} else {
-				string += `
-            <div class='carousel-item'}>
-                <div class="container-fluid mb-5">
-                    <div class="row d-flex justify-content-center ">
-            `;
-			}
-		}
-
-		string += `
-        <div class="alumnoCard col-sm-12 col-md-6 col-lg-4 col-xl-4 p-md-3 p-sm-0">
-            <div class="card h-100">
-                <Container class="img-container d-flex justify-content-center">
-                    <div class="p-relative w-50 img-container2">
-                        <img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
-                        <img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
-                    </div>
-                </Container>  
-                <div class="card-body mt-2 mb-0 py-0">
-                    <h5 class="card-title">${testimonio.nombre}</h5>
-                    <p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
-                    <p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
-                </div>
-                <div class="py-0 my-0 card-footer">
-                <a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
-                <a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar leyendo</a>
-                </div>
-            </div>
-        </div>
-        `;
-
-		if ((i + 1) % 6 === 0) {
-			string += `
-                    </div>
-                </div>
-            </div>
-        `;
-		}
-	});
-	containerTestimonios.html(string);
-
 	maxAlumnos = obj.length;
+	
+	//desktop
+	obj.forEach(function(testimonio, i) {
+		let half=Math.ceil(maxAlumnos/2)
+		if(i<half){
+			$('#containerTestimoniosRow1').append(`
+				<div class="alumnoCard">
+					<div class="card h-100">
+						<Container class="img-container d-flex justify-content-center">
+							<div class="p-relative w-50 img-container2">
+								<img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
+								<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+							</div>
+						</Container>  
+						<div class="card-body mt-2 mb-0 py-0">
+							<h5 class="card-title">${testimonio.nombre}</h5>
+							<p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
+							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
+						</div>
+						<div class="py-0 my-0 card-footer">
+						<a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+						<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar leyendo</a>
+						</div>
+					</div>
+				</div>
+			`)
+		}else{
+			$('#containerTestimoniosRow2').append(`
+				<div class="alumnoCard">
+					<div class="card h-100">
+						<Container class="img-container d-flex justify-content-center">
+							<div class="p-relative w-50 img-container2">
+								<img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
+								<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+							</div>
+						</Container>  
+						<div class="card-body mt-2 mb-0 py-0">
+							<h5 class="card-title">${testimonio.nombre}</h5>
+							<p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
+							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
+						</div>
+						<div class="py-0 my-0 card-footer">
+						<a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
+						<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${testimonio.origen.toLowerCase()}&alumno=${testimonio.nombre}">continuar leyendo</a>
+						</div>
+					</div>
+				</div>
+			`)
+		}	
+	})
+
+	//mobile
 	obj.forEach(function(testimonio, i) {
 		$('#sliderAlumnos').append(
 			`<div class="alumnocard ${i === 0 ? 'center' : i === 1 ? 'right' : 'right out'}" id="alumno-card-${i +
@@ -487,45 +503,46 @@ function fillContainerTestimonios(obj) {
 		</div>`
 		);
 	});
+
 	$('#sliderAlumnos').append(
 		`<div class="alumnocard placeholder">
-	<div class="alumnoCard">
-		<div class="card h-100">
-			<Container class="img-container d-flex justify-content-center">
-				<div class="p-relative w-50 img-container2">
-					<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0]
-						.nombre}.png" class="img-fluid" alt="...">
-					<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" class="flag hidden" alt="-">
+			<div class="alumnoCard">
+				<div class="card h-100">
+					<Container class="img-container d-flex justify-content-center">
+						<div class="p-relative w-50 img-container2">
+							<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0]
+								.nombre}.png" class="img-fluid" alt="...">
+							<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" class="flag hidden" alt="-">
+						</div>
+					</Container>  
+					<div class="card-body mt-2 mb-0 py-0">
+						<h5 class="card-title">${obj[0].nombre}</h5>
+						<p class="hidden testimonio card-text mb-0 me-0">${obj[0].testimonioAdelanto}</p>
+						<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj[0]
+							.origen}<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" alt="-"></p>
+					</div>
+					<div class="py-0 my-0 card-footer">
+					<a class="show mt-0 py-0 mb-3">Ver testimonio</a>
+					<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj[0].origen.toLowerCase()}&alumno=${obj[0]
+					.nombre}">continuar leyendo</a>
+					</div>
 				</div>
-			</Container>  
-			<div class="card-body mt-2 mb-0 py-0">
-				<h5 class="card-title">${obj[0].nombre}</h5>
-				<p class="hidden testimonio card-text mb-0 me-0">${obj[0].testimonioAdelanto}</p>
-				<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj[0]
-					.origen}<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" alt="-"></p>
-			</div>
-			<div class="py-0 my-0 card-footer">
-			<a class="show mt-0 py-0 mb-3">Ver testimonio</a>
-			<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj[0].origen.toLowerCase()}&alumno=${obj[0]
-			.nombre}">continuar leyendo</a>
-			</div>
-		</div>
-	</div>       
-</div>`
+			</div>       
+		</div>`
 	);
+
 	$('#alumnosTotal').text('/' + obj.length);
 }
 
 function indicators(obj) {
 	let string = '';
-	const pages = Math.ceil(obj.length / 6);
+	const pages = Math.ceil(obj.length / 8);
 
 	for (let index = 0; index < pages; index++) {
+		console.log(index===0)
 		string += `
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to=${index} class=${index === 0
-			? 'active'
-			: null}
-        aria-current="true" aria-label="Slide ${index + 1}"></button>
+        <button type="button" id='indicator-alumno-desktop-page-${index+1}' onclick="scrollContainerAlumnosDesktop(id)"
+		 ${index===0 ? "class=\"indicator active\"" : "class=\"indicator\""}></button>
         `;
 	}
 	carouselIndicators.html(string);

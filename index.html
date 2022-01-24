@@ -159,8 +159,6 @@
         </div>
     </div>
 
-    <div class="desktop transition">
-    </div>
     <section class="home">
         <section class="bienvenido">
             <div class="parent container-fluid my-5 pt-0 mt-0 p-relative">
@@ -760,7 +758,7 @@
                             fibra de carbono.
                         </p>
                     </div>
-                    <div class="col-12 sameWidth-2 d-flex justify-content-between" >
+                    <div class="col-12 sameWidth-2 d-flex justify-content-between">
                         <div class="selector selected" id="flota-selector-1" onclick="selectFlota(id)">
                             <div class="w-100 d-flex w-100 justify-content-center">
                                 <img id="icon-flota-1" class="icon"
@@ -798,7 +796,7 @@
                         </div>
                     </div>
                     <div class="col-12 px-0 mx-0" id="sliderFlota">
-                        <div class="imagenes px-0" id="slider" >
+                        <div class="imagenes px-0" id="slider">
                             <div id="flota-imagen-1" class="imagen center" onclick="selectFlota(id)">
                                 <img class="d-block w-100" src="assets/images/mobile/Nuestra Flota/imagen/1.png" alt="">
                                 <p class="label">CESSNA 150</p>
@@ -846,8 +844,8 @@
             <div class="container p-0 p-sm-0 p-md-5">
                 <div class="row w-100 mx-0 h-100vh tabs-row">
                     <nav class="sameWidth-3">
-                        <div class="nav nav-tabs d-flex justify-content-between justify-content-md-center"
-                            id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs d-flex justify-content-between justify-content-md-center" id="nav-tab"
+                            role="tablist">
                             <button class="nav-link active" id="nav-v1-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-v1" type="button" role="tab" aria-controls="nav-home"
                                 aria-selected="true">
@@ -1140,6 +1138,7 @@
                         <span>Nuestros alumnos <br class="mobile"> nos </span>
                         <span class="enfasis">recomiendan</span>
                     </h1>
+
                     <div class="cardsContainer px-0 mobile" id="sliderAlumnos">
 
                     </div>
@@ -1147,9 +1146,30 @@
                         <span id="indicator-alumnos">1</span>
                         <span id="alumnosTotal" class="total">/12</span>
                     </h2>
-                    <div div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"
-                        class="container col-10 desktop">
-                        <div class="m-1 m-lg-5 containerTestimonios row d-flex justify-content-center">
+                    <div class="col-12 container-fluid px-0 desktop" data-aos="fade-up" data-aos-easing="linear"
+                        data-aos-duration="1500">
+
+                        <div class="overflow-hidden p-relative" id="ContainerAlumnosDesktop">
+                            <div id="containerTestimoniosRow1" class="alumnoRow row overflow-show">
+                                
+                            </div>
+
+                            <div id="containerTestimoniosRow2" class="alumnoRow row overflow-show">
+                                
+                            </div>
+
+                            <!--
+                                <div class="chevronRight">
+                                    <img class="w-100 d-block" src="assets/images/components/Chevron.svg" alt="">
+                                </div>
+                                <div class="chevronLeft">
+                                    <img class="w-100 d-block" src="assets/images/components/Chevron.svg" alt="">
+                                </div>
+                            -->
+
+                        </div>
+                       
+                        <div  class="m-1 m-lg-5 containerTestimonioscontent-center">
                             <div id="myCarousel" interval="false" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators" id="carouselIndicators">
 

@@ -807,11 +807,11 @@ fade {
 	color: white;
 }
 
-.tecnologia .tab-pane.fade.show.active .slideLeft{
-	animation:0.5s slideLeft forwards;
+.tecnologia .tab-pane.fade.show.active .slideLeft {
+	animation: 0.5s slideLeft forwards;
 }
-.tecnologia .tab-pane.fade.show.active .slideRight{
-	animation:0.5s slideRight forwards;
+.tecnologia .tab-pane.fade.show.active .slideRight {
+	animation: 0.5s slideRight forwards;
 }
 
 @keyframes slideLeft {
@@ -1060,18 +1060,19 @@ fade {
 	text-transform: uppercase;
 	opacity: 1;
 }
-.carousel-indicators [data-bs-target] {
+.carousel-indicators .indicator {
+	padding:0;
+	margin:0 3px;
 	background-color: white;
 	opacity: 0.5;
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	border:none;
 	height: 10px;
 	width: 10px;
 	border-radius: 5px;
 	transition: opacity 0s, background-color 0s;
 }
 
-.carousel-indicators .active {
+.carousel-indicators .indicator.active {
 	background-color: #00b0ce;
 	opacity: 1;
 }
@@ -1079,6 +1080,49 @@ fade {
 /*-------------------------------------------------- Media Query Alumnos --------------------------------------------------DONE*/
 
 /* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+	.alumnoRow {
+		margin: 0;
+		margin-right: 76px;
+		flex-wrap: nowrap !important;
+		flex-direction: row !important;
+		width:100;
+	}
+	.alumnoCard {
+		padding:0;
+		margin:0;
+		margin-right:39px;
+		width: calc( (100% - 76px * 2 - 39px ) / 4);
+	}
+	.alumnoCard:first-of-type {
+		margin-left: 76px;
+	}
+	.alumnoCard:last-of-type {
+		padding-right: 76px;
+		width: calc( (100% - 76px * 2 - 39px ) / 4 + 76px);
+	}
+	.alumnoCard:last-of-type::after {
+		width: 76px;
+		padding-right:76px;
+	}
+	.alumnos .chevronRight,
+	.alumnos .chevronLeft{
+		position:absolute;
+		top:50%;
+		transform: translateX(-50%);
+		width: 15px;
+		cursor: pointer;
+	}
+	.alumnos .chevronRight{
+		right:40px;
+	}
+	.alumnos .chevronLeft{
+		left:40px;
+		transform: translateX(-50%) rotate(180deg);
+	}
+}
+
 
 @media only screen and (min-width: 768px) {
 	.alumnoCard {
@@ -1105,7 +1149,7 @@ fade {
 
 @media only screen and (min-width: 1200px) {
 	.alumnoCard {
-		margin-top: 10%;
+		margin-top: 7%;
 	}
 }
 
@@ -1259,26 +1303,26 @@ fade {
 		background-image: url(../images/mobile/Fondo\ HOME.png);
 		background-size: 100% 100%;
 	}
-	.arrow{
-		position:absolute;
-		bottom:47px
+	.arrow {
+		position: absolute;
+		bottom: 47px;
 	}
-	.arrow .dotContainer{
-		width:100%;
+	.arrow .dotContainer {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom:6px
+		margin-bottom: 6px;
 	}
-	.arrow .dot{
-		height:3px;
-		width:3px;
+	.arrow .dot {
+		height: 3px;
+		width: 3px;
 		border-radius: 100%;
 		background: #fff;
 	}
-	.arrow .chevron img{
+	.arrow .chevron img {
 		height: 9px;
-		display:block
+		display: block;
 	}
 
 	.bienvenido .bienvenidaTitulo {
@@ -1935,7 +1979,7 @@ fade {
 		color: #ffffff;
 		opacity: 0.7;
 	}
-	.eventos{
+	.eventos {
 		padding-bottom: 7%;
 	}
 	.eventos .title {
@@ -2039,20 +2083,20 @@ fade {
 		left: 42px;
 	}
 	.eventos .indicatorsContainer {
-		width:100%;
+		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top:8px
+		margin-top: 8px;
 	}
 	.eventos .indicatorsContainer .indicator {
-		padding:0;
-		margin:0 3px;
+		padding: 0;
+		margin: 0 3px;
 		width: 10px;
 		height: 10px;
 		background: #E8E8E87f 0% 0% no-repeat padding-box;
 		border-radius: 100%;
-		transition:0.5s all
+		transition: 0.5s all;
 	}
 	.eventos .indicatorsContainer .indicator.selected {
 		background: #00b0ce 0% 0% no-repeat padding-box;
