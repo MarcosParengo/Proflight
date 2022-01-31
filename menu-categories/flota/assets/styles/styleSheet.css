@@ -261,7 +261,10 @@ body p {
 	padding-bottom: 5%;
 	margin-bottom: 5%;
 }
-
+.nav-tabs-container{
+	width:100%;
+	max-width: calc( 93px * 12);
+}
 .nav-tabs {
 	border: none !important;
 }
@@ -274,7 +277,7 @@ body p {
 	border: none !important;
 	border: 0px solid transparent;
 	color: #B7B7B7CC;
-	padding: 0em 2em;
+	padding: 0;
 }
 
 .tabs .nav-tabs .nav-link .label {
