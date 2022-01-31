@@ -261,21 +261,16 @@ body p {
 }
 
 .tabs .numero {
+	font: normal normal 300 12px/48px Inter;
 	color: rgb(141, 150, 231);
-	font-size: 10px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
 }
 
 .tabs h2 {
-	border-top: 1px solid white;
 	text-align: start;
 	font-size: 15px;
 	font-weight: lighter;
 	color: white;
 	padding-bottom: 5%;
-	padding-top: 5%;
 	line-height: 2rem;
 }
 
@@ -332,7 +327,12 @@ body p {
 }
 
 .tab-pane .titulo {
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .titulo .texto {
@@ -342,20 +342,8 @@ body p {
 	opacity: 1;
 }
 
-.titulo .number {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	font: normal normal 300 12px/48px Inter;
-	letter-spacing: 0px;
-	color: #00b0ce;
-	text-transform: uppercase;
-	opacity: 1;
-}
-
 .tab-content .content {
 	line-height: 2rem;
-	border-top: 1px solid;
 	font: normal normal 300 14px/30px Inter;
 	letter-spacing: 0px;
 	color: #ffffff;

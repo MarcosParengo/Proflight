@@ -179,8 +179,8 @@ function fillContainerEventos() {
 function fillFilterEventos() {
 	paises.forEach(function(pais, i) {
 		countryFilters.append(`
-		<div class="col-3 country" id="${pais.toUpperCase()}" onclick="pais(id)">
-			<h1 class="text">
+		<div class="col-auto country" id="${pais.toUpperCase()}" onclick="pais(id)">
+			<h1 class="text m-0">
 				<img class="flag me-1" src="assets/images/evento/bandera/${pais.toUpperCase()}.png" alt="">
 				${pais.toLowerCase()}
 			</h1>

@@ -223,18 +223,27 @@ body p {
 
 .chevronLeftContainer,
 .chevronRightContainer {
+	padding:0;
+	font-size:18px;
 	position: absolute;
 	cursor: pointer;
 	width: auto;
 	height: 100%;
 	display: flex;
 	align-items: center;
+	transform: translateX(-100%);
 }
 .chevronLeftContainer {
-	left: 0%;
+	left: 5em;
 }
 .chevronRightContainer {
-	right: 0%;
+	right: 5em;
+	
+}
+
+.chevronLeftContainer .image,
+.chevronRightContainer .image{
+	width:11px;
 }
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */

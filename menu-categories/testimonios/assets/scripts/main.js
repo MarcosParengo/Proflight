@@ -216,10 +216,10 @@ function testimonio(numeroDeTestimonio) {
   	</div>
   	<div class="line"></div>
 	<div class="line" style="margin-left:0.4%"></div>
-	<div class="container-fluid">
-		<div class="row d-flex justify-content-center p-relative">
+	<div class="container-fluid px-0">
+		<div class="row  mx-0 w-100 d-flex justify-content-center p-relative">
 			<div class="chevronLeftContainer" onclick="anteriorTestimonio()">
-				<img src="assets/images/components/Chevron.svg" alt="">
+				<img class="image" src="assets/images/components/Chevron.svg" alt="">
 			</div>
 			<div class="row d-flex justify-content-center contenedorTestimonio">
 				<div class="ps-0 col-4 d-none d-md-block d-lg-block d-xl-block">
@@ -233,7 +233,7 @@ function testimonio(numeroDeTestimonio) {
 				</div>
 			</div>
 			<div class="chevronRightContainer" onclick="proximoTestimonio()">
-				<img src="assets/images/components/Chevron-1.svg" alt="">
+				<img class="image" src="assets/images/components/Chevron-1.svg" alt="">
 			</div>	
 		</div>
 	</div>
