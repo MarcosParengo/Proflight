@@ -17,7 +17,7 @@ function toggleShowAlumnoCard(id) {
 }
 
 function selectFlota(selector) {
-	console.log(selector)
+	console.log(selector);
 	const id = parseInt(selector.charAt(selector.length - 1));
 	$(`#icon-flota-${flotaSelected}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${flotaSelected}.svg`);
 	$(`#icon-flota-${id}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${id}-selected.svg`);
@@ -40,14 +40,14 @@ function selectFlota(selector) {
 const sliderFlota = document.getElementById('sliderFlota');
 
 function handleGestureFlota() {
-	let id = $('.imagen.center').attr('id')
+	let id = $('.imagen.center').attr('id');
 	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
 
 	if (touchendX < touchstartX && centerElement < maxEventos) {
-		selectFlota((centerElement+1).toString())
+		selectFlota((centerElement + 1).toString());
 	}
 	if (touchendX > touchstartX && centerElement > 1) {
-		selectFlota((centerElement-1).toString())
+		selectFlota((centerElement - 1).toString());
 	}
 }
 
@@ -106,14 +106,14 @@ function selectNextPrograma() {
 const sliderProgramas = document.getElementById('sliderProgramas');
 
 function handleGestureProgramas() {
-	let id = $('.icon.selected').attr('id')
+	let id = $('.icon.selected').attr('id');
 	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
 
 	if (touchendX < touchstartX && centerElement < maxEventos) {
-		selectPrograma((centerElement+1).toString())
+		selectPrograma((centerElement + 1).toString());
 	}
 	if (touchendX > touchstartX && centerElement > 1) {
-		selectPrograma((centerElement-1).toString())
+		selectPrograma((centerElement - 1).toString());
 	}
 }
 
@@ -252,18 +252,17 @@ function togglePositionEventos(id) {
 	}
 }
 
-function scrollContainerAlumnosDesktop(id){
+function scrollContainerAlumnosDesktop(id) {
 	let clicked = parseInt(id.split('-')[id.split('-').length - 1]);
 
 	$('.indicator.active').removeClass('active');
-	$('#'+id).addClass('active')
+	$('#' + id).addClass('active');
 
 	document.getElementById('ContainerAlumnosDesktop').scrollTo({
 		top: 0,
-		left: window.innerWidth*(clicked-1),
+		left: window.innerWidth * (clicked - 1),
 		behavior: 'smooth'
-	  });
-
+	});
 }
 
 $(document).ready(function() {
@@ -284,51 +283,27 @@ $(document).ready(function() {
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	carouselIndicators = $('#carouselIndicators');
 
-	var bienvenidaTimeout;
-	var bienvenidaTimeout2;
+	horasDeInstruccion.innerHTML = '00000';
+	instructores.innerHTML = '00';
+	aeronaves.innerHTML = '00';
+	alumnos.innerHTML = '000';
 
 	$(window).bind('scroll', function() {
 		if (
-			$(this).scrollTop() > $('#bienvenida').offset().top-10 &&
+			$(this).scrollTop() > $('#bienvenida').offset().top - 10 &&
 			!fired &&
 			$('#bienvenida').height() + $('#bienvenida').offset().top > $(this).scrollTop()
 		) {
 			fired = true;
-			bienvenidaTimeout = setTimeout(function() {
-				$('#BienvenidaFirstSection').toggleClass('inactive');
-				$('#BienvenidaFirstSection').toggleClass('active');
-
-				$('#BienvenidaSecondSection').toggleClass('inactive');
-				$('#BienvenidaSecondSection').toggleClass('active');
-
-				bienvenidaTimeout2 = setTimeout(function() {
-					$('#BienvenidaSecondSection').toggleClass('inactive');
-					$('#BienvenidaThirdSection').toggleClass('inactive');
-					$('#BienvenidaSecondSection').toggleClass('active');
-					$('#BienvenidaThirdSection').toggleClass('active');
-					horasDeInstruccion.innerHTML = 15000;
-					instructores.innerHTML = 25;
-					aeronaves.innerHTML = 11;
-					alumnos.innerHTML = 250;
-				}, 3000);
-			}, 3000);
+			horasDeInstruccion.innerHTML = '15000';
+			instructores.innerHTML = '25';
+			aeronaves.innerHTML = '11';
+			alumnos.innerHTML = '250';
 		} else if (fired && $('#bienvenida').height() + $('#bienvenida').offset().top < $(this).scrollTop()) {
-			clearTimeout(bienvenidaTimeout);
-			clearTimeout(bienvenidaTimeout2);
-
-			$('#BienvenidaFirstSection').removeClass('inactive');
-			$('#BienvenidaSecondSection').removeClass('active');
-			$('#BienvenidaThirdSection').removeClass('active');
-
-			$('#BienvenidaFirstSection').addClass('active');
-			$('#BienvenidaSecondSection').addClass('inactive');
-			$('#BienvenidaThirdSection').addClass('inactive');
-
-			horasDeInstruccion.innerHTML = 0;
-			instructores.innerHTML = 0;
-			aeronaves.innerHTML = 0;
-			alumnos.innerHTML = 0;
-
+			horasDeInstruccion.innerHTML = '00000';
+			instructores.innerHTML = '00';
+			aeronaves.innerHTML = '00';
+			alumnos.innerHTML = '000';
 			fired = false;
 		}
 	});
@@ -425,11 +400,11 @@ function LoadJson(url, selector) {
 
 function fillContainerTestimonios(obj) {
 	maxAlumnos = obj.length;
-	
+
 	//desktop
 	obj.forEach(function(testimonio, i) {
-		let half=Math.ceil(maxAlumnos/2)
-		if(i<half){
+		let half = Math.ceil(maxAlumnos / 2);
+		if (i < half) {
 			$('#containerTestimoniosRow1').append(`
 				<div class="alumnoCard">
 					<div class="card h-100">
@@ -442,7 +417,10 @@ function fillContainerTestimonios(obj) {
 						<div class="card-body mt-2 mb-0 py-0">
 							<h5 class="card-title">${testimonio.nombre}</h5>
 							<p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
-							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
+							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center mt-3">
+								${testimonio.origen}
+								<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-">
+							</p>
 						</div>
 						<div class="py-0 my-0 card-footer">
 						<a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
@@ -450,8 +428,8 @@ function fillContainerTestimonios(obj) {
 						</div>
 					</div>
 				</div>
-			`)
-		}else{
+			`);
+		} else {
 			$('#containerTestimoniosRow2').append(`
 				<div class="alumnoCard">
 					<div class="card h-100">
@@ -472,9 +450,9 @@ function fillContainerTestimonios(obj) {
 						</div>
 					</div>
 				</div>
-			`)
-		}	
-	})
+			`);
+		}
+	});
 
 	//mobile
 	obj.forEach(function(testimonio, i) {
@@ -491,8 +469,13 @@ function fillContainerTestimonios(obj) {
 					</Container>  
 					<div class="card-body mt-2 mb-0 py-0">
 						<h5 class="card-title">${testimonio.nombre}</h5>
-						<p id="alumno-card-default-hidden-body-${i}" class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
-						<p id="alumno-card-default-show-body-${i}" class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
+						<p id="alumno-card-default-hidden-body-${i}" class="hidden testimonio card-text mb-0 me-0">
+							${testimonio.testimonioAdelanto}
+						</p>
+						<p id="alumno-card-default-show-body-${i}" class="show nacionalidad card-text d-flex align-items-center justify-content-center mt-3">
+							${testimonio.origen}
+							<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-">
+						</p>
 					</div>
 					<div class="py-0 my-0 card-footer">
 					<a id="alumno-card-default-show-footer-${i}"  class="show mt-0 py-0 mb-3 footerLink" id="verTestimonio-${i}" onclick="toggleShowAlumnoCard(id)">Ver testimonio</a>
@@ -524,7 +507,7 @@ function fillContainerTestimonios(obj) {
 					<div class="py-0 my-0 card-footer">
 					<a class="show mt-0 py-0 mb-3">Ver testimonio</a>
 					<a class="hidden my-0 py-0 " href="menu-categories/testimonios/?pais=${obj[0].origen.toLowerCase()}&alumno=${obj[0]
-					.nombre}">continuar leyendo</a>
+			.nombre}">continuar leyendo</a>
 					</div>
 				</div>
 			</div>       
@@ -539,10 +522,11 @@ function indicators(obj) {
 	const pages = Math.ceil(obj.length / 8);
 
 	for (let index = 0; index < pages; index++) {
-		console.log(index===0)
+		console.log(index === 0);
 		string += `
-        <button type="button" id='indicator-alumno-desktop-page-${index+1}' onclick="scrollContainerAlumnosDesktop(id)"
-		 ${index===0 ? "class=\"indicator active\"" : "class=\"indicator\""}></button>
+        <button type="button" id='indicator-alumno-desktop-page-${index +
+			1}' onclick="scrollContainerAlumnosDesktop(id)"
+		 ${index === 0 ? 'class="indicator active"' : 'class="indicator"'}></button>
         `;
 	}
 	carouselIndicators.html(string);

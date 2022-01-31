@@ -330,6 +330,7 @@ body p {
 }
 
 .tab-pane .titulo {
+	text-transform: uppercase;
 	position: relative;
 }
 

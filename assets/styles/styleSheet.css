@@ -1353,6 +1353,12 @@ fade {
 		transition: all 1s;
 		animation: 1s opacity-grow;
 	}
+	.bienvenido .section#BienvenidaFirstSection {
+		margin-bottom: 21px;
+	}
+	.bienvenido .section#BienvenidaSecondSection {
+		margin-bottom: 96px;
+	}
 	.bienvenido .section.inactive {
 		display: none !important;
 		opacity: 0;
@@ -1832,6 +1838,7 @@ fade {
 		letter-spacing: 0px;
 		color: #ffffff;
 		opacity: 1;
+		margin-bottom: 20px;
 	}
 	.tabs-row {
 		min-height: 60vh !important;

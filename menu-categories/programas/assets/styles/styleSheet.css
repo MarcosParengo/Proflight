@@ -206,6 +206,19 @@ body p {
 	transform: translateX(250%) rotate(180deg);
 }
 
+.descripcion .privado-chevron-left{
+	width:auto;
+	position: absolute;
+	right: 0;
+	top: 300px;
+	transform: rotate(0deg);
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.descripcion .privado-chevron-left.rotated {
+	transform: rotate(180deg);
+}
+
 .descripcion .circles .circle {
 	display: inline-block;
 	padding: 3px 0;

@@ -42,7 +42,7 @@ body p {
 .min-100vh {
 	min-height: 100vh;
 }
-.row{
+.row {
 	overflow-x: hidden;
 }
 /*-------------------------------------------------- Seccionn landingHome --------------------------------------------------*/
@@ -273,10 +273,11 @@ body p {
 	min-height: 100vh;
 }
 .divider {
-	margin-top: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .nuestraVision .containerSec h1 {
-	z-index:100;
+	z-index: 100;
 	margin-left: -2ch;
 	padding-top: .7em;
 	padding-bottom: .7em;
@@ -303,7 +304,8 @@ body p {
 }
 
 /*-------------------------------------------------- Seccion Fundamentos institucionales ----------------------------------------------*/
-.Fundamentos,.fundamentosInstitucionales .data{
+.Fundamentos,
+.fundamentosInstitucionales .data {
 	animation: opacityGrow 1s forwards;
 }
 
@@ -312,6 +314,7 @@ body p {
 }
 
 .fundamentosInstitucionales .childleft {
+	margin-top: 80px;
 	padding-top: 0%;
 	padding-left: 0%;
 }
@@ -435,6 +438,10 @@ body p {
 
 .fundamentosInstitucionales .bd-placeholder-img {
 	height: 200px;
+}
+
+.fundamentosInstitucionales .circulos {
+	margin-top: 80px;
 }
 
 .fundamentosInstitucionales .circle {
@@ -763,7 +770,7 @@ body p {
 		opacity: 1;
 	}
 
-	.carouselIndicatorContainer{
+	.carouselIndicatorContainer {
 		opacity: 0;
 		max-height: 50px;
 		transition: all 0.5s;
@@ -786,7 +793,7 @@ body p {
 	}
 	.fundamentosInstitucionales .carousel {
 		font: normal normal 300 15px/28px Inter;
-		min-height: calc( 7em + 32px );
+		min-height: calc(7em + 32px);
 		height: auto;
 	}
 	.PoliticaDeCalidad {
@@ -834,6 +841,9 @@ body p {
 	}
 
 	.divider {
+		padding-top: 0%;
+		padding-bottom: 0%;
+
 		margin: 40% 0%;
 	}
 	.specialRightSpace {
