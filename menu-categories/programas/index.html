@@ -161,7 +161,7 @@
             </section>
             <section class="descripcion">
                 <div
-                    class="container-fluid  p-0 col-12 col-sm-12 col-md-10 col-lg-9 col-xl-9 min-100vh d-flex align-items-sm-start align-items-md-center p-relative">
+                    class="container-fluid  p-0 col-12 col-sm-12 col-md-10 col-lg-9 col-xl-9 min-100vh d-flex align-items-sm-start align-items-md-center">
                     <div class="row w-100" style="--bs-gutter-x: 0rem;">
                         <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
                             <h1 class="ps-0">Piloto Privado de avión</h1>
@@ -196,11 +196,15 @@
                                         obtener esta licencia, están pensados en el correcto desempeño
                                         del estudiante.
                                     </p>
+                                    <div class="showInfo" id="privadoShowInfo">
+                                        <img class="button" src="assets/images/components/Chevron Next.svg" alt=""><span
+                                            class="text">Ver información de los programas</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div id="privadoTwo" class="desktop two row">
-                            <div class="row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
+                            <div class="row d-flex justify-content-center p-relative" style="--bs-gutter-x: 0rem;">
                                 <div class="col-12 col-lg-6 col-xl-5 ps-0 pe-5">
                                     <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
                                         <span class="texto">Desarrollo del Programa</span>
@@ -214,8 +218,8 @@
                                         <br>disponibilidad.
                                     </p>
                                 </div>
-                                <div class="col-12 col-lg-6 col-xl-5">
-                                    <div id="privadoitem1" class="item1">
+                                <div class="col-12 col-lg-6 col-xl-5 ps-5 pe-0 p-relative">
+                                    <div id="privadoitem1" class="item active">
                                         <h1
                                             class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
                                             <span class="texto">Plan 141</span>
@@ -231,15 +235,28 @@
                                                 exámenes parciales en cada etapa. El padre
                                                 podrá visualizar todo el avance del estudiante de forma remota.
                                             </p>
-                                            <div class="w-100 d-flex justify-content-center">
-                                                <div class="circles">
-                                                    <div class="circle active"></div>
-                                                    <div class="circle"></div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div id="privadoitem2" class="item2">
+                                    <div id="privadoitem2" class="item">
+                                        <h1
+                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                            <span class="texto">Plan 62</span>
+                                        </h1>
+                                        <div>
+                                            <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                                El plan de estudio va al ritmo del estudiante, no se le exigirá que
+                                                rinda materias en un tiempo determinado ni tampoco el uso del
+                                                uniforme.
+                                                Es un plan diseñado principalmente para personas que realizan el
+                                                curso
+                                                de aviación por hobby, por falta de tiempo,
+                                                recursos o estudiantes que ya realizaron el curso de tierra en otro
+                                                país
+                                                y no requieren cursar nuevamente en Argentina.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item placeholder">
                                         <h1
                                             class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
                                             <span class="texto">Plan 62</span>
@@ -258,12 +275,15 @@
                                             </p>
                                             <div class="w-100 d-flex justify-content-center">
                                                 <div class="circles">
-                                                    <div class="circle"></div>
-                                                    <div class="circle active"></div>
+                                                    <div id="PrivadoCircle1" class="circle active"></div>
+                                                    <div id="PrivadoCircle2" class="circle"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div id="chevronPrivado" class="privado-chevron-left">
+                                    <img height="33px" width="18px" src="assets/images/components/Chevron.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -361,506 +381,513 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="chevronPrivado" class="privado-chevron-left">
-                            <img height="33px" width="18px"
-                                src="assets/images/components/Chevron.svg" alt="">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="comercial">
+            <section class="coverPage">
+                <div class="container-fluid">
+                    <div class="min-100vh row justify-content-center align-items-center">
+                        <div class="row">
+                            <div
+                                class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
+                                <h1 data-aos="fade-left">Piloto Comercial <br>de avión</h1>
+                                <div class="mt-auto pb-0 mb-0" data-aos="fade-up" data-aos-delay="250">
+                                    <p class="pb-0 mb-0">Con habilitación de vuelo por instrumento</p>
+                                </div>
+                            </div>
+                            <div class="desktop col-12 col-sm-6 ps-md-5 d-flex h-100 mt-2">
+                                <h2 class="right" data-aos="fade-right" data-aos-delay="250">Los estudiantes
+                                    desarrollarán las competencias suficientes para
+                                    desempeñarse como
+                                    primer oficial de las lineas aéreas de transporte comercial. Se destacarán por
+                                    su
+                                    formación integral, mediante la adquisición de habilidades
+                                    técnicas que les permitirán ser los responsables de la operación y la seguridad
+                                    de
+                                    una aeronave durante el tiempo de vuelo.</h2>
+                            </div>
+                            <div class="mobile px-0 col-12">
+                                <h1 class="title margin mb-0">Piloto Comercial de avión</h1>
+                                <h2 class="subtitle margin">Con habilitación de vuelo por instrumento</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="comercial">
-                <section class="coverPage">
-                    <div class="container-fluid">
-                        <div class="min-100vh row justify-content-center align-items-center">
-                            <div class="row">
-                                <div
-                                    class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
-                                    <h1 data-aos="fade-left">Piloto Comercial <br>de avión</h1>
-                                    <div class="mt-auto pb-0 mb-0" data-aos="fade-up" data-aos-delay="250">
-                                        <p class="pb-0 mb-0">Con habilitación de vuelo por instrumento</p>
+            <section class="descripcion">
+                <div class="container-fluid px-0 col-sm-12 col-md-11 col-lg-9 min-100vh h-auto">
+                    <div class="row" style="--bs-gutter-x: 0rem;">
+
+                        <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
+                            <h1 class="ps-0">Piloto Comercial de avión</h1>
+                            <h2 class="ps-0">Con habilitación de vuelo por instrumento</h2>
+                        </div>
+
+                        <div id="comercialOne" class="desktop one row" data-aos="fade-up" data-aos-delay="250">
+                            <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
+                                <div class="col-12 col-lg-6 col-xl-5 ps-0 pe-5">
+                                    <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                        <span class="texto">Requisitos para el otorgamiento</span>
+                                        <span class="number mt-auto">01.</span>
+                                    </h1>
+                                    <p class="lead pt-3 lh-2 weight-100">
+                                        -Poseer la licencia de piloto privado
+                                        <br>-Tener 18 años (Al momento de rendir examen)
+                                        <br>Ser capaz de leer, hablar, escribir en español
+                                        <br> -Poseer certificado de habilitación psicofisica Clase I
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-5 pe-0 ps-5">
+                                    <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                        <span class="texto">Duración del programa</span>
+                                        <span class="number mt-auto">02.</span>
+                                    </h1>
+                                    <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                        La misma dependera del desempeño del estudiante,
+                                        siendo el promedio de 6 meses desde la obtención de la
+                                        licencia de Piloto Privado de avión.
+                                    </p>
+                                    <div class="showInfo" id="comercialShowInfo">
+                                        <img class="button" src="assets/images/components/Chevron Next.svg" alt=""><span
+                                            class="text">Ver información de los programas</span>
                                     </div>
-                                </div>
-                                <div class="desktop col-12 col-sm-6 ps-md-5 d-flex h-100 mt-2">
-                                    <h2 class="right" data-aos="fade-right" data-aos-delay="250">Los estudiantes
-                                        desarrollarán las competencias suficientes para
-                                        desempeñarse como
-                                        primer oficial de las lineas aéreas de transporte comercial. Se destacarán por
-                                        su
-                                        formación integral, mediante la adquisición de habilidades
-                                        técnicas que les permitirán ser los responsables de la operación y la seguridad
-                                        de
-                                        una aeronave durante el tiempo de vuelo.</h2>
-                                </div>
-                                <div class="mobile px-0 col-12">
-                                    <h1 class="title margin mb-0">Piloto Comercial de avión</h1>
-                                    <h2 class="subtitle margin">Con habilitación de vuelo por instrumento</h2>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="descripcion">
-                    <div class="container-fluid px-0 col-sm-12 col-md-11 col-lg-9 min-100vh h-auto p-relative">
-                        <div class="row" style="--bs-gutter-x: 0rem;">
-
-                            <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
-                                <h1 class="ps-0">Piloto Comercial de avión</h1>
-                                <h2 class="ps-0">Con habilitación de vuelo por instrumento</h2>
-                            </div>
-
-                            <div id="comercialOne" class="desktop one row" data-aos="fade-up" data-aos-delay="250">
-                                <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
-                                    <div class="col-12 col-lg-6 col-xl-5 ps-0 pe-5">
-                                        <h1
-                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                            <span class="texto">Requisitos para el otorgamiento</span>
-                                            <span class="number mt-auto">01.</span>
-                                        </h1>
-                                        <p class="lead pt-3 lh-2 weight-100">
-                                            -Poseer la licencia de piloto privado
-                                            <br>-Tener 18 años (Al momento de rendir examen)
-                                            <br>Ser capaz de leer, hablar, escribir en español
-                                            <br> -Poseer certificado de habilitación psicofisica Clase I
-                                            <br>
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-lg-6 col-xl-5 pe-0 ps-5">
-                                        <h1
-                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                            <span class="texto">Duración del programa</span>
-                                            <span class="number mt-auto">02.</span>
-                                        </h1>
-                                        <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
-                                            La misma dependera del desempeño del estudiante,
-                                            siendo el promedio de 6 meses desde la obtención de la
-                                            licencia de Piloto Privado de avión.
-                                        </p>
-                                    </div>
+                        <div id="comercialTwo" class="desktop two row">
+                            <div class="one row d-flex justify-content-center p-relative" style="--bs-gutter-x: 0rem;">
+                                <div class="col-12 col-sm-5 ps-0 pe-5">
+                                    <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                        <span class="texto">Exigencia de vuelo</span>
+                                        <span class="number mt-auto">03.</span>
+                                    </h1>
+                                    <p class="lead pt-3 lh-2">
+                                        Con posterioridad a la obtención de la licencia de Piloto
+                                        Privado de Avión, se deberán acumular 200 horas de
+                                        Vuelo y 30 horas de simulador
+                                    </p>
                                 </div>
-                            </div>
 
-                            <div id="comercialTwo" class="desktop two row">
-                                <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
-                                    <div class="col-12 col-sm-5 ps-0 pe-5" id="Toitem3Comercial">
+                                <div class="col-12 col-sm-5 pe-0 ps-5 p-relative">
+                                    <div id="comercialitem1" class="item active">
                                         <h1
                                             class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                            <span class="texto">Exigencia de vuelo</span>
-                                            <span class="number mt-auto">03.</span>
+                                            <span class="texto">Avión</span>
+                                            <span class="number mt-auto"></span>
                                         </h1>
-                                        <p class="lead pt-3 lh-2">
-                                            Con posterioridad a la obtención de la licencia de Piloto
-                                            Privado de Avión, se deberán acumular 200 horas de
-                                            Vuelo y 30 horas de simulador
-                                        </p>
-                                    </div>
-
-                                    <div class="col-12 col-sm-5 pe-0 ps-5">
-                                        <div id="comercialitem1" class="item1">
-                                            <h1
-                                                class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                                <span class="texto">Avión</span>
-                                            </h1>
-                                            <div class="textContainer p-relative">
-                                                <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
-                                                    &#10004;80 horas de navegación
-                                                    <br>&#10004;80 horas de vuelo local
-                                                    <br>&#10004;40 horas de instrumento
-                                                </p>
-                                                <div class="w-100 d-flex justify-content-center">
-                                                    <div class="circles">
-                                                        <div class="circle active"></div>
-                                                        <div class="circle"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="textContainer p-relative">
+                                            <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                                &#10004;80 horas de navegación
+                                                <br>&#10004;80 horas de vuelo local
+                                                <br>&#10004;40 horas de instrumento
+                                            </p>
                                         </div>
-                                        <div id="comercialitem2" class="item2 h-100">
-                                            <h1
-                                                class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                                <span class="texto">Simulador</span>
-                                            </h1>
-                                            <div class="p-relative textContainer h-100">
-                                                <p class="lead pt-3 lh-2">
-                                                    &#10004;15 horas de Cessna 182
-                                                    <br>&#10004;15 horas de Beechcraft 350
+                                    </div>
+                                    <div id="comercialitem2" class="item h-100">
+                                        <h1
+                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                            <span class="texto">Simulador</span>
+                                            <span class="number mt-auto"></span>
+                                        </h1>
+                                        <div class="p-relative textContainer h-100">
+                                            <p class="lead pt-3 lh-2">
+                                                &#10004;15 horas de Cessna 182
+                                                <br>&#10004;15 horas de Beechcraft 350
 
-                                                </p>
-                                                <div class="w-100 d-flex justify-content-center">
-                                                    <div class="circles">
-                                                        <div class="circle"></div>
-                                                        <div class="circle active"></div>
-                                                    </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item placeholder">
+                                        <h1
+                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                            <span class="texto">Avión</span>
+                                            <span class="number mt-auto"></span>
+                                        </h1>
+                                        <div class="textContainer p-relative">
+                                            <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                                &#10004;80 horas de navegación
+                                                <br>&#10004;80 horas de vuelo local
+                                                <br>&#10004;40 horas de instrumento
+                                            </p>
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <div class="circles">
+                                                    <div id="ComercialCircle1" class="circle active"></div>
+                                                    <div id="ComercialCircle2" class="circle"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div id="comercialThree" class="desktop three row">
-
-                                <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
-                                    <div class="col-12 col-sm-5 ps-0 pe-5">
-                                        <h1
-                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                            <span class="texto">Habilitación de vuelo por instrumentos</span>
-                                            <span class="number mt-auto">04.</span>
-                                        </h1>
-                                        <p class="lead pt-3 lh-2 weight-100">
-                                            Luego de haber obtenido la licencia de Piloto Privado el
-                                            estudiante procederá a realizar la habilitación de vuelo
-                                            por instrumentos.
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-sm-5 pe-0 ps-5">
-                                        <h1
-                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                            <span class="texto">licencia de Piloto Comercial</span>
-                                            <span class="number mt-auto">05.</span>
-                                        </h1>
-                                        <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
-                                            Una vez obtenida la habilitación de vuelo por
-                                            instrumentos, el estudiante comenzará con el
-                                            entrenamiento para la licencia de Piloto Comercial
-                                            de Avión.
-                                        </p>
+                                <div class="col-5 offset-md-5 ps-5">
+                                    <div class="showInfo" id="comercialShowInfo2">
+                                        <img class="button" src="assets/images/components/Chevron Next.svg" alt=""><span
+                                            class="text">Ver información de los programas</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div id="chevronComercial" class="privado-chevron-left">
-                                <img height="33px" width="18px"
-                                    src="assets/images/components/Chevron.svg" alt="">
-                            </div>
-
-                            <div class="mobile">
-                                <div class="margin">
-                                    <h1 class="title mb-0">Piloto Comercial de avión</h1>
-                                    <h2 class="subtitle mb-0">Con habilitación de vuelo por instrumento</h1>
-                                </div>
-                                <div class="accordion accordion-flush" id="accordionComercial">
-                                    <div class="accordion-item">
-                                        <div id="collapseOneComercial" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionComercial">
-                                            <div class="accordion-body px-0 margin">
-                                                <p class="mb-0">Los estudiantes desarrollarán las competencias
-                                                    suficientes para desempeñarse como primer oficial de las líneas
-                                                    aéreas de transporte comercial. Se destacarán por su formación
-                                                    integral, mediante la adquisición de habilidades técnicas que les
-                                                    permitirán ser los responsables de la operación y la seguridad de
-                                                    una aeronave durante el tiempo de vuelo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwoComercial">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwoComercial"
-                                                aria-expanded="false" aria-controls="collapseTwoComercial">
-                                                <img width="17" class="me-2" src="assets/images/components/item1.svg"
-                                                    alt="">
-                                                Requisitos para el otorgamiento
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwoComercial" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwoComercial" data-bs-parent="#accordionComercial">
-                                            <div class="accordion-body px-0 margin">
-                                                <ol class="list">
-                                                    <li>Poseer la licencia de piloto privado.</li>
-                                                    <li>Tener 18 años (Al momento de rendir examen).</li>
-                                                    <li>Ser capaz de leer, hablar, escribir en español.</li>
-                                                    <li>Poseer certificado de habilitación psicofísica Clase I.</li>
-                                                </ol>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThreeComercial">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThreeComercial"
-                                                aria-expanded="false" aria-controls="collapseThreeComercial">
-                                                <img width="16" class="me-2"
-                                                    src="assets/images/components/comercial item2.svg" alt="">
-                                                Duración del programa
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThreeComercial" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThreeComercial"
-                                            data-bs-parent="#accordionComercial">
-                                            <div class="accordion-body px-0 margin">
-                                                <p>La misma dependerá del desempeño del estudiante, siendo el promedio
-                                                    de 6
-                                                    meses desde la obtención de la licencia de Piloto Privado.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFourComercial">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFourComercial"
-                                                aria-expanded="false" aria-controls="collapseFourComercial">
-                                                <img width="16" class="me-2"
-                                                    src="assets/images/components/comercial item3.svg" alt="">
-                                                Exigencia de vuelo
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFourComercial" class="accordion-collapse collapse"
-                                            aria-labelledby="headingFourComercial" data-bs-parent="#accordionComercial">
-                                            <div class="accordion-body px-0">
-                                                <p class="margin">Con posterioridad a la obtención de la licencia de
-                                                    Piloto
-                                                    Privado de Avión, se deberán acumular 200 horas de vuelo, y 30 horas
-                                                    de
-                                                    simulador.</p>
-                                                <h3>Avión</h3>
-                                                <p class="margin">80 horas de navegación<br> 80 horas de vuelo local
-                                                    <br>40 horas de
-                                                    instrumentos <br>10 horas de vuelo nocturno
-                                                </p>
-                                                <h3>Simulador</h3>
-                                                <p class="margin">15 horas de Cessna 182 <br>15 horas de Beechcraft 350
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFiveComercial">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFiveComercial"
-                                                aria-expanded="false" aria-controls="collapseFiveComercial">
-                                                <img width="16" class="me-2"
-                                                    src="assets/images/components/comercial item4.svg" alt="">
-                                                Habilitacion vuelo por instrumentos
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFiveComercial" class="accordion-collapse collapse"
-                                            aria-labelledby="headingFiveComercial" data-bs-parent="#accordionComercial">
-                                            <div class="accordion-body px-0">
-                                                <p class="margin">Luego de haber obtenido la licencia de Piloto Privado
-                                                    el estudiante procederá a realizar la habilitación de vuelo por
-                                                    instrumentos.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingSixComercial">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSixComercial"
-                                                aria-expanded="false" aria-controls="collapseSixComercial">
-                                                <img width="16" class="me-2"
-                                                    src="assets/images/components/comercial item5.svg" alt="">
-                                                Licencia de Piloto Comercial
-                                            </button>
-                                        </h2>
-                                        <div id="collapseSixComercial" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSixComercial" data-bs-parent="#accordionComercial">
-                                            <div class="accordion-body px-0">
-                                                <p class="margin">Una vez obtenida la habilitación de vuelo por
-                                                    instrumentos, el estudiante comenzará con el entrenamiento para la
-                                                    licencia de Piloto Comercial de Avión.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="chevronComercial" class="privado-chevron-left">
+                                    <img height="33px" width="18px" src="assets/images/components/Chevron.svg" alt="">
                                 </div>
                             </div>
                         </div>
-                </section>
-            </section>
-            <section class="multiMotor">
-                <section class="coverPage">
-                    <div class="container-fluid">
-                        <div class="min-100vh row justify-content-center align-items-center">
-                            <div class="row px-0">
-                                <div
-                                    class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
-                                    <h1 data-aos="fade-left">Habilitación de <br>vuelo multimotor</h1>
-                                    <div data-aos="fade-up" data-aos-delay="250" class="mt-auto pt-1 mt-sm-5 pt-sm-5">
-                                        <p>10 horas de vuelo con un bimotor Seneca II.</p>
-                                        <p>Incluye teoría y 4 horas de simulador.</p>
-                                        <p>Esta habilitación demanda entre 15 y 20 días.</p>
-                                    </div>
+
+                        <div id="comercialThree" class="desktop three row">
+
+                            <div class="one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
+                                <div class="col-12 col-sm-5 ps-0 pe-5">
+                                    <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                        <span class="texto">Habilitación de vuelo por instrumentos</span>
+                                        <span class="number mt-auto">04.</span>
+                                    </h1>
+                                    <p class="lead pt-3 lh-2 weight-100">
+                                        Luego de haber obtenido la licencia de Piloto Privado el
+                                        estudiante procederá a realizar la habilitación de vuelo
+                                        por instrumentos.
+                                    </p>
                                 </div>
-                                <div class="desktop col-12 col-sm-6 ps-md-5 mt-2 d-flex h-100">
-                                    <h2 data-aos="fade-right" data-aos-delay="250" class="right">Los estudiantes pueden
-                                        escoger realizarla en Argentina o en el
-                                        país de origen de
-                                        cada uno, aunque siempre recomendamos realizarlo en nuestro país para luego
-                                        regresar
-                                        con todas las certificaciones.</h2>
-                                </div>
-                                <div class="mobile px-0 col-12">
-                                    <h1 class="title margin mb-0">Habilitación de vuelo multimotor</h1>
-                                    <h2 class="subtitle margin">10 horas de vuelo con un bimotor Seneca II.</h2>
-                                    <h2 class="subtitle margin"> Incluye
-                                        teoría y 4 horas de simulador.</h2>
-                                    <h2 class="subtitle margin"> Esta habilitación demanda entre 15 a 20 días.
-                                    </h2>
-                                    <p class="text margin">
-                                        Los estudiantes pueden escoger realizarla en Argentina o en el país de origen de
-                                        cada uno, aunque siempre recomendamos realizarlo en nuestro país para luego
-                                        regresar con todas las certificaciones.
+                                <div class="col-12 col-sm-5 pe-0 ps-5">
+                                    <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                        <span class="texto">licencia de Piloto Comercial</span>
+                                        <span class="number mt-auto">05.</span>
+                                    </h1>
+                                    <p class="lead pt-3 lh-2 weight-100" style="max-width: 45ch;">
+                                        Una vez obtenida la habilitación de vuelo por
+                                        instrumentos, el estudiante comenzará con el
+                                        entrenamiento para la licencia de Piloto Comercial
+                                        de Avión.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </section>
-            <section class="instructor">
-                <section class="coverPage desktop">
-                    <div class="container-fluid">
-                        <div class="min-100vh row justify-content-center align-items-center">
-                            <div class="row">
-                                <div
-                                    class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
-                                    <h1 data-aos="fade-left">Instructor de vuelo</h1>
-                                    <div data-aos="fade-up" data-aos-delay="250" class="mt-auto pt-1 mt-sm-5 pt-sm-5">
-                                        <p class="mb-0 pb-0">Según lo establecido en las regulaciones</p>
-                                        <p>argentinas RAAC parte 61</p>
+
+                        <div class="mobile">
+                            <div class="margin">
+                                <h1 class="title mb-0">Piloto Comercial de avión</h1>
+                                <h2 class="subtitle mb-0">Con habilitación de vuelo por instrumento</h1>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionComercial">
+                                <div class="accordion-item">
+                                    <div id="collapseOneComercial" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionComercial">
+                                        <div class="accordion-body px-0 margin">
+                                            <p class="mb-0">Los estudiantes desarrollarán las competencias
+                                                suficientes para desempeñarse como primer oficial de las líneas
+                                                aéreas de transporte comercial. Se destacarán por su formación
+                                                integral, mediante la adquisición de habilidades técnicas que les
+                                                permitirán ser los responsables de la operación y la seguridad de
+                                                una aeronave durante el tiempo de vuelo.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="desktop col-12 col-sm-6 ps-md-5 mt-2 d-flex h-100">
-                                    <h2 data-aos="fade-right" data-aos-delay="250" class="right"> Todo piloto acreedor
-                                        de esta licencia será una persona con la
-                                        capacidad y vocación
-                                        para contribuir al desarrollo y crecimiento profesional de alumnos</h2>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwoComercial">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwoComercial"
+                                            aria-expanded="false" aria-controls="collapseTwoComercial">
+                                            <img width="17" class="me-2" src="assets/images/components/item1.svg"
+                                                alt="">
+                                            Requisitos para el otorgamiento
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwoComercial" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwoComercial" data-bs-parent="#accordionComercial">
+                                        <div class="accordion-body px-0 margin">
+                                            <ol class="list">
+                                                <li>Poseer la licencia de piloto privado.</li>
+                                                <li>Tener 18 años (Al momento de rendir examen).</li>
+                                                <li>Ser capaz de leer, hablar, escribir en español.</li>
+                                                <li>Poseer certificado de habilitación psicofísica Clase I.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThreeComercial">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThreeComercial"
+                                            aria-expanded="false" aria-controls="collapseThreeComercial">
+                                            <img width="16" class="me-2"
+                                                src="assets/images/components/comercial item2.svg" alt="">
+                                            Duración del programa
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThreeComercial" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThreeComercial" data-bs-parent="#accordionComercial">
+                                        <div class="accordion-body px-0 margin">
+                                            <p>La misma dependerá del desempeño del estudiante, siendo el promedio
+                                                de 6
+                                                meses desde la obtención de la licencia de Piloto Privado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFourComercial">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFourComercial"
+                                            aria-expanded="false" aria-controls="collapseFourComercial">
+                                            <img width="16" class="me-2"
+                                                src="assets/images/components/comercial item3.svg" alt="">
+                                            Exigencia de vuelo
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFourComercial" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFourComercial" data-bs-parent="#accordionComercial">
+                                        <div class="accordion-body px-0">
+                                            <p class="margin">Con posterioridad a la obtención de la licencia de
+                                                Piloto
+                                                Privado de Avión, se deberán acumular 200 horas de vuelo, y 30 horas
+                                                de
+                                                simulador.</p>
+                                            <h3>Avión</h3>
+                                            <p class="margin">80 horas de navegación<br> 80 horas de vuelo local
+                                                <br>40 horas de
+                                                instrumentos <br>10 horas de vuelo nocturno
+                                            </p>
+                                            <h3>Simulador</h3>
+                                            <p class="margin">15 horas de Cessna 182 <br>15 horas de Beechcraft 350
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFiveComercial">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFiveComercial"
+                                            aria-expanded="false" aria-controls="collapseFiveComercial">
+                                            <img width="16" class="me-2"
+                                                src="assets/images/components/comercial item4.svg" alt="">
+                                            Habilitacion vuelo por instrumentos
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFiveComercial" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFiveComercial" data-bs-parent="#accordionComercial">
+                                        <div class="accordion-body px-0">
+                                            <p class="margin">Luego de haber obtenido la licencia de Piloto Privado
+                                                el estudiante procederá a realizar la habilitación de vuelo por
+                                                instrumentos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSixComercial">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSixComercial"
+                                            aria-expanded="false" aria-controls="collapseSixComercial">
+                                            <img width="16" class="me-2"
+                                                src="assets/images/components/comercial item5.svg" alt="">
+                                            Licencia de Piloto Comercial
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSixComercial" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSixComercial" data-bs-parent="#accordionComercial">
+                                        <div class="accordion-body px-0">
+                                            <p class="margin">Una vez obtenida la habilitación de vuelo por
+                                                instrumentos, el estudiante comenzará con el entrenamiento para la
+                                                licencia de Piloto Comercial de Avión.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="descripcion">
-                    <div class="container-fluid px-0 col-12 col-sm-12 col-md-11 col-9 min-100vh">
-                        <div class="row px-0" style="--bs-gutter-x: 0rem;">
-                            <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
-                                <h1 class="ps-0">
-                                    <h1>Instructor de vuelo</h1>
-                                    <h2 class="ps-0">Según lo establecido en las regulaciones argentinas RAAC parte 61
-                                    </h2>
-                            </div>
-                            <div class="row" data-aos="fade-up" data-aos-delay="250">
-                                <div class="desktop one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
-                                    <div class="col-12 col-sm-5 ps-0 pe-5">
-                                        <h1
-                                            class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
-                                            <span class="texto">Requisitos para licencia de Instructor</span>
-                                            <span class="number mt-auto">01.</span>
-                                        </h1>
-                                        <p class="lead pt-3 lh-2 weight-100">
-                                            -Ser titular de la licencia de Piloto Comercial, Piloto
-                                            Comercial de Primera Clase de Avión o Piloto de
-                                            <br> Transporte de Línea Aérea o Piloto de Planeador.
-                                            <br> -Tener 21 años.
-                                            <br>-Ser capaz de leer, hablar, escribir y entender
-                                            correctamente el idioma español.
-                                            Haber aprobado el Ciclo de Educación Polimodal o
-                                            estudios secundarios completos, o equivalente
-                                            reconocido por la autoridad competente.
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-sm-5 pe-0 ps-5">
-                                        <p class="right lead pt-0 lh-2">
-                                            -Poseer el Certificado de Habilitación Psicofisiológica
-                                            vigente, correspondiente a la licencia de piloto
-                                            profesional o de planeador de la cual es titular.
-                                            <br>-Aprobar las exigencias establecidas en el curso teórico
-                                            de Instrucción Reconocida para la licencia de Instructor
-                                            de Vuelo.
-                                            <br>-Poseer las horas de vuelo exigidas para cada licencia
-                                            de Instructor de Vuelo por categoría de aeronave.
-                                            Aprobar ante Inspector de Vuelo designado por la
-                                            Autoridad Aeronáutica competente, un examen teórico
-                                            de conocimientos y la prueba de pericia de las áreas de
-                                            instrucción establecida en los Estándares para la
-                                            realización de Exámenes Prácticos en Aeronaves
-                                        </p>
-                                    </div>
+            </section>
+        </section>
+        <section class="multiMotor">
+            <section class="coverPage">
+                <div class="container-fluid">
+                    <div class="min-100vh row justify-content-center align-items-center">
+                        <div class="row px-0">
+                            <div
+                                class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
+                                <h1 data-aos="fade-left">Habilitación de <br>vuelo multimotor</h1>
+                                <div data-aos="fade-up" data-aos-delay="250" class="mt-auto pt-1 mt-sm-5 pt-sm-5">
+                                    <p>10 horas de vuelo con un bimotor Seneca II.</p>
+                                    <p>Incluye teoría y 4 horas de simulador.</p>
+                                    <p>Esta habilitación demanda entre 15 y 20 días.</p>
                                 </div>
                             </div>
-                            <div class="mobile">
-                                <div class="margin">
-                                    <h1 class="titleAsCover">Instructor<br> de vuelo</h1>
-                                    <h2 class="subtitleAsCover">Según lo establecido en las regulaciones argentinas RAAC
-                                        parte 61</h1>
+                            <div class="desktop col-12 col-sm-6 ps-md-5 mt-2 d-flex h-100">
+                                <h2 data-aos="fade-right" data-aos-delay="250" class="right">Los estudiantes pueden
+                                    escoger realizarla en Argentina o en el
+                                    país de origen de
+                                    cada uno, aunque siempre recomendamos realizarlo en nuestro país para luego
+                                    regresar
+                                    con todas las certificaciones.</h2>
+                            </div>
+                            <div class="mobile px-0 col-12">
+                                <h1 class="title margin mb-0">Habilitación de vuelo multimotor</h1>
+                                <h2 class="subtitle margin">10 horas de vuelo con un bimotor Seneca II.</h2>
+                                <h2 class="subtitle margin"> Incluye
+                                    teoría y 4 horas de simulador.</h2>
+                                <h2 class="subtitle margin"> Esta habilitación demanda entre 15 a 20 días.
+                                </h2>
+                                <p class="text margin">
+                                    Los estudiantes pueden escoger realizarla en Argentina o en el país de origen de
+                                    cada uno, aunque siempre recomendamos realizarlo en nuestro país para luego
+                                    regresar con todas las certificaciones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="instructor">
+            <section class="coverPage desktop">
+                <div class="container-fluid">
+                    <div class="min-100vh row justify-content-center align-items-center">
+                        <div class="row">
+                            <div
+                                class="desktop left col-12 col-sm-6 pe-2 pe-md-5 d-flex align-items-sm-end flex-column bd-highlight">
+                                <h1 data-aos="fade-left">Instructor de vuelo</h1>
+                                <div data-aos="fade-up" data-aos-delay="250" class="mt-auto pt-1 mt-sm-5 pt-sm-5">
+                                    <p class="mb-0 pb-0">Según lo establecido en las regulaciones</p>
+                                    <p>argentinas RAAC parte 61</p>
                                 </div>
-                                <div class="accordion accordion-flush" id="accordionIntructor">
-                                    <div class="accordion-item">
-                                        <div id="collapseOneIntructor" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionIntructor">
-                                            <div class="accordion-body px-0 margin">
-                                                <p class="mb-0">Todo piloto acreedor de esta licencia será una persona
-                                                    con la capacidad y vocación para contribuir al desarrollo y
-                                                    crecimiento profesional de alumnos</p>
-                                            </div>
+                            </div>
+                            <div class="desktop col-12 col-sm-6 ps-md-5 mt-2 d-flex h-100">
+                                <h2 data-aos="fade-right" data-aos-delay="250" class="right"> Todo piloto acreedor
+                                    de esta licencia será una persona con la
+                                    capacidad y vocación
+                                    para contribuir al desarrollo y crecimiento profesional de alumnos</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="descripcion">
+                <div class="container-fluid px-0 col-12 col-sm-12 col-md-11 col-9 min-100vh">
+                    <div class="row px-0" style="--bs-gutter-x: 0rem;">
+                        <div class="desktop col-5 offset-lg-1" data-aos="fade-up">
+                            <h1 class="ps-0">
+                                <h1>Instructor de vuelo</h1>
+                                <h2 class="ps-0">Según lo establecido en las regulaciones argentinas RAAC parte 61
+                                </h2>
+                        </div>
+                        <div class="row" data-aos="fade-up" data-aos-delay="250">
+                            <div class="desktop one row d-flex justify-content-center" style="--bs-gutter-x: 0rem;">
+                                <div class="col-12 col-sm-5 ps-0 pe-5">
+                                    <h1 class="titulo d-flex justify-content-between display-4 p-0 fw-light pb-0 mb-3">
+                                        <span class="texto">Requisitos para licencia de Instructor</span>
+                                        <span class="number mt-auto">01.</span>
+                                    </h1>
+                                    <p class="lead pt-3 lh-2 weight-100">
+                                        -Ser titular de la licencia de Piloto Comercial, Piloto
+                                        Comercial de Primera Clase de Avión o Piloto de
+                                        <br> Transporte de Línea Aérea o Piloto de Planeador.
+                                        <br> -Tener 21 años.
+                                        <br>-Ser capaz de leer, hablar, escribir y entender
+                                        correctamente el idioma español.
+                                        Haber aprobado el Ciclo de Educación Polimodal o
+                                        estudios secundarios completos, o equivalente
+                                        reconocido por la autoridad competente.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-5 pe-0 ps-5">
+                                    <p class="right lead pt-0 lh-2">
+                                        -Poseer el Certificado de Habilitación Psicofisiológica
+                                        vigente, correspondiente a la licencia de piloto
+                                        profesional o de planeador de la cual es titular.
+                                        <br>-Aprobar las exigencias establecidas en el curso teórico
+                                        de Instrucción Reconocida para la licencia de Instructor
+                                        de Vuelo.
+                                        <br>-Poseer las horas de vuelo exigidas para cada licencia
+                                        de Instructor de Vuelo por categoría de aeronave.
+                                        Aprobar ante Inspector de Vuelo designado por la
+                                        Autoridad Aeronáutica competente, un examen teórico
+                                        de conocimientos y la prueba de pericia de las áreas de
+                                        instrucción establecida en los Estándares para la
+                                        realización de Exámenes Prácticos en Aeronaves
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile">
+                            <div class="margin">
+                                <h1 class="titleAsCover">Instructor<br> de vuelo</h1>
+                                <h2 class="subtitleAsCover">Según lo establecido en las regulaciones argentinas RAAC
+                                    parte 61</h1>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionIntructor">
+                                <div class="accordion-item">
+                                    <div id="collapseOneIntructor" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionIntructor">
+                                        <div class="accordion-body px-0 margin">
+                                            <p class="mb-0">Todo piloto acreedor de esta licencia será una persona
+                                                con la capacidad y vocación para contribuir al desarrollo y
+                                                crecimiento profesional de alumnos</p>
                                         </div>
                                     </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwoInstructor">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwoInstructor"
-                                                aria-expanded="false" aria-controls="collapseTwoInstructor">
-                                                <img width="17" class="me-2" src="assets/images/components/item1.svg"
-                                                    alt="">
-                                                Requisitos para el otorgamiento
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwoInstructor" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwoInstructor" data-bs-parent="#accordionIntructor">
-                                            <div class="accordion-body px-0">
-                                                <div id="carouselInstructor" class="margin carousel carousel-dark slide"
-                                                    data-bs-ride="carousel">
-                                                    <div class="carousel-indicators">
-                                                        <button type="button" data-bs-target="#carouselInstructor"
-                                                            data-bs-slide-to="0" class="carousel-indicator active"
-                                                            aria-current="true" aria-label="Slide 1"></button>
-                                                        <button class="carousel-indicator" type="button"
-                                                            data-bs-target="#carouselInstructor" data-bs-slide-to="1"
-                                                            aria-label="Slide 2"></button>
-                                                        <button class="carousel-indicator" type="button"
-                                                            data-bs-target="#carouselInstructor" data-bs-slide-to="2"
-                                                            aria-label="Slide 3"></button>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwoInstructor">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwoInstructor"
+                                            aria-expanded="false" aria-controls="collapseTwoInstructor">
+                                            <img width="17" class="me-2" src="assets/images/components/item1.svg"
+                                                alt="">
+                                            Requisitos para el otorgamiento
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwoInstructor" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwoInstructor" data-bs-parent="#accordionIntructor">
+                                        <div class="accordion-body px-0">
+                                            <div id="carouselInstructor" class="margin carousel carousel-dark slide"
+                                                data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#carouselInstructor"
+                                                        data-bs-slide-to="0" class="carousel-indicator active"
+                                                        aria-current="true" aria-label="Slide 1"></button>
+                                                    <button class="carousel-indicator" type="button"
+                                                        data-bs-target="#carouselInstructor" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button class="carousel-indicator" type="button"
+                                                        data-bs-target="#carouselInstructor" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                </div>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" data-bs-interval="10000">
+                                                        <ol class="list-inside">
+                                                            <li>Ser titular de la licencia de Piloto Comercial,
+                                                                Piloto Comercial de Primera Clase de Avión o Piloto
+                                                                de Transporte de Línea Aérea o Piloto de Planeador.
+                                                            </li>
+                                                            <li>Tener 21 años</li>
+                                                            <li>Ser capaz de leer, hablar, escribir y entender
+                                                                correctamente el idioma español.</li>
+                                                            <li>Ser capaz de leer, hablar, escribir y entender
+                                                                correctamente el idioma español.</li>
+                                                        </ol>
                                                     </div>
-                                                    <div class="carousel-inner">
-                                                        <div class="carousel-item active" data-bs-interval="10000">
-                                                            <ol class="list-inside">
-                                                                <li>Ser titular de la licencia de Piloto Comercial,
-                                                                    Piloto Comercial de Primera Clase de Avión o Piloto
-                                                                    de Transporte de Línea Aérea o Piloto de Planeador.
-                                                                </li>
-                                                                <li>Tener 21 años</li>
-                                                                <li>Ser capaz de leer, hablar, escribir y entender
-                                                                    correctamente el idioma español.</li>
-                                                                <li>Ser capaz de leer, hablar, escribir y entender
-                                                                    correctamente el idioma español.</li>
-                                                            </ol>
-                                                        </div>
-                                                        <div class="carousel-item" data-bs-interval="2000">
-                                                            <ol class="list-inside">
-                                                                <li>Haber aprobado el Ciclo de Educación Polimodal o
-                                                                    estudios secundarios completos, o equivalente
-                                                                    reconocido por la autoridad competente.</li>
-                                                                <li>Poseer el Certificado de Habilitación
-                                                                    Psicofisiológica vigente, correspondiente a la
-                                                                    licencia de piloto profesional o de planeador de la
-                                                                    cual es titular.</li>
-                                                                <li>Aprobar las exigencias establecidas en el curso
-                                                                    teórico de Instrucción Reconocida para la licencia
-                                                                    de Instructor de Vuelo</li>
+                                                    <div class="carousel-item" data-bs-interval="2000">
+                                                        <ol class="list-inside">
+                                                            <li>Haber aprobado el Ciclo de Educación Polimodal o
+                                                                estudios secundarios completos, o equivalente
+                                                                reconocido por la autoridad competente.</li>
+                                                            <li>Poseer el Certificado de Habilitación
+                                                                Psicofisiológica vigente, correspondiente a la
+                                                                licencia de piloto profesional o de planeador de la
+                                                                cual es titular.</li>
+                                                            <li>Aprobar las exigencias establecidas en el curso
+                                                                teórico de Instrucción Reconocida para la licencia
+                                                                de Instructor de Vuelo</li>
 
-                                                            </ol>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <ol class="list-inside">
-                                                                <li>Poseer las horas de vuelo exigidas para cada
-                                                                    licencia de Instructor de Vuelo por categoría de
-                                                                    aeronave.</li>
-                                                                <li>Aprobar ante Inspector de Vuelo designado por la
-                                                                    Autoridad Aeronáutica competente, un examen teórico
-                                                                    de conocimientos y la prueba de pericia de las áreas
-                                                                    de instrucción establecida en los Estándares para la
-                                                                    realización de Exámenes Prácticos en Aeronaves.</li>
-                                                            </ol>
-                                                        </div>
+                                                        </ol>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <ol class="list-inside">
+                                                            <li>Poseer las horas de vuelo exigidas para cada
+                                                                licencia de Instructor de Vuelo por categoría de
+                                                                aeronave.</li>
+                                                            <li>Aprobar ante Inspector de Vuelo designado por la
+                                                                Autoridad Aeronáutica competente, un examen teórico
+                                                                de conocimientos y la prueba de pericia de las áreas
+                                                                de instrucción establecida en los Estándares para la
+                                                                realización de Exámenes Prácticos en Aeronaves.</li>
+                                                        </ol>
                                                     </div>
                                                 </div>
                                             </div>
@@ -870,46 +897,46 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <div class="container">
-                    <div class="row min-80vh d-flex align-items-end">
-                        <section class="footer dark">
-                            <h1 class="mail pb-0 footerBlack">info@proflight.com.ar</h1>
-                            <h2 class="footerBlack">+54 9 11 6010-4446</h2>
-                            <h2 class="footerBlack">Av. Figueroa Alcorta 500,<br class="d-sm-block d-md-none"> Castelar,
-                                Bs. As.</h2>
-                            <ul class="social">
-                                <li class="me-2">
-                                    <a class="footerBlack" target="_blank"
-                                        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
-                                        title="">
-                                        <span class="icon fa fa-envelope"></span>
-                                    </a>
-                                </li>
-                                <li class="me-2">
-                                    <a class="footerBlack" target="_blank"
-                                        href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
-                                        title="">
-                                        <span class="icon fas fa-phone-alt"></span>
-                                    </a>
-                                </li>
-                                <li class="me-2">
-                                    <a class="footerBlack" target="_blank" href="https://www.facebook.com/proflight.la"
-                                        title="">
-                                        <span class="icon fa fa-facebook"></span>
-                                    </a>
-                                </li>
-                                <li class="me-2">
-                                    <a class="footerBlack" target="_blank"
-                                        href="https://www.instagram.com/proflight.ar/" title="">
-                                        <span class="icon fab fa-instagram"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
                 </div>
             </section>
+            <div class="container">
+                <div class="row min-80vh d-flex align-items-end">
+                    <section class="footer dark">
+                        <h1 class="mail pb-0 footerBlack">info@proflight.com.ar</h1>
+                        <h2 class="footerBlack">+54 9 11 6010-4446</h2>
+                        <h2 class="footerBlack">Av. Figueroa Alcorta 500,<br class="d-sm-block d-md-none"> Castelar,
+                            Bs. As.</h2>
+                        <ul class="social">
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                    title="">
+                                    <span class="icon fa fa-envelope"></span>
+                                </a>
+                            </li>
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=5491126477116&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20academia"
+                                    title="">
+                                    <span class="icon fas fa-phone-alt"></span>
+                                </a>
+                            </li>
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank" href="https://www.facebook.com/proflight.la"
+                                    title="">
+                                    <span class="icon fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="me-2">
+                                <a class="footerBlack" target="_blank" href="https://www.instagram.com/proflight.ar/"
+                                    title="">
+                                    <span class="icon fab fa-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </section>
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -8,23 +8,32 @@ $(document).ready(function() {
 	var navBarTogglerIcon = $('#navBarTogglerIcon');
 	navBarText = $('#navBar-text');
 
-	var privadoOne = $('#privadoOne');
 	var privadoTwo = $('#privadoTwo');
 	var chevronPrivado = $('#chevronPrivado');
+
 	var privadoitem1 = $('#privadoitem1');
 	var privadoitem2 = $('#privadoitem2');
+
+	var PrivadoCircle1=$('#PrivadoCircle1');
+	var PrivadoCircle2=$('#PrivadoCircle2');
+
+	var privadoShowInfo = $('#privadoShowInfo');
 
 	//var prevPrivado = $('#prevPrivado');
 	//var nextRightPrivado = $('#nextRightPrivado');
 	//var prevRightPrivado = $('#prevRightPrivado');
 
-	var comercialOne = $('#comercialOne');
 	var comercialTwo = $('#comercialTwo');
 	var comercialThree = $('#comercialThree');
-    var chevronComercial =$('#chevronComercial')
+	var chevronComercial = $('#chevronComercial');
 	var comercialitem1 = $('#comercialitem1');
 	var comercialitem2 = $('#comercialitem2');
-	var Toitem3Comercial = $('#Toitem3Comercial');
+
+	var ComercialCircle1=$('#ComercialCircle1');
+	var ComercialCircle2=$('#ComercialCircle2');
+
+	var comercialShowInfo = $('#comercialShowInfo');
+	var comercialShowInfo2 = $('#comercialShowInfo2');
 
 	//var prevComercial = $('#prevComercial');
 	//var nextRightComercial = $('#nextRightComercial');
@@ -98,23 +107,23 @@ $(document).ready(function() {
     });
 	
     */
+	privadoShowInfo.click(function() {
+		if (privadoShowInfo.hasClass('active')) {
+			privadoTwo.toggleClass('active');
+		} else {
+			privadoTwo.toggleClass('active');
+		}
+		privadoShowInfo.toggleClass('active');
+	});
 
 	chevronPrivado.click(function() {
-		console.log(privadoOne.css('display'));
-		if (privadoOne.css('display') === 'flex') {
-			privadoOne.css('display', 'none');
-			privadoTwo.css('display', 'flex');
-		} else {
-			if (privadoitem2.css('display') == 'none') {
-				privadoitem2.css('display', 'block');
-				privadoitem1.css('display', 'none');
-			} else {
-				privadoitem2.css('display', 'none');
-				privadoitem1.css('display', 'block');
-			}
-			chevronPrivado.toggleClass('rotated');
-		}
+		privadoitem2.toggleClass('active');
+		privadoitem1.toggleClass('active');
+		PrivadoCircle1.toggleClass('active');
+		PrivadoCircle2.toggleClass('active');
+		chevronPrivado.toggleClass('rotated');
 	});
+
 	/*
 	comercialOne.click(function() {
 		comercialOne.css('display', 'none');
@@ -135,26 +144,31 @@ $(document).ready(function() {
 	});
     */
 
-    Toitem3Comercial.click(function() {
-		comercialTwo.css('display', 'none');
-		comercialThree.css('display', 'flex');
-        chevronComercial.css({'opacity':'0','pointerEvents':'none'});
+	comercialShowInfo.click(function() {
+		if (comercialShowInfo.hasClass('active')) {
+			comercialTwo.toggleClass('active');
+		} else {
+			comercialTwo.toggleClass('active');
+		}
+		comercialShowInfo.toggleClass('active');
+	});
+
+	comercialShowInfo2.click(function() {
+		if (comercialShowInfo.hasClass('active')) {
+			comercialThree.toggleClass('active');
+		} else {
+			comercialThree.toggleClass('active');
+		}
+		comercialShowInfo2.toggleClass('active');
 	});
 
 	chevronComercial.click(function() {
-		if (comercialOne.css('display') === 'flex') {
-			comercialOne.css('display', 'none');
-			comercialTwo.css('display', 'flex');
-		} else {
-			if (comercialitem2.css('display') == 'none') {
-				comercialitem2.css('display', 'block');
-				comercialitem1.css('display', 'none');
-			} else {
-				comercialitem2.css('display', 'none');
-				comercialitem1.css('display', 'block');
-			}
-			chevronComercial.toggleClass('rotated');
-		}
+		comercialitem2.toggleClass('active');
+		comercialitem1.toggleClass('active');
+		ComercialCircle1.toggleClass('active');
+		ComercialCircle2.toggleClass('active');
+		chevronComercial.toggleClass('rotated');
 	});
 
+	
 });
