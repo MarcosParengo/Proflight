@@ -202,6 +202,7 @@
 	outline: 0;
 	transition: background-color 0.5s;
 }
+
 .navbar-brand {
 	font: normal normal 300 18px Inter;
 	background-color: transparent;
@@ -344,11 +345,12 @@
 	}
 	.nav-item {
 		padding-right: 5%;
-		font-size: 15px;
-		text-align: right;
 	}
 	.navbar-toggler {
 		width: 25%;
+	}
+	.navbar-toggler img {
+		margin-right: 30%;
 	}
 	.navbar-dark .navBarContainer {
 		background-size: 100% calc( 35px + 0.25rem + 40px );
@@ -358,6 +360,23 @@
 		background-size: 100% calc( 35px + 0.25rem + 40px );
 		background-repeat: no-repeat;
 	}
+
+	.collapsing {
+		height: 0;
+		overflow: hidden;
+		transition: .35s height .35s ease;
+	}
+	.collapse.show {
+		transition: .0s height .35s ease;
+	}
+	.navbar-toggler {
+		transition: background-color 0.35s;
+	}
+	
+	.navbar-toggler.collapsed{
+		transition: 0.35s background-color 0.6s;
+	}
+	
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
@@ -371,30 +390,14 @@
 		font-size: 15px;
 		text-align: right;
 	}
-	.navbar-toggler {
-		width: 25%;
-	}
-	.navbar-toggler img {
-		margin-right: 30%;
-	}
+	
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-	.navbar-brand {
-		padding-left: 5em;
-	}
 	.nav-item {
-		padding-right: 30%;
 		font-size: 20px;
-		text-align: right;
-	}
-	.navbar-toggler {
-		width: 25%;
-	}
-	.navbar-toggler img {
-		margin-right: 30%;
 	}
 }
 
