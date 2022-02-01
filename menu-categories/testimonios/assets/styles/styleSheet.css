@@ -237,7 +237,7 @@ body p {
 	left: 5em;
 }
 .chevronRightContainer {
-	right: 5em;
+	right: calc( 0.25rem + 7.5vw - 10px );
 	
 }
 

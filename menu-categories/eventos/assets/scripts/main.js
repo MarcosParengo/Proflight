@@ -145,7 +145,7 @@ function fillContainerEventos() {
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src="assets/images/evento/bandera/${evento.origen.toUpperCase()}.png" class="flag" alt="-">
+                                <img src="assets/images/evento/bandera/${evento.origen.toUpperCase()}.svg" class="flag" alt="-">
                             </div>
                         </div>
                     </div>
@@ -181,14 +181,14 @@ function fillFilterEventos() {
 		countryFilters.append(`
 		<div class="col-auto country" id="${pais.toUpperCase()}" onclick="pais(id)">
 			<h1 class="text m-0">
-				<img class="flag me-1" src="assets/images/evento/bandera/${pais.toUpperCase()}.png" alt="">
+				<img class="flag me-1" src="assets/images/evento/bandera/${pais.toUpperCase()}.svg" alt="">
 				${pais.toLowerCase()}
 			</h1>
 		</div>`);
 		countryFiltersMobile.append(`
 		<li>
 			<a class="dropdown-item" id="${pais.toUpperCase()}" onclick="pais(id)" >
-				<img src="assets/images/evento/bandera/${pais.toUpperCase()}.png" alt="">
+				<img src="assets/images/evento/bandera/${pais.toUpperCase()}.svg" alt="">
 				${pais.toLowerCase()}
 			</a>
 		</li>
@@ -198,5 +198,5 @@ function fillFilterEventos() {
 
 function updateMostrandoEventos(pais){
 
-	MostrandoEventos.html(`<p id="mostrandoEventos" class="mostrandoEventos">Mostrando eventos de <img src="assets/images/evento/bandera/${pais.toUpperCase()}.png" alt=""> ${pais.toLowerCase()}</p>`);
+	MostrandoEventos.html(`<p id="mostrandoEventos" class="mostrandoEventos">Mostrando eventos de <img src="assets/images/evento/bandera/${pais.toUpperCase()}.svg" alt=""> ${pais.toLowerCase()}</p>`);
 }

@@ -109,7 +109,7 @@ function fillContainerEventos(obj) {
                     </h1>
                     <h2 class="rightSpace leftSpace eventoGratuito mobile">Evento Gratuito</h2>
                     <h2 class="rightSpace leftSpace ubicacion pb-2 d-flex align-items-center">
-                        <img class="bandera" src="./assets/images/evento/bandera/${obj.origen.toUpperCase()}.png" alt="${obj.origen}">
+                        <img class="bandera" src="./assets/images/evento/bandera/${obj.origen.toUpperCase()}.svg" alt="${obj.origen}">
                         <span class="ps-1 text"><strong>${obj.origen}</strong>, ${obj.ciudad} </span>
                     </h2>
                 </div>

@@ -411,7 +411,7 @@ function fillContainerTestimonios(obj) {
 						<Container class="img-container d-flex justify-content-center">
 							<div class="p-relative w-50 img-container2">
 								<img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
-								<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+								<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.svg" class="flag hidden" alt="-">
 							</div>
 						</Container>  
 						<div class="card-body mt-2 mb-0 py-0">
@@ -419,7 +419,7 @@ function fillContainerTestimonios(obj) {
 							<p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
 							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center mt-3">
 								${testimonio.origen}
-								<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-">
+								<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.svg" alt="-">
 							</p>
 						</div>
 						<div class="py-0 my-0 card-footer">
@@ -436,13 +436,14 @@ function fillContainerTestimonios(obj) {
 						<Container class="img-container d-flex justify-content-center">
 							<div class="p-relative w-50 img-container2">
 								<img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
-								<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+								<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.svg" class="flag hidden" alt="-">
 							</div>
 						</Container>  
 						<div class="card-body mt-2 mb-0 py-0">
 							<h5 class="card-title">${testimonio.nombre}</h5>
 							<p class="hidden testimonio card-text mb-0 me-0">${testimonio.testimonioAdelanto}</p>
-							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-"></p>
+							<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${testimonio.origen}
+							<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.svg" alt="-"></p>
 						</div>
 						<div class="py-0 my-0 card-footer">
 						<a class="show mt-0 py-0 mb-3" href="#">Ver testimonio</a>
@@ -464,7 +465,7 @@ function fillContainerTestimonios(obj) {
 					<Container class="img-container d-flex justify-content-center">
 						<div class="p-relative w-50 img-container2">
 							<img src="menu-categories/testimonios/assets/images/testimonio/profile/${testimonio.nombre}.png" class="img-fluid" alt="...">
-							<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" class="flag hidden" alt="-">
+							<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.svg" class="flag hidden" alt="-">
 						</div>
 					</Container>  
 					<div class="card-body mt-2 mb-0 py-0">
@@ -474,7 +475,7 @@ function fillContainerTestimonios(obj) {
 						</p>
 						<p id="alumno-card-default-show-body-${i}" class="show nacionalidad card-text d-flex align-items-center justify-content-center mt-3">
 							${testimonio.origen}
-							<img src="assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.png" alt="-">
+							<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${testimonio.origen.toUpperCase()}.svg" alt="-">
 						</p>
 					</div>
 					<div class="py-0 my-0 card-footer">
@@ -493,16 +494,15 @@ function fillContainerTestimonios(obj) {
 				<div class="card h-100">
 					<Container class="img-container d-flex justify-content-center">
 						<div class="p-relative w-50 img-container2">
-							<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0]
-								.nombre}.png" class="img-fluid" alt="...">
-							<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" class="flag hidden" alt="-">
+							<img src="menu-categories/testimonios/assets/images/testimonio/profile/${obj[0].nombre}.png" class="img-fluid" alt="...">
+							<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.svg" class="flag hidden" alt="-">
 						</div>
 					</Container>  
 					<div class="card-body mt-2 mb-0 py-0">
 						<h5 class="card-title">${obj[0].nombre}</h5>
 						<p class="hidden testimonio card-text mb-0 me-0">${obj[0].testimonioAdelanto}</p>
 						<p class="show nacionalidad card-text d-flex align-items-center justify-content-center">${obj[0]
-							.origen}<img src="assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.png" alt="-"></p>
+							.origen}<img src="menu-categories/testimonios/assets/images/testimonio/bandera/${obj[0].origen.toUpperCase()}.svg" alt="-"></p>
 					</div>
 					<div class="py-0 my-0 card-footer">
 					<a class="show mt-0 py-0 mb-3">Ver testimonio</a>
@@ -550,7 +550,7 @@ function fillContainerEventos(obj) {
                         </div>
                     </div>
                     <div class="show">
-                        <img src="menu-categories/eventos/assets/images/evento/bandera/${obj.origen.toUpperCase()}.png" class=" img-fluid" alt="...">
+                        <img src="menu-categories/eventos/assets/images/evento/bandera/${obj.origen.toUpperCase()}.svg" class=" img-fluid" alt="...">
                         <p class="mb-0 resumen card-text">${obj.ciudad}, ${obj.origen}</p>
                         <p class=" resumen fecha card-text pb-5"> ${obj.fecha}</p>                    
                     </div>
@@ -570,7 +570,7 @@ function fillContainerEventos(obj) {
 				: i === 1 ? 'right' : 'right out'}" onclick="togglePositionEventos(id)">
 				<div class="flagContainer">
 					<img class="image" alt=""
-					src="menu-categories/eventos/assets/images/evento/bandera/${evento.origen.toUpperCase()}.png" >
+					src="menu-categories/eventos/assets/images/evento/bandera/${evento.origen.toUpperCase()}.svg" >
 				</div>
 				<h1 class="title">
 					${evento.nombre}
@@ -596,7 +596,7 @@ function fillContainerEventos(obj) {
 		`<div id="evento-card-${i + 1}" class="eventocard placeholder" onclick="togglePositionEventos(id)">
 		<div class="flagContainer">
 			<img class="image" alt=""
-			src="menu-categories/eventos/assets/images/evento/bandera/${obj[0].origen.toUpperCase()}.png" >
+			src="menu-categories/eventos/assets/images/evento/bandera/${obj[0].origen.toUpperCase()}.svg" >
 		</div>
 		<h1 class="title">
 			${obj[0].descripcion}
