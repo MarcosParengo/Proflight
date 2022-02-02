@@ -183,7 +183,6 @@ body p {
 		width: calc(100% - 180px);
 	}
 	.accordion-body .imagen {
-		border-radius: 10px;
 		position: absolute;
 		right: 0;
 		transform: translateX(50%);

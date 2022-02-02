@@ -132,12 +132,19 @@ body p {
 		overflow-x: hidden;
 	}
 	.loaded .home .landing .bgImage {
+		overflow:hidden;
 		position: absolute;
 		width: 100vw;
-	}
-	.loaded .home .landing .bgImage {
+		height:100vh;
 		animation: ease-out 1s fromRight forwards;
 	}
+	.loaded .home .landing .bgImage img{
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
+
+
 	.home .landing .title {
 		top: 154px;
 		left: 37px;

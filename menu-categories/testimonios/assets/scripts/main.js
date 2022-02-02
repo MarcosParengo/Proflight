@@ -141,7 +141,7 @@ function fillContainerTestimonios(obj) {
 		}
 
 		string += `
-            <div class="alumnoCard col-sm-3 p-md-4 p-sm-0">
+            <div class="alumnoCard col-sm-3 pt-0 p-md-4 p-sm-0  ">
                 <div class="card h-100">
                     <div class="d-flex w-100 justify-content-center">
                             <div  class="profilePic p-relative">

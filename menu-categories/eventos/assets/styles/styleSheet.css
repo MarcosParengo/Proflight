@@ -239,9 +239,6 @@ body p {
 }
 
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
-.mobile {
-	display: none;
-}
 
 @media only screen and (max-width: 768px) {
 	.sameLeft {
@@ -339,12 +336,8 @@ body p {
 	.eventoCard {
 		padding: 0 38px;
 	}
-
-	.mobile {
-		display: block;
-	}
 	.desktop {
-		display: none;
+		display: none!important;
 	}
 	.footer {
 		padding: 0 38px;
@@ -390,6 +383,9 @@ body p {
 	}
 	.contenedorevento {
 		width: 90%;
+	}
+	.mobile {
+		display: none;
 	}
 }
 

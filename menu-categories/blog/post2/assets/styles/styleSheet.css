@@ -422,10 +422,15 @@ body p {
 		overflow: hidden;
 	}
 	.home .landing .bgImage {
+		overflow:hidden;
 		position: absolute;
 		width: 100vw;
-		bottom: 0;
-		top: 0;
+		animation: ease-out 1s fromRight forwards;
+	}
+	.home .landing .bgImage img{
+		display: block;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.home .landing .title {
@@ -466,6 +471,9 @@ body p {
 	}
 	.postContainer .newsLetter {
 		height: auto;
+	}
+	.postContainer .content{
+		margin-right: 20px;
 	}
 	.newsLetter .title {
 		margin-top: 52px;

@@ -182,15 +182,12 @@ body p {
 	margin-top: 4rem;
 }
 
-.privado .descripcion .one,
-.comercial .descripcion .one {
+.privado .descripcion .one {
 	margin-top: 4rem;
 	display: flex;
 }
 
-.privado .descripcion .two,
-.comercial .descripcion .two,
-.comercial .descripcion .three {
+.privado .descripcion .two {
 	max-height: 0px;
 	overflow: hidden;
 	margin-top: 4rem;
@@ -199,9 +196,44 @@ body p {
 	transition: 0.5s all ease-in-out;
 	position: relative;
 }
-.privado .descripcion .two.active,
+
+.comercial .descripcion .one {
+	margin-top: 4rem;
+	display: flex;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	transition: 0.5s all;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0
+}
+
+.comercial .descripcion .two,
+.comercial .descripcion .three {
+	margin-top: 4rem;
+	display: flex;
+	opacity: 0;
+	transition: 0.5s all;
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0
+}
+
+.comercial .descripcion .one.active,
 .comercial .descripcion .two.active,
 .comercial .descripcion .three.active {
+	opacity: 1;
+	position: static;
+	visibility: visible;
+	transition: 0.5s all 0.5s;
+}
+
+.privado .descripcion .two.active {
 	max-height: 100vh;
 	opacity: 1;
 }
@@ -219,8 +251,7 @@ body p {
 	display: none;
 }
 
-.privado .descripcion .two .item,
-.comercial .descripcion .two .item {
+.privado .descripcion .two .item {
 	position: absolute;
 	display: block;
 	opacity: 0;
@@ -233,22 +264,18 @@ body p {
 	width: 100%;
 }
 
-.privado .descripcion .two .item.active,
-.comercial .descripcion .two .item.active {
+.privado .descripcion .two .item.active{
 	position: absolute;
 	display: block;
 	opacity: 1;
 	transition: 0.25s all 0.25s;
 }
-.privado .descripcion .two .item.placeholder,
-.comercial .descripcion .two .item.placeholder {
+.privado .descripcion .two .item.placeholder{
 	position: relative;
 	opacity: 1;
 }
 .privado .descripcion .two .item.placeholder .titulo,
-.privado .descripcion .two .item.placeholder .lead,
-.comercial .descripcion .two .item.placeholder .titulo,
-.comercial .descripcion .two .item.placeholder .lead {
+.privado .descripcion .two .item.placeholder .lead {
 	opacity: 0;
 }
 
@@ -271,10 +298,31 @@ body p {
 	transform: rotate(0deg);
 	cursor: pointer;
 	transition: all 0.5s;
+	opacity: 0;
+}
+
+.descripcion .privado-chevron-right {
+	width: auto;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: rotate(180deg);
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+.descripcion .privado-chevron-left.active,
+.descripcion .privado-chevron-right.active {
+	opacity: 1;
 }
 
 .descripcion .privado-chevron-left.rotated {
 	transform: rotate(180deg);
+}
+
+.descripcion .privado-chevron-left.rotated {
+	transform: rotate(0deg);
 }
 
 .descripcion .circles .circle {
@@ -516,8 +564,8 @@ body p {
 		transition: transform .2s ease-in-out;
 	}
 	.descripcion .mobile .carousel-item {
-		min-height: 70vh;
 		transition: all 0.5s;
+		margin-bottom: 1rem;
 	}
 
 	.carousel-dark .carousel-indicator {
@@ -530,6 +578,9 @@ body p {
 	}
 	.carousel-dark .carousel-indicator.active {
 		background-color: #00b0ce !important;
+	}
+	.carousel-indicators {
+		transform: translateY(100%);
 	}
 }
 

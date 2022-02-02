@@ -450,6 +450,10 @@ body p {
 	.mobile {
 		display: none;
 	}
+	.alumnoCard {
+		padding-top: 0!important;
+		margin-top: calc( (  100vw  / 4  ) * ( 3 / 10 ) );
+	}
 }
 
 /* Large devices (laptops/desktops, 1050px and up) */
@@ -591,9 +595,6 @@ body p {
 /*ultra x2 Small devices (portrait tablets and large phones, until 392px) */
 
 @media only screen and (max-width: 392px) {
-	.alumnoCard {
-		margin-top: 20%;
-	}
 	.containerTestimonios {
 		margin: 5%;
 	}
@@ -606,9 +607,6 @@ body p {
 /*ultra Small devices (portrait tablets and large phones, 392px and up) */
 
 @media only screen and (min-width: 392px) {
-	.alumnoCard {
-		margin-top: 20%;
-	}
 	.containerTestimonios {
 		margin: 5%;
 	}
@@ -621,9 +619,6 @@ body p {
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
 @media only screen and (min-width: 576px) {
-	.alumnoCard {
-		margin-top: 20%;
-	}
 	.containerTestimonios {
 		margin: 5%;
 	}
@@ -636,9 +631,6 @@ body p {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-	.alumnoCard {
-		margin-top: 5%;
-	}
 	.containerTestimonios {
 		margin: 5%;
 	}
@@ -651,9 +643,6 @@ body p {
 /* Large devices (laptops/desktops, 1050px and up) */
 
 @media only screen and (min-width: 1050px) {
-	.alumnoCard {
-		margin-top: 5%;
-	}
 	.containerTestimonios {
 		margin: 5%;
 	}
@@ -666,9 +655,6 @@ body p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-	.alumnoCard {
-		margin-top: 5%;
-	}
 	.containerTestimonios {
 		margin: 5%;
 	}

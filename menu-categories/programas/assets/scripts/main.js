@@ -1,5 +1,85 @@
 var obj = [];
 
+function carouselNormalization() {
+	$('#collapseTwoInstructor').addClass('show');
+	(window.heights = []), //create empty array to store height values
+		window.tallest; //create variable to make note of the tallest slide
+
+	function normalizeHeights() {
+		jQuery('.carousel-item').each(function() {
+			//add heights to array
+			window.heights.push(jQuery(this).outerHeight());
+		});
+		window.tallest = Math.max.apply(null, window.heights); //cache largest value
+		jQuery('.carousel-item').each(function() {
+			jQuery(this).css('min-height', tallest + 'px');
+		});
+	}
+	normalizeHeights();
+
+	jQuery(window).on('resize orientationchange', function() {
+		(window.tallest = 0), (window.heights.length = 0); //reset vars
+		jQuery('.carousel-item').each(function() {
+			jQuery(this).css('min-height', '0'); //reset min-height
+		});
+
+		normalizeHeights(); //run it again
+	});
+	$('#collapseTwoInstructor').removeClass('show');
+}
+
+function comercialNormalization() {
+	let comercialOne = $('#comercialOne');
+	let comercialTwo = $('#comercialTwo');
+	let comercialThree = $('#comercialThree');
+	
+	(window.heights = []), //create empty array to store height values
+		window.tallest; //create variable to make note of the tallest slide
+
+	function normalizeHeights() {
+		let activeclass
+		if(comercialOne.hasClass('active')){
+			activeclass=comercialOne
+		}
+		if(comercialTwo.hasClass('active')){
+			activeclass=comercialTwo
+		}
+		if(comercialThree.hasClass('active')){
+			activeclass=comercialThree
+		}
+
+		comercialOne.addClass('active')
+		comercialTwo.addClass('active')
+		comercialThree.addClass('active')
+
+		//add heights to array
+		window.heights.push(comercialOne.outerHeight());
+		window.heights.push(comercialTwo.outerHeight());
+		window.heights.push(comercialThree.outerHeight());
+
+		window.tallest = Math.max.apply(null, window.heights); //cache largest value
+
+		comercialOne.css('min-height', tallest + 'px');
+		comercialTwo.css('min-height', tallest + 'px');
+		comercialThree.css('min-height', tallest + 'px');
+
+		comercialOne.removeClass('active')
+		comercialTwo.removeClass('active')
+		comercialThree.removeClass('active')
+		activeclass.addClass('active')
+	}
+	
+	normalizeHeights();
+	jQuery(window).on('resize orientationchange', function() {
+		comercialOne.css('min-height', '0px');
+		comercialTwo.css('min-height', '0px');
+		comercialThree.css('min-height', '0px');
+
+		normalizeHeights(); //run it again
+	});
+
+}
+
 $(document).ready(function() {
 	var toggled = false;
 	var navBar = $('#navBar');
@@ -14,30 +94,22 @@ $(document).ready(function() {
 	var privadoitem1 = $('#privadoitem1');
 	var privadoitem2 = $('#privadoitem2');
 
-	var PrivadoCircle1=$('#PrivadoCircle1');
-	var PrivadoCircle2=$('#PrivadoCircle2');
+	var PrivadoCircle1 = $('#PrivadoCircle1');
+	var PrivadoCircle2 = $('#PrivadoCircle2');
 
 	var privadoShowInfo = $('#privadoShowInfo');
 
-	//var prevPrivado = $('#prevPrivado');
-	//var nextRightPrivado = $('#nextRightPrivado');
-	//var prevRightPrivado = $('#prevRightPrivado');
+	var comercialActive = 1;
 
+	var comercialOne = $('#comercialOne');
 	var comercialTwo = $('#comercialTwo');
 	var comercialThree = $('#comercialThree');
-	var chevronComercial = $('#chevronComercial');
-	var comercialitem1 = $('#comercialitem1');
-	var comercialitem2 = $('#comercialitem2');
 
-	var ComercialCircle1=$('#ComercialCircle1');
-	var ComercialCircle2=$('#ComercialCircle2');
+	var chevronComercialPrev = $('#chevronComercialPrev');
+	var chevronComercialNext = $('#chevronComercialNext');
 
-	var comercialShowInfo = $('#comercialShowInfo');
-	var comercialShowInfo2 = $('#comercialShowInfo2');
-
-	//var prevComercial = $('#prevComercial');
-	//var nextRightComercial = $('#nextRightComercial');
-	//var prevRightComercial = $('#prevRightComercial');
+	carouselNormalization();
+	comercialNormalization();
 
 	navbarBrand.click(function() {
 		if (toggled) {
@@ -90,23 +162,6 @@ $(document).ready(function() {
 		}
 	});
 
-	/*
-    privadoOne.click(function() {
-		privadoOne.css('display', 'none');
-		privadoTwo.css('display', 'flex');
-	});
-    
-	prevPrivado.click(function() {
-		privadoOne.css('display', 'flex');
-		privadoTwo.css('display', 'none');
-	});
-
-    prevRightPrivado.click(function() {
-        privadoitem1.css('display', 'block');
-        privadoitem2.css('display', 'none');
-    });
-	
-    */
 	privadoShowInfo.click(function() {
 		if (privadoShowInfo.hasClass('active')) {
 			privadoTwo.toggleClass('active');
@@ -124,51 +179,41 @@ $(document).ready(function() {
 		chevronPrivado.toggleClass('rotated');
 	});
 
-	/*
-	comercialOne.click(function() {
-		comercialOne.css('display', 'none');
-		comercialTwo.css('display', 'flex');
-	});
-	
-	prevComercial.click(function() {
-		comercialOne.css('display', 'flex');
-		comercialTwo.css('display', 'none');
-	});
-	nextRightComercial.click(function() {
-		comercialitem2.css('display', 'block');
-		comercialitem1.css('display', 'none');
-	});
-	prevRightComercial.click(function() {
-		comercialitem1.css('display', 'block');
-		comercialitem2.css('display', 'none');
-	});
-    */
-
-	comercialShowInfo.click(function() {
-		if (comercialShowInfo.hasClass('active')) {
-			comercialTwo.toggleClass('active');
-		} else {
-			comercialTwo.toggleClass('active');
+	chevronComercialNext.click(function() {
+		switch (comercialActive) {
+			case 1:
+				comercialOne.toggleClass('active');
+				comercialTwo.toggleClass('active');
+				chevronComercialPrev.addClass('active');
+				comercialActive++;
+				break;
+			case 2:
+				comercialTwo.toggleClass('active');
+				comercialThree.toggleClass('active');
+				comercialActive++;
+				chevronComercialNext.removeClass('active');
+				break;
+			default:
+				console.log('nada');
 		}
-		comercialShowInfo.toggleClass('active');
 	});
 
-	comercialShowInfo2.click(function() {
-		if (comercialShowInfo.hasClass('active')) {
-			comercialThree.toggleClass('active');
-		} else {
-			comercialThree.toggleClass('active');
+	chevronComercialPrev.click(function() {
+		switch (comercialActive) {
+			case 2:
+				comercialOne.toggleClass('active');
+				comercialTwo.toggleClass('active');
+				comercialActive--;
+				chevronComercialPrev.removeClass('active');
+				break;
+			case 3:
+				comercialTwo.toggleClass('active');
+				comercialThree.toggleClass('active');
+				comercialActive--;
+				chevronComercialNext.addClass('active');
+				break;
+			default:
+				console.log('nada');
 		}
-		comercialShowInfo2.toggleClass('active');
 	});
-
-	chevronComercial.click(function() {
-		comercialitem2.toggleClass('active');
-		comercialitem1.toggleClass('active');
-		ComercialCircle1.toggleClass('active');
-		ComercialCircle2.toggleClass('active');
-		chevronComercial.toggleClass('rotated');
-	});
-
-	
 });

@@ -29,7 +29,7 @@ $(document).ready(function() {
 	var Eventos = '../data/eventos.json';
 
 	LoadJson(Eventos, 1, paisSeleccionado.toUpperCase());
-
+	
 	navbarBrand.click(function() {
 		if (toggled) {
 			if ($(window).width() < 576) {
@@ -179,7 +179,7 @@ function fillContainerEventos() {
 function fillFilterEventos() {
 	paises.forEach(function(pais, i) {
 		countryFilters.append(`
-		<div class="col-auto country" id="${pais.toUpperCase()}" onclick="pais(id)">
+		<div class="col-auto country me-4" id="${pais.toUpperCase()}" onclick="pais(id)">
 			<h1 class="text m-0">
 				<img class="flag me-1" src="assets/images/evento/bandera/${pais.toUpperCase()}.svg" alt="">
 				${pais.toLowerCase()}
