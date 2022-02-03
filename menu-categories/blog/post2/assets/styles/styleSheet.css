@@ -547,6 +547,12 @@ body p {
 		color: #0b131e;
 		opacity: 1;
 	}
+	.postContainer .decimalList .decimalItem .itemTitle .text-nowrap{
+		font: normal normal bold 14px/32px Inter;
+		letter-spacing: 0px;
+		color: #0b131e;
+		opacity: 1;
+	}
 	.postContainer .decimalList .decimalItem .content {
 		text-align: left;
 		font: normal normal 300 15px/32px Inter;
@@ -630,6 +636,21 @@ body p {
 		min-height: 150vh;
 	}
 }
+@media only screen and (max-width: 1300px) {
+	.bigScreen{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.postContainer .postCarouselContainer .description {
+		max-width: unset;
+	}
+}
+
+
+
+
 
 ul.social {
 	width: 100%;

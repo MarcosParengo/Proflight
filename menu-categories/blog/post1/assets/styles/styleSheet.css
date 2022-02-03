@@ -646,6 +646,17 @@ body p {
 		min-height: 150vh;
 	}
 }
+@media only screen and (max-width: 1300px) {
+	.bigScreen{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.postContainer .postCarouselContainer .description {
+		max-width: unset;
+	}
+}
 
 /*-------------------------------------------------- Seccion footer--------------------------------------------------*/
 

@@ -213,7 +213,6 @@ $(document).ready(function() {
 				chevronComercialNext.addClass('active');
 				break;
 			default:
-				console.log('nada');
 		}
 	});
 });

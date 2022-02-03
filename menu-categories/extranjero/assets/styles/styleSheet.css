@@ -559,9 +559,7 @@
             position: relative;
             opacity: 0;
         }
-        .mobile-info{
-            position: absolute;
-        }
+        
         .mobile-info .titulo{
             text-align: left;
             font: normal normal 300 13px/29px Inter;
