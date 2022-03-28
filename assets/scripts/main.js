@@ -212,7 +212,6 @@ function handleGestureEventos() {
 }
 
 sliderEventos.addEventListener('touchstart', (e) => {
-	console.log('si');
 	touchstartX = e.changedTouches[0].screenX;
 });
 
@@ -279,6 +278,7 @@ $(document).ready(function() {
 	var eventos = 'menu-categories/data/eventos.json';
 	var carouselProgramas = $('#carouselProgramas');
 	var elipseProgramas = $('#elipseProgramas');
+	var elipseSVGContainer = $('#elipseSVGContainer');
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	carouselIndicators = $('#carouselIndicators');
@@ -320,6 +320,7 @@ $(document).ready(function() {
 
 	carouselProgramas.on('slide.bs.carousel', function(e) {
 		elipseProgramas.attr('src', `assets/images/components/Elipse${e.to}.svg`);
+		elipseSVGContainer.attr('class',`step-${e.to+1}`)
 		sectionLabelProgramas.html(titles[e.to]);
 	});
 

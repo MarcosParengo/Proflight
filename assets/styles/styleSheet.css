@@ -86,14 +86,66 @@ body p {
 }
 
 .elipse .container {
-	transform: translateX(50%);
+	padding-right: 0;
 	height: 100%;
 	width: auto;
 }
 
-.elipse .container img {
+.elipse .container div,
+.elipse .container svg {
 	height: 100%;
 	width: auto;
+}
+
+#line {
+	transition: all 0.5s;
+}
+
+.elipse #elipseSVGContainer .outer-line {
+	stroke: #fff;
+	fill:none;
+	transition: all 0.5s;
+}
+
+.elipse #elipseSVGContainer .inner-dot {
+	fill: #fff;
+	transition: all 0.5s;
+}
+
+.elipse #elipseSVGContainer.step-1 #step-1 .outer-line,
+.elipse #elipseSVGContainer.step-2 #step-2 .outer-line,
+.elipse #elipseSVGContainer.step-3 #step-3 .outer-line,
+.elipse #elipseSVGContainer.step-4 #step-4 .outer-line,
+.elipse #elipseSVGContainer.step-5 #step-5 .outer-line,
+.elipse #elipseSVGContainer.step-6 #step-6 .outer-line {
+	stroke: #35bbd7 !important;
+}
+.elipse #elipseSVGContainer.step-1 #step-1 .inner-dot,
+.elipse #elipseSVGContainer.step-2 #step-2 .inner-dot,
+.elipse #elipseSVGContainer.step-3 #step-3 .inner-dot,
+.elipse #elipseSVGContainer.step-4 #step-4 .inner-dot,
+.elipse #elipseSVGContainer.step-5 #step-5 .inner-dot,
+.elipse #elipseSVGContainer.step-6 #step-6 .inner-dot {
+	fill: #35bbd7 !important;
+}
+
+.elipse #elipseSVGContainer.step-1 #line {
+	transform: translate(356.789519px, 327.362472px) rotate(11.240777deg);
+}
+.elipse #elipseSVGContainer.step-2 #line {
+	transform: translate(356.789519px, 327.362472px) rotate(-7.934699deg);
+}
+.elipse #elipseSVGContainer.step-3 #line {
+	transform: translate(356.789519px, 327.362472px) rotate(-32.873499deg);
+}
+.elipse #elipseSVGContainer.step-4 #line {
+	transform: translate(356.789519px, 327.362472px) rotate(-57.536833deg);
+}
+.elipse #elipseSVGContainer.step-5 #line {
+	transform: translate(356.789519px, 327.362472px) rotate(-85.962621deg);
+}
+.elipse #elipseSVGContainer.step-6 #line {
+	transform: translate(356.789519px, 327.362472px) rotate(-113.240162deg);
 }
 
 .whatsappButtonContainer {
@@ -1061,11 +1113,11 @@ fade {
 	opacity: 1;
 }
 .carousel-indicators .indicator {
-	padding:0;
-	margin:0 3px;
+	padding: 0;
+	margin: 0 3px;
 	background-color: white;
 	opacity: 0.5;
-	border:none;
+	border: none;
 	height: 10px;
 	width: 10px;
 	border-radius: 5px;
@@ -1087,42 +1139,41 @@ fade {
 		margin-right: 76px;
 		flex-wrap: nowrap !important;
 		flex-direction: row !important;
-		width:100;
+		width: 100;
 	}
 	.alumnoCard {
-		padding:0;
-		margin:0;
-		margin-right:39px;
-		width: calc( (100% - 76px * 2 - 39px ) / 4);
+		padding: 0;
+		margin: 0;
+		margin-right: 39px;
+		width: calc( (100% - 76px * 2 - 39px) / 4);
 	}
 	.alumnoCard:first-of-type {
 		margin-left: 76px;
 	}
 	.alumnoCard:last-of-type {
 		padding-right: 76px;
-		width: calc( (100% - 76px * 2 - 39px ) / 4 + 76px);
+		width: calc( (100% - 76px * 2 - 39px) / 4 + 76px);
 	}
 	.alumnoCard:last-of-type::after {
 		width: 76px;
-		padding-right:76px;
+		padding-right: 76px;
 	}
 	.alumnos .chevronRight,
-	.alumnos .chevronLeft{
-		position:absolute;
-		top:50%;
+	.alumnos .chevronLeft {
+		position: absolute;
+		top: 50%;
 		transform: translateX(-50%);
 		width: 15px;
 		cursor: pointer;
 	}
-	.alumnos .chevronRight{
-		right:40px;
+	.alumnos .chevronRight {
+		right: 40px;
 	}
-	.alumnos .chevronLeft{
-		left:40px;
+	.alumnos .chevronLeft {
+		left: 40px;
 		transform: translateX(-50%) rotate(180deg);
 	}
 }
-
 
 @media only screen and (min-width: 768px) {
 	.alumnoCard {
