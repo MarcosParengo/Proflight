@@ -136,10 +136,10 @@ body p {
 	transform: translate(356.789519px, 327.362472px) rotate(-7.934699deg);
 }
 .elipse #elipseSVGContainer.step-3 #line {
-	transform: translate(356.789519px, 327.362472px) rotate(-32.873499deg);
+	transform: translate(356.789519px, 327.362472px) rotate(-34.25deg);
 }
 .elipse #elipseSVGContainer.step-4 #line {
-	transform: translate(356.789519px, 327.362472px) rotate(-57.536833deg);
+	transform: translate(356.789519px, 327.362472px) rotate(-58.5deg);
 }
 .elipse #elipseSVGContainer.step-5 #line {
 	transform: translate(356.789519px, 327.362472px) rotate(-85.962621deg);
@@ -147,6 +147,8 @@ body p {
 .elipse #elipseSVGContainer.step-6 #line {
 	transform: translate(356.789519px, 327.362472px) rotate(-113.240162deg);
 }
+
+
 
 .whatsappButtonContainer {
 	position: fixed;

@@ -9,7 +9,6 @@ var maxAlumnos = 0;
 
 function toggleShowAlumnoCard(id) {
 	let index = parseInt(id.split('-')[id.split('-').length - 1]);
-	console.log(index);
 	$('#alumno-card-default-hidden-body-' + index).attr('style', 'opacity:1;height:auto');
 	$('#alumno-card-default-show-body-' + index).attr('style', 'display: none!important');
 	$('#alumno-card-default-hidden-footer-' + index).attr('style', 'opacity:1;height:auto');
@@ -17,7 +16,6 @@ function toggleShowAlumnoCard(id) {
 }
 
 function selectFlota(selector) {
-	console.log(selector);
 	const id = parseInt(selector.charAt(selector.length - 1));
 	$(`#icon-flota-${flotaSelected}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${flotaSelected}.svg`);
 	$(`#icon-flota-${id}`).attr('src', `assets/images/mobile/Nuestra Flota/selector/${id}-selected.svg`);
@@ -280,7 +278,6 @@ $(document).ready(function() {
 	var elipseProgramas = $('#elipseProgramas');
 	var elipseSVGContainer = $('#elipseSVGContainer');
 	var sectionLabelProgramas = $('#sectionLabelProgramas');
-	var sectionLabelProgramas = $('#sectionLabelProgramas');
 	carouselIndicators = $('#carouselIndicators');
 
 	horasDeInstruccion.innerHTML = '00000';
@@ -312,10 +309,11 @@ $(document).ready(function() {
 	LoadJson(eventos, 2);
 	const titles = [
 		'Licencia de piloto privado',
-		'Licencia de piloto comercial',
-		'Habilitación de vuelo multimotor',
-		'Instructor de vuelo',
-		'Licencia de Piloto Comercial'
+		'Habilitación de vuelo por Instrumentos',
+		'Habilitación de vuelo nocturno',
+		'Habilitacion de vuelo multimotor',
+		'Licencia de Piloto Comercial',
+		'Licencia Instructor de Vuelo'
 	];
 
 	carouselProgramas.on('slide.bs.carousel', function(e) {
@@ -523,7 +521,6 @@ function indicators(obj) {
 	const pages = Math.ceil(obj.length / 8);
 
 	for (let index = 0; index < pages; index++) {
-		console.log(index === 0);
 		string += `
         <button type="button" id='indicator-alumno-desktop-page-${index +
 			1}' onclick="scrollContainerAlumnosDesktop(id)"
