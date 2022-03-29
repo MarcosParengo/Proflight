@@ -23,57 +23,39 @@ $(document).ready(function () {
 
     $('#landing').addClass('animated')
     loadSVGInline()
-    navbarBrand.click(function () {
-        if(toggled){
-            if ($(window).width() < 576) {
-                $('#navbarSupportedContent').removeClass('show') 
-               $('#navbarSupportedContent').addClass('collapsing') 
-                navBarToggler.css('visibility', 'visible')                
-                navbarBrand.css('visibility', 'hidden')
-                navBar.css('background-color', 'rgba(200,200,200,0.0)');
-                navBar.css('backdrop-filter', 'unset');
-                navBar.css('-webkit-backdrop-filter', 'unset');
-                toggled=!toggled
-            }
-        }
-    })
-
-    navBarToggler.click(function () {
-
-        if (toggled == false) {
-            toggled = !toggled;
-            if ($(window).width() < 576) {
-                navbarBrand.css('visibility', 'visible')
-                navBarToggler.css('visibility', 'hidden')
-                navBar.css('background-color', 'rgba(50,50,50,0.5)');
-                navBar.css('backdrop-filter', 'blur(10px)');
-                navBar.css('-webkit-backdrop-filter', 'blur(10px)');
-            } else {
-                var newSource = navBarTogglerIcon.data('alt-src');
-                navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
-                navBarTogglerIcon.attr('src', newSource);
-                navBarToggler.css('background-color', 'rgba(200,200,200,0.5)');
-                navBarToggler.css('backdrop-filter', 'blur(10px)');
-                navBarToggler.css('-webkit-backdrop-filter', 'blur(10px)');
-            }
+    $('#navbarSupportedContent').on('hidden.bs.collapse', function() {
+        if ($(window).width() < 576) {
+            navBarToggler.css('visibility', 'visible');
+            navbarBrand.css('visibility', 'hidden');
+            navBar.css('background-color', 'rgba(200,200,200,0.0)');
+            navBar.css('backdrop-filter', 'unset');
+            navBar.css('-webkit-backdrop-filter', 'unset');
         } else {
-            if ($(window).width() < 576) {
-                navBarToggler.css('visibility', 'visible')
-                navbarBrand.css('visibility', 'hidden')
-                navBar.css('background-color', 'rgba(200,200,200,0.0)');
-                navBar.css('backdrop-filter', 'unset');
-                navBar.css('-webkit-backdrop-filter', 'unset');
-            } else {
-                var newSource = navBarTogglerIcon.data('alt-src');
-                navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
-                navBarTogglerIcon.attr('src', newSource);
-                navBarToggler.css('background-color', 'rgba(0,0,0,0.0)');
-                navBarToggler.css('backdrop-filter', 'blur(0px)');
-                navBarToggler.css('-webkit-backdrop-filter', 'blur(0px)');
-            }
-            toggled = !toggled;
+            var newSource = navBarTogglerIcon.data('alt-src');
+            navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
+            navBarTogglerIcon.attr('src', newSource);
+            navBarToggler.css('background-color', 'rgba(0,0,0,0.0)');
+            navBarToggler.css('backdrop-filter', 'blur(0px)');
+            navBarToggler.css('-webkit-backdrop-filter', 'blur(0px)');
         }
-    })
+    });
+
+    $('#navbarSupportedContent').on('show.bs.collapse', function() {
+        if ($(window).width() < 576) {
+            navbarBrand.css('visibility', 'visible');
+            navBarToggler.css('visibility', 'hidden');
+            navBar.css('background-color', 'rgba(50,50,50,0.5)');
+            navBar.css('backdrop-filter', 'blur(10px)');
+            navBar.css('-webkit-backdrop-filter', 'blur(10px)');
+        } else {
+            var newSource = navBarTogglerIcon.data('alt-src');
+            navBarTogglerIcon.data('alt-src', navBarTogglerIcon.attr('src'));
+            navBarTogglerIcon.attr('src', newSource);
+            navBarToggler.css('background-color', 'rgba(200,200,200,0.5)');
+            navBarToggler.css('backdrop-filter', 'blur(10px)');
+            navBarToggler.css('-webkit-backdrop-filter', 'blur(10px)');
+        }
+    });
 
     $(window).bind("scroll", function () {
         if ($(this).scrollTop() > $('#containerLinks').offset().top-100) {
@@ -106,7 +88,7 @@ $(document).ready(function () {
             switch(e.to){
                 case 0:
                     $('#carouselIndicator').addClass('b firstSelected')
-                    five.css('display','none');
+                    four.css('display','none');
                     two.css('display','none');
                     one.css('display','block');  
                 break
@@ -127,12 +109,6 @@ $(document).ready(function () {
                     five.css('display','none');
                     three.css('display','none');
                     four.css('display','block'); 
-                break
-                case 4:
-                    $('#carouselIndicator').addClass('b fifthSelected')
-                    one.css('display','none');
-                    four.css('display','none');
-                    five.css('display','block'); 
                 break
             }
         }

@@ -205,13 +205,14 @@ body p {
 	visibility: hidden;
 	transition: 0.5s all;
 	top: 0;
-	bottom:0;
-	left:0;
-	right:0
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .comercial .descripcion .two,
-.comercial .descripcion .three {
+.comercial .descripcion .three,
+.comercial .descripcion .four {
 	margin-top: 4rem;
 	display: flex;
 	opacity: 0;
@@ -219,14 +220,15 @@ body p {
 	position: absolute;
 	visibility: hidden;
 	top: 0;
-	bottom:0;
-	left:0;
-	right:0
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .comercial .descripcion .one.active,
 .comercial .descripcion .two.active,
-.comercial .descripcion .three.active {
+.comercial .descripcion .three.active,
+.comercial .descripcion .four.active {
 	opacity: 1;
 	position: static;
 	visibility: visible;
@@ -264,13 +266,13 @@ body p {
 	width: 100%;
 }
 
-.privado .descripcion .two .item.active{
+.privado .descripcion .two .item.active {
 	position: absolute;
 	display: block;
 	opacity: 1;
 	transition: 0.25s all 0.25s;
 }
-.privado .descripcion .two .item.placeholder{
+.privado .descripcion .two .item.placeholder {
 	position: relative;
 	opacity: 1;
 }
@@ -322,9 +324,6 @@ body p {
 .descripcion .privado-chevron-left.rotated {
 	transform: rotate(180deg);
 }
-
-
-
 
 .descripcion .circles .circle {
 	display: inline-block;

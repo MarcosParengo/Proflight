@@ -369,12 +369,8 @@
 	.collapse.show {
 		transition: .0s height .35s ease;
 	}
-	.navbar-toggler {
-		transition: background-color 0.35s;
-	}
-	
-	.navbar-toggler.collapsed{
-		transition: 0.35s background-color 0.6s;
+	.navbar-toggler{
+		transition: 0.35s background-color
 	}
 	
 }
