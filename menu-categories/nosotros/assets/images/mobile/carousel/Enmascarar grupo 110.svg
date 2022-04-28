@@ -1,6 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 360 140">
-    <defs>
-        <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   viewBox="0 0 360 140"
+   version="1.1"
+   id="svg76"
+   sodipodi:docname="Enmascarar grupo 110.svg"
+   enable-background="new"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata80">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     id="namedview78"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="2.4444444"
+     inkscape:cx="171.99346"
+     inkscape:cy="133.17628"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="carouselIndicator" />
+  <defs
+     id="defs10">
+    <style
+       id="style2">
             .a,.b,.c,.d,.e,.f,.g,.h{
                 transition: all 0.5s ease;
             }
@@ -56,67 +106,236 @@
             .firstSelected #firstDot .e,
             .secondSelected #secondDot .e,
             .thirdSelected #thirdDot .e,
-            .fourthSelected #fourthDot .e,
-            .fifthSelected #fifthDot .e {
-                fill: #00b0ce;
+            .fourthSelected #fourthDot .e{
+                fill: #00b0ce!important;
             }
 
         </style>
-        <clipPath id="a">
-            <rect class="a" width="360" height="140" transform="translate(0 3276)" />
-        </clipPath>
-        <clipPath id="b">
-            <rect class="a" width="360" height="168" transform="translate(0 3414)" />
-        </clipPath>
-    </defs>
-    <g id="carouselIndicator" class="b firstSelected" transform="translate(0 -3276)">
-        <g class="c" transform="translate(0 -161)">
-            <g class="d" transform="translate(-55 3079)">
-                <circle class="g" cx="231" cy="231" r="231" />
-                <circle class="h" cx="231" cy="231" r="230.5" />
-            </g>
-        </g>
-        <g id="firstDot" transform="translate(-1383.334 265.666)">
-            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
-            <g class="f" transform="translate(1420.333 3064.333)">
-                <circle class="g" cx="5" cy="5" r="5" />
-                <circle class="h" cx="5" cy="5" r="4.5" />
-            </g>
-        </g>
-        <g id="fourthDot" transform="translate(-1176.334 298.666)">
-            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
-            <g class="f" transform="translate(1420.333 3064.333)">
-                <circle class="g" cx="5" cy="5" r="5" />
-                <circle class="h" cx="5" cy="5" r="4.5" />
-            </g>
-        </g>
-        <g id="secondDot" transform="translate(-1313.334 301.666)">
-            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
-            <g class="f" transform="translate(1420.333 3064.333)">
-                <circle class="g" cx="5" cy="5" r="5" />
-                <circle class="h" cx="5" cy="5" r="4.5" />
-            </g>
-        </g>
-        <g id="thirdDot" transform="translate(-1244.334 310.666)">
-            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
-            <g class="f" transform="translate(1420.333 3064.333)">
-                <circle class="g" cx="5" cy="5" r="5" />
-                <circle class="h" cx="5" cy="5" r="4.5" />
-            </g>
-        </g>
-        <g id="fifthDot" transform="translate(-1107.334 261.666)">
-            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
-            <g class="f" transform="translate(1420.333 3064.333)">
-                <circle class="g" cx="5" cy="5" r="5" />
-                <circle class="h" cx="5" cy="5" r="4.5" />
-            </g>
-        </g>
-        <g transform="translate(-1043.334 201.666)">
-            <circle class="e" cx="2" cy="2" r="2" transform="translate(1423.333 3067.333)" />
-            <g class="f" transform="translate(1420.333 3064.333)">
-                <circle class="g" cx="5" cy="5" r="5" />
-                <circle class="h" cx="5" cy="5" r="4.5" />
-            </g>
-        </g>
+    <clipPath
+       id="a">
+      <rect
+         class="a"
+         width="360"
+         height="140"
+         transform="translate(0 3276)"
+         id="rect4" />
+    </clipPath>
+    <clipPath
+       id="b">
+      <rect
+         class="a"
+         width="360"
+         height="168"
+         transform="translate(0 3414)"
+         id="rect7" />
+    </clipPath>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter911">
+      <feBlend
+         inkscape:collect="always"
+         mode="lighten"
+         in2="BackgroundImage"
+         id="feBlend913" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter915">
+      <feBlend
+         inkscape:collect="always"
+         mode="lighten"
+         in2="BackgroundImage"
+         id="feBlend917" />
+    </filter>
+  </defs>
+  <g
+     id="carouselIndicator"
+     class="b firstSelected"
+     transform="translate(0,-3276)"
+     clip-path="url(#a)">
+    <g
+       class="c"
+       transform="translate(0,-161)"
+       clip-path="url(#b)"
+       id="g18">
+      <g
+         class="d"
+         transform="translate(-55,3079)"
+         id="g16"
+         style="fill:none;stroke:#ffffff;stroke-dasharray:2, 8">
+        <circle
+           class="g"
+           cx="231"
+           cy="231"
+           r="231"
+           id="circle12" />
+        <circle
+           class="h"
+           cx="231"
+           cy="231"
+           r="230.5"
+           id="circle14"
+           style="fill:none" />
+      </g>
     </g>
+    <g
+       id="firstDot"
+       transform="translate(-1383.334,265.666)"
+       style="filter:url(#filter915)">
+      <circle
+         class="e"
+         cx="2"
+         cy="2"
+         r="2"
+         transform="translate(1423.333,3067.333)"
+         id="circle29"
+         style="fill:#ffffff" />
+      <g
+         class="f"
+         transform="translate(1420.333,3064.333)"
+         id="g35"
+         style="fill:none;stroke:#ffffff">
+        <circle
+           class="g"
+           cx="5"
+           cy="5"
+           r="5"
+           id="circle31" />
+        <circle
+           class="h"
+           cx="5"
+           cy="5"
+           r="4.5"
+           id="circle33"
+           style="fill:none" />
+      </g>
+    </g>
+    <g
+       id="fourthDot"
+       transform="translate(-1112.334,265.666)"
+       style="filter:url(#filter911)">
+      <circle
+         class="e"
+         cx="2"
+         cy="2"
+         r="2"
+         transform="translate(1423.333,3067.333)"
+         id="circle29"
+         style="fill:#ffffff" />
+      <g
+         class="f"
+         transform="translate(1420.333,3064.333)"
+         id="g35"
+         style="fill:none;stroke:#ffffff">
+        <circle
+           class="g"
+           cx="5"
+           cy="5"
+           r="5"
+           id="circle31" />
+        <circle
+           class="h"
+           cx="5"
+           cy="5"
+           r="4.5"
+           id="circle33"
+           style="fill:none" />
+      </g>
+    </g>
+    <g
+       id="secondDot"
+       transform="translate(-1310.4704,302.72282)">
+      <circle
+         class="e"
+         cx="2"
+         cy="2"
+         r="2"
+         transform="translate(1423.333,3067.333)"
+         id="circle38"
+         style="fill:#ffffff" />
+      <g
+         class="f"
+         transform="translate(1420.333,3064.333)"
+         id="g44"
+         style="fill:none;stroke:#ffffff">
+        <circle
+           class="g"
+           cx="5"
+           cy="5"
+           r="5"
+           id="circle40" />
+        <circle
+           class="h"
+           cx="5"
+           cy="5"
+           r="4.5"
+           id="circle42"
+           style="fill:none" />
+      </g>
+    </g>
+    <g
+       id="thirdDot"
+       transform="translate(-1192.0272,303.541)">
+      <circle
+         class="e"
+         cx="2"
+         cy="2"
+         r="2"
+         transform="translate(1423.333,3067.333)"
+         id="circle47"
+         style="fill:#ffffff" />
+      <g
+         class="f"
+         transform="translate(1420.333,3064.333)"
+         id="g53"
+         style="fill:none;stroke:#ffffff">
+        <circle
+           class="g"
+           cx="5"
+           cy="5"
+           r="5"
+           id="circle49" />
+        <circle
+           class="h"
+           cx="5"
+           cy="5"
+           r="4.5"
+           id="circle51"
+           style="fill:none" />
+      </g>
+    </g>
+    <g
+       transform="translate(-1043.334,201.666)"
+       id="g73">
+      <circle
+         class="e"
+         cx="2"
+         cy="2"
+         r="2"
+         transform="translate(1423.333,3067.333)"
+         id="circle65"
+         style="fill:#ffffff" />
+      <g
+         class="f"
+         transform="translate(1420.333,3064.333)"
+         id="g71"
+         style="fill:none;stroke:#ffffff">
+        <circle
+           class="g"
+           cx="5"
+           cy="5"
+           r="5"
+           id="circle67" />
+        <circle
+           class="h"
+           cx="5"
+           cy="5"
+           r="4.5"
+           id="circle69"
+           style="fill:none" />
+      </g>
+    </g>
+  </g>
 </svg>

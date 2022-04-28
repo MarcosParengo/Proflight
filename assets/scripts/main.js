@@ -6,7 +6,7 @@ var i = 0;
 var counterBack = setInterval('progressGrow()', 200);
 var maxEventos = 0;
 var maxAlumnos = 0;
-
+var maxFlota = 4
 function toggleShowAlumnoCard(id) {
 	let index = parseInt(id.split('-')[id.split('-').length - 1]);
 	$('#alumno-card-default-hidden-body-' + index).attr('style', 'opacity:1;height:auto');
@@ -41,7 +41,7 @@ function handleGestureFlota() {
 	let id = $('.imagen.center').attr('id');
 	let centerElement = parseInt(id.split('-')[id.split('-').length - 1]);
 
-	if (touchendX < touchstartX && centerElement < maxEventos) {
+	if (touchendX < touchstartX && centerElement < maxFlota) {
 		selectFlota((centerElement + 1).toString());
 	}
 	if (touchendX > touchstartX && centerElement > 1) {
