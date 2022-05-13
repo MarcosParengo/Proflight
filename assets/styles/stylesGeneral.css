@@ -292,7 +292,6 @@
 		line-height: 30px;
 		width: 30px;
 		height: 30px;
-		border: 1px solid;
 		border-radius: 36px;
 		font-size: 10px;
 		margin: 0;
@@ -302,7 +301,6 @@
 		line-height: 30px;
 		width: 30px;
 		height: 30px;
-		border: black 1px solid;
 		border-radius: 36px;
 		font-size: 10px;
 		margin: 0;
@@ -444,15 +442,17 @@ ul.social > li {
 ul.social > li > a {
 	text-align: center;
 	display: inline-block;
-	line-height: 40px;
 	width: 40px;
 	height: 40px;
-	border: 1px solid;
-	border-radius: 36px;
-	background-color: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	background-color: transparent;
 	color: #fff;
 	margin: 0 3px 3px 0;
-	font-size: 20px;
+}
+
+ul.social > li > a > img{
+	height: 100%;
+	display:block
 }
 
 ul.social > li > a:hover {
@@ -469,10 +469,6 @@ ul.social > li > a:hover {
 }
 .footer.dark ul.social > li > a {
 	color: #0b131e;
-}
-ul.social > li > a:hover {
-	text-decoration: none;
-	opacity: 0.5;
 }
 /*-------------------------------------------------- Media Query footer--------------------------------------------------*/
 
@@ -515,7 +511,6 @@ ul.social > li > a:hover {
 		line-height: 30px;
 		width: 30px;
 		height: 30px;
-		border: 1px solid;
 		border-radius: 36px;
 		background-color: rgba(0, 0, 0, 0);
 		color: #fff;

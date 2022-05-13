@@ -703,7 +703,3 @@ ul.social > li > a {
 	margin: 0 3px 3px 0;
 }
 
-ul.social > li > a:hover {
-	text-decoration: none;
-	opacity: 0.5;
-}
